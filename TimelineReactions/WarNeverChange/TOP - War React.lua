@@ -1507,32 +1507,102 @@ local tbl =
 		{
 			data = 
 			{
-				name = "Packet Filter Target",
-				uuid = "f1f4dfd2-2705-102f-a34c-3a2682951be4",
-				version = 2,
-			},
-			inheritedObjectUUID = "cd124f8e-4a33-025d-8bac-5b0492a41e66",
-			inheritedOverwrites = 
-			{
 				actions = 
 				{
 					
 					{
-						type = "add",
-						value = 
+						data = 
 						{
-							data = 
+							aType = "Misc",
+							conditions = 
 							{
-								aType = "Variable",
-								gVar = "ACR_RikuWAR2_Hotbar_Onslaught",
-								uuid = "993f442c-2a4f-3795-8fa7-9df16d28691d",
-								variableTogglesType = 2,
-								version = 2,
+								
+								{
+									"d771d10b-03a3-304a-99aa-415f18d18eb7",
+									true,
+								},
 							},
+							name = "Target M",
+							setTarget = true,
+							targetContentID = 7634,
+							targetType = "ContentID",
+							uuid = "df2949e9-eddd-ba3e-9458-d7182b8ab5e6",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"a88f048d-b575-c424-84b1-0366cc22c5b2",
+									true,
+								},
+							},
+							name = "Target F",
+							setTarget = true,
+							targetContentID = 7633,
+							targetType = "ContentID",
+							uuid = "50773ead-20ee-9d3a-b584-64c0a5c4ecf2",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 3499,
+							category = "Self",
+							name = "M - Buff",
+							uuid = "d771d10b-03a3-304a-99aa-415f18d18eb7",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 3500,
+							category = "Self",
+							name = "F - Buff",
+							uuid = "a88f048d-b575-c424-84b1-0366cc22c5b2",
+							version = 2,
 						},
 					},
 				},
+				mechanicTime = 190,
+				name = "[WAR] Dash",
+				randomOffset = 20,
+				timeRange = true,
+				timelineIndex = 20,
+				timerEndOffset = 20,
+				timerOffset = -20,
+				timerStartOffset = -20,
+				uuid = "2d33cbde-2481-5799-90ce-51bcf062e53d",
+				version = 2,
 			},
+			inheritedIndex = 2,
 		},
 	},
 	[21] = 
@@ -2224,6 +2294,7 @@ local tbl =
 									true,
 								},
 							},
+							endIfUsed = true,
 							gVar = "ACR_RikuWAR2_Tankbar_Equilibrium",
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
 							variableTogglesType = 3,
@@ -2328,7 +2399,7 @@ local tbl =
 			inheritedIndex = 17,
 		},
 	},
-	[41] = 
+	[48] = 
 	{
 		
 		{
@@ -2350,7 +2421,7 @@ local tbl =
 								},
 								
 								{
-									"4f10df77-a313-201d-8b2b-2a68ecb9f966",
+									"f3348728-a989-8c37-b886-4a48994741c7",
 									true,
 								},
 							},
@@ -2368,16 +2439,13 @@ local tbl =
 						data = 
 						{
 							category = "Event",
-							eventArgOptionType = 3,
+							comparator = 2,
+							conditionType = 6,
+							dequeueIfLuaFalse = true,
 							eventArgType = 2,
-							eventEntityID = 31573,
-							eventSpellID = 31596,
-							spellIDList = 
-							{
-								31596,
-								31595,
-							},
-							uuid = "4f10df77-a313-201d-8b2b-2a68ecb9f966",
+							eventSpellID = 31617,
+							inRangeValue = 5,
+							uuid = "35693d39-44ae-89ea-930a-628c03451000",
 							version = 2,
 						},
 						inheritedIndex = 1,
@@ -2386,25 +2454,22 @@ local tbl =
 					{
 						data = 
 						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							uuid = "f3348728-a989-8c37-b886-4a48994741c7",
 							version = 2,
 						},
 					},
 				},
 				eventType = 3,
-				mechanicTime = 400,
+				mechanicTime = 470,
 				name = "[Tank] Reprisal",
 				timeRange = true,
-				timelineIndex = 41,
-				timerEndOffset = 40,
+				timelineIndex = 48,
+				timerEndOffset = 100,
 				timerStartOffset = -40,
-				uuid = "9785dfec-1fed-8b15-aa4d-4240a5843f27",
+				uuid = "39ec9a58-084b-1654-90c2-50ec9936779b",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 10,
 		},
 		
 		{
@@ -2421,10 +2486,11 @@ local tbl =
 							{
 								
 								{
-									"db1acd36-9748-d465-93cc-a2c0371c5053",
+									"a6228098-0818-57d9-ae52-614864595a0c",
 									true,
 								},
 							},
+							endIfUsed = true,
 							gVar = "ACR_RikuWAR2_Jumps",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
@@ -2439,93 +2505,29 @@ local tbl =
 						data = 
 						{
 							category = "Event",
-							eventArgOptionType = 3,
+							comparator = 2,
+							conditionType = 6,
+							dequeueIfLuaFalse = true,
 							eventArgType = 2,
-							eventEntityID = 31573,
-							eventSpellID = 31596,
-							spellIDList = 
-							{
-								31596,
-								31595,
-							},
-							uuid = "db1acd36-9748-d465-93cc-a2c0371c5053",
+							eventSpellID = 31617,
+							inRangeValue = 5,
+							uuid = "a6228098-0818-57d9-ae52-614864595a0c",
 							version = 2,
 						},
 						inheritedIndex = 1,
 					},
 				},
 				eventType = 3,
-				mechanicTime = 400,
+				mechanicTime = 470,
 				name = "[Multi] Jumps Off",
 				timeRange = true,
-				timelineIndex = 41,
-				timerEndOffset = 30,
-				timerStartOffset = -30,
-				uuid = "e672012a-955a-ab2c-bdf6-df0d749d9a39",
-				version = 2,
-			},
-			inheritedIndex = 12,
-		},
-	},
-	[48] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"db1acd36-9748-d465-93cc-a2c0371c5053",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR2_Jumps",
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Event",
-							eventArgType = 2,
-							eventEntityID = 31573,
-							eventSpellID = 31617,
-							spellIDList = 
-							{
-								31596,
-								31595,
-							},
-							uuid = "db1acd36-9748-d465-93cc-a2c0371c5053",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				eventType = 2,
-				mechanicTime = 470,
-				name = "[Multi] Jumps On",
-				timeRange = true,
 				timelineIndex = 48,
-				timerEndOffset = 30,
-				timerStartOffset = -30,
-				uuid = "710a5f2a-ddc7-c1a4-82a3-3eb60795bd3b",
+				timerEndOffset = 100,
+				timerStartOffset = -40,
+				uuid = "00eb19cb-fbc9-6cc5-adae-911aeda35915",
 				version = 2,
 			},
-			inheritedIndex = 12,
+			inheritedIndex = 13,
 		},
 	},
 	inheritedProfiles = 
