@@ -616,39 +616,6 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuWAR2_HoldGauge",
-							gVarValue = 2,
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				eventType = 21,
-				mechanicTime = 127.7,
-				name = "[Multi] Enable Gauge",
-				timeRange = true,
-				timelineIndex = 29,
-				timerEndOffset = 76,
-				timerStartOffset = -20,
-				uuid = "71920498-29bc-2b4e-b0dc-bc755a45fbac",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
 							gVar = "ACR_RikuWAR2_CD",
 							gVarValue = 2,
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
@@ -671,6 +638,39 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_HoldGauge",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 21,
+				mechanicTime = 127.7,
+				name = "[Multi] Enable Gauge",
+				timeRange = true,
+				timelineIndex = 29,
+				timerEndOffset = 76,
+				timerStartOffset = -20,
+				uuid = "71920498-29bc-2b4e-b0dc-bc755a45fbac",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -1331,6 +1331,36 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 288.6,
+				name = "[Multi] Sprint",
+				timelineIndex = 51,
+				uuid = "8efe71e3-1dc1-430c-8240-66e346e5d195",
+				version = 2,
+			},
+			inheritedIndex = 1,
 		},
 	},
 	[52] = 
@@ -2538,8 +2568,8 @@ local tbl =
 				},
 				mechanicTime = 636.8,
 				name = "[Multi] Sprint",
-				timeRange = true,
 				timelineIndex = 112,
+				timerOffset = 2,
 				timerStartOffset = 2,
 				uuid = "2e13e634-c46b-2bc8-919e-92b9711cf6ee",
 				version = 2,
@@ -3037,6 +3067,74 @@ local tbl =
 			inheritedIndex = 3,
 		},
 	},
+	[131] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 743,
+				name = "[Multi] Sprint",
+				timelineIndex = 131,
+				timerStartOffset = 2,
+				uuid = "23e00fe9-b485-7cda-849c-8ef0614efd74",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[132] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 750.2,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 132,
+				uuid = "ddebaaaa-57d8-77bf-a286-d6e465f35164",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
 	[153] = 
 	{
 		
@@ -3529,6 +3627,38 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 821.7,
+				name = "[Tank] Voke",
+				timelineIndex = 156,
+				timerEndOffset = 100,
+				timerOffset = -8,
+				timerStartOffset = -100,
+				uuid = "b96864b7-27f8-1829-abaa-281114703c66",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							conditions = 
 							{
 								
@@ -3585,6 +3715,9 @@ local tbl =
 			},
 			inheritedIndex = 8,
 		},
+	},
+	[158] = 
+	{
 		
 		{
 			data = 
@@ -3596,26 +3729,24 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
 							variableTogglesType = 2,
 							version = 2,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
-				mechanicTime = 821.7,
-				name = "[Tank] Voke",
-				timelineIndex = 156,
-				timerEndOffset = 100,
-				timerOffset = -8,
-				timerStartOffset = -100,
-				uuid = "b96864b7-27f8-1829-abaa-281114703c66",
+				mechanicTime = 839,
+				name = "[Multi] Sprint",
+				timelineIndex = 158,
+				uuid = "d41cdf0c-3d4d-4d0f-80a1-4b9e247042ed",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[178] = 
