@@ -2460,6 +2460,40 @@ local tbl =
 			},
 		},
 	},
+	[99] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 607.1,
+				name = "[WAR] Enable CD",
+				timelineIndex = 99,
+				timerEndOffset = 45,
+				timerOffset = -2,
+				timerStartOffset = -5,
+				uuid = "18dd9588-2a0a-bb93-8439-f1ac878f06f8",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
 	[102] = 
 	{
 		
@@ -2731,7 +2765,6 @@ local tbl =
 				mechanicTime = 636.8,
 				name = "[Multi] Sprint",
 				timelineIndex = 112,
-				timerOffset = 2,
 				timerStartOffset = 2,
 				uuid = "2e13e634-c46b-2bc8-919e-92b9711cf6ee",
 				version = 2,
@@ -2820,7 +2853,6 @@ local tbl =
 				name = "[Multi] Enable Jump",
 				timelineIndex = 119,
 				timerEndOffset = 100,
-				timerOffset = -1,
 				timerStartOffset = -40,
 				uuid = "eadac03c-debe-31b9-ad38-00a3f6585f96",
 				version = 2,
@@ -2854,6 +2886,7 @@ local tbl =
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -3032,9 +3065,13 @@ local tbl =
 				conditions = 
 				{
 				},
+				eventType = 21,
 				mechanicTime = 661.6,
 				name = "[WAR] Enable CD",
+				timeRange = true,
 				timelineIndex = 122,
+				timerEndOffset = 45,
+				timerStartOffset = -5,
 				uuid = "1fbfa5f7-fa5f-591d-8594-8ddb278419d7",
 				version = 2,
 			},
@@ -3064,7 +3101,11 @@ local tbl =
 				eventType = 21,
 				mechanicTime = 661.6,
 				name = "[WAR] Enable Gauge",
+				timeRange = true,
 				timelineIndex = 122,
+				timerEndOffset = 45,
+				timerOffset = -5,
+				timerStartOffset = -5,
 				uuid = "7f9a68dd-d1a7-c8e2-b764-fc7edc4874c7",
 				version = 2,
 			},
@@ -3153,7 +3194,7 @@ local tbl =
 				name = "[Tank] Stance On",
 				timelineIndex = 130,
 				timerEndOffset = 60,
-				timerOffset = -10,
+				timerOffset = -7,
 				timerStartOffset = -60,
 				uuid = "fe01625b-6bca-a3ea-94e3-1a75f3115051",
 				version = 2,
@@ -3185,7 +3226,7 @@ local tbl =
 				name = "[Tank] Voke",
 				timelineIndex = 130,
 				timerEndOffset = 100,
-				timerOffset = -8,
+				timerOffset = -6,
 				timerStartOffset = -100,
 				uuid = "26ae79bf-7886-5618-b356-5cedb8fd4440",
 				version = 2,
@@ -3287,7 +3328,7 @@ local tbl =
 				mechanicTime = 743,
 				name = "[Multi] Sprint",
 				timelineIndex = 131,
-				timerOffset = 1,
+				timerOffset = 2,
 				timerStartOffset = 2,
 				uuid = "23e00fe9-b485-7cda-849c-8ef0614efd74",
 				version = 2,
