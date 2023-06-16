@@ -99,9 +99,11 @@ local tbl =
 				},
 				mechanicTime = 12.2,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 3,
+				timerEndOffset = 2,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "917b03e4-1cb9-1917-a016-12f22954995d",
 				version = 2,
 			},
@@ -162,6 +164,37 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 25,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 19.6,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 4,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "66dfc864-d0da-78a6-85b3-533a3b04833c",
+				version = 2,
+			},
+			inheritedIndex = 10,
 		},
 	},
 	[5] = 
@@ -227,7 +260,7 @@ local tbl =
 				mechanicTime = 25.3,
 				name = "[Tank] Reprisal",
 				timelineIndex = 5,
-				timerOffset = -4,
+				timerOffset = -2,
 				uuid = "8b0cc9f5-013e-a54e-81fe-78382a9e9d01",
 				version = 2,
 			},
@@ -375,9 +408,11 @@ local tbl =
 				},
 				mechanicTime = 47,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 7,
+				timerEndOffset = 2,
 				timerOffset = -2,
-				timerStartOffset = -1,
+				timerStartOffset = -2,
 				uuid = "e3d9a250-d0bb-11f3-a757-b219b4f2eb73",
 				version = 2,
 			},
@@ -639,9 +674,10 @@ local tbl =
 				},
 				mechanicTime = 81.1,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 16,
 				timerOffset = -5,
-				timerStartOffset = -1,
+				timerStartOffset = -5,
 				uuid = "e2564be7-faa6-54d6-b54c-9be6bb9503fe",
 				version = 2,
 			},
@@ -711,7 +747,7 @@ local tbl =
 				mechanicTime = 114.2,
 				name = "[Tank] Reprisal",
 				timelineIndex = 23,
-				timerOffset = -6,
+				timerOffset = -2,
 				uuid = "646f0cad-0a5c-2f7b-a417-58212e01863c",
 				version = 2,
 			},
@@ -997,9 +1033,11 @@ local tbl =
 				},
 				mechanicTime = 134,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 25,
+				timerEndOffset = 2,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "c1c6b384-c137-3a08-be35-496d70cdefbb",
 				version = 2,
 			},
@@ -1527,9 +1565,11 @@ local tbl =
 				},
 				mechanicTime = 266.2,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 69,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "beedcc9b-e402-6852-895a-ff98e856f68e",
 				version = 2,
 			},
@@ -1538,6 +1578,57 @@ local tbl =
 	},
 	[71] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR2_Tankbar_Vengeance",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 272.2,
+				name = "[WAR] Venge",
+				timelineIndex = 71,
+				timerOffset = -2,
+				uuid = "2b4d5774-9429-c4c3-9bc8-3b71e60f8f84",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
 		
 		{
 			data = 
@@ -1651,57 +1742,6 @@ local tbl =
 			},
 			inheritedIndex = 25,
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR2_Tankbar_Vengeance",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 272.2,
-				name = "[WAR] Venge",
-				timelineIndex = 71,
-				timerOffset = -2,
-				uuid = "2b4d5774-9429-c4c3-9bc8-3b71e60f8f84",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
 	},
 	[73] = 
 	{
@@ -1804,9 +1844,11 @@ local tbl =
 				},
 				mechanicTime = 289.1,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 74,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "a35f77d3-6e44-2e71-bac7-a2f276bc1a62",
 				version = 2,
 			},
@@ -1890,9 +1932,11 @@ local tbl =
 				},
 				mechanicTime = 325.7,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 80,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "fd2d67d7-629e-86e0-b5a8-1f671fba6fa6",
 				version = 2,
 			},
@@ -1992,6 +2036,37 @@ local tbl =
 			},
 			inheritedIndex = 16,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Potion",
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 341.3,
+				name = "[Multi] Enable Potion",
+				timelineIndex = 85,
+				timerEndOffset = 60,
+				timerOffset = -5,
+				timerStartOffset = -60,
+				uuid = "4eb61c08-c7c0-134b-87dc-db3cde7cd7ef",
+				version = 2,
+			},
+			inheritedIndex = 10,
+		},
 	},
 	[87] = 
 	{
@@ -2039,9 +2114,11 @@ local tbl =
 				},
 				mechanicTime = 355,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 87,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "dd001bf1-0c99-81aa-ae4c-96d6e0cb47b4",
 				version = 2,
 			},
@@ -2111,7 +2188,7 @@ local tbl =
 				mechanicTime = 374.2,
 				name = "[Tank] Reprisal",
 				timelineIndex = 90,
-				timerOffset = -7,
+				timerOffset = -2,
 				uuid = "ef13c595-9116-39d2-a2c1-ecac98d97dfe",
 				version = 2,
 			},
@@ -2316,9 +2393,11 @@ local tbl =
 				},
 				mechanicTime = 393.7,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 92,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "0383e2f4-8560-95c5-bae2-596495349e11",
 				version = 2,
 			},
@@ -2552,7 +2631,7 @@ local tbl =
 				uuid = "160f75c6-6acf-912b-aeaf-059012ea3b26",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 3,
 		},
 	},
 	[96] = 
@@ -2634,9 +2713,11 @@ local tbl =
 				},
 				mechanicTime = 426.2,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 104,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "ca55837e-207f-847d-a9f1-3e23731a97a3",
 				version = 2,
 			},
@@ -2735,9 +2816,10 @@ local tbl =
 				},
 				mechanicTime = 438.6,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 105,
 				timerOffset = -9,
-				timerStartOffset = -1,
+				timerStartOffset = -9,
 				uuid = "757b3a6c-785a-1d1e-9325-2f254fb11ffe",
 				version = 2,
 			},
@@ -2790,13 +2872,15 @@ local tbl =
 				},
 				mechanicTime = 470.3,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 115,
+				timerEndOffset = 2,
 				timerOffset = -5,
-				timerStartOffset = -1,
+				timerStartOffset = -5,
 				uuid = "6a8d213a-d9f4-8c08-907a-eff1e9dfe1a9",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 1,
 		},
 	},
 	[119] = 
@@ -2917,7 +3001,7 @@ local tbl =
 				mechanicTime = 486.1,
 				name = "[Tank] Reprisal",
 				timelineIndex = 120,
-				timerOffset = -5,
+				timerOffset = -2,
 				uuid = "c7d41da9-3138-69c4-8b29-e2639f8016c0",
 				version = 2,
 			},
@@ -3061,9 +3145,10 @@ local tbl =
 				},
 				mechanicTime = 508.2,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 124,
-				timerOffset = -3,
-				timerStartOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
 				uuid = "b57d8b58-e115-37c4-8c0b-6086898f8345",
 				version = 2,
 			},
@@ -3116,9 +3201,11 @@ local tbl =
 				},
 				mechanicTime = 513.5,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 126,
+				timerEndOffset = 2,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "570b1995-dbca-0cc0-a3e6-e42d2a91fd6e",
 				version = 2,
 			},
@@ -3330,9 +3417,11 @@ local tbl =
 				},
 				mechanicTime = 557.1,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 138,
+				timerEndOffset = 3,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -3,
 				uuid = "b660f71f-fefb-1ffd-bf21-24d33da889fb",
 				version = 2,
 			},
@@ -3457,7 +3546,7 @@ local tbl =
 				mechanicTime = 578.5,
 				name = "[Tank] Reprisal",
 				timelineIndex = 141,
-				timerOffset = -5,
+				timerOffset = -2,
 				uuid = "4cbcb317-796e-2cfd-a4ad-016a678436a8",
 				version = 2,
 			},
