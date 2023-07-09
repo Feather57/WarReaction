@@ -189,6 +189,36 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 26.1,
+				name = "[WAR] Holmgang",
+				timelineIndex = 4,
+				timerOffset = -4,
+				uuid = "252948c7-0995-eef0-87f5-6e6cdf27f04e",
+				version = 2,
+			},
+			inheritedIndex = 18,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							gVar = "ACR_RikuWAR2_Tankbar_ThrillOfBattle",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -276,71 +306,9 @@ local tbl =
 			},
 			inheritedIndex = 3,
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
-							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 26.1,
-				name = "[WAR] Holmgang",
-				timelineIndex = 4,
-				timerOffset = -4,
-				uuid = "252948c7-0995-eef0-87f5-6e6cdf27f04e",
-				version = 2,
-			},
-			inheritedIndex = 18,
-		},
 	},
 	[5] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 29.2,
-				name = "[Tank] Voke",
-				timelineIndex = 5,
-				timerEndOffset = 100,
-				timerOffset = 0.5,
-				timerStartOffset = -100,
-				uuid = "5085890f-3ff4-05db-9571-3ca9e0622d3a",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
 		
 		{
 			data = 
@@ -412,6 +380,38 @@ local tbl =
 			},
 			inheritedIndex = 24,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 29.2,
+				name = "[Tank] Voke",
+				timelineIndex = 5,
+				timerEndOffset = 100,
+				timerOffset = 0.5,
+				timerStartOffset = -100,
+				uuid = "5085890f-3ff4-05db-9571-3ca9e0622d3a",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 	},
 	[8] = 
 	{
@@ -457,13 +457,12 @@ local tbl =
 						},
 					},
 				},
-				eventType = 2,
 				mechanicTime = 61.7,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 8,
-				timerEndOffset = 20,
 				timerOffset = -5,
-				timerStartOffset = -20,
+				timerStartOffset = -5,
 				uuid = "7095819c-bf49-dabe-a738-25a4a2bce153",
 				version = 2,
 			},
@@ -550,7 +549,26 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Lua",
+							actionLua = "eventArgs.detectionTargetID = eventArgs.newTargetID\nself.used = true\n",
+							uuid = "cde07bb1-2afe-1874-9e6a-f80284f6f14d",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"fbb6254f-6974-ef99-9e1d-017bc0645718",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR2_Tankbar_Rampart",
 							uuid = "a2788e65-caa9-3aad-a71a-58ecd0c4101e",
 							variableTogglesType = 3,
@@ -565,10 +583,11 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return eventArgs.newTetherID == 249 and eventArgs.newTargetID == TensorCore.mGetPlayer().id\n",
-							uuid = "cc40b451-9ab1-3287-afbf-461aeec2f6e2",
+							conditionLua = "return eventArgs.newTetherID == 249 and IsTank(TensorCore.mGetEntity(eventArgs.newTargetID).job)",
+							uuid = "fbb6254f-6974-ef99-9e1d-017bc0645718",
 							version = 2,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				eventType = 15,
@@ -1976,6 +1995,36 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 380.2,
+				name = "[WAR] Holmgang",
+				timelineIndex = 48,
+				timerOffset = -4,
+				uuid = "a135255b-ab4d-e8b5-962c-671829bf25e7",
+				version = 2,
+			},
+			inheritedIndex = 18,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							gVar = "ACR_RikuWAR2_Tankbar_ThrillOfBattle",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -2062,36 +2111,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
-							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 380.2,
-				name = "[WAR] Holmgang",
-				timelineIndex = 48,
-				timerOffset = -4,
-				uuid = "a135255b-ab4d-e8b5-962c-671829bf25e7",
-				version = 2,
-			},
-			inheritedIndex = 18,
 		},
 	},
 	[49] = 
@@ -3214,6 +3233,36 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 619.5,
+				name = "[WAR] Holmgang",
+				timelineIndex = 81,
+				timerOffset = -4,
+				uuid = "28d65681-4875-20e0-8809-f955646e8811",
+				version = 2,
+			},
+			inheritedIndex = 18,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							gVar = "ACR_RikuWAR2_Tankbar_ThrillOfBattle",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -3301,71 +3350,9 @@ local tbl =
 			},
 			inheritedIndex = 3,
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Tankbar_Holmgang",
-							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 619.5,
-				name = "[WAR] Holmgang",
-				timelineIndex = 81,
-				timerOffset = -4,
-				uuid = "28d65681-4875-20e0-8809-f955646e8811",
-				version = 2,
-			},
-			inheritedIndex = 18,
-		},
 	},
 	[82] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 622.6,
-				name = "[Tank] Voke",
-				timelineIndex = 82,
-				timerEndOffset = 100,
-				timerOffset = 0.5,
-				timerStartOffset = -100,
-				uuid = "5ac703d5-1bbc-42dc-907a-015ede677f2a",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
 		
 		{
 			data = 
@@ -3436,6 +3423,38 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 24,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Provoke",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 622.6,
+				name = "[Tank] Voke",
+				timelineIndex = 82,
+				timerEndOffset = 100,
+				timerOffset = 0.5,
+				timerStartOffset = -100,
+				uuid = "5ac703d5-1bbc-42dc-907a-015ede677f2a",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[84] = 

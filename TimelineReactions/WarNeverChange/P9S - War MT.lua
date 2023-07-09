@@ -1138,7 +1138,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 146.4,
 				name = "[Multi] Disable Jumps",
 				timelineIndex = 26,
@@ -1203,7 +1202,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 168.7,
 				name = "[Multi] Enable Jumps",
 				timelineIndex = 35,
@@ -2030,7 +2028,7 @@ local tbl =
 				mechanicTime = 341.3,
 				name = "[Multi] Enable Jumps",
 				timelineIndex = 85,
-				timerOffset = 1,
+				timerOffset = 1.5,
 				uuid = "34ed30c3-8192-0cc3-8fbe-9b810fd40dfe",
 				version = 2,
 			},
