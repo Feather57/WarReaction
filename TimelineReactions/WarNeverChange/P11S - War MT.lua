@@ -466,7 +466,7 @@ local tbl =
 				uuid = "7095819c-bf49-dabe-a738-25a4a2bce153",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -601,6 +601,67 @@ local tbl =
 				uuid = "d52743dd-100d-c820-bd1e-e80c39938128",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 61.7,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 8,
+				timerOffset = -3,
+				uuid = "89a81a65-dce8-fe69-b69e-971dc6133cd4",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 61.7,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 8,
+				timerOffset = 1,
+				uuid = "ad55bf01-fb51-92cb-b83a-8fd99353dba6",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[13] = 
@@ -891,6 +952,67 @@ local tbl =
 			},
 			inheritedIndex = 22,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 120.4,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 16,
+				timerOffset = -3,
+				uuid = "453a2f57-e321-2661-9b7f-3ef32392f676",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 120.4,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 16,
+				timerOffset = 1,
+				uuid = "493a5689-5ab9-959b-8d5b-dbf8d6a547b3",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	},
 	[17] = 
 	{
@@ -1013,59 +1135,6 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR2_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 166.9,
-				name = "[Tank] Rampart",
-				timelineIndex = 21,
-				timerEndOffset = 20,
-				timerOffset = -10,
-				timerStartOffset = -20,
-				uuid = "e19efdb8-870e-b605-905b-9b2799ffad8a",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
 							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
 							variableTogglesType = 2,
@@ -1084,6 +1153,67 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 166.9,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 21,
+				timerOffset = -3,
+				uuid = "c00723a8-bba3-1c81-9760-b1cbc9920d71",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 166.9,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 21,
+				timerOffset = 1,
+				uuid = "2acfc035-5402-cf3e-813b-6b572fdd1cf2",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[22] = 
@@ -1122,6 +1252,7 @@ local tbl =
 				eventType = 15,
 				mechanicTime = 169.6,
 				name = "[WAR] Rampart",
+				throttleTime = 15000,
 				timeRange = true,
 				timelineIndex = 22,
 				timerEndOffset = 20,
@@ -1182,6 +1313,134 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 22,
+		},
+	},
+	[24] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 179.5,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 24,
+				timerOffset = -3,
+				uuid = "4fee0c68-100f-8bf4-95f0-6d74bcae75a8",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 179.5,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 24,
+				timerOffset = 1,
+				uuid = "4e47b660-0d5e-f2f8-b2cd-72f71567b773",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[27] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 189.2,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 27,
+				timerOffset = -3,
+				uuid = "4055bb45-92b1-a5aa-9ff1-08beed453e4e",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 189.2,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 27,
+				timerOffset = 1,
+				uuid = "4b75235e-b8bf-2a9f-b89d-c1e97b0f5061",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[29] = 
@@ -1346,6 +1605,70 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 22,
+		},
+	},
+	[33] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 240.1,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 33,
+				timerOffset = -3,
+				uuid = "207f2bcf-0e4d-5468-8eb9-e9c7ca7fe7ba",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 240.1,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 33,
+				timerOffset = 1,
+				uuid = "832a0eab-9c43-2654-9234-a89b6bec120d",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[34] = 
@@ -1641,6 +1964,67 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 271.2,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 36,
+				timerOffset = -3,
+				uuid = "77d521cd-55a4-4830-ab4b-fe37078448f6",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 271.2,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 36,
+				timerOffset = 1,
+				uuid = "6a6b7603-fa56-ca4f-b2e1-c20530d15c37",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	},
 	[39] = 
 	{
@@ -1750,6 +2134,131 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 22,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 323.1,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 42,
+				timerOffset = -3,
+				uuid = "76329d24-b9f3-ff8d-9c0b-574822c54d23",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 323.1,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 42,
+				timerOffset = 1,
+				uuid = "557c44dd-8e86-120f-bc4a-f0bc69131acb",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[44] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 341.5,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 44,
+				timerOffset = -3,
+				uuid = "bca29eb6-c05e-c4c8-8a4b-c2a6e9692442",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 341.5,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 44,
+				timerOffset = 1,
+				uuid = "4c1b4fb2-7f00-6fb4-b326-09d385789e18",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[46] = 
@@ -2516,6 +3025,67 @@ local tbl =
 			},
 			inheritedIndex = 22,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 446,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 56,
+				timerOffset = -3,
+				uuid = "210bf5cc-b125-335e-9ce1-bbefab5135f5",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 446,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 56,
+				timerOffset = 1,
+				uuid = "96f7fa12-9789-f67f-85d1-957650e7ad62",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	},
 	[59] = 
 	{
@@ -2570,6 +3140,67 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 22,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 466.2,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 59,
+				timerOffset = -3,
+				uuid = "7f24f394-b0df-e03c-aab8-8d0d0fb109b9",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 466.2,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 59,
+				timerOffset = 1,
+				uuid = "1d790566-25e5-46d9-bee5-41660a8c05e7",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[61] = 
@@ -2758,36 +3389,6 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 517.3,
-				name = "[Multi] Sprint",
-				timelineIndex = 64,
-				uuid = "e66f908e-1a19-e42f-a39b-545b5e1b1f7f",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
 							gVar = "ACR_RikuWAR2_Tankbar_Rampart",
 							uuid = "a2788e65-caa9-3aad-a71a-58ecd0c4101e",
 							variableTogglesType = 3,
@@ -2872,6 +3473,225 @@ local tbl =
 			},
 			inheritedIndex = 22,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 517.3,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 64,
+				timerOffset = -3,
+				uuid = "f3b87f84-479b-c82c-870c-3bf837edf2fe",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 517.3,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 64,
+				timerOffset = 1,
+				uuid = "c8a4f20b-e3fd-a0ea-aa19-da2b1f701bea",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 517.3,
+				name = "[Multi] Sprint",
+				timelineIndex = 64,
+				uuid = "e66f908e-1a19-e42f-a39b-545b5e1b1f7f",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
+	},
+	[68] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 529.5,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 68,
+				timerOffset = -3,
+				uuid = "8a850d71-e400-f7ed-b8e2-697f3aa42395",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 529.5,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 68,
+				timerOffset = 1,
+				uuid = "2a0eb2a5-4ce7-f886-b8dd-4f087c4e485b",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[72] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 541.8,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 72,
+				timerOffset = -3,
+				uuid = "d5d17e45-dbaf-fd4f-9621-186a37c8ed79",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 541.8,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 72,
+				timerOffset = 1,
+				uuid = "d2698335-7608-3f7f-88f1-ec5ec572d665",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	},
 	[73] = 
 	{
@@ -2932,6 +3752,67 @@ local tbl =
 				uuid = "bb937abd-901b-4ce2-b7a5-75fb414ec837",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 547.4,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 73,
+				timerOffset = -3,
+				uuid = "014e386b-2bd3-563c-b164-46519b5ffe8f",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 547.4,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 73,
+				timerOffset = 1,
+				uuid = "f4a55f7a-5311-f93e-839a-96d7bfa6a687",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[75] = 
@@ -3163,6 +4044,70 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 22,
+		},
+	},
+	[79] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 598.9,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 79,
+				timerOffset = -3,
+				uuid = "86eea674-9431-d49a-8671-53cc6639cdfb",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 598.9,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 79,
+				timerOffset = 1,
+				uuid = "96c9baaf-78c1-9bba-a6e5-c4203f20e8f2",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[80] = 
@@ -3455,6 +4400,70 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+	},
+	[83] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 638.7,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 83,
+				timerOffset = -3,
+				uuid = "b5758263-d99f-0cca-a57f-3a939e225067",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWAR2_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 638.7,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 83,
+				timerOffset = 1,
+				uuid = "2181d919-970e-2536-be0f-ccaf65379e08",
+				version = 2,
+			},
+			inheritedIndex = 16,
 		},
 	},
 	[84] = 
