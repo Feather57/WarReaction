@@ -45,7 +45,68 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 5.2,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 1,
+				uuid = "71bbb011-c508-e04d-8701-dedfbd4f7e50",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	}, 
+	[3] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 14.1,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 3,
+				timerOffset = -3,
+				uuid = "8814987e-355a-aa90-a0d9-229e06d0134c",
+				version = 2,
+			},
+		},
+	},
 	[4] = 
 	{
 		
@@ -96,6 +157,34 @@ local tbl =
 				timerEndOffset = 20,
 				timerStartOffset = -20,
 				uuid = "e4910bcd-0590-c2a1-b3ce-765b5efcaf46",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 17.1,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 4,
+				timerOffset = 1,
+				uuid = "faa9019f-98b6-cb0e-889e-9acdd948a768",
 				version = 2,
 			},
 		},
@@ -304,6 +393,39 @@ local tbl =
 			},
 		},
 	},
+	[10] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 49.4,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 10,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "32fb0d38-0c3c-c475-8dbf-6d5bffb15e2b",
+				version = 2,
+			},
+		},
+	},
 	[20] = 
 	{
 		
@@ -468,6 +590,98 @@ local tbl =
 				timerEndOffset = 20,
 				timerStartOffset = -20,
 				uuid = "53442c4f-d250-d056-8a8b-9d0a6e0baff7",
+				version = 2,
+			},
+		},
+	},
+	[26] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 101.6,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 26,
+				timerOffset = -3,
+				uuid = "c3a0af94-bd0b-486f-93e6-f91267be9f6f",
+				version = 2,
+			},
+		},
+	},
+	[27] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 104.5,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 27,
+				timerOffset = 1,
+				uuid = "4fb7fafa-67c7-2c1c-8683-158605c6889c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 104.5,
+				name = "[Multi] Sprint",
+				timelineIndex = 27,
+				timerOffset = -5,
+				uuid = "f7fe202a-2792-62f3-84b7-3b6bb3775b52",
 				version = 2,
 			},
 		},
@@ -881,6 +1095,166 @@ local tbl =
 			inheritedIndex = 4,
 		},
 	},
+	[57] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 240,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 57,
+				timerOffset = -30,
+				uuid = "c3e43626-018b-9566-8462-629e90f1d424",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[58] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 250.3,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 58,
+				timerOffset = -7,
+				uuid = "ac2e4d57-e180-8bc6-ad38-67d161323092",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[68] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 285.3,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 68,
+				timerOffset = -3,
+				uuid = "62f879dd-4c0f-9df5-a241-f1e18571c0be",
+				version = 2,
+			},
+		},
+	},
+	[69] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 288.2,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 69,
+				timerOffset = 1,
+				uuid = "0ab31fdf-7755-d7b6-8f3e-74afbb533be2",
+				version = 2,
+			},
+		},
+	},
+	[76] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 323.6,
+				name = "[Multi] Enable Potion",
+				timelineIndex = 76,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "abf4b815-d269-a1ad-bb28-6279c1115bed",
+				version = 2,
+			},
+		},
+	},
 	[81] = 
 	{
 		
@@ -924,6 +1298,133 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = 1,
 				uuid = "46cd2ffb-b4ba-69b1-a143-2bf650c730ab",
+				version = 2,
+			},
+		},
+	},
+	[84] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 352.4,
+				name = "[Multi] Sprint",
+				timelineIndex = 84,
+				timerOffset = -5,
+				uuid = "7ce91aff-f2a5-a2c6-9755-28d0dfa4928c",
+				version = 2,
+			},
+		},
+	},
+	[91] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 413.9,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 91,
+				timerOffset = -3,
+				uuid = "9b23aaa1-29d5-6751-ad36-78032e8a7fc8",
+				version = 2,
+			},
+		},
+	},
+	[92] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 416.7,
+				name = "[Multi] Sprint",
+				timelineIndex = 92,
+				timerOffset = -5,
+				uuid = "73d0ee23-98ad-2f93-aec6-df3c3c43e2b2",
+				version = 2,
+			},
+		},
+	},
+	[94] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 422.6,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 94,
+				timerOffset = 1,
+				uuid = "915f8f78-4e8c-5442-ba35-8eb36c43bc05",
 				version = 2,
 			},
 		},
@@ -1353,6 +1854,103 @@ local tbl =
 			},
 		},
 	},
+	[143] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 623.9,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 143,
+				timerOffset = -30,
+				uuid = "1348f2ed-a143-7ac1-9a6f-392ea90ceff2",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[144] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 634.2,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 144,
+				timerOffset = -6,
+				uuid = "9ce67b01-896b-7d5d-94dc-f8c6cd18ea2f",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+	},
+	[149] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 650.1,
+				name = "[Multi] Sprint",
+				timelineIndex = 149,
+				timerOffset = -5,
+				uuid = "ac42000f-bdb8-3af2-b9db-66e8c5d0c5b7",
+				version = 2,
+			},
+		},
+	},
 	[166] = 
 	{
 		
@@ -1547,7 +2145,7 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR2_Hotbar_ShirkOT",
+							gVar = "ACR_RikuWAR3_Hotbar_ShirkOT",
 							uuid = "fdf15d6f-ce3b-9d76-9582-6dae2747d8e0",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -1601,37 +2199,6 @@ local tbl =
 			{
 				actions = 
 				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Potion",
-							gVarValue = 2,
-							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				enabled = false,
-				mechanicTime = 721.8,
-				name = "[Multi] Disable Potion",
-				timelineIndex = 166,
-				timerEndOffset = 60,
-				timerStartOffset = -60,
-				uuid = "c22f542b-fa11-0d53-bff6-a94e874aa7ec",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
 				},
 				conditions = 
 				{
@@ -1655,7 +2222,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -1714,7 +2281,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_CD",
+							gVar = "ACR_RikuWAR3_CD",
 							gVarValue = 2,
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
@@ -1745,8 +2312,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_CD",
-							gVarValue = 2,
+							gVar = "ACR_RikuWAR3_CD",
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
 						},
@@ -1776,7 +2342,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_HoldGauge",
+							gVar = "ACR_RikuWAR3_HoldGauge",
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
 						},
@@ -1806,7 +2372,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_HoldGauge",
+							gVar = "ACR_RikuWAR3_HoldGauge",
 							gVarValue = 2,
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
@@ -1838,7 +2404,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Jumps",
+							gVar = "ACR_RikuWAR3_Jumps",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
 							version = 2.1,
@@ -1867,7 +2433,39 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Jumps",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 721.8,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 166,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "c22f542b-fa11-0d53-bff6-a94e874aa7ec",
+				version = 2,
+			},
+			inheritedIndex = 14,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
 							version = 2.1,
 						},
@@ -1883,6 +2481,65 @@ local tbl =
 				uuid = "6038da4b-0c05-c201-8508-c2dbc1ef1d3c",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 721.8,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 166,
+				uuid = "5e8344ab-da9b-4d9e-b309-b98ea19c391c",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 721.8,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 166,
+				uuid = "e217b3ee-a6a7-b64f-9751-030a7f42581a",
+				version = 2,
+			},
+			inheritedIndex = 17,
 		},
 		
 		{
@@ -2000,7 +2657,7 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							gVar = "ACR_RikuWAR3_Hotbar_ReleaseDefiance",
 							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -2358,6 +3015,7 @@ local tbl =
 				uuid = "e7c1bf9e-e7b4-39f3-bb6d-5aaba3704e39",
 				version = 2,
 			},
+			inheritedIndex = 28,
 		},
 	},
 	inheritedProfiles = 

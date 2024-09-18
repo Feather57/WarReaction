@@ -321,6 +321,39 @@ local tbl =
 			},
 		},
 	},
+	[11] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 52.4,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 11,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "d2802461-9abd-9e50-8ac4-d4e2d7e12a2e",
+				version = 2,
+			},
+		},
+	},
 	[12] = 
 	{
 		
@@ -1057,6 +1090,36 @@ local tbl =
 				timerOffset = 9,
 				timerStartOffset = 1,
 				uuid = "c38b5bc6-e1b3-f3a4-898b-b9d67baf538b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 305.3,
+				name = "[Multi] Enable Potion",
+				timelineIndex = 54,
+				timerEndOffset = 60,
+				timerOffset = 20,
+				timerStartOffset = -60,
+				uuid = "6e4e03e2-a2ed-1705-9962-ffa294a4e3a0",
 				version = 2,
 			},
 		},
@@ -1918,7 +1981,7 @@ local tbl =
 			},
 		},
 	},
-	[112] = 
+	[113] = 
 	{
 		
 		{
@@ -1933,8 +1996,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "----Tank Reaction List----",
-				timelineIndex = 112,
-				uuid = "89096541-09cb-c189-a83b-a8c495334c7d",
+				timelineIndex = 113,
+				uuid = "5f09c7a1-0984-6dcd-a781-24ea84880cf6",
 				version = 2,
 			},
 		},
@@ -1962,10 +2025,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Tank] Voke",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 100,
 				timerStartOffset = -100,
-				uuid = "c8962137-b908-fdbd-bb08-eef176d75390",
+				uuid = "3d073851-1663-dbfa-8fdf-09d5fab2e468",
 				version = 2,
 			},
 		},
@@ -2030,8 +2093,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Tank] Reprisal",
-				timelineIndex = 112,
-				uuid = "f61d9aeb-4a83-4247-abd6-a50378c44ee5",
+				timelineIndex = 113,
+				uuid = "cc76dbf0-07ea-2d5d-b9bf-e50686b83d14",
 				version = 2,
 			},
 		},
@@ -2080,10 +2143,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Tank] Rampart",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -20,
-				uuid = "316352d5-3b02-fb58-ba09-9648a2dc01f0",
+				uuid = "516bddfe-83e6-e885-ad89-903bbe96f9f7",
 				version = 2,
 			},
 		},
@@ -2153,10 +2216,10 @@ local tbl =
 				mechanicTime = 675.2,
 				name = "[Tank] Shirk",
 				timeRange = true,
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -10,
-				uuid = "71b41ddc-2b96-bb9d-afc3-d13fbfe1a1b3",
+				uuid = "b6c1aeed-dd11-7487-8165-57dc10d5f3bc",
 				version = 2,
 			},
 		},
@@ -2184,10 +2247,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Disable Potion",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 60,
 				timerStartOffset = -60,
-				uuid = "b58a5734-9a9a-e8f5-8f7b-60c9f77abd32",
+				uuid = "b7a2ae48-2cfc-d566-b61d-a4cc42d6ffda",
 				version = 2,
 			},
 		},
@@ -2204,8 +2267,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "----Universal Reaction List----",
-				timelineIndex = 112,
-				uuid = "27611e91-30d5-6887-8181-09ed921b3080",
+				timelineIndex = 113,
+				uuid = "e812591b-9d02-91e8-8b18-a0f0998ce546",
 				version = 2,
 			},
 		},
@@ -2220,7 +2283,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -2233,8 +2296,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Sprint",
-				timelineIndex = 112,
-				uuid = "e7aa37c9-40fa-a27e-be09-1a22532ff530",
+				timelineIndex = 113,
+				uuid = "caa6d5b7-de31-10e3-ba3f-5e656eeba79a",
 				version = 2,
 			},
 		},
@@ -2261,10 +2324,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Enable Potion",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 60,
 				timerStartOffset = -60,
-				uuid = "566103be-2810-3908-a618-acfe0faf4878",
+				uuid = "fb1da263-2596-d7cb-9d25-7897b7710fef",
 				version = 2,
 			},
 		},
@@ -2279,7 +2342,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_CD",
+							gVar = "ACR_RikuWAR3_CD",
 							gVarValue = 2,
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
@@ -2292,10 +2355,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Hold CD",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -20,
-				uuid = "cc5908ea-f8ac-380a-93e0-07ac66fc3e88",
+				uuid = "a696f6e6-4b25-b8ac-9b3c-706bc41727e0",
 				version = 2,
 			},
 		},
@@ -2310,8 +2373,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_CD",
-							gVarValue = 2,
+							gVar = "ACR_RikuWAR3_CD",
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
 						},
@@ -2323,10 +2385,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Enable CD",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 76,
 				timerStartOffset = -20,
-				uuid = "a4c28b06-79c1-84d8-8581-1785bcc59297",
+				uuid = "028a52de-d299-f03e-9e61-3a8730bcd088",
 				version = 2,
 			},
 		},
@@ -2341,7 +2403,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_HoldGauge",
+							gVar = "ACR_RikuWAR3_HoldGauge",
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
 						},
@@ -2353,10 +2415,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Hold Gauge",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -20,
-				uuid = "8b2d5a53-2684-c310-9dbb-73520dd25a21",
+				uuid = "6bb501dd-1446-a3f8-a866-a0900d04abbd",
 				version = 2,
 			},
 		},
@@ -2371,7 +2433,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_HoldGauge",
+							gVar = "ACR_RikuWAR3_HoldGauge",
 							gVarValue = 2,
 							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
 							version = 2.1,
@@ -2385,10 +2447,10 @@ local tbl =
 				eventType = 21,
 				mechanicTime = 675.2,
 				name = "[Multi] Enable Gauge",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 76,
 				timerStartOffset = -20,
-				uuid = "953d7969-df91-eb63-b613-5ee1d5c60c2e",
+				uuid = "7fcd6582-0ba2-e3af-bc41-e2d626950f21",
 				version = 2,
 			},
 		},
@@ -2403,7 +2465,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Jumps",
+							gVar = "ACR_RikuWAR3_Jumps",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
 							version = 2.1,
@@ -2416,8 +2478,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Disable Jumps",
-				timelineIndex = 112,
-				uuid = "d463a96f-1a3a-6ada-842a-4cfd296a1575",
+				timelineIndex = 113,
+				uuid = "1b51b4ce-70ad-c404-921e-a0d78666e1e6",
 				version = 2,
 			},
 		},
@@ -2432,7 +2494,7 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Jumps",
+							gVar = "ACR_RikuWAR3_Jumps",
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
 							version = 2.1,
 						},
@@ -2444,10 +2506,69 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[Multi] Enable Jumps",
-				timelineIndex = 112,
-				uuid = "a2e7b17f-1a26-1103-befe-7630c9751bba",
+				timelineIndex = 113,
+				uuid = "fc92c372-7704-4479-9052-9df85a1fd82c",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 675.2,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 113,
+				uuid = "99f5f983-5069-5852-ad02-66346af23d4c",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 675.2,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 113,
+				uuid = "5048f35f-8c6e-2d56-9430-a0a88df1e397",
+				version = 2,
+			},
+			inheritedIndex = 17,
 		},
 		
 		{
@@ -2462,8 +2583,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "----War Reaction List----",
-				timelineIndex = 112,
-				uuid = "a49c87f8-b7af-0db9-9d42-a39c1a0b0919",
+				timelineIndex = 113,
+				uuid = "dbbbabe4-9d56-d99c-a1a8-6fc98289299d",
 				version = 2,
 			},
 		},
@@ -2491,8 +2612,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Holmgang",
-				timelineIndex = 112,
-				uuid = "c48e1fae-3985-e740-ac20-2a398d6e31f1",
+				timelineIndex = 113,
+				uuid = "8de3467f-e813-e7be-ad7d-369caf49e9d5",
 				version = 2,
 			},
 		},
@@ -2539,10 +2660,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Stance On",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 60,
 				timerStartOffset = -60,
-				uuid = "487eed12-6cfb-d679-ab6b-4667580afd6e",
+				uuid = "e79db15b-f4fa-e060-aeaa-6d34a0d4e1e6",
 				version = 2,
 			},
 		},
@@ -2565,7 +2686,7 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							gVar = "ACR_RikuWAR3_Hotbar_ReleaseDefiance",
 							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -2588,10 +2709,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Stance Off",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 60,
 				timerStartOffset = -60,
-				uuid = "66ba8da3-fc3a-3b75-992f-179904ea86fc",
+				uuid = "02eca1c8-297d-01cf-a2a4-b4e9909d68ce",
 				version = 2,
 			},
 		},
@@ -2640,8 +2761,8 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Venge",
-				timelineIndex = 112,
-				uuid = "419ffcdd-2497-2eb6-b15d-386c2e7ab7dd",
+				timelineIndex = 113,
+				uuid = "84ba990a-071c-5901-a93d-c4f1cb0056da",
 				version = 2,
 			},
 		},
@@ -2690,9 +2811,9 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Whetting",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerStartOffset = -1,
-				uuid = "356048cd-452e-6185-854d-3256c173011f",
+				uuid = "901e8422-1e31-7228-96e2-a27d5cddeae3",
 				version = 2,
 			},
 		},
@@ -2733,10 +2854,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Thrill",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -20,
-				uuid = "a4d727e7-60b0-5161-ba55-b033845b1043",
+				uuid = "9b3319a5-2ae9-97ad-8cb1-f4c1a342a684",
 				version = 2,
 			},
 		},
@@ -2802,10 +2923,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Equilibrium",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -5,
-				uuid = "aa8fd6a1-42e9-ee49-985b-0f9ea8988dcd",
+				uuid = "1bd55f30-806c-bd98-9882-fe79fabbf514",
 				version = 2,
 			},
 		},
@@ -2833,10 +2954,10 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Dash",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerEndOffset = 20,
 				timerStartOffset = -20,
-				uuid = "d30ea729-bd45-0d34-86ea-71d3fb0b188d",
+				uuid = "65a596af-0545-a6f3-93a3-dedae4cf1f67",
 				version = 2,
 			},
 		},
@@ -2885,9 +3006,9 @@ local tbl =
 				},
 				mechanicTime = 675.2,
 				name = "[WAR] Shake",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerStartOffset = 1,
-				uuid = "7232a795-7d8a-266f-ade6-6482731afa27",
+				uuid = "602e64a5-ab22-007c-b2ee-785e0bff4f9f",
 				version = 2,
 			},
 		},
@@ -2918,11 +3039,12 @@ local tbl =
 				enabled = false,
 				mechanicTime = 675.2,
 				name = "[WAR] Nascent OT",
-				timelineIndex = 112,
+				timelineIndex = 113,
 				timerStartOffset = -40,
-				uuid = "ada7c76f-1ab0-9fbd-a872-da2454dca8b8",
+				uuid = "d210a081-6236-2fa8-8318-97abf60f0e27",
 				version = 2,
 			},
+			inheritedIndex = 28,
 		},
 	},
 	inheritedProfiles = 
