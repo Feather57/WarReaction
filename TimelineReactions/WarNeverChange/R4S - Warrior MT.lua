@@ -406,6 +406,58 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 30.9,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 4,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "ccb64753-8cb5-5520-853e-d1688004010b",
+				version = 2,
+			},
+		},
 	},
 	[5] = 
 	{
@@ -528,57 +580,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"a0535491-c925-616e-a047-9eac3d2311dc",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "b0890a62-f302-056f-8098-f97536b8b699",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 10,
-							uuid = "a0535491-c925-616e-a047-9eac3d2311dc",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 49.6,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 7,
-				timerEndOffset = 0.5,
-				timerOffset = 0.5,
-				timerStartOffset = 0.10000000149012,
-				uuid = "906864fe-7d39-bee5-91ae-7be6fcf07deb",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuWAR3_HoldOneJump",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
@@ -597,6 +598,113 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 17,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 49.6,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 7,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "74d21022-66c0-8208-a5e8-0b4a6e821957",
+				version = 2,
+			},
+		},
+	},
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 57.6,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 8,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "529dae5a-b267-1e98-b857-1d5166cc6ba2",
+				version = 2,
+			},
 		},
 	},
 	[9] = 
@@ -1344,16 +1452,15 @@ local tbl =
 							{
 								
 								{
-									"a0535491-c925-616e-a047-9eac3d2311dc",
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
 									true,
 								},
 							},
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "b0890a62-f302-056f-8098-f97536b8b699",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1364,19 +1471,21 @@ local tbl =
 						{
 							conditionType = 6,
 							inRangeValue = 5,
-							uuid = "a0535491-c925-616e-a047-9eac3d2311dc",
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
 							version = 2,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 179.9,
 				name = "[WAR] Dash",
+				throttleTime = 500,
 				timeRange = true,
 				timelineIndex = 32,
-				timerEndOffset = 0.5,
-				timerOffset = 0.5,
-				timerStartOffset = 0.10000000149012,
-				uuid = "99d8e47c-82fb-f18c-ac1c-6bd931f8e5b0",
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "e725be30-58bc-75bc-a6f4-c6e5259bc3a6",
 				version = 2,
 			},
 		},
@@ -1398,16 +1507,15 @@ local tbl =
 							{
 								
 								{
-									"a0535491-c925-616e-a047-9eac3d2311dc",
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
 									true,
 								},
 							},
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "b0890a62-f302-056f-8098-f97536b8b699",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1417,20 +1525,77 @@ local tbl =
 						data = 
 						{
 							conditionType = 6,
-							inRangeValue = 10,
-							uuid = "a0535491-c925-616e-a047-9eac3d2311dc",
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
 							version = 2,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 199.8,
 				name = "[WAR] Dash",
+				throttleTime = 500,
 				timeRange = true,
 				timelineIndex = 35,
-				timerEndOffset = 0.5,
-				timerOffset = 0.5,
-				timerStartOffset = 0.10000000149012,
-				uuid = "a26b3bc2-22d2-d27f-89e6-e233b0589cb5",
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "c0562ddc-bbb7-cb79-91b9-b761227f1557",
+				version = 2,
+			},
+		},
+	},
+	[37] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 221.6,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 37,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "7de97c15-4a30-70c8-85c0-b941e6af0a93",
 				version = 2,
 			},
 		},
@@ -2171,6 +2336,58 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 335.9,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 59,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "efb49768-14a3-f8c0-b63b-6170d1c9a123",
+				version = 2,
+			},
+		},
 	},
 	[64] = 
 	{
@@ -2222,6 +2439,61 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -1,
 				uuid = "cba32f2f-21b0-805c-b4ef-734b3be64e62",
+				version = 2,
+			},
+		},
+	},
+	[68] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 361.9,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 68,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "e9e46c10-52a5-59f5-a9b9-44bae75a041c",
 				version = 2,
 			},
 		},

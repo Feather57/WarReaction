@@ -465,12 +465,15 @@ local tbl =
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 48.7,
 				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
 				timelineIndex = 9,
-				timerEndOffset = 20,
+				timerEndOffset = 2,
 				timerOffset = 0.20000000298023,
-				timerStartOffset = -20,
+				timerStartOffset = 0.050000000745058,
 				uuid = "956e381d-9038-f5ca-95ce-9650da204a49",
 				version = 2,
 			},
@@ -622,6 +625,61 @@ local tbl =
 				timelineIndex = 17,
 				timerOffset = -5,
 				uuid = "c788520b-ff5a-0208-ac8d-724a3a709fb2",
+				version = 2,
+			},
+		},
+	},
+	[19] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 102.6,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 19,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "dd242da1-c121-e9e3-97c1-f4df903feec3",
 				version = 2,
 			},
 		},
@@ -835,11 +893,41 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 154.7,
+				name = "Hold 1 Jump [OFF]",
+				timeRange = true,
+				timelineIndex = 26,
+				timerStartOffset = 1,
+				uuid = "7a5a30b6-a092-4e86-ae2d-75dfb2404733",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"58312b28-c882-0df5-b820-71e49200cc5d",
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
 									true,
 								},
 							},
@@ -858,48 +946,21 @@ local tbl =
 						{
 							conditionType = 6,
 							inRangeValue = 5,
-							uuid = "58312b28-c882-0df5-b820-71e49200cc5d",
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
 							version = 2,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 154.7,
 				name = "[WAR] Dash",
-				timelineIndex = 26,
-				timerEndOffset = 20,
-				timerOffset = 0.20000000298023,
-				timerStartOffset = -20,
-				uuid = "a69ac888-3dce-4e82-b19b-1a00b1d017a2",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_HoldOneJump",
-							gVarValue = 2,
-							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 154.7,
-				name = "Hold 1 Jump [OFF]",
+				throttleTime = 500,
 				timeRange = true,
 				timelineIndex = 26,
-				timerStartOffset = 1,
-				uuid = "7a5a30b6-a092-4e86-ae2d-75dfb2404733",
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "94f3dcf3-40ab-83e4-b383-601013318e98",
 				version = 2,
 			},
 		},
@@ -1297,11 +1358,41 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 278,
+				name = "Hold 1 Jump [OFF]",
+				timeRange = true,
+				timelineIndex = 48,
+				timerStartOffset = 1,
+				uuid = "1689b133-4684-6308-8ce1-a69d10442899",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"0b1f34b2-c41e-0446-a5e4-d4c8d6cfbf9f",
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
 									true,
 								},
 							},
@@ -1320,48 +1411,21 @@ local tbl =
 						{
 							conditionType = 6,
 							inRangeValue = 5,
-							uuid = "0b1f34b2-c41e-0446-a5e4-d4c8d6cfbf9f",
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
 							version = 2,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 278,
 				name = "[WAR] Dash",
-				timelineIndex = 48,
-				timerEndOffset = 20,
-				timerOffset = 0.20000000298023,
-				timerStartOffset = -20,
-				uuid = "7c7a7dd6-5177-439f-a4c6-4212c4d2769e",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_HoldOneJump",
-							gVarValue = 2,
-							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 278,
-				name = "Hold 1 Jump [OFF]",
+				throttleTime = 500,
 				timeRange = true,
 				timelineIndex = 48,
-				timerStartOffset = 1,
-				uuid = "1689b133-4684-6308-8ce1-a69d10442899",
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "47d58190-5a94-3c08-9797-0e1576790f99",
 				version = 2,
 			},
 		},
@@ -1843,41 +1907,11 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_HoldOneJump",
-							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 470.2,
-				name = "Hold 1 Jump [ON]",
-				timeRange = true,
-				timelineIndex = 74,
-				timerStartOffset = -15,
-				uuid = "64d63566-6a70-648d-ba91-783237c07b7f",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"a6b44a7d-2b1c-8574-9a5b-36e522ba553b",
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
 									true,
 								},
 							},
@@ -1896,20 +1930,54 @@ local tbl =
 						{
 							conditionType = 6,
 							inRangeValue = 5,
-							uuid = "a6b44a7d-2b1c-8574-9a5b-36e522ba553b",
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
 							version = 2,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 470.2,
 				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
 				timelineIndex = 74,
-				timerEndOffset = 20,
+				timerEndOffset = 2,
 				timerOffset = 0.20000000298023,
-				timerStartOffset = -20,
-				uuid = "7212474a-a937-8fe1-9d4b-e0c79813fb34",
+				timerStartOffset = 0.050000000745058,
+				uuid = "f0fb1bdf-c577-dc87-b00f-77d4f9f3c9e2",
 				version = 2,
 			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "Hold 1 Jump [ON]",
+				timeRange = true,
+				timelineIndex = 74,
+				timerStartOffset = -15,
+				uuid = "64d63566-6a70-648d-ba91-783237c07b7f",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
