@@ -12,6 +12,56 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				name = "[WAR] Stance On",
+				timelineIndex = 1,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "1df215d0-23df-37ee-9a7a-367788698be7",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Lua",
 							actionLua = "gStartCombat = false\nself.used = true",
 							conditions = 
@@ -115,7 +165,7 @@ local tbl =
 				uuid = "d25d9dec-4708-1ea9-8a99-d4b5c818f6e6",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
 		},
 	}, 
 	[3] = 

@@ -6,194 +6,6 @@ local tbl =
 		{
 			data = 
 			{
-				name = "Disable Duty Helper",
-				uuid = "6f979a14-4c64-de7e-9369-ad61ddbaad57",
-				version = 2,
-			},
-			inheritedObjectUUID = "049d88e9-5701-be1d-b49e-e2c1e683f632",
-			inheritedOverwrites = 
-			{
-				timerOffset = -3.4000000953674,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"8c152092-5b35-2750-8a7c-ee5aba7515a5",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 30,
-							uuid = "8c152092-5b35-2750-8a7c-ee5aba7515a5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 3.4,
-				name = "[WAR] Whetting",
-				timeRange = true,
-				timelineIndex = 1,
-				timerStartOffset = -1,
-				uuid = "d8fad0f1-5163-4129-af13-06dc8eb02531",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Potion",
-							gVarValue = 2,
-							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 3.4,
-				name = "[Multi] Disable Potion",
-				timelineIndex = 1,
-				timerOffset = -3.4000000953674,
-				uuid = "fd9f1abc-b9ee-5e37-8db7-801141fa8b89",
-				version = 2,
-			},
-			inheritedIndex = 6,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_SmartAOE",
-							gVarValue = 2,
-							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 3.4,
-				name = "[Multi] Disable Smart AOE",
-				timelineIndex = 1,
-				timerOffset = -3.4000000953674,
-				uuid = "e0c0c5b8-335d-e72b-a59d-2b2e2a84d6a3",
-				version = 2,
-			},
-			inheritedIndex = 7,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 3.4,
-				name = "[WAR] Venge",
-				timelineIndex = 1,
-				timerOffset = -3,
-				uuid = "96d02e93-0245-a2c7-ac6f-6a32b95622e9",
-				version = 2,
-			},
-			inheritedIndex = 8,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "94d955fa-a70a-6c44-91ba-3f626b30f9da",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				enabled = false,
-				mechanicTime = 3.4,
-				name = "[WAR] Rampart",
-				timelineIndex = 1,
-				timerOffset = -2,
-				uuid = "86fa10a5-4c90-797f-b988-155c71526d1c",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -305,6 +117,273 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 3.4,
+				name = "[WAR] Stance On",
+				timelineIndex = 1,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "117c0b2d-ad77-1fff-ae06-fb89a1e15391",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8c152092-5b35-2750-8a7c-ee5aba7515a5",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 30,
+							uuid = "8c152092-5b35-2750-8a7c-ee5aba7515a5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 3.4,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 1,
+				timerStartOffset = -1,
+				uuid = "d8fad0f1-5163-4129-af13-06dc8eb02531",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 3.4,
+				name = "[WAR] Venge",
+				timelineIndex = 1,
+				timerOffset = -3,
+				uuid = "96d02e93-0245-a2c7-ac6f-6a32b95622e9",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "94d955fa-a70a-6c44-91ba-3f626b30f9da",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 3.4,
+				name = "[WAR] Rampart",
+				timelineIndex = 1,
+				timerOffset = -2,
+				uuid = "86fa10a5-4c90-797f-b988-155c71526d1c",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 3.4,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 1,
+				timerOffset = -3.4000000953674,
+				uuid = "fd9f1abc-b9ee-5e37-8db7-801141fa8b89",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_SmartAOE",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 3.4,
+				name = "[Multi] Disable Smart AOE",
+				timelineIndex = 1,
+				timerOffset = -3.4000000953674,
+				uuid = "e0c0c5b8-335d-e72b-a59d-2b2e2a84d6a3",
+				version = 2,
+			},
+			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				name = "Disable Duty Helper",
+				uuid = "6f979a14-4c64-de7e-9369-ad61ddbaad57",
+				version = 2,
+			},
+			inheritedObjectUUID = "049d88e9-5701-be1d-b49e-e2c1e683f632",
+			inheritedOverwrites = 
+			{
+				timerOffset = -3.4000000953674,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "[RPR] Force Pot",
+				uuid = "5ce3a7ff-d7e8-03ef-b62f-541d77b12d68",
+				version = 2,
+			},
+			inheritedObjectUUID = "e6fe55ff-72fe-22d9-a2da-b5cf0744a0c2",
+			inheritedOverwrites = 
+			{
+				timerStartOffset = -3.4000000953674,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "Draw Cardinal Directions",
+				uuid = "5ef93e91-2d30-bf3c-ad97-825eeb03e493",
+				version = 2,
+			},
+			inheritedIndex = 14,
+			inheritedObjectUUID = "a2e7d0d8-6ccb-92d2-b837-9fe050ff0561",
+			inheritedOverwrites = 
+			{
+			},
 		},
 	}, 
 	[3] = 

@@ -81,189 +81,7 @@ local tbl =
 				uuid = "8d58e454-b64b-2683-9108-f2af2ae88659",
 				version = 2,
 			},
-			inheritedIndex = 8,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"84c28b09-89b7-d643-9096-a3c34c497a07",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
-							version = 2,
-						},
-					},
-				},
-				name = "[WAR] Stance On",
-				timelineIndex = 1,
-				timerEndOffset = 60,
-				timerStartOffset = -60,
-				uuid = "e5b90710-38db-0b28-ac82-6e0120c11ca8",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-								
-								{
-									"cbd1f371-0574-dc72-b2bd-5eb31c08637a",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 3632,
-							name = "Target Thordan",
-							uuid = "cbd1f371-0574-dc72-b2bd-5eb31c08637a",
-							version = 2,
-						},
-					},
-				},
-				name = "[WAR] Venge",
-				timelineIndex = 1,
-				timerOffset = 1,
-				uuid = "fd7cee8a-9c42-e526-a65e-66a599b46e4c",
-				version = 2,
-			},
-			inheritedIndex = 10,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-								
-								{
-									"3cdb600e-97b6-b354-bba2-db62b9be9ce3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 3632,
-							name = "Target Thordan",
-							uuid = "3cdb600e-97b6-b354-bba2-db62b9be9ce3",
-							version = 2,
-						},
-					},
-				},
-				name = "[WAR] Whetting",
-				timelineIndex = 1,
-				timerOffset = 7.5,
-				timerStartOffset = -1,
-				uuid = "1a67b5d8-0ccd-6501-9e48-a3846e6aae42",
-				version = 2,
-			},
-			inheritedIndex = 11,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -378,7 +196,190 @@ local tbl =
 				uuid = "1c2364ff-d7b1-2a2c-b579-dc27ab8a2e60",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				name = "[WAR] Stance On",
+				timelineIndex = 1,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "2282772b-c355-376e-926b-14b890981346",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+								
+								{
+									"cbd1f371-0574-dc72-b2bd-5eb31c08637a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 3632,
+							name = "Target Thordan",
+							uuid = "cbd1f371-0574-dc72-b2bd-5eb31c08637a",
+							version = 2,
+						},
+					},
+				},
+				name = "[WAR] Venge",
+				timelineIndex = 1,
+				timerOffset = 1,
+				uuid = "fd7cee8a-9c42-e526-a65e-66a599b46e4c",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"3cdb600e-97b6-b354-bba2-db62b9be9ce3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 3632,
+							name = "Target Thordan",
+							uuid = "3cdb600e-97b6-b354-bba2-db62b9be9ce3",
+							version = 2,
+						},
+					},
+				},
+				name = "[WAR] Whetting",
+				timelineIndex = 1,
+				timerOffset = 7.5,
+				timerStartOffset = -1,
+				uuid = "1a67b5d8-0ccd-6501-9e48-a3846e6aae42",
+				version = 2,
+			},
+			inheritedIndex = 5,
 		},
 	},
 	

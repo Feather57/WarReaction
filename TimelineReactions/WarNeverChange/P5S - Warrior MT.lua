@@ -12,171 +12,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "3459c470-fc49-8d95-87c2-2a1da3ae9813",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 14.9,
-				name = "Thrill",
-				timeRange = true,
-				timelineIndex = 2,
-				timerEndOffset = 5,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "18fc8e92-f421-3a4d-b7e0-a7ab12b2e8f7",
-				version = 2,
-			},
-			inheritedIndex = 13,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"66e90692-50fb-bb62-bc11-0beb9680ef5f",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "33835ea0-6f78-cb1a-a209-124f03419a0c",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 15,
-							minTargetPercent = true,
-							partyTargetNumber = 100,
-							partyTargetSubType = "Number",
-							uuid = "66e90692-50fb-bb62-bc11-0beb9680ef5f",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 14.9,
-				name = "Shake + Party Range Check",
-				timeRange = true,
-				timelineIndex = 2,
-				timerEndOffset = 8,
-				timerStartOffset = 1,
-				uuid = "98031d6c-3053-4465-8445-864832888898",
-				version = 2,
-			},
-			inheritedIndex = 14,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"945979c4-17ca-f2b9-8e7f-8a95313576ee",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "945979c4-17ca-f2b9-8e7f-8a95313576ee",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 14.9,
-				name = "MT Stance On",
-				timelineIndex = 2,
-				timerOffset = -14,
-				uuid = "7f3b6e19-a36f-028b-bfc0-3fed9585fe37",
-				version = 2,
-			},
-			inheritedIndex = 22,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tomahawk",
-							uuid = "151f6627-41c5-a67c-9e41-8e7236f5d1b7",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 14.9,
-				name = "Tomahawk On",
-				timelineIndex = 2,
-				timerOffset = -10,
-				uuid = "4e36d926-8165-ce24-9e2e-bfa6a5236196",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "Lua",
 							actionLua = "gStartCombat = false\nself.used = true",
 							conditions = 
@@ -282,6 +117,222 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 14.9,
+				name = "[WAR] Stance On",
+				timelineIndex = 2,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "686b4689-3ff8-dbdd-9fb8-1e6bb0139e27",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "3459c470-fc49-8d95-87c2-2a1da3ae9813",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 14.9,
+				name = "Thrill",
+				timeRange = true,
+				timelineIndex = 2,
+				timerEndOffset = 5,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "18fc8e92-f421-3a4d-b7e0-a7ab12b2e8f7",
+				version = 2,
+			},
+			inheritedIndex = 14,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"66e90692-50fb-bb62-bc11-0beb9680ef5f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+							uuid = "33835ea0-6f78-cb1a-a209-124f03419a0c",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 15,
+							minTargetPercent = true,
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "66e90692-50fb-bb62-bc11-0beb9680ef5f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 14.9,
+				name = "Shake + Party Range Check",
+				timeRange = true,
+				timelineIndex = 2,
+				timerEndOffset = 8,
+				timerStartOffset = 1,
+				uuid = "98031d6c-3053-4465-8445-864832888898",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"945979c4-17ca-f2b9-8e7f-8a95313576ee",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "945979c4-17ca-f2b9-8e7f-8a95313576ee",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 14.9,
+				name = "MT Stance On",
+				timelineIndex = 2,
+				timerOffset = -14,
+				uuid = "7f3b6e19-a36f-028b-bfc0-3fed9585fe37",
+				version = 2,
+			},
+			inheritedIndex = 23,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "151f6627-41c5-a67c-9e41-8e7236f5d1b7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 14.9,
+				name = "Tomahawk On",
+				timelineIndex = 2,
+				timerOffset = -10,
+				uuid = "4e36d926-8165-ce24-9e2e-bfa6a5236196",
+				version = 2,
+			},
 		},
 	},
 	[3] = 

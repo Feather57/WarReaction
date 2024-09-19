@@ -314,117 +314,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25751,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "29172b1d-6ffa-12bd-aea9-4d54aa1188ae",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 26.3,
-				name = "Whetting",
-				timelineIndex = 2,
-				timerOffset = -4,
-				uuid = "cfae1037-0d9f-9423-bf12-ffe5631ea188",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 26.3,
-				name = "Venge",
-				timelineIndex = 2,
-				timerOffset = -14,
-				uuid = "a9d8e246-e88a-8fd3-851c-9526949c2a98",
-				version = 2,
-			},
-			inheritedIndex = 11,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"8c152092-5b35-2750-8a7c-ee5aba7515a5",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "8c152092-5b35-2750-8a7c-ee5aba7515a5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 26.3,
-				name = "Equilibrium+CD Check",
-				timelineIndex = 2,
-				timerOffset = 2,
-				uuid = "3dd4f166-930d-6fea-a5b2-c67e48f427e1",
-				version = 2,
-			},
-			inheritedIndex = 15,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "Lua",
 							actionLua = "gStartCombat = false\nself.used = true",
 							conditions = 
@@ -530,6 +419,168 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 26.3,
+				name = "[WAR] Stance On",
+				timelineIndex = 2,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "39d0e29f-50df-814f-8499-6dedf93f73c6",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "29172b1d-6ffa-12bd-aea9-4d54aa1188ae",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 26.3,
+				name = "Whetting",
+				timelineIndex = 2,
+				timerOffset = -4,
+				uuid = "cfae1037-0d9f-9423-bf12-ffe5631ea188",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 26.3,
+				name = "Venge",
+				timelineIndex = 2,
+				timerOffset = -14,
+				uuid = "a9d8e246-e88a-8fd3-851c-9526949c2a98",
+				version = 2,
+			},
+			inheritedIndex = 11,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"8c152092-5b35-2750-8a7c-ee5aba7515a5",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8c152092-5b35-2750-8a7c-ee5aba7515a5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 26.3,
+				name = "Equilibrium+CD Check",
+				timelineIndex = 2,
+				timerOffset = 2,
+				uuid = "3dd4f166-930d-6fea-a5b2-c67e48f427e1",
+				version = 2,
+			},
+			inheritedIndex = 15,
 		},
 	}, 
 	[6] = 

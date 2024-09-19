@@ -17,66 +17,13 @@ local tbl =
 							{
 								
 								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
-						},
-					},
-				},
-				name = "[WAR] Shake",
-				timelineIndex = 1,
-				timerOffset = -1,
-				timerStartOffset = 1,
-				uuid = "94f0599a-7235-a4c0-b81e-ab9818009c8d",
-				version = 2,
-			},
-			inheritedIndex = 26,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -87,23 +34,23 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 44,
+							buffCheckType = 2,
+							buffID = 91,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
 							version = 2,
 						},
 					},
 				},
-				name = "[WAR] Venge",
+				eventType = 16,
+				name = "[WAR] Stance On",
 				timelineIndex = 1,
-				timerOffset = 1,
-				uuid = "97468b91-f8a7-b01d-8da6-ccf30f537b97",
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "37f41fb0-43c5-71da-a6c2-74b4fb72bd12",
 				version = 2,
 			},
-			inheritedIndex = 21,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -218,7 +165,110 @@ local tbl =
 				uuid = "921f268a-6404-d0ed-b16e-b5134d06688e",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+				},
+				name = "[WAR] Shake",
+				timelineIndex = 1,
+				timerOffset = -1,
+				timerStartOffset = 1,
+				uuid = "94f0599a-7235-a4c0-b81e-ab9818009c8d",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+				},
+				name = "[WAR] Venge",
+				timelineIndex = 1,
+				timerOffset = 1,
+				uuid = "97468b91-f8a7-b01d-8da6-ccf30f537b97",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	}, 
 	[4] = 

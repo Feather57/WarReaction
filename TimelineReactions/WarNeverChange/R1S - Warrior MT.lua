@@ -68,6 +68,17 @@ local tbl =
 							version = 2.1,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorACR_HotbarCancel",
+							uuid = "76f9ccd9-db15-e9ed-99ff-ab9522e23605",
+							variableTogglesType = 2,
+							version = 2,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -117,6 +128,57 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 5.2,
+				name = "[WAR] Stance On",
+				timelineIndex = 1,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "515effd7-04ef-5dbb-849b-1b662a37a995",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{

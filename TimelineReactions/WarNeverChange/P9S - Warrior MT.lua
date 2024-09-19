@@ -13,9 +13,17 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "89628319-5e5e-5294-8e9a-32afa608e278",
-							variableTogglesType = 3,
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -26,23 +34,23 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 44,
+							buffCheckType = 2,
+							buffID = 91,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
 							version = 2,
 						},
 					},
 				},
-				name = "[WAR] Venge",
+				eventType = 16,
+				name = "[WAR] Stance On",
 				timelineIndex = 1,
-				timerOffset = 1,
-				uuid = "755d121f-3f53-e4ff-9958-830fe94266d0",
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "a0e2a1fd-e6f1-d8ed-bf4a-181433bcb560",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -157,7 +165,49 @@ local tbl =
 				uuid = "0e9dc0cc-1df6-82a2-baf9-b0a1435f64e2",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "89628319-5e5e-5294-8e9a-32afa608e278",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+				},
+				name = "[WAR] Venge",
+				timelineIndex = 1,
+				timerOffset = 1,
+				uuid = "755d121f-3f53-e4ff-9958-830fe94266d0",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 	}, 
 	[3] = 

@@ -17,13 +17,13 @@ local tbl =
 							{
 								
 								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -34,25 +34,24 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
 							version = 2,
 						},
 					},
 				},
+				eventType = 16,
 				mechanicTime = 10.6,
-				name = "[WAR] Shake",
+				name = "[WAR] Stance On",
 				timelineIndex = 1,
-				timerOffset = -5,
-				timerStartOffset = 1,
-				uuid = "d4d20e31-eb97-718c-a8cd-13cc96b5f0b8",
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "e4a83beb-f5c7-dd6a-83f9-683bc3a32eeb",
 				version = 2,
 			},
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -168,7 +167,60 @@ local tbl =
 				uuid = "590e7110-7bff-1e23-8f7b-396198ebb45c",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 10.6,
+				name = "[WAR] Shake",
+				timelineIndex = 1,
+				timerOffset = -5,
+				timerStartOffset = 1,
+				uuid = "d4d20e31-eb97-718c-a8cd-13cc96b5f0b8",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 	}, 
 	[11] = 

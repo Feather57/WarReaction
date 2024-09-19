@@ -6,15 +6,52 @@ local tbl =
 		{
 			data = 
 			{
-				name = "Label Fuses",
-				uuid = "d4668f58-61b8-607f-8431-76688ebe9028",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
+							version = 2,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 6.8,
+				name = "[WAR] Stance On",
+				timelineIndex = 1,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "85d9ef66-2015-784a-b059-04d84a77ea11",
 				version = 2,
 			},
-			inheritedIndex = 9,
-			inheritedObjectUUID = "df71c520-b44f-9522-90c0-dd81187b090c",
-			inheritedOverwrites = 
-			{
-			},
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -130,7 +167,21 @@ local tbl =
 				uuid = "c2654db0-6d4d-964e-9eb4-d856c6b6ec3a",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				name = "Label Fuses",
+				uuid = "d4668f58-61b8-607f-8431-76688ebe9028",
+				version = 2,
+			},
+			inheritedIndex = 10,
+			inheritedObjectUUID = "df71c520-b44f-9522-90c0-dd81187b090c",
+			inheritedOverwrites = 
+			{
+			},
 		},
 	},
 	

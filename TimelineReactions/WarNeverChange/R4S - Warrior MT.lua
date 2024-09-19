@@ -17,13 +17,13 @@ local tbl =
 							{
 								
 								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									"84c28b09-89b7-d643-9096-a3c34c497a07",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -34,55 +34,24 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 25751,
+							buffCheckType = 2,
+							buffID = 91,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
 							version = 2,
 						},
 					},
 				},
+				eventType = 16,
 				mechanicTime = 10.6,
-				name = "[WAR] Whetting",
-				timeRange = true,
+				name = "[WAR] Stance On",
 				timelineIndex = 1,
-				timerEndOffset = 4,
-				timerOffset = -3,
-				timerStartOffset = -4,
-				uuid = "c73e4689-2b1a-06c9-9f5e-212acf6df732",
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "4674208b-e625-94f1-b74f-aac3fe640e95",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_HoldOneJump",
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 10.6,
-				name = "[Multi] Hold 1 Jumps On",
-				timelineIndex = 1,
-				timerOffset = -3,
-				uuid = "6b048386-604c-19d1-8f64-606910b713c7",
-				version = 2,
-			},
-			inheritedIndex = 16,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -198,7 +167,90 @@ local tbl =
 				uuid = "bf5d6bd7-f651-d2f9-a3b9-2f40dac8440f",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 10.6,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 4,
+				timerOffset = -3,
+				timerStartOffset = -4,
+				uuid = "c73e4689-2b1a-06c9-9f5e-212acf6df732",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 10.6,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 1,
+				timerOffset = -3,
+				uuid = "6b048386-604c-19d1-8f64-606910b713c7",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	},
 	
