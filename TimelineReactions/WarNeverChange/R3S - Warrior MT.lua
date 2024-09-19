@@ -407,6 +407,68 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 48.7,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 9,
+				timerOffset = -1,
+				uuid = "d6e61ef8-b0c3-9877-b8ef-ccc0199bc31e",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 48.7,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 9,
+				timerOffset = -1,
+				uuid = "a86ff613-f80e-7ae9-9fce-7a49db8678ff",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_HoldOneJump",
 							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
 							version = 2.1,
@@ -424,7 +486,7 @@ local tbl =
 				uuid = "8a1678be-fb3f-5405-a021-0d70a6d36812",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -505,6 +567,64 @@ local tbl =
 				timelineIndex = 9,
 				timerStartOffset = 1,
 				uuid = "39c924db-bd49-7312-aad0-40cc598c8e89",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 48.7,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 9,
+				timerOffset = 6,
+				uuid = "72800bec-2828-76fc-b238-5a56577a353a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 48.7,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 9,
+				timerOffset = 6,
+				uuid = "4ee7f0c6-1eb9-7780-aae1-15752e88507e",
 				version = 2,
 			},
 		},
@@ -863,6 +983,68 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 154.7,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 26,
+				timerOffset = -1,
+				uuid = "5d51a26a-ac84-50ee-ab1a-79ffe3afef50",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 154.7,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 26,
+				timerOffset = -1,
+				uuid = "812e49bd-1cd8-068b-a8d9-fa4350e3178e",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_HoldOneJump",
 							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
 							version = 2.1,
@@ -880,7 +1062,7 @@ local tbl =
 				uuid = "2fcdc434-e114-b2dd-a67f-3b12647e7172",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -961,6 +1143,64 @@ local tbl =
 				timerOffset = 0.20000000298023,
 				timerStartOffset = 0.050000000745058,
 				uuid = "94f3dcf3-40ab-83e4-b383-601013318e98",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 154.7,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 26,
+				timerOffset = 6,
+				uuid = "c1338b6f-c181-556f-b19c-96aa1ea0a8e1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 154.7,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 26,
+				timerOffset = 6,
+				uuid = "56817c07-887d-ebd7-b4d7-a5cc6f08e479",
 				version = 2,
 			},
 		},
@@ -1328,6 +1568,68 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 278,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 48,
+				timerOffset = -1,
+				uuid = "77d85e55-99cc-9325-94b8-e7bb5ceca4b9",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 278,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 48,
+				timerOffset = -1,
+				uuid = "e76503a6-61ff-98d3-ae5c-66bd6ec4beda",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_HoldOneJump",
 							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
 							version = 2.1,
@@ -1345,7 +1647,7 @@ local tbl =
 				uuid = "e872f7fd-d877-5e22-8568-6b5bea2edce2",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -1426,6 +1728,64 @@ local tbl =
 				timerOffset = 0.20000000298023,
 				timerStartOffset = 0.050000000745058,
 				uuid = "47d58190-5a94-3c08-9797-0e1576790f99",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 278,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 48,
+				timerOffset = 6,
+				uuid = "4d6c92ea-f194-1215-b8f2-702aec45aaab",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 278,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 48,
+				timerOffset = 6,
+				uuid = "b84e4fbd-afc4-3d37-b83f-f96061b828ae",
 				version = 2,
 			},
 		},
@@ -1907,6 +2267,98 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "[Multi] Hold 1 Jump ON",
+				timeRange = true,
+				timelineIndex = 74,
+				timerStartOffset = -15,
+				uuid = "64d63566-6a70-648d-ba91-783237c07b7f",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 74,
+				timerOffset = -1,
+				uuid = "a0012969-94d7-1df6-a9b8-d8a6c8a1a5ae",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 74,
+				timerOffset = -1,
+				uuid = "6f1e9a7a-4dfd-0002-b207-8edf42d018a1",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
@@ -1947,37 +2399,7 @@ local tbl =
 				uuid = "f0fb1bdf-c577-dc87-b00f-77d4f9f3c9e2",
 				version = 2,
 			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_HoldOneJump",
-							uuid = "7144a9b9-121f-8251-bba9-843d5d930c0c",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 470.2,
-				name = "Hold 1 Jump [ON]",
-				timeRange = true,
-				timelineIndex = 74,
-				timerStartOffset = -15,
-				uuid = "64d63566-6a70-648d-ba91-783237c07b7f",
-				version = 2,
-			},
-			inheritedIndex = 2,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -2001,13 +2423,74 @@ local tbl =
 				{
 				},
 				mechanicTime = 470.2,
-				name = "Hold 1 Jump [OFF]",
+				name = "[Multi] Hold 1 Jump OFF",
 				timeRange = true,
 				timelineIndex = 74,
 				timerStartOffset = 1,
 				uuid = "caf4d6ef-a31d-3c1c-9cd1-b15d8a5c7b9b",
 				version = 2,
 			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 74,
+				timerOffset = 6,
+				uuid = "921535f7-862e-83f3-bb87-f28021e01d47",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.2,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 74,
+				timerOffset = 6,
+				uuid = "e0857e5b-0b71-bc2c-9b0d-fe21beced1c2",
+				version = 2,
+			},
+			inheritedIndex = 7,
 		},
 	},
 	[75] = 

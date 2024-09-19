@@ -76,7 +76,7 @@ local tbl =
 							gVar = "ACR_TensorACR_HotbarCancel",
 							uuid = "76f9ccd9-db15-e9ed-99ff-ab9522e23605",
 							variableTogglesType = 2,
-							version = 2,
+							version = 2.1,
 						},
 					},
 				},
@@ -1251,6 +1251,37 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 236.2,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 56,
+				timerOffset = -1,
+				uuid = "9aba160a-5f76-3eaa-beed-1c8f11e92b5c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
@@ -1270,7 +1301,37 @@ local tbl =
 				uuid = "4afac4e9-efd8-c344-890a-9b5da18c2f5a",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 236.2,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 56,
+				timerOffset = 2,
+				uuid = "05075fe7-1e5c-6756-93e8-a10e3f9ff55d",
+				version = 2,
+			},
 		},
 	},
 	[57] = 
@@ -2011,6 +2072,38 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 620.1,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 142,
+				timerOffset = -1,
+				uuid = "af55b731-04f3-32a6-8fad-817789f8607a",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
@@ -2028,6 +2121,37 @@ local tbl =
 				timerOffset = 0.5,
 				timerStartOffset = -20,
 				uuid = "38a7b350-2120-f5e3-9032-dcb8fb27acc1",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 620.1,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 142,
+				timerOffset = 2,
+				uuid = "86acb6a1-9134-432e-9f7c-069ff2ac010b",
 				version = 2,
 			},
 		},
@@ -2725,6 +2849,69 @@ local tbl =
 			{
 				actions = 
 				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == true then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = false end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							gVarValue = 2,
+							name = "Safe Jump OFF",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 721.8,
+				name = "[Multi] SafeJump OFF",
+				timelineIndex = 166,
+				timerOffset = -1,
+				uuid = "22b90532-b13e-f720-9dd4-82981a62061f",
+				version = 2,
+			},
+			inheritedIndex = 18,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionLua = "local currentACR = gACRSelectedProfiles[TensorCore.mGetPlayer().job]\nif currentACR ~= nil and _G[\"ACR_\"..currentACR..\"_SafeJump\"] == false then\n_G[\"ACR_\"..currentACR..\"_SafeJump\"] = true end\nself.used = true",
+							gVar = "ACR_RikuWAR3_SafeJump",
+							name = "Safe Jump ON",
+							uuid = "cafe01bf-77eb-7e90-9c84-dbda40caa13d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 721.8,
+				name = "[Multi] SafeJump ON",
+				timelineIndex = 166,
+				timerOffset = 2,
+				uuid = "52d32b2c-ab13-7310-bd9d-32262f671817",
+				version = 2,
+			},
+			inheritedIndex = 19,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 				},
 				conditions = 
 				{
@@ -3193,7 +3380,59 @@ local tbl =
 				uuid = "e7c1bf9e-e7b4-39f3-bb6d-5aaba3704e39",
 				version = 2,
 			},
-			inheritedIndex = 28,
+			inheritedIndex = 30,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e8d4174e-7113-9550-923e-2825e1fc1a90",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 721.8,
+				name = "[WAR] Dash",
+				throttleTime = 500,
+				timeRange = true,
+				timelineIndex = 166,
+				timerEndOffset = 2,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = 0.050000000745058,
+				uuid = "463235a8-08cc-0c0d-a789-1be50717b8ad",
+				version = 2,
+			},
 		},
 	},
 	inheritedProfiles = 
