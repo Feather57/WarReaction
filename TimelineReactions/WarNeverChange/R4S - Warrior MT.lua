@@ -55,6 +55,35 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 10.6,
+				name = "[Multi] Hold 1 Jumps On",
+				timelineIndex = 1,
+				timerOffset = -3,
+				uuid = "6b048386-604c-19d1-8f64-606910b713c7",
+				version = 2,
+			},
+			inheritedIndex = 16,
+		},
 	},
 	
 	{
@@ -371,6 +400,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldOneJump",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 49.6,
+				name = "[Multi] Hold 1 Jumps Off",
+				timelineIndex = 7,
+				timerOffset = -1,
+				uuid = "6be12c59-3a40-8ad5-bb91-e7450583c2b7",
+				version = 2,
+			},
+			inheritedIndex = 17,
+		},
 	},
 	[9] = 
 	{
@@ -637,7 +696,7 @@ local tbl =
 						data = 
 						{
 							conditionType = 6,
-							inRangeValue = 10,
+							inRangeValue = 5,
 							uuid = "a0535491-c925-616e-a047-9eac3d2311dc",
 							version = 2,
 						},
@@ -1136,7 +1195,7 @@ local tbl =
 						data = 
 						{
 							conditionType = 6,
-							inRangeValue = 10,
+							inRangeValue = 5,
 							uuid = "a0535491-c925-616e-a047-9eac3d2311dc",
 							version = 2,
 						},
@@ -2266,7 +2325,7 @@ local tbl =
 				mechanicTime = 408.1,
 				name = "[WAR] LB",
 				timelineIndex = 77,
-				timerOffset = -1.3500000238419,
+				timerOffset = -1.2999999523163,
 				timerStartOffset = 1,
 				uuid = "fc6ccd2f-85fe-0fd5-9c87-54dd573f24df",
 				version = 2,
@@ -3452,6 +3511,35 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = 1,
 				uuid = "df384ce6-b169-1ef0-8704-4352eec3bedc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 776.9,
+				name = "[Multi] Sprint",
+				timelineIndex = 118,
+				timerOffset = -5,
+				uuid = "63230490-2349-20f1-a17e-4bde43d98906",
 				version = 2,
 			},
 		},
