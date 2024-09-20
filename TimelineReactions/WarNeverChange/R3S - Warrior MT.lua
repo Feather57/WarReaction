@@ -717,6 +717,61 @@ local tbl =
 			},
 		},
 	},
+	[13] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 76.4,
+				name = "[WAR] Whetting",
+				timelineIndex = 13,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "a77b03e6-26bf-6b7f-a9a2-204df8eba73b",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
 	[17] = 
 	{
 		
@@ -802,6 +857,113 @@ local tbl =
 				uuid = "dd242da1-c121-e9e3-97c1-f4df903feec3",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 102.6,
+				name = "[WAR] Whetting",
+				timelineIndex = 19,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "1e729940-6dab-f263-b2b1-8133b1dda185",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[21] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 134,
+				name = "[WAR] Whetting",
+				timelineIndex = 21,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "7ec6c369-9421-cb88-904c-3447d4f67ad1",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[22] = 
@@ -1509,6 +1671,116 @@ local tbl =
 			inheritedIndex = 4,
 		},
 	},
+	[34] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 214,
+				name = "[WAR] Whetting",
+				timelineIndex = 34,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "a2edf467-9980-fd4b-a29b-b521fdbc3350",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[46] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 270.2,
+				name = "[WAR] Whetting",
+				timelineIndex = 46,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "4d698edf-8b9c-6657-a319-4b1748358df1",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
 	[47] = 
 	{
 		
@@ -1848,6 +2120,61 @@ local tbl =
 				uuid = "6c39b311-d8c4-365f-8682-14d0c88476fd",
 				version = 2,
 			},
+		},
+	},
+	[50] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 290,
+				name = "[WAR] Whetting",
+				timelineIndex = 50,
+				timerOffset = 5,
+				timerStartOffset = -1,
+				uuid = "7a6eae0f-ebc0-4bc0-8a39-adece1943ffc",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[54] = 
@@ -2206,6 +2533,116 @@ local tbl =
 				uuid = "37be2f9d-7c6b-27f6-be18-7b11bd4feee9",
 				version = 2,
 			},
+		},
+	},
+	[62] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 418.7,
+				name = "[WAR] Whetting",
+				timelineIndex = 62,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "1ed369c5-b0ce-dedd-a7f2-5f0542faa43c",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[68] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 456.6,
+				name = "[WAR] Whetting",
+				timelineIndex = 68,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "0090c133-b772-3a42-b960-3068299e3e91",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[73] = 
@@ -2797,6 +3234,61 @@ local tbl =
 			inheritedIndex = 5,
 		},
 	},
+	[85] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 540.8,
+				name = "[WAR] Whetting",
+				timelineIndex = 85,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "5075f664-b8bc-2ba1-bab3-41a7d4167c50",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
 	[89] = 
 	{
 		
@@ -2916,6 +3408,61 @@ local tbl =
 				uuid = "ec612fc6-b302-e7b3-91f8-393639c41847",
 				version = 2,
 			},
+		},
+	},
+	[90] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 573.2,
+				name = "[WAR] Whetting",
+				timelineIndex = 90,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "c95f9753-fad3-592d-9f85-3896da9f67c4",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[100] = 
