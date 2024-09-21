@@ -68,17 +68,6 @@ local tbl =
 							version = 2.1,
 						},
 					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorACR_HotbarCancel",
-							uuid = "76f9ccd9-db15-e9ed-99ff-ab9522e23605",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
 				},
 				conditions = 
 				{
@@ -251,6 +240,56 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 16,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 5.2,
+				name = "[WAR] Whetting",
+				timelineIndex = 1,
+				timerStartOffset = -1,
+				uuid = "f1bacd69-9838-6dc5-8d86-d52e15b3e1ec",
+				version = 2,
+			},
 		},
 	}, 
 	[3] = 
@@ -872,6 +911,58 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 104.5,
+				name = "[WAR] Whetting",
+				timelineIndex = 27,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "66837d95-eb49-001e-9c12-a03aadcb788f",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Jumps",
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
 							version = 2.1,
@@ -917,58 +1008,6 @@ local tbl =
 				uuid = "f7fe202a-2792-62f3-84b7-3b6bb3775b52",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 104.5,
-				name = "[WAR] Whetting",
-				timelineIndex = 27,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "66837d95-eb49-001e-9c12-a03aadcb788f",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[32] = 
@@ -1955,6 +1994,60 @@ local tbl =
 			},
 		},
 	},
+	[88] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 369.7,
+				name = "[WAR] Whetting",
+				timelineIndex = 88,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "bf3d69cc-be39-d2b7-85c8-3cc359f5840e",
+				version = 2,
+			},
+		},
+	},
 	[91] = 
 	{
 		
@@ -2046,6 +2139,60 @@ local tbl =
 				timelineIndex = 94,
 				timerOffset = 1,
 				uuid = "915f8f78-4e8c-5442-ba35-8eb36c43bc05",
+				version = 2,
+			},
+		},
+	},
+	[102] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 458,
+				name = "[WAR] Whetting",
+				timelineIndex = 102,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "b45b0f9d-d725-fbb0-a01f-f523d8e40f24",
 				version = 2,
 			},
 		},
@@ -2781,35 +2928,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 650.1,
-				name = "[Multi] Sprint",
-				timelineIndex = 149,
-				timerOffset = -5,
-				uuid = "ac42000f-bdb8-3af2-b9db-66e8c5d0c5b7",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							conditions = 
 							{
 								
@@ -2850,6 +2968,35 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR2_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 650.1,
+				name = "[Multi] Sprint",
+				timelineIndex = 149,
+				timerOffset = -5,
+				uuid = "ac42000f-bdb8-3af2-b9db-66e8c5d0c5b7",
+				version = 2,
+			},
 		},
 	},
 	[159] = 

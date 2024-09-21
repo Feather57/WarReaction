@@ -589,6 +589,38 @@ local tbl =
 			},
 		},
 	},
+	[17] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 88.6,
+				name = "[Multi] Sprint",
+				timelineIndex = 17,
+				timerOffset = -9,
+				uuid = "d6e6cf5f-77db-057e-bda7-d95fab35d10a",
+				version = 2,
+			},
+		},
+	},
 	[28] = 
 	{
 		
@@ -710,6 +742,35 @@ local tbl =
 				timelineIndex = 30,
 				timerOffset = -5,
 				uuid = "d2c8f463-ad94-5801-8842-8d94635356df",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 158.5,
+				name = "[Multi] Sprint",
+				timelineIndex = 30,
+				timerOffset = -9,
+				uuid = "8a262425-ae8b-4771-b409-c78e3e5cdc7c",
 				version = 2,
 			},
 		},
@@ -1108,6 +1169,38 @@ local tbl =
 				timelineIndex = 42,
 				timerOffset = -5,
 				uuid = "8a805ab7-c933-e9d9-a3c6-84f7cfe9483e",
+				version = 2,
+			},
+		},
+	},
+	[52] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 287,
+				name = "[Multi] Sprint",
+				timelineIndex = 52,
+				timerOffset = -9,
+				uuid = "858014f7-0b74-fb88-bebd-6cc9baa5092e",
 				version = 2,
 			},
 		},
@@ -1600,6 +1693,38 @@ local tbl =
 			},
 		},
 	},
+	[70] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 368,
+				name = "[Multi] Sprint",
+				timelineIndex = 70,
+				timerOffset = 1,
+				uuid = "df0f3f11-a53a-ca51-9861-93149ddb2798",
+				version = 2,
+			},
+		},
+	},
 	[72] = 
 	{
 		
@@ -2004,6 +2129,35 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 438.9,
+				name = "[Multi] Sprint",
+				timelineIndex = 84,
+				timerOffset = -9,
+				uuid = "2c5de7bb-ef6a-d030-a0c1-f5a3c1f85219",
+				version = 2,
+			},
+		},
 	},
 	[90] = 
 	{
@@ -2326,6 +2480,35 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 515,
+				name = "[Multi] Sprint",
+				timelineIndex = 102,
+				timerOffset = -2,
+				uuid = "cbe255ff-e9ed-4df3-8a2d-88bd2af1d312",
+				version = 2,
+			},
 		},
 	},
 	[103] = 
