@@ -924,7 +924,7 @@ local tbl =
 							setTarget = true,
 							targetType = "Enemy",
 							uuid = "659eb24c-598a-e8b1-8543-440426f1cfbe",
-							version = 2,
+							version = 2.1,
 						},
 						inheritedIndex = 1,
 					},
