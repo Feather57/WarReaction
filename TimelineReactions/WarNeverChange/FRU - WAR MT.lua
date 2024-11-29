@@ -416,6 +416,40 @@ local tbl =
 			},
 		},
 	},
+	[9] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 34.7,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 9,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "094cca2a-824b-47f9-a3ea-02622059f2f2",
+				version = 2,
+			},
+			inheritedIndex = 14,
+		},
+	},
 	[11] = 
 	{
 		
@@ -738,6 +772,68 @@ local tbl =
 			inheritedIndex = 9,
 		},
 	},
+	[25] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 105.8,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 25,
+				timerOffset = -1,
+				uuid = "0b589a85-cd9b-36ee-99dc-605f66d49017",
+				version = 2,
+			},
+		},
+	},
+	[28] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 113.7,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 28,
+				uuid = "b7fa0a44-415c-803b-9e6d-4ff8e63cd6ee",
+				version = 2,
+			},
+		},
+	},
 	[29] = 
 	{
 		
@@ -959,11 +1055,14 @@ local tbl =
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 145.6,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 35,
+				timerEndOffset = -1,
 				timerOffset = -3,
-				timerStartOffset = -1,
+				timerStartOffset = -5,
 				uuid = "16821ecd-7e50-e7e1-80d5-cf9927c1d571",
 				version = 2,
 			},
