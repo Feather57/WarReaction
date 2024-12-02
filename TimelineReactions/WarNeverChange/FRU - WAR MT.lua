@@ -69,6 +69,20 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				name = "Check Stance",
+				uuid = "5a970bbf-9f27-ff0b-b259-31878d59f8c1",
+				version = 2,
+			},
+			inheritedIndex = 4,
+			inheritedObjectUUID = "83671c76-1d43-3674-bf11-25cf90dfca47",
+			inheritedOverwrites = 
+			{
+			},
+		},
 	}, 
 	[7] = 
 	{
@@ -96,7 +110,7 @@ local tbl =
 				mechanicTime = 24.2,
 				name = "[WAR] Holmgang",
 				timelineIndex = 7,
-				timerOffset = -2,
+				timerOffset = -4,
 				uuid = "c8fd837b-da10-aff2-bbba-5a3903b35d3b",
 				version = 2,
 			},
@@ -605,57 +619,6 @@ local tbl =
 			inheritedIndex = 9,
 		},
 	},
-	[24] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"945979c4-17ca-f2b9-8e7f-8a95313576ee",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_ReleaseDefiance",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffID = 91,
-							category = "Self",
-							uuid = "945979c4-17ca-f2b9-8e7f-8a95313576ee",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 102.2,
-				name = "[WAR] Stance Off",
-				timelineIndex = 24,
-				timerEndOffset = 60,
-				timerStartOffset = -60,
-				uuid = "1c299e89-b565-65f9-96ab-9bd4137b9dd1",
-				version = 2,
-			},
-		},
-	},
 	[25] = 
 	{
 		
@@ -877,6 +840,7 @@ local tbl =
 				name = "[Tank] Shirk",
 				timeRange = true,
 				timelineIndex = 30,
+				timerEndOffset = 10,
 				timerStartOffset = -20,
 				uuid = "697f06af-c22f-52b5-9990-fedfe7b9316a",
 				version = 2,
@@ -925,7 +889,7 @@ local tbl =
 				name = "[WAR] Stance Off",
 				timelineIndex = 30,
 				timerEndOffset = 60,
-				timerOffset = 1,
+				timerOffset = -2,
 				timerStartOffset = -60,
 				uuid = "1d41cebb-c091-f6b8-9be1-bbdb42928811",
 				version = 2,
@@ -1025,7 +989,6 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
 				mechanicTime = 129.5,
 				name = "[WAR] Venge",
 				timelineIndex = 30,
@@ -1253,36 +1216,6 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				timerEndOffset = 0.10000000149012,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 203.8,
-				name = "[WAR] Shake",
-				timeRange = true,
-				timelineIndex = 39,
-				timerStartOffset = 5,
-				uuid = "2bdaf2d8-769b-d4ee-929b-bd8f75188027",
-				version = 2,
 			},
 		},
 		
@@ -1542,6 +1475,20 @@ local tbl =
 	},
 	[62] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "Dash To Boss",
+				uuid = "4d112e99-8037-0a5f-90e5-210afaec525e",
+				version = 2,
+			},
+			inheritedObjectUUID = "70e4c794-cada-da37-84b9-a08665769327",
+			inheritedOverwrites = 
+			{
+				timerStartOffset = -0.10000000149012,
+			},
+		},
 		
 		{
 			data = 
@@ -1871,6 +1818,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 307.2,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 72,
+				timerOffset = -3,
+				uuid = "9fcd8201-d920-af86-8b7d-4cbe56d19246",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
 	},
 	[76] = 
 	{
@@ -1940,6 +1917,34 @@ local tbl =
 				timerEndOffset = 20,
 				timerStartOffset = -5,
 				uuid = "bdf63c65-af70-69e0-bea9-c1525e385b6f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 317.1,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 76,
+				timerOffset = 0.5,
+				uuid = "370b3f28-e5ef-9649-815e-f201401fc3ad",
 				version = 2,
 			},
 		},
