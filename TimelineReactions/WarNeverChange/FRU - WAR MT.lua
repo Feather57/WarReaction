@@ -69,20 +69,6 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
-		
-		{
-			data = 
-			{
-				name = "Check Stance",
-				uuid = "5a970bbf-9f27-ff0b-b259-31878d59f8c1",
-				version = 2,
-			},
-			inheritedIndex = 4,
-			inheritedObjectUUID = "83671c76-1d43-3674-bf11-25cf90dfca47",
-			inheritedOverwrites = 
-			{
-			},
-		},
 	}, 
 	[7] = 
 	{
@@ -318,7 +304,7 @@ local tbl =
 				name = "[WAR] Thrill",
 				timelineIndex = 11,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -7,
 				timerStartOffset = -20,
 				uuid = "57edbb7a-a5d1-1af9-abea-f2a69dee3fb0",
 				version = 2,
@@ -511,10 +497,45 @@ local tbl =
 				uuid = "baaad7ee-7d3e-d0df-af37-9f0701ddde1e",
 				version = 2,
 			},
+			inheritedIndex = 6,
 		},
 	},
 	[22] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16464,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							ignoreWeaveRules = true,
+							targetType = "Ranged Caster DPS",
+							uuid = "13df61c9-3a7d-7077-a180-8e7734ceff0c",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 85.9,
+				name = "[WAR] Nascent",
+				timelineIndex = 22,
+				timerOffset = -2,
+				timerStartOffset = -40,
+				uuid = "927412f8-31b9-f17f-901c-ddac046695c2",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
 		
 		{
 			data = 
@@ -584,40 +605,6 @@ local tbl =
 			},
 			inheritedIndex = 7,
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16464,
-							atomicPriority = true,
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
-							ignoreWeaveRules = true,
-							targetType = "Ranged Caster DPS",
-							uuid = "13df61c9-3a7d-7077-a180-8e7734ceff0c",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 85.9,
-				name = "[WAR] Nascent",
-				timelineIndex = 22,
-				timerOffset = -2,
-				timerStartOffset = -40,
-				uuid = "927412f8-31b9-f17f-901c-ddac046695c2",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
 	},
 	[25] = 
 	{
@@ -685,40 +672,6 @@ local tbl =
 	},
 	[29] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16464,
-							atomicPriority = true,
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
-							ignoreWeaveRules = true,
-							targetType = "Ranged Caster DPS",
-							uuid = "13df61c9-3a7d-7077-a180-8e7734ceff0c",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 121.1,
-				name = "[WAR] Nascent",
-				timelineIndex = 29,
-				timerOffset = -4,
-				timerStartOffset = -40,
-				uuid = "4eb3e96f-f6f7-aead-a565-b979d6921fb0",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
 		
 		{
 			data = 
@@ -889,7 +842,7 @@ local tbl =
 				name = "[WAR] Stance Off",
 				timelineIndex = 30,
 				timerEndOffset = 60,
-				timerOffset = -2,
+				timerOffset = -10,
 				timerStartOffset = -60,
 				uuid = "1d41cebb-c091-f6b8-9be1-bbdb42928811",
 				version = 2,
@@ -1035,7 +988,7 @@ local tbl =
 				name = "[WAR] Thrill",
 				timelineIndex = 30,
 				timerEndOffset = 20,
-				timerOffset = -5,
+				timerOffset = -6,
 				timerStartOffset = -20,
 				uuid = "04e9e1ab-c5fa-0d5b-9e13-b42b43977a59",
 				version = 2,
@@ -1110,43 +1063,6 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[32] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_CD",
-							gVarValue = 2,
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				loop = true,
-				mechanicTime = 140.9,
-				name = "[Multi] Hold CD",
-				timeRange = true,
-				timelineIndex = 32,
-				timerStartOffset = -10,
-				uuid = "bc6efb72-8b6a-031b-9824-ef736c99de9c",
-				version = 2,
-			},
-		},
-	},
-	[35] = 
-	{
 		
 		{
 			data = 
@@ -1190,34 +1106,70 @@ local tbl =
 					},
 				},
 				loop = true,
-				mechanicTime = 145.6,
+				mechanicTime = 129.5,
 				name = "[WAR] Whetting",
 				timeRange = true,
-				timelineIndex = 35,
-				timerEndOffset = -1,
+				timelineIndex = 30,
 				timerOffset = -4,
-				timerStartOffset = -4,
-				uuid = "25f54f72-7707-e50d-b030-348ef1511cce",
+				timerStartOffset = -5,
+				uuid = "ff488f1c-7996-8646-a966-a31ec41ed7b1",
 				version = 2,
 			},
 		},
 	},
-	[39] = 
+	[32] = 
 	{
 		
 		{
 			data = 
 			{
-				name = "[NIN] Pre-Suiton",
-				uuid = "22da5b97-b1c7-e83f-9fa3-dc551d157d5d",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				loop = true,
+				mechanicTime = 140.9,
+				name = "[Multi] Hold CD",
+				timeRange = true,
+				timelineIndex = 32,
+				timerStartOffset = -10,
+				uuid = "bc6efb72-8b6a-031b-9824-ef736c99de9c",
 				version = 2,
 			},
-			inheritedObjectUUID = "89b87d43-bb45-d73e-90bc-abbb5fa7f8e6",
+		},
+	},
+	[34] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "[Melee] True North",
+				uuid = "40cc5d52-fd99-a8f4-8a12-9d5ed1000dd4",
+				version = 2,
+			},
+			inheritedObjectUUID = "dac72ce4-e945-d27b-ae33-cac0a145da76",
 			inheritedOverwrites = 
 			{
-				timerEndOffset = 0.10000000149012,
+				timerStartOffset = -2.6500000953674,
 			},
 		},
+	},
+	[39] = 
+	{
 		
 		{
 			data = 
@@ -1475,34 +1427,6 @@ local tbl =
 	},
 	[62] = 
 	{
-		
-		{
-			data = 
-			{
-				name = "Dash To Boss",
-				uuid = "4d112e99-8037-0a5f-90e5-210afaec525e",
-				version = 2,
-			},
-			inheritedObjectUUID = "70e4c794-cada-da37-84b9-a08665769327",
-			inheritedOverwrites = 
-			{
-				timerStartOffset = -0.10000000149012,
-			},
-		},
-		
-		{
-			data = 
-			{
-				name = "[Multi-job] Dash To Mid Player",
-				uuid = "66a5bf49-f918-2b27-9b94-46360d1079b3",
-				version = 2,
-			},
-			inheritedObjectUUID = "5377c279-3bbd-0dbc-8fc2-3be53d3a9301",
-			inheritedOverwrites = 
-			{
-				timerEndOffset = -0.40000000596046,
-			},
-		},
 		
 		{
 			data = 
@@ -2106,6 +2030,73 @@ local tbl =
 							{
 								
 								{
+									"35693d39-44ae-89ea-930a-628c03451000",
+									true,
+								},
+								
+								{
+									"8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7535,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 387.8,
+				name = "[Tank] Reprisal",
+				timelineIndex = 99,
+				timerOffset = -5,
+				uuid = "b7227aaf-3199-d441-bef2-8ade799e5344",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
 									true,
 								},
@@ -2137,7 +2128,7 @@ local tbl =
 				mechanicTime = 387.8,
 				name = "[WAR] Shake",
 				timelineIndex = 99,
-				timerOffset = -5,
+				timerOffset = -8,
 				timerStartOffset = 1,
 				uuid = "51f88c69-fe01-3c7f-973b-56a9dea728cf",
 				version = 2,
@@ -2192,7 +2183,7 @@ local tbl =
 				timelineIndex = 99,
 				timerEndOffset = -5,
 				timerOffset = -3,
-				timerStartOffset = -9,
+				timerStartOffset = -11,
 				uuid = "cc3f2b92-c9b8-41e8-9e39-f1eb4b590703",
 				version = 2,
 			},
