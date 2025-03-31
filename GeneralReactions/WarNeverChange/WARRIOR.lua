@@ -10,10 +10,11 @@ local tbl =
 			conditions = 
 			{
 			},
-			name = "--FRU Custom",
-			uuid = "3add2b3a-14a3-aced-be7e-1e40389dc8ff",
+			name = "--Recollection Custom",
+			uuid = "788c928c-0aa3-0565-ad12-052ed520031b",
 			version = 2,
 		},
+		inheritedIndex = 47,
 	},
 	
 	{
@@ -34,15 +35,10 @@ local tbl =
 								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 								true,
 							},
-							
-							{
-								"14005e09-6b4c-a4f2-af96-9c89b90905e9",
-								true,
-							},
 						},
 						gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
 						ignoreWeaveRules = true,
-						uuid = "921ed607-eca2-7837-981c-6d1e477ef11c",
+						uuid = "0246a859-f103-2f52-85dc-00dd879ae026",
 						variableTogglesType = 3,
 						version = 2.1,
 					},
@@ -59,12 +55,14 @@ local tbl =
 						conditionType = 12,
 						localMapIDList = 
 						{
-							1238,
+							1271,
 						},
-						name = "FRU Map Lock",
-						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
+						localmapid = 949,
+						name = "Map Lock",
+						uuid = "01b27b3c-ed2b-ec35-8435-6dc6d2af3232",
 						version = 2,
 					},
+					inheritedIndex = 2,
 				},
 				
 				{
@@ -72,7 +70,7 @@ local tbl =
 					{
 						category = "Event",
 						comparator = 2,
-						eventCountdownTime = 5,
+						eventCountdownTime = 10,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 						version = 2,
@@ -84,11 +82,27 @@ local tbl =
 			mechanicTime = 5,
 			name = "[WAR] Prepull Shake It Off",
 			timelineIndex = 1,
+			timeout = 10,
 			timerOffset = -10,
-			uuid = "bcd5b4dc-bf36-2959-9a84-9d0d3fbb3bb7",
+			uuid = "f782dd29-de8d-7a4c-a88e-3bc3099b5882",
 			version = 2,
 		},
-		inheritedIndex = 40,
+		inheritedIndex = 48,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "--FRU Custom",
+			uuid = "3add2b3a-14a3-aced-be7e-1e40389dc8ff",
+			version = 2,
+		},
 	},
 	
 	{
@@ -135,6 +149,83 @@ local tbl =
 						localMapIDList = 
 						{
 							1238,
+							949,
+						},
+						name = "FRU Map Lock",
+						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
+						version = 2,
+					},
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						comparator = 2,
+						eventCountdownTime = 5,
+						name = "Prepull Timer",
+						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+						version = 2,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			eventType = 16,
+			mechanicTime = 5,
+			name = "[WAR] Prepull Whetting",
+			timelineIndex = 1,
+			timerOffset = -10,
+			uuid = "79242a1e-9030-227a-bfba-bb5b019ded4b",
+			version = 2,
+		},
+		inheritedIndex = 50,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "ACR",
+						actionID = 7388,
+						conditions = 
+						{
+							
+							{
+								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+								true,
+							},
+							
+							{
+								"14005e09-6b4c-a4f2-af96-9c89b90905e9",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+						ignoreWeaveRules = true,
+						uuid = "921ed607-eca2-7837-981c-6d1e477ef11c",
+						variableTogglesType = 3,
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1238,
+							949,
 						},
 						name = "FRU Map Lock",
 						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
@@ -157,13 +248,13 @@ local tbl =
 			},
 			eventType = 16,
 			mechanicTime = 5,
-			name = "[WAR] Prepull Whetting",
+			name = "[WAR] Prepull Shake It Off",
 			timelineIndex = 1,
 			timerOffset = -10,
-			uuid = "79242a1e-9030-227a-bfba-bb5b019ded4b",
+			uuid = "bcd5b4dc-bf36-2959-9a84-9d0d3fbb3bb7",
 			version = 2,
 		},
-		inheritedIndex = 41,
+		inheritedIndex = 51,
 	},
 	
 	{
