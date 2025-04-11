@@ -2515,6 +2515,39 @@ local tbl =
 			},
 		},
 	},
+	[49] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 480,
+				name = "[Multi] Hold CD",
+				timelineIndex = 49,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "0224b122-5e74-58a6-beb9-db1e6187b18e",
+				version = 2,
+			},
+		},
+	},
 	[50] = 
 	{
 		
@@ -2809,6 +2842,39 @@ local tbl =
 				timerEndOffset = 30,
 				timerStartOffset = -30,
 				uuid = "1a08a121-c721-910d-8001-c6b1271ad704",
+				version = 2,
+			},
+		},
+	},
+	[53] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 520,
+				name = "[Multi] Enable CD",
+				timelineIndex = 53,
+				timerEndOffset = 76,
+				timerOffset = -5,
+				timerStartOffset = -20,
+				uuid = "5de99132-2c94-a2dc-a29e-5aca5bfadf16",
 				version = 2,
 			},
 		},
