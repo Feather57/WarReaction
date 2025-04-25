@@ -822,7 +822,7 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 32,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -7,
 				timerStartOffset = -20,
 				uuid = "df12f6eb-675d-0517-9208-07630a2046fe",
 				version = 2,
@@ -874,7 +874,7 @@ local tbl =
 				mechanicTime = 136,
 				name = "[WAR] Venge",
 				timelineIndex = 32,
-				timerOffset = -4,
+				timerOffset = -6,
 				uuid = "36036df8-9f7b-e030-b4c5-cbb81ab7ea3c",
 				version = 2,
 			},
@@ -1491,7 +1491,7 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 69,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -7,
 				timerStartOffset = -20,
 				uuid = "95aca9a9-e947-7926-b509-2cd518b47f60",
 				version = 2,
@@ -1543,7 +1543,7 @@ local tbl =
 				mechanicTime = 283.6,
 				name = "[WAR] Venge",
 				timelineIndex = 69,
-				timerOffset = -2,
+				timerOffset = -5,
 				uuid = "4c6e8ad6-2cc5-8886-987a-37e2c5826b58",
 				version = 2,
 			},
@@ -1790,38 +1790,6 @@ local tbl =
 				timerOffset = -3,
 				timerStartOffset = -1,
 				uuid = "f1ff7ebd-5a66-966f-bf5d-5336bdb59a35",
-				version = 2,
-			},
-		},
-	},
-	[74] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Potion",
-							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 316,
-				name = "[Multi] Enable Potion",
-				timelineIndex = 74,
-				timerEndOffset = 60,
-				timerStartOffset = -60,
-				uuid = "f7be59e7-20e7-085c-8621-4b1d8a983e63",
 				version = 2,
 			},
 		},
@@ -2209,6 +2177,100 @@ local tbl =
 			},
 		},
 	},
+	[94] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 401.6,
+				name = "[Multi] Enable Potion",
+				timelineIndex = 94,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "6262a410-e57b-2613-8a9f-aa9369faa2b7",
+				version = 2,
+			},
+		},
+	},
+	[102] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 418.7,
+				name = "[Multi] Hold CD",
+				timelineIndex = 102,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "6dc9c9e8-9dd2-5524-a6bb-ee2ab91e6738",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 418.7,
+				name = "[Multi] Hold Gauge",
+				timelineIndex = 102,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "00afddae-22a9-d6ba-bc11-e6a8bdcf774c",
+				version = 2,
+			},
+		},
+	},
 	[103] = 
 	{
 		
@@ -2328,6 +2390,67 @@ local tbl =
 				timelineIndex = 104,
 				timerOffset = -4,
 				uuid = "8105b66d-4bb6-cfda-849e-a39c0704b8d5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 428.2,
+				name = "[Multi] Enable CD",
+				timelineIndex = 104,
+				timerEndOffset = 76,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = -20,
+				uuid = "0b09b54c-88a6-2ecc-aa60-70c2e4aae5b9",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 428.2,
+				name = "[Multi] Enable Gauge",
+				timelineIndex = 104,
+				timerEndOffset = 76,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = -20,
+				uuid = "a7e4fc30-855b-a1bd-a060-6012a00a051f",
 				version = 2,
 			},
 		},
@@ -2487,7 +2610,7 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 115,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -8,
 				timerStartOffset = -20,
 				uuid = "07d5edb6-b285-cc16-aea3-2f02fdcdaff9",
 				version = 2,
@@ -2539,7 +2662,7 @@ local tbl =
 				mechanicTime = 512.3,
 				name = "[WAR] Venge",
 				timelineIndex = 115,
-				timerOffset = -2,
+				timerOffset = -6,
 				uuid = "84dc0e2d-d454-ec2c-b9e6-111e6981abd2",
 				version = 2,
 			},
