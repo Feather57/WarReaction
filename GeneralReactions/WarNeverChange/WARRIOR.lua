@@ -352,7 +352,7 @@ local tbl =
 						aType = "Alert",
 						alertPriority = 2,
 						alertTTS = true,
-						alertText = "Pair",
+						alertText = "Light",
 						conditions = 
 						{
 							
@@ -512,7 +512,7 @@ local tbl =
 						aType = "Alert",
 						alertPriority = 2,
 						alertTTS = true,
-						alertText = "Pair",
+						alertText = "Light",
 						conditions = 
 						{
 							
@@ -754,168 +754,6 @@ local tbl =
 						aType = "Alert",
 						alertPriority = 3,
 						alertTTS = true,
-						alertText = "Void",
-						conditions = 
-						{
-							
-							{
-								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
-								true,
-							},
-							
-							{
-								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "[TTS] TB",
-						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						localMapIDList = 
-						{
-							1296,
-						},
-						name = "Map Lock",
-						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
-						version = 2,
-					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						channelCheckSpellID = 45168,
-						channelCheckSpellIDList = 
-						{
-							44558,
-						},
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 24395,
-						name = "Void Reaping",
-						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
-						version = 2,
-					},
-					inheritedIndex = 2,
-				},
-			},
-			eventType = 2,
-			name = "[Ex5] Void Reaping",
-			uuid = "0bf7a8e1-5aed-bfc4-90ab-ec74b9dd2b5a",
-			version = 2,
-		},
-		inheritedIndex = 54,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Alert",
-						alertPriority = 3,
-						alertTTS = true,
-						alertText = "Cross",
-						conditions = 
-						{
-							
-							{
-								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
-								true,
-							},
-							
-							{
-								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_CD",
-						name = "[TTS] TB",
-						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 12,
-						localMapIDList = 
-						{
-							1296,
-						},
-						name = "Map Lock",
-						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
-						version = 2,
-					},
-					inheritedIndex = 1,
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						channelCheckSpellID = 45168,
-						channelCheckSpellIDList = 
-						{
-							44558,
-						},
-						conditionType = 7,
-						dequeueIfLuaFalse = true,
-						eventArgType = 2,
-						eventSpellID = 24396,
-						name = "Cross Reaping",
-						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
-						version = 2,
-					},
-					inheritedIndex = 2,
-				},
-			},
-			eventType = 2,
-			name = "[Ex5] Cross Reaping",
-			uuid = "ac47440a-dfb1-d2c4-a350-f83896bbb598",
-			version = 2,
-		},
-		inheritedIndex = 55,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "Alert",
-						alertPriority = 3,
-						alertTTS = true,
 						alertText = "Relentless",
 						conditions = 
 						{
@@ -994,11 +832,10 @@ local tbl =
 			conditions = 
 			{
 			},
-			name = "--DT Raid Custom",
-			uuid = "c3c714c1-ce83-78cc-8f15-706bd82a0305",
+			name = "--General Custom",
+			uuid = "bd2f2ebc-26b1-dcf1-9c61-1bf9ed6ba104",
 			version = 2,
 		},
-		inheritedIndex = 58,
 	},
 	
 	{
@@ -1010,10 +847,11 @@ local tbl =
 			conditions = 
 			{
 			},
-			name = "--General Custom",
-			uuid = "bd2f2ebc-26b1-dcf1-9c61-1bf9ed6ba104",
+			name = "--DT Raid Custom",
+			uuid = "c3c714c1-ce83-78cc-8f15-706bd82a0305",
 			version = 2,
 		},
+		inheritedIndex = 58,
 	},
 	
 	{
