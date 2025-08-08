@@ -752,9 +752,9 @@ local tbl =
 					data = 
 					{
 						aType = "Alert",
-						alertPriority = 3,
+						alertPriority = 2,
 						alertTTS = true,
-						alertText = "Relentless",
+						alertText = "Side",
 						conditions = 
 						{
 							
@@ -769,7 +769,7 @@ local tbl =
 							},
 						},
 						gVar = "ACR_RikuWAR3_CD",
-						name = "[TTS] TB",
+						name = "[TTS] Side",
 						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
 						version = 2.1,
 					},
@@ -807,20 +807,267 @@ local tbl =
 						conditionType = 7,
 						dequeueIfLuaFalse = true,
 						eventArgType = 2,
-						eventSpellID = 44564,
-						name = "Relentless Reaping",
+						eventMarkerID = 607,
+						eventSpellID = 45168,
+						name = "Marker",
 						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
 						version = 2,
 					},
 					inheritedIndex = 2,
 				},
 			},
-			eventType = 3,
-			name = "[Ex5] Relentless Reaping",
-			uuid = "5fe62837-52ba-b835-8c34-ab6c363b74b8",
+			eventType = 4,
+			name = "[Ex5] Side",
+			uuid = "93cf65c4-6158-cea0-a1a8-791c85b115c2",
+			version = 2,
+		},
+		inheritedIndex = 54,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						alertPriority = 2,
+						alertTTS = true,
+						alertText = "Mid",
+						conditions = 
+						{
+							
+							{
+								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
+								true,
+							},
+							
+							{
+								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "[TTS] Mid",
+						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1296,
+						},
+						name = "Map Lock",
+						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						channelCheckSpellID = 45168,
+						channelCheckSpellIDList = 
+						{
+							44558,
+						},
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 606,
+						eventSpellID = 45168,
+						name = "Marker",
+						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+						version = 2,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			eventType = 4,
+			name = "[Ex5] Mid",
+			uuid = "fbcb6e20-32ee-b315-9454-5d61c0f6265a",
+			version = 2,
+		},
+		inheritedIndex = 55,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						alertPriority = 2,
+						alertTTS = true,
+						alertText = "In",
+						conditions = 
+						{
+							
+							{
+								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
+								true,
+							},
+							
+							{
+								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "[TTS] In",
+						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1296,
+						},
+						name = "Map Lock",
+						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						channelCheckSpellID = 45168,
+						channelCheckSpellIDList = 
+						{
+							44558,
+						},
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 605,
+						eventSpellID = 45168,
+						name = "Marker",
+						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+						version = 2,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			eventType = 4,
+			name = "[Ex5] In",
+			uuid = "8734cbfc-54a0-c119-9217-ec065ff7176d",
 			version = 2,
 		},
 		inheritedIndex = 56,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
+						aType = "Alert",
+						alertPriority = 2,
+						alertTTS = true,
+						alertText = "Out",
+						conditions = 
+						{
+							
+							{
+								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
+								true,
+							},
+							
+							{
+								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "[TTS] Out",
+						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1296,
+						},
+						name = "Map Lock",
+						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						channelCheckSpellID = 45168,
+						channelCheckSpellIDList = 
+						{
+							44558,
+						},
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventMarkerID = 604,
+						eventSpellID = 45168,
+						name = "Marker",
+						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+						version = 2,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			eventType = 4,
+			name = "[Ex5] Out",
+			uuid = "4f68887a-6e08-98a5-8741-726ef26afbe5",
+			version = 2,
+		},
+		inheritedIndex = 57,
 	},
 	
 	{
@@ -836,22 +1083,6 @@ local tbl =
 			uuid = "bd2f2ebc-26b1-dcf1-9c61-1bf9ed6ba104",
 			version = 2,
 		},
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-			},
-			conditions = 
-			{
-			},
-			name = "--DT Raid Custom",
-			uuid = "c3c714c1-ce83-78cc-8f15-706bd82a0305",
-			version = 2,
-		},
-		inheritedIndex = 58,
 	},
 	
 	{
@@ -978,6 +1209,87 @@ local tbl =
 				{
 					data = 
 					{
+						aType = "Alert",
+						alertPriority = 3,
+						alertTTS = true,
+						alertText = "Relentless",
+						conditions = 
+						{
+							
+							{
+								"f4733c08-7254-e0d7-95a4-d43cb25094bd",
+								true,
+							},
+							
+							{
+								"03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+								true,
+							},
+						},
+						gVar = "ACR_RikuWAR3_CD",
+						name = "[TTS] TB",
+						uuid = "5f37549d-3f76-e70f-8f84-a96d4f948381",
+						version = 2.1,
+					},
+					inheritedIndex = 1,
+				},
+			},
+			conditions = 
+			{
+				
+				{
+					data = 
+					{
+						category = "Self",
+						conditionType = 12,
+						localMapIDList = 
+						{
+							1296,
+						},
+						name = "Map Lock",
+						uuid = "f4733c08-7254-e0d7-95a4-d43cb25094bd",
+						version = 2,
+					},
+					inheritedIndex = 1,
+				},
+				
+				{
+					data = 
+					{
+						category = "Event",
+						channelCheckSpellID = 45168,
+						channelCheckSpellIDList = 
+						{
+							44558,
+						},
+						conditionType = 7,
+						dequeueIfLuaFalse = true,
+						eventArgType = 2,
+						eventSpellID = 44564,
+						name = "Relentless Reaping",
+						uuid = "03b8b91c-f2be-5969-80a2-5d9c879ffa40",
+						version = 2,
+					},
+					inheritedIndex = 2,
+				},
+			},
+			eventType = 3,
+			name = "[Ex5] Relentless Reaping",
+			uuid = "5fe62837-52ba-b835-8c34-ab6c363b74b8",
+			version = 2,
+		},
+		inheritedIndex = 60,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+				
+				{
+					data = 
+					{
 						aType = "ACR",
 						actionID = 7388,
 						conditions = 
@@ -1042,7 +1354,23 @@ local tbl =
 			uuid = "17620254-f499-a33b-973f-a2101f5f3117",
 			version = 2,
 		},
-		inheritedIndex = 61,
+		inheritedIndex = 63,
+	},
+	
+	{
+		data = 
+		{
+			actions = 
+			{
+			},
+			conditions = 
+			{
+			},
+			name = "--DT Raid Custom",
+			uuid = "c3c714c1-ce83-78cc-8f15-706bd82a0305",
+			version = 2,
+		},
+		inheritedIndex = 62,
 	}, 
 	inheritedProfiles = 
 	{
