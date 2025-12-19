@@ -166,6 +166,41 @@ local tbl =
 			},
 		},
 	},
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 44.4,
+				name = "[Multi] Disable Potion",
+				timelineIndex = 8,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "00301ecc-2622-edf2-97e4-bd20af4cc776",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
+	},
 	[9] = 
 	{
 		
@@ -1269,37 +1304,6 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_CD",
-							gVarValue = 2,
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				enabled = false,
-				mechanicTime = 206.8,
-				name = "[Multi] Hold CD",
-				timelineIndex = 43,
-				timerEndOffset = 20,
-				timerStartOffset = -20,
-				uuid = "eb2e01a4-bd7b-367c-8bb0-a1e54d488e7e",
-				version = 2,
-			},
-		},
 	},
 	[46] = 
 	{
@@ -1384,6 +1388,37 @@ local tbl =
 				timerOffset = 0.10000000149012,
 				timerStartOffset = -20,
 				uuid = "cca1d5f3-e2ef-0f0f-b017-789d7c371fe0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 222.7,
+				name = "[Multi] Hold CD",
+				timelineIndex = 46,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "103e084d-1290-8745-8e92-ddd6dff197a1",
 				version = 2,
 			},
 		},
@@ -2003,6 +2038,35 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "84577274-cc25-1c54-a6a9-04d6be22099d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 571,
+				name = "[Multi] Enable Potion",
+				timelineIndex = 58,
+				timerEndOffset = 60,
+				timerStartOffset = -60,
+				uuid = "fa7a4250-4cfc-4d79-b17b-3dc67ad8a62a",
+				version = 2,
+			},
 		},
 	},
 	[62] = 
