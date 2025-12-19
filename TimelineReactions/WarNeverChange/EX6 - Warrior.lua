@@ -17,60 +17,6 @@ local tbl =
 							{
 								
 								{
-									"bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Event",
-							eventArgType = 2,
-							eventEntityID = 45677,
-							name = "Dead Man's Windpipe",
-							uuid = "bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-							version = 2,
-						},
-					},
-				},
-				eventType = 3,
-				mechanicTime = 20.4,
-				name = "[Multi] Arm's Length",
-				throttleTime = 4000,
-				timeRange = true,
-				timelineIndex = 2,
-				timerEndOffset = 2,
-				timerOffset = 5,
-				timerStartOffset = -7,
-				uuid = "bc426b4f-061b-2751-8b64-429fb04d5064",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
 									true,
 								},
@@ -157,7 +103,7 @@ local tbl =
 				mechanicTime = 25.5,
 				name = "[WAR] Whetting",
 				timelineIndex = 4,
-				timerOffset = -1,
+				timerOffset = -3,
 				timerStartOffset = -1,
 				uuid = "1aa885de-038e-6cd8-9cf9-e6cd2f10526a",
 				version = 2,
@@ -166,63 +112,6 @@ local tbl =
 	},
 	[6] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventEntityID = 45677,
-							eventSpellID = 45677,
-							name = "Dead Man's Windpipe",
-							uuid = "bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				eventType = 3,
-				mechanicTime = 39.4,
-				name = "[Multi] Arm's Length",
-				throttleTime = 4000,
-				timeRange = true,
-				timelineIndex = 6,
-				timerEndOffset = 2,
-				timerOffset = 5,
-				timerStartOffset = -7,
-				uuid = "e198c5d8-928f-d238-bd20-b19678169ebe",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -390,7 +279,7 @@ local tbl =
 				mechanicTime = 52.3,
 				name = "[WAR] Whetting",
 				timelineIndex = 9,
-				timerOffset = -1,
+				timerOffset = -2,
 				timerStartOffset = -1,
 				uuid = "a32a6ee6-1289-3f91-ac27-c36120759322",
 				version = 2,
@@ -1380,6 +1269,37 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 206.8,
+				name = "[Multi] Hold CD",
+				timelineIndex = 43,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "eb2e01a4-bd7b-367c-8bb0-a1e54d488e7e",
+				version = 2,
+			},
+		},
 	},
 	[46] = 
 	{
@@ -1556,6 +1476,39 @@ local tbl =
 			},
 		},
 	},
+	[51] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 515.1,
+				name = "[Multi] Enable CD",
+				timelineIndex = 51,
+				timerEndOffset = 76,
+				timerStartOffset = -20,
+				uuid = "c2f3b81a-0732-f485-bf4b-77208cc4585f",
+				version = 2,
+			},
+			inheritedIndex = 11,
+		},
+	},
 	[54] = 
 	{
 		
@@ -1703,7 +1656,7 @@ local tbl =
 				timelineIndex = 54,
 				timerEndOffset = -1,
 				timerOffset = -3,
-				timerStartOffset = -4,
+				timerStartOffset = -6,
 				uuid = "d5c5a08a-021a-7006-86f1-23698e202b24",
 				version = 2,
 			},
@@ -1769,7 +1722,7 @@ local tbl =
 				mechanicTime = 543.3,
 				name = "[Tank] Reprisal",
 				timelineIndex = 54,
-				timerOffset = -2,
+				timerOffset = -3,
 				uuid = "ed8c2e30-4680-56ee-a29c-7e28f7370d4b",
 				version = 2,
 			},
@@ -1961,7 +1914,7 @@ local tbl =
 				uuid = "961126b0-8c33-9e00-87b3-d3d2aae5aa29",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -1987,7 +1940,7 @@ local tbl =
 				name = "[WAR] Tomahawk ON",
 				timelineIndex = 56,
 				timerEndOffset = -1,
-				timerOffset = -5,
+				timerOffset = -7,
 				timerStartOffset = -4,
 				uuid = "23481b50-7698-d418-95ed-65b70cebf5c0",
 				version = 2,
@@ -2176,6 +2129,59 @@ local tbl =
 			},
 			inheritedIndex = 4,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							eventArgType = 2,
+							eventEntityID = 45677,
+							inRangeValue = 3,
+							name = "Dead Man's Express",
+							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 604.5,
+				name = "[WAR] Dash",
+				timelineIndex = 63,
+				timerEndOffset = 20,
+				timerOffset = 0.10000000149012,
+				timerStartOffset = -20,
+				uuid = "d3ea6c8a-985b-7e75-a8f8-3770475a8433",
+				version = 2,
+			},
+		},
 	},
 	[65] = 
 	{
@@ -2228,6 +2234,115 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -4,
 				uuid = "2f79a650-061c-0721-920b-9e76cd3ad569",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							eventArgType = 2,
+							eventEntityID = 45677,
+							inRangeValue = 3,
+							name = "Dead Man's Express",
+							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 618.4,
+				name = "[WAR] Dash",
+				timelineIndex = 65,
+				timerEndOffset = 20,
+				timerOffset = 0.10000000149012,
+				timerStartOffset = -20,
+				uuid = "b4e4fe38-69c8-2a36-9b6f-b47ade34c18d",
+				version = 2,
+			},
+		},
+	},
+	[67] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							eventArgType = 2,
+							eventEntityID = 45677,
+							inRangeValue = 3,
+							name = "Dead Man's Express",
+							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 632.4,
+				name = "[WAR] Dash",
+				timelineIndex = 67,
+				timerEndOffset = 20,
+				timerOffset = 0.10000000149012,
+				timerStartOffset = -20,
+				uuid = "5fd86f37-24c1-5014-92c5-47ea62a9c3dc",
 				version = 2,
 			},
 		},
@@ -2611,12 +2726,12 @@ local tbl =
 				name = "[WAR] Tomahawk ON",
 				timelineIndex = 75,
 				timerEndOffset = -1,
-				timerOffset = -5,
+				timerOffset = -7,
 				timerStartOffset = -4,
 				uuid = "1cc9e4a5-4e54-c571-bfe8-9aabe0f4f864",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 4,
 		},
 	},
 	[77] = 
@@ -2994,6 +3109,37 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 760.2,
+				name = "[WAR] Tomahawk ON",
+				timelineIndex = 89,
+				timerEndOffset = -1,
+				timerOffset = -7,
+				timerStartOffset = -4,
+				uuid = "aa5ba0fc-e5a3-8e75-ba91-580d602b3d66",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tomahawk",
 							gVarValue = 2,
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
 							version = 2.1,
@@ -3009,37 +3155,6 @@ local tbl =
 				timerEndOffset = -1,
 				timerStartOffset = -4,
 				uuid = "b985d92d-6693-2d66-9ae0-683904916020",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tomahawk",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 760.2,
-				name = "[WAR] Tomahawk ON",
-				timelineIndex = 89,
-				timerEndOffset = -1,
-				timerOffset = -5,
-				timerStartOffset = -4,
-				uuid = "aa5ba0fc-e5a3-8e75-ba91-580d602b3d66",
 				version = 2,
 			},
 			inheritedIndex = 3,
@@ -3330,63 +3445,6 @@ local tbl =
 	},
 	[102] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventEntityID = 45677,
-							eventSpellID = 45677,
-							name = "Dead Man's Windpipe",
-							uuid = "bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				eventType = 3,
-				mechanicTime = 823.4,
-				name = "[Multi] Arm's Length",
-				throttleTime = 4000,
-				timeRange = true,
-				timelineIndex = 102,
-				timerEndOffset = 2,
-				timerOffset = 5,
-				timerStartOffset = -7,
-				uuid = "f4f311ab-5292-749f-89f1-b859580cc955",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -3791,63 +3849,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
-							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventEntityID = 45677,
-							eventSpellID = 45677,
-							name = "Dead Man's Windpipe",
-							uuid = "bbe1ddba-d9ee-e5f8-b2fe-8f808f3fdb6b",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				eventType = 3,
-				mechanicTime = 889.3,
-				name = "[Multi] Arm's Length",
-				throttleTime = 4000,
-				timeRange = true,
-				timelineIndex = 114,
-				timerEndOffset = 2,
-				timerOffset = 5,
-				timerStartOffset = -7,
-				uuid = "98ab489c-8175-3112-a5bb-982011bdc779",
-				version = 2,
-			},
 		},
 		
 		{
@@ -4660,6 +4661,7 @@ local tbl =
 				uuid = "fa2eb9a3-4b79-cfa8-bacf-dfaea59e7d42",
 				version = 2,
 			},
+			inheritedIndex = 11,
 		},
 		
 		{
