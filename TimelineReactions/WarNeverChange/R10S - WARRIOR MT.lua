@@ -118,9 +118,6 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	
-	{
 		
 		{
 			data = 
@@ -163,11 +160,77 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 20.7,
+				mechanicTime = 14.6,
 				name = "[WAR] Whetting",
-				timelineIndex = 2,
+				timelineIndex = 1,
+				timerOffset = -3,
 				timerStartOffset = -1,
-				uuid = "34a0c167-7ba6-622e-b19e-8852dcee0b6a",
+				uuid = "0e9d1694-6383-4da7-91c3-2e5424c4c834",
+				version = 2,
+			},
+		},
+	},
+	
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 20.7,
+				name = "[Tank] Voke",
+				timelineIndex = 2,
+				timerEndOffset = 100,
+				timerOffset = 3,
+				timerStartOffset = -100,
+				uuid = "26db0fad-59d9-d8de-b3b2-5d13ce9c62c4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 20.7,
+				name = "[WAR] Dash",
+				timelineIndex = 2,
+				timerEndOffset = 20,
+				timerOffset = 0.20000000298023,
+				timerStartOffset = -20,
+				uuid = "a555360c-ab25-9562-865a-43890599a9b5",
 				version = 2,
 			},
 		},
@@ -528,6 +591,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"09b8f2b6-c831-529d-bdad-370bccc59bbf",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -690,12 +761,13 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 117.1,
 				name = "[WAR] Dash",
 				timeRange = true,
 				timelineIndex = 21,
 				timerEndOffset = 2,
-				timerStartOffset = -1,
+				timerStartOffset = 1,
 				uuid = "1f903e4c-71b1-fec4-9595-fb52c4f8da66",
 				version = 2,
 			},
@@ -885,36 +957,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 136.3,
-				name = "[Multi] Sprint",
-				timelineIndex = 26,
-				timerOffset = -6,
-				uuid = "e007aeab-a690-c225-b715-4ec79d60203a",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							conditions = 
 							{
 								
@@ -988,18 +1030,11 @@ local tbl =
 							alertTTS = true,
 							alertText = "Bait TB",
 							alertVolume = 100,
-							conditions = 
-							{
-								
-								{
-									"2292675b-08c3-0f1f-89d3-ea902c69f98b",
-									true,
-								},
-							},
 							gVar = "ACR_RikuWAR3_CD",
 							uuid = "2bc0535b-9c99-06e0-9536-7c5067d0eab0",
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1048,11 +1083,10 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 136.5,
 				name = "[Multi] Disable Jumps",
 				timelineIndex = 27,
-				timerOffset = -1,
+				timerOffset = -3,
 				uuid = "eaa87808-36e6-f6b9-8b3f-f48f9ebf65d3",
 				version = 2,
 			},
@@ -1163,6 +1197,7 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 160.9,
 				name = "[WAR] Shake",
 				timelineIndex = 31,
@@ -1206,6 +1241,7 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 160.9,
 				name = "[WAR] Thrill",
 				timelineIndex = 31,
@@ -1243,7 +1279,7 @@ local tbl =
 				mechanicTime = 161.7,
 				name = "[Multi] Sprint",
 				timelineIndex = 32,
-				timerOffset = 2,
+				timerOffset = -4,
 				uuid = "ac144fb9-3dde-25c6-9b5e-b5d0159df3e4",
 				version = 2,
 			},
@@ -1854,38 +1890,6 @@ local tbl =
 			},
 		},
 	},
-	[66] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 276.8,
-				name = "[Multi] Sprint",
-				timelineIndex = 66,
-				timerOffset = 1,
-				uuid = "f3cd66c9-cd4e-5a67-81d9-04a38ec9099c",
-				version = 2,
-			},
-		},
-	},
 	[71] = 
 	{
 		
@@ -1933,7 +1937,7 @@ local tbl =
 				mechanicTime = 288.5,
 				name = "[Multi] Sprint",
 				timelineIndex = 71,
-				timerOffset = -5,
+				timerOffset = -7,
 				uuid = "9f715e72-b1c2-e62b-9f54-4fde9a7b4b26",
 				version = 2,
 			},
@@ -2784,7 +2788,7 @@ local tbl =
 				mechanicTime = 409.9,
 				name = "[Multi] Arm's Lenght",
 				timelineIndex = 118,
-				timerOffset = -3,
+				timerOffset = -1,
 				timerStartOffset = -1,
 				uuid = "e745352e-72bc-ea52-9944-7891293f71dc",
 				version = 2,
@@ -2819,6 +2823,39 @@ local tbl =
 				timelineIndex = 119,
 				timerOffset = 2,
 				uuid = "5824555d-f2ec-23ab-aa10-fe25e0587a58",
+				version = 2,
+			},
+		},
+	},
+	[120] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 421.1,
+				name = "[Multi] Hold CD",
+				timelineIndex = 120,
+				timerEndOffset = 20,
+				timerStartOffset = -20,
+				uuid = "38244f72-cbe3-1f78-9613-13727de03cab",
 				version = 2,
 			},
 		},
@@ -2969,6 +3006,38 @@ local tbl =
 				timerOffset = -6,
 				timerStartOffset = -1,
 				uuid = "fa68d98e-c285-7f57-b548-fa2926b6ebf3",
+				version = 2,
+			},
+		},
+	},
+	[129] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 446.7,
+				name = "[Multi] Enable CD",
+				timelineIndex = 129,
+				timerEndOffset = 76,
+				timerStartOffset = -20,
+				uuid = "fbb759b7-c7da-28f8-8c74-5bdd498a35e4",
 				version = 2,
 			},
 		},
@@ -3913,7 +3982,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 553.4,
 				name = "[Multi] Disable Jumps",
 				timelineIndex = 161,
@@ -3993,8 +4061,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							uuid = "5e940955-d801-1e01-a987-fbd5f3bb964d",
+							version = 2,
+						},
+					},
 				},
 				enabled = false,
+				eventType = 11,
 				mechanicTime = 596.4,
 				name = "----Tank Reaction List----",
 				timelineIndex = 166,
