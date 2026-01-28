@@ -1792,6 +1792,51 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 313,
+				name = "[WAR] Thrill",
+				timelineIndex = 49,
+				timerEndOffset = 20,
+				timerOffset = -2,
+				timerStartOffset = -20,
+				uuid = "13e6b12c-d90b-a3bd-973a-e10e5812a21f",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
@@ -1832,51 +1877,6 @@ local tbl =
 				uuid = "484d556d-7088-023e-9b2c-e894728bb0b6",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 40,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 313,
-				name = "[WAR] Thrill",
-				timelineIndex = 49,
-				timerEndOffset = 20,
-				timerOffset = -2,
-				timerStartOffset = -20,
-				uuid = "13e6b12c-d90b-a3bd-973a-e10e5812a21f",
-				version = 2,
-			},
-			inheritedIndex = 6,
 		},
 		
 		{
@@ -2831,9 +2831,62 @@ local tbl =
 				name = "[Multi] Enable Potion",
 				timelineIndex = 79,
 				timerEndOffset = 60,
-				timerOffset = 20,
 				timerStartOffset = -60,
 				uuid = "b327e389-e0f4-54b2-baf7-4de35d984e84",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 523,
+				name = "[WAR] Shake",
+				timeRange = true,
+				timelineIndex = 79,
+				timerEndOffset = 8,
+				timerOffset = -1,
+				timerStartOffset = -3,
+				uuid = "1050854e-3fbd-610b-be1f-31494ccc8ae7",
 				version = 2,
 			},
 		},
@@ -2905,58 +2958,6 @@ local tbl =
 				timerOffset = -7,
 				timerStartOffset = -8,
 				uuid = "57e26951-f2a8-da39-a28c-772d909ef124",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 530,
-				name = "[WAR] Shake",
-				timelineIndex = 80,
-				timerOffset = -8,
-				timerStartOffset = 1,
-				uuid = "5bc5c0c7-588b-b403-b5a7-601351d5f276",
 				version = 2,
 			},
 		},

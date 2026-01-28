@@ -341,6 +341,76 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 20.5,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 3,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "4241a06f-48cb-fa80-b371-0d5cd555871b",
+				version = 2,
+			},
+		},
 	},
 	[6] = 
 	{
@@ -677,6 +747,94 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = 1,
 				uuid = "b170ff4e-cffd-e19c-92fb-faa2e97e1aa6",
+				version = 2,
+			},
+		},
+	},
+	[48] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "a89fd7d3-37b4-dbba-9a35-3461d922b03a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14300\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Vamp Position",
+							uuid = "17048277-8385-50b5-8477-d9746a337790",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14300\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
+							name = "Vamp dis > 5",
+							uuid = "c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14300,
+							uuid = "614059bc-bcf6-dc29-bcc3-5a07e597df35",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 143.2,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = 5,
+				timerStartOffset = -10,
+				uuid = "1bee95ae-2ed1-f5a2-b184-02d60c724a68",
 				version = 2,
 			},
 		},
@@ -1125,6 +1283,76 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 219.7,
+				name = "[WAR] Shake",
+				timeRange = true,
+				timelineIndex = 58,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "dc2497f7-c15e-7709-85b7-ed33a4a10ae1",
+				version = 2,
+			},
+		},
 	},
 	[68] = 
 	{
@@ -1245,6 +1473,94 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+	},
+	[70] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "a89fd7d3-37b4-dbba-9a35-3461d922b03a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14300\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Vamp Position",
+							uuid = "17048277-8385-50b5-8477-d9746a337790",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14300\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
+							name = "Vamp dis > 5",
+							uuid = "c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14300,
+							uuid = "614059bc-bcf6-dc29-bcc3-5a07e597df35",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 274.1,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 70,
+				timerEndOffset = 5,
+				timerStartOffset = -10,
+				uuid = "e7303c75-e82f-3694-a071-ed3266b02ed7",
+				version = 2,
+			},
 		},
 	},
 	[71] = 
@@ -2540,6 +2856,164 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 936.1,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 187,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "53390779-6b31-17f7-94dd-f4bc8e1f2c41",
+				version = 2,
+			},
+		},
+	},
+	[189] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "a89fd7d3-37b4-dbba-9a35-3461d922b03a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14300\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Vamp Position",
+							uuid = "17048277-8385-50b5-8477-d9746a337790",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14300\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
+							name = "Vamp dis > 5",
+							uuid = "c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14300,
+							uuid = "614059bc-bcf6-dc29-bcc3-5a07e597df35",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 942.2,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 189,
+				timerEndOffset = 5,
+				timerStartOffset = -10,
+				uuid = "8d9fdc92-f582-bba5-890f-91555b722213",
+				version = 2,
+			},
+		},
 	},
 	[195] = 
 	{
@@ -2660,6 +3134,258 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+	},
+	[196] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"4d87ceee-f728-4838-8f79-80779eccdc0c",
+									true,
+								},
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "a89fd7d3-37b4-dbba-9a35-3461d922b03a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 16461,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"95650279-e1c3-068e-b652-deafc0f27b2b",
+									true,
+								},
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "271166d7-27e1-d3d8-834c-f017e047af65",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 36926,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"ec796e6b-2edc-dfac-bcac-8a14110fb746",
+									true,
+								},
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "2c6a556b-f7f3-2846-abd6-50fec65d8bd1",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 36934,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"fb94c842-2626-8715-b3de-80ef0f9eb393",
+									true,
+								},
+								
+								{
+									"17048277-8385-50b5-8477-d9746a337790",
+									true,
+								},
+								
+								{
+									"c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+									true,
+								},
+								
+								{
+									"614059bc-bcf6-dc29-bcc3-5a07e597df35",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "2e0a06ea-878e-af29-8f89-70e501c1c1e4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "Warrior",
+							uuid = "4d87ceee-f728-4838-8f79-80779eccdc0c",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "Paladin",
+							uuid = "95650279-e1c3-068e-b652-deafc0f27b2b",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "Darkknight",
+							uuid = "ec796e6b-2edc-dfac-bcac-8a14110fb746",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "Gunbreaker",
+							uuid = "fb94c842-2626-8715-b3de-80ef0f9eb393",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14300\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Vamp Position",
+							uuid = "17048277-8385-50b5-8477-d9746a337790",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14300\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
+							name = "Vamp dis > 5",
+							uuid = "c7eebed6-c0e9-f39d-b6dd-39b96b43ac0f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14300,
+							uuid = "614059bc-bcf6-dc29-bcc3-5a07e597df35",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 973.4,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 196,
+				timerEndOffset = 5,
+				timerStartOffset = -10,
+				uuid = "970e5219-a9d1-e6f0-b25a-1ca5b9d6323f",
+				version = 2,
+			},
 		},
 	},
 	[200] = 

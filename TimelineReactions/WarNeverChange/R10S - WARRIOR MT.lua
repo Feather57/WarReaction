@@ -578,7 +578,7 @@ local tbl =
 			},
 		},
 	},
-	[15] = 
+	[13] = 
 	{
 		
 		{
@@ -590,19 +590,37 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"09b8f2b6-c831-529d-bdad-370bccc59bbf",
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"eb497524-4378-f045-be5c-5f866f30977e",
+									true,
+								},
+								
+								{
+									"e9689abd-7c60-cc08-ac91-6372440d1ba9",
+									true,
+								},
+								
+								{
+									"833094a4-e620-954b-a7f2-1b496d3e4f7f",
 									true,
 								},
 							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "ed62921e-fdf7-b969-94e0-f58f163d2d96",
 							version = 2.1,
 						},
 					},
@@ -613,22 +631,60 @@ local tbl =
 					{
 						data = 
 						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "09b8f2b6-c831-529d-bdad-370bccc59bbf",
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "Warrior",
+							uuid = "96351b59-49a5-85d4-af8f-8caf06dba68d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 92.48\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Red Position",
+							uuid = "eb497524-4378-f045-be5c-5f866f30977e",
+							version = 2,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14370\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
+							name = "Red dis > 5",
+							uuid = "e9689abd-7c60-cc08-ac91-6372440d1ba9",
+							version = 2,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14370,
+							uuid = "833094a4-e620-954b-a7f2-1b496d3e4f7f",
 							version = 2,
 						},
 					},
 				},
-				mechanicTime = 90.7,
-				name = "[WAR] Dash",
+				mechanicTime = 86.6,
+				name = "[WAR] Instant Dash",
 				timeRange = true,
-				timelineIndex = 15,
+				timelineIndex = 13,
 				timerEndOffset = 5,
-				timerStartOffset = -5,
-				uuid = "56f705ea-88d2-c0a6-9df7-4f0f3a7d37f5",
+				timerStartOffset = -10,
+				uuid = "985fe4ad-fe87-4bb9-9b1e-658215147b12",
 				version = 2,
 			},
+			inheritedIndex = 1,
 		},
 	},
 	[16] = 
@@ -719,7 +775,7 @@ local tbl =
 			},
 		},
 	},
-	[21] = 
+	[22] = 
 	{
 		
 		{
@@ -731,21 +787,30 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"d83f3619-72fc-d5d6-ba7c-9aa958745d14",
+									"9d8d85bc-5958-128a-bae2-503db08e4e2a",
+									true,
+								},
+								
+								{
+									"61ce5147-475a-f1b7-bec4-14b494bfb7f4",
 									true,
 								},
 							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "ec0a8a87-d1bc-7288-bf41-323609f898cc",
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -754,21 +819,31 @@ local tbl =
 					{
 						data = 
 						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "d83f3619-72fc-d5d6-ba7c-9aa958745d14",
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then\n    return false\nend\n\nif not EntityList then\n    return false\nend\n\nlocal nearestDist = nil\n\n-- 过滤：alive, attackable, targetable（可选中/可锁定）\nfor _, e in pairs(EntityList(\"alive,attackable,targetable\")) do\n    if e and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx * dx + dz * dz)\n\n        if (not nearestDist) or d < nearestDist then\n            nearestDist = d\n        end\n    end\nend\n\n-- 没有任何可选中可攻击目标\nif not nearestDist then\n    return false\nend\n\nreturn nearestDist > 5.0\n",
+							name = "Nearest Enemy dis > 5",
+							uuid = "9d8d85bc-5958-128a-bae2-503db08e4e2a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "Enemy",
+							partyTargetContentID = 14369,
+							uuid = "61ce5147-475a-f1b7-bec4-14b494bfb7f4",
 							version = 2,
 						},
 					},
 				},
-				enabled = false,
-				mechanicTime = 117.1,
-				name = "[WAR] Dash",
+				mechanicTime = 117.5,
+				name = "[WAR] Instant Dash",
 				timeRange = true,
-				timelineIndex = 21,
-				timerEndOffset = 2,
-				timerStartOffset = 1,
-				uuid = "1f903e4c-71b1-fec4-9595-fb52c4f8da66",
+				timelineIndex = 22,
+				timerEndOffset = 10,
+				uuid = "da2bb1b7-25cb-6d10-8841-803529811589",
 				version = 2,
 			},
 		},
@@ -1056,6 +1131,38 @@ local tbl =
 				timelineIndex = 26,
 				timerOffset = -5,
 				uuid = "910bdeae-03db-9957-aaec-6e269d5b62e8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: red circle (r=0.8m) under the farthest party member from contentID 14369\n\nlocal TARGET_CID = 14369\nlocal RADIUS = 0.8\nlocal SEGMENTS = 30\n\nif not Argus then return end\n\nlocal function colorU32(r,g,b,a)\n    if GUI and GUI.ColorConvertFloat4ToU32 then\n        return GUI:ColorConvertFloat4ToU32(r,g,b,a)\n    end\n    return 0xFFFFFFFF\nend\n\nlocal function getBossByContentID(contentID)\n    -- Prefer current target\n    if Player and Player.GetTarget then\n        local t = Player:GetTarget()\n        if t and t.contentid == contentID and t.pos then\n            return t\n        end\n    end\n    -- Fallback: scan entities\n    if EntityList then\n        local el = EntityList(\"alive,attackable\")\n        if el then\n            for _, e in pairs(el) do\n                if e and e.contentid == contentID and e.pos then\n                    return e\n                end\n            end\n        end\n    end\n    return nil\nend\n\nlocal boss = getBossByContentID(TARGET_CID)\nif not boss then return end\n\nlocal party = (TensorCore and TensorCore.getEntityGroupList) and TensorCore.getEntityGroupList(\"Party\") or nil\nif not party then return end\n\nlocal farEnt, farDist = nil, -1\nfor _, p in pairs(party) do\n    if p and p.pos then\n        local d = (TensorCore and TensorCore.getDistance2d) and TensorCore.getDistance2d(p.pos, boss.pos) or nil\n        if d and d > farDist then\n            farDist = d\n            farEnt = p\n        end\n    end\nend\n\nif not farEnt or not farEnt.pos then return end\n\nArgus.addCircleFilled(\n    farEnt.pos.x, farEnt.pos.y, farEnt.pos.z,\n    RADIUS, SEGMENTS,\n    colorU32(1,0,0,0.12),\n    colorU32(1,0,0,1.00),\n    1.6\n)\n",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "dfca9f2c-8cfb-7d30-9695-aebe7b1a6774",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 13,
+				mechanicTime = 136.3,
+				name = "[Draw] Farest Party Member from Blue",
+				timeRange = true,
+				timelineIndex = 26,
+				timerEndOffset = 1,
+				timerStartOffset = -6,
+				uuid = "f780a387-bf22-9037-9fb2-6bcf476d1c0e",
 				version = 2,
 			},
 		},
@@ -1350,6 +1457,132 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Tank Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"ae1e677b-3c5b-70be-bd7a-11a458ff3f21",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "7f0dbff9-7cd8-70de-9a54-f17039409666",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Tank Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"95f7391d-2f5b-de19-9654-66892e52862f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "3bb40f67-11b4-1b0e-8e31-bb95969f1a1b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (RikuduoGadget and RikuduoGadget.is(\"MT\")) or false\n",
+							name = "RoleMit MT",
+							uuid = "ae1e677b-3c5b-70be-bd7a-11a458ff3f21",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (RikuduoGadget and RikuduoGadget.is(\"ST\")) or false\n",
+							name = "RoleMit ST",
+							uuid = "95f7391d-2f5b-de19-9654-66892e52862f",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				eventType = 14,
+				mechanicTime = 194.6,
+				name = "[TTS] TB",
+				timeRange = true,
+				timelineIndex = 39,
+				timerEndOffset = 35,
+				timerStartOffset = -15,
+				uuid = "0885f8c1-3b40-55be-bb04-54a79617f9dc",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -1595,6 +1828,204 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Alert",
+							alertPriority = 2,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Fire Group",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "fcb3f743-ef43-921b-b3bd-edb286f8998e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 2,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Water Group",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "3b555667-f8c0-645b-bac7-b8e893209c8e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4975,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 237.7,
+				name = "[TTS] Fire/Water Group",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 15,
+				timerStartOffset = -10,
+				uuid = "19ebabfe-aa7e-8ac6-aa53-bb3940242617",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "fcb3f743-ef43-921b-b3bd-edb286f8998e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "3b555667-f8c0-645b-bac7-b8e893209c8e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4975,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 237.7,
+				name = "[Multi] Target",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 15,
+				timerStartOffset = -10,
+				uuid = "57d2f941-a4ae-9fe4-b353-2439879ff780",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -1732,9 +2163,319 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7533,
+							conditions = 
+							{
+								
+								{
+									"878f14ce-f51f-ec7f-b174-dea5086e0d07",
+									true,
+								},
+								
+								{
+									"124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							ignoreWeaveRules = true,
+							name = "Provoke Red",
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "c09ae306-b791-1ba2-b79f-b1bd9e2b6cbe",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7533,
+							conditions = 
+							{
+								
+								{
+									"878f14ce-f51f-ec7f-b174-dea5086e0d07",
+									true,
+								},
+								
+								{
+									"4e346f03-9320-42f6-a445-9698656276de",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							ignoreWeaveRules = true,
+							name = "Provoke Blue",
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "b1def152-ac92-fd8a-b198-26ab3c756f0c",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.10000000149012,
+							actionID = 7533,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "878f14ce-f51f-ec7f-b174-dea5086e0d07",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4975,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "4e346f03-9320-42f6-a445-9698656276de",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 237.7,
+				name = "[WAR] Voke",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 15,
+				timerStartOffset = -10,
+				uuid = "9b911d8d-1cdf-1822-99fd-b3698bda088b",
+				version = 2,
+			},
+		},
 	},
 	[57] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"b8a0e2ad-6a36-e14b-8d95-7ebb2f609bdf",
+									true,
+								},
+								
+								{
+									"1724a22b-a972-6235-90be-f612b7fa919a",
+									true,
+								},
+								
+								{
+									"a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "ed62921e-fdf7-b969-94e0-f58f163d2d96",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"59fa4008-6663-c72b-afcc-dbc72a6414fc",
+									true,
+								},
+								
+								{
+									"0eac2831-703f-5f06-a40f-7e767919d4b9",
+									true,
+								},
+								
+								{
+									"ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "3ce4cd09-f3f9-2b34-a8b0-2cb32925d0f6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "Warrior",
+							uuid = "96351b59-49a5-85d4-af8f-8caf06dba68d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							name = "Blue",
+							partyTargetContentID = 14369,
+							uuid = "b8a0e2ad-6a36-e14b-8d95-7ebb2f609bdf",
+							version = 2,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4975,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "1724a22b-a972-6235-90be-f612b7fa919a",
+							version = 2,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							name = "Red",
+							partyTargetContentID = 14370,
+							uuid = "59fa4008-6663-c72b-afcc-dbc72a6414fc",
+							version = 2,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "0eac2831-703f-5f06-a40f-7e767919d4b9",
+							version = 2,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 参数配置\nlocal targetCID = 14369\nlocal tolerance = 1.0 -- 容差半径（米）\nlocal toleranceSq = tolerance * tolerance -- 预计算平方值，优化性能\n\n-- 定义所有可能的坐标模式\nlocal patterns = {\n    {x = 80.00, y = 0, z = 90.00},  -- Pattern 1\n    {x = 79.97, y = 0, z = 109.97}  -- Pattern 2\n}\n\n-- 获取实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\nif (table.valid(el)) then\n    for id, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 遍历所有定义的模式坐标\n            for _, pos in ipairs(patterns) do\n                local dx = entity.pos.x - pos.x\n                local dy = entity.pos.y - pos.y\n                local dz = entity.pos.z - pos.z\n                \n                -- 计算距离平方\n                local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n                \n                -- 只要匹配任何一个模式，立即返回 true\n                if (distSq <= toleranceSq) then\n                    return true\n                end\n            end\n        end\n    end\nend\n\nreturn false",
+							name = "Check Blue Position",
+							uuid = "a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 109.97\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Red Position",
+							uuid = "ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 256.8,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 57,
+				timerStartOffset = -8,
+				uuid = "74cf39b5-4758-2d03-a768-7f5ff90cabba",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
 		
 		{
 			data = 
@@ -1836,6 +2577,115 @@ local tbl =
 			},
 		},
 	},
+	[64] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"992dc756-c0c5-8cb0-b921-d6cbe5299db1",
+									true,
+								},
+								
+								{
+									"833094a4-e620-954b-a7f2-1b496d3e4f7f",
+									true,
+								},
+								
+								{
+									"19474e69-9ed9-b5f7-8275-6cac40802045",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "ed62921e-fdf7-b969-94e0-f58f163d2d96",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "Warrior",
+							uuid = "96351b59-49a5-85d4-af8f-8caf06dba68d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14370\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 3.0)\n",
+							name = "Red dis > 3",
+							uuid = "992dc756-c0c5-8cb0-b921-d6cbe5299db1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14370,
+							uuid = "833094a4-e620-954b-a7f2-1b496d3e4f7f",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4975,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "19474e69-9ed9-b5f7-8275-6cac40802045",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 268.8,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 64,
+				timerStartOffset = -9,
+				uuid = "f3e9403e-e566-2024-bd3f-e4250c89e54c",
+				version = 2,
+			},
+		},
+	},
 	[65] = 
 	{
 		
@@ -1902,6 +2752,90 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertTTS = true,
+							alertText = "Bait Jump",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"2292675b-08c3-0f1f-89d3-ea902c69f98b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "2bc0535b-9c99-06e0-9536-7c5067d0eab0",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 4974,
+							category = "Self",
+							name = "Red",
+							uuid = "2292675b-08c3-0f1f-89d3-ea902c69f98b",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 288.5,
+				name = "[TTS] Bait TB",
+				timelineIndex = 71,
+				timerOffset = -5,
+				uuid = "958b89a5-11d8-7ea6-8363-c32218740dd2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: red circle (r=0.8m) under the farthest party member (who has buff 4974) from contentID 14369\n\nlocal TARGET_CID = 14370\nlocal FILTER_BUFF = 4974\nlocal RADIUS = 0.8\nlocal SEGMENTS = 30\n\nif not Argus then return end\n\nlocal function colorU32(r,g,b,a)\n    if GUI and GUI.ColorConvertFloat4ToU32 then\n        return GUI:ColorConvertFloat4ToU32(r,g,b,a)\n    end\n    return 0xFFFFFFFF\nend\n\nlocal function getBossByContentID(contentID)\n    -- Prefer current target\n    if Player and Player.GetTarget then\n        local t = Player:GetTarget()\n        if t and t.contentid == contentID and t.pos then\n            return t\n        end\n    end\n    -- Fallback: scan entities\n    if EntityList then\n        local el = EntityList(\"alive,attackable\")\n        if el then\n            for _, e in pairs(el) do\n                if e and e.contentid == contentID and e.pos then\n                    return e\n                end\n            end\n        end\n    end\n    return nil\nend\n\nlocal boss = getBossByContentID(TARGET_CID)\nif not boss then return end\n\nlocal party = (TensorCore and TensorCore.getEntityGroupList) and TensorCore.getEntityGroupList(\"Party\") or nil\nif not party then return end\n\nlocal farEnt, farDist = nil, -1\n\nfor _, p in pairs(party) do\n    if p and p.pos then\n        local hasBuff = false\n        if TensorCore and TensorCore.getBuff then\n            local b = TensorCore.getBuff(p, FILTER_BUFF)\n            if b then hasBuff = true end\n        end\n\n        if hasBuff then\n            local d = (TensorCore and TensorCore.getDistance2d) and TensorCore.getDistance2d(p.pos, boss.pos) or nil\n            if d and d > farDist then\n                farDist = d\n                farEnt = p\n            end\n        end\n    end\nend\n\nif not farEnt or not farEnt.pos then\n    return\nend\n\nArgus.addCircleFilled(\n    farEnt.pos.x, farEnt.pos.y, farEnt.pos.z,\n    RADIUS, SEGMENTS,\n    colorU32(1,0,0,0.12),\n    colorU32(1,0,0,1.00),\n    1.6\n)\n",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "dfca9f2c-8cfb-7d30-9695-aebe7b1a6774",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 13,
+				mechanicTime = 288.5,
+				name = "[Draw] [Red] Farest Party Member from Red",
+				timeRange = true,
+				timelineIndex = 71,
+				timerEndOffset = 7.6999998092651,
+				timerStartOffset = -2,
+				uuid = "18a8f4d3-8840-8474-bcfd-dccb5f62356e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -1943,6 +2877,9 @@ local tbl =
 			},
 			inheritedIndex = 3,
 		},
+	},
+	[73] = 
+	{
 		
 		{
 			data = 
@@ -1954,23 +2891,26 @@ local tbl =
 						data = 
 						{
 							aType = "Alert",
-							alertPriority = 3,
+							alertDuration = 7000,
+							alertScale = 0.89999997615814,
 							alertTTS = true,
-							alertText = "Bait Jump",
+							alertText = "Go North Bait Aerial",
 							alertVolume = 100,
 							conditions = 
 							{
 								
 								{
-									"2292675b-08c3-0f1f-89d3-ea902c69f98b",
+									"dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_CD",
-							uuid = "2bc0535b-9c99-06e0-9536-7c5067d0eab0",
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "fcb3f743-ef43-921b-b3bd-edb286f8998e",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1979,19 +2919,235 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 4,
 							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
 							category = "Self",
-							name = "Red",
-							uuid = "2292675b-08c3-0f1f-89d3-ea902c69f98b",
+							name = "Fire",
+							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
 							version = 2,
 						},
 					},
 				},
-				mechanicTime = 288.5,
-				name = "[TTS] Bait TB",
-				timelineIndex = 71,
-				timerOffset = -5,
-				uuid = "958b89a5-11d8-7ea6-8363-c32218740dd2",
+				mechanicTime = 290,
+				name = "[TTS] Bait Aerial",
+				timeRange = true,
+				timelineIndex = 73,
+				timerStartOffset = -7,
+				uuid = "8b36b9b4-851b-cc31-982f-509e14608a7a",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: Player <-> Fixed World Position line + endpoint circles (no residue)\n\nif not (TensorCore and Argus and GUI) then\n    return\nend\n\nlocal player = TensorCore.mGetPlayer()\nif not (player and player.pos) then\n    return\nend\n\n-- Target world coord (X/Y/Z)\nlocal tx, ty, tz = 117.42, 0.0, 81.70\n\nlocal x1, y1, z1 = player.pos.x, player.pos.y, player.pos.z\nlocal x2, y2, z2 = tx, ty, tz\n\n-- White\nlocal white = GUI:ColorConvertFloat4ToU32(1, 1, 1, 1)\n\n-- Static drawer: line + circles\nlocal drawer = TensorCore.getStaticDrawer(white, 1.5)\n\n-- Line thickness\nlocal thickness = 5.00\ndrawer:addLine(x1, y1, z1, x2, y2, z2, thickness, thickness)\n\n-- Endpoint circles (radius 0.5m)\nlocal r = 0.2\ndrawer:addCircle(x1, y1, z1, r)\ndrawer:addCircle(x2, y2, z2, r)\n",
+							conditions = 
+							{
+								
+								{
+									"20db149d-da00-6b65-aa87-4b9c03a9c405",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "ac5bc518-f19c-c97f-8cda-c744a2cc307d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "20db149d-da00-6b65-aa87-4b9c03a9c405",
+							version = 2,
+						},
+					},
+				},
+				eventType = 13,
+				mechanicTime = 290,
+				name = "[Draw] Bait Aerial",
+				timeRange = true,
+				timelineIndex = 73,
+				timerStartOffset = -5,
+				uuid = "77ce2c44-d965-7b58-93cd-6ba1d088f9f7",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[83] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7548,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"251baed0-2038-cccd-8b6b-ad49c210c474",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "ca7a921a-2ff2-7522-8563-951e7cdc1b2e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "251baed0-2038-cccd-8b6b-ad49c210c474",
+							version = 2,
+						},
+					},
+				},
+				eventType = 12,
+				mechanicTime = 301.3,
+				name = "[Fire] Anti Knockback",
+				timeRange = true,
+				timelineIndex = 83,
+				timerStartOffset = -3,
+				uuid = "d28fd432-d3c5-ce58-a61b-1c86171293cb",
+				version = 2,
+			},
+		},
+	},
+	[86] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 2,
+							alertScale = 0.69999998807907,
+							alertTTS = true,
+							alertText = "Go East Bait Cone AoE",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"d5053685-cd08-213d-a7cc-5cc02382a21d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "712b847e-2e06-1993-a207-4336d7482de3",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4974,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "d5053685-cd08-213d-a7cc-5cc02382a21d",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 306.3,
+				name = "[TTS] Bait Aerial",
+				timeRange = true,
+				timelineIndex = 86,
+				timerStartOffset = -5,
+				uuid = "73f92b98-e668-685b-be5d-4d143ac20bae",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: red circle (r=0.8m) under the farthest party member (who has buff 4974) from contentID 14369\n\nlocal TARGET_CID = 14370\nlocal FILTER_BUFF = 4974\nlocal RADIUS = 0.8\nlocal SEGMENTS = 30\n\nif not Argus then return end\n\nlocal function colorU32(r,g,b,a)\n    if GUI and GUI.ColorConvertFloat4ToU32 then\n        return GUI:ColorConvertFloat4ToU32(r,g,b,a)\n    end\n    return 0xFFFFFFFF\nend\n\nlocal function getBossByContentID(contentID)\n    -- Prefer current target\n    if Player and Player.GetTarget then\n        local t = Player:GetTarget()\n        if t and t.contentid == contentID and t.pos then\n            return t\n        end\n    end\n    -- Fallback: scan entities\n    if EntityList then\n        local el = EntityList(\"alive,attackable\")\n        if el then\n            for _, e in pairs(el) do\n                if e and e.contentid == contentID and e.pos then\n                    return e\n                end\n            end\n        end\n    end\n    return nil\nend\n\nlocal boss = getBossByContentID(TARGET_CID)\nif not boss then return end\n\nlocal party = (TensorCore and TensorCore.getEntityGroupList) and TensorCore.getEntityGroupList(\"Party\") or nil\nif not party then return end\n\nlocal farEnt, farDist = nil, -1\n\nfor _, p in pairs(party) do\n    if p and p.pos then\n        local hasBuff = false\n        if TensorCore and TensorCore.getBuff then\n            local b = TensorCore.getBuff(p, FILTER_BUFF)\n            if b then hasBuff = true end\n        end\n\n        if hasBuff then\n            local d = (TensorCore and TensorCore.getDistance2d) and TensorCore.getDistance2d(p.pos, boss.pos) or nil\n            if d and d > farDist then\n                farDist = d\n                farEnt = p\n            end\n        end\n    end\nend\n\nif not farEnt or not farEnt.pos then\n    return\nend\n\nArgus.addCircleFilled(\n    farEnt.pos.x, farEnt.pos.y, farEnt.pos.z,\n    RADIUS, SEGMENTS,\n    colorU32(204,255,0,1.12),\n    colorU32(220,255,0,1.00),\n    1.6\n)\n",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "dfca9f2c-8cfb-7d30-9695-aebe7b1a6774",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 13,
+				mechanicTime = 306.3,
+				name = "[Draw] [Red] Farest Party Member from Red",
+				timeRange = true,
+				timelineIndex = 86,
+				timerEndOffset = 1,
+				timerStartOffset = -5,
+				uuid = "d1738260-7a8f-8f92-a7a2-6addfcf937f8",
 				version = 2,
 			},
 		},
@@ -2322,6 +3478,38 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: red circle (r=0.8m) under the farthest party member from contentID 14369\n\nlocal TARGET_CID = 14369\nlocal RADIUS = 0.8\nlocal SEGMENTS = 30\n\nif not Argus then return end\n\nlocal function colorU32(r,g,b,a)\n    if GUI and GUI.ColorConvertFloat4ToU32 then\n        return GUI:ColorConvertFloat4ToU32(r,g,b,a)\n    end\n    return 0xFFFFFFFF\nend\n\nlocal function getBossByContentID(contentID)\n    -- Prefer current target\n    if Player and Player.GetTarget then\n        local t = Player:GetTarget()\n        if t and t.contentid == contentID and t.pos then\n            return t\n        end\n    end\n    -- Fallback: scan entities\n    if EntityList then\n        local el = EntityList(\"alive,attackable\")\n        if el then\n            for _, e in pairs(el) do\n                if e and e.contentid == contentID and e.pos then\n                    return e\n                end\n            end\n        end\n    end\n    return nil\nend\n\nlocal boss = getBossByContentID(TARGET_CID)\nif not boss then return end\n\nlocal party = (TensorCore and TensorCore.getEntityGroupList) and TensorCore.getEntityGroupList(\"Party\") or nil\nif not party then return end\n\nlocal farEnt, farDist = nil, -1\nfor _, p in pairs(party) do\n    if p and p.pos then\n        local d = (TensorCore and TensorCore.getDistance2d) and TensorCore.getDistance2d(p.pos, boss.pos) or nil\n        if d and d > farDist then\n            farDist = d\n            farEnt = p\n        end\n    end\nend\n\nif not farEnt or not farEnt.pos then return end\n\nArgus.addCircleFilled(\n    farEnt.pos.x, farEnt.pos.y, farEnt.pos.z,\n    RADIUS, SEGMENTS,\n    colorU32(1,0,0,0.12),\n    colorU32(1,0,0,1.00),\n    1.6\n)\n",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "dfca9f2c-8cfb-7d30-9695-aebe7b1a6774",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 13,
+				mechanicTime = 313.2,
+				name = "[Draw] Farest Party Member from Blue",
+				timeRange = true,
+				timelineIndex = 88,
+				timerEndOffset = 1,
+				timerStartOffset = -6,
+				uuid = "02e49258-9143-dc17-b25b-05c975badff6",
+				version = 2,
+			},
+		},
 	},
 	[89] = 
 	{
@@ -2569,6 +3757,110 @@ local tbl =
 			},
 		},
 	},
+	[96] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 337.9,
+				name = "[Multi] Hold CD",
+				timelineIndex = 96,
+				timerEndOffset = 20,
+				timerOffset = 1,
+				timerStartOffset = -20,
+				uuid = "b02dffb5-0c8a-219d-a89f-aae5bb670f46",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 48,
+							conditions = 
+							{
+								
+								{
+									"988d6e78-e99d-bd8a-a663-716b3f4464a0",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "920672f0-f6bf-d06c-b230-1ccd1f1f2cfa",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							conditions = 
+							{
+								
+								{
+									"9dce889a-64a4-4dbe-940b-9a69619fc58f",
+									true,
+								},
+							},
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14373,
+							uuid = "988d6e78-e99d-bd8a-a663-716b3f4464a0",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 4955,
+							category = "Party",
+							partyTargetType = "Detection Target",
+							uuid = "9dce889a-64a4-4dbe-940b-9a69619fc58f",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 337.9,
+				name = "[Multi] Enable CD",
+				timeRange = true,
+				timelineIndex = 96,
+				timerEndOffset = 53,
+				uuid = "acb0bc13-ef6a-925f-8f71-b25aca617037",
+				version = 2,
+			},
+		},
+	},
 	[106] = 
 	{
 		
@@ -2637,6 +3929,38 @@ local tbl =
 				timerEndOffset = 15,
 				timerStartOffset = -2.9000000953674,
 				uuid = "1a0ce086-de92-000b-8324-a471f8a1bbdb",
+				version = 2,
+			},
+		},
+	},
+	[110] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "91fb9991-ab69-a70a-b46a-f238ced4e000",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 390.6,
+				name = "[Multi] Enable CD",
+				timelineIndex = 110,
+				timerEndOffset = 76,
+				timerStartOffset = -20,
+				uuid = "40d84fd0-610f-8846-8189-b3d2010369e8",
 				version = 2,
 			},
 		},
@@ -2826,6 +4150,55 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "Enemy",
+							uuid = "64af11bd-a171-69b9-9b01-bd933a610172",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							category = "Lua",
+							comparator = 2,
+							conditionLua = "-- Condition: 若 5m 有效射程内存在任意“可选中 + 可攻击 + 存活”的目标，则返回 true\n\nlocal player = TensorCore.mGetPlayer()\nif not player or not player.pos then\n    return false\nend\n\nlocal RANGE = 5.0\n\n-- 取敌对实体列表：优先 TensorCore，其次兼容 Minion 的 EntityList（若存在）\nlocal enemies = nil\nif TensorCore.getEntityGroupList then\n    -- 常见：Enemy / Attackable / Aggro 等；这里用 Enemy，若你环境不是这个名字会直接降级到 false\n    enemies = TensorCore.getEntityGroupList(\"Enemy\")\nend\nif (not enemies) and type(EntityList) == \"function\" then\n    -- Minion 常见过滤：attackable\n    enemies = EntityList(\"attackable\")\nend\n\nif type(enemies) ~= \"table\" then\n    return false\nend\n\nfor _, e in pairs(enemies) do\n    if e and e.pos then\n        -- 存活判断（不同对象字段可能不同，做兼容）\n        local alive = true\n        if e.alive ~= nil then\n            alive = (e.alive == true)\n        elseif e.hp ~= nil then\n            alive = (e.hp > 0)\n        end\n\n        -- 可选中 / 可攻击（同样做兼容）\n        local selectable = (e.selectable == nil) and true or (e.selectable == true)\n        local attackable = (e.attackable == nil) and true or (e.attackable == true)\n\n        if alive and selectable and attackable then\n            local d = TensorCore.getDistance2d(player.pos, e.pos)\n            if type(d) == \"number\" then\n                -- 目标命中半径字段兼容：hitradius / hitdarius\n                local hitr = 0\n                if type(e.hitradius) == \"number\" then\n                    hitr = e.hitradius\n                elseif type(e.hitdarius) == \"number\" then\n                    hitr = e.hitdarius\n                end\n\n                -- 有效距离：中心距 - 目标命中半径\n                if (d - hitr) <= RANGE then\n                    return true\n                end\n            end\n        end\n    end\nend\n\nreturn false\n",
+							conditionType = 6,
+							inRangeValue = 3.2799999713898,
+							name = "Range",
+							uuid = "bb169dfd-1b36-a827-83ff-40eed191216b",
+							version = 2,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 414.3,
+				name = "[Multi] Target",
+				timeRange = true,
+				timelineIndex = 119,
+				timerEndOffset = 30.39999961853,
+				timerStartOffset = -8,
+				uuid = "cdc4d714-d500-f117-b2a7-a5d3e6d1fdf4",
+				version = 2,
+			},
+		},
 	},
 	[120] = 
 	{
@@ -3010,6 +4383,41 @@ local tbl =
 			},
 		},
 	},
+	[128] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7548,
+							allowInterrupt = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "ca7a921a-2ff2-7522-8563-951e7cdc1b2e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 12,
+				mechanicTime = 444.7,
+				name = "[WAR] Arm's Length",
+				timeRange = true,
+				timelineIndex = 128,
+				timerStartOffset = -3,
+				uuid = "3b0079d1-b0e9-b643-a945-5a7e67ab275b",
+				version = 2,
+			},
+		},
+	},
 	[129] = 
 	{
 		
@@ -3038,6 +4446,39 @@ local tbl =
 				timerEndOffset = 76,
 				timerStartOffset = -20,
 				uuid = "fbb759b7-c7da-28f8-8c74-5bdd498a35e4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "64af11bd-a171-69b9-9b01-bd933a610172",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 446.7,
+				name = "[Multi] Target",
+				timeRange = true,
+				timelineIndex = 129,
+				timerEndOffset = 2,
+				timerStartOffset = -2,
+				uuid = "4ce57842-7e99-78e6-8761-88c7ee165718",
 				version = 2,
 			},
 		},
@@ -3096,9 +4537,307 @@ local tbl =
 			},
 			inheritedIndex = 1,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"72bf36d2-90e8-185f-b579-a2aae3b238f1",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "64af11bd-a171-69b9-9b01-bd933a610172",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
+							name = "DeepBlue targeting self",
+							uuid = "72bf36d2-90e8-185f-b579-a2aae3b238f1",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 451.8,
+				name = "[Blue] SetTarget",
+				timeRange = true,
+				timelineIndex = 131,
+				timerEndOffset = 10,
+				uuid = "e08211b3-8a4c-ce2b-a3e7-a78be433319e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"014c8be4-6aa0-f1af-913a-1315c5c3dc0b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "64af11bd-a171-69b9-9b01-bd933a610172",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14370\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
+							name = "RedHot targeting self",
+							uuid = "014c8be4-6aa0-f1af-913a-1315c5c3dc0b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 451.8,
+				name = "[Red] SetTarget",
+				timeRange = true,
+				timelineIndex = 131,
+				timerEndOffset = 10,
+				uuid = "a28e2d19-3903-1418-8807-738a72795059",
+				version = 2,
+			},
+		},
 	},
 	[133] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Fire Group",
+							conditions = 
+							{
+								
+								{
+									"dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "fcb3f743-ef43-921b-b3bd-edb286f8998e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Water Group",
+							conditions = 
+							{
+								
+								{
+									"5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "3b555667-f8c0-645b-bac7-b8e893209c8e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 460.3,
+				name = "[TTS] Fire/Water Group",
+				timeRange = true,
+				timelineIndex = 133,
+				timerEndOffset = 20,
+				timerStartOffset = -10,
+				uuid = "a2012fc1-05c8-ceec-bbe0-f63231b639bb",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "fcb3f743-ef43-921b-b3bd-edb286f8998e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							setTarget = true,
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "3b555667-f8c0-645b-bac7-b8e893209c8e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 460.3,
+				name = "SetTarget",
+				timeRange = true,
+				timelineIndex = 133,
+				timerEndOffset = 20,
+				timerStartOffset = -10,
+				uuid = "3188e1d6-1757-8cb8-83a8-8d16f058fe23",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 		
 		{
 			data = 
@@ -3165,6 +4904,127 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7533,
+							conditions = 
+							{
+								
+								{
+									"878f14ce-f51f-ec7f-b174-dea5086e0d07",
+									true,
+								},
+								
+								{
+									"124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							ignoreWeaveRules = true,
+							name = "Provoke Red",
+							targetContentID = 14370,
+							targetType = "ContentID",
+							uuid = "c09ae306-b791-1ba2-b79f-b1bd9e2b6cbe",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7533,
+							conditions = 
+							{
+								
+								{
+									"878f14ce-f51f-ec7f-b174-dea5086e0d07",
+									true,
+								},
+								
+								{
+									"4e346f03-9320-42f6-a445-9698656276de",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							ignoreWeaveRules = true,
+							name = "Provoke Blue",
+							targetContentID = 14369,
+							targetType = "ContentID",
+							uuid = "b1def152-ac92-fd8a-b198-26ab3c756f0c",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 0.10000000149012,
+							actionID = 7533,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "878f14ce-f51f-ec7f-b174-dea5086e0d07",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "4e346f03-9320-42f6-a445-9698656276de",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 460.3,
+				name = "Provoke",
+				timeRange = true,
+				timelineIndex = 133,
+				timerEndOffset = 20,
+				timerStartOffset = -10,
+				uuid = "3f9acbaa-9767-0809-9647-4c61f2e1ae8d",
+				version = 2,
+			},
+		},
 	},
 	[136] = 
 	{
@@ -3178,18 +5038,57 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Switch Tank Buster",
+							alertVolume = 100,
 							conditions = 
 							{
 								
 								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"2bebe761-5deb-a4b4-b7f8-e70a48dfb20a",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "7f0dbff9-7cd8-70de-9a54-f17039409666",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Switch Tank Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"9bb69cf8-5f16-3055-acf3-a202c33f1487",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "3bb40f67-11b4-1b0e-8e31-bb95969f1a1b",
 							version = 2.1,
 						},
 					},
@@ -3200,23 +5099,244 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 25751,
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							name = "Water",
+							uuid = "2bebe761-5deb-a4b4-b7f8-e70a48dfb20a",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "9bb69cf8-5f16-3055-acf3-a202c33f1487",
 							version = 2,
 						},
 					},
 				},
+				eventType = 14,
 				mechanicTime = 482.3,
-				name = "[WAR] Whetting",
+				name = "[TTS] TB",
+				timeRange = true,
 				timelineIndex = 136,
-				timerStartOffset = -1,
-				uuid = "03676309-e77b-267f-9c45-450d6eda716b",
+				timerEndOffset = 45,
+				timerStartOffset = -15,
+				uuid = "f9dbda97-b83c-56e1-ae90-b46fe52c3226",
 				version = 2,
 			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "d001d1f0-ac22-e606-bba9-6720a17f474b",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "1881782e-195f-0876-a124-459b262ef65c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"5276635b-5916-2c99-8780-31e734e4dfd7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "0e593b98-0053-9838-a235-81357a2c0f08",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"5276635b-5916-2c99-8780-31e734e4dfd7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "90adbd22-8d4d-fccf-afab-309a6a5c21a0",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
+							version = 2,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "5276635b-5916-2c99-8780-31e734e4dfd7",
+							version = 2,
+						},
+					},
+				},
+				eventType = 14,
+				loop = true,
+				mechanicTime = 482.3,
+				name = "[WAR] TB mits",
+				timeRange = true,
+				timelineIndex = 136,
+				timerEndOffset = 45,
+				timerStartOffset = -15,
+				uuid = "3848d757-977d-ef4d-b426-06d86090525b",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -3287,9 +5407,6 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[140] = 
-	{
 		
 		{
 			data = 
@@ -3300,18 +5417,75 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"d58f8f4b-1d92-94cd-b9bb-1aaa2a980373",
+									true,
+								},
+								
+								{
+									"402fadb7-04a5-f5f8-a168-9f10380c2ddd",
+									true,
+								},
+								
+								{
+									"a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "ed62921e-fdf7-b969-94e0-f58f163d2d96",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"96351b59-49a5-85d4-af8f-8caf06dba68d",
+									true,
+								},
+								
+								{
+									"368dd721-c555-6967-81c6-a36197fe3178",
+									true,
+								},
+								
+								{
+									"4912ef93-b03b-6d1f-ba6e-26c6b59b330d",
+									true,
+								},
+								
+								{
+									"ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14284,
+							targetType = "Detection Target",
+							uuid = "3ce4cd09-f3f9-2b34-a8b0-2cb32925d0f6",
 							version = 2.1,
 						},
 					},
@@ -3322,26 +5496,105 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 7531,
 							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "Warrior",
+							uuid = "96351b59-49a5-85d4-af8f-8caf06dba68d",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							name = "Blue",
+							partyTargetContentID = 14369,
+							uuid = "d58f8f4b-1d92-94cd-b9bb-1aaa2a980373",
+							version = 2,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffIDList = 
+							{
+								4828,
+							},
+							category = "Self",
+							name = "Water",
+							uuid = "402fadb7-04a5-f5f8-a168-9f10380c2ddd",
+							version = 2,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							name = "Red",
+							partyTargetContentID = 14370,
+							uuid = "368dd721-c555-6967-81c6-a36197fe3178",
+							version = 2,
+						},
+						inheritedIndex = 8,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 4,
+							buffID = 4974,
+							buffIDList = 
+							{
+								4827,
+							},
+							category = "Self",
+							name = "Fire",
+							uuid = "4912ef93-b03b-6d1f-ba6e-26c6b59b330d",
+							version = 2,
+						},
+						inheritedIndex = 10,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14369\nlocal targetX = 86.99\nlocal targetY = 0\nlocal targetZ = 86.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Blue Position",
+							uuid = "a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 112.99\nlocal targetY = 0\nlocal targetZ = 112.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
+							name = "Check Red Position",
+							uuid = "ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
 							version = 2,
 						},
 					},
 				},
-				mechanicTime = 492.8,
-				name = "[Tank] Rampart",
-				timelineIndex = 140,
-				timerEndOffset = 20,
-				timerOffset = -3,
-				timerStartOffset = -20,
-				uuid = "8e45a77b-cc83-d157-9115-e2e44e64c4f1",
+				mechanicTime = 482.3,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 136,
+				timerStartOffset = -10,
+				uuid = "6fd03ad0-9bc6-8e87-ac11-4b6891d70b7b",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 9,
 		},
 	},
 	[141] = 
@@ -3877,37 +6130,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 553.2,
-				name = "[Multi] Arm's Lenght",
-				timelineIndex = 160,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "c6e65ae1-21f1-e3d9-8cc0-1f4fd7bd2632",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
@@ -3955,6 +6177,89 @@ local tbl =
 				timelineIndex = 160,
 				timerOffset = -5,
 				uuid = "8db73985-a769-8b48-aa52-846ebf58602e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7548,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"9e8a5ae0-9d7b-9a16-99e7-76d08e44279b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "ca7a921a-2ff2-7522-8563-951e7cdc1b2e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
+							name = "DeepBlue targeting self",
+							uuid = "9e8a5ae0-9d7b-9a16-99e7-76d08e44279b",
+							version = 2,
+						},
+					},
+				},
+				eventType = 12,
+				mechanicTime = 553.2,
+				name = "[Multi] Arm's Lenght",
+				timeRange = true,
+				timelineIndex = 160,
+				timerStartOffset = -3,
+				uuid = "acb03156-d144-0dd0-baeb-3a13ca187ecb",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw: red circle (r=0.8m) under the farthest party member from contentID 14369\n\nlocal TARGET_CID = 14369\nlocal RADIUS = 0.8\nlocal SEGMENTS = 30\n\nif not Argus then return end\n\nlocal function colorU32(r,g,b,a)\n    if GUI and GUI.ColorConvertFloat4ToU32 then\n        return GUI:ColorConvertFloat4ToU32(r,g,b,a)\n    end\n    return 0xFFFFFFFF\nend\n\nlocal function getBossByContentID(contentID)\n    -- Prefer current target\n    if Player and Player.GetTarget then\n        local t = Player:GetTarget()\n        if t and t.contentid == contentID and t.pos then\n            return t\n        end\n    end\n    -- Fallback: scan entities\n    if EntityList then\n        local el = EntityList(\"alive,attackable\")\n        if el then\n            for _, e in pairs(el) do\n                if e and e.contentid == contentID and e.pos then\n                    return e\n                end\n            end\n        end\n    end\n    return nil\nend\n\nlocal boss = getBossByContentID(TARGET_CID)\nif not boss then return end\n\nlocal party = (TensorCore and TensorCore.getEntityGroupList) and TensorCore.getEntityGroupList(\"Party\") or nil\nif not party then return end\n\nlocal farEnt, farDist = nil, -1\nfor _, p in pairs(party) do\n    if p and p.pos then\n        local d = (TensorCore and TensorCore.getDistance2d) and TensorCore.getDistance2d(p.pos, boss.pos) or nil\n        if d and d > farDist then\n            farDist = d\n            farEnt = p\n        end\n    end\nend\n\nif not farEnt or not farEnt.pos then return end\n\nArgus.addCircleFilled(\n    farEnt.pos.x, farEnt.pos.y, farEnt.pos.z,\n    RADIUS, SEGMENTS,\n    colorU32(1,0,0,0.12),\n    colorU32(1,0,0,1.00),\n    1.6\n)\n",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "dfca9f2c-8cfb-7d30-9695-aebe7b1a6774",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 13,
+				mechanicTime = 553.2,
+				name = "[Draw] Farest Party Member from Blue",
+				timeRange = true,
+				timelineIndex = 160,
+				timerEndOffset = 1,
+				timerStartOffset = -6,
+				uuid = "11247e5e-8b57-e4eb-9fd8-373d05e01bfb",
 				version = 2,
 			},
 		},

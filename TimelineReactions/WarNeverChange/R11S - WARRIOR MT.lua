@@ -620,6 +620,40 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 16464,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashLowest",
+							ignoreWeaveRules = true,
+							targetType = "Ranged Caster DPS",
+							uuid = "13df61c9-3a7d-7077-a180-8e7734ceff0c",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 100,
+				name = "[WAR] Nascent Caster",
+				timelineIndex = 11,
+				timerStartOffset = -40,
+				uuid = "9467005a-c485-f5ff-98db-5725e9d2edfb",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -660,40 +694,6 @@ local tbl =
 				uuid = "0424fc76-2572-06bf-a654-f29f9394fa58",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16464,
-							atomicPriority = true,
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashLowest",
-							ignoreWeaveRules = true,
-							targetType = "Ranged Caster DPS",
-							uuid = "13df61c9-3a7d-7077-a180-8e7734ceff0c",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 100,
-				name = "[WAR] Nascent Caster",
-				timelineIndex = 11,
-				timerStartOffset = -40,
-				uuid = "9467005a-c485-f5ff-98db-5725e9d2edfb",
-				version = 2,
-			},
-			inheritedIndex = 5,
 		},
 	},
 	[13] = 
@@ -3493,6 +3493,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 500,
 				name = "[Tank] Voke",
 				timelineIndex = 51,
@@ -4155,6 +4156,51 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 630,
+				name = "[WAR] Thrill",
+				timelineIndex = 64,
+				timerEndOffset = 20,
+				timerOffset = 2,
+				timerStartOffset = -20,
+				uuid = "dda74471-0dd2-1baa-bd82-fa5db8738b52",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
@@ -4195,51 +4241,6 @@ local tbl =
 				uuid = "88c3bd45-e707-9df1-bde6-0953b7753954",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 40,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 630,
-				name = "[WAR] Thrill",
-				timelineIndex = 64,
-				timerEndOffset = 20,
-				timerOffset = 2,
-				timerStartOffset = -20,
-				uuid = "dda74471-0dd2-1baa-bd82-fa5db8738b52",
-				version = 2,
-			},
-			inheritedIndex = 4,
 		},
 		
 		{
