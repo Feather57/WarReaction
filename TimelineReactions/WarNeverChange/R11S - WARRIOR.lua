@@ -4297,6 +4297,7 @@ local tbl =
 	},
 	inheritedProfiles = 
 	{
+		"store\\anyone\\savage6\\m11s\\main",
 	},
 	timelineName = "r11s",
 	version = "1.5.0",
