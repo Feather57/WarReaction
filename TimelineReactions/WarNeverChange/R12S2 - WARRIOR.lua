@@ -323,6 +323,94 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Spread after",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"0cede563-7560-bfd1-b233-668228f90b5a",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							name = "Spread",
+							uuid = "4bcbc277-918f-b566-ac3a-293bd2c78f5a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Stack after",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"0d726202-54bb-f20d-91b1-d62eff76edcb",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							name = "Stack",
+							uuid = "5e29eb13-d738-1649-8da2-b4fd725c7c80",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 2937,
+							category = "Self",
+							name = "Fire Resistance Down II",
+							uuid = "0cede563-7560-bfd1-b233-668228f90b5a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 3323,
+							category = "Self",
+							name = "Dark Resistance Down II",
+							uuid = "0d726202-54bb-f20d-91b1-d62eff76edcb",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 45.125,
+				name = "[Multi] TTS",
+				timeRange = true,
+				timelineIndex = 7,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "d2249181-4db5-fad1-b3c5-426586ddf225",
+				version = 2,
+			},
+		},
 	},
 	[8] = 
 	{
@@ -918,6 +1006,27 @@ local tbl =
 						},
 						inheritedIndex = 1,
 					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Share with heal",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"ae1bad11-ba8c-1370-943b-8e2b5793e9d4",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "c0b03aaf-5a04-3101-8201-967782ea1dcc",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -1086,6 +1195,40 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 25751,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 189.813,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 39,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "49039d26-0e79-ffa5-8f20-c009d02f85c8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -1142,61 +1285,11 @@ local tbl =
 				timelineIndex = 39,
 				timerEndOffset = 20,
 				timerOffset = 0.5,
-				timerStartOffset = -2,
+				timerStartOffset = -1,
 				uuid = "88de00a6-97d6-dbdd-a603-0a10fe7f9137",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 189.813,
-				name = "[WAR] Whetting",
-				timelineIndex = 39,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "49039d26-0e79-ffa5-8f20-c009d02f85c8",
-				version = 2,
-			},
+			inheritedIndex = 6,
 		},
 	},
 	[44] = 
