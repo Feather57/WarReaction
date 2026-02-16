@@ -117,9 +117,103 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 2,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -8,
 				timerStartOffset = -20,
 				uuid = "c07c0af1-0b0a-a1a0-95f5-fc20ffa446d4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 40.515,
+				name = "[WAR] Venge",
+				timelineIndex = 2,
+				timerOffset = -4,
+				uuid = "8b0b3fec-a825-5452-bf9d-d5cab197659e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 40.515,
+				name = "[WAR] Thrill",
+				timelineIndex = 2,
+				timerEndOffset = 20,
+				timerOffset = -2,
+				timerStartOffset = -20,
+				uuid = "61b3acce-e20f-a199-95c8-fe786077f57f",
 				version = 2,
 			},
 		},
@@ -293,16 +387,8 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -310,71 +396,15 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
 				},
 				mechanicTime = 97.126,
-				name = "[WAR] Venge",
+				name = "[WAR] Holmgang",
 				timelineIndex = 16,
-				timerOffset = -8,
-				uuid = "0498688e-98fc-3257-9ecc-bf160f2a4e8b",
+				timerOffset = -2,
+				uuid = "5bee2714-f9ca-8595-bc77-84af29c1e46f",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 40,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 97.126,
-				name = "[WAR] Thrill",
-				timelineIndex = 16,
-				timerEndOffset = 20,
-				timerOffset = -6,
-				timerStartOffset = -20,
-				uuid = "8ea2a172-8626-5afb-8b5a-ed4378f66db2",
-				version = 2,
-			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -679,6 +709,9 @@ local tbl =
 				version = 2,
 			},
 		},
+	},
+	[40] = 
+	{
 		
 		{
 			data = 
@@ -721,19 +754,16 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 188.001,
+				mechanicTime = 228.548,
 				name = "[Tank] Rampart",
-				timelineIndex = 30,
+				timelineIndex = 40,
 				timerEndOffset = 20,
-				timerOffset = -5,
+				timerOffset = -12,
 				timerStartOffset = -20,
-				uuid = "813cb331-5a20-a300-8470-eabd0512f5a8",
+				uuid = "cc0d8231-68eb-d0f2-95c6-9d5d1f6aab06",
 				version = 2,
 			},
 		},
-	},
-	[40] = 
-	{
 		
 		{
 			data = 
@@ -745,8 +775,8 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
-							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -754,15 +784,29 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 228.548,
-				name = "[WAR] Holmgang",
+				name = "[WAR] Thrill",
 				timelineIndex = 40,
-				timerOffset = -4,
-				uuid = "ef89a47c-95cf-8590-8ae2-41bb76489196",
+				timerEndOffset = 20,
+				timerOffset = -3,
+				timerStartOffset = -20,
+				uuid = "4ce8276c-23e9-eab2-b477-be3ae65ea324",
 				version = 2,
 			},
-			inheritedIndex = 1,
 		},
 		
 		{
@@ -795,6 +839,7 @@ local tbl =
 				uuid = "a4a7646f-84e7-efa1-ae1c-08002a9fbc26",
 				version = 2,
 			},
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -864,6 +909,7 @@ local tbl =
 				uuid = "5fa928fb-9a14-992d-ad21-e8d9f22c4d08",
 				version = 2,
 			},
+			inheritedIndex = 7,
 		},
 	},
 	[41] = 
@@ -1139,7 +1185,7 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 55,
 				timerEndOffset = 20,
-				timerOffset = -9,
+				timerOffset = -8,
 				timerStartOffset = -20,
 				uuid = "ebd08855-b846-b126-ab3d-f07d166d86b9",
 				version = 2,
