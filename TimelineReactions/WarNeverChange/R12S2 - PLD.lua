@@ -2940,6 +2940,7 @@ local tbl =
 	},
 	inheritedProfiles = 
 	{
+		"store\\anyone\\savage6\\m12s\\main_p2",
 	},
 	timelineName = "r12s2",
 	version = "1.5.0",
