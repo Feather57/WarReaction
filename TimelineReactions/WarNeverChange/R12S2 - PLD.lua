@@ -55,7 +55,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -143,7 +143,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -155,7 +155,7 @@ local tbl =
 				mechanicTime = 15.125,
 				name = "[Tank][MT] Reprisal",
 				timelineIndex = 1,
-				timerOffset = -5,
+				timerOffset = -6,
 				uuid = "61e77e99-61c4-4bd1-95f3-ee7ed2bbde0e",
 				version = 2,
 			},
@@ -194,7 +194,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "047fe2b3-9585-f8b3-8053-226f9f45a3d5",
@@ -267,7 +267,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -449,7 +449,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -519,7 +519,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -767,35 +767,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Jumps",
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 76.922,
-				name = "[Multi] Enable Jumps",
-				timelineIndex = 15,
-				timerOffset = 0.10000000149012,
-				uuid = "914b414c-f2af-4396-920b-cda43619815a",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
@@ -816,6 +787,35 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPLD3_Jumps",
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 76.922,
+				name = "[Multi] Enable Jumps",
+				timelineIndex = 15,
+				timerOffset = 0.10000000149012,
+				uuid = "914b414c-f2af-4396-920b-cda43619815a",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	},
 	[19] = 
@@ -888,7 +888,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -958,7 +958,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -1049,7 +1049,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -1119,7 +1119,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -1444,7 +1444,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -1517,7 +1517,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -1729,6 +1729,38 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 253.204,
+				name = "[PLD] Dash",
+				timelineIndex = 51,
+				timerEndOffset = 20,
+				timerOffset = 0.25,
+				timerStartOffset = -20,
+				uuid = "a0f4576d-d590-0e94-8778-eddfb5e40704",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Alert",
 							alertPriority = 3,
 							alertTTS = true,
@@ -1781,38 +1813,6 @@ local tbl =
 				uuid = "a11226fd-3875-eef5-a0a8-8657b266c24d",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 253.204,
-				name = "[PLD] Dash",
-				timelineIndex = 51,
-				timerEndOffset = 20,
-				timerOffset = 0.25,
-				timerStartOffset = -20,
-				uuid = "a0f4576d-d590-0e94-8778-eddfb5e40704",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[52] = 
@@ -1886,7 +1886,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -1956,7 +1956,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -1977,6 +1977,78 @@ local tbl =
 	},
 	[63] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+								
+								{
+									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 343.485,
+				name = "[PLD][OT] Veil",
+				timelineIndex = 63,
+				timerOffset = -5,
+				timerStartOffset = 1,
+				uuid = "bc5cc769-7cc3-755e-a5d6-aac55cb2eead",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 		
 		{
 			data = 
@@ -2045,7 +2117,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -2061,78 +2133,6 @@ local tbl =
 				uuid = "c1d9b7cc-6f50-0142-944d-fee4f3339dce",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
-									true,
-								},
-								
-								{
-									"622a488d-a41c-b6c9-beb1-05f82b78449b",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 343.485,
-				name = "[PLD][OT] Veil",
-				timelineIndex = 63,
-				timerOffset = -5,
-				timerStartOffset = 1,
-				uuid = "bc5cc769-7cc3-755e-a5d6-aac55cb2eead",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[68] = 
@@ -2190,7 +2190,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -2211,6 +2211,78 @@ local tbl =
 	},
 	[84] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+								
+								{
+									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 436.626,
+				name = "[PLD][OT] Veil",
+				timelineIndex = 84,
+				timerOffset = -5,
+				timerStartOffset = 1,
+				uuid = "12072173-35d4-8d65-a726-7380a5d84b0d",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 		
 		{
 			data = 
@@ -2279,7 +2351,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -2295,78 +2367,6 @@ local tbl =
 				uuid = "152a9a8d-59cd-2c8e-834e-320d48986094",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
-									true,
-								},
-								
-								{
-									"622a488d-a41c-b6c9-beb1-05f82b78449b",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 436.626,
-				name = "[PLD][OT] Veil",
-				timelineIndex = 84,
-				timerOffset = -5,
-				timerStartOffset = 1,
-				uuid = "12072173-35d4-8d65-a726-7380a5d84b0d",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[98] = 
@@ -2424,7 +2424,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
@@ -2511,7 +2511,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -2602,6 +2602,38 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 487.641,
+				name = "[PLD] Dash",
+				timelineIndex = 102,
+				timerEndOffset = 20,
+				timerOffset = 0.25,
+				timerStartOffset = -20,
+				uuid = "fa702262-82b6-1c57-b9bd-94df630624da",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Alert",
 							alertPriority = 3,
 							alertTTS = true,
@@ -2654,38 +2686,6 @@ local tbl =
 				uuid = "19c927b6-b7c5-44a1-97b5-cf220cebd0d9",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 487.641,
-				name = "[PLD] Dash",
-				timelineIndex = 102,
-				timerEndOffset = 20,
-				timerOffset = 0.25,
-				timerStartOffset = -20,
-				uuid = "fa702262-82b6-1c57-b9bd-94df630624da",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[104] = 
@@ -2758,7 +2758,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -2847,7 +2847,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
@@ -2918,7 +2918,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
