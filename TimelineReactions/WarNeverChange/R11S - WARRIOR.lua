@@ -1933,6 +1933,94 @@ local tbl =
 			},
 		},
 	},
+	[55] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"078e380b-f539-45ac-b372-5da6074e1a68",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"a7d644ca-f12e-df17-ae21-8eb11024e246",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "097da4b2-37d3-e41f-aeea-9ba34593605b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "078e380b-f539-45ac-b372-5da6074e1a68",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 207.121,
+				name = "[WAR] Whetting",
+				timelineIndex = 55,
+				timerOffset = -4,
+				timerStartOffset = -1,
+				uuid = "183c8f89-54d1-e586-9870-5099fca46e70",
+				version = 2,
+			},
+		},
+	},
 	[61] = 
 	{
 		
@@ -4466,6 +4554,96 @@ local tbl =
 			},
 		},
 	},
+	[142] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"078e380b-f539-45ac-b372-5da6074e1a68",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"a7d644ca-f12e-df17-ae21-8eb11024e246",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "097da4b2-37d3-e41f-aeea-9ba34593605b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "078e380b-f539-45ac-b372-5da6074e1a68",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 516.245,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 142,
+				timerEndOffset = -1,
+				timerOffset = -4,
+				timerStartOffset = -4,
+				uuid = "187d8d36-15dc-155b-aaaa-e205bfd5791c",
+				version = 2,
+			},
+		},
+	},
 	[144] = 
 	{
 		
@@ -4990,9 +5168,11 @@ local tbl =
 				},
 				mechanicTime = 557.386,
 				name = "[WAR] Whetting",
+				timeRange = true,
 				timelineIndex = 156,
-				timerOffset = -3,
-				timerStartOffset = -1,
+				timerEndOffset = -0.5,
+				timerOffset = -2,
+				timerStartOffset = -2,
 				uuid = "15cce1ac-7e6f-2104-940f-ab452ca8ed11",
 				version = 2,
 			},
