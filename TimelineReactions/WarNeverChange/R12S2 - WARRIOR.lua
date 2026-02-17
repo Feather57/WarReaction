@@ -977,7 +977,7 @@ local tbl =
 				mechanicTime = 69.922,
 				name = "[WAR][MT] Holmgang",
 				timelineIndex = 13,
-				timerOffset = -1.5,
+				timerOffset = -1,
 				uuid = "a68d8d34-0ae8-ca34-afe7-75cd5a0c6bd3",
 				version = 2,
 			},
@@ -1600,6 +1600,34 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "6274b300-4e5e-3f6d-ae0f-2d85b37f6cc5",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 105.313,
+				name = "[Multi] Hold CD",
+				timelineIndex = 17,
+				uuid = "4955a291-e7b5-1ca2-b2cd-99b978e668d6",
+				version = 2,
+			},
+		},
 	},
 	[19] = 
 	{
@@ -1845,6 +1873,37 @@ local tbl =
 				timerOffset = -4,
 				timerStartOffset = -1,
 				uuid = "c068cfb4-5044-3167-a05d-ea6da7e65f4a",
+				version = 2,
+			},
+		},
+	},
+	[22] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "6274b300-4e5e-3f6d-ae0f-2d85b37f6cc5",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 135.235,
+				name = "[Multi] Hold ON",
+				timelineIndex = 22,
+				timerOffset = -5,
+				uuid = "9267dcd4-da69-7556-bd31-2bc2199ad1da",
 				version = 2,
 			},
 		},
