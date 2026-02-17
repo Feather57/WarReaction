@@ -4654,65 +4654,11 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 146,
 				timerEndOffset = -2,
-				timerOffset = -6,
 				timerStartOffset = -10,
 				uuid = "749bcc5e-8606-f0b3-84c3-c328164b2665",
 				version = 2,
 			},
 			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 541.479,
-				name = "[WAR] Whetting",
-				timelineIndex = 146,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "4afc1710-95bd-a420-8b3e-b1c9dec71bf1",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 		
 		{
@@ -4871,6 +4817,62 @@ local tbl =
 				uuid = "d491cb06-136d-0fa9-b9ac-c34e9b8da34c",
 				version = 2,
 			},
+		},
+	},
+	[156] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 557.386,
+				name = "[WAR] Whetting",
+				timelineIndex = 156,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "15cce1ac-7e6f-2104-940f-ab452ca8ed11",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[160] = 
@@ -5583,7 +5585,7 @@ local tbl =
 				timelineIndex = 174,
 				timerEndOffset = -2,
 				timerOffset = -8,
-				timerStartOffset = -10,
+				timerStartOffset = -7,
 				uuid = "5d46b335-9555-8ae5-a04b-d64fe961afab",
 				version = 2,
 			},
