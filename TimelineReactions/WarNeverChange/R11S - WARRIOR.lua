@@ -2357,6 +2357,78 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 18,
+							conditions = 
+							{
+								
+								{
+									"934a42cf-4e7d-968a-9000-15fb86cf8bb3",
+									false,
+								},
+								
+								{
+									"30d566ba-16ba-2545-96fa-6127dbe56180",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_ShirkOT",
+							uuid = "fdf15d6f-ce3b-9d76-9582-6dae2747d8e0",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 9,
+							partyTargetType = "Event Entity",
+							uuid = "934a42cf-4e7d-968a-9000-15fb86cf8bb3",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgOptionType = 3,
+							eventArgType = 2,
+							spellIDList = 
+							{
+								7533,
+							},
+							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
+							version = 2,
+						},
+					},
+				},
+				eventType = 2,
+				mechanicTime = 239.246,
+				name = "[Tank] Shirk",
+				timeRange = true,
+				timelineIndex = 64,
+				timerEndOffset = 30,
+				uuid = "09d587a1-6477-9abc-8264-462837215eaf",
+				version = 2,
+			},
+		},
 	},
 	[66] = 
 	{
@@ -2513,6 +2585,75 @@ local tbl =
 				timerOffset = -1,
 				timerStartOffset = -1,
 				uuid = "b979f8ee-1758-43c9-88a5-725fd438bb78",
+				version = 2,
+			},
+		},
+	},
+	[78] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"2574b4d9-cdfa-459b-89b3-0105bc5943fa",
+									true,
+								},
+								
+								{
+									"0e47c1a6-0f92-718f-b4e6-9a97c0c113db",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "abc1def2-edbf-94b3-93ad-8fc45f1dc11c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "2574b4d9-cdfa-459b-89b3-0105bc5943fa",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7537,
+							category = "Self",
+							conditionType = 4,
+							uuid = "0e47c1a6-0f92-718f-b4e6-9a97c0c113db",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 278.761,
+				name = "[Tank][MT] Voke",
+				timelineIndex = 78,
+				uuid = "941ca503-dea0-234a-aa7c-2659b093f51b",
 				version = 2,
 			},
 		},
@@ -4553,6 +4694,79 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 18,
+							conditions = 
+							{
+								
+								{
+									"934a42cf-4e7d-968a-9000-15fb86cf8bb3",
+									false,
+								},
+								
+								{
+									"30d566ba-16ba-2545-96fa-6127dbe56180",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_ShirkOT",
+							uuid = "fdf15d6f-ce3b-9d76-9582-6dae2747d8e0",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 9,
+							partyTargetType = "Event Entity",
+							uuid = "934a42cf-4e7d-968a-9000-15fb86cf8bb3",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgOptionType = 3,
+							eventArgType = 2,
+							spellIDList = 
+							{
+								7533,
+							},
+							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
+							version = 2,
+						},
+					},
+				},
+				eventType = 2,
+				mechanicTime = 489.948,
+				name = "[Tank] Shirk",
+				timeRange = true,
+				timelineIndex = 128,
+				timerEndOffset = 30,
+				timerStartOffset = -5,
+				uuid = "e568e1a4-5419-fa42-ba6b-bc1f8a968772",
+				version = 2,
+			},
+		},
 	},
 	[142] = 
 	{
@@ -4640,6 +4854,75 @@ local tbl =
 				timerOffset = -4,
 				timerStartOffset = -4,
 				uuid = "187d8d36-15dc-155b-aaaa-e205bfd5791c",
+				version = 2,
+			},
+		},
+	},
+	[143] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"2574b4d9-cdfa-459b-89b3-0105bc5943fa",
+									true,
+								},
+								
+								{
+									"0e47c1a6-0f92-718f-b4e6-9a97c0c113db",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "abc1def2-edbf-94b3-93ad-8fc45f1dc11c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "2574b4d9-cdfa-459b-89b3-0105bc5943fa",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7537,
+							category = "Self",
+							conditionType = 4,
+							uuid = "0e47c1a6-0f92-718f-b4e6-9a97c0c113db",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 517.745,
+				name = "[Tank][MT] Voke",
+				timelineIndex = 143,
+				uuid = "f75f416f-649f-1ecf-8521-fcecb0223c3a",
 				version = 2,
 			},
 		},
