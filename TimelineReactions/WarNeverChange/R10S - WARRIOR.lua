@@ -291,39 +291,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 14.125,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = 6,
-				timerOffset = 0.40000000596046,
-				timerStartOffset = 1,
-				uuid = "e80c0655-3f60-3b64-a17d-e79073986595",
-				version = 2,
-			},
-			inheritedIndex = 19,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
 							variableTogglesType = 2,
@@ -354,6 +321,39 @@ local tbl =
 				uuid = "e23c21a0-870d-4835-9715-61ac5c31b51d",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 14.125,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 6,
+				timerOffset = 0.40000000596046,
+				timerStartOffset = 1,
+				uuid = "e80c0655-3f60-3b64-a17d-e79073986595",
+				version = 2,
+			},
+			inheritedIndex = 19,
 		},
 		
 		{
@@ -1189,57 +1189,6 @@ local tbl =
 							{
 								
 								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 136.312,
-				name = "[WAR] Venge",
-				timelineIndex = 27,
-				timerOffset = -8,
-				uuid = "d286cfde-430d-082f-93d1-333cb2cfc8fb",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
 									true,
 								},
@@ -1293,6 +1242,57 @@ local tbl =
 				uuid = "ec8ca07f-78cf-7a1c-a094-83dfdba53177",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 136.312,
+				name = "[WAR] Venge",
+				timelineIndex = 27,
+				timerOffset = -8,
+				uuid = "d286cfde-430d-082f-93d1-333cb2cfc8fb",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -3015,6 +3015,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
@@ -3539,56 +3547,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"eeb85765-598d-fb19-b40c-2239b8f34a7a",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffID = 4975,
-							category = "Self",
-							name = "Blue",
-							uuid = "eeb85765-598d-fb19-b40c-2239b8f34a7a",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 313.655,
-				name = "[Multi] Sprint",
-				timelineIndex = 84,
-				timerOffset = -6,
-				uuid = "d2166c1e-75bc-aaea-aa99-5e1d5fff12b0",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "Alert",
 							alertPriority = 3,
 							alertTTS = true,
@@ -3629,6 +3587,56 @@ local tbl =
 				uuid = "46b1805d-547f-d0ee-9b15-55b78b6a1873",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"eeb85765-598d-fb19-b40c-2239b8f34a7a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 4975,
+							category = "Self",
+							name = "Blue",
+							uuid = "eeb85765-598d-fb19-b40c-2239b8f34a7a",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 313.655,
+				name = "[Multi] Sprint",
+				timelineIndex = 84,
+				timerOffset = -6,
+				uuid = "d2166c1e-75bc-aaea-aa99-5e1d5fff12b0",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 		
 		{
