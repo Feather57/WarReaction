@@ -370,11 +370,12 @@ local tbl =
 				},
 				mechanicTime = 14.125,
 				name = "[WAR] Dash",
+				throttleTime = 300,
 				timeRange = true,
 				timelineIndex = 1,
-				timerEndOffset = 6,
+				timerEndOffset = 8,
 				timerOffset = 0.40000000596046,
-				timerStartOffset = 1,
+				timerStartOffset = 6,
 				uuid = "e80c0655-3f60-3b64-a17d-e79073986595",
 				version = 2,
 			},
@@ -1675,6 +1676,7 @@ local tbl =
 				},
 				mechanicTime = 177.531,
 				name = "[WAR] Dash",
+				throttleTime = 300,
 				timeRange = true,
 				timelineIndex = 41,
 				timerEndOffset = 3,
@@ -4732,6 +4734,40 @@ local tbl =
 				timerOffset = -6,
 				timerStartOffset = -1,
 				uuid = "fbe8d357-4bf2-ce43-a66e-c2efc198e911",
+				version = 2,
+			},
+		},
+	},
+	[124] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_ArmsLength",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 445.981,
+				name = "[Multi] Arm's Lenght",
+				timelineIndex = 124,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "67f057d1-eaad-3015-921d-f60bb0b2ce7f",
 				version = 2,
 			},
 		},
