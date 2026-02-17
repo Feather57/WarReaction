@@ -3004,6 +3004,47 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 4974,
+							category = "Self",
+							name = "Red",
+							uuid = "0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 268.999,
+				name = "[WAR] Holmgang",
+				timelineIndex = 63,
+				timerOffset = -3,
+				uuid = "2a41880c-370d-1cfd-afa7-dd98452ecba6",
+				version = 2,
+			},
+		},
 	},
 	[69] = 
 	{
