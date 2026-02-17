@@ -234,60 +234,8 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"0a27f552-6793-1c76-ad97-257cff1754e1",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Jumps",
-							gVarValue = 2,
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return FFXIV_Common_BotRunning",
-							name = "Bot Running",
-							uuid = "0a27f552-6793-1c76-ad97-257cff1754e1",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 18.328,
-				name = "[Multi] Disable Jumps",
-				timelineIndex = 2,
-				timerOffset = -2,
-				uuid = "fa5c3b10-126b-86d5-80a2-e18518b8bdb5",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-	},
-	
+	}, 
+	[3] = 
 	{
 		
 		{
@@ -735,7 +683,7 @@ local tbl =
 			},
 		},
 	},
-	
+	[4] = 
 	{
 		
 		{
@@ -807,7 +755,7 @@ local tbl =
 				version = 2,
 			},
 		},
-	}, 
+	},
 	[11] = 
 	{
 		
@@ -1707,6 +1655,35 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 176.657,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 40,
+				timerOffset = -5,
+				uuid = "3bd96c1f-85b3-a5da-b7ec-219eb19bdf50",
+				version = 2,
+			},
+		},
 	},
 	[41] = 
 	{
@@ -1761,35 +1738,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Jumps",
-							gVarValue = 2,
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 190.844,
-				name = "[Multi] Disable Jumps",
-				timelineIndex = 41,
-				timerOffset = -5,
-				uuid = "3d236cd8-8324-cc4f-8da0-277f5769c438",
-				version = 2,
-			},
 		},
 	},
 	[43] = 
@@ -1932,6 +1880,7 @@ local tbl =
 				name = "[WAR] Whetting",
 				timeRange = true,
 				timelineIndex = 51,
+				timerEndOffset = 3,
 				timerStartOffset = -1,
 				uuid = "28e08c79-258f-505c-9c82-a7f6f8592ed1",
 				version = 2,
@@ -2448,6 +2397,76 @@ local tbl =
 				uuid = "01341534-fffe-4886-bddc-439584796fb9",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 270.845,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 66,
+				timerEndOffset = 20,
+				timerStartOffset = 0.20000000298023,
+				uuid = "2928ebf5-a783-9b96-b4cc-833824adc4c2",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 	},
 	[67] = 
@@ -3400,6 +3419,76 @@ local tbl =
 			},
 			inheritedIndex = 9,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 400.751,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 20,
+				timerStartOffset = 0.20000000298023,
+				uuid = "1c9862c7-e42d-e93f-8eef-311880f2ea77",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
 	},
 	[99] = 
 	{
@@ -3914,6 +4003,76 @@ local tbl =
 				uuid = "888bd0ff-ee33-aeaf-ab6d-270390a5be84",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 458.891,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 120,
+				timerEndOffset = 20,
+				timerStartOffset = 0.20000000298023,
+				uuid = "539496e0-7664-b55f-8ec3-18104f868eba",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 	},
 	[136] = 
