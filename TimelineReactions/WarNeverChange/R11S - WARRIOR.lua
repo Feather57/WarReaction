@@ -4654,6 +4654,7 @@ local tbl =
 				name = "[Tank] Rampart",
 				timelineIndex = 146,
 				timerEndOffset = -2,
+				timerOffset = -2,
 				timerStartOffset = -10,
 				uuid = "749bcc5e-8606-f0b3-84c3-c328164b2665",
 				version = 2,
@@ -5239,79 +5240,6 @@ local tbl =
 			},
 		},
 	},
-	[166] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-									true,
-								},
-								
-								{
-									"b54d20c6-903b-e629-a939-2170d367d7ea",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 601.964,
-				name = "[WAR] Thrill",
-				timeRange = true,
-				timelineIndex = 166,
-				timerEndOffset = 20,
-				timerOffset = 0.20000000298023,
-				timerStartOffset = 0.20000000298023,
-				uuid = "c50993a0-09c8-9190-8971-44fc4ec3fb76",
-				version = 2,
-			},
-		},
-	},
 	[168] = 
 	{
 		
@@ -5360,7 +5288,7 @@ local tbl =
 				name = "[WAR] Thrill",
 				timelineIndex = 168,
 				timerEndOffset = 20,
-				timerOffset = -4,
+				timerOffset = -5,
 				timerStartOffset = -20,
 				uuid = "cfacb794-aeac-d6cc-896e-16728fb193eb",
 				version = 2,
