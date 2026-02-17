@@ -291,6 +291,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
 							variableTogglesType = 2,
@@ -312,6 +325,18 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
+							version = 2,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 14.125,
@@ -2810,6 +2835,76 @@ local tbl =
 							{
 								
 								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 268.999,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 63,
+				timerEndOffset = 20,
+				timerStartOffset = 0.10000000149012,
+				uuid = "e7c33687-fda4-a990-a6c8-af0917adcb38",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
 									true,
 								},
@@ -3022,6 +3117,11 @@ local tbl =
 									"0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
 									true,
 								},
+								
+								{
+									"f922f1e5-5bd1-d9f2-9065-38dbb864da21",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
@@ -3043,6 +3143,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "f922f1e5-5bd1-d9f2-9065-38dbb864da21",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 268.999,
@@ -3688,6 +3799,11 @@ local tbl =
 									"5cee4561-ba70-92e9-8788-c992f44b1c12",
 									true,
 								},
+								
+								{
+									"803eebb7-0479-8972-90cc-e01208dca2a4",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
@@ -3706,6 +3822,17 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "5cee4561-ba70-92e9-8788-c992f44b1c12",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "803eebb7-0479-8972-90cc-e01208dca2a4",
 							version = 2,
 						},
 					},
@@ -6385,6 +6512,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"609bb8ec-fb3d-b36c-8ada-e15e45d2512d",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
@@ -6394,6 +6529,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "609bb8ec-fb3d-b36c-8ada-e15e45d2512d",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 554.918,
 				name = "[WAR] Holmgang",

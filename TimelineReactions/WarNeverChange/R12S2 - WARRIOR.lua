@@ -379,6 +379,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"095ba54a-6855-ce8b-b261-579d76c6c3bb",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
 							variableTogglesType = 2,
@@ -400,6 +413,18 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "095ba54a-6855-ce8b-b261-579d76c6c3bb",
+							version = 2,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 15.125,
@@ -907,6 +932,11 @@ local tbl =
 									"f269d825-c307-356a-b56f-6077664b34e2",
 									true,
 								},
+								
+								{
+									"0f64ad2f-f89d-3adb-908d-3bea09b8c5bd",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
@@ -931,6 +961,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "0f64ad2f-f89d-3adb-908d-3bea09b8c5bd",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 69.922,
@@ -2488,6 +2529,11 @@ local tbl =
 									"f269d825-c307-356a-b56f-6077664b34e2",
 									true,
 								},
+								
+								{
+									"bc5af873-9399-a2f0-b9ac-67524849d64d",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
@@ -2512,6 +2558,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "bc5af873-9399-a2f0-b9ac-67524849d64d",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 246.141,
@@ -4487,6 +4544,11 @@ local tbl =
 									"f269d825-c307-356a-b56f-6077664b34e2",
 									true,
 								},
+								
+								{
+									"9c3cb004-7122-3ade-b625-b1e7c768831b",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
@@ -4511,6 +4573,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "9c3cb004-7122-3ade-b625-b1e7c768831b",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 480.563,

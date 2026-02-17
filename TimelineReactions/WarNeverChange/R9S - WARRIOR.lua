@@ -13,6 +13,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e6dafedc-e42b-e2f5-8bc8-cdf97a89fbaf",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_AOE",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
@@ -22,6 +30,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "e6dafedc-e42b-e2f5-8bc8-cdf97a89fbaf",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 10.172,
 				name = "[Multi] Disable AOE",
@@ -57,6 +76,11 @@ local tbl =
 								
 								{
 									"e088273e-65dc-999e-ae9d-1a2e2436a400",
+									true,
+								},
+								
+								{
+									"4f274a7c-f9db-7710-b661-fbd04f1de955",
 									true,
 								},
 							},
@@ -107,6 +131,17 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "4f274a7c-f9db-7710-b661-fbd04f1de955",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 10.172,
 				name = "[Tank][MT] Reprisal",
@@ -127,6 +162,24 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d5c81fdb-3148-a506-875f-e7131832f820",
+									true,
+								},
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"35302fcb-c21e-1953-a14a-027be980ba38",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
 							variableTogglesType = 2,
@@ -148,6 +201,29 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "d5c81fdb-3148-a506-875f-e7131832f820",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "35302fcb-c21e-1953-a14a-027be980ba38",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 10.172,
@@ -172,6 +248,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0a27f552-6793-1c76-ad97-257cff1754e1",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Jumps",
 							gVarValue = 2,
 							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
@@ -181,6 +265,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "0a27f552-6793-1c76-ad97-257cff1754e1",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 18.328,
 				name = "[Multi] Disable Jumps",
@@ -212,6 +307,11 @@ local tbl =
 									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
 									true,
 								},
+								
+								{
+									"bca2896e-6cf8-9351-87dd-2388b5dc666f",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -232,6 +332,17 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "bca2896e-6cf8-9351-87dd-2388b5dc666f",
 							version = 2,
 						},
 					},
@@ -265,6 +376,11 @@ local tbl =
 									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
 									true,
 								},
+								
+								{
+									"0e3ff52e-9335-2b6d-836c-1484f9435fe8",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -285,6 +401,17 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "0e3ff52e-9335-2b6d-836c-1484f9435fe8",
 							version = 2,
 						},
 					},
@@ -309,6 +436,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"dd730746-78df-c773-8a69-6f8fb9efd919",
+									true,
+								},
+								
+								{
+									"2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -328,6 +468,17 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "dd730746-78df-c773-8a69-6f8fb9efd919",
 							version = 2,
 						},
 					},
@@ -361,6 +512,11 @@ local tbl =
 									"9836ac14-c12b-1c33-b004-1e166ce552a3",
 									true,
 								},
+								
+								{
+									"99103548-7898-220e-874a-fddf4f3dad35",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
@@ -381,6 +537,17 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "99103548-7898-220e-874a-fddf4f3dad35",
 							version = 2,
 						},
 					},
@@ -418,6 +585,11 @@ local tbl =
 									"b54d20c6-903b-e629-a939-2170d367d7ea",
 									true,
 								},
+								
+								{
+									"284f97df-2825-3026-8d06-55a9ff803357",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
@@ -450,6 +622,17 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "284f97df-2825-3026-8d06-55a9ff803357",
 							version = 2,
 						},
 					},
@@ -490,6 +673,11 @@ local tbl =
 									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
 									true,
 								},
+								
+								{
+									"692e372e-07b5-6f38-b559-8088d7a7e4d7",
+									true,
+								},
 							},
 							gVar = "ACR_TensorWeeb3_CD",
 							ignoreWeaveRules = true,
@@ -521,6 +709,17 @@ local tbl =
 							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
 							name = "Check Boss buff",
 							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "692e372e-07b5-6f38-b559-8088d7a7e4d7",
 							version = 2,
 						},
 					},
@@ -1670,6 +1869,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"a9b822df-a375-9c59-81be-c91150803f1c",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
@@ -1679,6 +1886,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "a9b822df-a375-9c59-81be-c91150803f1c",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 220.142,
 				name = "[WAR] Holmgang",
@@ -4280,6 +4498,36 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 534.578,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 154,
+				timerOffset = -2,
+				uuid = "2fea416f-3a96-bd0a-a6ea-652d4c2f5bfe",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							conditions = 
 							{
 								
@@ -4337,36 +4585,6 @@ local tbl =
 				uuid = "1c67efeb-d6fd-a99b-9118-8d8aae9dbf01",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Jumps",
-							gVarValue = 2,
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 534.578,
-				name = "[Multi] Disable Jumps",
-				timelineIndex = 154,
-				timerOffset = -2,
-				uuid = "2fea416f-3a96-bd0a-a6ea-652d4c2f5bfe",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[155] = 

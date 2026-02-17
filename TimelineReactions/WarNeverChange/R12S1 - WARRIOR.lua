@@ -98,6 +98,19 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
 							variableTogglesType = 2,
@@ -119,6 +132,18 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
+							version = 2,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 15.187,
@@ -764,6 +789,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"2b27a2d2-ebbb-7873-81e4-dbe6f478a0c3",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Tankbar_Holmgang",
 							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
 							variableTogglesType = 3,
@@ -773,6 +806,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "2b27a2d2-ebbb-7873-81e4-dbe6f478a0c3",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 97.126,
 				name = "[WAR] Holmgang",
