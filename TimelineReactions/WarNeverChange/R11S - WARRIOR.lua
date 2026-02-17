@@ -25,6 +25,11 @@ local tbl =
 									"ff2057c6-0b31-a9e1-9cdd-bec0f6fe3918",
 									true,
 								},
+								
+								{
+									"3f39ce2a-e23c-4a46-9353-d536ac9aaf6b",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
 							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
@@ -60,6 +65,17 @@ local tbl =
 						},
 						inheritedIndex = 1,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "3f39ce2a-e23c-4a46-9353-d536ac9aaf6b",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 10.203,
 				name = "[WAR][OT] Stance",
@@ -87,81 +103,17 @@ local tbl =
 							{
 								
 								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-								
-								{
-									"b52181e3-6168-9aee-9028-497f265cb307",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "b52181e3-6168-9aee-9028-497f265cb307",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 10.203,
-				name = "[WAR][MT] Venge",
-				timelineIndex = 1,
-				timerOffset = -4,
-				uuid = "dcc914b8-9793-4774-8341-34521025de64",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
 									true,
 								},
 								
 								{
 									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									true,
+								},
+								
+								{
+									"92d032bb-7f7a-37af-a6aa-228912a3021d",
 									true,
 								},
 							},
@@ -202,6 +154,17 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "92d032bb-7f7a-37af-a6aa-228912a3021d",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 10.203,
 				name = "[WAR][MT] PartyMit",
@@ -230,7 +193,17 @@ local tbl =
 							{
 								
 								{
+									"2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+									true,
+								},
+								
+								{
 									"4d026693-2b2a-92a7-8566-43cdd2292908",
+									true,
+								},
+								
+								{
+									"b8b0101a-cd54-6ecd-b16b-e4faf0e4c27b",
 									true,
 								},
 							},
@@ -268,6 +241,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "b8b0101a-cd54-6ecd-b16b-e4faf0e4c27b",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 10.203,
@@ -307,6 +291,11 @@ local tbl =
 								
 								{
 									"e088273e-65dc-999e-ae9d-1a2e2436a400",
+									true,
+								},
+								
+								{
+									"83060a08-f6a9-9c12-9113-7617860462d6",
 									true,
 								},
 							},
@@ -357,6 +346,17 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "83060a08-f6a9-9c12-9113-7617860462d6",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 10.203,
 				name = "[Tank][MT] Reprisal",
@@ -370,8 +370,8 @@ local tbl =
 			},
 			inheritedIndex = 12,
 		},
-	},
-	
+	}, 
+	[3] = 
 	{
 		
 		{
@@ -389,6 +389,11 @@ local tbl =
 								
 								{
 									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"c846b06e-4f82-3280-bc41-7d8c6d9b9017",
 									true,
 								},
 							},
@@ -414,17 +419,95 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "c846b06e-4f82-3280-bc41-7d8c6d9b9017",
+							version = 2,
+						},
+					},
 				},
-				mechanicTime = 17.25,
+				mechanicTime = 23.453,
 				name = "[Tank] Rampart",
-				timelineIndex = 2,
+				timelineIndex = 3,
 				timerEndOffset = -2,
-				timerOffset = -5,
+				timerOffset = -15,
 				timerStartOffset = -10,
-				uuid = "1ac60d48-3cb4-ca47-b905-7b212da9d617",
+				uuid = "3aaf1b21-0e7e-a6b3-b309-7e05c606e1d0",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+								
+								{
+									"7f6bed54-8d77-80dc-99f1-a327af051bb3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "7f6bed54-8d77-80dc-99f1-a327af051bb3",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 23.453,
+				name = "[WAR] Venge",
+				timelineIndex = 3,
+				timerOffset = -10,
+				uuid = "2e563fbd-ff1c-5e76-bbd8-e617f424aeb3",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -442,6 +525,11 @@ local tbl =
 								
 								{
 									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"77c251bc-d0ac-d89e-a727-d008b0879749",
 									true,
 								},
 							},
@@ -468,13 +556,24 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "77c251bc-d0ac-d89e-a727-d008b0879749",
+							version = 2,
+						},
+					},
 				},
-				mechanicTime = 17.25,
+				mechanicTime = 23.453,
 				name = "[WAR] Whetting",
-				timelineIndex = 2,
+				timelineIndex = 3,
 				timerOffset = -2,
 				timerStartOffset = -1,
-				uuid = "eb360752-e5ec-0770-8585-128cfac4ef33",
+				uuid = "20a9e6f5-98ea-dbad-a4d1-db948b25bc13",
 				version = 2,
 			},
 		},
@@ -499,6 +598,11 @@ local tbl =
 								
 								{
 									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+								
+								{
+									"7faf4ad6-8742-8095-a65b-ef36f83df3ac",
 									true,
 								},
 							},
@@ -536,19 +640,30 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "7faf4ad6-8742-8095-a65b-ef36f83df3ac",
+							version = 2,
+						},
+					},
 				},
-				mechanicTime = 17.25,
+				mechanicTime = 23.453,
 				name = "[WAR] Equilibrium",
 				timeRange = true,
-				timelineIndex = 2,
+				timelineIndex = 3,
 				timerEndOffset = 20,
 				timerStartOffset = 0.20000000298023,
-				uuid = "c4ee2433-1680-e9f6-9326-22f56a804184",
+				uuid = "04e2c70a-81fe-1dbc-9178-cc658034ffc6",
 				version = 2,
 			},
 			inheritedIndex = 5,
 		},
-	}, 
+	},
 	[4] = 
 	{
 		
@@ -577,6 +692,11 @@ local tbl =
 								
 								{
 									"a33b062d-9b6c-594f-ac79-5162f57c3b5f",
+									true,
+								},
+								
+								{
+									"7cbb3cc5-7149-e42d-99bc-0702bd8140eb",
 									true,
 								},
 							},
@@ -627,6 +747,17 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "7cbb3cc5-7149-e42d-99bc-0702bd8140eb",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 24.531,
 				name = "[Tank][OT] Reprisal",
@@ -657,6 +788,11 @@ local tbl =
 									"e088273e-65dc-999e-ae9d-1a2e2436a400",
 									true,
 								},
+								
+								{
+									"22b508da-40de-7a55-af81-28508fed2a94",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
@@ -680,6 +816,17 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "22b508da-40de-7a55-af81-28508fed2a94",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 24.531,
 				name = "[Tank][OT] PartyMit",
@@ -689,94 +836,6 @@ local tbl =
 				timerOffset = -9,
 				timerStartOffset = -8,
 				uuid = "3c9772be-8b47-d71c-94bd-0cef9b43b1f8",
-				version = 2,
-			},
-		},
-	},
-	[5] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"078e380b-f539-45ac-b372-5da6074e1a68",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"a7d644ca-f12e-df17-ae21-8eb11024e246",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
-							uuid = "097da4b2-37d3-e41f-aeea-9ba34593605b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "078e380b-f539-45ac-b372-5da6074e1a68",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 38,
-				name = "[WAR] Whetting",
-				timelineIndex = 5,
-				timerOffset = 3,
-				timerStartOffset = -1,
-				uuid = "c61afeb4-b7c1-adad-9eeb-c1f169cf7c14",
 				version = 2,
 			},
 		},
@@ -801,6 +860,11 @@ local tbl =
 									"1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
 									true,
 								},
+								
+								{
+									"be3265ad-ff5f-36ff-95bd-ca5df83c3d37",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -818,6 +882,17 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "be3265ad-ff5f-36ff-95bd-ca5df83c3d37",
 							version = 2,
 						},
 					},
@@ -949,6 +1024,11 @@ local tbl =
 									"e088273e-65dc-999e-ae9d-1a2e2436a400",
 									true,
 								},
+								
+								{
+									"f7a645bc-1f03-83be-b329-1bdbf69a8bd6",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
@@ -996,6 +1076,17 @@ local tbl =
 							version = 2,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "f7a645bc-1f03-83be-b329-1bdbf69a8bd6",
+							version = 2,
+						},
 					},
 				},
 				mechanicTime = 78.873,
@@ -1525,7 +1616,7 @@ local tbl =
 			inheritedIndex = 12,
 		},
 	},
-	[43] = 
+	[44] = 
 	{
 		
 		{
@@ -1569,11 +1660,11 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 155.794,
+				mechanicTime = 161.887,
 				name = "[WAR] Venge",
-				timelineIndex = 43,
-				timerOffset = -6,
-				uuid = "92e80eb2-0c50-ba6b-8bea-366f049a3ae9",
+				timelineIndex = 44,
+				timerOffset = -7,
+				uuid = "92586fb1-68f5-ba6b-a177-023a63412f3d",
 				version = 2,
 			},
 			inheritedIndex = 2,
@@ -1621,12 +1712,12 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 155.794,
+				mechanicTime = 161.887,
 				name = "[WAR] Whetting",
-				timelineIndex = 43,
+				timelineIndex = 44,
 				timerOffset = -2,
 				timerStartOffset = -1,
-				uuid = "6a573444-ab0d-18e1-bf84-9270ebb4f3f6",
+				uuid = "24eb0edd-db31-5578-b9bc-03dbd9c426d2",
 				version = 2,
 			},
 		},
@@ -1672,13 +1763,13 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 155.794,
+				mechanicTime = 161.887,
 				name = "[Tank] Rampart",
-				timelineIndex = 43,
+				timelineIndex = 44,
 				timerEndOffset = -2,
-				timerOffset = -5,
+				timerOffset = -8,
 				timerStartOffset = -10,
-				uuid = "53835c85-abbc-5f8a-a576-0b4ddcdfd8ed",
+				uuid = "16ffa771-3579-dbaa-87ba-6728b722abf5",
 				version = 2,
 			},
 			inheritedIndex = 4,
@@ -1742,13 +1833,13 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 155.794,
+				mechanicTime = 161.887,
 				name = "[WAR] Equilibrium",
 				timeRange = true,
-				timelineIndex = 43,
+				timelineIndex = 44,
 				timerEndOffset = 20,
 				timerStartOffset = 0.20000000298023,
-				uuid = "ccaf2914-22cb-bdfd-933a-a3c77a645b08",
+				uuid = "3aefa784-be3f-827e-80b9-d563b6bba36c",
 				version = 2,
 			},
 			inheritedIndex = 5,
