@@ -176,59 +176,6 @@ local tbl =
 							{
 								
 								{
-									"047fe2b3-9585-f8b3-8053-226f9f45a3d5",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPLD3_Hotbar_Provoke",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "047fe2b3-9585-f8b3-8053-226f9f45a3d5",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 15.125,
-				name = "[Tank][OT] Voke",
-				timelineIndex = 1,
-				timerEndOffset = 100,
-				timerOffset = -10,
-				timerStartOffset = -100,
-				uuid = "14a48715-f960-7ae5-9946-010fdb92ae61",
-				version = 2,
-			},
-			inheritedIndex = 14,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
 									true,
 								},
@@ -285,6 +232,92 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"ff2057c6-0b31-a9e1-9cdd-bec0f6fe3918",
+									true,
+								},
+								
+								{
+									"3f39ce2a-e23c-4a46-9353-d536ac9aaf6b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
+							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							uuid = "ff2057c6-0b31-a9e1-9cdd-bec0f6fe3918",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "3f39ce2a-e23c-4a46-9353-d536ac9aaf6b",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 15.125,
+				name = "[PLD][OT] Stance",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -1,
+				timerOffset = -7,
+				timerStartOffset = -7,
+				uuid = "c5fdb35e-7f02-8d86-9058-6c516ca7da26",
+				version = 2,
+			},
 		},
 	}, 
 	[7] = 
@@ -835,6 +868,78 @@ local tbl =
 							{
 								
 								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+								
+								{
+									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
+							version = 2,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 127.86,
+				name = "[PLD][OT] Veil",
+				timelineIndex = 19,
+				timerOffset = -5,
+				timerStartOffset = 1,
+				uuid = "3c8c8967-5926-f078-aae2-73010d19c813",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"35693d39-44ae-89ea-930a-628c03451000",
 									true,
 								},
@@ -904,78 +1009,6 @@ local tbl =
 				uuid = "31bdfe94-1e4c-cd25-9fd4-189f6a1b6bcc",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
-									true,
-								},
-								
-								{
-									"622a488d-a41c-b6c9-beb1-05f82b78449b",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 127.86,
-				name = "[PLD][OT] Veil",
-				timelineIndex = 19,
-				timerOffset = -5,
-				timerStartOffset = 1,
-				uuid = "3c8c8967-5926-f078-aae2-73010d19c813",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[26] = 
