@@ -2037,6 +2037,7 @@ local tbl =
 				eventType = 14,
 				mechanicTime = 194.671,
 				name = "[WAR] Whetting",
+				throttleTime = 500,
 				timeRange = true,
 				timelineIndex = 43,
 				timerEndOffset = 30,
@@ -3124,11 +3125,6 @@ local tbl =
 							{
 								
 								{
-									"96351b59-49a5-85d4-af8f-8caf06dba68d",
-									true,
-								},
-								
-								{
 									"992dc756-c0c5-8cb0-b921-d6cbe5299db1",
 									true,
 								},
@@ -3154,18 +3150,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "Warrior",
-							uuid = "96351b59-49a5-85d4-af8f-8caf06dba68d",
-							version = 3,
-						},
-					},
 					
 					{
 						data = 
