@@ -234,6 +234,74 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 10.172,
+				name = "[Tank][MT] Voke",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 7,
+				timerOffset = 7,
+				uuid = "3522f359-5610-d5ee-bf2e-1d5421c36402",
+				version = 2,
+			},
+		},
 	}, 
 	[3] = 
 	{
@@ -1767,6 +1835,35 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 190.844,
+				name = "[WAR] Tomahawk On",
+				timelineIndex = 41,
+				timerStartOffset = -1,
+				uuid = "5efa91c0-a229-072e-9d0a-00d1dce27ca5",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
 	},
 	[43] = 
 	{
@@ -1797,6 +1894,39 @@ local tbl =
 				uuid = "f1463f1d-3127-58cd-9063-cc350e150d0d",
 				version = 2,
 			},
+		},
+	},
+	[49] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							gVarValue = 2,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 213.251,
+				name = "[WAR] Tomahawk Off",
+				timelineIndex = 49,
+				timerStartOffset = -1,
+				uuid = "39464dbd-146e-feb3-b9bd-be29a193f6b3",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[50] = 
@@ -3346,143 +3476,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"23553438-7ace-4e90-8100-4def9e2db46e",
-									true,
-								},
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-									true,
-								},
-								
-								{
-									"d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-									true,
-								},
-								
-								{
-									"293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventSpellID = 45980,
-							name = "Roles",
-							uuid = "23553438-7ace-4e90-8100-4def9e2db46e",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 10,
-							inGroupTargetContentID = 14300,
-							inGroupTargetType = "ContentID",
-							partyTargetType = "Event Entity",
-							uuid = "ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 6,
-							buffIDList = 
-							{
-								4731,
-								4732,
-								4733,
-								4734,
-								4735,
-								4736,
-								4737,
-								4738,
-							},
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Cell",
-							uuid = "d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14300,
-							name = "TargetBoss",
-							uuid = "293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-							version = 3,
-						},
-					},
-				},
-				eventType = 3,
-				mechanicTime = 400.751,
-				name = "[Tank] Rampart",
-				randomOffset = 45,
-				timelineIndex = 93,
-				timerEndOffset = 20,
-				timerOffset = -5,
-				timerStartOffset = -20,
-				uuid = "3323a971-f41c-6b62-9f2c-f07fba57be75",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 25751,
 							conditions = 
 							{
@@ -3602,9 +3595,11 @@ local tbl =
 				mechanicTime = 400.751,
 				name = "[WAR] Whetting",
 				randomOffset = 45,
+				timeRange = true,
 				timelineIndex = 93,
+				timerEndOffset = 45,
 				timerOffset = -5,
-				timerStartOffset = -1,
+				timerStartOffset = -5,
 				uuid = "e94fdc2e-f0d9-075a-ab2b-36ec68f36bdd",
 				version = 2,
 			},
@@ -3722,10 +3717,11 @@ local tbl =
 				mechanicTime = 400.751,
 				name = "[WAR] Thrill",
 				randomOffset = 45,
+				timeRange = true,
 				timelineIndex = 93,
-				timerEndOffset = 20,
+				timerEndOffset = 45,
 				timerOffset = -5,
-				timerStartOffset = -20,
+				timerStartOffset = -5,
 				uuid = "930cbfa8-1387-d9cb-9d00-3d31beccdf2f",
 				version = 2,
 			},
@@ -3801,6 +3797,144 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"23553438-7ace-4e90-8100-4def9e2db46e",
+									true,
+								},
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
+									true,
+								},
+								
+								{
+									"d5353d3a-7e27-16ab-9dab-dee2de83aef3",
+									true,
+								},
+								
+								{
+									"293ad9b9-f750-8a58-8d69-f3424fb55b5f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "23553438-7ace-4e90-8100-4def9e2db46e",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							conditionType = 10,
+							inGroupTargetContentID = 14300,
+							inGroupTargetType = "ContentID",
+							partyTargetType = "Event Entity",
+							uuid = "ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Cell",
+							uuid = "d5353d3a-7e27-16ab-9dab-dee2de83aef3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14300,
+							name = "TargetBoss",
+							uuid = "293ad9b9-f750-8a58-8d69-f3424fb55b5f",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 400.751,
+				name = "[Tank] Rampart",
+				randomOffset = 45,
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 45,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "0fad50ca-9ca1-5619-8a2a-f7c5ef60f47f",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 	},
 	[120] = 

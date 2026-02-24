@@ -435,6 +435,75 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.125,
+				name = "[Tank] Voke",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 5,
+				timerOffset = 2,
+				timerStartOffset = -2,
+				uuid = "14008bde-3693-a1b9-82fa-9b2e27a767aa",
+				version = 2,
+			},
+		},
 	},
 	
 	{
@@ -2269,7 +2338,6 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
 				eventType = 2,
 				mechanicTime = 183.547,
 				name = "[Tank] Shirk",
@@ -2394,6 +2462,7 @@ local tbl =
 							buffID = 4769,
 							category = "Self",
 							name = "Alpha",
+							partyTargetType = "Other Tank",
 							uuid = "34227789-b72d-a81e-b9f7-3b8374a13466",
 							version = 3,
 						},
@@ -2408,6 +2477,7 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							name = "Alpha Duration",
+							partyTargetType = "Other Tank",
 							uuid = "01b65359-6adf-d492-8cd4-e2f84f9ffa1c",
 							version = 3,
 						},
@@ -2463,8 +2533,9 @@ local tbl =
 						data = 
 						{
 							buffID = 4769,
-							category = "Self",
+							category = "Party",
 							name = "Alpha",
+							partyTargetType = "Other Tank",
 							uuid = "a4cb5127-a1b1-5419-8fc6-5be313a2f700",
 							version = 3,
 						},
@@ -2476,9 +2547,10 @@ local tbl =
 							buffCheckType = 3,
 							buffDuration = 7,
 							buffID = 4769,
-							category = "Self",
+							category = "Party",
 							comparator = 2,
 							name = "Alpha Duration",
+							partyTargetType = "Other Tank",
 							uuid = "87da5521-64f4-816e-a4b4-2eac42aaacba",
 							version = 3,
 						},
@@ -2963,7 +3035,7 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 25751,
 							conditions = 
 							{
 								
@@ -2974,6 +3046,7 @@ local tbl =
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
 							variableTogglesType = 3,
 							version = 2.1,
@@ -2999,7 +3072,7 @@ local tbl =
 				mechanicTime = 246.141,
 				name = "[WAR] Whetting",
 				timelineIndex = 49,
-				timerOffset = -4,
+				timerOffset = -3,
 				timerStartOffset = -1,
 				uuid = "517def65-b935-adc9-a094-af375ae0f9c1",
 				version = 2,

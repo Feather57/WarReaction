@@ -370,6 +370,75 @@ local tbl =
 			},
 			inheritedIndex = 12,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 10.203,
+				name = "[Tank] Voke",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 5,
+				timerOffset = 2,
+				timerStartOffset = -2,
+				uuid = "53167131-34e7-a95d-a5dc-0e024ad2182e",
+				version = 2,
+			},
+		},
 	}, 
 	[3] = 
 	{
@@ -867,6 +936,68 @@ local tbl =
 				name = "[Multi] Potion Off",
 				timelineIndex = 5,
 				uuid = "9ab5948f-7328-bb08-87c4-cd8a4a028d37",
+				version = 2,
+			},
+		},
+	},
+	[6] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 19185 Scythe  \n-- 19186 Greatsword\n-- 19184 Axe\n\nreturn Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "116ed904-a9a6-11e8-aa62-9f5c943eac9f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 47.515,
+				name = "[Multi] Get Weapon",
+				timelineIndex = 6,
+				uuid = "0ddde10f-71bd-53af-839c-d4a6a762c45a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.RKM11SWeapon3 = {\n    ids = {},\n    entities = {},\n    ordered = {},\n}\n\nlocal IsSameDirection = function(angle1, angle2, tolerance)\n    tolerance = tolerance or 0.05\n    angle1 = angle1 % (2 * math.pi)\n    if angle1 < 0 then\n        angle1 = angle1 + 2 * math.pi\n    end\n    angle2 = angle2 % (2 * math.pi)\n    if angle2 < 0 then\n        angle2 = angle2 + 2 * math.pi\n    end\n    local diff = math.abs(angle1 - angle2)\n    if diff > math.pi then\n        diff = 2 * math.pi - diff\n    end\n    return diff <= tolerance\nend\n\nfor _, ent in pairs(TensorCore.entityList(\"contentid=108\")) do\n    if Argus.isEntityVisible(ent) and not table.contains(data.RKM11SWeapon3.ids, ent.id) then\n        local md = Argus.getEntityModel(ent.id)\n        if (md == 19184 or md == 19185 or md == 19186)\n        then\n            table.insert(data.RKM11SWeapon3.ids, ent.id)\n            table.insert(data.RKM11SWeapon3.entities, ent)\n        end\n    end\nend\n\nif table.size(data.RKM11SWeapon3.ids) == 3 then\n    local first\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        local curHeading = TensorCore.getHeadingToTarget({ x = 100, y = 0, z = 100 }, ent.pos)\n        if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            first = ent\n            break\n        end\n    end\n    local second\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id then\n            local curHeading = TensorCore.getHeadingToTarget(first.pos, ent.pos)\n            if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n                table.insert(data.RKM11SWeapon3.ordered, ent)\n                second = ent\n                break\n            end\n        end\n    end\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id and ent.id ~= second.id then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            break\n        end\n    end\nend\n\nself.used = true",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "1c970d7c-4be6-fa30-8eab-b2a600ec5a33",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 47.515,
+				name = "[Multi] Get ordered Weapon",
+				timeRange = true,
+				timelineIndex = 6,
+				timerEndOffset = 20,
+				timerStartOffset = -7,
+				uuid = "1c5f69db-90ea-e995-839e-04e2f7393148",
 				version = 2,
 			},
 		},
@@ -2135,6 +2266,89 @@ local tbl =
 			},
 		},
 	},
+	[49] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "if data.RKM11SWeapon6 == nil then\n    data.RKM11SWeapon6 = {\n        ids = {},\n        entities = {}\n    }\nend\n\nfor _, ent in pairs(TensorCore.entityList(\"contentid=108\")) do\n    if Argus.isEntityVisible(ent) and not table.contains(data.RKM11SWeapon6.ids, ent.id) then\n        local md = Argus.getEntityModel(ent.id)\n        if (md == 19184 or md == 19185 or md == 19186)\n        then\n            table.insert(data.RKM11SWeapon6.ids, ent.id)\n            table.insert(data.RKM11SWeapon6.entities, ent)\n        end\n    end\nend\n\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"21399dea-6b11-00ac-bf21-14ad9e3135a8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_CD",
+							name = "Load Data",
+							uuid = "426bfcc6-2b09-9e2a-be6d-b1903a338a71",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.RKM11SWeapon6 == nil or table.size(data.RKM11SWeapon6) < 6",
+							name = "Weapon Count < 6",
+							uuid = "21399dea-6b11-00ac-bf21-14ad9e3135a8",
+							version = 3,
+						},
+					},
+				},
+				eventType = 12,
+				mechanicTime = 192.215,
+				name = "[Multi] Get ordered Weapon",
+				timeRange = true,
+				timelineIndex = 49,
+				timerEndOffset = 28,
+				timerStartOffset = -10,
+				uuid = "7b6352cf-5563-511b-880f-84d0befc45fa",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 19185 镰刀  \n-- 19186 大剑 \n-- 19184 斧子\nreturn Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19186 -- 这里1~6表示第几个兵器，ID表示是哪个模型",
+							name = "the 1st weapon is sward?",
+							uuid = "b225f2c4-553b-9457-9faa-85f5bf1d2cea",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 192.215,
+				name = "[Multi] is ??? Weapon",
+				timelineIndex = 49,
+				uuid = "412412c3-387e-2153-97dc-93c0770c036c",
+				version = 2,
+			},
+		},
+	},
 	[50] = 
 	{
 		
@@ -2173,7 +2387,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,
@@ -2230,7 +2444,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,
@@ -2287,7 +2501,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,
@@ -2432,7 +2646,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,
@@ -2489,7 +2703,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,
@@ -2546,7 +2760,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
 							name = "Get weapon model",
 							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
 							version = 3,

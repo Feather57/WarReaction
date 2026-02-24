@@ -125,7 +125,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
@@ -280,7 +280,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
@@ -310,6 +310,75 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -11,
 				uuid = "a5a3bdcb-cc42-7c65-a4a0-22289d0787d3",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.187,
+				name = "[Tank] Voke",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 5,
+				timerOffset = 2,
+				timerStartOffset = -2,
+				uuid = "695bd048-1590-0414-9023-2b0df7b32624",
 				version = 2,
 			},
 		},

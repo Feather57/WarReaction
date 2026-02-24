@@ -6079,7 +6079,6 @@ local tbl =
 				mechanicTime = 415.606,
 				name = "[Multi] Sprint",
 				timelineIndex = 114,
-				timerOffset = 2,
 				uuid = "0ad5bbbd-e96f-4478-90fd-2a6534a50f4d",
 				version = 2,
 			},
