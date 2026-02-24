@@ -840,6 +840,37 @@ local tbl =
 			},
 		},
 	},
+	[5] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 38,
+				name = "[Multi] Potion Off",
+				timelineIndex = 5,
+				uuid = "9ab5948f-7328-bb08-87c4-cd8a4a028d37",
+				version = 2,
+			},
+		},
+	},
 	[13] = 
 	{
 		
@@ -3921,6 +3952,33 @@ local tbl =
 				timerOffset = 0.29999995231628,
 				timerStartOffset = 0.5,
 				uuid = "7f8c45e3-67d5-78d6-8a91-a2492943b039",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 345.793,
+				name = "[Multi] Potion On",
+				timelineIndex = 100,
+				uuid = "73a5bb47-c323-e5d9-9dd7-e8b472c6a653",
 				version = 2,
 			},
 		},

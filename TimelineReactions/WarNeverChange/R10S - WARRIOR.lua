@@ -516,8 +516,39 @@ local tbl =
 				version = 2,
 			},
 		},
-	}, 
-	[3] = 
+	},
+	
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 29.609,
+				name = "[Multi] Potion Off",
+				timelineIndex = 2,
+				uuid = "3c06469b-6f8b-b754-b041-f911f730e073",
+				version = 2,
+			},
+		},
+	},
+	
 	{
 		
 		{
@@ -621,7 +652,7 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
+	}, 
 	[8] = 
 	{
 		
@@ -5637,7 +5668,35 @@ local tbl =
 				name = "[Multi] Enable CD",
 				timelineIndex = 110,
 				timerEndOffset = 53,
+				timerOffset = 0.20000000298023,
 				uuid = "69416615-50aa-1b70-9817-1d9502b8deb1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 391.903,
+				name = "[Multi] Potion On",
+				timelineIndex = 110,
+				uuid = "0eff1c3f-af99-f669-b001-2a39a06b6a10",
 				version = 2,
 			},
 		},
