@@ -5639,6 +5639,213 @@ local tbl =
 			},
 		},
 	},
+	[93] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"c5b031d9-39d8-20ce-852d-fe2badd0c7de",
+									true,
+								},
+								
+								{
+									"20ca99f0-05b2-a371-a3d5-e0248c7794a5",
+									true,
+								},
+								
+								{
+									"b7bf2038-9e83-988e-bb35-53593e44a22a",
+									true,
+								},
+								
+								{
+									"9e30131a-f5cc-f4ef-aa07-dada79f7511c",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14369,
+							targetType = "Detection Target",
+							uuid = "2b0f079f-660b-7638-8cbe-1f621b90d82d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- Return false if no target is found\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- Ensure the target and its position are valid\nif not target or not target.pos then\n    return false\nend\n\n-- Calculate 2D distance (horizontal plane)\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- Return true if the target is further than 3 meters away\nreturn distance > 3.0",
+							name = "Range Check",
+							uuid = "c5b031d9-39d8-20ce-852d-fe2badd0c7de",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 46545,
+							uuid = "20ca99f0-05b2-a371-a3d5-e0248c7794a5",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 9,
+							partyTargetType = "Event Target",
+							uuid = "b7bf2038-9e83-988e-bb35-53593e44a22a",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14373,
+							uuid = "9e30131a-f5cc-f4ef-aa07-dada79f7511c",
+							version = 3,
+						},
+					},
+				},
+				eventType = 2,
+				loop = true,
+				mechanicTime = 347.045,
+				name = "[War] Dash",
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 44.900001525879,
+				uuid = "136fbad9-bf44-1bfc-923c-17193b0cf699",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							conditions = 
+							{
+								
+								{
+									"c5b031d9-39d8-20ce-852d-fe2badd0c7de",
+									true,
+								},
+								
+								{
+									"20ca99f0-05b2-a371-a3d5-e0248c7794a5",
+									true,
+								},
+								
+								{
+									"b7bf2038-9e83-988e-bb35-53593e44a22a",
+									true,
+								},
+								
+								{
+									"9e30131a-f5cc-f4ef-aa07-dada79f7511c",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14369,
+							targetType = "Detection Target",
+							uuid = "2b0f079f-660b-7638-8cbe-1f621b90d82d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- Return false if no target is found\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- Ensure the target and its position are valid\nif not target or not target.pos then\n    return false\nend\n\n-- Calculate 2D distance (horizontal plane)\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- Return true if the target is further than 3 meters away\nreturn distance > 3.0",
+							name = "Range Check",
+							uuid = "c5b031d9-39d8-20ce-852d-fe2badd0c7de",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 46546,
+							uuid = "20ca99f0-05b2-a371-a3d5-e0248c7794a5",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 9,
+							partyTargetType = "Event Target",
+							uuid = "b7bf2038-9e83-988e-bb35-53593e44a22a",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							filterTargetType = "ContentID",
+							partyTargetContentID = 14373,
+							uuid = "9e30131a-f5cc-f4ef-aa07-dada79f7511c",
+							version = 3,
+						},
+					},
+				},
+				eventType = 2,
+				loop = true,
+				mechanicTime = 347.045,
+				name = "[War] Dash",
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 44.900001525879,
+				uuid = "3410948e-ce09-36fd-8740-747e9326bddb",
+				version = 2,
+			},
+		},
+	},
 	[110] = 
 	{
 		
