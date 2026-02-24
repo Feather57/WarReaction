@@ -17,76 +17,6 @@ local tbl =
 							{
 								
 								{
-									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-									true,
-								},
-								
-								{
-									"b54d20c6-903b-e629-a939-2170d367d7ea",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 14.125,
-				name = "[WAR] Equilibrium",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = 20,
-				timerStartOffset = 0.10000000149012,
-				uuid = "41541158-18cc-9991-a63b-e4163fff8541",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"35693d39-44ae-89ea-930a-628c03451000",
 									true,
 								},
@@ -227,7 +157,7 @@ local tbl =
 				uuid = "63007b88-fa3a-3a50-ac25-f1228b16df98",
 				version = 2,
 			},
-			inheritedIndex = 16,
+			inheritedIndex = 15,
 		},
 		
 		{
@@ -278,7 +208,7 @@ local tbl =
 				uuid = "edeb3291-8171-a0ef-ac2c-e7f63a6e4f47",
 				version = 2,
 			},
-			inheritedIndex = 17,
+			inheritedIndex = 16,
 		},
 		
 		{
@@ -358,6 +288,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"fa2e1652-d55b-f11c-96c9-447379f15f8c",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 2,
@@ -367,19 +305,28 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							inRangeValue = 3.5,
+							uuid = "fa2e1652-d55b-f11c-96c9-447379f15f8c",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 14.125,
 				name = "[WAR] Dash",
-				throttleTime = 300,
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = 8,
 				timerOffset = 0.40000000596046,
-				timerStartOffset = 6,
+				timerStartOffset = 6.6999998092651,
 				uuid = "e80c0655-3f60-3b64-a17d-e79073986595",
 				version = 2,
 			},
-			inheritedIndex = 19,
+			inheritedIndex = 18,
 		},
 		
 		{
@@ -430,6 +377,142 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -1,
 				uuid = "d79d2ee6-98df-348c-afe6-8775f835adc7",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 14.125,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 20,
+				timerStartOffset = 0.10000000149012,
+				uuid = "41541158-18cc-9991-a63b-e4163fff8541",
+				version = 2,
+			},
+			inheritedIndex = 20,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 14.125,
+				name = "[Tank] Voke",
+				timelineIndex = 1,
+				timerOffset = 7,
+				uuid = "7b8705a6-fccf-6681-b05f-61ca4c1b3aa7",
 				version = 2,
 			},
 		},
@@ -1687,6 +1770,249 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"2fd3c010-cf02-02a7-938c-3d6d8998075d",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "7f0dbff9-7cd8-70de-9a54-f17039409666",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"5a84d757-8dc6-7cc4-84cb-d5091b50a891",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "3bb40f67-11b4-1b0e-8e31-bb95969f1a1b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "2fd3c010-cf02-02a7-938c-3d6d8998075d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "5a84d757-8dc6-7cc4-84cb-d5091b50a891",
+							version = 3,
+						},
+					},
+				},
+				eventType = 14,
+				mechanicTime = 194.671,
+				name = "[TTS] Buster",
+				timeRange = true,
+				timelineIndex = 43,
+				timerEndOffset = 35,
+				timerStartOffset = -15,
+				uuid = "d063fcfe-7bc1-0c74-a5e7-90f4958d0cb0",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirBlue = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"76eb19cc-ff88-8e06-804b-d1661400bdc2",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Blue Record",
+							uuid = "a325af4f-031e-e935-91e0-186e2f6a610a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirRed = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"57c1b67f-a8a5-de65-94aa-afa2681f2bc6",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Red Record",
+							uuid = "61a199ae-2b78-13c9-9a9b-51ab0cfb8a3f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "76eb19cc-ff88-8e06-804b-d1661400bdc2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "57c1b67f-a8a5-de65-94aa-afa2681f2bc6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 14,
+				loop = true,
+				mechanicTime = 194.671,
+				name = "[Tank] Buster Record",
+				timeRange = true,
+				timelineIndex = 43,
+				timerEndOffset = 35,
+				timerStartOffset = -15,
+				uuid = "442d4810-ffd5-26fb-8b92-ccfa3180b2ab",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -1764,288 +2090,7 @@ local tbl =
 				uuid = "6da311e9-914b-9805-b165-eff95e386f0f",
 				version = 2,
 			},
-			inheritedIndex = 7,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"c416acb1-7eea-bb48-bb01-c76507bc38db",
-									true,
-								},
-								
-								{
-									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"235a8178-bf03-e163-9901-2abc61e2d350",
-									true,
-								},
-								
-								{
-									"62abf80e-9977-283b-a26c-fb43d03c39e9",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
-							name = "Blue Side",
-							uuid = "235a8178-bf03-e163-9901-2abc61e2d350",
-							version = 3,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096",
-							name = "Red Side",
-							uuid = "c416acb1-7eea-bb48-bb01-c76507bc38db",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14370,
-							name = "Target Fire",
-							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14369,
-							name = "Target Blue",
-							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
-							version = 3,
-						},
-					},
-				},
-				eventType = 14,
-				mechanicTime = 194.671,
-				name = "[Tank] Rampart",
-				timeRange = true,
-				timelineIndex = 43,
-				timerEndOffset = 30,
-				timerOffset = -3,
-				timerStartOffset = -5,
-				uuid = "00a7cba6-9e57-a134-824e-1f4bbe16c9ba",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"c416acb1-7eea-bb48-bb01-c76507bc38db",
-									true,
-								},
-								
-								{
-									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							ignoreWeaveRules = true,
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"235a8178-bf03-e163-9901-2abc61e2d350",
-									true,
-								},
-								
-								{
-									"62abf80e-9977-283b-a26c-fb43d03c39e9",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							ignoreWeaveRules = true,
-							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
-							name = "Blue Side",
-							uuid = "235a8178-bf03-e163-9901-2abc61e2d350",
-							version = 3,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096",
-							name = "Red Side",
-							uuid = "c416acb1-7eea-bb48-bb01-c76507bc38db",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14370,
-							name = "Target Fire",
-							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14369,
-							name = "Target Blue",
-							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
-							version = 3,
-						},
-					},
-				},
-				eventType = 14,
-				mechanicTime = 194.671,
-				name = "[WAR] Whetting",
-				throttleTime = 500,
-				timeRange = true,
-				timelineIndex = 43,
-				timerEndOffset = 30,
-				timerOffset = -3,
-				timerStartOffset = -5,
-				uuid = "338d7878-b15d-e3a8-bf08-f5d6ba16a8de",
-				version = 2,
-			},
+			inheritedIndex = 8,
 		},
 		
 		{
@@ -2115,7 +2160,1115 @@ local tbl =
 				uuid = "e41982be-3e3e-5b76-b040-0b57fff7f195",
 				version = 2,
 			},
-			inheritedIndex = 11,
+			inheritedIndex = 12,
+		},
+	},
+	[45] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.718,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 45,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "ae92a68f-013a-a56d-b3c0-917a7f68563d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.718,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 45,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "4b6a02ed-036b-98df-be30-dc68acf7d9e5",
+				version = 2,
+			},
+		},
+	},
+	[48] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 205.031,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "30a0dd68-875b-78ba-9c6a-a72ad158dc83",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 205.031,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "3408ea0d-328c-0190-ae3d-950c40fade44",
+				version = 2,
+			},
+		},
+	},
+	[51] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 212.359,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 51,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "c04b20fd-561f-57eb-bf06-dc72d7126a02",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 212.359,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 51,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "5da480e2-94e7-0d7b-a0eb-4ebc443e436e",
+				version = 2,
+			},
+		},
+	},
+	[54] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 219.702,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "8e230010-d8c6-c76c-b331-e2658dbbc43f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 219.702,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "5f9be547-00cd-398d-96e5-6559d6666081",
+				version = 2,
+			},
 		},
 	},
 	[55] = 
@@ -5613,6 +6766,92 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirBlue = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Blue Record",
+							uuid = "a325af4f-031e-e935-91e0-186e2f6a610a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirRed = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Red Record",
+							uuid = "61a199ae-2b78-13c9-9a9b-51ab0cfb8a3f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 3,
+						},
+					},
+				},
+				eventType = 14,
+				loop = true,
+				mechanicTime = 483.918,
+				name = "[Tank] Buster Record",
+				timeRange = true,
+				timelineIndex = 130,
+				timerEndOffset = 45,
+				timerStartOffset = -15,
+				uuid = "0c77de16-8bd3-8cde-8227-74703411ca6c",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Alert",
 							alertPriority = 3,
 							alertScale = 0.89999997615814,
@@ -5703,7 +6942,7 @@ local tbl =
 								4828,
 							},
 							category = "Self",
-							name = "Water",
+							name = "Debuff Water",
 							uuid = "2bebe761-5deb-a4b4-b7f8-e70a48dfb20a",
 							version = 3,
 						},
@@ -5720,7 +6959,7 @@ local tbl =
 								4827,
 							},
 							category = "Self",
-							name = "Fire",
+							name = "Debuff Fire",
 							uuid = "9bb69cf8-5f16-3055-acf3-a202c33f1487",
 							version = 3,
 						},
@@ -5736,7 +6975,7 @@ local tbl =
 				uuid = "8a38ccc9-dff5-703d-b716-26854a97741f",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -5748,98 +6987,25 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 7531,
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
 									true,
 								},
 								
 								{
-									"f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_CD",
-							ignoreWeaveRules = true,
-							uuid = "d001d1f0-ac22-e606-bba9-6720a17f474b",
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
 							version = 2.1,
 						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"1ed22d69-d84b-f19c-b325-92de1249881f",
-									true,
-								},
-								
-								{
-									"f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_CD",
-							ignoreWeaveRules = true,
-							uuid = "1881782e-195f-0876-a124-459b262ef65c",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 7531,
-							conditions = 
-							{
-								
-								{
-									"e34b7e90-c202-141c-aae3-9bad7ddba835",
-									true,
-								},
-								
-								{
-									"5276635b-5916-2c99-8780-31e734e4dfd7",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_CD",
-							ignoreWeaveRules = true,
-							uuid = "0e593b98-0053-9838-a235-81357a2c0f08",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"e34b7e90-c202-141c-aae3-9bad7ddba835",
-									true,
-								},
-								
-								{
-									"5276635b-5916-2c99-8780-31e734e4dfd7",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_CD",
-							ignoreWeaveRules = true,
-							uuid = "90adbd22-8d4d-fccf-afab-309a6a5c21a0",
-							version = 2.1,
-						},
-						inheritedIndex = 4,
 					},
 				},
 				conditions = 
@@ -5848,70 +7014,37 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
-							name = "Blue Side",
-							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
-							version = 3,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096",
-							name = "Red Side",
-							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 5,
-							buffIDList = 
-							{
-								4828,
-							},
 							category = "Self",
-							name = "Water",
-							uuid = "f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
 							version = 3,
 						},
-						inheritedIndex = 3,
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 5,
-							buffID = 4974,
-							buffIDList = 
-							{
-								4827,
-							},
+							actionCDValue = 1,
+							actionID = 3552,
 							category = "Self",
-							name = "Fire",
-							uuid = "5276635b-5916-2c99-8780-31e734e4dfd7",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
 							version = 3,
 						},
 					},
 				},
-				eventType = 14,
-				loop = true,
 				mechanicTime = 483.918,
-				name = "[WAR] TB mits",
+				name = "[WAR] Equilibrium",
 				timeRange = true,
 				timelineIndex = 130,
 				timerEndOffset = 45,
-				timerStartOffset = -15,
-				uuid = "ea1609eb-14d5-27e7-b0ad-11be8ff0d2a0",
+				timerStartOffset = 0.10000000149012,
+				uuid = "1f9ab599-6aa4-9667-b486-863a6dd11dfa",
 				version = 2,
 			},
-			inheritedIndex = 2,
 		},
 		
 		{
@@ -6100,7 +7233,116 @@ local tbl =
 				uuid = "89532889-8b10-bae6-879f-1d1858fa1cc4",
 				version = 2,
 			},
-			inheritedIndex = 9,
+			inheritedIndex = 10,
+		},
+	},
+	[132] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 486.95,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 132,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "c8541667-7dd3-3776-98e8-afdb43331215",
+				version = 2,
+			},
 		},
 		
 		{
@@ -6117,17 +7359,41 @@ local tbl =
 							{
 								
 								{
-									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
 									true,
 								},
 								
 								{
-									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -6139,11 +7405,12 @@ local tbl =
 					{
 						data = 
 						{
+							actionCDValue = 1,
+							actionID = 7531,
 							category = "Self",
 							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
 							version = 3,
 						},
 					},
@@ -6151,29 +7418,36 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
 							version = 3,
 						},
 					},
 				},
-				mechanicTime = 483.918,
-				name = "[WAR] Equilibrium",
+				mechanicTime = 486.95,
+				name = "[Tank] Rampart",
 				timeRange = true,
-				timelineIndex = 130,
-				timerEndOffset = 20,
-				timerStartOffset = 0.10000000149012,
-				uuid = "1f9ab599-6aa4-9667-b486-863a6dd11dfa",
+				timelineIndex = 132,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "46b05e29-131f-5d2f-bddf-3fd2e6718acd",
 				version = 2,
 			},
 		},
-	},
-	[134] = 
-	{
 		
 		{
 			data = 
@@ -6185,8 +7459,35 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"553a8d00-0a27-a525-9823-70bc7a09bb39",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
 							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "53d56ba1-a68b-e7f1-89b9-72342e2a1008",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -6194,12 +7495,919 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "553a8d00-0a27-a525-9823-70bc7a09bb39",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+							version = 3,
+						},
+					},
 				},
-				mechanicTime = 494.262,
+				mechanicTime = 486.95,
 				name = "[Multi] Sprint",
-				timelineIndex = 134,
+				timeRange = true,
+				timelineIndex = 132,
+				timerEndOffset = -1,
 				timerOffset = -2,
-				uuid = "9c1b491e-9630-763d-8022-ac3efea8cbb6",
+				timerStartOffset = -10,
+				uuid = "ac840122-f00a-2ad9-8604-398f7f26149c",
+				version = 2,
+			},
+		},
+	},
+	[136] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 497.293,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 136,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "b8726e8e-5d3a-e3ec-8b72-60e3b7889ebd",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 497.293,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 136,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "39be5df1-cc9b-ca84-85d5-b5edb4db9623",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"553a8d00-0a27-a525-9823-70bc7a09bb39",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "53d56ba1-a68b-e7f1-89b9-72342e2a1008",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "553a8d00-0a27-a525-9823-70bc7a09bb39",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 497.293,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 136,
+				timerEndOffset = -1,
+				timerOffset = -2,
+				timerStartOffset = -10,
+				uuid = "32a7c681-f576-a486-aaad-251c50ba5f53",
+				version = 2,
+			},
+		},
+	},
+	[140] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 507.637,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 140,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "cb645864-d72d-7b6d-bb28-b7a9282c2266",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 507.637,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 140,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "ed86259e-0d88-43c8-b8c0-54e3fb68b0d8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"553a8d00-0a27-a525-9823-70bc7a09bb39",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "53d56ba1-a68b-e7f1-89b9-72342e2a1008",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "553a8d00-0a27-a525-9823-70bc7a09bb39",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 507.637,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 140,
+				timerEndOffset = -1,
+				timerOffset = -2,
+				timerStartOffset = -10,
+				uuid = "cbb6db16-2c6f-1f60-a1c2-217697cd10dc",
+				version = 2,
+			},
+		},
+	},
+	[144] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 517.95,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 144,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "b547f37f-c3fb-3f60-af05-cd09b9ba549a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 517.95,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 144,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "3e3fcf3c-0900-91ed-9038-0a3f244bc640",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"553a8d00-0a27-a525-9823-70bc7a09bb39",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "53d56ba1-a68b-e7f1-89b9-72342e2a1008",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "553a8d00-0a27-a525-9823-70bc7a09bb39",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "924e3b20-cc59-3056-bcd9-8dcff4fcef02",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 517.95,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 144,
+				timerEndOffset = -1,
+				timerOffset = -2,
+				timerStartOffset = -10,
+				uuid = "a646873f-57a8-0d7d-bb93-a7ae99d4f5cd",
 				version = 2,
 			},
 		},
