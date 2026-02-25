@@ -4,34 +4,6 @@ local tbl =
 	{
 		data = 
 		{
-			name = "-- Utility",
-			uuid = "56a1998f-9d9e-6f5b-a9ef-eb2a1e27d6ee",
-			version = 2,
-		},
-		inheritedIndex = 31,
-		inheritedObjectUUID = "57957590-a02b-9f41-a31b-04145ac3d099",
-		inheritedOverwrites = 
-		{
-		},
-	},
-	
-	{
-		data = 
-		{
-			name = "Global Wipe",
-			uuid = "7e95d251-52a7-a1aa-86b9-4425c0fdd2bc",
-			version = 2,
-		},
-		inheritedIndex = 34,
-		inheritedObjectUUID = "23042bab-e846-4709-9aae-1adbb0ac2086",
-		inheritedOverwrites = 
-		{
-		},
-	},
-	
-	{
-		data = 
-		{
 			actions = 
 			{
 				
@@ -53,10 +25,11 @@ local tbl =
 						conditionType = 2,
 						contentid = 14284,
 						uuid = "044d8625-1fc5-f7cf-ae09-f01803b37281",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
+			enabled = false,
 			name = "--DT Raid Custom",
 			uuid = "c3c714c1-ce83-78cc-8f15-706bd82a0305",
 			version = 2,
@@ -229,7 +202,7 @@ local tbl =
 						localmapid = 1308,
 						name = "EX6 Map Lock",
 						uuid = "0e255340-8439-2feb-b9cd-8c9971351343",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -246,7 +219,7 @@ local tbl =
 						eventSpellName = "-1",
 						name = "Spread",
 						uuid = "9ba70fe2-e736-5b9d-ab9f-9c4334f5ba55",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -264,7 +237,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "Duo",
 						uuid = "234111a1-1f36-555f-9e89-0d0c25c468b5",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -282,7 +255,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "TB",
 						uuid = "b6f4aba9-2463-110b-87f2-10cb68cb534e",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -300,7 +273,7 @@ local tbl =
 						filterTargetType = "ContentID",
 						name = "Unlimited Express",
 						uuid = "43481199-9325-462f-80fb-097a549f5a22",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 3,
 				},
@@ -313,7 +286,7 @@ local tbl =
 						eventSpellID = 45696,
 						name = "Dead Man's Windpipe",
 						uuid = "90f4835c-e3ba-fb81-8423-bbf475e9a5c6",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -325,7 +298,7 @@ local tbl =
 						eventSpellID = 45670,
 						name = "Dead Man's Express",
 						uuid = "d55a6341-1da7-6a0a-bb13-ae77a7565c36",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -337,7 +310,7 @@ local tbl =
 						eventSpellID = 45693,
 						name = "Aetherial Ray",
 						uuid = "7d602292-4854-e572-89ba-7d97c8123cc5",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 8,
 				},
@@ -350,7 +323,7 @@ local tbl =
 						eventSpellID = 45648,
 						name = "Derailment Siege",
 						uuid = "4b216b88-b083-a631-a8e8-cd8b259ea686",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
@@ -415,7 +388,7 @@ local tbl =
 						localmapid = 694,
 						name = "TEA Map Lock",
 						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -427,7 +400,7 @@ local tbl =
 						eventCountdownTime = 9,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -487,7 +460,7 @@ local tbl =
 						eventCountdownTime = 3,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -505,7 +478,7 @@ local tbl =
 						},
 						name = "Map Lock",
 						uuid = "553424c5-33aa-d3ab-a8c7-46ed94d8801c",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -570,7 +543,7 @@ local tbl =
 						},
 						name = "DT Raid Map Lock",
 						uuid = "609bac7e-8c21-b4c6-b906-53c8091a268e",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -583,7 +556,7 @@ local tbl =
 						eventCountdownTime = 5,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -608,6 +581,7 @@ local tbl =
 			conditions = 
 			{
 			},
+			enabled = false,
 			name = "--DT Trials Custom",
 			uuid = "788c928c-0aa3-0565-ad12-052ed520031b",
 			version = 2,
@@ -624,6 +598,7 @@ local tbl =
 			conditions = 
 			{
 			},
+			enabled = false,
 			name = "--General Custom",
 			uuid = "bd2f2ebc-26b1-dcf1-9c61-1bf9ed6ba104",
 			version = 2,
@@ -679,7 +654,7 @@ local tbl =
 						localmapid = 694,
 						name = "TEA Map Lock",
 						uuid = "609bac7e-8c21-b4c6-b906-53c8091a268e",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 1,
 				},
@@ -692,7 +667,7 @@ local tbl =
 						eventCountdownTime = 8,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -761,7 +736,7 @@ local tbl =
 						},
 						name = "Map Lock",
 						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -773,7 +748,7 @@ local tbl =
 						eventCountdownTime = 5,
 						name = "Prepull Timer",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 2,
+						version = 3,
 					},
 					inheritedIndex = 2,
 				},
@@ -866,7 +841,7 @@ local tbl =
 						eventCountdownTime = 5,
 						name = "Pull in 5sec",
 						uuid = "a280fbb7-b092-6e0d-81df-d6160f35a7c3",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -878,7 +853,7 @@ local tbl =
 						eventCountdownTime = 0.69999998807907,
 						name = "Pull in 0sec",
 						uuid = "fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
-						version = 2,
+						version = 3,
 					},
 				},
 				
@@ -890,7 +865,7 @@ local tbl =
 						eventCountdownTime = -2,
 						name = "Pulled",
 						uuid = "536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-						version = 2,
+						version = 3,
 					},
 				},
 			},
