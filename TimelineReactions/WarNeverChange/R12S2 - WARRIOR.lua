@@ -17,92 +17,6 @@ local tbl =
 							{
 								
 								{
-									"35693d39-44ae-89ea-930a-628c03451000",
-									true,
-								},
-								
-								{
-									"8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-									true,
-								},
-								
-								{
-									"e088273e-65dc-999e-ae9d-1a2e2436a400",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7535,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 15.125,
-				name = "[Tank][MT] Reprisal",
-				timelineIndex = 1,
-				timerOffset = -5,
-				uuid = "61e77e99-61c4-4bd1-95f3-ee7ed2bbde0e",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"047fe2b3-9585-f8b3-8053-226f9f45a3d5",
 									true,
 								},
@@ -212,6 +126,92 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 14,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"35693d39-44ae-89ea-930a-628c03451000",
+									true,
+								},
+								
+								{
+									"8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
+									true,
+								},
+								
+								{
+									"e088273e-65dc-999e-ae9d-1a2e2436a400",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7535,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 15.125,
+				name = "[Tank][MT] Reprisal",
+				timelineIndex = 1,
+				timerOffset = -5,
+				uuid = "61e77e99-61c4-4bd1-95f3-ee7ed2bbde0e",
+				version = 2,
+			},
 		},
 		
 		{
@@ -1533,8 +1533,11 @@ local tbl =
 				},
 				mechanicTime = 76.922,
 				name = "[Multi] Enable Jumps",
+				timeRange = true,
 				timelineIndex = 15,
+				timerEndOffset = 0.5,
 				timerOffset = 0.10000000149012,
+				timerStartOffset = 0.10000000149012,
 				uuid = "914b414c-f2af-4396-920b-cda43619815a",
 				version = 2,
 			},
@@ -3309,8 +3312,11 @@ local tbl =
 				},
 				mechanicTime = 253.204,
 				name = "[Multi] Enable Jumps",
+				timeRange = true,
 				timelineIndex = 51,
+				timerEndOffset = 0.5,
 				timerOffset = 0.10000000149012,
+				timerStartOffset = 0.10000000149012,
 				uuid = "a11226fd-3875-eef5-a0a8-8657b266c24d",
 				version = 2,
 			},
@@ -5557,6 +5563,7 @@ local tbl =
 				},
 				mechanicTime = 487.641,
 				name = "[Multi] Enable Jumps",
+				randomOffset = 0.5,
 				timelineIndex = 102,
 				timerOffset = 0.10000000149012,
 				uuid = "19c927b6-b7c5-44a1-97b5-cf220cebd0d9",
