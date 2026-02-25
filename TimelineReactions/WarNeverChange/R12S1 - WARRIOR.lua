@@ -102,73 +102,6 @@ local tbl =
 							{
 								
 								{
-									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
-									true,
-								},
-								
-								{
-									"ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
-							version = 3,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				mechanicTime = 15.187,
-				name = "[WAR][OT] Stance",
-				timelineIndex = 1,
-				timerOffset = -7,
-				uuid = "1b7c4844-fe9f-8c82-a490-efba7034e77f",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
 									true,
 								},
@@ -225,6 +158,73 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "ada1fbbe-4c6a-c8b0-8d0e-244fb646d516",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 15.187,
+				name = "[WAR][OT] Stance",
+				timelineIndex = 1,
+				timerOffset = -7,
+				uuid = "1b7c4844-fe9f-8c82-a490-efba7034e77f",
+				version = 2,
+			},
 		},
 		
 		{
@@ -791,6 +791,34 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -1,
 				uuid = "8fc61bbb-f06d-704b-a5fb-249a0163bac0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 40.515,
+				name = "[Multi] Potion Off",
+				timelineIndex = 2,
+				uuid = "5f40aff9-3de6-dd3c-8ff3-406e6ab0c467",
 				version = 2,
 			},
 		},
@@ -4430,6 +4458,36 @@ local tbl =
 			},
 		},
 	},
+	[59] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "bb451de0-d8e2-210b-87ed-8daf04449927",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 339.143,
+				name = "[Multi] Potion On",
+				timelineIndex = 59,
+				uuid = "2f677a49-53a3-e6d5-be5c-231ecca18c71",
+				version = 2,
+			},
+		},
+	},
 	[60] = 
 	{
 		
@@ -4531,97 +4589,23 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
 							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							gVar = "ACR_RikuWAR3_KBCancel",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
 				},
-				enabled = false,
 				mechanicTime = 356.877,
-				name = "[WAR] Dash",
-				timeRange = true,
+				name = "[Multi] KB Cancel On",
 				timelineIndex = 64,
 				timerEndOffset = 1,
+				timerOffset = -1,
 				timerStartOffset = -1,
 				uuid = "32fbbb4e-37aa-e23e-a8ef-afbd872d2c51",
-				version = 2,
-			},
-		},
-	},
-	[66] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 361.471,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 66,
-				timerEndOffset = 1,
-				timerStartOffset = -1,
-				uuid = "a59aefcb-bcc6-a855-9fcb-6685a73997b8",
 				version = 2,
 			},
 		},
@@ -4786,114 +4770,6 @@ local tbl =
 			inheritedIndex = 14,
 		},
 	},
-	[72] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 385.627,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 72,
-				timerEndOffset = 1,
-				timerStartOffset = -1,
-				uuid = "9d48f129-2da4-31fc-843f-0b57d5138561",
-				version = 2,
-			},
-		},
-	},
-	[74] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 390.205,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 74,
-				timerEndOffset = 1,
-				timerStartOffset = -1,
-				uuid = "bf7e17f1-e077-22be-af75-5bf6e1bca9fc",
-				version = 2,
-			},
-		},
-	},
 	[76] = 
 	{
 		
@@ -5054,60 +4930,6 @@ local tbl =
 			inheritedIndex = 14,
 		},
 	},
-	[80] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 414.58,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 80,
-				timerEndOffset = 1,
-				timerStartOffset = -1,
-				uuid = "f0660a17-0e28-97c6-910a-f319a97ec045",
-				version = 2,
-			},
-		},
-	},
 	[82] = 
 	{
 		
@@ -5121,43 +4943,24 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"acceddd1-eb25-0875-9d9c-b718d837b86f",
-									true,
-								},
-							},
 							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							gVar = "ACR_RikuWAR3_KBCancel",
+							gVarValue = 2,
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							inRangeValue = 4,
-							uuid = "acceddd1-eb25-0875-9d9c-b718d837b86f",
-							version = 3,
-						},
-					},
 				},
-				enabled = false,
 				mechanicTime = 419.174,
-				name = "[WAR] Dash",
-				timeRange = true,
+				name = "[Multi] KB Cancel Off",
 				timelineIndex = 82,
 				timerEndOffset = 1,
-				timerStartOffset = -1,
-				uuid = "59635cbb-73e6-a839-a147-0fd5feeb2994",
+				timerOffset = 1,
+				timerStartOffset = 1,
+				uuid = "823c79e3-bc7e-8694-9efe-578248e27f47",
 				version = 2,
 			},
 		},

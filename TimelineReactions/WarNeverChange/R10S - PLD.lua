@@ -69,7 +69,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "70200371-f6fb-7774-aaef-f1b19e8c91f4",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -162,7 +162,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -175,7 +175,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -188,7 +188,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -245,7 +245,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -257,7 +257,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "3d2d2976-efb3-6a9f-8606-f1795ebb6d19",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -297,12 +297,11 @@ local tbl =
 				},
 				mechanicTime = 14.125,
 				name = "[PLD] Dash",
-				throttleTime = 300,
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = 8,
 				timerOffset = 0.40000000596046,
-				timerStartOffset = 6,
+				timerStartOffset = 6.6999998092651,
 				uuid = "e80c0655-3f60-3b64-a17d-e79073986595",
 				version = 2,
 			},
@@ -344,7 +343,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "e6dafedc-e42b-e2f5-8bc8-cdf97a89fbaf",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -407,7 +406,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -420,7 +419,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -433,7 +432,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -445,7 +444,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "4f274a7c-f9db-7710-b661-fbd04f1de955",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -504,7 +503,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -516,7 +515,7 @@ local tbl =
 							buffID = 91,
 							category = "Self",
 							uuid = "d5c81fdb-3148-a506-875f-e7131832f820",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -528,7 +527,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "35302fcb-c21e-1953-a14a-027be980ba38",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -537,6 +536,72 @@ local tbl =
 				timelineIndex = 1,
 				timerOffset = -7,
 				uuid = "f03ec447-107e-de2f-b8a4-ff6eafdf0f2f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 14.125,
+				name = "[Tank][MT] Voke",
+				timelineIndex = 1,
+				timerOffset = 7,
+				uuid = "fcabebab-baca-4a68-8751-b61505629017",
 				version = 2,
 			},
 		},
@@ -586,7 +651,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -598,7 +663,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e9eaecaf-a746-3481-b688-3426e9e756e8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -729,7 +794,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "a0c32fff-2645-ca70-a05a-0325df47bc64",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -740,7 +805,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "1f5ddbe3-bc24-6b4b-93e5-c20bc6e5cc95",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -752,7 +817,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e03f890b-6619-1244-9a8b-a5b88691c5f0",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -765,7 +830,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "c12c0a63-0d7e-91e4-9643-d35486b787d9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -817,7 +882,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -879,7 +944,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -892,7 +957,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -905,7 +970,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -958,7 +1023,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "f5903ecf-dd8a-8709-8859-23fac66de4a8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1026,7 +1091,7 @@ local tbl =
 							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 99.99\nlocal targetY = 0\nlocal targetZ = 92.48\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
 							name = "Check Red Position",
 							uuid = "eb497524-4378-f045-be5c-5f866f30977e",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 6,
 					},
@@ -1038,7 +1103,7 @@ local tbl =
 							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14370\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 5.0)\n",
 							name = "Red dis > 5",
 							uuid = "e9689abd-7c60-cc08-ac91-6372440d1ba9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 6,
 					},
@@ -1050,7 +1115,7 @@ local tbl =
 							filterTargetType = "ContentID",
 							partyTargetContentID = 14370,
 							uuid = "833094a4-e620-954b-a7f2-1b496d3e4f7f",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1149,7 +1214,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "a0c32fff-2645-ca70-a05a-0325df47bc64",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1160,7 +1225,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "1f5ddbe3-bc24-6b4b-93e5-c20bc6e5cc95",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1172,7 +1237,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e03f890b-6619-1244-9a8b-a5b88691c5f0",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1185,7 +1250,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "c12c0a63-0d7e-91e4-9643-d35486b787d9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1251,7 +1316,7 @@ local tbl =
 							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then\n    return false\nend\n\nif not EntityList then\n    return false\nend\n\nlocal nearestDist = nil\n\n-- 过滤：alive, attackable, targetable（可选中/可锁定）\nfor _, e in pairs(EntityList(\"alive,attackable,targetable\")) do\n    if e and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx * dx + dz * dz)\n\n        if (not nearestDist) or d < nearestDist then\n            nearestDist = d\n        end\n    end\nend\n\n-- 没有任何可选中可攻击目标\nif not nearestDist then\n    return false\nend\n\nreturn nearestDist > 5.0\n",
 							name = "Nearest Enemy dis > 5",
 							uuid = "9d8d85bc-5958-128a-bae2-503db08e4e2a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1262,7 +1327,7 @@ local tbl =
 							filterTargetType = "Enemy",
 							partyTargetContentID = 14369,
 							uuid = "61ce5147-475a-f1b7-bec4-14b494bfb7f4",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1324,7 +1389,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1337,7 +1402,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1350,7 +1415,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1409,7 +1474,7 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "2292675b-08c3-0f1f-89d3-ea902c69f98b",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1420,7 +1485,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "c8024d81-fa4a-7af3-af5f-04ddf5ebcb83",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1468,7 +1533,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "a0c66996-a45f-6fd9-8e4b-898589d1cdfd",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1526,7 +1591,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "70200371-f6fb-7774-aaef-f1b19e8c91f4",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1537,7 +1602,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "14742a8b-7ea7-46c2-90c1-4b36fa0ded70",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1588,7 +1653,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "f0d79a8c-2579-6745-80c5-279996794163",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1672,7 +1737,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "8c384194-a79b-3c49-8e99-cd939739f981",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1757,9 +1822,8 @@ local tbl =
 						{
 							aType = "ACR",
 							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							gVar = "ACR_RikuPLD3_KBCancel",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1768,12 +1832,43 @@ local tbl =
 				{
 				},
 				mechanicTime = 136.578,
-				name = "[PLD] Dash",
+				name = "[Multi] KB Cancel Off",
 				timelineIndex = 28,
-				timerEndOffset = 20,
-				timerOffset = 0.30000001192093,
-				timerStartOffset = -20,
-				uuid = "b8d7552c-288f-ca0e-928c-22efa702c237",
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "7a9dd1c2-8563-7aad-84c9-bec3f7e04567",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 136.578,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 28,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "24df6d34-d2c1-5677-8a54-0c620f2b7952",
 				version = 2,
 			},
 		},
@@ -1826,7 +1921,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1839,7 +1934,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1852,7 +1947,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1907,7 +2002,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "d83f3619-72fc-d5d6-ba7c-9aa958745d14",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1935,19 +2030,57 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25746,
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Buster",
+							alertVolume = 100,
 							conditions = 
 							{
 								
 								{
-									"70200371-f6fb-7774-aaef-f1b19e8c91f4",
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"2fd3c010-cf02-02a7-938c-3d6d8998075d",
 									true,
 								},
 							},
 							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_CD",
-							ignoreWeaveRules = true,
-							uuid = "485b83bd-eeb5-3e12-84aa-8ca0343860af",
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "7f0dbff9-7cd8-70de-9a54-f17039409666",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertScale = 0.89999997615814,
+							alertTTS = true,
+							alertText = "Buster",
+							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"5a84d757-8dc6-7cc4-84cb-d5091b50a891",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_CD",
+							uuid = "3bb40f67-11b4-1b0e-8e31-bb95969f1a1b",
 							version = 2.1,
 						},
 					},
@@ -1958,24 +2091,177 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Self",
-							conditionType = 6,
-							gaugeValue = 50,
-							uuid = "70200371-f6fb-7774-aaef-f1b19e8c91f4",
-							version = 2,
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "2fd3c010-cf02-02a7-938c-3d6d8998075d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "5a84d757-8dc6-7cc4-84cb-d5091b50a891",
+							version = 3,
 						},
 					},
 				},
+				eventType = 14,
 				mechanicTime = 194.671,
-				name = "[PLD] Sheltron",
+				name = "[TTS] Buster",
 				timeRange = true,
 				timelineIndex = 43,
-				timerOffset = -4,
-				timerStartOffset = -2,
-				uuid = "80f85271-3992-05cd-97af-12391f940076",
+				timerEndOffset = 35,
+				timerStartOffset = -15,
+				uuid = "3ff6c2d3-08aa-cda3-bc16-3b6b13f57c64",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirBlue = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"1ed22d69-d84b-f19c-b325-92de1249881f",
+									true,
+								},
+								
+								{
+									"76eb19cc-ff88-8e06-804b-d1661400bdc2",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Blue Record",
+							uuid = "a325af4f-031e-e935-91e0-186e2f6a610a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.InsaneAirRed = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"e34b7e90-c202-141c-aae3-9bad7ddba835",
+									true,
+								},
+								
+								{
+									"57c1b67f-a8a5-de65-94aa-afa2681f2bc6",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_CD",
+							name = "Red Record",
+							uuid = "61a199ae-2b78-13c9-9a9b-51ab0cfb8a3f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
+							name = "Blue Side",
+							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
+							name = "Red Side",
+							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "76eb19cc-ff88-8e06-804b-d1661400bdc2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "57c1b67f-a8a5-de65-94aa-afa2681f2bc6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 14,
+				loop = true,
+				mechanicTime = 194.671,
+				name = "[Tank] Buster Record",
+				timeRange = true,
+				timelineIndex = 43,
+				timerEndOffset = 35,
+				timerStartOffset = -15,
+				uuid = "8013239f-25e8-3cb8-bfbc-3aecd49969a0",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -2023,7 +2309,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2036,7 +2322,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2049,7 +2335,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2066,8 +2352,146 @@ local tbl =
 			},
 		},
 	},
-	[46] = 
+	[45] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25746,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.718,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 45,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "8a4a337f-979f-72fe-8932-ed497542557d",
+				version = 2,
+			},
+		},
 		
 		{
 			data = 
@@ -2086,9 +2510,48 @@ local tbl =
 									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
 									true,
 								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
 							},
 							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -2106,17 +2569,893 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
 						},
 					},
 				},
-				mechanicTime = 201.999,
+				mechanicTime = 197.718,
 				name = "[Tank] Rampart",
-				timelineIndex = 46,
-				timerEndOffset = 20,
+				timeRange = true,
+				timelineIndex = 45,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "2f6e7a19-7f7e-455e-bc9f-8371d65419fe",
+				version = 2,
+			},
+		},
+	},
+	[48] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25746,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 205.031,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = -1,
 				timerOffset = -3,
-				timerStartOffset = -20,
-				uuid = "24b0d84d-ffb5-2e77-82c5-b37ef75eaea9",
+				timerStartOffset = -3,
+				uuid = "f1fe4cb7-d8d9-88a3-8914-65bcd087633c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 205.031,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "39a6e81b-b3b5-64b2-bd05-00a50a991975",
+				version = 2,
+			},
+		},
+	},
+	[51] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25746,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 212.359,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 51,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "818ab845-f14e-fe26-99c7-257d913630c8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 212.359,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 51,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "6c5c73e4-e572-939b-813f-b0f1d0e9c7a1",
+				version = 2,
+			},
+		},
+	},
+	[54] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25746,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "6aedb8a7-daab-ea2c-8a92-9cfc02b80b81",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "792a561a-a6b0-9b8b-b1da-1aecd6f19935",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 219.702,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = -1,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "08d7036c-ce55-d776-8f99-e92a9406264d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+									true,
+								},
+								
+								{
+									"2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"62abf80e-9977-283b-a26c-fb43d03c39e9",
+									true,
+								},
+								
+								{
+									"567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "829bd171-5393-8603-92f0-04d2f57f5a79",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14370,
+							name = "Target Fire",
+							uuid = "ada74a00-72f6-5c27-a58f-b110ae82a6fe",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14369,
+							name = "Target Blue",
+							uuid = "62abf80e-9977-283b-a26c-fb43d03c39e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirBlue == true\n",
+							name = "Buster Blue",
+							uuid = "567c7a3e-ed4b-9168-9a57-130c3e30dbc7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.InsaneAirRed == true\n",
+							name = "Buster Red",
+							uuid = "2d75fa11-c50a-6fe0-bf1f-cebe00ac75f8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 219.702,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "25ef546a-e604-5e5a-bf3b-c2b6aaaab2af",
 				version = 2,
 			},
 		},
@@ -2169,7 +3508,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2182,7 +3521,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2195,7 +3534,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2279,7 +3618,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -2288,14 +3627,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4975,
@@ -2303,7 +3642,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2373,7 +3712,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -2382,14 +3721,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4975,
@@ -2397,7 +3736,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2493,7 +3832,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "a0c32fff-2645-ca70-a05a-0325df47bc64",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2504,7 +3843,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "1f5ddbe3-bc24-6b4b-93e5-c20bc6e5cc95",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2516,7 +3855,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e03f890b-6619-1244-9a8b-a5b88691c5f0",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2529,7 +3868,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "c12c0a63-0d7e-91e4-9643-d35486b787d9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2619,7 +3958,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "878f14ce-f51f-ec7f-b174-dea5086e0d07",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -2627,7 +3966,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -2636,14 +3975,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4975,
@@ -2651,7 +3990,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "4e346f03-9320-42f6-a445-9698656276de",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2702,7 +4041,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2802,7 +4141,7 @@ local tbl =
 							name = "Blue",
 							partyTargetContentID = 14369,
 							uuid = "b8a0e2ad-6a36-e14b-8d95-7ebb2f609bdf",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 5,
 					},
@@ -2810,7 +4149,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4975,
@@ -2818,7 +4157,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "1724a22b-a972-6235-90be-f612b7fa919a",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 5,
 					},
@@ -2831,7 +4170,7 @@ local tbl =
 							name = "Red",
 							partyTargetContentID = 14370,
 							uuid = "59fa4008-6663-c72b-afcc-dbc72a6414fc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 7,
 					},
@@ -2839,7 +4178,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -2848,7 +4187,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "0eac2831-703f-5f06-a40f-7e767919d4b9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 5,
 					},
@@ -2860,7 +4199,7 @@ local tbl =
 							conditionLua = "-- 参数配置\nlocal targetCID = 14369\nlocal tolerance = 1.0 -- 容差半径（米）\nlocal toleranceSq = tolerance * tolerance -- 预计算平方值，优化性能\n\n-- 定义所有可能的坐标模式\nlocal patterns = {\n    {x = 80.00, y = 0, z = 90.00},  -- Pattern 1\n    {x = 79.97, y = 0, z = 109.97}  -- Pattern 2\n}\n\n-- 获取实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\nif (table.valid(el)) then\n    for id, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 遍历所有定义的模式坐标\n            for _, pos in ipairs(patterns) do\n                local dx = entity.pos.x - pos.x\n                local dy = entity.pos.y - pos.y\n                local dz = entity.pos.z - pos.z\n                \n                -- 计算距离平方\n                local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n                \n                -- 只要匹配任何一个模式，立即返回 true\n                if (distSq <= toleranceSq) then\n                    return true\n                end\n            end\n        end\n    end\nend\n\nreturn false",
 							name = "Check Blue Position",
 							uuid = "a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2871,7 +4210,7 @@ local tbl =
 							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 109.97\nlocal targetY = 0\nlocal targetZ = 99.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
 							name = "Check Red Position",
 							uuid = "ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2934,7 +4273,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2947,7 +4286,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2960,7 +4299,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3049,7 +4388,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "70200371-f6fb-7774-aaef-f1b19e8c91f4",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3116,7 +4455,7 @@ local tbl =
 							conditionLua = "local player = TensorCore.mGetPlayer()\nif not player or not player.pos then return false end\n\nlocal wantCID = 14370\nlocal bestDist = nil\n\nif not EntityList then return false end\n\nfor _, e in pairs(EntityList(\"alive,attackable\")) do\n    if e and e.contentid == wantCID and e.pos then\n        local dx = player.pos.x - e.pos.x\n        local dz = player.pos.z - e.pos.z\n        local d  = math.sqrt(dx*dx + dz*dz)\n        if (not bestDist) or d < bestDist then\n            bestDist = d\n        end\n    end\nend\n\nreturn (bestDist ~= nil) and (bestDist > 3.0)\n",
 							name = "Red dis > 3",
 							uuid = "992dc756-c0c5-8cb0-b921-d6cbe5299db1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3127,14 +4466,14 @@ local tbl =
 							filterTargetType = "ContentID",
 							partyTargetContentID = 14370,
 							uuid = "833094a4-e620-954b-a7f2-1b496d3e4f7f",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4975,
@@ -3142,7 +4481,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "19474e69-9ed9-b5f7-8275-6cac40802045",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3196,7 +4535,7 @@ local tbl =
 							category = "Self",
 							name = "Red",
 							uuid = "0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -3208,7 +4547,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "f922f1e5-5bd1-d9f2-9065-38dbb864da21",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3263,7 +4602,7 @@ local tbl =
 							category = "Self",
 							name = "Red",
 							uuid = "2292675b-08c3-0f1f-89d3-ea902c69f98b",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3344,7 +4683,7 @@ local tbl =
 							category = "Self",
 							name = "Red",
 							uuid = "eeb85765-598d-fb19-b40c-2239b8f34a7a",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -3400,7 +4739,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -3409,7 +4748,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3456,7 +4795,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -3465,7 +4804,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "20db149d-da00-6b65-aa87-4b9c03a9c405",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3516,7 +4855,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -3525,7 +4864,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "251baed0-2038-cccd-8b6b-ad49c210c474",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3578,7 +4917,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -3587,7 +4926,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "d5053685-cd08-213d-a7cc-5cc02382a21d",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3674,7 +5013,7 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "2292675b-08c3-0f1f-89d3-ea902c69f98b",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3755,7 +5094,7 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "eeb85765-598d-fb19-b40c-2239b8f34a7a",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3809,7 +5148,7 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "5cee4561-ba70-92e9-8788-c992f44b1c12",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3820,7 +5159,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "803eebb7-0479-8972-90cc-e01208dca2a4",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3870,7 +5209,7 @@ local tbl =
 							category = "Self",
 							name = "Blue",
 							uuid = "120b0e58-98a7-b799-a15b-09319bd0f3e5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3933,7 +5272,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3946,7 +5285,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3959,7 +5298,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4012,7 +5351,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "f5903ecf-dd8a-8709-8859-23fac66de4a8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4022,6 +5361,68 @@ local tbl =
 				timelineIndex = 85,
 				timerOffset = -5,
 				uuid = "811f8534-71ac-79fc-b404-4eb4e37ee304",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 314.061,
+				name = "[Multi] KB Cancel Off",
+				timelineIndex = 85,
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "e166bfd6-76e5-6cfc-819d-515d93455d28",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 314.061,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 85,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "11a04055-0147-31f6-bbee-99201d930172",
 				version = 2,
 			},
 		},
@@ -4074,7 +5475,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4087,7 +5488,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4100,7 +5501,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4268,7 +5669,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "a0c32fff-2645-ca70-a05a-0325df47bc64",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4279,7 +5680,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "1f5ddbe3-bc24-6b4b-93e5-c20bc6e5cc95",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4291,7 +5692,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e03f890b-6619-1244-9a8b-a5b88691c5f0",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4304,7 +5705,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "c12c0a63-0d7e-91e4-9643-d35486b787d9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4365,7 +5766,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4378,7 +5779,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4391,7 +5792,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4473,7 +5874,7 @@ local tbl =
 							inRangeValue = 3.2799999713898,
 							name = "Range",
 							uuid = "bb169dfd-1b36-a827-83ff-40eed191216b",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4572,7 +5973,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "a0c32fff-2645-ca70-a05a-0325df47bc64",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4583,7 +5984,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "1f5ddbe3-bc24-6b4b-93e5-c20bc6e5cc95",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4595,7 +5996,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e03f890b-6619-1244-9a8b-a5b88691c5f0",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4608,7 +6009,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "c12c0a63-0d7e-91e4-9643-d35486b787d9",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4660,7 +6061,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4814,7 +6215,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "72bf36d2-90e8-185f-b579-a2aae3b238f1",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4866,7 +6267,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14370\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "RedHot targeting self",
 							uuid = "014c8be4-6aa0-f1af-913a-1315c5c3dc0b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4926,7 +6327,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4939,7 +6340,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4952,7 +6353,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -5005,7 +6406,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "f5903ecf-dd8a-8709-8859-23fac66de4a8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -5080,7 +6481,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5089,14 +6490,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5104,7 +6505,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5176,7 +6577,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5185,14 +6586,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "dc7af6f7-ec0f-af6d-91bb-f50a1b20855a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5200,7 +6601,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "5912b8d8-b6fb-8245-8d79-98819abbbcbd",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5290,7 +6691,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "878f14ce-f51f-ec7f-b174-dea5086e0d07",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -5298,7 +6699,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5307,14 +6708,14 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "124c9ff2-abc5-0378-87e8-fb1c7b3f7c08",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5322,7 +6723,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "4e346f03-9320-42f6-a445-9698656276de",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5414,7 +6815,7 @@ local tbl =
 							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
 							name = "Blue Side",
 							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -5426,14 +6827,14 @@ local tbl =
 							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096\n",
 							name = "Red Side",
 							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5441,7 +6842,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "2bebe761-5deb-a4b4-b7f8-e70a48dfb20a",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 3,
 					},
@@ -5449,7 +6850,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5458,7 +6859,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "9bb69cf8-5f16-3055-acf3-a202c33f1487",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5588,7 +6989,7 @@ local tbl =
 							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a1 >= 14 and eventArgs.a1 <= 22 and eventArgs.a2 == 64",
 							name = "Blue Side",
 							uuid = "1ed22d69-d84b-f19c-b325-92de1249881f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -5600,14 +7001,14 @@ local tbl =
 							conditionLua = "if not eventArgs then\n    return false\nend\n\nreturn eventArgs.a2 == 4096",
 							name = "Red Side",
 							uuid = "e34b7e90-c202-141c-aae3-9bad7ddba835",
-							version = 2,
+							version = 3,
 						},
 					},
 					
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5615,7 +7016,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "f59c646c-5b30-ff1d-9b2c-d6abf05e2902",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 3,
 					},
@@ -5623,7 +7024,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5632,7 +7033,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "5276635b-5916-2c99-8780-31e734e4dfd7",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5737,7 +7138,7 @@ local tbl =
 							name = "Blue",
 							partyTargetContentID = 14369,
 							uuid = "d58f8f4b-1d92-94cd-b9bb-1aaa2a980373",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 5,
 					},
@@ -5745,7 +7146,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffIDList = 
 							{
 								4828,
@@ -5753,7 +7154,7 @@ local tbl =
 							category = "Self",
 							name = "Water",
 							uuid = "402fadb7-04a5-f5f8-a168-9f10380c2ddd",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 6,
 					},
@@ -5766,7 +7167,7 @@ local tbl =
 							name = "Red",
 							partyTargetContentID = 14370,
 							uuid = "368dd721-c555-6967-81c6-a36197fe3178",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 8,
 					},
@@ -5774,7 +7175,7 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 4,
+							buffCheckType = 5,
 							buffID = 4974,
 							buffIDList = 
 							{
@@ -5783,7 +7184,7 @@ local tbl =
 							category = "Self",
 							name = "Fire",
 							uuid = "4912ef93-b03b-6d1f-ba6e-26c6b59b330d",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 10,
 					},
@@ -5795,7 +7196,7 @@ local tbl =
 							conditionLua = "-- 目标参数配置\nlocal targetCID = 14369\nlocal targetX = 86.99\nlocal targetY = 0\nlocal targetZ = 86.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
 							name = "Check Blue Position",
 							uuid = "a3ea0b88-f8c4-2554-8161-cbe6d0e3fb61",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -5806,7 +7207,7 @@ local tbl =
 							conditionLua = "-- 目标参数配置\nlocal targetCID = 14370\nlocal targetX = 112.99\nlocal targetY = 0\nlocal targetZ = 112.99\nlocal tolerance = 1.0 -- 容差范围（米），只要在这个距离内都算“在位置上”\n\n-- 获取指定 ContentID 的实体列表\nlocal el = EntityList(\"contentid=\" .. targetCID)\n\n-- 遍历查找\nif (table.valid(el)) then\n    for i, entity in pairs(el) do\n        if (entity and entity.pos) then\n            -- 计算三维距离的平方（性能优于开根号）\n            local dx = entity.pos.x - targetX\n            local dy = entity.pos.y - targetY\n            local dz = entity.pos.z - targetZ\n            local distSq = (dx * dx) + (dy * dy) + (dz * dz)\n            \n            -- 如果距离小于容差，返回 true\n            if (distSq <= (tolerance * tolerance)) then\n                return true\n            end\n        end\n    end\nend\n\n-- 未找到或不在位置\nreturn false",
 							name = "Check Red Position",
 							uuid = "ba8983ce-f4c6-2f48-95aa-cd94b8fd5e2e",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5901,7 +7302,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -5914,7 +7315,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -5927,7 +7328,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -5980,7 +7381,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -6094,7 +7495,7 @@ local tbl =
 							conditionLua = "local me = Player\nif not me then return false end\n\nlocal list = EntityList(\"contentid=14369\") or {}\nfor _, e in pairs(list) do\n    if e and e.id ~= 0 and e.targetid == me.id then\n        return true\n    end\nend\n\nreturn false\n",
 							name = "DeepBlue targeting self",
 							uuid = "9e8a5ae0-9d7b-9a16-99e7-76d08e44279b",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -6210,7 +7611,7 @@ local tbl =
 							conditionType = 6,
 							gaugeValue = 50,
 							uuid = "70200371-f6fb-7774-aaef-f1b19e8c91f4",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -6326,9 +7727,8 @@ local tbl =
 						{
 							aType = "ACR",
 							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							gVar = "ACR_RikuPLD3_KBCancel",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -6337,12 +7737,43 @@ local tbl =
 				{
 				},
 				mechanicTime = 555.183,
-				name = "[PLD] Dash",
+				name = "[Multi] KB Cancel Off",
 				timelineIndex = 155,
-				timerEndOffset = 20,
-				timerOffset = 0.30000001192093,
-				timerStartOffset = -20,
-				uuid = "dc8da480-9f46-7f2e-a99d-0a0a245d4a00",
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "b9d73a29-c9c3-3bf6-8b3c-3a4a8f6ba463",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 555.183,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 155,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "832b6b6e-cf71-8723-95fa-33d4ef216a2a",
 				version = 2,
 			},
 		},
@@ -6395,7 +7826,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -6408,7 +7839,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -6421,7 +7852,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -6474,7 +7905,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "f5903ecf-dd8a-8709-8859-23fac66de4a8",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},

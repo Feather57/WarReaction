@@ -176,6 +176,78 @@ local tbl =
 							{
 								
 								{
+									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									true,
+								},
+								
+								{
+									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 29.5,
+							partyTargetNumber = 7,
+							partyTargetSubType = "Number",
+							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 15.125,
+				name = "[PLD][OT] Veil",
+				timelineIndex = 1,
+				timerOffset = -7,
+				timerStartOffset = 1,
+				uuid = "9e70e49c-196d-e500-8d19-5c974bddfb2b",
+				version = 2,
+			},
+			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
 									true,
 								},
@@ -262,19 +334,18 @@ local tbl =
 							{
 								
 								{
-									"6663c213-c83d-9213-9a5a-20d1c68f0b46",
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
 									true,
 								},
 								
 								{
-									"622a488d-a41c-b6c9-beb1-05f82b78449b",
+									"684539e8-def6-9149-8720-15071f26a410",
 									true,
 								},
 							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Tankbar_DivineVeil",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuPLD3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -285,39 +356,34 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 29.5,
-							partyTargetNumber = 7,
-							partyTargetSubType = "Number",
-							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
 							version = 3,
 						},
+						inheritedIndex = 2,
 					},
 					
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
 							version = 3,
 						},
-						inheritedIndex = 2,
 					},
 				},
 				mechanicTime = 15.125,
-				name = "[PLD][OT] Veil",
+				name = "[Tank][MT] Voke",
 				timelineIndex = 1,
-				timerOffset = -7,
-				timerStartOffset = 1,
-				uuid = "9e70e49c-196d-e500-8d19-5c974bddfb2b",
+				timerOffset = 7,
+				uuid = "e196b13c-cd32-ab09-a174-5f916888cc02",
 				version = 2,
 			},
-			inheritedIndex = 15,
 		},
 	}, 
 	[7] = 
@@ -1345,13 +1411,12 @@ local tbl =
 						},
 					},
 				},
-				enabled = false,
 				eventType = 2,
 				mechanicTime = 183.547,
 				name = "[Tank] Shirk",
 				timeRange = true,
 				timelineIndex = 38,
-				timerEndOffset = 20,
+				timerEndOffset = 25,
 				timerStartOffset = -10,
 				uuid = "7117bcb1-dba0-178c-a60e-bd9b8f7b7e67",
 				version = 2,
@@ -1499,8 +1564,9 @@ local tbl =
 						data = 
 						{
 							buffID = 4769,
-							category = "Self",
+							category = "Party",
 							name = "Alpha",
+							partyTargetType = "Other Tank",
 							uuid = "dee8f981-b984-9d17-8b9b-8ef2662f7952",
 							version = 3,
 						},
@@ -1512,9 +1578,10 @@ local tbl =
 							buffCheckType = 3,
 							buffDuration = 7,
 							buffID = 4769,
-							category = "Self",
+							category = "Party",
 							comparator = 2,
 							name = "Alpha Duration",
+							partyTargetType = "Other Tank",
 							uuid = "1d6d1ae7-be9d-58fa-9d93-260a7a38fcbe",
 							version = 3,
 						},

@@ -49,7 +49,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -61,7 +61,7 @@ local tbl =
 							buffID = 79,
 							category = "Self",
 							uuid = "ff2057c6-0b31-a9e1-9cdd-bec0f6fe3918",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -73,7 +73,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "3f39ce2a-e23c-4a46-9353-d536ac9aaf6b",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -138,7 +138,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -150,7 +150,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -162,7 +162,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "92d032bb-7f7a-37af-a6aa-228912a3021d",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -177,6 +177,72 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 15,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"06cbaa5b-0d87-5957-b410-654b8bd924e2",
+									true,
+								},
+								
+								{
+									"684539e8-def6-9149-8720-15071f26a410",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_Provoke",
+							uuid = "467c10de-92f9-909a-a9d6-b4be33761c2c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "06cbaa5b-0d87-5957-b410-654b8bd924e2",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 10.203,
+				name = "[Tank][MT] Voke",
+				timelineIndex = 1,
+				timerOffset = 7,
+				uuid = "e178f267-d385-9b11-b8b0-5fcb11676c56",
+				version = 2,
+			},
 		},
 		
 		{
@@ -229,7 +295,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -242,7 +308,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -255,7 +321,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -267,7 +333,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "83060a08-f6a9-9c12-9113-7617860462d6",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -329,7 +395,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -340,7 +406,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "c846b06e-4f82-3280-bc41-7d8c6d9b9017",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -398,7 +464,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -409,7 +475,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "7f6bed54-8d77-80dc-99f1-a327af051bb3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -538,7 +604,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -551,7 +617,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -564,7 +630,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -576,7 +642,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "7cbb3cc5-7149-e42d-99bc-0702bd8140eb",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -633,7 +699,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -645,7 +711,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "22b508da-40de-7a55-af81-28508fed2a94",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -659,6 +725,239 @@ local tbl =
 				uuid = "3c9772be-8b47-d71c-94bd-0cef9b43b1f8",
 				version = 2,
 			},
+		},
+	},
+	[6] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 19185 Scythe  \n-- 19186 Greatsword\n-- 19184 Axe\n\nreturn Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "116ed904-a9a6-11e8-aa62-9f5c943eac9f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 47.515,
+				name = "[Multi] Get Weapon",
+				timelineIndex = 6,
+				uuid = "c93d103d-2273-12f8-91d0-f50c6f5772ea",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.RKM11SWeapon3 = {\n    ids = {},\n    entities = {},\n    ordered = {},\n}\n\nlocal IsSameDirection = function(angle1, angle2, tolerance)\n    tolerance = tolerance or 0.05\n    angle1 = angle1 % (2 * math.pi)\n    if angle1 < 0 then\n        angle1 = angle1 + 2 * math.pi\n    end\n    angle2 = angle2 % (2 * math.pi)\n    if angle2 < 0 then\n        angle2 = angle2 + 2 * math.pi\n    end\n    local diff = math.abs(angle1 - angle2)\n    if diff > math.pi then\n        diff = 2 * math.pi - diff\n    end\n    return diff <= tolerance\nend\n\nfor _, ent in pairs(TensorCore.entityList(\"contentid=108\")) do\n    if Argus.isEntityVisible(ent) and not table.contains(data.RKM11SWeapon3.ids, ent.id) then\n        local md = Argus.getEntityModel(ent.id)\n        if (md == 19184 or md == 19185 or md == 19186)\n        then\n            table.insert(data.RKM11SWeapon3.ids, ent.id)\n            table.insert(data.RKM11SWeapon3.entities, ent)\n        end\n    end\nend\n\nif table.size(data.RKM11SWeapon3.ids) == 3 then\n    local first\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        local curHeading = TensorCore.getHeadingToTarget({ x = 100, y = 0, z = 100 }, ent.pos)\n        if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            first = ent\n            break\n        end\n    end\n    local second\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id then\n            local curHeading = TensorCore.getHeadingToTarget(first.pos, ent.pos)\n            if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n                table.insert(data.RKM11SWeapon3.ordered, ent)\n                second = ent\n                break\n            end\n        end\n    end\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id and ent.id ~= second.id then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            break\n        end\n    end\nend\n\nself.used = true",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "1c970d7c-4be6-fa30-8eab-b2a600ec5a33",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 47.515,
+				name = "[Multi] Get ordered Weapon",
+				timeRange = true,
+				timelineIndex = 6,
+				timerEndOffset = 20,
+				timerStartOffset = -7,
+				uuid = "d406075c-ec53-21b6-b8fb-0477c9182a81",
+				version = 2,
+			},
+		},
+	},
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 49.609,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 8,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "fdec8769-8b1b-4ccb-a5bc-c2481475e528",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[10] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[2]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 54.64,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 10,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "7d0e66f7-954d-cde2-8125-ab71f8099720",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[12] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[3]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 59.656,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 12,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "bb4a5eea-8ee6-aa37-8acf-417972749f9a",
+				version = 2,
+			},
+			inheritedIndex = 1,
 		},
 	},
 	[13] = 
@@ -703,7 +1002,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -714,7 +1013,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "be3265ad-ff5f-36ff-95bd-ca5df83c3d37",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -783,7 +1082,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -796,7 +1095,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -809,7 +1108,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -821,7 +1120,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "f7a645bc-1f03-83be-b329-1bdbf69a8bd6",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -836,6 +1135,239 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 12,
+		},
+	},
+	[19] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 19185 Scythe  \n-- 19186 Greatsword\n-- 19184 Axe\n\nreturn Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "116ed904-a9a6-11e8-aa62-9f5c943eac9f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 92.217,
+				name = "[Multi] Get Weapon",
+				timelineIndex = 19,
+				uuid = "7f1fc7f5-e44b-d60a-b2e8-9aecfc892c48",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.RKM11SWeapon3 = {\n    ids = {},\n    entities = {},\n    ordered = {},\n}\n\nlocal IsSameDirection = function(angle1, angle2, tolerance)\n    tolerance = tolerance or 0.05\n    angle1 = angle1 % (2 * math.pi)\n    if angle1 < 0 then\n        angle1 = angle1 + 2 * math.pi\n    end\n    angle2 = angle2 % (2 * math.pi)\n    if angle2 < 0 then\n        angle2 = angle2 + 2 * math.pi\n    end\n    local diff = math.abs(angle1 - angle2)\n    if diff > math.pi then\n        diff = 2 * math.pi - diff\n    end\n    return diff <= tolerance\nend\n\nfor _, ent in pairs(TensorCore.entityList(\"contentid=108\")) do\n    if Argus.isEntityVisible(ent) and not table.contains(data.RKM11SWeapon3.ids, ent.id) then\n        local md = Argus.getEntityModel(ent.id)\n        if (md == 19184 or md == 19185 or md == 19186)\n        then\n            table.insert(data.RKM11SWeapon3.ids, ent.id)\n            table.insert(data.RKM11SWeapon3.entities, ent)\n        end\n    end\nend\n\nif table.size(data.RKM11SWeapon3.ids) == 3 then\n    local first\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        local curHeading = TensorCore.getHeadingToTarget({ x = 100, y = 0, z = 100 }, ent.pos)\n        if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            first = ent\n            break\n        end\n    end\n    local second\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id then\n            local curHeading = TensorCore.getHeadingToTarget(first.pos, ent.pos)\n            if IsSameDirection(ent.pos.h, curHeading, 0.1) then\n                table.insert(data.RKM11SWeapon3.ordered, ent)\n                second = ent\n                break\n            end\n        end\n    end\n    for _, ent in pairs(data.RKM11SWeapon3.entities) do\n        if ent.id ~= first.id and ent.id ~= second.id then\n            table.insert(data.RKM11SWeapon3.ordered, ent)\n            break\n        end\n    end\nend\n\nself.used = true",
+							gVar = "ACR_RikuDRK3_CD",
+							uuid = "1c970d7c-4be6-fa30-8eab-b2a600ec5a33",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 92.217,
+				name = "[Multi] Get ordered Weapon",
+				timeRange = true,
+				timelineIndex = 19,
+				timerEndOffset = 20,
+				timerStartOffset = -7,
+				uuid = "dc9de22a-f666-4c65-b47d-642cb074e368",
+				version = 2,
+			},
+		},
+	},
+	[21] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 94.248,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 21,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "28548fc0-2452-d86b-8de0-70785e870fdd",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[23] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[2]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 99.263,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 23,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "afbf07ba-8c67-07ce-b4cd-9dc0ad4c078a",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[25] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon3.ordered[3]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 104.247,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 25,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "d466a8e5-7fb4-1f6c-b128-6e7581b21614",
+				version = 2,
+			},
+			inheritedIndex = 1,
 		},
 	},
 	[30] = 
@@ -885,7 +1417,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -897,7 +1429,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -959,7 +1491,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -972,7 +1504,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -985,7 +1517,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1039,7 +1571,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1103,7 +1635,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1116,7 +1648,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1129,7 +1661,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1216,7 +1748,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1294,6 +1826,431 @@ local tbl =
 			},
 		},
 	},
+	[49] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "if data.RKM11SWeapon6 == nil then\n    data.RKM11SWeapon6 = {\n        ids = {},\n        entities = {}\n    }\nend\n\nfor _, ent in pairs(TensorCore.entityList(\"contentid=108\")) do\n    if Argus.isEntityVisible(ent) and not table.contains(data.RKM11SWeapon6.ids, ent.id) then\n        local md = Argus.getEntityModel(ent.id)\n        if (md == 19184 or md == 19185 or md == 19186)\n        then\n            table.insert(data.RKM11SWeapon6.ids, ent.id)\n            table.insert(data.RKM11SWeapon6.entities, ent)\n        end\n    end\nend\n\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"21399dea-6b11-00ac-bf21-14ad9e3135a8",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRK3_CD",
+							name = "Load Data",
+							uuid = "426bfcc6-2b09-9e2a-be6d-b1903a338a71",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.RKM11SWeapon6 == nil or table.size(data.RKM11SWeapon6) < 6",
+							name = "Weapon Count < 6",
+							uuid = "21399dea-6b11-00ac-bf21-14ad9e3135a8",
+							version = 3,
+						},
+					},
+				},
+				eventType = 12,
+				mechanicTime = 192.215,
+				name = "[Multi] Get ordered Weapon",
+				timeRange = true,
+				timelineIndex = 49,
+				timerEndOffset = 28,
+				timerStartOffset = -10,
+				uuid = "8130c7ea-24ed-a1f5-abd9-9fc07e7ee2f6",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 19185 Scythe  \n-- 19186 Greatsword\n-- 19184 Axe\n\nreturn Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19186 ",
+							name = "the 1st weapon is sward?",
+							uuid = "b225f2c4-553b-9457-9faa-85f5bf1d2cea",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 192.215,
+				name = "[Multi] Get Weapon",
+				timelineIndex = 49,
+				uuid = "47cf7c77-c644-615a-af44-f70e9891ed79",
+				version = 2,
+			},
+		},
+	},
+	[50] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[1]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 194.012,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 50,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "78d9c82e-3700-38e3-88fb-91028cbf9268",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[52] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[2]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 199.059,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 52,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "5ec0bc84-17e5-6df8-8cd8-289ca30b9f9c",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[54] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[3]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 204.012,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 54,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "586d380b-f2f0-c0c4-a318-ee93a0847c99",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[56] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[4]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 208.933,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 56,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "a2870df4-8805-9944-8559-a8079adeecce",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[58] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[5]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 213.856,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 58,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "1c8ea538-5b35-22de-b6d8-0e93fa016789",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[60] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 3,
+							conditions = 
+							{
+								
+								{
+									"28c6e666-84f1-a533-9e57-acdacff520ee",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Sprint",
+							ignoreWeaveRules = true,
+							uuid = "94511374-01bd-2218-adca-8213e488a837",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return Argus.getEntityModel(data.RKM11SWeapon6.entities[6]) == 19185",
+							name = "Get weapon model",
+							uuid = "28c6e666-84f1-a533-9e57-acdacff520ee",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 218.871,
+				name = "[Multi] Sprint",
+				timeRange = true,
+				timelineIndex = 60,
+				timerOffset = -1,
+				timerStartOffset = -5,
+				uuid = "95532d29-a219-3222-87af-b910dab32800",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
 	[61] = 
 	{
 		
@@ -1331,7 +2288,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1390,7 +2347,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1402,7 +2359,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1468,7 +2425,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1481,7 +2438,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1494,7 +2451,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1548,7 +2505,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1646,7 +2603,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1659,7 +2616,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1672,7 +2629,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1732,7 +2689,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1744,7 +2701,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "fac2da2d-593c-0d6d-bf08-c841bed9f5f5",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1839,7 +2796,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1852,7 +2809,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1865,7 +2822,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -1921,7 +2878,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "b52181e3-6168-9aee-9028-497f265cb307",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2018,7 +2975,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2030,7 +2987,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2087,7 +3044,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2141,7 +3098,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2193,7 +3150,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2257,7 +3214,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2270,7 +3227,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2283,7 +3240,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2347,7 +3304,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2359,7 +3316,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2422,7 +3379,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2435,7 +3392,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2448,7 +3405,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2569,7 +3526,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2581,7 +3538,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "fac2da2d-593c-0d6d-bf08-c841bed9f5f5",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2766,7 +3723,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2779,7 +3736,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2792,7 +3749,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2845,7 +3802,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2910,7 +3867,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2923,7 +3880,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2936,7 +3893,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -2996,6 +3953,36 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_RikuPLD3_Tankbar_HolySheltron",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 489.948,
+				name = "[Tank][MT] PartyMit",
+				timelineIndex = 128,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "1fd9d344-3d57-e18c-a946-5f1d0e957109",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Bulwark",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -3016,36 +4003,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Tankbar_HolySheltron",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 489.948,
-				name = "[Tank][MT] PartyMit",
-				timelineIndex = 128,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "1fd9d344-3d57-e18c-a946-5f1d0e957109",
-				version = 2,
-			},
 		},
 	},
 	[144] = 
@@ -3096,7 +4053,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3109,7 +4066,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3122,7 +4079,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3183,7 +4140,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3195,7 +4152,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "622a488d-a41c-b6c9-beb1-05f82b78449b",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3253,7 +4210,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3314,7 +4271,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3327,7 +4284,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3340,7 +4297,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3402,34 +4359,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Jumps",
-							uuid = "7541a70a-e86b-078f-9b68-a1efd55c0496",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 557.386,
-				name = "[Multi] Jump On",
-				timelineIndex = 156,
-				timerOffset = 0.10000000149012,
-				uuid = "ad86458d-decd-4100-9c54-0f6e2d00fcc8",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Bulwark",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -3450,6 +4379,34 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuPLD3_Jumps",
+							uuid = "7541a70a-e86b-078f-9b68-a1efd55c0496",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 557.386,
+				name = "[Multi] Jump On",
+				timelineIndex = 156,
+				timerOffset = 0.10000000149012,
+				uuid = "ad86458d-decd-4100-9c54-0f6e2d00fcc8",
+				version = 2,
+			},
 		},
 		
 		{
@@ -3519,7 +4476,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 4,
 							uuid = "1b06b775-2725-6fc1-a7cd-ea9ddd90eade",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3582,7 +4539,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3595,7 +4552,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3608,7 +4565,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3662,7 +4619,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3759,7 +4716,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "b588cfd7-cab0-a7da-9ecd-31d6eef2e004",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3771,7 +4728,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "6609e187-f88e-8bd1-8c63-51694c0e3790",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3832,7 +4789,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3845,7 +4802,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3858,7 +4815,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a33b062d-9b6c-594f-ac79-5162f57c3b5f",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -3953,7 +4910,7 @@ local tbl =
 							conditionLua = "return FFXIV_Common_BotRunning",
 							name = "Bot Running",
 							uuid = "f8a87794-4989-6628-ac9e-54ce22ba33c7",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3965,7 +4922,7 @@ local tbl =
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "452c3ec0-36f5-b8bf-84ef-4d96808a8828",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 2,
 					},
@@ -4049,7 +5006,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},

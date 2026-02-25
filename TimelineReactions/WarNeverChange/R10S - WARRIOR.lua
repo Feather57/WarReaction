@@ -17,91 +17,6 @@ local tbl =
 							{
 								
 								{
-									"35693d39-44ae-89ea-930a-628c03451000",
-									true,
-								},
-								
-								{
-									"8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-									true,
-								},
-								
-								{
-									"e088273e-65dc-999e-ae9d-1a2e2436a400",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7535,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 14.125,
-				name = "[Tank][MT] Reprisal",
-				timelineIndex = 1,
-				timerOffset = -5,
-				uuid = "5522e13e-91ba-66c7-972c-9b0f3d86fe40",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
 									true,
 								},
@@ -225,18 +140,23 @@ local tbl =
 							{
 								
 								{
-									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									"35693d39-44ae-89ea-930a-628c03451000",
 									true,
 								},
 								
 								{
-									"65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
+									"8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
+									true,
+								},
+								
+								{
+									"e088273e-65dc-999e-ae9d-1a2e2436a400",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
-							variableTogglesType = 2,
+							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 3,
 							version = 2.1,
 						},
 					},
@@ -247,11 +167,23 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
+							comparator = 2,
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7535,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
 							version = 3,
 						},
 						inheritedIndex = 2,
@@ -260,20 +192,21 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 1,
+						inheritedIndex = 2,
 					},
 				},
 				mechanicTime = 14.125,
-				name = "[WAR][OT] Stance",
+				name = "[Tank][MT] Reprisal",
 				timelineIndex = 1,
-				timerOffset = -7,
-				uuid = "e23c21a0-870d-4835-9715-61ac5c31b51d",
+				timerOffset = -5,
+				uuid = "5522e13e-91ba-66c7-972c-9b0f3d86fe40",
 				version = 2,
 			},
 		},
@@ -338,19 +271,23 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25751,
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									"772119e0-612b-c06a-8dbd-8b23b0fd34de",
+									true,
+								},
+								
+								{
+									"65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "a1b03fa7-460e-038f-bd6f-29a3c703bb53",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -361,22 +298,33 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "772119e0-612b-c06a-8dbd-8b23b0fd34de",
 							version = 3,
 						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "65e49b39-13b0-b915-b6d0-bc29b2d8d5d0",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 14.125,
-				name = "[WAR] Whetting",
+				name = "[WAR][OT] Stance",
 				timelineIndex = 1,
-				timerOffset = -2,
-				timerStartOffset = -1,
-				uuid = "d79d2ee6-98df-348c-afe6-8775f835adc7",
+				timerOffset = -7,
+				uuid = "e23c21a0-870d-4835-9715-61ac5c31b51d",
 				version = 2,
 			},
 		},
@@ -460,6 +408,58 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 14.125,
+				name = "[WAR] Whetting",
+				timelineIndex = 1,
+				timerOffset = -2,
+				timerStartOffset = -1,
+				uuid = "d79d2ee6-98df-348c-afe6-8775f835adc7",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -509,7 +509,7 @@ local tbl =
 					},
 				},
 				mechanicTime = 14.125,
-				name = "[Tank] Voke",
+				name = "[Tank][MT] Voke",
 				timelineIndex = 1,
 				timerOffset = 7,
 				uuid = "7b8705a6-fccf-6681-b05f-61ca4c1b3aa7",
@@ -1623,9 +1623,8 @@ local tbl =
 						{
 							aType = "ACR",
 							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							gVar = "ACR_RikuWAR3_KBCancel",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1634,12 +1633,43 @@ local tbl =
 				{
 				},
 				mechanicTime = 136.578,
-				name = "[WAR] Dash",
+				name = "[Multi] KB Cancel Off",
 				timelineIndex = 28,
-				timerEndOffset = 20,
-				timerOffset = 0.30000001192093,
-				timerStartOffset = -20,
-				uuid = "b8d7552c-288f-ca0e-928c-22efa702c237",
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "fab09fdb-8a6d-d2dd-9d1c-7d08e2f6a7f4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 136.578,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 28,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "eaec4fdd-caed-1dca-ac1b-d77b7f90b335",
 				version = 2,
 			},
 		},
@@ -5307,7 +5337,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 314.061,
 				name = "[Multi] Disable Jumps",
 				timelineIndex = 85,
@@ -5341,37 +5370,6 @@ local tbl =
 				timelineIndex = 85,
 				timerOffset = 0.10000000149012,
 				uuid = "bc1ed5fe-10df-8400-924a-f3bdaa9f33ae",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 314.061,
-				name = "[WAR] Dash",
-				timelineIndex = 85,
-				timerEndOffset = 20,
-				timerOffset = 0.30000001192093,
-				timerStartOffset = -20,
-				uuid = "50136275-9628-9d9c-92c5-6348f3b8ab56",
 				version = 2,
 			},
 		},
@@ -5510,6 +5508,68 @@ local tbl =
 				timelineIndex = 85,
 				timerOffset = -5,
 				uuid = "811f8534-71ac-79fc-b404-4eb4e37ee304",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 314.061,
+				name = "[Multi] KB Cancel Off",
+				timelineIndex = 85,
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "5fc41efb-974c-5642-bee9-a4871637908e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 314.061,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 85,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "1729b39c-a060-ce0c-8868-b5c474eba156",
 				version = 2,
 			},
 		},
@@ -9448,9 +9508,8 @@ local tbl =
 						{
 							aType = "ACR",
 							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							gVar = "ACR_RikuWAR3_KBCancel",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -9459,12 +9518,43 @@ local tbl =
 				{
 				},
 				mechanicTime = 555.183,
-				name = "[WAR] Dash",
+				name = "[Multi] KB Cancel Off",
 				timelineIndex = 155,
-				timerEndOffset = 20,
-				timerOffset = 0.30000001192093,
-				timerStartOffset = -20,
-				uuid = "dc8da480-9f46-7f2e-a99d-0a0a245d4a00",
+				timerEndOffset = 1,
+				timerOffset = 1,
+				timerStartOffset = -1,
+				uuid = "f169e505-c239-5c86-9f85-9fc6aaa0a196",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 555.183,
+				name = "[Multi] KB Cancel On",
+				timelineIndex = 155,
+				timerEndOffset = 1,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "0aee7538-7a9f-89b8-ab52-3a0a68333486",
 				version = 2,
 			},
 		},
