@@ -520,7 +520,7 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 25751,
 							conditions = 
 							{
 								
@@ -535,6 +535,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
 							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
 							variableTogglesType = 3,
 							version = 2.1,
@@ -571,7 +572,7 @@ local tbl =
 				mechanicTime = 20.344,
 				name = "[WAR] Whetting",
 				timelineIndex = 3,
-				timerOffset = -4,
+				timerOffset = -3,
 				timerStartOffset = -1,
 				uuid = "fa5359b9-3233-47da-ba22-17448e0041ee",
 				version = 2,
@@ -663,92 +664,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 5,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7386,
-							allowInterrupt = true,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
-									true,
-								},
-								
-								{
-									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
-									true,
-								},
-								
-								{
-									"692e372e-07b5-6f38-b559-8088d7a7e4d7",
-									true,
-								},
-							},
-							gVar = "ACR_TensorWeeb3_CD",
-							ignoreWeaveRules = true,
-							targetContentID = 14300,
-							targetType = "ContentID",
-							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
-							name = "Out of Range",
-							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
-							name = "Check Boss buff",
-							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return FFXIV_Common_BotRunning",
-							name = "Bot Running",
-							uuid = "692e372e-07b5-6f38-b559-8088d7a7e4d7",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 20.344,
-				name = "[WAR] Dash",
-				timeRange = true,
-				timelineIndex = 3,
-				timerEndOffset = 5,
-				timerStartOffset = 0.20000000298023,
-				uuid = "54486d38-c3fb-be0f-b310-fb1a5cb05756",
-				version = 2,
-			},
 		},
 	},
 	[4] = 
@@ -848,6 +763,150 @@ local tbl =
 				name = "[Multi] Potion Off",
 				timelineIndex = 4,
 				uuid = "63bb1c04-d41a-64e0-a4d9-425a5ec4b22e",
+				version = 2,
+			},
+		},
+	},
+	[5] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 30.516,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "49942cbc-d72d-e491-8e6d-67081d2645cb",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 30.516,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "74935bc3-9a06-773d-bde6-e324ece19f34",
 				version = 2,
 			},
 		},
@@ -2024,8 +2083,21 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							conditions = 
+							{
+								
+								{
+									"35693d39-44ae-89ea-930a-628c03451000",
+									true,
+								},
+								
+								{
+									"e088273e-65dc-999e-ae9d-1a2e2436a400",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -2033,17 +2105,41 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 6,
+							inRangeValue = 5,
+							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
 				},
 				mechanicTime = 220.142,
-				name = "[WAR] Whetting",
+				name = "[Tank][OT] Reprisal",
 				timeRange = true,
 				timelineIndex = 51,
-				timerEndOffset = 3,
-				timerStartOffset = -1,
-				uuid = "28e08c79-258f-505c-9c82-a7f6f8592ed1",
+				timerEndOffset = -1,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "ab1ffd46-3119-acc8-8a00-346e357eca17",
 				version = 2,
 			},
-			inheritedIndex = 2,
 		},
 		
 		{
@@ -2125,22 +2221,23 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 25751,
 							conditions = 
 							{
 								
 								{
-									"35693d39-44ae-89ea-930a-628c03451000",
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
 									true,
 								},
 								
 								{
-									"e088273e-65dc-999e-ae9d-1a2e2436a400",
+									"99103548-7898-220e-874a-fddf4f3dad35",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -2152,10 +2249,12 @@ local tbl =
 					{
 						data = 
 						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
 							comparator = 2,
-							conditionType = 6,
-							inRangeValue = 5,
-							uuid = "35693d39-44ae-89ea-930a-628c03451000",
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
 							version = 3,
 						},
 					},
@@ -2164,25 +2263,22 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "99103548-7898-220e-874a-fddf4f3dad35",
 							version = 3,
 						},
-						inheritedIndex = 2,
 					},
 				},
 				mechanicTime = 220.142,
-				name = "[Tank][OT] Reprisal",
-				timeRange = true,
+				name = "[WAR] Whetting",
 				timelineIndex = 51,
-				timerEndOffset = -1,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "ab1ffd46-3119-acc8-8a00-346e357eca17",
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "4abd2eca-5d2c-060e-a69b-cdad40a7be85",
 				version = 2,
 			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -2329,6 +2425,150 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+	},
+	[54] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 230.314,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "827d8075-2c94-4426-8099-cb95a9a243d8",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 230.314,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "a324747e-59e0-5d4c-8c8b-70fcff27c20d",
+				version = 2,
+			},
 		},
 	},
 	[58] = 
@@ -3620,6 +3860,144 @@ local tbl =
 							{
 								
 								{
+									"23553438-7ace-4e90-8100-4def9e2db46e",
+									true,
+								},
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+								
+								{
+									"ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
+									true,
+								},
+								
+								{
+									"d5353d3a-7e27-16ab-9dab-dee2de83aef3",
+									true,
+								},
+								
+								{
+									"293ad9b9-f750-8a58-8d69-f3424fb55b5f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "23553438-7ace-4e90-8100-4def9e2db46e",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							conditionType = 10,
+							inGroupTargetContentID = 14300,
+							inGroupTargetType = "ContentID",
+							partyTargetType = "Event Entity",
+							uuid = "ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Cell",
+							uuid = "d5353d3a-7e27-16ab-9dab-dee2de83aef3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							conditionType = 2,
+							contentid = 14300,
+							name = "TargetBoss",
+							uuid = "293ad9b9-f750-8a58-8d69-f3424fb55b5f",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 400.751,
+				name = "[Tank] Rampart",
+				randomOffset = 45,
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 45,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "0fad50ca-9ca1-5619-8a2a-f7c5ef60f47f",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
 									"2f2db84c-5618-a29b-bdb1-492c91dab4d5",
 									true,
 								},
@@ -3797,144 +4175,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"23553438-7ace-4e90-8100-4def9e2db46e",
-									true,
-								},
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-									true,
-								},
-								
-								{
-									"d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-									true,
-								},
-								
-								{
-									"293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventSpellID = 45980,
-							name = "Roles",
-							uuid = "23553438-7ace-4e90-8100-4def9e2db46e",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 10,
-							inGroupTargetContentID = 14300,
-							inGroupTargetType = "ContentID",
-							partyTargetType = "Event Entity",
-							uuid = "ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 6,
-							buffIDList = 
-							{
-								4731,
-								4732,
-								4733,
-								4734,
-								4735,
-								4736,
-								4737,
-								4738,
-							},
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Cell",
-							uuid = "d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14300,
-							name = "TargetBoss",
-							uuid = "293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-							version = 3,
-						},
-					},
-				},
-				eventType = 3,
-				mechanicTime = 400.751,
-				name = "[Tank] Rampart",
-				randomOffset = 45,
-				timeRange = true,
-				timelineIndex = 93,
-				timerEndOffset = 45,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "0fad50ca-9ca1-5619-8a2a-f7c5ef60f47f",
-				version = 2,
-			},
-			inheritedIndex = 3,
 		},
 	},
 	[120] = 
@@ -4393,6 +4633,150 @@ local tbl =
 			},
 		},
 	},
+	[150] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 510.234,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "7a9de10e-82fd-2def-add8-5ca4b87c80df",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_TensorWeeb3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 510.234,
+				name = "[WAR] Dash",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "f7d0ac20-c8fd-deda-afba-a6d29cf8cc89",
+				version = 2,
+			},
+		},
+	},
 	[154] = 
 	{
 		
@@ -4543,128 +4927,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 534.578,
-				name = "[WAR] Whetting",
-				timelineIndex = 154,
-				timerOffset = -4,
-				timerStartOffset = -1,
-				uuid = "85eb5882-20cc-21ee-9274-25bc14bc72b8",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-									true,
-								},
-								
-								{
-									"b54d20c6-903b-e629-a939-2170d367d7ea",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 3552,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 534.578,
-				name = "[WAR] Equilibrium",
-				timeRange = true,
-				timelineIndex = 154,
-				timerEndOffset = 20,
-				timerStartOffset = 0.5,
-				uuid = "b3c75d51-2633-2d91-afba-29e37ba8ed34",
-				version = 2,
-			},
-			inheritedIndex = 5,
 		},
 		
 		{
@@ -4865,6 +5127,145 @@ local tbl =
 				uuid = "df4b0090-f8c7-3226-8785-e795719d6cd3",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+									true,
+								},
+								
+								{
+									"b54d20c6-903b-e629-a939-2170d367d7ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3552,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 536.578,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 155,
+				timerEndOffset = 20,
+				timerStartOffset = 0.5,
+				uuid = "80ab13ed-9457-918e-acd8-8a072f7b7124",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"99103548-7898-220e-874a-fddf4f3dad35",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "99103548-7898-220e-874a-fddf4f3dad35",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 536.578,
+				name = "[WAR] Whetting",
+				timelineIndex = 155,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "cbe6e5f5-1749-55ec-af14-0e97dc756dcf",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	},
 	[168] = 

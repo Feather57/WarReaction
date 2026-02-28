@@ -616,6 +616,152 @@ local tbl =
 			},
 		},
 	},
+	[5] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 30.516,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "f7cdc22b-18dc-34cf-8a44-bc723dad83d1",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 30.516,
+				name = "[Tank] Dash",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "520c0cd7-8b94-e6c5-983a-a360097ecf95",
+				version = 2,
+			},
+		},
+	},
 	[7] = 
 	{
 		
@@ -2272,6 +2418,149 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 230.314,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "4c8033ce-3e75-b831-ac72-832eed7832fe",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 230.314,
+				name = "[Tank] Dash",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "6aa0cc8b-110a-a601-a4a1-a6a5e28a937f",
+				version = 2,
+			},
 		},
 	},
 	[56] = 
@@ -3968,6 +4257,152 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -7,
 				uuid = "9ae4ff02-d712-2c1b-b59b-6e92819b5068",
+				version = 2,
+			},
+		},
+	},
+	[150] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "data.hasblast = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_CD",
+							uuid = "a82d3b93-a772-988d-89ba-d160f0d89f93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 5,
+							buffIDList = 
+							{
+								4729,
+							},
+							category = "Self",
+							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+				},
+				mechanicTime = 510.234,
+				name = "[Multi] Blast Check",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "51f4ebbb-c09e-7984-8fc0-f204d8b6cf96",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7386,
+							allowInterrupt = true,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+									true,
+								},
+								
+								{
+									"fd8e8925-97c3-173e-8e41-dc1a125096ab",
+									true,
+								},
+								
+								{
+									"e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Hotbar_Intervene",
+							ignoreWeaveRules = true,
+							targetContentID = 14300,
+							targetType = "ContentID",
+							uuid = "29ecc6cc-0ec5-7459-ad81-b7d79de628b9",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "-- 没有目标直接 false\nif not Player or not Player:GetTarget() then\n    return false\nend\n\nlocal target = Player:GetTarget()\n\n-- 确保目标有效\nif not target or not target.pos then\n    return false\nend\n\n-- 计算平面距离（XZ）\nlocal dx = Player.pos.x - target.pos.x\nlocal dz = Player.pos.z - target.pos.z\nlocal distance = math.sqrt(dx * dx + dz * dz)\n\n-- 大于 3 米时返回 true\nreturn distance > 3.0\n",
+							name = "Out of Range",
+							uuid = "02bc6c2f-b065-e7f1-8f27-b020e63eda65",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "if not TensorCore or not TensorCore.getBuff or not EntityList then\n    return false\nend\n\nlocal list = EntityList(\"contentid=14300\") or {}\n\nfor _, ent in pairs(list) do\n    if ent and ent.id and ent.alive then\n        local buff = TensorCore.getBuff(ent, 4727)\n        local stacks = (buff and buff.stacks) and buff.stacks or 0\n        if stacks > 8 then\n            return true\n        end\n    end\nend\n\nreturn false\n",
+							name = "Check Boss buff",
+							uuid = "fd8e8925-97c3-173e-8e41-dc1a125096ab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.hasblast == true",
+							name = "Blast",
+							uuid = "e0eadbf5-3a23-0e62-94e8-24a18ad99d9d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 510.234,
+				name = "[Tank] Dash",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 5,
+				timerStartOffset = 0.20000000298023,
+				uuid = "e1ff6d7d-6f96-a8db-a98a-a34f782caf1f",
 				version = 2,
 			},
 		},
