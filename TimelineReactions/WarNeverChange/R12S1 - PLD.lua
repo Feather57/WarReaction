@@ -782,128 +782,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"dcf5da51-02f3-88ca-a26f-e399176125ed",
-									true,
-								},
-								
-								{
-									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
-									true,
-								},
-								
-								{
-									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
-							name = "Orb Order MT",
-							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
-							name = "Orb Order OT",
-							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 43.531,
-				name = "[PLD] Sheltron",
-				timeRange = true,
-				timelineIndex = 3,
-				timerEndOffset = -1,
-				timerOffset = -1,
-				timerStartOffset = -3,
-				uuid = "f6f69cad-39e5-4dc2-a841-11031cb9c24f",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Guardian",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -919,7 +797,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -930,7 +808,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -971,7 +849,7 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -4,
 				timerStartOffset = -5,
-				uuid = "3dc538db-837a-3447-862a-aea8e7f72159",
+				uuid = "17142f40-3174-4572-bdcc-74d5b1171241",
 				version = 2,
 			},
 		},
@@ -1037,7 +915,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -1048,7 +926,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -1089,7 +967,129 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -3,
 				timerStartOffset = -5,
-				uuid = "8639aff4-d2f4-0a6f-906d-2f05228f52bf",
+				uuid = "337a2c12-f9f4-4922-8366-f3418cb1240f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"dcf5da51-02f3-88ca-a26f-e399176125ed",
+									true,
+								},
+								
+								{
+									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
+									true,
+								},
+								
+								{
+									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
+							name = "Orb Order MT",
+							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
+							name = "Orb Order OT",
+							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 43.531,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 3,
+				timerEndOffset = -1,
+				timerOffset = -1,
+				timerStartOffset = -3,
+				uuid = "094f8601-b7c1-1fb4-b6ff-a8d5d9631ebf",
 				version = 2,
 			},
 		},
@@ -1106,128 +1106,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"dcf5da51-02f3-88ca-a26f-e399176125ed",
-									true,
-								},
-								
-								{
-									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
-									true,
-								},
-								
-								{
-									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
-							name = "Orb Order MT",
-							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
-							name = "Orb Order OT",
-							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 46.5,
-				name = "[PLD] Sheltron",
-				timeRange = true,
-				timelineIndex = 4,
-				timerEndOffset = -1,
-				timerOffset = -1,
-				timerStartOffset = -3,
-				uuid = "a4a0a840-15d3-08f8-be06-92014a493dc0",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Guardian",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -1243,7 +1121,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -1254,7 +1132,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -1295,7 +1173,7 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -4,
 				timerStartOffset = -5,
-				uuid = "2a34cc45-b816-9f69-b6ca-077a2ea5734f",
+				uuid = "6751ca4e-daa1-83ed-a7d9-857ed952d29f",
 				version = 2,
 			},
 		},
@@ -1361,7 +1239,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -1372,7 +1250,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -1413,7 +1291,129 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -3,
 				timerStartOffset = -5,
-				uuid = "b172738f-c9eb-5dad-8bf7-b3a746c77b60",
+				uuid = "4eebd868-cb70-3544-93a7-1699cfac0594",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"dcf5da51-02f3-88ca-a26f-e399176125ed",
+									true,
+								},
+								
+								{
+									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
+									true,
+								},
+								
+								{
+									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
+							name = "Orb Order MT",
+							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
+							name = "Orb Order OT",
+							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 46.5,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 4,
+				timerEndOffset = -1,
+				timerOffset = -1,
+				timerStartOffset = -3,
+				uuid = "857e74f6-24e1-d4cf-b939-ee298cd541ac",
 				version = 2,
 			},
 		},
@@ -1430,128 +1430,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"dcf5da51-02f3-88ca-a26f-e399176125ed",
-									true,
-								},
-								
-								{
-									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionID = 25746,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
-									true,
-								},
-								
-								{
-									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
-							name = "Orb Order MT",
-							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
-							name = "Orb Order OT",
-							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				mechanicTime = 49.516,
-				name = "[PLD] Sheltron",
-				timeRange = true,
-				timelineIndex = 5,
-				timerEndOffset = -1,
-				timerOffset = -1,
-				timerStartOffset = -3,
-				uuid = "fceb9c07-d72a-fd41-b311-07acc480f36d",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Guardian",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
@@ -1567,7 +1445,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -1578,7 +1456,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -1619,7 +1497,7 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -4,
 				timerStartOffset = -5,
-				uuid = "ef8c5431-e89e-739f-a969-59be33599c8d",
+				uuid = "43324125-3d6d-d035-a19c-14103cf06080",
 				version = 2,
 			},
 		},
@@ -1685,7 +1563,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -1696,7 +1574,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -1737,7 +1615,129 @@ local tbl =
 				timerEndOffset = -1,
 				timerOffset = -3,
 				timerStartOffset = -5,
-				uuid = "40eca8e4-e951-d7f0-bf76-e26230b3d12a",
+				uuid = "e79485cf-ed7d-235b-9d63-e500de0d1be3",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"dcf5da51-02f3-88ca-a26f-e399176125ed",
+									true,
+								},
+								
+								{
+									"f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 25746,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"31eb6c17-843a-5a99-af50-5f0ff858f07c",
+									true,
+								},
+								
+								{
+									"ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "818a726b-a9e3-b930-a2a3-6f8e195987a1",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
+							name = "Orb Order MT",
+							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
+							name = "Orb Order OT",
+							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "f5e2a76e-9fff-8b96-95a9-f276e0c6b11c",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuPLD3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "ec3cc4c7-95d9-008f-b48a-9941d962f60b",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 49.516,
+				name = "[PLD] Sheltron",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = -1,
+				timerOffset = -1,
+				timerStartOffset = -3,
+				uuid = "7ed9b78c-cc0c-08f8-ab7f-45a5281947e3",
 				version = 2,
 			},
 		},
@@ -2976,58 +2976,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-							},
-							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 314.97,
-				name = "[Tank] Rampart",
-				timelineIndex = 55,
-				timerEndOffset = 20,
-				timerOffset = -8,
-				timerStartOffset = -20,
-				uuid = "ebd08855-b846-b126-ab3d-f07d166d86b9",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "Lua",
 							actionLua = "-- 1. Safe initialization \ndata.ljTankOrb = data.ljTankOrb or {\n    totalSpawns = 0,\n    targetCount = 0,\n    orb1Set = 0,\n    orb2Set = 0\n}\n\n-- 2. Fetch the entity ID once\nlocal mID = Argus.getEntityModel(eventArgs.entityID)\n\n-- 3. Increment the global spawn counter\ndata.ljTankOrb.totalSpawns = data.ljTankOrb.totalSpawns + 1\n\n-- 4. Calculate current set \nlocal currentSet = math.ceil(data.ljTankOrb.totalSpawns / 2)\n\n-- 5. Detect the target purple orb (ID 19200)\nif mID == 19200 then\n    data.ljTankOrb.targetCount = data.ljTankOrb.targetCount + 1\n    local count = data.ljTankOrb.targetCount\n\n    -- Assign the set number based on the appearance order\n    if count == 1 then\n        data.ljTankOrb.orb1Set = currentSet\n    elseif count == 2 then\n        data.ljTankOrb.orb2Set = currentSet\n    end\nend\n\n-- 6. Flag the event as processed\nself.used = true",
 							conditions = 
@@ -3071,6 +3019,58 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
+									true,
+								},
+							},
+							gVar = "ACR_RikuPLD3_Tankbar_Rampart",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7531,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 314.97,
+				name = "[Tank] Rampart",
+				timelineIndex = 55,
+				timerEndOffset = 20,
+				timerOffset = -8,
+				timerStartOffset = -20,
+				uuid = "ebd08855-b846-b126-ab3d-f07d166d86b9",
+				version = 2,
+			},
 		},
 		
 		{
@@ -3421,7 +3421,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -3432,7 +3432,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -3539,7 +3539,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -3550,7 +3550,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -3661,7 +3661,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 2",
 							name = "Orb Order MT",
 							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
 							version = 3,
@@ -3672,7 +3672,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
 							version = 3,
@@ -3731,36 +3731,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuPLD3_Tankbar_HolySheltron",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 321.002,
-				name = "[PLD] Sheltron",
-				timelineIndex = 57,
-				timerOffset = -2,
-				timerStartOffset = -1,
-				uuid = "07b7edbc-bb39-148e-8bf7-0171b304ac33",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_RikuPLD3_Tankbar_Guardian",
 							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
@@ -3775,7 +3745,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -3786,7 +3756,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -3893,7 +3863,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -3904,7 +3874,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -4015,7 +3985,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 3",
 							name = "Orb Order MT",
 							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
 							version = 3,
@@ -4026,7 +3996,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
 							version = 3,
@@ -4099,7 +4069,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "31d5e25b-b83d-2872-be8a-c5ce6a4b50ed",
 							version = 3,
@@ -4110,7 +4080,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "3b13cccc-f126-c26c-835f-1f14ba7fd079",
 							version = 3,
@@ -4217,7 +4187,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "3368ea2d-6309-d117-8f3a-80444333009d",
 							version = 3,
@@ -4228,7 +4198,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "a466d5c1-0a8d-215f-990b-ebacd17b3e81",
 							version = 3,
@@ -4339,7 +4309,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "dcf5da51-02f3-88ca-a26f-e399176125ed",
 							version = 3,
@@ -4350,7 +4320,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "31eb6c17-843a-5a99-af50-5f0ff858f07c",
 							version = 3,

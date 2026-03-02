@@ -652,7 +652,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -751,7 +751,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 1",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -776,7 +776,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -904,7 +904,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 2",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -929,7 +929,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -1058,7 +1058,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -1160,7 +1160,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 3",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -1185,7 +1185,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -1314,7 +1314,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -1416,7 +1416,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 4",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -1441,7 +1441,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -1570,7 +1570,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -2171,7 +2171,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
@@ -2259,7 +2259,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
@@ -2479,7 +2479,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
@@ -3089,7 +3089,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
@@ -3547,7 +3547,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -3646,7 +3646,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 1",
+							conditionLua = "return data.ljTankOrb.orb2Set == 1",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -3671,7 +3671,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -3771,7 +3771,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 2",
+							conditionLua = "return data.ljTankOrb.orb2Set == 2",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -3796,7 +3796,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -3925,7 +3925,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -4027,7 +4027,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 3",
+							conditionLua = "return data.ljTankOrb.orb2Set == 3",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -4052,7 +4052,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -4181,7 +4181,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
@@ -4283,7 +4283,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 4",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "7b287963-fd71-c8b3-a7da-85956123d464",
 							version = 3,
@@ -4308,7 +4308,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "8feb4dc5-0156-c160-ac04-9193aa35766c",
@@ -4401,7 +4401,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb1Set == 3",
+							conditionLua = "return data.ljTankOrb.orb1Set == 4",
 							name = "Orb Order MT",
 							uuid = "aa56c031-1339-e88a-bc42-30452d3b7257",
 							version = 3,
@@ -4412,7 +4412,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return data.ljTankOrb.orb2Set == 3",
+							conditionLua = "return data.ljTankOrb.orb2Set == 4",
 							name = "Orb Order OT",
 							uuid = "a40ed2d5-d748-a38d-9c87-cf7c20636483",
 							version = 3,
@@ -4437,7 +4437,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuGNB3_TankStance == \"ot\") or false\n",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit OT",
 							uuid = "4ca09185-dc38-80d2-b2aa-1b346a2963e6",
