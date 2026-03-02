@@ -370,7 +370,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -660,7 +660,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "c964b8b0-9cf0-62b0-9b3d-028f00df61ae",
@@ -809,7 +809,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -975,7 +975,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "c964b8b0-9cf0-62b0-9b3d-028f00df61ae",
@@ -1119,7 +1119,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -1238,7 +1238,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -1404,7 +1404,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "c964b8b0-9cf0-62b0-9b3d-028f00df61ae",
@@ -1548,7 +1548,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -1667,7 +1667,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -1833,7 +1833,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "c964b8b0-9cf0-62b0-9b3d-028f00df61ae",
@@ -1977,7 +1977,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -2096,7 +2096,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -3798,7 +3798,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -3917,7 +3917,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -4117,7 +4117,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -4236,7 +4236,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -4382,7 +4382,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -4501,7 +4501,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
@@ -4647,7 +4647,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "252a78aa-89ea-0223-a25d-0c5c7957c3ae",
@@ -4766,7 +4766,7 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							conditionLua = "return (ACR_RikuGNB3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
 							name = "Mit MT",
 							uuid = "05160d84-ae34-56ce-8d20-063ca706eaab",
