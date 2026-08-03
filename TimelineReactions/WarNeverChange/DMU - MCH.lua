@@ -1161,6 +1161,7 @@ local tbl =
 						data = 
 						{
 							actionID = 2876,
+							atomicPriority = true,
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
@@ -1178,8 +1179,8 @@ local tbl =
 				name = "[MCH] Reassemble ",
 				timeRange = true,
 				timelineIndex = 77,
-				timerEndOffset = -1,
-				timerStartOffset = -3,
+				timerEndOffset = -2,
+				timerStartOffset = -4,
 				uuid = "5ab0b131-37eb-442a-a5f6-b79bf3611eea",
 				version = 2,
 			},
