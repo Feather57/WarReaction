@@ -5003,6 +5003,71 @@ local tbl =
 			},
 			inheritedIndex = 6,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
+									true,
+								},
+								
+								{
+									"f922f1e5-5bd1-d9f2-9065-38dbb864da21",
+									true,
+								},
+							},
+							gVar = "ACR_RikuGNB3_Tankbar_Superbolide",
+							uuid = "1fdc081d-6604-df5d-876a-8c6fb6779898",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 4974,
+							category = "Self",
+							name = "Red",
+							uuid = "0350a8d2-29c3-bea6-99e1-f528ad3d09d8",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Bot Running",
+							uuid = "f922f1e5-5bd1-d9f2-9065-38dbb864da21",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 268.999,
+				name = "[GNB] Bolide",
+				timelineIndex = 63,
+				timerOffset = -3,
+				uuid = "98002d08-66e8-93a8-b2d5-a5bc375ed115",
+				version = 2,
+			},
+		},
 	},
 	[69] = 
 	{
