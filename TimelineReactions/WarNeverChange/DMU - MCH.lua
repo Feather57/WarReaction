@@ -1150,6 +1150,40 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 427.45958272918,
+				name = "[MCH] Reassemble ",
+				timeRange = true,
+				timelineIndex = 77,
+				timerEndOffset = -1,
+				timerStartOffset = -3,
+				uuid = "5ab0b131-37eb-442a-a5f6-b79bf3611eea",
+				version = 2,
+			},
+		},
 	},
 	[78] = 
 	{
