@@ -150,6 +150,20 @@ local tbl =
 		{
 			data = 
 			{
+				name = "[Mit] Phys Ranged",
+				uuid = "9893085b-6324-97af-8a9a-3bd2b5a33a01",
+				version = 2,
+			},
+			inheritedObjectUUID = "a875d0b9-a6be-815f-b30c-fe91e4048466",
+			inheritedOverwrites = 
+			{
+				timerStartOffset = -16.75,
+			},
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -479,6 +493,63 @@ local tbl =
 		{
 			data = 
 			{
+				name = "[Lj Draw] KB Arrow",
+				uuid = "58ffb399-732b-4b9c-81cb-eb0437e01791",
+				version = 2,
+			},
+			inheritedObjectUUID = "7cce803f-ee1a-0fc8-a9ba-eae74acd1a88",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							gVarValue = 2,
+							uuid = "fd63b604-a024-44c2-8f4e-181898fad1b1",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							gVarValue = 2,
+							uuid = "540e32ea-2e1e-b339-ba85-01df5ad1490c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				enabled = false,
+				mechanicTime = 381.48132335556,
+				name = "[MCH] Hold oGcd",
+				timeRange = true,
+				timelineIndex = 74,
+				timerStartOffset = -5,
+				uuid = "1605bfc9-94bf-756d-b138-e38ed2a0b824",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -594,38 +665,47 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							gVarValue = 2,
-							uuid = "fd63b604-a024-44c2-8f4e-181898fad1b1",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							gVarValue = 2,
-							uuid = "540e32ea-2e1e-b339-ba85-01df5ad1490c",
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 6,
+							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							version = 3,
+						},
+					},
 				},
-				enabled = false,
 				mechanicTime = 381.48132335556,
-				name = "[MCH] Hold oGcd",
+				name = "[MCH] Force Detonate",
 				timeRange = true,
 				timelineIndex = 74,
-				timerStartOffset = -5,
-				uuid = "1605bfc9-94bf-756d-b138-e38ed2a0b824",
+				timerStartOffset = -12,
+				uuid = "9795967a-63fa-7963-80de-e769ee37ee64",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -685,58 +765,6 @@ local tbl =
 				uuid = "19c30270-37f8-fb2e-a70c-ce050d09016d",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16766,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"9a76b4e7-b69d-904f-930e-a607c59479e4",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 6,
-							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 381.48132335556,
-				name = "[MCH] Force Detonate",
-				timeRange = true,
-				timelineIndex = 74,
-				timerStartOffset = -12,
-				uuid = "9795967a-63fa-7963-80de-e769ee37ee64",
-				version = 2,
-			},
-			inheritedIndex = 4,
 		},
 		
 		{
@@ -918,13 +946,13 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 74,
-				timerEndOffset = 2,
+				timerEndOffset = 1,
 				timerOffset = -15,
 				timerStartOffset = -15,
-				uuid = "d21fb133-fc19-6674-bfb2-616f2ffce70c",
+				uuid = "82625cdb-0223-21a4-bf54-e643b1312875",
 				version = 2,
 			},
-			inheritedIndex = 9,
+			inheritedIndex = 8,
 		},
 		
 		{
@@ -973,17 +1001,31 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 74,
-				timerEndOffset = 1,
+				timerEndOffset = 2,
 				timerOffset = -15,
 				timerStartOffset = -15,
-				uuid = "82625cdb-0223-21a4-bf54-e643b1312875",
+				uuid = "d21fb133-fc19-6674-bfb2-616f2ffce70c",
 				version = 2,
 			},
-			inheritedIndex = 8,
+			inheritedIndex = 9,
 		},
 	},
 	[75] = 
 	{
+		
+		{
+			data = 
+			{
+				name = "[Lj Draw] KB Arrow",
+				uuid = "29880f00-e1a7-e942-ac69-6d96c28dc5ae",
+				version = 2,
+			},
+			inheritedObjectUUID = "ee194367-8a9b-b066-9022-14a9c91aa2a4",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
 		
 		{
 			data = 
@@ -1061,6 +1103,39 @@ local tbl =
 				timelineIndex = 75,
 				timerStartOffset = -5,
 				uuid = "328adc50-5ddb-4809-b116-31f9cc607f48",
+				version = 2,
+			},
+		},
+	},
+	[76] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "f68e2cef-779c-7354-93b0-dcd00398011d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 424.39347120621,
+				name = "[MCH] Reassemble",
+				timelineIndex = 76,
+				uuid = "42b8915b-94d2-d740-9227-be48df493ab0",
 				version = 2,
 			},
 		},
@@ -1177,10 +1252,10 @@ local tbl =
 				},
 				mechanicTime = 427.45958272918,
 				name = "[MCH] Reassemble ",
-				timeRange = true,
 				timelineIndex = 77,
-				timerEndOffset = -2,
-				timerStartOffset = -4,
+				timerEndOffset = -4,
+				timerOffset = -4,
+				timerStartOffset = -7,
 				uuid = "5ab0b131-37eb-442a-a5f6-b79bf3611eea",
 				version = 2,
 			},
@@ -1302,7 +1377,7 @@ local tbl =
 				mechanicTime = 450.00390950196,
 				name = "[DPS] Force Potion",
 				timelineIndex = 79,
-				timerOffset = 6,
+				timerOffset = 5,
 				timerStartOffset = 6,
 				uuid = "53e9895d-ff82-6b37-95c6-da359358a733",
 				version = 2,
@@ -1759,6 +1834,64 @@ local tbl =
 					},
 				},
 			},
+		},
+	},
+	[148] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25786,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8805579a-605c-45d9-b706-678248857b4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 1,
+							uuid = "8805579a-605c-45d9-b706-678248857b4f",
+							version = 3,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Build Heat",
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 2,
+				timerOffset = -15,
+				timerStartOffset = -6,
+				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
+				version = 2,
+			},
+			inheritedIndex = 9,
 		},
 	},
 	[150] = 
