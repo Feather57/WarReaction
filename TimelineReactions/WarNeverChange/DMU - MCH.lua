@@ -883,7 +883,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 2,
+							hpValue = 3,
 							uuid = "8805579a-605c-45d9-b706-678248857b4f",
 							version = 3,
 						},
@@ -936,78 +936,24 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 1,
+							hpValue = 2,
 							uuid = "8805579a-605c-45d9-b706-678248857b4f",
 							version = 3,
 						},
 					},
 				},
+				loop = true,
 				mechanicTime = 381.48132335556,
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 74,
-				timerEndOffset = 1,
+				timerEndOffset = 4,
 				timerOffset = -15,
 				timerStartOffset = -15,
 				uuid = "82625cdb-0223-21a4-bf54-e643b1312875",
 				version = 2,
 			},
 			inheritedIndex = 8,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25786,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"8805579a-605c-45d9-b706-678248857b4f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 1,
-							uuid = "8805579a-605c-45d9-b706-678248857b4f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 381.48132335556,
-				name = "[MCH] Build Heat",
-				timeRange = true,
-				timelineIndex = 74,
-				timerEndOffset = 2,
-				timerOffset = -15,
-				timerStartOffset = -15,
-				uuid = "d21fb133-fc19-6674-bfb2-616f2ffce70c",
-				version = 2,
-			},
-			inheritedIndex = 9,
 		},
 	},
 	[75] = 
@@ -1222,41 +1168,6 @@ local tbl =
 				timelineIndex = 77,
 				timerOffset = -1.5,
 				uuid = "7e093d3d-4d9b-256e-99a2-61eef7775f82",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 2876,
-							atomicPriority = true,
-							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 427.45958272918,
-				name = "[MCH] Reassemble ",
-				timelineIndex = 77,
-				timerEndOffset = -4,
-				timerOffset = -4,
-				timerStartOffset = -7,
-				uuid = "5ab0b131-37eb-442a-a5f6-b79bf3611eea",
 				version = 2,
 			},
 		},
@@ -1885,13 +1796,190 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 148,
-				timerEndOffset = 2,
+				timerEndOffset = 3,
 				timerOffset = -15,
 				timerStartOffset = -6,
 				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
 				version = 2,
 			},
 			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36979,
+							uuid = "4f0b3e4e-739a-7fe5-b091-63bdcb03fac7",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Reassemble",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "af9d4ae8-5dc4-3796-aafd-db35dd72436c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Drill",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "fa2edba4-57fa-532f-ae0d-74578265318c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_AirAnchor",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "778d70dd-4d0f-636c-a858-b9172d1852bd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_ChainSaw",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "9a2b6d43-58d2-2649-b209-68798a0e3a63",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "aa126767-a0ce-ac1e-a1cc-83590fd48a5d",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							gVarValue = 2,
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "1f53a824-3012-25ff-9d6c-68a2cd212a70",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 1,
+							uuid = "ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Hold Ressource",
+				timeRange = true,
+				timelineIndex = 148,
+				timerStartOffset = -6,
+				uuid = "736caa98-727f-110b-87a9-474491bad0ff",
+				version = 2,
+			},
 		},
 	},
 	[150] = 
@@ -1922,6 +2010,90 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "2e4d2c7c-7515-60c9-bb9b-4bbd16f2b660",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 35,
+							holdActionID = 36979,
+							uuid = "0aaa39b5-a600-e360-9f90-9a3e99810cf3",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Reassemble",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "cfc9b2da-40f3-da79-a87d-ba083a187290",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Drill",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "d8a0b405-aebe-ac68-8f27-0ea04ba567e3",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_AirAnchor",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "bd492ae6-a5bc-57d2-b01b-f7e8524e7525",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_ChainSaw",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "f6df090c-2187-860f-b3be-0d9a51912ec4",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							holdActionDuration = 35,
+							holdActionID = 36980,
+							uuid = "a874c57b-5ea9-44aa-a27b-b68110b4f0cb",
+							version = 2.1,
+						},
 					},
 				},
 				conditions = 
