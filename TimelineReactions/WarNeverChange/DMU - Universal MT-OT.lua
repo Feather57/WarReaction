@@ -6666,43 +6666,6 @@ local tbl =
 			},
 		},
 	},
-	[93] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_RikuWAR3_CD",
-							setTarget = true,
-							targetContentID = 7691,
-							targetType = "ContentID",
-							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 511.44225832111,
-				name = "[Tank] Target Chaos",
-				timeRange = true,
-				timelineIndex = 93,
-				timerEndOffset = 1,
-				timerOffset = -2,
-				timerStartOffset = -1,
-				uuid = "9a6d8166-68d6-4c37-a0d0-49600a7f086c",
-				version = 2,
-			},
-		},
-	},
 	[95] = 
 	{
 		
@@ -7082,7 +7045,7 @@ local tbl =
 					},
 				},
 				mechanicTime = 536.97932260272,
-				name = "[Tank][MT] Target Chaos",
+				name = "[Tank][MT] Invuln",
 				timelineIndex = 102,
 				timerOffset = -1.5,
 				uuid = "ebcc7dd9-b49b-b4ff-9226-3295c17754fa",
@@ -8903,6 +8866,368 @@ local tbl =
 				timelineIndex = 140,
 				timerOffset = -3,
 				uuid = "a241cb30-701b-e419-abb8-7a8edaef4b93",
+				version = 2,
+			},
+		},
+	},
+	[150] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"f7491d36-5788-25cc-8b07-a41e481fbd53",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "5be1b8fc-ea61-9272-ad8b-ad7ea121d08a",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Hotbar_Grit",
+							uuid = "8e4ff661-09b7-9f81-9760-bbecde7e5501",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
+							uuid = "2bfb2fb5-baef-be00-85b1-88b4a5417eb6",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_Hotbar_RoyalGuard",
+							uuid = "f5ee0171-9db4-8bdd-9bf8-c92689f2939b",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "f7491d36-5788-25cc-8b07-a41e481fbd53",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "is PLD",
+							uuid = "a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "is GNB",
+							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[Tank][MT] Stance On",
+				timelineIndex = 150,
+				timerEndOffset = -13,
+				timerStartOffset = -17,
+				uuid = "c6280535-935c-0a58-a6cd-5b5c3df12c60",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"7d09c153-08e1-723f-85ed-d67245b1d407",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_ReleaseDefiance",
+							uuid = "5be1b8fc-ea61-9272-ad8b-ad7ea121d08a",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"3374fa56-31e9-67ca-923d-3b40400e3dfd",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Hotbar_ReleaseGrit",
+							uuid = "a6b2a3ee-3426-95f5-a8b8-cda83aeef15c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"399944ad-d3f9-b4f2-9ae8-279818adc381",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_ReleaseIronWill",
+							uuid = "fe5c7d36-0280-6d71-8fee-e648542242d3",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"03f82db7-4e76-edad-b82c-3db8748e8731",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_Hotbar_ReleaseRoyalGuard",
+							uuid = "cc7f52fc-537e-bd6c-a13f-3c8d135f71f1",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "7d09c153-08e1-723f-85ed-d67245b1d407",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "is PLD",
+							uuid = "399944ad-d3f9-b4f2-9ae8-279818adc381",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "is GNB",
+							uuid = "03f82db7-4e76-edad-b82c-3db8748e8731",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[Tank][OT] Stance Off",
+				timelineIndex = 150,
+				timerStartOffset = -1,
+				uuid = "a941df33-95e7-bac7-8a6e-29fbef1d8221",
 				version = 2,
 			},
 		},
