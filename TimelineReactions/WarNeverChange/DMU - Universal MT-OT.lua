@@ -821,6 +821,34 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[Tank] Potion Off",
+				timelineIndex = 1,
+				timerOffset = -15,
+				uuid = "5c33b155-252e-cfb8-b31f-564d18f5412e",
+				version = 2,
+			},
+		},
 	},
 	
 	{
@@ -1639,6 +1667,36 @@ local tbl =
 			},
 		},
 	}, 
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 44.392149263472,
+				name = "[Tank] Potion On",
+				timelineIndex = 8,
+				uuid = "2d767ab9-326b-345f-ba92-25e04ca18472",
+				version = 2,
+			},
+		},
+	},
 	[9] = 
 	{
 		
@@ -2312,6 +2370,36 @@ local tbl =
 				name = "[Tank] KB Cancel Off",
 				timelineIndex = 12,
 				uuid = "03b3222f-f1f9-57ba-9594-d9df26b17fd0",
+				version = 2,
+			},
+		},
+	},
+	[18] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 91.312196545775,
+				name = "[Tank] Potion Off",
+				timelineIndex = 18,
+				uuid = "d67f79ba-97e5-f5f4-b5e5-c1cac9d41ce9",
 				version = 2,
 			},
 		},
@@ -6711,6 +6799,77 @@ local tbl =
 			},
 		},
 	},
+	[78] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Potion",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 430.61710950197,
+				name = "[Tank] Potion On",
+				timelineIndex = 78,
+				timerOffset = 9,
+				timerStartOffset = 6,
+				uuid = "a1cd7898-f36d-15e7-a068-2211923a7dc2",
+				version = 2,
+			},
+		},
+	},
+	[79] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Potion",
+							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 450.00390950196,
+				name = "[Tank] Force Potion",
+				timelineIndex = 79,
+				timerOffset = 5,
+				timerStartOffset = 6,
+				uuid = "3eec7032-4867-329d-b134-b071f1813deb",
+				version = 2,
+			},
+		},
+	},
 	[81] = 
 	{
 		
@@ -7099,6 +7258,34 @@ local tbl =
 				timelineIndex = 81,
 				timerOffset = -6,
 				uuid = "f564642f-c5bc-002c-940a-8ad78860e9c0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.18264616806,
+				name = "[Tank] Potion Off",
+				timelineIndex = 81,
+				uuid = "39ba2789-89e8-5137-8e92-280abf5a90f1",
 				version = 2,
 			},
 		},
@@ -10285,6 +10472,103 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Potion",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "83ace834-5613-43a4-88f6-dbf4803abeb6",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 801.88345429349,
+				name = "[Tank] Potion On",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 2,
+				timerStartOffset = -2,
+				uuid = "7068c4e1-1463-4c4b-84e4-8afd05fe93ca",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Hotbar_Potion",
+							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 801.88345429349,
+				name = "[Tank] Force Potion",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 10,
+				timerStartOffset = -2,
+				uuid = "d8ecf54e-d70a-4595-99c9-6471ce5f2d2c",
+				version = 2,
+			},
+		},
+	},
+	[155] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 836.78243971594,
+				name = "[Tank] Potion Off",
+				timelineIndex = 155,
+				uuid = "d9e5b4cd-8688-ee44-99bf-ef2ef3653bcc",
+				version = 2,
+			},
+		},
 	},
 	[159] = 
 	{
@@ -12334,6 +12618,40 @@ local tbl =
 			},
 		},
 	},
+	[177] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Stack",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 978.67931016566,
+				name = "[TTS] Stack",
+				timelineIndex = 177,
+				timerOffset = -3,
+				uuid = "1c805378-c36d-9e4e-a320-17f261620a30",
+				version = 2,
+			},
+		},
+	},
 	[180] = 
 	{
 		
@@ -12977,6 +13295,42 @@ local tbl =
 			},
 		},
 	},
+	[186] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertTTS = true,
+							alertText = "Spread Position",
+							alertVolume = 100,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1003.3929625387,
+				name = "[TTS] Spread Position",
+				timelineIndex = 186,
+				timerOffset = -5,
+				uuid = "bdb0e715-cd24-6b8a-9cf1-a85cde7decb0",
+				version = 2,
+			},
+		},
+	},
 	[189] = 
 	{
 		
@@ -13533,6 +13887,74 @@ local tbl =
 			},
 		},
 	},
+	[191] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Stack",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1015.5629742328,
+				name = "[TTS] Stack",
+				timelineIndex = 191,
+				timerOffset = -3,
+				uuid = "29544602-7bf9-9ce1-931d-ed3a3f4f108b",
+				version = 2,
+			},
+		},
+	},
+	[193] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Tower",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1025.1000086512,
+				name = "[TTS] Tower",
+				timelineIndex = 193,
+				timerOffset = -5,
+				uuid = "71455325-da3b-7c53-94d7-fd6efd06e241",
+				version = 2,
+			},
+		},
+	},
 	[195] = 
 	{
 		
@@ -13742,6 +14164,77 @@ local tbl =
 				timelineIndex = 195,
 				timerOffset = -2,
 				uuid = "98fe8ad1-aaa9-37bd-9710-3133c4e88fdf",
+				version = 2,
+			},
+		},
+	},
+	[199] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 2,
+							alertTTS = true,
+							alertText = "Spread",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1045.6803244835,
+				name = "[TTS] Spread",
+				timelineIndex = 199,
+				timerOffset = -3,
+				uuid = "7571f752-1419-a841-9ca4-0d6c324db36f",
+				version = 2,
+			},
+		},
+	},
+	[200] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							gVar = "ACR_RikuWAR3_Potion",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1046.2272185016,
+				name = "[Tank] Potion On",
+				timelineIndex = 200,
+				timerStartOffset = 6,
+				uuid = "64e5ca89-6e84-190c-9d86-4fb11d6c427d",
 				version = 2,
 			},
 		},
@@ -14735,6 +15228,76 @@ local tbl =
 			},
 		},
 	},
+	[208] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Stack",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1060.5180184963,
+				name = "[TTS] Stack",
+				timelineIndex = 208,
+				timerOffset = -3,
+				uuid = "3377a30c-a60a-74c1-88d8-557a2948ca4a",
+				version = 2,
+			},
+		},
+	},
+	[210] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertPriority = 3,
+							alertTTS = true,
+							alertText = "Spread Position",
+							alertVolume = 100,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1095.4450949829,
+				name = "[TTS] Spread Position",
+				timelineIndex = 210,
+				timerOffset = -5,
+				uuid = "8c17bfc4-fa0a-d21f-9949-707eea9f69f3",
+				version = 2,
+			},
+		},
+	},
 	[214] = 
 	{
 		
@@ -15178,6 +15741,40 @@ local tbl =
 			},
 		},
 	},
+	[216] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertTTS = true,
+							alertText = "Stack",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1107.6512243835,
+				name = "[TTS] Stack",
+				timelineIndex = 216,
+				timerOffset = -3,
+				uuid = "c15b634b-71ca-f736-9bbd-7223d8e861e3",
+				version = 2,
+			},
+		},
+	},
 	[219] = 
 	{
 		
@@ -15387,6 +15984,42 @@ local tbl =
 				timelineIndex = 219,
 				timerOffset = -2,
 				uuid = "81fc5c24-2787-8f0a-945b-e32741f30f12",
+				version = 2,
+			},
+		},
+	},
+	[221] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertDuration = 3000,
+							alertPriority = 2,
+							alertTTS = true,
+							alertText = "Move",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1133.3461474604,
+				name = "[TTS] Move",
+				timelineIndex = 221,
+				timerOffset = 0.20000000298023,
+				uuid = "aa7d42e5-cd1f-04f3-a9a2-e7512657004c",
 				version = 2,
 			},
 		},
@@ -15949,6 +16582,124 @@ local tbl =
 				timelineIndex = 223,
 				timerOffset = -3,
 				uuid = "ee256491-e6bd-4c7d-9e40-e07668de72ff",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertDuration = 3000,
+							alertPriority = 2,
+							alertTTS = true,
+							alertText = "Move",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1141.5122474604,
+				name = "[TTS] Move",
+				timelineIndex = 223,
+				timerOffset = 0.20000000298023,
+				uuid = "e67c9d19-e85d-6b89-ab19-a7a87116abef",
+				version = 2,
+			},
+		},
+	},
+	[225] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertDuration = 3000,
+							alertPriority = 2,
+							alertTTS = true,
+							alertText = "Move",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1149.6575474604,
+				name = "[TTS] Move",
+				timelineIndex = 225,
+				timerOffset = 0.20000000298023,
+				uuid = "c278d962-6f92-be80-b643-2763061ac6ca",
+				version = 2,
+			},
+		},
+	},
+	[227] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"801fef8e-9368-5166-a637-a36201912335",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Burn",
+							uuid = "9608e85b-fa92-5bd4-885a-18b79e9e49de",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 5,
+							uuid = "801fef8e-9368-5166-a637-a36201912335",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[Tank] Burn",
+				timelineIndex = 227,
+				uuid = "157942d6-b65a-7e83-9b7d-045f11b0cdc5",
 				version = 2,
 			},
 		},

@@ -1334,6 +1334,506 @@ local tbl =
 			},
 		},
 	},
+	[42] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"17758e73-2d9f-4563-8ac2-465d86b23cdc",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "efe28881-8586-3e1a-8acc-2ad6ef6e50f4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "17758e73-2d9f-4563-8ac2-465d86b23cdc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[WAR][OT] Nascent",
+				timelineIndex = 42,
+				timerOffset = -3,
+				uuid = "2fb50f1f-9b52-cf4d-99f8-9c46b1d69ce2",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"59bb5297-24f1-adec-849b-58605204b40f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "59bb5297-24f1-adec-849b-58605204b40f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 42,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "24d472b2-454d-9123-ab05-e662ecbf7808",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+	},
+	[53] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"59bb5297-24f1-adec-849b-58605204b40f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "59bb5297-24f1-adec-849b-58605204b40f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 280.23863811015,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 53,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "1db99aa3-29dc-19d3-9d70-935154ee3026",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"17758e73-2d9f-4563-8ac2-465d86b23cdc",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "efe28881-8586-3e1a-8acc-2ad6ef6e50f4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "17758e73-2d9f-4563-8ac2-465d86b23cdc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 280.23863811015,
+				name = "[WAR][OT] Nascent",
+				timelineIndex = 53,
+				timerOffset = -3,
+				uuid = "5a861426-a46e-04d8-9ac1-c46954144c62",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+	},
+	[61] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"17758e73-2d9f-4563-8ac2-465d86b23cdc",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "efe28881-8586-3e1a-8acc-2ad6ef6e50f4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "17758e73-2d9f-4563-8ac2-465d86b23cdc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 312.32654954394,
+				name = "[WAR][OT] Nascent",
+				timelineIndex = 61,
+				timerOffset = -3,
+				uuid = "881db14f-8b1f-aac5-b67d-28d463820950",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"59bb5297-24f1-adec-849b-58605204b40f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "59bb5297-24f1-adec-849b-58605204b40f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 312.32654954394,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 61,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "84b773d4-afc4-4cd7-b3d6-d731a0364bf2",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+	},
+	[66] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+								
+								{
+									"59bb5297-24f1-adec-849b-58605204b40f",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							ignoreWeaveRules = true,
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "59bb5297-24f1-adec-849b-58605204b40f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 341.70452758191,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 66,
+				timerOffset = -5,
+				timerStartOffset = -1,
+				uuid = "c62b6914-2b9b-85a5-bd32-2a6d3900d947",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"17758e73-2d9f-4563-8ac2-465d86b23cdc",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "efe28881-8586-3e1a-8acc-2ad6ef6e50f4",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "17758e73-2d9f-4563-8ac2-465d86b23cdc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 341.70452758191,
+				name = "[WAR][OT] Nascent",
+				timelineIndex = 66,
+				timerOffset = -5,
+				uuid = "60940f20-55bb-feff-a04b-50bcd81da68c",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+	},
 	[72] = 
 	{
 		
@@ -3893,6 +4393,59 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0f31a908-8391-90cf-9c66-d9c6e20f2d19",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "14861bc3-5569-4ba6-aced-227408ecbea7",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "0f31a908-8391-90cf-9c66-d9c6e20f2d19",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1060.5180184963,
+				name = "[WAR] Equilibrium",
+				timeRange = true,
+				timelineIndex = 208,
+				timerEndOffset = 4,
+				timerOffset = -3,
+				timerStartOffset = -4,
+				uuid = "d7acff98-99f7-3ef7-813b-e1ba5f19c3e2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 25751,
 							atomicPriority = true,
 							conditions = 
@@ -3937,59 +4490,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"0f31a908-8391-90cf-9c66-d9c6e20f2d19",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "14861bc3-5569-4ba6-aced-227408ecbea7",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "0f31a908-8391-90cf-9c66-d9c6e20f2d19",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1060.5180184963,
-				name = "[WAR] Equilibrium",
-				timeRange = true,
-				timelineIndex = 208,
-				timerEndOffset = 4,
-				timerOffset = -3,
-				timerStartOffset = -4,
-				uuid = "d7acff98-99f7-3ef7-813b-e1ba5f19c3e2",
-				version = 2,
-			},
 		},
 	},
 	[211] = 
