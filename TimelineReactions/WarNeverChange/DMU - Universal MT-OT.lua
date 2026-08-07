@@ -6806,6 +6806,98 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							uuid = "c3d2b13a-8b3e-e084-8e54-50c88f28755a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 514.44485832111,
+				name = "[Tank] KB Cancel On",
+				timelineIndex = 95,
+				timerOffset = -3,
+				uuid = "022bda80-4033-3622-a258-f720e43642b3",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_KBCancel",
+							gVarValue = 2,
+							uuid = "c3d2b13a-8b3e-e084-8e54-50c88f28755a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 514.44485832111,
+				name = "[Tank] KB Cancel Off",
+				timelineIndex = 95,
+				timerOffset = 2,
+				uuid = "b87ef173-73a7-0d8c-b605-ceb5d0f6963a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuWAR3_CD",
+							setTarget = true,
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 514.44485832111,
+				name = "[Tank] Target Chaos",
+				timelineIndex = 95,
+				timerEndOffset = 1,
+				timerOffset = -1,
+				timerStartOffset = -1,
+				uuid = "32056dea-1108-5bb3-aa65-bead4398755e",
+				version = 2,
+			},
+		},
 	},
 	[102] = 
 	{
