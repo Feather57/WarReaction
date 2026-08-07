@@ -386,6 +386,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"ba276eb9-8db6-bb1d-ab99-b3fa46af3979",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -409,6 +414,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"52470f4f-5710-cde0-be10-b89f95bef716",
 									true,
 								},
 							},
@@ -436,6 +446,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"898e8698-0aad-b0ef-9e9f-460ef07b2d68",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -459,6 +474,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"734ac2cb-ce05-737b-b3f4-5769df5e80eb",
 									true,
 								},
 							},
@@ -530,6 +550,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "ba276eb9-8db6-bb1d-ab99-b3fa46af3979",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "898e8698-0aad-b0ef-9e9f-460ef07b2d68",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "52470f4f-5710-cde0-be10-b89f95bef716",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "734ac2cb-ce05-737b-b3f4-5769df5e80eb",
 							version = 3,
 						},
 					},
@@ -958,6 +1026,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"1de3d2f8-bfda-d188-9c34-0410244cd9f0",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -981,6 +1054,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"73edadf9-82c2-dd9f-8190-8a100d837ee9",
 									true,
 								},
 							},
@@ -1008,6 +1086,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"15d575c1-3f80-0b97-84b3-81026952fc24",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -1031,6 +1114,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"d661f240-6950-7e56-a715-eb99d3f6cd10",
 									true,
 								},
 							},
@@ -1105,6 +1193,54 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "1de3d2f8-bfda-d188-9c34-0410244cd9f0",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "15d575c1-3f80-0b97-84b3-81026952fc24",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "73edadf9-82c2-dd9f-8190-8a100d837ee9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "d661f240-6950-7e56-a715-eb99d3f6cd10",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 18.37640625,
 				name = "[Tank][OT] Stance On",
@@ -1142,6 +1278,7 @@ local tbl =
 									true,
 								},
 							},
+							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
 							uuid = "6889f4c9-147b-4f2c-b432-abe099d52d09",
 							variableTogglesType = 3,
@@ -1653,6 +1790,257 @@ local tbl =
 			},
 		},
 	},
+	[11] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"f7491d36-5788-25cc-8b07-a41e481fbd53",
+									true,
+								},
+								
+								{
+									"e8d59ebb-f6a8-0019-8e8d-17b3cb5a574e",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "5be1b8fc-ea61-9272-ad8b-ad7ea121d08a",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"b1d36f27-cf42-88dc-956b-bf24add45253",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Hotbar_Grit",
+							uuid = "8e4ff661-09b7-9f81-9760-bbecde7e5501",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
+									true,
+								},
+								
+								{
+									"e00b8f64-22bf-062a-82b7-85ad215737e8",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
+							uuid = "2bfb2fb5-baef-be00-85b1-88b4a5417eb6",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+									true,
+								},
+								
+								{
+									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"2b9ebe52-29bb-3404-8085-8b0772cca2e6",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_Hotbar_RoyalGuard",
+							uuid = "f5ee0171-9db4-8bdd-9bf8-c92689f2939b",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "f7491d36-5788-25cc-8b07-a41e481fbd53",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "is PLD",
+							uuid = "a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "is GNB",
+							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "e8d59ebb-f6a8-0019-8e8d-17b3cb5a574e",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "e00b8f64-22bf-062a-82b7-85ad215737e8",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "b1d36f27-cf42-88dc-956b-bf24add45253",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "2b9ebe52-29bb-3404-8085-8b0772cca2e6",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 53.460753490642,
+				name = "[Tank][MT] Stance On",
+				timelineIndex = 11,
+				timerEndOffset = -13,
+				timerStartOffset = -17,
+				uuid = "163c3b69-1185-d466-a906-57500a7eb988",
+				version = 2,
+			},
+		},
+	},
 	[12] = 
 	{
 		
@@ -2039,10 +2427,9 @@ local tbl =
 				},
 				mechanicTime = 97.181065398234,
 				name = "[Tank][MT] Provoke",
-				timeRange = true,
 				timelineIndex = 19,
 				timerEndOffset = 1,
-				timerOffset = -0.5,
+				timerOffset = -1.5,
 				timerStartOffset = -1.5,
 				uuid = "a114e28a-9d9e-debd-8d78-7e2a4b4ab17c",
 				version = 2,
@@ -3368,186 +3755,6 @@ local tbl =
 	},
 	[37] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
-									true,
-								},
-								
-								{
-									"f7491d36-5788-25cc-8b07-a41e481fbd53",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "5be1b8fc-ea61-9272-ad8b-ad7ea121d08a",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
-									true,
-								},
-								
-								{
-									"3926d2d0-bc31-fe11-8abb-512b3108e064",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuDRK3_Hotbar_Grit",
-							uuid = "8e4ff661-09b7-9f81-9760-bbecde7e5501",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
-									true,
-								},
-								
-								{
-									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
-							uuid = "2bfb2fb5-baef-be00-85b1-88b4a5417eb6",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
-									true,
-								},
-								
-								{
-									"dc16844b-8482-9b55-ab61-76c0ebeace74",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuGNB3_Hotbar_RoyalGuard",
-							uuid = "f5ee0171-9db4-8bdd-9bf8-c92689f2939b",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "edb6703b-bd9d-12c7-ab7b-1874a628ddf8",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "f7491d36-5788-25cc-8b07-a41e481fbd53",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "PALADIN",
-							name = "is PLD",
-							uuid = "a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "GUNBREAKER",
-							name = "is GNB",
-							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 187.08847802632,
-				name = "[Tank][MT] Stance On",
-				timelineIndex = 37,
-				timerEndOffset = -13,
-				timerStartOffset = -17,
-				uuid = "3d8bc800-cd79-096b-b3a4-7613eae75000",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -5050,6 +5257,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"4078f8ec-1e5a-196f-963f-5fe4f7550f0a",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -5073,6 +5285,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"f41138b5-ac21-d084-9098-820593199b0c",
 									true,
 								},
 							},
@@ -5100,6 +5317,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"b07864d5-760c-a537-92fe-bebabf19092c",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -5123,6 +5345,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"845cf963-e695-7deb-a672-27b60c36fd65",
 									true,
 								},
 							},
@@ -5194,6 +5421,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "4078f8ec-1e5a-196f-963f-5fe4f7550f0a",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "b07864d5-760c-a537-92fe-bebabf19092c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "f41138b5-ac21-d084-9098-820593199b0c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "845cf963-e695-7deb-a672-27b60c36fd65",
 							version = 3,
 						},
 					},
@@ -8895,6 +9170,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"4874a79b-42b9-d377-9c71-13fa944e8b83",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -8918,6 +9198,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"b4a96e09-3b3a-f160-9f0a-f9a9a48d4c0f",
 									true,
 								},
 							},
@@ -8945,6 +9230,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"f53f5c6e-cd5c-1979-b783-26f06c2f2267",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -8968,6 +9258,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"92b5ed1b-128f-e2af-9a42-1e04febdcaca",
 									true,
 								},
 							},
@@ -9039,6 +9334,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "4874a79b-42b9-d377-9c71-13fa944e8b83",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "f53f5c6e-cd5c-1979-b783-26f06c2f2267",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "b4a96e09-3b3a-f160-9f0a-f9a9a48d4c0f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "92b5ed1b-128f-e2af-9a42-1e04febdcaca",
 							version = 3,
 						},
 					},
@@ -10164,6 +10507,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"feb2d702-6ff3-7810-8e1f-4ad7b8786dd7",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -10187,6 +10535,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"6ddc1073-f225-7eb3-9d91-fa48daf23041",
 									true,
 								},
 							},
@@ -10214,6 +10567,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"24767dcb-3c98-1b18-8c17-612e6d6aed0c",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -10237,6 +10595,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"9558dc2d-8e4e-8950-8a3d-9a4c85b47f5b",
 									true,
 								},
 							},
@@ -10308,6 +10671,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "feb2d702-6ff3-7810-8e1f-4ad7b8786dd7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "24767dcb-3c98-1b18-8c17-612e6d6aed0c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "6ddc1073-f225-7eb3-9d91-fa48daf23041",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "9558dc2d-8e4e-8950-8a3d-9a4c85b47f5b",
 							version = 3,
 						},
 					},
@@ -11327,6 +11738,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"4f276e5c-76e8-3572-adc7-d7d32543f046",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -11350,6 +11766,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"7125d7ad-bca5-c4b0-ba5e-a1d4ea42f86f",
 									true,
 								},
 							},
@@ -11377,6 +11798,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"e34ebf8c-4cba-d448-aaed-9a5bc5c74a27",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -11400,6 +11826,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"948ce7c2-870e-379d-839c-473995f6de61",
 									true,
 								},
 							},
@@ -11471,6 +11902,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "4f276e5c-76e8-3572-adc7-d7d32543f046",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "e34ebf8c-4cba-d448-aaed-9a5bc5c74a27",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "7125d7ad-bca5-c4b0-ba5e-a1d4ea42f86f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "948ce7c2-870e-379d-839c-473995f6de61",
 							version = 3,
 						},
 					},
@@ -13134,6 +13613,11 @@ local tbl =
 									"f7491d36-5788-25cc-8b07-a41e481fbd53",
 									true,
 								},
+								
+								{
+									"3f662e17-f78e-a1bd-a1eb-da133d2c2d16",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
@@ -13157,6 +13641,11 @@ local tbl =
 								
 								{
 									"3926d2d0-bc31-fe11-8abb-512b3108e064",
+									true,
+								},
+								
+								{
+									"baf25f9c-01fd-0df5-b8db-de9a25eda9b7",
 									true,
 								},
 							},
@@ -13184,6 +13673,11 @@ local tbl =
 									"a01bebe6-ffd5-1207-b5d9-5e6f78fbd4dd",
 									true,
 								},
+								
+								{
+									"d0428e32-da27-c0db-a61b-df24bca23531",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Hotbar_IronWill",
@@ -13207,6 +13701,11 @@ local tbl =
 								
 								{
 									"dc16844b-8482-9b55-ab61-76c0ebeace74",
+									true,
+								},
+								
+								{
+									"8390a497-2092-ffae-a05b-1cf396a13116",
 									true,
 								},
 							},
@@ -13278,6 +13777,54 @@ local tbl =
 							jobValue = "GUNBREAKER",
 							name = "is GNB",
 							uuid = "dc16844b-8482-9b55-ab61-76c0ebeace74",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Missing WAR Stance",
+							uuid = "3f662e17-f78e-a1bd-a1eb-da133d2c2d16",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 79,
+							category = "Self",
+							name = "Missing PLD Stance",
+							uuid = "d0428e32-da27-c0db-a61b-df24bca23531",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 743,
+							category = "Self",
+							name = "Missing DRK Stance",
+							uuid = "baf25f9c-01fd-0df5-b8db-de9a25eda9b7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1833,
+							category = "Self",
+							name = "Missing GNB Stance",
+							uuid = "8390a497-2092-ffae-a05b-1cf396a13116",
 							version = 3,
 						},
 					},
