@@ -2158,7 +2158,7 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							conditionType = 2,
-							hpValue = 70,
+							hpValue = 20,
 							uuid = "0f31a908-8391-90cf-9c66-d9c6e20f2d19",
 							version = 3,
 						},
@@ -2168,9 +2168,9 @@ local tbl =
 				name = "[WAR] Equilibrium",
 				timeRange = true,
 				timelineIndex = 105,
-				timerEndOffset = 10,
+				timerEndOffset = 15,
 				timerOffset = -3,
-				timerStartOffset = -2,
+				timerStartOffset = -15,
 				uuid = "0d820b7b-c557-12f6-aa25-93acb4a83314",
 				version = 2,
 			},
@@ -4330,11 +4330,20 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashMouse",
+							actionID = 16464,
+							conditions = 
+							{
+								
+								{
+									"6f85aead-cb08-ba5b-8b08-37a08c3fe2ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashLowest",
+							ignoreWeaveRules = true,
+							subtypeRangeCheckSourceType = "Ranged Physical DPS",
 							targetType = "Ranged Physical DPS",
 							uuid = "a839c3e4-8acc-f05d-9d29-d37d9a1aceb0",
-							variableIsHover = true,
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -4342,12 +4351,76 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "6f85aead-cb08-ba5b-8b08-37a08c3fe2ea",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1149.6575474604,
-				name = "[WAR] Nascent R1",
+				name = "[WAR][MT] Nascent R1",
 				timelineIndex = 225,
 				timerOffset = -2,
 				uuid = "edac41f4-febd-6246-b33d-498a37662e6c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16464,
+							conditions = 
+							{
+								
+								{
+									"6f85aead-cb08-ba5b-8b08-37a08c3fe2ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashLowest",
+							ignoreWeaveRules = true,
+							subtypeRangeCheckSourceType = "Ranged Caster DPS",
+							targetType = "Ranged Physical DPS",
+							uuid = "a839c3e4-8acc-f05d-9d29-d37d9a1aceb0",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "6f85aead-cb08-ba5b-8b08-37a08c3fe2ea",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1149.6575474604,
+				name = "[WAR][MT] Nascent R2",
+				timelineIndex = 225,
+				timerOffset = -2,
+				uuid = "b23fc310-4d5e-6fdb-8847-da9de3129371",
 				version = 2,
 			},
 		},
