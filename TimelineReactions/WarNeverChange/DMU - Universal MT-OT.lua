@@ -1277,6 +1277,11 @@ local tbl =
 									"98beb4f6-2a9c-c8bd-b2aa-24e4081b7112",
 									true,
 								},
+								
+								{
+									"425b209a-00a2-f991-9846-ac7902666a0a",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -1300,6 +1305,11 @@ local tbl =
 								
 								{
 									"8a3ea4c7-16e3-c2e2-8fa9-3307e521d2c3",
+									true,
+								},
+								
+								{
+									"425b209a-00a2-f991-9846-ac7902666a0a",
 									true,
 								},
 							},
@@ -1327,6 +1337,11 @@ local tbl =
 									"a654b37f-d00b-5edf-944a-ad0f8de16606",
 									true,
 								},
+								
+								{
+									"425b209a-00a2-f991-9846-ac7902666a0a",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -1350,6 +1365,11 @@ local tbl =
 								
 								{
 									"7e5f0214-3c9d-c056-b4f2-b8a48d7ad624",
+									true,
+								},
+								
+								{
+									"425b209a-00a2-f991-9846-ac7902666a0a",
 									true,
 								},
 							},
@@ -1425,6 +1445,17 @@ local tbl =
 							uuid = "7e5f0214-3c9d-c056-b4f2-b8a48d7ad624",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "425b209a-00a2-f991-9846-ac7902666a0a",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 29.049328125,
@@ -2066,6 +2097,11 @@ local tbl =
 									"29dc4963-7e0d-1ec9-9485-7b5e73622b29",
 									true,
 								},
+								
+								{
+									"e9caee9f-8555-6863-91d8-18cc1f5eae71",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -2089,6 +2125,11 @@ local tbl =
 								
 								{
 									"aab8b535-37a9-46e4-9ed7-746aaf477512",
+									true,
+								},
+								
+								{
+									"e9caee9f-8555-6863-91d8-18cc1f5eae71",
 									true,
 								},
 							},
@@ -2116,6 +2157,11 @@ local tbl =
 									"72363a9b-7d04-eeeb-ad09-e3ba6b02c17d",
 									true,
 								},
+								
+								{
+									"e9caee9f-8555-6863-91d8-18cc1f5eae71",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -2139,6 +2185,11 @@ local tbl =
 								
 								{
 									"6f6149fd-e3c8-b33c-8d13-2e252d0fd6c1",
+									true,
+								},
+								
+								{
+									"e9caee9f-8555-6863-91d8-18cc1f5eae71",
 									true,
 								},
 							},
@@ -2212,6 +2263,17 @@ local tbl =
 							uuid = "6f6149fd-e3c8-b33c-8d13-2e252d0fd6c1",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "e9caee9f-8555-6863-91d8-18cc1f5eae71",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 62.553324919213,
@@ -2831,6 +2893,11 @@ local tbl =
 									"6759744a-35e8-5d11-afb9-379520f9536e",
 									true,
 								},
+								
+								{
+									"86c45986-27ee-27a7-a3fd-e337f1906eea",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -2854,6 +2921,11 @@ local tbl =
 								
 								{
 									"38929d21-4eca-b80d-9337-d29e994ddd4c",
+									true,
+								},
+								
+								{
+									"86c45986-27ee-27a7-a3fd-e337f1906eea",
 									true,
 								},
 							},
@@ -2881,6 +2953,11 @@ local tbl =
 									"a4d25c02-dc93-23e8-8bae-b4a49e185ba9",
 									true,
 								},
+								
+								{
+									"86c45986-27ee-27a7-a3fd-e337f1906eea",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -2904,6 +2981,11 @@ local tbl =
 								
 								{
 									"512082ec-00b7-10c4-a0fa-b13f99a8d03d",
+									true,
+								},
+								
+								{
+									"86c45986-27ee-27a7-a3fd-e337f1906eea",
 									true,
 								},
 							},
@@ -2978,11 +3060,22 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "86c45986-27ee-27a7-a3fd-e337f1906eea",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
 				},
 				mechanicTime = 105.78798877162,
 				name = "[Tank][MT] Reprisal",
 				timelineIndex = 22,
-				timerOffset = -8,
+				timerOffset = 1,
 				uuid = "5653eb31-5193-59bb-8da8-d4a088203359",
 				version = 2,
 			},
@@ -3192,6 +3285,11 @@ local tbl =
 									"e34ad67e-e2c3-08a2-bbd4-99eb4076ef55",
 									true,
 								},
+								
+								{
+									"7f01e41f-fe23-e437-814f-d914bfad6212",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -3215,6 +3313,11 @@ local tbl =
 								
 								{
 									"8878bdef-a829-8e98-98a7-c44d13641d4a",
+									true,
+								},
+								
+								{
+									"7f01e41f-fe23-e437-814f-d914bfad6212",
 									true,
 								},
 							},
@@ -3242,6 +3345,11 @@ local tbl =
 									"53623aa9-d596-9b5c-9b51-96d301b251b5",
 									true,
 								},
+								
+								{
+									"7f01e41f-fe23-e437-814f-d914bfad6212",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -3265,6 +3373,11 @@ local tbl =
 								
 								{
 									"9bdeb9ee-b0be-87e9-963f-ea76fe33de24",
+									true,
+								},
+								
+								{
+									"7f01e41f-fe23-e437-814f-d914bfad6212",
 									true,
 								},
 							},
@@ -3338,6 +3451,17 @@ local tbl =
 							uuid = "9bdeb9ee-b0be-87e9-963f-ea76fe33de24",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "7f01e41f-fe23-e437-814f-d914bfad6212",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 118.07975730716,
@@ -3753,6 +3877,219 @@ local tbl =
 			},
 		},
 	},
+	[34] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
+									true,
+								},
+								
+								{
+									"eb6d64f7-2349-0c87-884e-700da1471e87",
+									true,
+								},
+								
+								{
+									"b25d0089-5e59-2731-888b-63ede4edb1a4",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
+							uuid = "6889f4c9-147b-4f2c-b432-abe099d52d09",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
+									true,
+								},
+								
+								{
+									"edf53dba-84be-3420-9211-5c0189e543f7",
+									true,
+								},
+								
+								{
+									"b25d0089-5e59-2731-888b-63ede4edb1a4",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
+							uuid = "3eb3336b-f73b-4e34-9194-06be9c370f97",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
+									true,
+								},
+								
+								{
+									"af4ef868-186f-be46-af90-1a3adaeb74a4",
+									true,
+								},
+								
+								{
+									"b25d0089-5e59-2731-888b-63ede4edb1a4",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
+							uuid = "f2925786-80be-5b0c-bd9a-bad802a9be07",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
+									true,
+								},
+								
+								{
+									"32a49f90-5a17-d116-9f2c-aeea29d7be1d",
+									true,
+								},
+								
+								{
+									"b25d0089-5e59-2731-888b-63ede4edb1a4",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
+							uuid = "6a3c9990-cfcf-c3bb-968e-d7ec1b71af8e",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "b25d0089-5e59-2731-888b-63ede4edb1a4",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "efa4d6a1-1beb-a31d-b687-601ae6fb8977",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "edf53dba-84be-3420-9211-5c0189e543f7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "eb6d64f7-2349-0c87-884e-700da1471e87",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "is PLD",
+							uuid = "af4ef868-186f-be46-af90-1a3adaeb74a4",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "is GNB",
+							uuid = "32a49f90-5a17-d116-9f2c-aeea29d7be1d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 167.71168967762,
+				name = "[Tank][MT] Reprisal",
+				timelineIndex = 34,
+				timerOffset = -2,
+				uuid = "75a35f57-f65b-e66f-ad67-7e840c502b23",
+				version = 2,
+			},
+		},
+	},
 	[37] = 
 	{
 		
@@ -3934,185 +4271,6 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
-									true,
-								},
-								
-								{
-									"eb6d64f7-2349-0c87-884e-700da1471e87",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
-							uuid = "6889f4c9-147b-4f2c-b432-abe099d52d09",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
-									true,
-								},
-								
-								{
-									"edf53dba-84be-3420-9211-5c0189e543f7",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuDRK3_Tankbar_Reprisal",
-							uuid = "3eb3336b-f73b-4e34-9194-06be9c370f97",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
-									true,
-								},
-								
-								{
-									"af4ef868-186f-be46-af90-1a3adaeb74a4",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
-							uuid = "f2925786-80be-5b0c-bd9a-bad802a9be07",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
-									true,
-								},
-								
-								{
-									"32a49f90-5a17-d116-9f2c-aeea29d7be1d",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuGNB3_Tankbar_Reprisal",
-							uuid = "6a3c9990-cfcf-c3bb-968e-d7ec1b71af8e",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "efa4d6a1-1beb-a31d-b687-601ae6fb8977",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "edf53dba-84be-3420-9211-5c0189e543f7",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "eb6d64f7-2349-0c87-884e-700da1471e87",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "PALADIN",
-							name = "is PLD",
-							uuid = "af4ef868-186f-be46-af90-1a3adaeb74a4",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "GUNBREAKER",
-							name = "is GNB",
-							uuid = "32a49f90-5a17-d116-9f2c-aeea29d7be1d",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 187.08847802632,
-				name = "[Tank][MT] Reprisal",
-				timelineIndex = 37,
-				timerOffset = -3,
-				uuid = "32a2fe89-1f7c-1d46-864d-ed6bfae7e8f8",
-				version = 2,
-			},
-		},
 	},
 	[38] = 
 	{
@@ -4171,6 +4329,11 @@ local tbl =
 									"9b7d8dfd-ddd3-bed4-bbf1-1820360e3cf4",
 									true,
 								},
+								
+								{
+									"e71a5e4c-3414-5629-ad61-fb82b9404572",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -4194,6 +4357,11 @@ local tbl =
 								
 								{
 									"514914d1-e28b-8b58-8de6-08860c7905a3",
+									true,
+								},
+								
+								{
+									"e71a5e4c-3414-5629-ad61-fb82b9404572",
 									true,
 								},
 							},
@@ -4221,6 +4389,11 @@ local tbl =
 									"65291998-a6d1-4a77-b717-0039f9fca3c3",
 									true,
 								},
+								
+								{
+									"e71a5e4c-3414-5629-ad61-fb82b9404572",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -4244,6 +4417,11 @@ local tbl =
 								
 								{
 									"2870e26c-ab10-bc83-baa6-cc40f4ffadbd",
+									true,
+								},
+								
+								{
+									"e71a5e4c-3414-5629-ad61-fb82b9404572",
 									true,
 								},
 							},
@@ -4317,6 +4495,17 @@ local tbl =
 							uuid = "2870e26c-ab10-bc83-baa6-cc40f4ffadbd",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "e71a5e4c-3414-5629-ad61-fb82b9404572",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 220.14545421679,
@@ -4532,6 +4721,11 @@ local tbl =
 									"3a503b6a-ebe7-3785-a6ec-a7e207395485",
 									true,
 								},
+								
+								{
+									"be239bb3-2d76-f735-b227-086a2059a91e",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -4555,6 +4749,11 @@ local tbl =
 								
 								{
 									"221cb6b6-10d5-3011-9372-b91bc693987b",
+									true,
+								},
+								
+								{
+									"be239bb3-2d76-f735-b227-086a2059a91e",
 									true,
 								},
 							},
@@ -4582,6 +4781,11 @@ local tbl =
 									"9ad34c48-6844-28eb-a258-0d4be3a2e67e",
 									true,
 								},
+								
+								{
+									"be239bb3-2d76-f735-b227-086a2059a91e",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -4605,6 +4809,11 @@ local tbl =
 								
 								{
 									"f7e223ef-fe62-f555-ae31-c6a69e4491d1",
+									true,
+								},
+								
+								{
+									"be239bb3-2d76-f735-b227-086a2059a91e",
 									true,
 								},
 							},
@@ -4678,6 +4887,17 @@ local tbl =
 							uuid = "f7e223ef-fe62-f555-ae31-c6a69e4491d1",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "be239bb3-2d76-f735-b227-086a2059a91e",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 235.34477128997,
@@ -4893,6 +5113,11 @@ local tbl =
 									"80629428-6b1e-fdef-98d5-d863f96430f8",
 									true,
 								},
+								
+								{
+									"edace8e6-c694-f04d-aa01-7845a8810dcb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -4916,6 +5141,11 @@ local tbl =
 								
 								{
 									"7942e678-3ee8-8cc2-8c81-edfd3c936054",
+									true,
+								},
+								
+								{
+									"edace8e6-c694-f04d-aa01-7845a8810dcb",
 									true,
 								},
 							},
@@ -4943,6 +5173,11 @@ local tbl =
 									"b3818184-a208-69e1-b14a-f5f9e959bef1",
 									true,
 								},
+								
+								{
+									"edace8e6-c694-f04d-aa01-7845a8810dcb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -4966,6 +5201,11 @@ local tbl =
 								
 								{
 									"f5b5817c-89ff-7371-8e92-e998e053f470",
+									true,
+								},
+								
+								{
+									"edace8e6-c694-f04d-aa01-7845a8810dcb",
 									true,
 								},
 							},
@@ -5040,9 +5280,20 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "edace8e6-c694-f04d-aa01-7845a8810dcb",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
 				},
 				mechanicTime = 280.23863811015,
-				name = "[Tank] Target Chaos",
+				name = "[Tank][OT] Reprisal",
 				timelineIndex = 53,
 				timerOffset = -3,
 				uuid = "7b4b1e53-27c0-9468-a994-0bce9a73ed4c",
@@ -5075,6 +5326,11 @@ local tbl =
 									"b8b0beb4-1eb5-8eea-ae9b-f40d0b4c292b",
 									true,
 								},
+								
+								{
+									"3e7a7924-e1e2-8096-a7dc-80b9137f8561",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -5098,6 +5354,11 @@ local tbl =
 								
 								{
 									"3f3f2840-3016-c476-8028-d1473b30bd24",
+									true,
+								},
+								
+								{
+									"3e7a7924-e1e2-8096-a7dc-80b9137f8561",
 									true,
 								},
 							},
@@ -5125,6 +5386,11 @@ local tbl =
 									"10613e66-5149-7569-8052-04c1c30dad7d",
 									true,
 								},
+								
+								{
+									"3e7a7924-e1e2-8096-a7dc-80b9137f8561",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -5148,6 +5414,11 @@ local tbl =
 								
 								{
 									"8bc13032-0bf1-4eea-9297-4e1bb080d551",
+									true,
+								},
+								
+								{
+									"3e7a7924-e1e2-8096-a7dc-80b9137f8561",
 									true,
 								},
 							},
@@ -5221,6 +5492,17 @@ local tbl =
 							uuid = "8bc13032-0bf1-4eea-9297-4e1bb080d551",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "3e7a7924-e1e2-8096-a7dc-80b9137f8561",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 301.30844266449,
@@ -5870,6 +6152,11 @@ local tbl =
 									"968b32c6-cdb2-a6e8-aa80-2107dc174ac7",
 									true,
 								},
+								
+								{
+									"032953bc-b5b5-143b-b8c9-20d7760352e8",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -5893,6 +6180,11 @@ local tbl =
 								
 								{
 									"30eac8d6-583d-5b4b-86f8-cab6c9bee1ba",
+									true,
+								},
+								
+								{
+									"032953bc-b5b5-143b-b8c9-20d7760352e8",
 									true,
 								},
 							},
@@ -5920,6 +6212,11 @@ local tbl =
 									"fd277580-1deb-a41d-afe6-fcf7eeba93c2",
 									true,
 								},
+								
+								{
+									"032953bc-b5b5-143b-b8c9-20d7760352e8",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -5943,6 +6240,11 @@ local tbl =
 								
 								{
 									"f9e0d240-7c8d-08f4-948d-83eaa14ea748",
+									true,
+								},
+								
+								{
+									"032953bc-b5b5-143b-b8c9-20d7760352e8",
 									true,
 								},
 							},
@@ -6016,6 +6318,17 @@ local tbl =
 							uuid = "f9e0d240-7c8d-08f4-948d-83eaa14ea748",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "032953bc-b5b5-143b-b8c9-20d7760352e8",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 427.45958272918,
@@ -6211,6 +6524,11 @@ local tbl =
 									"ac008377-a01b-f435-9060-64b3f1bad68c",
 									true,
 								},
+								
+								{
+									"04906fcb-9400-d008-a208-0112dd37f329",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -6234,6 +6552,11 @@ local tbl =
 								
 								{
 									"57af2e42-2c69-0d9e-8c17-b6ddca0a7cac",
+									true,
+								},
+								
+								{
+									"04906fcb-9400-d008-a208-0112dd37f329",
 									true,
 								},
 							},
@@ -6261,6 +6584,11 @@ local tbl =
 									"38297c01-ef75-59f8-b916-407e97dfa4ef",
 									true,
 								},
+								
+								{
+									"04906fcb-9400-d008-a208-0112dd37f329",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -6284,6 +6612,11 @@ local tbl =
 								
 								{
 									"2eaaa9d2-9551-c13c-b6d1-743e960078d0",
+									true,
+								},
+								
+								{
+									"04906fcb-9400-d008-a208-0112dd37f329",
 									true,
 								},
 							},
@@ -6357,6 +6690,17 @@ local tbl =
 							uuid = "2eaaa9d2-9551-c13c-b6d1-743e960078d0",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "04906fcb-9400-d008-a208-0112dd37f329",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 470.18264616806,
@@ -6754,6 +7098,11 @@ local tbl =
 									"1af90968-fe72-375b-9419-bc9df5ef3910",
 									true,
 								},
+								
+								{
+									"35e697d5-94b6-31c4-8326-0e84abe90e32",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -6777,6 +7126,11 @@ local tbl =
 								
 								{
 									"6cf87288-3db5-29c9-9358-1d2f18685c89",
+									true,
+								},
+								
+								{
+									"35e697d5-94b6-31c4-8326-0e84abe90e32",
 									true,
 								},
 							},
@@ -6804,6 +7158,11 @@ local tbl =
 									"e30326b2-9134-bb3d-b26f-945e5b62b38c",
 									true,
 								},
+								
+								{
+									"35e697d5-94b6-31c4-8326-0e84abe90e32",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -6827,6 +7186,11 @@ local tbl =
 								
 								{
 									"896a792d-231b-af76-9105-856a9604b9af",
+									true,
+								},
+								
+								{
+									"35e697d5-94b6-31c4-8326-0e84abe90e32",
 									true,
 								},
 							},
@@ -6900,6 +7264,17 @@ local tbl =
 							uuid = "896a792d-231b-af76-9105-856a9604b9af",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "35e697d5-94b6-31c4-8326-0e84abe90e32",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 491.23479899289,
@@ -7532,6 +7907,11 @@ local tbl =
 									"84918827-750b-8337-9a6e-7debb99fe060",
 									true,
 								},
+								
+								{
+									"37066337-3594-ea0c-8816-6ed3cd584680",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -7555,6 +7935,11 @@ local tbl =
 								
 								{
 									"cf997a2e-9613-2430-99a4-1d87e41802e8",
+									true,
+								},
+								
+								{
+									"37066337-3594-ea0c-8816-6ed3cd584680",
 									true,
 								},
 							},
@@ -7582,6 +7967,11 @@ local tbl =
 									"3afd5cd4-b106-4b41-ad64-be66ea578878",
 									true,
 								},
+								
+								{
+									"37066337-3594-ea0c-8816-6ed3cd584680",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -7605,6 +7995,11 @@ local tbl =
 								
 								{
 									"7fa5bcce-b45a-b36f-b17f-0122fd6abd97",
+									true,
+								},
+								
+								{
+									"37066337-3594-ea0c-8816-6ed3cd584680",
 									true,
 								},
 							},
@@ -7679,6 +8074,17 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "37066337-3594-ea0c-8816-6ed3cd584680",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
 				},
 				mechanicTime = 554.19098210262,
 				name = "[Tank][OT] Reprisal",
@@ -7714,6 +8120,11 @@ local tbl =
 									"1cac558e-92b8-8f24-aed5-7e7da22c9ec5",
 									true,
 								},
+								
+								{
+									"86a944f3-53ab-c659-a137-cec5ce90f522",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -7737,6 +8148,11 @@ local tbl =
 								
 								{
 									"a71f2604-2a31-5af7-895e-cc0cd6e3738a",
+									true,
+								},
+								
+								{
+									"86a944f3-53ab-c659-a137-cec5ce90f522",
 									true,
 								},
 							},
@@ -7764,6 +8180,11 @@ local tbl =
 									"82f9f888-26af-9169-8d69-be905689c44e",
 									true,
 								},
+								
+								{
+									"86a944f3-53ab-c659-a137-cec5ce90f522",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -7787,6 +8208,11 @@ local tbl =
 								
 								{
 									"0f6e732c-85ba-3220-95bf-367f4cc52436",
+									true,
+								},
+								
+								{
+									"86a944f3-53ab-c659-a137-cec5ce90f522",
 									true,
 								},
 							},
@@ -7860,6 +8286,17 @@ local tbl =
 							uuid = "0f6e732c-85ba-3220-95bf-367f4cc52436",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "86a944f3-53ab-c659-a137-cec5ce90f522",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 575.36903594877,
@@ -8630,6 +9067,11 @@ local tbl =
 									"3b1bcc60-a439-c15a-9fc2-1a233630b2c8",
 									true,
 								},
+								
+								{
+									"9ef5d3a6-aab1-985a-b724-6ee334b1e488",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -8653,6 +9095,11 @@ local tbl =
 								
 								{
 									"79eeaa5f-358c-d8d1-ba95-92c5246306e7",
+									true,
+								},
+								
+								{
+									"9ef5d3a6-aab1-985a-b724-6ee334b1e488",
 									true,
 								},
 							},
@@ -8680,6 +9127,11 @@ local tbl =
 									"28f8cd6e-8551-e37a-b215-56e7f6451968",
 									true,
 								},
+								
+								{
+									"9ef5d3a6-aab1-985a-b724-6ee334b1e488",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -8703,6 +9155,11 @@ local tbl =
 								
 								{
 									"a6f59050-5d3f-7529-809f-795cb8142ebe",
+									true,
+								},
+								
+								{
+									"9ef5d3a6-aab1-985a-b724-6ee334b1e488",
 									true,
 								},
 							},
@@ -8776,6 +9233,17 @@ local tbl =
 							uuid = "a6f59050-5d3f-7529-809f-795cb8142ebe",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "9ef5d3a6-aab1-985a-b724-6ee334b1e488",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 703.58654115995,
@@ -8988,6 +9456,11 @@ local tbl =
 									"f14e4937-cffa-d2c9-9a1f-b515ddcec5ae",
 									true,
 								},
+								
+								{
+									"230f1a32-52c4-9dc0-b509-4abcf65e5da6",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -9011,6 +9484,11 @@ local tbl =
 								
 								{
 									"ab1db2a6-3d0f-2922-9007-a40e1425e2a0",
+									true,
+								},
+								
+								{
+									"230f1a32-52c4-9dc0-b509-4abcf65e5da6",
 									true,
 								},
 							},
@@ -9038,6 +9516,11 @@ local tbl =
 									"0b17f292-b4ec-0ae9-8c83-86c46ad80662",
 									true,
 								},
+								
+								{
+									"230f1a32-52c4-9dc0-b509-4abcf65e5da6",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -9061,6 +9544,11 @@ local tbl =
 								
 								{
 									"708919d4-bced-d117-8751-84fa5615b673",
+									true,
+								},
+								
+								{
+									"230f1a32-52c4-9dc0-b509-4abcf65e5da6",
 									true,
 								},
 							},
@@ -9134,6 +9622,17 @@ local tbl =
 							uuid = "708919d4-bced-d117-8751-84fa5615b673",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "230f1a32-52c4-9dc0-b509-4abcf65e5da6",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 703.58654115995,
@@ -9782,6 +10281,11 @@ local tbl =
 									"02fd9d13-a6ef-24e8-ad6d-9b5a81e6dd79",
 									true,
 								},
+								
+								{
+									"b586fe4c-7f80-08f9-af30-1d317170c1cb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -9805,6 +10309,11 @@ local tbl =
 								
 								{
 									"edd246bf-0b22-b625-9ea0-6556d0a5e744",
+									true,
+								},
+								
+								{
+									"b586fe4c-7f80-08f9-af30-1d317170c1cb",
 									true,
 								},
 							},
@@ -9832,6 +10341,11 @@ local tbl =
 									"ed9db611-0f1c-b297-ab81-184dd217b87c",
 									true,
 								},
+								
+								{
+									"b586fe4c-7f80-08f9-af30-1d317170c1cb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -9855,6 +10369,11 @@ local tbl =
 								
 								{
 									"2a9587be-3271-f7fa-a7ee-33ff787e88dd",
+									true,
+								},
+								
+								{
+									"b586fe4c-7f80-08f9-af30-1d317170c1cb",
 									true,
 								},
 							},
@@ -9928,6 +10447,17 @@ local tbl =
 							uuid = "2a9587be-3271-f7fa-a7ee-33ff787e88dd",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "b586fe4c-7f80-08f9-af30-1d317170c1cb",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 895.49672653853,
@@ -10146,6 +10676,11 @@ local tbl =
 									"59b7d6bf-2cf8-f34f-95db-265fe3aac0fa",
 									true,
 								},
+								
+								{
+									"6d874dd4-402b-63c4-83e7-45e6137427c9",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -10169,6 +10704,11 @@ local tbl =
 								
 								{
 									"0c69a961-02e8-a0e6-81b7-8d7cdd4adbf2",
+									true,
+								},
+								
+								{
+									"6d874dd4-402b-63c4-83e7-45e6137427c9",
 									true,
 								},
 							},
@@ -10196,6 +10736,11 @@ local tbl =
 									"339e44e5-e343-1437-8278-fa13af843d68",
 									true,
 								},
+								
+								{
+									"6d874dd4-402b-63c4-83e7-45e6137427c9",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -10219,6 +10764,11 @@ local tbl =
 								
 								{
 									"0fcd6e18-60d4-1991-91ad-61bad9a01e2d",
+									true,
+								},
+								
+								{
+									"6d874dd4-402b-63c4-83e7-45e6137427c9",
 									true,
 								},
 							},
@@ -10292,6 +10842,17 @@ local tbl =
 							uuid = "0fcd6e18-60d4-1991-91ad-61bad9a01e2d",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "6d874dd4-402b-63c4-83e7-45e6137427c9",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 934.65048710577,
@@ -11122,6 +11683,11 @@ local tbl =
 									"87487bc8-4bcd-b11f-a78d-0153df028e3f",
 									true,
 								},
+								
+								{
+									"472258c7-fef5-d959-b950-4f5951caff70",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -11145,6 +11711,11 @@ local tbl =
 								
 								{
 									"e745b3cc-e0f6-66f4-bbd2-7275732721ec",
+									true,
+								},
+								
+								{
+									"472258c7-fef5-d959-b950-4f5951caff70",
 									true,
 								},
 							},
@@ -11172,6 +11743,11 @@ local tbl =
 									"5452d3df-c9d6-c000-9a3d-aa2327420cb7",
 									true,
 								},
+								
+								{
+									"472258c7-fef5-d959-b950-4f5951caff70",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -11195,6 +11771,11 @@ local tbl =
 								
 								{
 									"344dac4e-f384-f701-a91c-bd22bf48c133",
+									true,
+								},
+								
+								{
+									"472258c7-fef5-d959-b950-4f5951caff70",
 									true,
 								},
 							},
@@ -11268,6 +11849,17 @@ local tbl =
 							uuid = "344dac4e-f384-f701-a91c-bd22bf48c133",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "472258c7-fef5-d959-b950-4f5951caff70",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 972.7295459293,
@@ -11556,6 +12148,11 @@ local tbl =
 									"2e39180b-1143-5fca-b5b0-41321caef7a5",
 									true,
 								},
+								
+								{
+									"ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -11579,6 +12176,11 @@ local tbl =
 								
 								{
 									"12722c5d-c56d-cb93-9f25-bd9bee3bc51a",
+									true,
+								},
+								
+								{
+									"ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
 									true,
 								},
 							},
@@ -11606,6 +12208,11 @@ local tbl =
 									"40c7e13b-7ead-78fa-9a6f-41d4f662c8ed",
 									true,
 								},
+								
+								{
+									"ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -11629,6 +12236,11 @@ local tbl =
 								
 								{
 									"421fcef6-c318-fba6-a78a-83bce99ae74b",
+									true,
+								},
+								
+								{
+									"ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
 									true,
 								},
 							},
@@ -11702,6 +12314,17 @@ local tbl =
 							uuid = "421fcef6-c318-fba6-a78a-83bce99ae74b",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 990.28011146124,
@@ -12724,6 +13347,11 @@ local tbl =
 									"14cc7ef2-2982-4fb3-9475-b7d00bf93e6a",
 									true,
 								},
+								
+								{
+									"ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -12747,6 +13375,11 @@ local tbl =
 								
 								{
 									"c63c0437-71a0-6cff-b1c3-4441888438ab",
+									true,
+								},
+								
+								{
+									"ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
 									true,
 								},
 							},
@@ -12774,6 +13407,11 @@ local tbl =
 									"b06614b8-aa69-19c4-8426-733ac1193c41",
 									true,
 								},
+								
+								{
+									"ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -12797,6 +13435,11 @@ local tbl =
 								
 								{
 									"7259e1ab-18fd-2b15-9592-f418dd6fa0bd",
+									true,
+								},
+								
+								{
+									"ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
 									true,
 								},
 							},
@@ -12870,6 +13513,17 @@ local tbl =
 							uuid = "7259e1ab-18fd-2b15-9592-f418dd6fa0bd",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1034.3163569005,
@@ -13079,6 +13733,11 @@ local tbl =
 									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
 									true,
 								},
+								
+								{
+									"ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
 							uuid = "6889f4c9-147b-4f2c-b432-abe099d52d09",
@@ -13101,6 +13760,11 @@ local tbl =
 								
 								{
 									"503d3c23-6f7b-f34a-aa31-032f4b6c5f35",
+									true,
+								},
+								
+								{
+									"ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
 									true,
 								},
 							},
@@ -13128,6 +13792,11 @@ local tbl =
 									"48ca0ed6-a9b5-6850-9fb0-149b54858ad3",
 									true,
 								},
+								
+								{
+									"ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -13151,6 +13820,11 @@ local tbl =
 								
 								{
 									"96d33329-1e83-9a40-b4e9-88ae5c1fa25c",
+									true,
+								},
+								
+								{
+									"ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
 									true,
 								},
 							},
@@ -13224,6 +13898,17 @@ local tbl =
 							uuid = "96d33329-1e83-9a40-b4e9-88ae5c1fa25c",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1054.5292176297,
@@ -14307,6 +14992,11 @@ local tbl =
 									"4f30c2d7-4b4c-90b4-9650-0d2411f5d105",
 									true,
 								},
+								
+								{
+									"663a4694-fc61-c623-8f88-74b8f18e5196",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -14330,6 +15020,11 @@ local tbl =
 								
 								{
 									"4fd504d8-d8a8-a28d-b753-02dc5819cd12",
+									true,
+								},
+								
+								{
+									"663a4694-fc61-c623-8f88-74b8f18e5196",
 									true,
 								},
 							},
@@ -14357,6 +15052,11 @@ local tbl =
 									"78c14014-0dc5-bd93-98a4-ddbf288e1de1",
 									true,
 								},
+								
+								{
+									"663a4694-fc61-c623-8f88-74b8f18e5196",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -14380,6 +15080,11 @@ local tbl =
 								
 								{
 									"df4e985d-727b-2eb8-85ab-81407713ef54",
+									true,
+								},
+								
+								{
+									"663a4694-fc61-c623-8f88-74b8f18e5196",
 									true,
 								},
 							},
@@ -14453,6 +15158,17 @@ local tbl =
 							uuid = "df4e985d-727b-2eb8-85ab-81407713ef54",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "663a4694-fc61-c623-8f88-74b8f18e5196",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1125.2071474604,
@@ -14838,6 +15554,11 @@ local tbl =
 									"efa4d6a1-1beb-a31d-b687-601ae6fb8977",
 									true,
 								},
+								
+								{
+									"d78b4f36-bc8a-3508-a440-6696a434bb55",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuWAR3_Tankbar_Reprisal",
@@ -14861,6 +15582,11 @@ local tbl =
 								
 								{
 									"4ece4870-17f1-2e25-a64b-aae4972438ea",
+									true,
+								},
+								
+								{
+									"d78b4f36-bc8a-3508-a440-6696a434bb55",
 									true,
 								},
 							},
@@ -14888,6 +15614,11 @@ local tbl =
 									"4c1863e5-e157-73a9-abcc-698cdf4c6b4d",
 									true,
 								},
+								
+								{
+									"d78b4f36-bc8a-3508-a440-6696a434bb55",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_RikuPLD3_Tankbar_Reprisal",
@@ -14911,6 +15642,11 @@ local tbl =
 								
 								{
 									"80b2b7ce-4595-8366-b8c3-7fa8f9ceb8b6",
+									true,
+								},
+								
+								{
+									"d78b4f36-bc8a-3508-a440-6696a434bb55",
 									true,
 								},
 							},
@@ -14984,6 +15720,17 @@ local tbl =
 							uuid = "80b2b7ce-4595-8366-b8c3-7fa8f9ceb8b6",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "d78b4f36-bc8a-3508-a440-6696a434bb55",
+							version = 3,
+						},
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1141.5122474604,
