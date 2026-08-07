@@ -134,6 +134,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 114.28706589603,
 				name = "[DPS] Force Potion",
 				timelineIndex = 24,
@@ -717,7 +718,8 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 16766,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -726,12 +728,13 @@ local tbl =
 									true,
 								},
 							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Detonate",
-							uuid = "15c31ed7-c6d4-8f45-a99e-ab9223f5df8e",
-							variableTogglesType = 2,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "55300f67-799a-1148-95f1-8383a4410972",
 							version = 2.1,
 						},
+						inheritedIndex = 2,
 					},
 				},
 				conditions = 
@@ -742,7 +745,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 8,
+							hpValue = 6,
 							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
 							version = 3,
 						},
@@ -1796,7 +1799,7 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 148,
-				timerEndOffset = 3,
+				timerEndOffset = 5,
 				timerOffset = -15,
 				timerStartOffset = -6,
 				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
@@ -2204,7 +2207,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
 							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
 							variableTogglesType = 2,
@@ -3087,6 +3089,214 @@ local tbl =
 				timelineIndex = 225,
 				timerOffset = 0.20000000298023,
 				uuid = "5a76a100-93b3-a85f-831d-9db1f76f988f",
+				version = 2,
+			},
+		},
+	},
+	[227] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Detonate",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36982,
+							conditions = 
+							{
+								
+								{
+									"49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							targetType = "Enemy",
+							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Full Metal",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "717ee0fe-faea-5832-a133-c8300e77da0a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 36982,
+							conditions = 
+							{
+								
+								{
+									"49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_QueenOverdrive",
+							targetType = "Enemy",
+							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Overdrive",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "e1a3dd6d-21c3-492d-8d6d-1fdc80ac7a8a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"81b35c50-534c-2ded-8505-3c5641305692",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "8bc8f75e-7e1b-fd3d-8b82-07aeb0baead1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeValue = 50,
+							name = "Heat Gauge > 50",
+							uuid = "81b35c50-534c-2ded-8505-3c5641305692",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Burn Heat",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -30,
+				uuid = "b58f4988-b24d-ecfd-9585-c29f15341db4",
 				version = 2,
 			},
 		},
