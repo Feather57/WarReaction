@@ -833,6 +833,7 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
 							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
 							version = 2.1,
 						},
@@ -2388,6 +2389,7 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
 							uuid = "6c19ada3-1c00-243e-bb65-ee36a8157997",
 							version = 2.1,
 						},
@@ -4390,6 +4392,188 @@ local tbl =
 				name = "[Tank] KB Cancel Off",
 				timelineIndex = 38,
 				uuid = "98d32884-5a94-42d6-89c0-c2f50b85e9cb",
+				version = 2,
+			},
+		},
+	},
+	[39] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0c2ec1bc-9469-2482-8fd5-ca38c4e1b17e",
+									true,
+								},
+								
+								{
+									"7439de91-cab6-2bc7-a78b-ec7ec349d992",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Hotbar_Provoke",
+							uuid = "4d46f271-7f86-dc75-8c6c-c196fda3ce1b",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0c2ec1bc-9469-2482-8fd5-ca38c4e1b17e",
+									true,
+								},
+								
+								{
+									"142762d0-3a82-f8a8-a714-3f40d3bd4ded",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuDRK3_Hotbar_Provoke",
+							uuid = "42051b85-2a31-9c45-b753-29945417a45f",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0c2ec1bc-9469-2482-8fd5-ca38c4e1b17e",
+									true,
+								},
+								
+								{
+									"ef3ccd6d-9fa4-5597-ba2a-896146477dab",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuPLD3_Hotbar_Provoke",
+							uuid = "0c67b8f1-a3ab-7c5c-916d-83fe1e3fc849",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0c2ec1bc-9469-2482-8fd5-ca38c4e1b17e",
+									true,
+								},
+								
+								{
+									"0ca41497-3ed8-910e-9d9e-060366e5bfce",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuGNB3_Hotbar_Provoke",
+							uuid = "eb38ecf3-30a1-b5ed-8ff1-f90ce9f45446",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "0c2ec1bc-9469-2482-8fd5-ca38c4e1b17e",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "142762d0-3a82-f8a8-a714-3f40d3bd4ded",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "7439de91-cab6-2bc7-a78b-ec7ec349d992",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "PALADIN",
+							name = "is PLD",
+							uuid = "ef3ccd6d-9fa4-5597-ba2a-896146477dab",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "GUNBREAKER",
+							name = "is GNB",
+							uuid = "0ca41497-3ed8-910e-9d9e-060366e5bfce",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 207.87965305988,
+				name = "[Tank][MT] Provoke",
+				timelineIndex = 39,
+				timerOffset = 3,
+				uuid = "4d7dd547-2707-62f7-a869-fc5e7da8ae3a",
 				version = 2,
 			},
 		},

@@ -68,77 +68,6 @@ local tbl =
 							{
 								
 								{
-									"079821a5-b10f-7d4d-a64c-6c10a9a5feb8",
-									true,
-								},
-								
-								{
-									"0f31a908-8391-90cf-9c66-d9c6e20f2d19",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
-							uuid = "14861bc3-5569-4ba6-aced-227408ecbea7",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "079821a5-b10f-7d4d-a64c-6c10a9a5feb8",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 2,
-							hpValue = 70,
-							uuid = "0f31a908-8391-90cf-9c66-d9c6e20f2d19",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 15.261765625,
-				name = "[WAR][MT] Equilibrium",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = 10,
-				timerOffset = -3,
-				timerStartOffset = -2,
-				uuid = "baf600d6-aad9-8151-a37a-f0ca7b297b76",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
 									"17758e73-2d9f-4563-8ac2-465d86b23cdc",
 									true,
 								},
@@ -347,6 +276,122 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "646ef752-42b9-32a6-9637-334f61dfb6f7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[WAR] Check Toggles",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -10,
+				timerOffset = -17,
+				timerStartOffset = -17,
+				uuid = "c4b03966-a5e6-bf19-8530-b55bd1688ade",
+				version = 2,
+			},
+		},
+	},
+	
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"079821a5-b10f-7d4d-a64c-6c10a9a5feb8",
+									true,
+								},
+								
+								{
+									"0f31a908-8391-90cf-9c66-d9c6e20f2d19",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Equilibrium",
+							uuid = "14861bc3-5569-4ba6-aced-227408ecbea7",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "079821a5-b10f-7d4d-a64c-6c10a9a5feb8",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							uuid = "0f31a908-8391-90cf-9c66-d9c6e20f2d19",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 18.37640625,
+				name = "[WAR][MT] Equilibrium",
+				timeRange = true,
+				timelineIndex = 2,
+				timerEndOffset = 10,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "a59a7c6c-57e1-f135-8ed7-a6c0d776f520",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	}, 
 	[7] = 
@@ -1130,6 +1175,100 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 15,
+							uuid = "45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.52218784626,
+				name = "[WAR] Hold CD",
+				timeRange = true,
+				timelineIndex = 38,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "21a46614-57eb-7da3-9f11-e1e8a04237e5",
+				version = 2,
+			},
+		},
+	},
+	[39] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "646ef752-42b9-32a6-9637-334f61dfb6f7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 207.87965305988,
+				name = "[WAR] Stop Hold Ressource",
+				timelineIndex = 39,
+				timerEndOffset = 2,
+				timerOffset = -2,
+				timerStartOffset = -15,
+				uuid = "ed540e88-5115-9e51-af0b-b6b55c4a0cb1",
+				version = 2,
+			},
 		},
 	},
 	[40] = 
