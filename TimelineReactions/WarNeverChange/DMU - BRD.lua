@@ -36,6 +36,102 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Playlist",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Playlist",
+				timelineIndex = 1,
+				timerOffset = -28,
+				uuid = "88a1d5bd-6479-4921-a8fb-c2d45f76cecf",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Downtime Song Off",
+				timelineIndex = 1,
+				timerOffset = -15,
+				uuid = "60a13e17-8f3b-43e9-85c1-29a5ceb9f85d",
+				version = 2,
+			},
+		},
 	}, 
 	[3] = 
 	{
@@ -314,6 +410,54 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.52218784626,
+				name = "[BRD] Downtime Song On",
+				timelineIndex = 38,
+				timerOffset = -1,
+				uuid = "658fb39d-0bdf-7a42-a477-6b7c851a3bf2",
+				version = 2,
+			},
+		},
 	},
 	[39] = 
 	{
@@ -361,6 +505,55 @@ local tbl =
 				timelineIndex = 39,
 				timerOffset = -2,
 				uuid = "d5f42a68-331a-31ee-9f02-e6b8568877cc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 207.87965305988,
+				name = "[BRD] Downtime Song Off",
+				timelineIndex = 39,
+				timerOffset = -1,
+				uuid = "88f0f0ad-4c11-53ec-8f79-255cc1b6ee99",
 				version = 2,
 			},
 		},
@@ -430,6 +623,57 @@ local tbl =
 				name = "[BRD] Dot",
 				timelineIndex = 72,
 				uuid = "10ed1b4d-d33c-368f-af80-084e91d14c23",
+				version = 2,
+			},
+		},
+	},
+	[74] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 381.48132335556,
+				name = "[BRD] Downtime Song On",
+				timelineIndex = 74,
+				timerOffset = -1,
+				uuid = "eb8812f4-5c94-549e-9f22-e18cfaf27228",
 				version = 2,
 			},
 		},
@@ -686,6 +930,55 @@ local tbl =
 				timelineIndex = 77,
 				timerOffset = -4,
 				uuid = "301e1316-a373-2221-b9a9-71e6c66adadf",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 427.45958272918,
+				name = "[BRD] Downtime Song Off",
+				timelineIndex = 77,
+				timerOffset = -1,
+				uuid = "b1a5d72f-6801-32d9-add1-1231274a0e29",
 				version = 2,
 			},
 		},
@@ -1144,6 +1437,57 @@ local tbl =
 			},
 		},
 	},
+	[148] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 715.37264047081,
+				name = "[BRD] Downtime Song On",
+				timelineIndex = 148,
+				timerOffset = -1,
+				uuid = "3f6ddd7d-44e9-883a-9708-f97f6b27bd01",
+				version = 2,
+			},
+		},
+	},
 	[150] = 
 	{
 		
@@ -1260,6 +1604,55 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[BRD] Downtime Song Off",
+				timelineIndex = 150,
+				timerOffset = -1,
+				uuid = "7308745c-ce1b-eda7-a328-d2fab2d15ae6",
+				version = 2,
+			},
+		},
 	},
 	[155] = 
 	{
@@ -1342,6 +1735,109 @@ local tbl =
 				timerOffset = 9,
 				timerStartOffset = 6,
 				uuid = "6581f15a-ebda-b82a-82a3-7c946412d4c7",
+				version = 2,
+			},
+		},
+	},
+	[170] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 934.65552902023,
+				name = "[BRD] Downtime Song On",
+				timelineIndex = 170,
+				timerOffset = -1,
+				uuid = "ca2bd4fb-276b-dc71-9112-a43586825a1b",
+				version = 2,
+			},
+		},
+	},
+	[171] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "BARD",
+							name = "is BRD",
+							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 965.64810213372,
+				name = "[BRD] Downtime Song Off",
+				timelineIndex = 171,
+				timerOffset = -1,
+				uuid = "56c171df-8672-3122-a266-f562868f1188",
 				version = 2,
 			},
 		},
