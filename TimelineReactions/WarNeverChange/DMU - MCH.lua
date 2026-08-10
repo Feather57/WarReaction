@@ -1969,7 +1969,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 1,
+							hpValue = 2,
 							uuid = "ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
 							version = 3,
 						},
@@ -2335,6 +2335,75 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36982,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 934.65552902023,
+				name = "[MCH] Force Full Metal",
+				timelineIndex = 170,
+				timerOffset = -2,
+				timerStartOffset = -15,
+				uuid = "11097712-fe5b-f4a2-8888-cffeff5d5bbd",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36981,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 934.65552902023,
+				name = "[MCH] Force Excavator",
+				timelineIndex = 170,
+				timerEndOffset = 10,
+				timerOffset = -3,
+				timerStartOffset = 1,
+				uuid = "99783d32-709e-8d4b-b81e-8656fd6ea89c",
+				version = 2,
+			},
 		},
 	},
 	[171] = 
@@ -2990,38 +3059,6 @@ local tbl =
 			},
 		},
 	},
-	[224] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1146.5870474604,
-				name = "[MCH] Tactician",
-				timelineIndex = 224,
-				timerOffset = -2,
-				uuid = "67cd83ed-2b1f-250a-b885-c20ed0d748ff",
-				version = 2,
-			},
-		},
-	},
 	[225] = 
 	{
 		
@@ -3092,9 +3129,6 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[227] = 
-	{
 		
 		{
 			data = 
@@ -3105,48 +3139,28 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 16766,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"9a76b4e7-b69d-904f-930e-a607c59479e4",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 4,
-							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
-							version = 3,
-						},
-					},
 				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Force Detonate",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
+				mechanicTime = 1149.6575474604,
+				name = "[MCH] Tactician",
+				timelineIndex = 225,
+				timerOffset = -2,
+				uuid = "8c35e708-e00b-086c-a6d7-0401f14b47d3",
 				version = 2,
 			},
-			inheritedIndex = 4,
 		},
+	},
+	[227] = 
+	{
 		
 		{
 			data = 
@@ -3299,6 +3313,58 @@ local tbl =
 				uuid = "b58f4988-b24d-ecfd-9585-c29f15341db4",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Detonate",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	},
 	inheritedProfiles = 
