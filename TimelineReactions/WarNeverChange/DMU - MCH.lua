@@ -51,13 +51,8 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
 							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
 					},
@@ -66,16 +61,17 @@ local tbl =
 				{
 				},
 				mechanicTime = 15.261765625,
-				name = "[DPS] Potion Off",
+				name = "[DPS] Potion On",
+				timeRange = true,
 				timelineIndex = 1,
-				timerOffset = -15,
-				timerStartOffset = -15,
-				uuid = "7cd97fff-5747-fc45-846f-860f25136b4c",
+				timerEndOffset = 1,
+				timerStartOffset = -17,
+				uuid = "40a794d8-9ea5-4fba-8fa4-c4f73e90303f",
 				version = 2,
 			},
 		},
 	}, 
-	[7] = 
+	[3] = 
 	{
 		
 		{
@@ -88,12 +84,9 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
 							gVar = "ACR_TensorMagnum3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
 					},
@@ -101,46 +94,12 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 42.238586763472,
-				name = "[DPS] Potion On",
-				timelineIndex = 7,
-				timerStartOffset = -15,
-				uuid = "918c33c2-d8c2-b175-8838-da75c2f49960",
-				version = 2,
-			},
-		},
-	},
-	[24] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				enabled = false,
-				mechanicTime = 114.28706589603,
-				name = "[DPS] Force Potion",
-				timelineIndex = 24,
-				timerOffset = -2,
-				timerStartOffset = 6,
-				uuid = "a1dac2c5-706d-a4d5-9c59-91336d389516",
+				mechanicTime = 29.049328125,
+				name = "[DPS] Potion Off",
+				timelineIndex = 3,
+				timerEndOffset = 1,
+				timerStartOffset = -17,
+				uuid = "6f22e0a3-c6c5-edcb-814b-3e06f27af63e",
 				version = 2,
 			},
 		},
@@ -159,40 +118,6 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				timerStartOffset = -16.75,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 132.26514619605,
-				name = "[DPS] Potion Off",
-				timelineIndex = 26,
-				timerStartOffset = 6,
-				uuid = "8051d75e-1856-7a71-a4a0-acbd0acb7e68",
-				version = 2,
 			},
 		},
 	},
@@ -242,6 +167,102 @@ local tbl =
 			inheritedOverwrites = 
 			{
 				timerOffset = -2,
+			},
+		},
+	},
+	[48] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 269.6455060413,
+				name = "[DPS] Potion On",
+				timelineIndex = 48,
+				timerEndOffset = 1,
+				timerOffset = -5,
+				timerStartOffset = -17,
+				uuid = "dd77b993-1e2a-6b96-aac4-a4040bafc1b0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 269.6455060413,
+				name = "[DPS] Use Potion",
+				timeRange = true,
+				timelineIndex = 48,
+				timerEndOffset = 4,
+				timerStartOffset = -4,
+				uuid = "93097158-1f18-1061-a8d4-0260a989961e",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 269.6455060413,
+				name = "[DPS] Potion Off",
+				timelineIndex = 48,
+				timerEndOffset = 1,
+				timerOffset = 5,
+				timerStartOffset = -17,
+				uuid = "df2e2c22-51e3-fa88-8f22-067e9634ab86",
+				version = 2,
 			},
 		},
 	},
@@ -787,6 +808,11 @@ local tbl =
 									"49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
 									true,
 								},
+								
+								{
+									"30576827-43b7-81c3-b8b8-3e1d08dfff85",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
@@ -807,6 +833,16 @@ local tbl =
 							conditionType = 3,
 							hpValue = 8,
 							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 3866,
+							category = "Self",
+							uuid = "30576827-43b7-81c3-b8b8-3e1d08dfff85",
 							version = 3,
 						},
 					},
@@ -1169,8 +1205,38 @@ local tbl =
 				mechanicTime = 427.45958272918,
 				name = "[MCH] Early Queen",
 				timelineIndex = 77,
-				timerOffset = -1.5,
+				timerOffset = -2,
 				uuid = "7e093d3d-4d9b-256e-99a2-61eef7775f82",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7418,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "d449643d-2637-ea19-bf86-c4375976adfc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 427.45958272918,
+				name = "[MCH] Early Flamethrower",
+				timeRange = true,
+				timelineIndex = 77,
+				timerStartOffset = -1.7999999523163,
+				uuid = "0664e07c-a941-5f02-9d5a-d8cdd8226065",
 				version = 2,
 			},
 		},
@@ -1229,74 +1295,9 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 430.61710950197,
-				name = "[DPS] Potion On",
-				timelineIndex = 78,
-				timerOffset = 9,
-				timerStartOffset = 6,
-				uuid = "a5caa474-f4a4-181c-aeb2-b506a4cc58c5",
-				version = 2,
-			},
-		},
 	},
 	[79] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 450.00390950196,
-				name = "[DPS] Force Potion",
-				timelineIndex = 79,
-				timerOffset = 5,
-				timerStartOffset = 6,
-				uuid = "53e9895d-ff82-6b37-95c6-da359358a733",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -1345,44 +1346,6 @@ local tbl =
 				timelineIndex = 79,
 				timerOffset = 7.5,
 				uuid = "83dfe696-4e21-b35a-bba4-dfb45d6faec1",
-				version = 2,
-			},
-		},
-	},
-	[81] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 470.18264616806,
-				name = "[DPS] Potion Off",
-				timelineIndex = 81,
-				timerOffset = 7,
-				timerStartOffset = 6,
-				uuid = "5d87afcf-1208-46d8-9ab7-1b9c1a3453a6",
 				version = 2,
 			},
 		},
@@ -1454,6 +1417,102 @@ local tbl =
 				timelineIndex = 94,
 				timerOffset = -4,
 				uuid = "8d6719e6-a091-b39c-b065-ff656ea8b3cf",
+				version = 2,
+			},
+		},
+	},
+	[103] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 540.01642260272,
+				name = "[DPS] Potion On",
+				timelineIndex = 103,
+				timerEndOffset = 1,
+				timerOffset = -7,
+				timerStartOffset = -17,
+				uuid = "4db29531-ccd3-dc2e-a119-ec654f51b7bd",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 540.01642260272,
+				name = "[DPS] Use Potion",
+				timeRange = true,
+				timelineIndex = 103,
+				timerEndOffset = 6,
+				timerStartOffset = -6,
+				uuid = "2dc267e9-d830-93c4-96fa-6dda9a3e98f1",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 540.01642260272,
+				name = "[DPS] Potion Off",
+				timelineIndex = 103,
+				timerEndOffset = 1,
+				timerOffset = 7,
+				timerStartOffset = -17,
+				uuid = "da23ba8b-6ab3-20f4-861d-a2fbf781726f",
 				version = 2,
 			},
 		},
@@ -2161,6 +2220,9 @@ local tbl =
 				version = 2,
 			},
 		},
+	},
+	[164] = 
+	{
 		
 		{
 			data = 
@@ -2172,27 +2234,22 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
 							gVar = "ACR_TensorMagnum3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "83ace834-5613-43a4-88f6-dbf4803abeb6",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
-				mechanicTime = 801.88345429349,
+				mechanicTime = 885.32629175592,
 				name = "[DPS] Potion On",
-				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "f086044d-02b0-3b6c-89d4-5d1b99eea981",
+				timelineIndex = 164,
+				timerEndOffset = 1,
+				timerOffset = -7,
+				timerStartOffset = -17,
+				uuid = "efac4ff3-457b-f903-a609-921c9809488e",
 				version = 2,
 			},
 		},
@@ -2208,7 +2265,7 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -2217,19 +2274,17 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 801.88345429349,
-				name = "[DPS] Force Potion",
+				mechanicTime = 885.32629175592,
+				name = "[DPS] Use Potion",
 				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 10,
-				timerStartOffset = -2,
-				uuid = "7980c25c-2219-ac7d-b4c2-f10dea58f43d",
+				timelineIndex = 164,
+				timerEndOffset = 6,
+				timerStartOffset = -6,
+				uuid = "ff08af90-d888-df6a-b7de-7279f6d295e6",
 				version = 2,
 			},
+			inheritedIndex = 5,
 		},
-	},
-	[155] = 
-	{
 		
 		{
 			data = 
@@ -2241,32 +2296,28 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
 							gVar = "ACR_TensorMagnum3_Potion",
 							gVarValue = 2,
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
-				mechanicTime = 836.78243971594,
+				mechanicTime = 885.32629175592,
 				name = "[DPS] Potion Off",
-				timelineIndex = 155,
-				timerOffset = 9,
-				timerStartOffset = 6,
-				uuid = "59f66748-9bd0-f0d8-b08a-066efd564709",
+				timelineIndex = 164,
+				timerEndOffset = 1,
+				timerOffset = 7,
+				timerStartOffset = -17,
+				uuid = "fc00a48d-bda5-6fce-9e1d-64cea11ba809",
 				version = 2,
 			},
 		},
 	},
-	[163] = 
+	[165] = 
 	{
 		
 		{
@@ -2290,12 +2341,47 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 877.06989073874,
+				mechanicTime = 895.49672653853,
 				name = "[MCH] Hold Battery",
-				timelineIndex = 163,
-				timerOffset = -4,
+				timelineIndex = 165,
+				timerOffset = -3,
 				timerStartOffset = -15,
-				uuid = "d9a963ce-65ca-1211-bde0-c4f6b205f5de",
+				uuid = "ce9f7226-01f6-5f36-8aa4-7c139524dc1a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Dismantle",
+				timelineIndex = 165,
+				timerOffset = -2,
+				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
 				version = 2,
 			},
 		},
@@ -2312,42 +2398,16 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 16766,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 934.65552902023,
-				name = "[MCH] Force Detonate",
-				timeRange = true,
-				timelineIndex = 170,
-				timerEndOffset = -1,
-				timerStartOffset = -4,
-				uuid = "e7cf5467-2fe5-ca3f-a57f-db2f3e347575",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 36982,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"b5a12f34-2ec7-2385-bd99-5122156a86fd",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
@@ -2360,6 +2420,16 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 3866,
+							category = "Self",
+							uuid = "b5a12f34-2ec7-2385-bd99-5122156a86fd",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 934.65552902023,
 				name = "[MCH] Force Full Metal",
@@ -2404,6 +2474,40 @@ local tbl =
 				uuid = "99783d32-709e-8d4b-b81e-8656fd6ea89c",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 934.65552902023,
+				name = "[MCH] Force Detonate",
+				timeRange = true,
+				timelineIndex = 170,
+				timerEndOffset = -1,
+				timerStartOffset = -4,
+				uuid = "e7cf5467-2fe5-ca3f-a57f-db2f3e347575",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 	},
 	[171] = 
@@ -2706,56 +2810,6 @@ local tbl =
 				timelineIndex = 199,
 				timerOffset = -3,
 				uuid = "46e72e9d-4388-a8a8-8515-4929d9198269",
-				version = 2,
-			},
-		},
-	},
-	[200] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "83ace834-5613-43a4-88f6-dbf4803abeb6",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1046.2272185016,
-				name = "[DPS] Potion",
-				timeRange = true,
-				timelineIndex = 200,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "cc0646bd-d6d9-f155-bb33-0f4577ddc18d",
 				version = 2,
 			},
 		},
@@ -3159,6 +3213,101 @@ local tbl =
 			},
 		},
 	},
+	[226] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[DPS] Potion On",
+				timelineIndex = 226,
+				timerEndOffset = 1,
+				timerStartOffset = -17,
+				uuid = "5c5a9b58-a7e7-8071-97ba-9323a0b4456e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[DPS] Use Potion",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 10,
+				timerStartOffset = 1,
+				uuid = "656ea182-2887-be74-b881-dc6fe1722162",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[DPS] Potion Off",
+				timelineIndex = 226,
+				timerEndOffset = 1,
+				timerOffset = 15,
+				timerStartOffset = -17,
+				uuid = "f5284cc8-7422-cedb-80fb-84c033dfd933",
+				version = 2,
+			},
+		},
+	},
 	[227] = 
 	{
 		
@@ -3177,6 +3326,11 @@ local tbl =
 								
 								{
 									"49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+									true,
+								},
+								
+								{
+									"81e6ddd9-0733-68eb-8889-f9ee035af489",
 									true,
 								},
 							},
@@ -3199,6 +3353,16 @@ local tbl =
 							conditionType = 3,
 							hpValue = 4,
 							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 3866,
+							category = "Self",
+							uuid = "81e6ddd9-0733-68eb-8889-f9ee035af489",
 							version = 3,
 						},
 					},
