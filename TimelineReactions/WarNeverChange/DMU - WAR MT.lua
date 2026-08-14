@@ -1115,6 +1115,56 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							gVarValue = 2,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 15,
+							uuid = "45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 197.52218784626,
+				name = "[WAR] Hold CD",
+				timeRange = true,
+				timelineIndex = 38,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "21a46614-57eb-7da3-9f11-e1e8a04237e5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 25751,
 							conditions = 
 							{
@@ -1175,56 +1225,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_CD",
-							gVarValue = 2,
-							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 15,
-							uuid = "45a5b6da-27d6-b7f7-9f77-7dae8780ff89",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 197.52218784626,
-				name = "[WAR] Hold CD",
-				timeRange = true,
-				timelineIndex = 38,
-				timerEndOffset = 2,
-				timerStartOffset = -15,
-				uuid = "21a46614-57eb-7da3-9f11-e1e8a04237e5",
-				version = 2,
-			},
 		},
 	},
 	[39] = 
@@ -2670,6 +2670,43 @@ local tbl =
 				timerStartOffset = -1,
 				uuid = "9ea1a413-7be1-81d7-a06d-7a87ac581ab1",
 				version = 2,
+			},
+		},
+	},
+	[93] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "[Core] Lockface Head/Tailwind",
+				uuid = "a74d4055-8649-45fe-bbd2-7ef82ee0d8ca",
+				version = 2,
+			},
+			inheritedObjectUUID = "17693eee-fbfd-a63c-95a6-5494e8df119a",
+			inheritedOverwrites = 
+			{
+				conditions = 
+				{
+					
+					{
+						type = "add",
+						value = 
+						{
+							data = 
+							{
+								name = "",
+								uuid = "e97b45aa-9351-2f65-94a8-71cc25b99187",
+								version = 3,
+							},
+							inheritedObjectUUID = "c7f194ac-e8d3-d1e2-8972-5cd877787177",
+							inheritedOverwrites = 
+							{
+								channelCheckTimeRemain = 3.5999999046326,
+							},
+						},
+					},
+				},
 			},
 		},
 	},

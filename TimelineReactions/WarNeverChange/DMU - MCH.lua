@@ -2518,8 +2518,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							aType = "Misc",
 							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							usePot = true,
 							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -3539,8 +3541,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							aType = "Misc",
 							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							usePot = true,
 							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							variableTogglesType = 2,
 							version = 2.1,
