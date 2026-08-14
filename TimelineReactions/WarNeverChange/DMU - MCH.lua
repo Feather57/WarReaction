@@ -1696,7 +1696,7 @@ local tbl =
 				name = "[DPS] Use Potion",
 				timelineIndex = 103,
 				timerEndOffset = 4,
-				timerOffset = -1,
+				timerOffset = 1,
 				timerStartOffset = -2,
 				uuid = "2dc267e9-d830-93c4-96fa-6dda9a3e98f1",
 				version = 2,
@@ -1762,7 +1762,7 @@ local tbl =
 				mechanicTime = 540.01642260272,
 				name = "[MCH] Hold Hypercharge",
 				timelineIndex = 103,
-				timerOffset = -22,
+				timerOffset = -23,
 				uuid = "c85441a8-75e6-5b52-b36c-f82d5cc188af",
 				version = 2,
 			},
@@ -1779,6 +1779,14 @@ local tbl =
 						{
 							acrOptionType = "Hold Action",
 							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"f81972ac-d664-6e63-976f-7424e2e71bec",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
@@ -1791,12 +1799,22 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 49,
+							category = "Self",
+							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 540.01642260272,
 				name = "[MCH] Use Hypercharge",
 				timeRange = true,
 				timelineIndex = 103,
-				timerEndOffset = 1,
+				timerEndOffset = 4,
 				uuid = "59aaf568-dc94-ab25-9888-224c7e93e716",
 				version = 2,
 			},
@@ -1854,6 +1872,75 @@ local tbl =
 				timerOffset = -3,
 				timerStartOffset = -4,
 				uuid = "c4468e29-8ec4-0ac1-8705-371603f2bc48",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"f81972ac-d664-6e63-976f-7424e2e71bec",
+									true,
+								},
+								
+								{
+									"42ced487-cede-9093-81c3-8adbd0da7bd1",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 49,
+							category = "Self",
+							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeValue = 50,
+							uuid = "42ced487-cede-9093-81c3-8adbd0da7bd1",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 557.21788210262,
+				name = "[MCH] Use Hypercharge",
+				timeRange = true,
+				timelineIndex = 107,
+				timerEndOffset = 6,
+				timerStartOffset = -1,
+				uuid = "7585e206-03d0-6bc0-adf2-15672f7ca204",
 				version = 2,
 			},
 		},
@@ -2506,137 +2593,8 @@ local tbl =
 			},
 		},
 	},
-	[164] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							ignoreWeaveRules = true,
-							usePot = true,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 885.32629175592,
-				name = "[DPS] Use Potion",
-				timeRange = true,
-				timelineIndex = 164,
-				timerEndOffset = 6,
-				timerStartOffset = -6,
-				uuid = "ff08af90-d888-df6a-b7de-7279f6d295e6",
-				version = 2,
-			},
-			inheritedIndex = 5,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 885.32629175592,
-				name = "[DPS] Potion On",
-				timelineIndex = 164,
-				timerEndOffset = 1,
-				timerOffset = -7,
-				timerStartOffset = -17,
-				uuid = "efac4ff3-457b-f903-a609-921c9809488e",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 885.32629175592,
-				name = "[DPS] Potion Off",
-				timelineIndex = 164,
-				timerEndOffset = 1,
-				timerOffset = 12,
-				timerStartOffset = -17,
-				uuid = "fc00a48d-bda5-6fce-9e1d-64cea11ba809",
-				version = 2,
-			},
-		},
-	},
 	[165] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_SummonQueen",
-							gVarValue = 2,
-							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Hold Battery",
-				timelineIndex = 165,
-				timerOffset = -3,
-				timerStartOffset = -15,
-				uuid = "ce9f7226-01f6-5f36-8aa4-7c139524dc1a",
-				version = 2,
-			},
-		},
 		
 		{
 			data = 
@@ -2669,6 +2627,228 @@ local tbl =
 				timelineIndex = 165,
 				timerOffset = -2,
 				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Potion On",
+				timelineIndex = 165,
+				timerEndOffset = 1,
+				timerOffset = -10,
+				timerStartOffset = -17,
+				uuid = "0a799354-2674-956b-9794-3834e458c271",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							usePot = true,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Use Potion",
+				timelineIndex = 165,
+				timerEndOffset = 6,
+				timerOffset = -5,
+				timerStartOffset = -6,
+				uuid = "07e5897c-e766-f718-b374-a98980564b0a",
+				version = 2,
+			},
+			inheritedIndex = 13,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Potion Off",
+				timelineIndex = 165,
+				timerEndOffset = 1,
+				timerOffset = 10,
+				timerStartOffset = -17,
+				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 26,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Hold Hypercharge",
+				timelineIndex = 165,
+				timerOffset = -30,
+				uuid = "f6fc214d-afe6-38a9-bf61-111a337e92db",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							gVarValue = 2,
+							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Hold Battery",
+				timelineIndex = 165,
+				timerOffset = -30,
+				timerStartOffset = -15,
+				uuid = "e993a2a0-d20f-ba6b-a4e4-50ed3c18599a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Use Battery",
+				timelineIndex = 165,
+				timerOffset = -3,
+				timerStartOffset = -15,
+				uuid = "217f3bce-a87e-c1af-841a-5a45d67929dd",
+				version = 2,
+			},
+		},
+	},
+	[166] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							gVarValue = 2,
+							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 903.50044082329,
+				name = "[MCH] Hold Battery",
+				timelineIndex = 166,
+				timerStartOffset = -15,
+				uuid = "34a261bf-1c3b-68c6-a117-0a46f95a7aa3",
 				version = 2,
 			},
 		},
@@ -3558,8 +3738,8 @@ local tbl =
 				name = "[DPS] Use Potion",
 				timeRange = true,
 				timelineIndex = 226,
-				timerEndOffset = 10,
-				timerStartOffset = 1,
+				timerEndOffset = 12,
+				timerStartOffset = 4,
 				uuid = "656ea182-2887-be74-b881-dc6fe1722162",
 				version = 2,
 			},
