@@ -1773,10 +1773,11 @@ local tbl =
 				},
 				mechanicTime = 427.45958272918,
 				name = "[MCH] Reassemble",
+				timeRange = true,
 				timelineIndex = 77,
-				timerEndOffset = -3,
-				timerOffset = -4,
-				timerStartOffset = -4,
+				timerEndOffset = -2,
+				timerOffset = 6,
+				timerStartOffset = -3,
 				uuid = "cc20d00b-551c-2b1a-9845-dd0f76ce7dd6",
 				version = 2,
 			},
@@ -1890,7 +1891,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 77,
 				timerEndOffset = 2,
-				timerStartOffset = 0.20000000298023,
+				timerStartOffset = 0.10000000149012,
 				uuid = "fa1578d0-f22c-8013-8d0f-a790dbd1ed70",
 				version = 2,
 			},
@@ -2419,6 +2420,37 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionDuration = 13,
+							holdActionID = 16498,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 557.21788210262,
+				name = "[MCH] Hold Drill",
+				timelineIndex = 107,
+				timerOffset = -5,
+				uuid = "c0e79807-9773-3bac-8c8c-1659f64222d9",
+				version = 2,
+			},
+		},
 	},
 	[126] = 
 	{
@@ -2707,7 +2739,7 @@ local tbl =
 				timelineIndex = 148,
 				timerEndOffset = 5,
 				timerOffset = -15,
-				timerStartOffset = -6,
+				timerStartOffset = -10,
 				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
 				version = 2,
 			},
@@ -2885,7 +2917,7 @@ local tbl =
 				name = "[MCH] Hold Ressource",
 				timeRange = true,
 				timelineIndex = 148,
-				timerStartOffset = -6,
+				timerStartOffset = -10,
 				uuid = "736caa98-727f-110b-87a9-474491bad0ff",
 				version = 2,
 			},
@@ -3064,6 +3096,60 @@ local tbl =
 				timelineIndex = 150,
 				timerOffset = -2,
 				uuid = "8f56b25f-7c23-61eb-85a9-e4b2057ab480",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7414,
+							conditions = 
+							{
+								
+								{
+									"b0b2e13c-8833-047b-96bd-157ed12c948b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7414,
+							actionUUID = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Is Barrel Up",
+							uuid = "b0b2e13c-8833-047b-96bd-157ed12c948b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[MCH] Early Barrel",
+				timeRange = true,
+				timelineIndex = 150,
+				timerOffset = -2,
+				timerStartOffset = -4,
+				uuid = "c5c59386-badf-4a3e-a4cd-4f9589b70969",
 				version = 2,
 			},
 		},
@@ -3294,6 +3380,76 @@ local tbl =
 				timerOffset = 10,
 				timerStartOffset = -17,
 				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"f81972ac-d664-6e63-976f-7424e2e71bec",
+									true,
+								},
+								
+								{
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 49,
+							category = "Self",
+							name = "Is Medicated",
+							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Use Hypercharge",
+				timeRange = true,
+				timelineIndex = 165,
+				timerEndOffset = 12,
+				timerStartOffset = 3,
+				uuid = "4c5e1848-6efd-9d2c-9d9f-00338d2df9ab",
 				version = 2,
 			},
 		},
