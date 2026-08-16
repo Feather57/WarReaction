@@ -28,6 +28,17 @@ local tbl =
 							version = 2.1,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SmartQueen",
+							gVarValue = 2,
+							uuid = "12bdae1b-1b36-0cf0-912c-07be8f3c1e57",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -121,6 +132,23 @@ local tbl =
 			},
 		},
 	},
+	[34] = 
+	{
+		
+		{
+			data = 
+			{
+				name = "[Draw] KB Arrow",
+				uuid = "99e6f371-f6d6-d021-9ab3-29ce778def91",
+				version = 2,
+			},
+			inheritedIndex = 3,
+			inheritedObjectUUID = "db711a46-0596-8529-b197-4e2f4b1e5f15",
+			inheritedOverwrites = 
+			{
+			},
+		},
+	},
 	[35] = 
 	{
 		
@@ -183,6 +211,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"23e554da-2407-3f06-88fe-13e29b5baa14",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							gVarValue = 2,
 							holdActionCharges = 2,
@@ -195,6 +231,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "23e554da-2407-3f06-88fe-13e29b5baa14",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 248.57716839869,
 				name = "[MCH] Hypercharge Off",
@@ -216,6 +266,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"a57e2f85-aa46-2665-a40d-74240c5caca8",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
 							holdActionDuration = 16,
@@ -227,6 +285,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "a57e2f85-aa46-2665-a40d-74240c5caca8",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 248.57716839869,
 				name = "[MCH] Hypercharge On",
@@ -251,6 +323,14 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"baaf600f-9135-6da0-a358-d4d35c21a93d",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
 							holdActionDuration = 18,
@@ -262,6 +342,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "baaf600f-9135-6da0-a358-d4d35c21a93d",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 269.6455060413,
 				name = "[MCH] Hold Hypercharge",
@@ -322,6 +416,11 @@ local tbl =
 									"fdc62a07-f6b0-e637-a496-b0d5314798b3",
 									true,
 								},
+								
+								{
+									"d1714361-6f83-dc49-9550-d2d7bd77500a",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
@@ -342,7 +441,22 @@ local tbl =
 							buffCheckType = 2,
 							buffID = 49,
 							category = "Self",
+							name = "Is Not Medicated",
 							uuid = "fdc62a07-f6b0-e637-a496-b0d5314798b3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "d1714361-6f83-dc49-9550-d2d7bd77500a",
 							version = 3,
 						},
 					},
@@ -374,7 +488,17 @@ local tbl =
 							{
 								
 								{
+									"3b5be829-0de1-3e91-88b2-b78803eb3776",
+									true,
+								},
+								
+								{
 									"649cf3e3-1177-479b-b01d-f641cbcfae3d",
+									true,
+								},
+								
+								{
+									"f262a255-11a5-7e63-98f4-198978620cce",
 									true,
 								},
 							},
@@ -396,7 +520,33 @@ local tbl =
 						{
 							buffID = 49,
 							category = "Self",
+							name = "Is Medicated",
 							uuid = "649cf3e3-1177-479b-b01d-f641cbcfae3d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "f262a255-11a5-7e63-98f4-198978620cce",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "3b5be829-0de1-3e91-88b2-b78803eb3776",
 							version = 3,
 						},
 					},
@@ -424,6 +574,19 @@ local tbl =
 						{
 							acrOptionType = "Hold Action",
 							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"f0c159a9-5375-5d12-ae27-b24ba45ddd6b",
+									true,
+								},
+								
+								{
+									"21b52dbd-2848-6e13-b022-19ac5eadfb21",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
@@ -436,6 +599,31 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "f0c159a9-5375-5d12-ae27-b24ba45ddd6b",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "21b52dbd-2848-6e13-b022-19ac5eadfb21",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 269.6455060413,
 				name = "[MCH] Use Hypercharge",
@@ -521,6 +709,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b0f11926-31d2-2f32-bbaf-1a754db173d9",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							gVarValue = 2,
 							uuid = "44852e9a-75c6-ceda-a404-0118e2d6560e",
@@ -530,6 +726,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "b0f11926-31d2-2f32-bbaf-1a754db173d9",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 360.0639775819,
 				name = "[MCH] Hold Queen",
@@ -553,6 +763,14 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"7f947a30-d973-ecff-b116-5c56c5f54dd9",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 35,
 							holdActionID = 36979,
@@ -566,6 +784,14 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"7f947a30-d973-ecff-b116-5c56c5f54dd9",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 35,
 							holdActionID = 36980,
@@ -576,6 +802,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "7f947a30-d973-ecff-b116-5c56c5f54dd9",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 367.80061742504,
 				name = "[MCH] Hold oGcd",
@@ -596,6 +836,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"36755a98-cd96-fb90-bc44-5ae7912fce12",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							gVarValue = 2,
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
@@ -606,6 +854,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "36755a98-cd96-fb90-bc44-5ae7912fce12",
+							version = 3,
+						},
+					},
 				},
 				enabled = false,
 				mechanicTime = 367.80061742504,
@@ -629,6 +891,14 @@ local tbl =
 						{
 							actionID = 36981,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"fc4c0905-f998-8137-85ae-921b178394b9",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
@@ -641,6 +911,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "fc4c0905-f998-8137-85ae-921b178394b9",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 367.80061742504,
 				name = "[MCH] Force Excavator",
@@ -667,6 +951,14 @@ local tbl =
 						data = 
 						{
 							actionID = 16500,
+							conditions = 
+							{
+								
+								{
+									"dbbaa01d-be68-ea47-a9b2-617ad10eee07",
+									true,
+								},
+							},
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
 							targetType = "Enemy",
@@ -678,6 +970,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "dbbaa01d-be68-ea47-a9b2-617ad10eee07",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 369.78246122087,
 				name = "[MCH] Force Anchor",
@@ -703,6 +1009,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"4c3c366d-f3e2-df65-902c-82a028d62104",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							uuid = "bd7d288f-806e-7678-a6a9-b570d389b47b",
 							variableTogglesType = 2,
@@ -712,6 +1026,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "4c3c366d-f3e2-df65-902c-82a028d62104",
+							version = 3,
+						},
+					},
 				},
 				enabled = false,
 				mechanicTime = 377.30637120621,
@@ -750,6 +1078,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_DoubleCheck",
 							gVarValue = 2,
 							uuid = "fd63b604-a024-44c2-8f4e-181898fad1b1",
@@ -761,6 +1097,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Checkmate",
 							gVarValue = 2,
 							uuid = "540e32ea-2e1e-b339-ba85-01df5ad1490c",
@@ -770,6 +1114,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
+							version = 3,
+						},
+					},
 				},
 				enabled = false,
 				mechanicTime = 381.48132335556,
@@ -800,6 +1158,11 @@ local tbl =
 									"a48dac34-96d7-5a93-9e67-e35250258432",
 									true,
 								},
+								
+								{
+									"9f26a8fd-961a-90bc-bd00-66fa45ccdc28",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_CD",
 							gVarValue = 2,
@@ -817,6 +1180,11 @@ local tbl =
 								
 								{
 									"a48dac34-96d7-5a93-9e67-e35250258432",
+									true,
+								},
+								
+								{
+									"9f26a8fd-961a-90bc-bd00-66fa45ccdc28",
 									true,
 								},
 							},
@@ -839,6 +1207,11 @@ local tbl =
 									"a48dac34-96d7-5a93-9e67-e35250258432",
 									true,
 								},
+								
+								{
+									"9f26a8fd-961a-90bc-bd00-66fa45ccdc28",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_Reassemble",
 							gVarValue = 2,
@@ -857,6 +1230,11 @@ local tbl =
 								
 								{
 									"a48dac34-96d7-5a93-9e67-e35250258432",
+									true,
+								},
+								
+								{
+									"9f26a8fd-961a-90bc-bd00-66fa45ccdc28",
 									true,
 								},
 							},
@@ -878,6 +1256,20 @@ local tbl =
 							conditionType = 3,
 							hpValue = 5,
 							uuid = "a48dac34-96d7-5a93-9e67-e35250258432",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "9f26a8fd-961a-90bc-bd00-66fa45ccdc28",
 							version = 3,
 						},
 					},
@@ -927,7 +1319,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 6,
+							hpValue = 4,
 							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
 							version = 3,
 						},
@@ -980,7 +1372,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 6,
+							hpValue = 5,
 							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
 							version = 3,
 						},
@@ -1215,20 +1607,6 @@ local tbl =
 		{
 			data = 
 			{
-				name = "[Lj Draw] KB Arrow",
-				uuid = "29880f00-e1a7-e942-ac69-6d96c28dc5ae",
-				version = 2,
-			},
-			inheritedObjectUUID = "ee194367-8a9b-b066-9022-14a9c91aa2a4",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -1236,6 +1614,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "456b82e7-a2d8-b79b-bb04-26d2f5281786",
 							version = 2.1,
@@ -1246,6 +1632,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Reassemble",
 							uuid = "f4b4d55a-1e7e-a37c-a683-205094d338fb",
 							version = 2.1,
@@ -1256,6 +1650,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							uuid = "462c1849-9578-8dcf-b9bc-f197cd94b2be",
 							version = 2.1,
@@ -1266,6 +1668,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							uuid = "ef96cef5-8af6-f48c-b674-6103eb23536f",
 							version = 2.1,
@@ -1277,6 +1687,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_DoubleCheck",
 							uuid = "628b703d-a0d6-d37d-b0da-3f92540bbc53",
 							version = 2.1,
@@ -1287,6 +1705,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Checkmate",
 							uuid = "5aa16cd9-4db4-2d22-981f-b078afc14e3a",
 							version = 2.1,
@@ -1295,6 +1721,20 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "ec6b9d0c-7e25-7fd8-ab7e-73a2c95e2be2",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 386.79737120621,
 				name = "[MCH] Stop Hold Ressource",
@@ -1786,6 +2226,11 @@ local tbl =
 									"f81972ac-d664-6e63-976f-7424e2e71bec",
 									true,
 								},
+								
+								{
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hypercharge",
@@ -1805,7 +2250,19 @@ local tbl =
 						{
 							buffID = 49,
 							category = "Self",
+							name = "Is Medicated",
 							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
 							version = 3,
 						},
 					},
@@ -1899,6 +2356,11 @@ local tbl =
 									"42ced487-cede-9093-81c3-8adbd0da7bd1",
 									true,
 								},
+								
+								{
+									"57f2b02b-2b5e-1d49-b696-0d6038c3c3df",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hypercharge",
@@ -1918,6 +2380,7 @@ local tbl =
 						{
 							buffID = 49,
 							category = "Self",
+							name = "Is Medicated",
 							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
 							version = 3,
 						},
@@ -1929,7 +2392,19 @@ local tbl =
 							category = "Self",
 							conditionType = 6,
 							gaugeValue = 50,
+							name = "Is Heat >50?",
 							uuid = "42ced487-cede-9093-81c3-8adbd0da7bd1",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "57f2b02b-2b5e-1d49-b696-0d6038c3c3df",
 							version = 3,
 						},
 					},
@@ -2606,14 +3081,9 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
-							variableTogglesType = 2,
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							gVarValue = 2,
+							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
 						inheritedIndex = 2,
@@ -2623,12 +3093,47 @@ local tbl =
 				{
 				},
 				mechanicTime = 895.49672653853,
-				name = "[MCH] Dismantle",
+				name = "[MCH] Queen Off",
 				timelineIndex = 165,
-				timerOffset = -2,
-				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
+				timerOffset = -30,
+				timerStartOffset = -15,
+				uuid = "e993a2a0-d20f-ba6b-a4e4-50ed3c18599a",
 				version = 2,
 			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 26,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Hold Hypercharge",
+				timelineIndex = 165,
+				timerOffset = -30,
+				uuid = "f6fc214d-afe6-38a9-bf61-111a337e92db",
+				version = 2,
+			},
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -2657,6 +3162,42 @@ local tbl =
 				timerOffset = -10,
 				timerStartOffset = -17,
 				uuid = "0a799354-2674-956b-9794-3834e458c271",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Dismantle",
+				timelineIndex = 165,
+				timerOffset = -2,
+				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
 				version = 2,
 			},
 		},
@@ -2705,6 +3246,37 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Queen On",
+				timelineIndex = 165,
+				timerOffset = -3,
+				timerStartOffset = -15,
+				uuid = "217f3bce-a87e-c1af-841a-5a45d67929dd",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_Potion",
 							gVarValue = 2,
 							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
@@ -2722,100 +3294,6 @@ local tbl =
 				timerOffset = 10,
 				timerStartOffset = -17,
 				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionCharges = 2,
-							holdActionDuration = 26,
-							holdActionID = 17209,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Hold Hypercharge",
-				timelineIndex = 165,
-				timerOffset = -30,
-				uuid = "f6fc214d-afe6-38a9-bf61-111a337e92db",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_SummonQueen",
-							gVarValue = 2,
-							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Hold Battery",
-				timelineIndex = 165,
-				timerOffset = -30,
-				timerStartOffset = -15,
-				uuid = "e993a2a0-d20f-ba6b-a4e4-50ed3c18599a",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_SummonQueen",
-							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Use Battery",
-				timelineIndex = 165,
-				timerOffset = -3,
-				timerStartOffset = -15,
-				uuid = "217f3bce-a87e-c1af-841a-5a45d67929dd",
 				version = 2,
 			},
 		},
@@ -2845,7 +3323,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 903.50044082329,
-				name = "[MCH] Hold Battery",
+				name = "[MCH] Queen Off",
 				timelineIndex = 166,
 				timerStartOffset = -15,
 				uuid = "34a261bf-1c3b-68c6-a117-0a46f95a7aa3",
@@ -3001,7 +3479,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 965.64810213372,
-				name = "[MCH] Stop Hold Battery",
+				name = "[MCH] Queen On",
 				timelineIndex = 171,
 				timerOffset = -2,
 				timerStartOffset = -15,
@@ -3776,6 +4254,60 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Use Hypercharge",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 25,
+				timerStartOffset = 10,
+				uuid = "fd3ea9fc-440a-6a25-9e46-d0e4b8e50bae",
+				version = 2,
+			},
+		},
 	},
 	[227] = 
 	{
@@ -3907,18 +4439,22 @@ local tbl =
 					{
 						data = 
 						{
+							acrOptionType = "Hold Action",
 							actionID = 17209,
 							conditions = 
 							{
 								
 								{
-									"81b35c50-534c-2ded-8505-3c5641305692",
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
 									true,
 								},
 							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							uuid = "8bc8f75e-7e1b-fd3d-8b82-07aeb0baead1",
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
 							version = 2.1,
 						},
 					},
@@ -3929,21 +4465,20 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Self",
-							conditionType = 6,
-							gaugeValue = 50,
-							name = "Heat Gauge > 50",
-							uuid = "81b35c50-534c-2ded-8505-3c5641305692",
+							buffCheckType = 2,
+							buffID = 2688,
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
 							version = 3,
 						},
 					},
 				},
 				mechanicTime = 1185.8235474604,
-				name = "[MCH] Burn Heat",
+				name = "[MCH] Burn Hypercharge",
 				timeRange = true,
 				timelineIndex = 227,
-				timerStartOffset = -30,
-				uuid = "b58f4988-b24d-ecfd-9585-c29f15341db4",
+				timerStartOffset = -15,
+				uuid = "a819137e-7142-7f70-ba4a-775bbabe3873",
 				version = 2,
 			},
 		},
