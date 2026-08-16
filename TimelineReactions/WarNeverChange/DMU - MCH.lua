@@ -2039,6 +2039,106 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuWAR3_CD",
+							setTarget = true,
+							targetContentID = 6052,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 498.85079039671,
+				name = "[All] Target Exdeath",
+				timelineIndex = 90,
+				timerOffset = 5,
+				uuid = "7ad03d33-01df-eaee-a3e7-8f6d9590e9b6",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuWAR3_CD",
+							setTarget = true,
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 498.85079039671,
+				name = "[All] Target Chaos",
+				timelineIndex = 90,
+				timerEndOffset = 1,
+				timerOffset = 2,
+				timerStartOffset = -1,
+				uuid = "9e407891-8581-9310-965d-08bb7d0975ed",
+				version = 2,
+			},
+		},
+	},
+	[93] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_RikuWAR3_CD",
+							setTarget = true,
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 511.44225832111,
+				name = "[All] Target Chaos",
+				timelineIndex = 93,
+				timerEndOffset = 1,
+				timerOffset = -8,
+				timerStartOffset = -1,
+				uuid = "57411836-757f-9af2-a356-b46d16f35953",
+				version = 2,
+			},
+		},
 	},
 	[94] = 
 	{
