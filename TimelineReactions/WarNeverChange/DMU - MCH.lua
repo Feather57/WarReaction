@@ -300,6 +300,408 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = false\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = false",
+							uuid = "73d478a4-8c4f-58b8-9cf3-e370d019da58",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_SmartQueen",
+							gVarValue = 2,
+							uuid = "27cd6c85-6a68-150b-879e-260dc8bf367c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							uuid = "8129c863-4271-81a4-bfb9-7c3185cd653a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							uuid = "805bbc6e-2ee1-b5f1-8f8a-b921277fefa7",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+									true,
+								},
+								
+								{
+									"972d5672-271b-f4ac-b97b-199d5f251954",
+									true,
+								},
+								
+								{
+									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							name = "Target Nearest",
+							setTarget = true,
+							targetType = "Enemy",
+							uuid = "d3b40f03-ea4c-f8a5-ab6e-d224fc386b72",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							conditions = 
+							{
+								
+								{
+									"9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+									true,
+								},
+								
+								{
+									"972d5672-271b-f4ac-b97b-199d5f251954",
+									true,
+								},
+								
+								{
+									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDRG3_Hotbar_ElusiveJumpTarget",
+							ignoreWeaveRules = true,
+							uuid = "84bc333f-5b3d-43f0-af15-0e454be6b5c6",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							actionID = 7388,
+							conditions = 
+							{
+								
+								{
+									"9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+									true,
+								},
+								
+								{
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							name = "Use Potion",
+							usePot = true,
+							uuid = "921ed607-eca2-7837-981c-6d1e477ef11c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 1.7999999523163,
+							holdActionID = 7414,
+							uuid = "d768b2c9-b921-9819-b93a-1887476e9a38",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16498,
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionCharges = 2,
+							holdActionDuration = 3,
+							holdActionID = 16498,
+							uuid = "3cb56ea7-030e-d676-b15c-863953eefef2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 17,
+							holdActionID = 2876,
+							uuid = "cd62ec02-45ce-673f-aa34-cdff81878413",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 5.5,
+							holdActionID = 25788,
+							uuid = "48801477-f132-3c50-8746-3f27190dbaa9",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 5,
+							holdActionID = 2878,
+							uuid = "c2aba3ad-8899-fef3-a3a4-8ab8896c43b1",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+									true,
+								},
+								
+								{
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = true",
+							uuid = "ee0e6f83-e633-b4d9-9889-8425789de809",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning and AnyoneCore.Settings.PrepullHelper.enabled",
+							name = "Check BotRunning",
+							uuid = "9042b7f3-eb96-a2c2-b568-f22e146a1edd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							comparator = 2,
+							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 1000",
+							eventCountdownTime = 1.5,
+							name = "TimeSince >= 1s",
+							uuid = "972d5672-271b-f4ac-b97b-199d5f251954",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.69999998807907,
+							name = "Pull in 0.7sec",
+							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+							version = 3,
+						},
+					},
+				},
+				enabled = false,
+				eventType = 16,
+				mechanicTime = 15.261765625,
+				name = "[MCH] Prepull DMU",
+				timeRange = true,
+				timelineIndex = 1,
+				timerOffset = -10,
+				timerStartOffset = -17,
+				uuid = "1607c6a4-0456-f90b-878f-ad0681f162f2",
+				version = 2,
+			},
+		},
 	}, 
 	[3] = 
 	{
@@ -1104,6 +1506,7 @@ local tbl =
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
+							targetType = "Enemy",
 							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -1123,6 +1526,7 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 367.80061742504,
 				name = "[MCH] WildFire ",
 				timeRange = true,
