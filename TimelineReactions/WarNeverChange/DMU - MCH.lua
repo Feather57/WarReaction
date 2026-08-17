@@ -81,6 +81,226 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2878,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e6ecb6be-16d9-f624-846b-513ae5872f84",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 861,
+							uuid = "e6ecb6be-16d9-f624-846b-513ae5872f84",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] WildFire 2nd GCD",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -10,
+				timerStartOffset = -12.25,
+				uuid = "e9862243-fbca-9cee-90df-2a7cc6e43f28",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36981,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							targetType = "Current Target",
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] Force Excavator",
+				throttleTime = -200,
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -1,
+				timerOffset = -7,
+				timerStartOffset = -4.0999999046326,
+				uuid = "e38726bf-b831-2750-954e-16050b34da6e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"6a2a35b0-a59b-b784-a26e-4881b2dd5095",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "7d8e633b-a737-daca-96b6-3a5c69be4be6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							uuid = "6a2a35b0-a59b-b784-a26e-4881b2dd5095",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] Use Queen",
+				throttleTime = -200,
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 1,
+				timerStartOffset = -5,
+				uuid = "35553a23-3fca-2114-859e-f201735cd2dc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							gVarValue = 2,
+							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							gVarValue = 2,
+							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] oGcd Weave",
+				timelineIndex = 1,
+				timerOffset = -13.89999961853,
+				uuid = "19020f32-8d18-9655-a0e6-90e77c7b65a5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] oGcd Weave",
+				timelineIndex = 1,
+				timerOffset = -11.800000190735,
+				uuid = "2b59a594-120a-c7f8-9a67-85034244262f",
+				version = 2,
+			},
+		},
 	}, 
 	[3] = 
 	{
@@ -763,14 +983,6 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							conditions = 
-							{
-								
-								{
-									"7f947a30-d973-ecff-b116-5c56c5f54dd9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 35,
 							holdActionID = 36979,
@@ -784,14 +996,6 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							conditions = 
-							{
-								
-								{
-									"7f947a30-d973-ecff-b116-5c56c5f54dd9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 35,
 							holdActionID = 36980,
@@ -802,20 +1006,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							conditionType = 13,
-							jobValue = "MACHINIST",
-							name = "Is MCH",
-							uuid = "7f947a30-d973-ecff-b116-5c56c5f54dd9",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 367.80061742504,
 				name = "[MCH] Hold oGcd",
@@ -836,14 +1026,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"36755a98-cd96-fb90-bc44-5ae7912fce12",
-									true,
-								},
-							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							gVarValue = 2,
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
@@ -854,20 +1036,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							conditionType = 13,
-							jobValue = "MACHINIST",
-							name = "Is MCH",
-							uuid = "36755a98-cd96-fb90-bc44-5ae7912fce12",
-							version = 3,
-						},
-					},
 				},
 				enabled = false,
 				mechanicTime = 367.80061742504,
@@ -891,14 +1059,6 @@ local tbl =
 						{
 							actionID = 36981,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"fc4c0905-f998-8137-85ae-921b178394b9",
-									true,
-								},
-							},
 							endIfUsed = true,
 							gVar = "ACR_TensorACR_HotbarCancel",
 							ignoreWeaveRules = true,
@@ -911,20 +1071,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							conditionType = 13,
-							jobValue = "MACHINIST",
-							name = "Is MCH",
-							uuid = "fc4c0905-f998-8137-85ae-921b178394b9",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 367.80061742504,
 				name = "[MCH] Force Excavator",
@@ -934,6 +1080,56 @@ local tbl =
 				timerOffset = 1,
 				timerStartOffset = 1,
 				uuid = "185807fe-97cd-3f6a-b9a4-e6bd9384be8e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2878,
+							conditions = 
+							{
+								
+								{
+									"e6ecb6be-16d9-f624-846b-513ae5872f84",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 861,
+							uuid = "e6ecb6be-16d9-f624-846b-513ae5872f84",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 367.80061742504,
+				name = "[MCH] WildFire ",
+				timeRange = true,
+				timelineIndex = 70,
+				timerStartOffset = -3,
+				uuid = "f0da1c48-92ef-e242-9b91-14b4851fec8b",
 				version = 2,
 			},
 		},
