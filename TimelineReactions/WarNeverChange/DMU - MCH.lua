@@ -129,7 +129,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = -10,
-				timerStartOffset = -11.300000190735,
+				timerStartOffset = -11.39999961853,
 				uuid = "e9862243-fbca-9cee-90df-2a7cc6e43f28",
 				version = 2,
 			},
@@ -257,7 +257,7 @@ local tbl =
 				mechanicTime = 15.261765625,
 				name = "[MCH] oGcd Weave",
 				timelineIndex = 1,
-				timerOffset = -13.89999961853,
+				timerOffset = -12.5,
 				uuid = "19020f32-8d18-9655-a0e6-90e77c7b65a5",
 				version = 2,
 			},
@@ -1127,7 +1127,7 @@ local tbl =
 				name = "[MCH] WildFire ",
 				timeRange = true,
 				timelineIndex = 70,
-				timerStartOffset = -3,
+				timerStartOffset = -4,
 				uuid = "f0da1c48-92ef-e242-9b91-14b4851fec8b",
 				version = 2,
 			},
@@ -1565,7 +1565,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 5,
+							hpValue = 4,
 							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
 							version = 3,
 						},
@@ -1675,20 +1675,6 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							actionID = 16766,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "1908976a-dea9-fed4-9d4a-44e72591b21f",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{

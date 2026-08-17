@@ -147,6 +147,11 @@ local tbl =
 								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 								true,
 							},
+							
+							{
+								"8d4a7684-ca38-2c3e-832e-d4e5570b5589",
+								true,
+							},
 						},
 						endIfUsed = true,
 						gVar = "ACR_TensorMagnum3_Hotbar_Potion",
@@ -172,9 +177,14 @@ local tbl =
 								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 								true,
 							},
+							
+							{
+								"8d4a7684-ca38-2c3e-832e-d4e5570b5589",
+								true,
+							},
 						},
 						gVar = "ACR_TensorMagnum3_CD",
-						holdActionDuration = 3,
+						holdActionDuration = 1.7999999523163,
 						holdActionID = 7414,
 						uuid = "d768b2c9-b921-9819-b93a-1887476e9a38",
 						version = 2.1,
@@ -230,7 +240,7 @@ local tbl =
 						category = "Event",
 						comparator = 2,
 						eventCountdownTime = 0.69999998807907,
-						name = "Pull in 2sec",
+						name = "Pull in 0.7sec",
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 						version = 3,
 					},
