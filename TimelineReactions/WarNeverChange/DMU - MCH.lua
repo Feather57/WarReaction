@@ -2028,7 +2028,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 498.85079039671,
 				name = "[All] Sprint",
 				timelineIndex = 90,
@@ -2060,11 +2059,10 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 498.85079039671,
 				name = "[All] Target Exdeath",
 				timelineIndex = 90,
-				timerOffset = 5,
+				timerOffset = 9,
 				uuid = "7ad03d33-01df-eaee-a3e7-8f6d9590e9b6",
 				version = 2,
 			},
@@ -2092,7 +2090,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 498.85079039671,
 				name = "[All] Target Chaos",
 				timelineIndex = 90,
