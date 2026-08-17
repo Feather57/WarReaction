@@ -1013,7 +1013,7 @@ local tbl =
 							{
 								
 								{
-									"4c3c366d-f3e2-df65-902c-82a028d62104",
+									"bef69a9a-f881-b61a-9985-9b16c5cb4438",
 									true,
 								},
 							},
@@ -1030,13 +1030,11 @@ local tbl =
 					{
 						data = 
 						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							conditionType = 13,
-							jobValue = "MACHINIST",
-							name = "Is MCH",
-							uuid = "4c3c366d-f3e2-df65-902c-82a028d62104",
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "bef69a9a-f881-b61a-9985-9b16c5cb4438",
 							version = 3,
 						},
 					},
@@ -2050,7 +2048,7 @@ local tbl =
 						data = 
 						{
 							aType = "Misc",
-							gVar = "ACR_RikuWAR3_CD",
+							gVar = "ACR_TensorMagnum3_CD",
 							setTarget = true,
 							targetContentID = 6052,
 							targetType = "ContentID",
@@ -2062,6 +2060,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 498.85079039671,
 				name = "[All] Target Exdeath",
 				timelineIndex = 90,
@@ -2081,7 +2080,7 @@ local tbl =
 						data = 
 						{
 							aType = "Misc",
-							gVar = "ACR_RikuWAR3_CD",
+							gVar = "ACR_TensorMagnum3_CD",
 							setTarget = true,
 							targetContentID = 7691,
 							targetType = "ContentID",
@@ -2093,6 +2092,7 @@ local tbl =
 				conditions = 
 				{
 				},
+				enabled = false,
 				mechanicTime = 498.85079039671,
 				name = "[All] Target Chaos",
 				timelineIndex = 90,
@@ -2100,42 +2100,6 @@ local tbl =
 				timerOffset = 2,
 				timerStartOffset = -1,
 				uuid = "9e407891-8581-9310-965d-08bb7d0975ed",
-				version = 2,
-			},
-		},
-	},
-	[93] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_RikuWAR3_CD",
-							setTarget = true,
-							targetContentID = 7691,
-							targetType = "ContentID",
-							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 511.44225832111,
-				name = "[All] Target Chaos",
-				timelineIndex = 93,
-				timerEndOffset = 1,
-				timerOffset = -8,
-				timerStartOffset = -1,
-				uuid = "57411836-757f-9af2-a356-b46d16f35953",
 				version = 2,
 			},
 		},
@@ -2155,6 +2119,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e89a3df4-859b-8b08-afe5-d550a9cb4a71",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -2168,6 +2140,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "e89a3df4-859b-8b08-afe5-d550a9cb4a71",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 513.32988332111,
 				name = "[MCH] Dismantle",
@@ -2567,6 +2551,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"5550d1e8-faca-3a75-97f3-7cb8769b90d0",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -2580,6 +2572,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "5550d1e8-faca-3a75-97f3-7cb8769b90d0",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 636.94380185281,
 				name = "[MCH] Dismantle",
@@ -3365,6 +3369,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -3378,6 +3390,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 895.49672653853,
 				name = "[MCH] Dismantle",
@@ -3819,6 +3843,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"239c9281-54ae-8c31-89d9-43da452bfa3e",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -3832,6 +3864,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "239c9281-54ae-8c31-89d9-43da452bfa3e",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 972.7295459293,
 				name = "[MCH] Dismantle",
@@ -4030,6 +4074,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"270f8ea2-d055-e301-b714-7b7e959ff10e",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -4043,6 +4095,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "270f8ea2-d055-e301-b714-7b7e959ff10e",
+							version = 3,
+						},
+					},
 				},
 				enabled = false,
 				mechanicTime = 1054.5292176297,
@@ -4329,6 +4393,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e1635faf-3a50-7f60-9ad2-d1d68c831f7d",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -4342,6 +4414,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "e1635faf-3a50-7f60-9ad2-d1d68c831f7d",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1149.6575474604,
 				name = "[MCH] Dismantle",
@@ -4395,6 +4479,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ace4d706-6f8b-e649-a978-b1214d7b9ba7",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
 							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
 							variableTogglesType = 2,
@@ -4404,6 +4496,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "ace4d706-6f8b-e649-a978-b1214d7b9ba7",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1149.6575474604,
 				name = "[MCH] Tactician",
