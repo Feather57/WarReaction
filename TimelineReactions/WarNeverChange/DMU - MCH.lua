@@ -12,6 +12,18 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Lua",
+							actionLua = "AnyoneCore.Settings.Reactions.dmu.mitigation = false\nself.used = true",
+							gVar = "ACR_RikuSGE3_CD",
+							uuid = "0cb81aa9-ad5a-ca4b-a18f-907272089664",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							uuid = "3720db9e-46df-fc16-a0e8-066cf16f4e3c",
@@ -42,6 +54,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.mitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enabled",
+							uuid = "7926ebb0-d391-bb8b-9f9e-fb2c5fcfa3a0",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 15.261765625,
 				name = "[MCH] Check Toggles",
@@ -736,37 +760,159 @@ local tbl =
 			},
 		},
 	},
+	[7] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 42.238586763472,
+				name = "[MCH] Tactician",
+				timeRange = true,
+				timelineIndex = 7,
+				timerEndOffset = -10,
+				timerOffset = -10,
+				timerStartOffset = -14.75,
+				uuid = "55b58e45-4bb5-6092-b81d-e6681876d35f",
+				version = 2,
+			},
+		},
+	},
+	[15] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 69.911881498834,
+				name = "[MCH] Dismantle",
+				timelineIndex = 15,
+				timerOffset = -9.8999996185303,
+				uuid = "dd24b14d-22c3-d3ab-8ec9-e0b6051ce082",
+				version = 2,
+			},
+		},
+	},
 	[26] = 
 	{
 		
 		{
 			data = 
 			{
-				name = "[Mit] Phys Ranged",
-				uuid = "9893085b-6324-97af-8a9a-3bd2b5a33a01",
-				version = 2,
-			},
-			inheritedObjectUUID = "a875d0b9-a6be-815f-b30c-fe91e4048466",
-			inheritedOverwrites = 
-			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 132.26514619605,
+				name = "[MCH] Tactician",
+				timeRange = true,
+				timelineIndex = 26,
+				timerEndOffset = -10,
+				timerOffset = -10,
 				timerStartOffset = -16.75,
-			},
-		},
-	},
-	[34] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "[Draw] KB Arrow",
-				uuid = "99e6f371-f6d6-d021-9ab3-29ce778def91",
+				uuid = "cf7007b8-f354-9583-b883-9281e9747b5f",
 				version = 2,
-			},
-			inheritedIndex = 3,
-			inheritedObjectUUID = "db711a46-0596-8529-b197-4e2f4b1e5f15",
-			inheritedOverwrites = 
-			{
 			},
 		},
 	},
@@ -801,6 +947,72 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							gVarValue = 2,
+							holdActionCharges = 2,
+							holdActionDuration = 16,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 173.37050637968,
+				name = "[MCH] Queen Off",
+				timelineIndex = 35,
+				timerOffset = 1,
+				uuid = "60909ca7-5ec7-23b3-a99b-496c88b3452b",
+				version = 2,
+			},
+		},
+	},
+	[38] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_SummonQueen",
+							holdActionCharges = 2,
+							holdActionDuration = 16,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 197.52218784626,
+				name = "[MCH] Queen On",
+				timelineIndex = 38,
+				timerOffset = 1,
+				uuid = "a116e8d2-8d71-2013-96e0-c898aa52cdd8",
+				version = 2,
+			},
+		},
 	},
 	[39] = 
 	{
@@ -808,14 +1020,248 @@ local tbl =
 		{
 			data = 
 			{
-				name = "[MCH] Early Queen",
-				uuid = "1df3bb89-2e97-8d0e-86cb-c0edb4481c57",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"baaf600f-9135-6da0-a358-d4d35c21a93d",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 52,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "baaf600f-9135-6da0-a358-d4d35c21a93d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 207.87965305988,
+				name = "[MCH] Hold Hypercharge",
+				timelineIndex = 39,
+				timerOffset = -55,
+				uuid = "35052ac9-ece4-44a3-8c28-43dfffcbd409",
 				version = 2,
 			},
-			inheritedObjectUUID = "8d227aeb-7009-fb36-9011-a935f5ab12de",
-			inheritedOverwrites = 
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
 			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 43,
+							holdActionID = 36979,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 43,
+							holdActionID = 36980,
+							uuid = "db5ca0d5-ead4-8c9d-b2b2-6f3fad0b7133",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 207.87965305988,
+				name = "[MCH] Hold oGCD",
+				timelineIndex = 39,
+				timerOffset = -45,
+				uuid = "8a70c762-3279-4067-85db-39058660aea5",
+				version = 2,
+			},
+			inheritedIndex = 9,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							name = "Battery >50",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 207.87965305988,
+				name = "[MCH] Early Queen",
+				timelineIndex = 39,
 				timerOffset = -2,
+				uuid = "e73e5e0c-e136-63a2-b148-1b6cc8b13fa6",
+				version = 2,
+			},
+		},
+	},
+	[41] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 235.34477128997,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 41,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "a29945cb-19c6-9f4f-8be0-cf33372fba2b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 235.34477128997,
+				name = "[MCH] Dismantle",
+				timelineIndex = 41,
+				timerOffset = -9.8999996185303,
+				uuid = "8648f2a2-f741-8553-81b2-fdb23ba89ac4",
+				version = 2,
 			},
 		},
 	},
@@ -943,6 +1389,36 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 269.6455060413,
+				name = "[DPS] Potion On",
+				timelineIndex = 48,
+				timerEndOffset = 1,
+				timerOffset = -5,
+				timerStartOffset = -17,
+				uuid = "dd77b993-1e2a-6b96-aac4-a4040bafc1b0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							acrOptionType = "Hold Action",
 							conditions = 
 							{
@@ -999,6 +1475,7 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
 							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
@@ -1008,12 +1485,12 @@ local tbl =
 				{
 				},
 				mechanicTime = 269.6455060413,
-				name = "[DPS] Potion On",
+				name = "[DPS] Potion Off",
 				timelineIndex = 48,
 				timerEndOffset = 1,
-				timerOffset = -5,
+				timerOffset = 14,
 				timerStartOffset = -17,
-				uuid = "dd77b993-1e2a-6b96-aac4-a4040bafc1b0",
+				uuid = "df2e2c22-51e3-fa88-8f22-067e9634ab86",
 				version = 2,
 			},
 		},
@@ -1257,6 +1734,9 @@ local tbl =
 			},
 			inheritedIndex = 6,
 		},
+	},
+	[66] = 
+	{
 		
 		{
 			data = 
@@ -1268,23 +1748,50 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
 				},
-				mechanicTime = 269.6455060413,
-				name = "[DPS] Potion Off",
-				timelineIndex = 48,
-				timerEndOffset = 1,
-				timerOffset = 14,
-				timerStartOffset = -17,
-				uuid = "df2e2c22-51e3-fa88-8f22-067e9634ab86",
+				mechanicTime = 341.70452758191,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 66,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "43b80541-07b1-6244-b9be-284f23d5729f",
 				version = 2,
 			},
 		},
@@ -1654,93 +2161,6 @@ local tbl =
 		{
 			data = 
 			{
-				name = "[Lj Draw] KB Arrow",
-				uuid = "58ffb399-732b-4b9c-81cb-eb0437e01791",
-				version = 2,
-			},
-			inheritedObjectUUID = "7cce803f-ee1a-0fc8-a9ba-eae74acd1a88",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							gVarValue = 2,
-							uuid = "fd63b604-a024-44c2-8f4e-181898fad1b1",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							gVarValue = 2,
-							uuid = "540e32ea-2e1e-b339-ba85-01df5ad1490c",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							conditionType = 13,
-							jobValue = "MACHINIST",
-							name = "Is MCH",
-							uuid = "ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				mechanicTime = 381.48132335556,
-				name = "[MCH] Hold oGcd",
-				timeRange = true,
-				timelineIndex = 74,
-				timerStartOffset = -5,
-				uuid = "1605bfc9-94bf-756d-b138-e38ed2a0b824",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -1890,20 +2310,37 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 16766,
-							atomicPriority = true,
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
 									true,
 								},
 							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							gVarValue = 2,
+							uuid = "fd63b604-a024-44c2-8f4e-181898fad1b1",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							gVarValue = 2,
+							uuid = "540e32ea-2e1e-b339-ba85-01df5ad1490c",
 							version = 2.1,
 						},
 					},
@@ -1914,23 +2351,27 @@ local tbl =
 					{
 						data = 
 						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 4,
-							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							conditionType = 13,
+							jobValue = "MACHINIST",
+							name = "Is MCH",
+							uuid = "ab9fd100-61e5-0cd2-81a4-9394bb2903f7",
 							version = 3,
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 381.48132335556,
-				name = "[MCH] Force Detonate",
+				name = "[MCH] Hold oGcd",
 				timeRange = true,
 				timelineIndex = 74,
-				timerStartOffset = -12,
-				uuid = "9795967a-63fa-7963-80de-e769ee37ee64",
+				timerStartOffset = -5,
+				uuid = "1605bfc9-94bf-756d-b138-e38ed2a0b824",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -1992,6 +2433,58 @@ local tbl =
 				uuid = "19c30270-37f8-fb2e-a70c-ce050d09016d",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 381.48132335556,
+				name = "[MCH] Force Detonate",
+				timeRange = true,
+				timelineIndex = 74,
+				timerStartOffset = -12,
+				uuid = "9795967a-63fa-7963-80de-e769ee37ee64",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -2341,6 +2834,42 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_CD",
+							setTarget = true,
+							targetContentID = 6052,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 427.45958272918,
+				name = "[All] Target Exdeath",
+				randomOffset = 3,
+				timeRange = true,
+				timelineIndex = 77,
+				timerEndOffset = 3,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "9db3c85e-bba6-9a9c-9e80-cda38d5fd4fe",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 2876,
 							atomicPriority = true,
 							endIfUsed = true,
@@ -2364,7 +2893,7 @@ local tbl =
 				uuid = "cc20d00b-551c-2b1a-9845-dd0f76ce7dd6",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -2478,7 +3007,7 @@ local tbl =
 				uuid = "fa1578d0-f22c-8013-8d0f-a790dbd1ed70",
 				version = 2,
 			},
-			inheritedIndex = 7,
+			inheritedIndex = 8,
 		},
 	},
 	[78] = 
@@ -2744,6 +3273,67 @@ local tbl =
 			},
 		},
 	},
+	[98] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 518.31461099411,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 98,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "68531ee9-e2f9-cc62-9693-f6369c461a69",
+				version = 2,
+			},
+		},
+	},
 	[103] = 
 	{
 		
@@ -2775,72 +3365,6 @@ local tbl =
 				uuid = "4db29531-ccd3-dc2e-a119-ec654f51b7bd",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							ignoreWeaveRules = true,
-							usePot = true,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 540.01642260272,
-				name = "[DPS] Use Potion",
-				timelineIndex = 103,
-				timerEndOffset = 4,
-				timerOffset = 1,
-				timerStartOffset = -2,
-				uuid = "2dc267e9-d830-93c4-96fa-6dda9a3e98f1",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 540.01642260272,
-				name = "[DPS] Potion Off",
-				timelineIndex = 103,
-				timerEndOffset = 1,
-				timerOffset = 10,
-				timerStartOffset = -17,
-				uuid = "da23ba8b-6ab3-20f4-861d-a2fbf781726f",
-				version = 2,
-			},
-			inheritedIndex = 5,
 		},
 		
 		{
@@ -2942,6 +3466,72 @@ local tbl =
 				uuid = "59aaf568-dc94-ab25-9888-224c7e93e716",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							usePot = true,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 540.01642260272,
+				name = "[DPS] Use Potion",
+				timelineIndex = 103,
+				timerEndOffset = 4,
+				timerOffset = 1,
+				timerStartOffset = -2,
+				uuid = "2dc267e9-d830-93c4-96fa-6dda9a3e98f1",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 540.01642260272,
+				name = "[DPS] Potion Off",
+				timelineIndex = 103,
+				timerEndOffset = 1,
+				timerOffset = 10,
+				timerStartOffset = -17,
+				uuid = "da23ba8b-6ab3-20f4-861d-a2fbf781726f",
+				version = 2,
+			},
+			inheritedIndex = 5,
 		},
 	},
 	[107] = 
@@ -3118,6 +3708,67 @@ local tbl =
 			},
 		},
 	},
+	[122] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 608.39401598045,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 122,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "9cad2341-9cd6-1dfa-84c8-85899b9bd690",
+				version = 2,
+			},
+		},
+	},
 	[126] = 
 	{
 		
@@ -3133,14 +3784,6 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"5550d1e8-faca-3a75-97f3-7cb8769b90d0",
-									true,
-								},
-							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -3154,18 +3797,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
-							dequeueIfLuaFalse = true,
-							name = "Is Mit Enable",
-							uuid = "5550d1e8-faca-3a75-97f3-7cb8769b90d0",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 636.94380185281,
 				name = "[MCH] Dismantle",
@@ -3269,108 +3900,6 @@ local tbl =
 				timelineIndex = 137,
 				uuid = "1d0287a6-b55f-e25f-8592-3dfe2a1ceb62",
 				version = 2,
-			},
-		},
-	},
-	[138] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "[Lj Draw] Draw Arrow to Corner Baits",
-				uuid = "3be55290-3146-b109-a036-f877cd192e90",
-				version = 2,
-			},
-			inheritedObjectUUID = "fe3712b5-905e-f317-9177-0ff196a32e02",
-			inheritedOverwrites = 
-			{
-				actions = 
-				{
-					
-					{
-						type = "add",
-						value = 
-						{
-							data = 
-							{
-								name = "",
-								uuid = "f493a224-67d5-c0e6-9ebd-be67e128c10c",
-								version = 2.1,
-							},
-							inheritedObjectUUID = "b2fcfa27-5cf7-59ba-8b3c-a232cd81174c",
-							inheritedOverwrites = 
-							{
-								actionLua = "local mode = \"ZsQ\"  -- \"LPDU\" or \"ZsQ\"\n\nlocal center = { x = 100, y = 0, z = 100 }\nlocal cornerDist = 11                       -- distance from centre to each corner\nlocal offset = cornerDist / math.sqrt(2)    -- equal X/Z offset for a diagonal corner\nlocal rot = data.ljKefkaHeading\n\n-- Design (true-north) corners; rotated to Kefka below.\nlocal nw = { x = center.x - offset, z = center.z - offset }\nlocal ne = { x = center.x + offset, z = center.z - offset }\nlocal sw = { x = center.x - offset, z = center.z + offset }\nlocal se = { x = center.x + offset, z = center.z + offset }\n\n-- Role -> corner pairings per strat (all directions relative to Kefka).\nlocal cornerByRoleByMode = {\n    ZsQ = {\n        H1 = nw, MT = nw,\n        H2 = ne, OT = ne,\n        R1 = sw, M1 = sw,\n        R2 = se, M2 = se,\n    },\n    LPDU = {\n        MT = nw, OT = nw,\n        H1 = ne, H2 = ne,\n        M1 = sw, M2 = sw,\n        R1 = se, R2 = se,\n    },\n}\nlocal cornerByRole = cornerByRoleByMode[mode]\n\nlocal mySlot = AnyoneCore.Roster.mySlot()\nlocal myRole = (mySlot == \"T1\" and \"MT\") or (mySlot == \"T2\" and \"OT\") or mySlot\nlocal corner = cornerByRole[myRole]\nif corner then\n    corner.y = center.y\n    local rotated = TensorCore.rotatePosAroundPos(center, corner, rot)\n\n    local sourcePos = TensorCore.mGetPlayer().pos\n    local targetPos = { x = rotated.x, y = sourcePos.y, z = rotated.z }\n\n    local heading = TensorCore.getHeadingToTarget(sourcePos, targetPos)\n    local totalDistance = TensorCore.getDistance2d(sourcePos, targetPos)\n\n    -- Proximity scaling\n    local scale = math.min(1, totalDistance / 15)\n    local baseWidth = math.max(0.5, 1 * scale)\n    local tipWidth = math.max(1.5, 3 * scale)\n    local tipLength = math.max(2, 3 * scale)\n    local baseLength = totalDistance - tipLength\n\n    if baseLength > 0 then\n        local arrowDrawer = TensorCore.getCachedDrawer(0xFF00FFFF, 0xFF0088FF, 0xFF0000FF, 0xFFFFFFFF, 2)\n        arrowDrawer:addArrow(\n            sourcePos.x, sourcePos.y, sourcePos.z,\n            heading,\n            baseLength, baseWidth, tipLength, tipWidth,\n            false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY\n        )\n    end\nend\n\nself.used = true",
-							},
-						},
-					},
-				},
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Hotbar_Sprint",
-							uuid = "d89b7ab3-9fe1-1034-94c6-9ea704f4eb7a",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 699.71269025282,
-				name = "[All] Sprint",
-				timelineIndex = 138,
-				uuid = "24a6ca39-3aa9-6d57-968e-c2a30e613008",
-				version = 2,
-			},
-		},
-	},
-	[140] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "[Lj Draw] Draw Arrow to Towers/Middle",
-				uuid = "87e78afe-993d-8878-964a-a5bfc0a0e523",
-				version = 2,
-			},
-			inheritedObjectUUID = "0ae2b750-99a0-a6fa-8af6-dc13c80e06bb",
-			inheritedOverwrites = 
-			{
-				actions = 
-				{
-					
-					{
-						type = "add",
-						value = 
-						{
-							data = 
-							{
-								name = "",
-								uuid = "886f946b-e9ef-a087-8661-635ee03e390d",
-								version = 2.1,
-							},
-							inheritedObjectUUID = "3eed45c1-a515-ef19-9cc5-fa3762d65300",
-							inheritedOverwrites = 
-							{
-								actionLua = "local mode = \"ZsQ\"  -- \"LPDU\" or \"ZsQ\"\n\nlocal center = { x = 100, y = 0, z = 100 }\nlocal towerDist = 10\nlocal towerRadius = 5\nlocal stackDotRadius = 0.225\nlocal rot = data.ljKefkaHeading\n\n-- Design (true-north) tower spots; rotated to Kefka below.\nlocal westTower = { x = center.x - towerDist, y = center.y, z = center.z }\nlocal eastTower = { x = center.x + towerDist, y = center.y, z = center.z }\n\n-- Always-on markers, drawn regardless of where this player is headed:\n-- red outlines on both towers, small filled red dot mid for the stack.\nlocal towerDrawer = TensorCore.getCachedDrawer(nil, nil, 0x00000000, 0xFF0000FF, 2)\nfor _, tower in pairs({ westTower, eastTower }) do\n    local rotatedTower = TensorCore.rotatePosAroundPos(center, tower, rot)\n    towerDrawer:addCircle(rotatedTower.x, rotatedTower.y, rotatedTower.z, towerRadius, false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY)\nend\n\nlocal stackDotDrawer = TensorCore.getCachedDrawer(nil, nil, 0xFF0000FF)\nstackDotDrawer:addCircle(center.x, center.y, center.z, stackDotRadius, false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY)\n\n-- Role -> tower assignment per strat (all directions relative to Kefka).\nlocal towerByRoleByMode = {\n    ZsQ = {\n        H1 = westTower, MT = westTower, R1 = westTower, M1 = westTower,\n        H2 = eastTower, OT = eastTower, R2 = eastTower, M2 = eastTower,\n    },\n    LPDU = {\n        H1 = eastTower, H2 = eastTower, R1 = eastTower, R2 = eastTower,\n        MT = westTower, OT = westTower, M1 = westTower, M2 = westTower,\n    },\n}\nlocal towerByRole = towerByRoleByMode[mode]\n\nlocal SUPPORT = { H1 = true, H2 = true, MT = true, OT = true }\n\nlocal mySlot = AnyoneCore.Roster.mySlot()\nlocal role = (mySlot == \"T1\" and \"MT\") or (mySlot == \"T2\" and \"OT\") or mySlot\nlocal playerGroup = SUPPORT[role] and \"Support\" or \"DPS\"\n\n-- Group named by data.ljP3Stack stacks mid; the other group soaks the towers. This then flips later by changing the vaue of data.ljP3Stack.\nlocal designTarget\nif playerGroup == data.ljP3Stack then\n    designTarget = { x = center.x, z = center.z }\nelse\n    designTarget = towerByRole[role]\nend\n\nif designTarget then\n    designTarget.y = center.y\n    local rotated = TensorCore.rotatePosAroundPos(center, designTarget, rot)\n\n    local sourcePos = TensorCore.mGetPlayer().pos\n    local targetPos = { x = rotated.x, y = sourcePos.y, z = rotated.z }\n\n    local heading = TensorCore.getHeadingToTarget(sourcePos, targetPos)\n    local totalDistance = TensorCore.getDistance2d(sourcePos, targetPos)\n\n    -- Proximity scaling\n    local scale = math.min(1, totalDistance / 15)\n    local baseWidth = math.max(0.5, 1 * scale)\n    local tipWidth = math.max(1.5, 3 * scale)\n    local tipLength = math.max(2, 3 * scale)\n    local baseLength = totalDistance - tipLength\n\n    if baseLength > 0 then\n        local arrowDrawer = TensorCore.getCachedDrawer(0xFF00FFFF, 0xFF0088FF, 0xFF0000FF, 0xFFFFFFFF, 2)\n        arrowDrawer:addArrow(\n            sourcePos.x, sourcePos.y, sourcePos.z,\n            heading,\n            baseLength, baseWidth, tipLength, tipWidth,\n            false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY\n        )\n    end\nend\n\nself.used = true",
-							},
-						},
-					},
-				},
 			},
 		},
 	},
@@ -3621,6 +4150,41 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_CD",
+							setTarget = true,
+							targetContentID = 7131,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 801.88345429349,
+				name = "[All] Target Kefka",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 3,
+				timerOffset = 9,
+				timerStartOffset = -3,
+				uuid = "e30c4a43-73c7-eab5-94a1-642716d125a9",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							uuid = "462c1849-9578-8dcf-b9bc-f197cd94b2be",
@@ -3840,8 +4404,189 @@ local tbl =
 			},
 		},
 	},
+	[159] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 855.99403801671,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 159,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "91cdafb9-b721-e4e7-ac06-21dfef509a50",
+				version = 2,
+			},
+		},
+	},
 	[165] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Is Mit Enable",
+							uuid = "cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Dismantle",
+				timelineIndex = 165,
+				timerOffset = -2,
+				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
+							ignoreWeaveRules = true,
+							usePot = true,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Use Potion",
+				timelineIndex = 165,
+				timerEndOffset = 6,
+				timerOffset = -5,
+				timerStartOffset = -6,
+				uuid = "07e5897c-e766-f718-b374-a98980564b0a",
+				version = 2,
+			},
+			inheritedIndex = 13,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Potion Off",
+				timelineIndex = 165,
+				timerEndOffset = 1,
+				timerOffset = 10,
+				timerStartOffset = -17,
+				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
+				version = 2,
+			},
+		},
 		
 		{
 			data = 
@@ -3949,95 +4694,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
-							dequeueIfLuaFalse = true,
-							name = "Is Mit Enable",
-							uuid = "cabcddf8-f3d1-df2e-990a-cd9d28ad0fcb",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Dismantle",
-				timelineIndex = 165,
-				timerOffset = -2,
-				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							ignoreWeaveRules = true,
-							usePot = true,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[DPS] Use Potion",
-				timelineIndex = 165,
-				timerEndOffset = 6,
-				timerOffset = -5,
-				timerStartOffset = -6,
-				uuid = "07e5897c-e766-f718-b374-a98980564b0a",
-				version = 2,
-			},
-			inheritedIndex = 13,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
@@ -4057,37 +4713,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[DPS] Potion Off",
-				timelineIndex = 165,
-				timerEndOffset = 1,
-				timerOffset = 10,
-				timerStartOffset = -17,
-				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
-				version = 2,
-			},
 		},
 		
 		{
@@ -4409,6 +5034,61 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"67f270b4-190a-6233-925a-569d2ee31fc5",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							setTarget = true,
+							targetContentID = 7131,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgType = 3,
+							name = "Is Targetable",
+							uuid = "67f270b4-190a-6233-925a-569d2ee31fc5",
+							version = 3,
+						},
+					},
+				},
+				eventType = 26,
+				mechanicTime = 965.64810213372,
+				name = "[All] Target Kefka",
+				timeRange = true,
+				timelineIndex = 171,
+				timerEndOffset = 3,
+				timerOffset = 9,
+				timerStartOffset = -3,
+				uuid = "057ad778-329a-1943-87f0-84c289be5e9e",
+				version = 2,
+			},
+		},
 	},
 	[172] = 
 	{
@@ -4498,6 +5178,67 @@ local tbl =
 				timelineIndex = 177,
 				timerOffset = -3,
 				uuid = "29aee6c5-9d9f-b76a-8138-945d59da0003",
+				version = 2,
+			},
+		},
+	},
+	[179] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"5ef52b64-301f-372a-b393-ba0b6028b28b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "00ec2c0b-d1a7-9abd-bbc9-544d5015a735",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "5ef52b64-301f-372a-b393-ba0b6028b28b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 984.98511146124,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRandomRange = true,
+				timeRange = true,
+				timelineIndex = 179,
+				timerEndOffset = -12,
+				timerOffset = -10,
+				timerStartOffset = -14.5,
+				uuid = "2f28eab9-f543-65de-91c4-94f80bc0828a",
 				version = 2,
 			},
 		},
@@ -4734,90 +5475,6 @@ local tbl =
 			},
 		},
 	},
-	[209] = 
-	{
-		
-		{
-			data = 
-			{
-				name = "[Draw] P5 Exaflares",
-				uuid = "a6c3ccb5-72d3-519b-bab2-e4b676f25e5b",
-				version = 2,
-			},
-			inheritedIndex = 4,
-			inheritedObjectUUID = "dd6428d9-a7b5-42eb-9c77-49c655a81657",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-		
-		{
-			data = 
-			{
-				name = "[Mit] Phys Ranged",
-				uuid = "e814e638-8bc3-95fb-957a-44d8ac0cde37",
-				version = 2,
-			},
-			inheritedObjectUUID = "1bd64837-71f0-750c-ad86-645e986d9595",
-			inheritedOverwrites = 
-			{
-				enabled = false,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Lua",
-							actionLua = "local drawer\nif ArgusDrawsPlus ~= nil then\n    if ArgusDrawsPlus.getEnabled() then\n        drawer = TensorCore.getStaticDrawer(4280395481)  --不透明黄色\n    else\n        drawer = TensorCore.getStaticDrawer(1291911167)  --0.3透明度黄色\n    end\nelse\n    drawer = TensorCore.getStaticDrawer(1291911167)  --0.3透明度黄色\nend\nif TensorReactions_CurrentTimer < 1068.5 then\n    for i = 1, 8 do\n        local pos = TensorCore.getPosInDirection({x = eventArgs.x, y = 0, z = eventArgs.z}, eventArgs.heading, 7 * (i - 1))\n        drawer:addTimedCircle(3700 + i * 520, pos.x, 0, pos.z, 6, 0, false, false)\n    end\nelse\n    for i = 1, 8 do\n        local pos = TensorCore.getPosInDirection({x = eventArgs.x, y = 0, z = eventArgs.z}, eventArgs.heading, 7 * (i - 1))\n        drawer:addTimedCircle(840 + i * 520, pos.x, 0, pos.z, 6, 2860, false, false)\n    end\nend\nself.used = true",
-							conditions = 
-							{
-								
-								{
-									"176b288e-2e1e-b0cc-947a-d5dcd8706d63",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRuin3_CD",
-							uuid = "b8ecadca-df16-4295-97e4-2346494172bf",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return eventArgs.aoeID == 47932",
-							uuid = "176b288e-2e1e-b0cc-947a-d5dcd8706d63",
-							version = 3,
-						},
-					},
-				},
-				enabled = false,
-				eventType = 18,
-				loop = true,
-				mechanicTime = 1063.6903949829,
-				name = "[Draw] P5 Exaflare",
-				timeRange = true,
-				timelineIndex = 209,
-				timerEndOffset = 30,
-				timerStartOffset = -2,
-				uuid = "f1defedb-63be-d228-a00e-009261c673ce",
-				version = 2,
-			},
-		},
-	},
 	[210] = 
 	{
 		
@@ -4975,14 +5632,6 @@ local tbl =
 							aType = "ACR",
 							actionID = 25786,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"e1635faf-3a50-7f60-9ad2-d1d68c831f7d",
-									true,
-								},
-							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
 							ignoreWeaveRules = true,
@@ -4996,18 +5645,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
-							dequeueIfLuaFalse = true,
-							name = "Is Mit Enable",
-							uuid = "e1635faf-3a50-7f60-9ad2-d1d68c831f7d",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 1149.6575474604,
 				name = "[MCH] Dismantle",
@@ -5065,7 +5702,7 @@ local tbl =
 							{
 								
 								{
-									"ace4d706-6f8b-e649-a978-b1214d7b9ba7",
+									"1c99529a-74f6-5cb6-a949-cbe64a209a5e",
 									true,
 								},
 							},
@@ -5082,11 +5719,15 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
-							dequeueIfLuaFalse = true,
-							name = "Is Mit Enable",
-							uuid = "ace4d706-6f8b-e649-a978-b1214d7b9ba7",
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "1c99529a-74f6-5cb6-a949-cbe64a209a5e",
 							version = 3,
 						},
 					},
@@ -5263,6 +5904,58 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"9a76b4e7-b69d-904f-930e-a607c59479e4",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Detonate",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 36982,
 							conditions = 
 							{
@@ -5424,63 +6117,9 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16766,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"9a76b4e7-b69d-904f-930e-a607c59479e4",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 4,
-							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Force Detonate",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
 	},
 	inheritedProfiles = 
 	{
-		"Lj\\umad\\draws_lpdu",
-		"store\\anyone\\dmu\\main",
 	},
 	timelineName = "dmu",
 	version = "1.5.5",
