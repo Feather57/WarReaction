@@ -79,6 +79,7 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 15.261765625,
 				name = "[MCH] Use Queen",
 				timeRange = true,
@@ -86,84 +87,6 @@ local tbl =
 				timerEndOffset = 1,
 				timerStartOffset = -5,
 				uuid = "35553a23-3fca-2114-859e-f201735cd2dc",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							gVarValue = 2,
-							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							gVarValue = 2,
-							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] oGcd Weave",
-				timelineIndex = 1,
-				timerOffset = -12.800000190735,
-				uuid = "19020f32-8d18-9655-a0e6-90e77c7b65a5",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] oGcd Weave",
-				timelineIndex = 1,
-				timerOffset = -9,
-				uuid = "2b59a594-120a-c7f8-9a67-85034244262f",
 				version = 2,
 			},
 		},
@@ -248,6 +171,28 @@ local tbl =
 							uuid = "805bbc6e-2ee1-b5f1-8f8a-b921277fefa7",
 							version = 2.1,
 						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							uuid = "d9d8c044-d469-0430-8a35-867b94299252",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							uuid = "ff8593fe-9fcc-0d08-8ca6-22c90c5c584d",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
 					},
 					
 					{
@@ -743,7 +688,6 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_Checkmate",
-							gVarValue = 2,
 							uuid = "3fe756f8-6f2b-240c-908d-4d6546a4e78d",
 							version = 2.1,
 						},
@@ -2458,6 +2402,58 @@ local tbl =
 				timelineIndex = 73,
 				timerOffset = -8,
 				uuid = "21484d64-539e-3d9d-8ff0-7298fe129d87",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2878,
+							conditions = 
+							{
+								
+								{
+									"e6ecb6be-16d9-f624-846b-513ae5872f84",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 861,
+							uuid = "e6ecb6be-16d9-f624-846b-513ae5872f84",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 377.30637120621,
+				name = "[MCH] WildFire ",
+				timeRange = true,
+				timelineIndex = 73,
+				timerEndOffset = 3,
+				timerStartOffset = -2,
+				uuid = "018463de-8587-c029-bced-c0f6870f0e48",
 				version = 2,
 			},
 		},
