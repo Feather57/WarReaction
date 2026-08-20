@@ -178,7 +178,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\n-- Save current DMU mitigation setting before disabling it\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\n\n-- Save current Prepull Helper setting before disabling it\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -630,6 +630,38 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Lua",
+							actionLua = "-- Clear current target\nTensorCore.mGetPlayer():ClearTarget()\n\n-- Restore Anyone Configuration\nAnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\nAnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n\n-- Mark action complete\nself.used = true",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "9a17440e-4710-700d-b90f-f154c8188764",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 17,
+				mechanicTime = 15.261765625,
+				name = "[MCH] Opener DMU Cancel",
+				timeRange = true,
+				timelineIndex = 1,
+				timerStartOffset = -15.300000190735,
+				uuid = "6ff8b694-bd4c-48d6-a827-1795cbe81c3e",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "6398a557-95ba-8807-9883-92b9f5e68fdd",
@@ -754,7 +786,7 @@ local tbl =
 				uuid = "74290d8b-dd55-e428-b7c0-daa92eb01a34",
 				version = 2,
 			},
-			inheritedIndex = 6,
+			inheritedIndex = 7,
 		},
 	}, 
 	[3] = 
