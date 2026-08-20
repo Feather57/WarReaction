@@ -178,7 +178,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\nMCH_enableSpreadDraws = true\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -266,7 +266,7 @@ local tbl =
 							uuid = "81c3977a-9a60-5c89-b463-2f5acf67880d",
 							version = 2.1,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 5,
 					},
 					
 					{
@@ -449,7 +449,7 @@ local tbl =
 							uuid = "43a19cc8-1980-8818-b01c-75eac9d28801",
 							version = 2.1,
 						},
-						inheritedIndex = 14,
+						inheritedIndex = 13,
 					},
 					
 					{
@@ -631,7 +631,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "-- Clear current target\nTensorCore.mGetPlayer():ClearTarget()\n\n-- Restore Anyone Configuration\nAnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\nAnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\nMCH_enableCallTTS = false\nMCH_enableSpreadDraws = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true\n",
 							gVar = "ACR_RikuWAR3_CD",
 							uuid = "9a17440e-4710-700d-b90f-f154c8188764",
 							version = 2.1,
@@ -765,7 +765,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "-- Reset combat state\ngStartCombat = false\n\n-- Release forced facing\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\n-- Clear current target\nTensorCore.mGetPlayer():ClearTarget()\n\n-- Restore Anyone Configuration\nAnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\nAnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\nMCH_enableCallTTS = false\nMCH_enableSpreadDraws = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true",
 							gVar = "ACR_RikuSGE3_CD",
 							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
 							version = 2.1,
@@ -5809,6 +5809,54 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw MCH NW spread position\nlocal drawer = TensorCore.getMoogleDrawer()\ndrawer:addTimedCircle(5000, 89.036, 0, 95.994, 1.5, 0, false, true)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"49bb6ad7-c387-520a-9f50-43cd1672d67f",
+									true,
+								},
+							},
+							name = "MCH NW Spread Draw",
+							uuid = "909ceff1-203d-53f0-a9b5-5e6a42409ad7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableSpreadDraws",
+							name = "MCH Draw Enable",
+							uuid = "49bb6ad7-c387-520a-9f50-43cd1672d67f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1003.3929625387,
+				name = "[Draw] NW Spread",
+				timelineIndex = 186,
+				timerOffset = -6,
+				uuid = "edc0dac9-5330-5086-b9aa-a9589affdfd5",
+				version = 2,
+			},
+		},
 	},
 	[191] = 
 	{
@@ -6109,6 +6157,55 @@ local tbl =
 				timelineIndex = 210,
 				timerOffset = -6,
 				uuid = "aaeaef6f-3411-7661-b7c6-2c3242160322",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "-- Draw MCH NW spread position\nlocal drawer = TensorCore.getMoogleDrawer()\ndrawer:addTimedCircle(5000, 89.036, 0, 95.994, 1.5, 0, false, true)\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"888581eb-8f66-7266-958c-9ac7cc6b875a",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							name = "MCH NW Spread Draw",
+							uuid = "66c97192-7b37-8cbd-832d-4c68ea271bba",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableSpreadDraws",
+							name = "MCH Draw Enable",
+							uuid = "888581eb-8f66-7266-958c-9ac7cc6b875a",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1095.4450949829,
+				name = "[Draw] NW Spread",
+				timelineIndex = 210,
+				timerOffset = -6,
+				uuid = "6e95968c-d340-ee8d-8da4-6ab2c3a8f0ce",
 				version = 2,
 			},
 		},
@@ -6659,6 +6756,61 @@ local tbl =
 					{
 						data = 
 						{
+							acrOptionType = "Hold Action",
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Burn Hypercharge",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -15,
+				uuid = "a819137e-7142-7f70-ba4a-775bbabe3873",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 16766,
 							atomicPriority = true,
 							conditions = 
@@ -6699,7 +6851,7 @@ local tbl =
 				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -6816,60 +6968,6 @@ local tbl =
 				timelineIndex = 227,
 				timerStartOffset = -15,
 				uuid = "e1a3dd6d-21c3-492d-8d6d-1fdc80ac7a8a",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							acrOptionType = "Hold Action",
-							actionID = 17209,
-							conditions = 
-							{
-								
-								{
-									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionCharges = 2,
-							holdActionDuration = 20,
-							holdActionID = 17209,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							name = "Is Not Overheated",
-							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Burn Hypercharge",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "a819137e-7142-7f70-ba4a-775bbabe3873",
 				version = 2,
 			},
 		},
