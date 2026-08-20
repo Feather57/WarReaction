@@ -12,8 +12,173 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 36981,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							targetType = "Current Target",
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] Force Excavator",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -1,
+				timerOffset = -7,
+				timerStartOffset = -3.4000000953674,
+				uuid = "e38726bf-b831-2750-954e-16050b34da6e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"6a2a35b0-a59b-b784-a26e-4881b2dd5095",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "7d8e633b-a737-daca-96b6-3a5c69be4be6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							uuid = "6a2a35b0-a59b-b784-a26e-4881b2dd5095",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] Use Queen",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 1,
+				timerStartOffset = -5,
+				uuid = "35553a23-3fca-2114-859e-f201735cd2dc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							gVarValue = 2,
+							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							gVarValue = 2,
+							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] oGcd Weave",
+				timelineIndex = 1,
+				timerOffset = -12.800000190735,
+				uuid = "19020f32-8d18-9655-a0e6-90e77c7b65a5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_DoubleCheck",
+							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Checkmate",
+							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[MCH] oGcd Weave",
+				timelineIndex = 1,
+				timerOffset = -9,
+				uuid = "2b59a594-120a-c7f8-9a67-85034244262f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Lua",
-							actionLua = "AnyoneCore.Settings.Reactions.dmu.mitigation = false\ngStartCombat = false\nMCHAnyoneCorePrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nAnyoneCore.Settings.PrepullHelper.enabled = false\ndata.MCHTimelineOpener = true\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU mitigation setting before disabling it\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\n\n-- Save current Prepull Helper setting before disabling it\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -453,172 +618,7 @@ local tbl =
 				uuid = "7dde1dd1-fb49-aa4d-bebf-8501c312f243",
 				version = 2,
 			},
-			inheritedIndex = 15,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 36981,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							targetType = "Current Target",
-							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] Force Excavator",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = -1,
-				timerOffset = -7,
-				timerStartOffset = -3.4000000953674,
-				uuid = "e38726bf-b831-2750-954e-16050b34da6e",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16501,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"6a2a35b0-a59b-b784-a26e-4881b2dd5095",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Current Target",
-							uuid = "7d8e633b-a737-daca-96b6-3a5c69be4be6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 2,
-							gaugeValue = 50,
-							uuid = "6a2a35b0-a59b-b784-a26e-4881b2dd5095",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] Use Queen",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = 1,
-				timerStartOffset = -5,
-				uuid = "35553a23-3fca-2114-859e-f201735cd2dc",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							gVarValue = 2,
-							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							gVarValue = 2,
-							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] oGcd Weave",
-				timelineIndex = 1,
-				timerOffset = -12.800000190735,
-				uuid = "19020f32-8d18-9655-a0e6-90e77c7b65a5",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_DoubleCheck",
-							uuid = "2b901111-1584-dd6e-b5ba-b3741adba8d2",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Checkmate",
-							uuid = "4d4c534d-a6ba-0b6f-8f73-a7e3f9b698c6",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[MCH] oGcd Weave",
-				timelineIndex = 1,
-				timerOffset = -9,
-				uuid = "2b59a594-120a-c7f8-9a67-85034244262f",
-				version = 2,
-			},
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -733,7 +733,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\nTensorCore.mGetPlayer():ClearTarget()\nAnyoneCore.Settings.PrepullHelper.enabled = MCHAnyoneCorePrepullHelper\nself.used = true",
+							actionLua = "-- Reset combat state\ngStartCombat = false\n\n-- Release forced facing\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\n-- Clear current target\nTensorCore.mGetPlayer():ClearTarget()\n\n-- Restore Anyone Configuration\nAnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\nAnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n\n-- Mark action complete\nself.used = true",
 							gVar = "ACR_RikuSGE3_CD",
 							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
 							version = 2.1,
@@ -754,7 +754,7 @@ local tbl =
 				uuid = "74290d8b-dd55-e428-b7c0-daa92eb01a34",
 				version = 2,
 			},
-			inheritedIndex = 17,
+			inheritedIndex = 6,
 		},
 	}, 
 	[3] = 
@@ -1120,7 +1120,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 173.37050637968,
-				name = "[ALL] Sprint",
+				name = "[All] Sprint",
 				timelineIndex = 35,
 				timerOffset = 3,
 				uuid = "32362de1-5ce2-e7f7-91ac-640dc940e44a",
@@ -2421,7 +2421,6 @@ local tbl =
 				conditions = 
 				{
 				},
-				enabled = false,
 				mechanicTime = 377.30637120621,
 				name = "[MCH] Dismantle",
 				timelineIndex = 73,
@@ -3690,6 +3689,11 @@ local tbl =
 									"20684b89-30e3-6382-a527-a694c50bd8fc",
 									true,
 								},
+								
+								{
+									"fa8d41e3-5af8-f08a-adff-e21e0a2d5556",
+									true,
+								},
 							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
@@ -3708,6 +3712,17 @@ local tbl =
 							category = "Self",
 							name = "Self Buff: Accretion",
 							uuid = "20684b89-30e3-6382-a527-a694c50bd8fc",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "fa8d41e3-5af8-f08a-adff-e21e0a2d5556",
 							version = 3,
 						},
 					},
@@ -4041,7 +4056,7 @@ local tbl =
 			},
 		},
 	},
-	[137] = 
+	[140] = 
 	{
 		
 		{
@@ -4064,10 +4079,10 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 690.41578400282,
-				name = "[MCH] Sprint",
-				timelineIndex = 137,
-				timerOffset = 2,
+				mechanicTime = 703.58654115995,
+				name = "[All] Sprint",
+				timelineIndex = 140,
+				timerOffset = -2,
 				uuid = "1d0287a6-b55f-e25f-8592-3dfe2a1ceb62",
 				version = 2,
 			},
@@ -4570,6 +4585,38 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -4,
 				uuid = "c5c59386-badf-4a3e-a4cd-4f9589b70969",
+				version = 2,
+			},
+		},
+	},
+	[153] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Sprint",
+							uuid = "5e857c6c-2726-2dbc-b79a-d23a8bf426fb",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 826.02524789261,
+				name = "[All] Sprint",
+				timelineIndex = 153,
+				timerOffset = -2,
+				uuid = "f7c3bd4b-e7df-36b2-95ad-bd9a07f24b52",
 				version = 2,
 			},
 		},
@@ -5522,6 +5569,14 @@ local tbl =
 							aType = "Alert",
 							alertTTS = true,
 							alertText = "Stack",
+							conditions = 
+							{
+								
+								{
+									"17eb5e80-7919-202e-92a7-bf371af6ad97",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5531,6 +5586,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "17eb5e80-7919-202e-92a7-bf371af6ad97",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 978.67931016566,
 				name = "[TTS] Stack",
@@ -5674,6 +5740,14 @@ local tbl =
 							alertTTS = true,
 							alertText = "Spread Position",
 							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"e92419fa-24e7-e3b2-adef-fcc731b68ae4",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5683,11 +5757,22 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "e92419fa-24e7-e3b2-adef-fcc731b68ae4",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1003.3929625387,
 				name = "[TTS] Spread Position",
 				timelineIndex = 186,
-				timerOffset = -5,
+				timerOffset = -6,
 				uuid = "1e7646e9-96c0-14dc-9317-0551ea81ae2e",
 				version = 2,
 			},
@@ -5708,6 +5793,14 @@ local tbl =
 							aType = "Alert",
 							alertTTS = true,
 							alertText = "Stack",
+							conditions = 
+							{
+								
+								{
+									"1934785f-a28f-40da-a991-3b814b099672",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5717,6 +5810,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "1934785f-a28f-40da-a991-3b814b099672",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1015.5629742328,
 				name = "[TTS] Stack",
@@ -5742,6 +5846,14 @@ local tbl =
 							aType = "Alert",
 							alertTTS = true,
 							alertText = "Tower",
+							conditions = 
+							{
+								
+								{
+									"248df176-5975-99a0-8d49-a05872e23121",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5751,6 +5863,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "248df176-5975-99a0-8d49-a05872e23121",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1025.1000086512,
 				name = "[TTS] Tower",
@@ -5777,6 +5900,14 @@ local tbl =
 							alertPriority = 2,
 							alertTTS = true,
 							alertText = "Spread",
+							conditions = 
+							{
+								
+								{
+									"4903ed8e-52d3-d8bd-b982-13f61a912831",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5786,11 +5917,22 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "4903ed8e-52d3-d8bd-b982-13f61a912831",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1045.6803244835,
 				name = "[TTS] Spread",
 				timelineIndex = 199,
-				timerOffset = -3,
+				timerOffset = -5,
 				uuid = "46e72e9d-4388-a8a8-8515-4929d9198269",
 				version = 2,
 			},
@@ -5831,45 +5973,6 @@ local tbl =
 			inheritedIndex = 2,
 		},
 	},
-	[203] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				conditions = 
-				{
-				},
-				enabled = false,
-				mechanicTime = 1054.5292176297,
-				name = "[MCH] Dismantle",
-				timelineIndex = 203,
-				timerOffset = -4,
-				uuid = "5dbff1df-932e-7772-90d1-c6f316c858d1",
-				version = 2,
-			},
-		},
-	},
 	[208] = 
 	{
 		
@@ -5885,6 +5988,14 @@ local tbl =
 							aType = "Alert",
 							alertTTS = true,
 							alertText = "Stack",
+							conditions = 
+							{
+								
+								{
+									"57c1e0e1-5992-1a9b-bdfb-0849f8713f13",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5894,6 +6005,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "57c1e0e1-5992-1a9b-bdfb-0849f8713f13",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1060.5180184963,
 				name = "[TTS] Stack",
@@ -5921,6 +6043,14 @@ local tbl =
 							alertTTS = true,
 							alertText = "Spread Position",
 							alertVolume = 100,
+							conditions = 
+							{
+								
+								{
+									"6ce648e9-cd1e-0aae-8d5e-ac601e4d6eba",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5930,11 +6060,22 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "6ce648e9-cd1e-0aae-8d5e-ac601e4d6eba",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1095.4450949829,
 				name = "[TTS] Spread Position",
 				timelineIndex = 210,
-				timerOffset = -5,
+				timerOffset = -6,
 				uuid = "aaeaef6f-3411-7661-b7c6-2c3242160322",
 				version = 2,
 			},
@@ -5955,6 +6096,14 @@ local tbl =
 							aType = "Alert",
 							alertTTS = true,
 							alertText = "Stack",
+							conditions = 
+							{
+								
+								{
+									"2eee6e77-6b5e-17a9-9382-c0beac2539b6",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -5964,6 +6113,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "2eee6e77-6b5e-17a9-9382-c0beac2539b6",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1107.6512243835,
 				name = "[TTS] Stack",
@@ -5991,6 +6151,14 @@ local tbl =
 							alertPriority = 2,
 							alertTTS = true,
 							alertText = "Move",
+							conditions = 
+							{
+								
+								{
+									"dccb722f-47df-dc81-bb91-34c835c85bc5",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -6000,12 +6168,52 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "dccb722f-47df-dc81-bb91-34c835c85bc5",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1133.3461474604,
 				name = "[TTS] Move",
 				timelineIndex = 221,
 				timerOffset = 0.20000000298023,
 				uuid = "77315f74-6f7d-d4f0-8204-a9f00f08afd2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hotbar_Sprint",
+							uuid = "83639293-9fd0-e244-9618-fb93b6fa90eb",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1133.3461474604,
+				name = "[All] Sprint",
+				timelineIndex = 221,
+				timerOffset = -3,
+				uuid = "ba511e3c-b82a-37db-a947-e2c6b12c1379",
 				version = 2,
 			},
 		},
@@ -6027,6 +6235,14 @@ local tbl =
 							alertPriority = 2,
 							alertTTS = true,
 							alertText = "Move",
+							conditions = 
+							{
+								
+								{
+									"e20e98b0-3653-34b3-9e76-bec2d5151256",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -6036,6 +6252,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "e20e98b0-3653-34b3-9e76-bec2d5151256",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1141.5122474604,
 				name = "[TTS] Move",
@@ -6098,6 +6325,14 @@ local tbl =
 							alertPriority = 2,
 							alertTTS = true,
 							alertText = "Move",
+							conditions = 
+							{
+								
+								{
+									"0f0f8771-3510-cd7e-964a-0cfe0815345f",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
@@ -6107,6 +6342,17 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "0f0f8771-3510-cd7e-964a-0cfe0815345f",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1149.6575474604,
 				name = "[TTS] Move",
