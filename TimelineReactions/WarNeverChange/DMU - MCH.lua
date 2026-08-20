@@ -631,7 +631,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\nMCH_enableCallTTS = false\nMCH_enableSpreadDraws = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true\n",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true\n",
 							gVar = "ACR_RikuWAR3_CD",
 							uuid = "9a17440e-4710-700d-b90f-f154c8188764",
 							version = 2.1,
@@ -765,7 +765,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\nMCH_enableCallTTS = false\nMCH_enableSpreadDraws = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif MCH_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = MCH_savedPrepullHelper\n    MCH_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = MCH_savedDmuMitigation\n    MCH_savedDmuMitigation = nil\nend\n\nself.used = true",
 							gVar = "ACR_RikuSGE3_CD",
 							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
 							version = 2.1,
