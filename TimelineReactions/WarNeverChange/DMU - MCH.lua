@@ -4137,6 +4137,11 @@ local tbl =
 									"8805579a-605c-45d9-b706-678248857b4f",
 									true,
 								},
+								
+								{
+									"06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_CD",
 							ignoreWeaveRules = true,
@@ -4156,6 +4161,19 @@ local tbl =
 							conditionType = 3,
 							hpValue = 1,
 							uuid = "8805579a-605c-45d9-b706-678248857b4f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							name = "Battery >= 50",
+							uuid = "06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
 							version = 3,
 						},
 					},
@@ -4179,6 +4197,18 @@ local tbl =
 			{
 				actions = 
 				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							gVarValue = 2,
+							uuid = "f08ac4b9-cb0c-a121-85fe-5fd64ccb0452",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
 					
 					{
 						data = 
@@ -4335,7 +4365,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 2,
+							hpValue = 1,
 							uuid = "ecf3557c-5688-a4bf-ac6b-10a7ec94d6a8",
 							version = 3,
 						},
@@ -4347,6 +4377,78 @@ local tbl =
 				timelineIndex = 148,
 				timerStartOffset = -10,
 				uuid = "736caa98-727f-110b-87a9-474491bad0ff",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7414,
+							conditions = 
+							{
+								
+								{
+									"d5cff803-1bd7-77a6-b977-a85f45b2c152",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "c2b5cea2-7247-08d8-aa0b-db825c83e06a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"d5cff803-1bd7-77a6-b977-a85f45b2c152",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							gVarValue = 2,
+							uuid = "163cc88d-dbd1-c34f-9a7a-c16f1846973f",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7414,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "d5cff803-1bd7-77a6-b977-a85f45b2c152",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Force Barrel",
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 5,
+				timerStartOffset = -3,
+				uuid = "302be480-a148-689e-a53d-60dc9c24c37a",
 				version = 2,
 			},
 		},
@@ -6738,6 +6840,90 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionDuration = 25,
+							holdActionID = 16501,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Hold Queen",
+				timelineIndex = 226,
+				timerOffset = -27,
+				uuid = "17277eff-fe74-9b7f-89e5-88205f143b1b",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2878,
+							conditions = 
+							{
+								
+								{
+									"e6ecb6be-16d9-f624-846b-513ae5872f84",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 861,
+							uuid = "e6ecb6be-16d9-f624-846b-513ae5872f84",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] WildFire ",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 16,
+				timerStartOffset = 12,
+				uuid = "778da39b-d0ae-afe1-b493-615f100afa24",
+				version = 2,
+			},
 		},
 	},
 	[227] = 
