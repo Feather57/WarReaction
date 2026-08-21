@@ -1851,7 +1851,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 269.6455060413,
-				name = "[MCH] Force Excavator",
+				name = "[MCH] Hold Excavator",
 				timelineIndex = 48,
 				timerEndOffset = -1,
 				timerOffset = -30,
@@ -7318,6 +7318,105 @@ local tbl =
 				timelineIndex = 227,
 				timerStartOffset = -15,
 				uuid = "e1a3dd6d-21c3-492d-8d6d-1fdc80ac7a8a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25788,
+							conditions = 
+							{
+								
+								{
+									"b23f765f-38a8-6773-8ba9-dc842ad1b0b1",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							targetType = "Enemy",
+							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 5,
+							uuid = "b23f765f-38a8-6773-8ba9-dc842ad1b0b1",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Chain Saw",
+				timeRange = true,
+				timelineIndex = 227,
+				timerEndOffset = 2,
+				timerStartOffset = -10,
+				uuid = "c2e46fc0-692a-3bf1-8ac8-3a279b494592",
+				version = 2,
+			},
+			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36981,
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 3,
+							uuid = "9533071a-1515-2afc-b1cf-e15d11060e5d",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Force Excavator",
+				timeRange = true,
+				timelineIndex = 227,
+				timerEndOffset = 2,
+				timerOffset = 1,
+				timerStartOffset = -10,
+				uuid = "8fdb1530-4d12-2e85-988f-4d0c8acd5d75",
 				version = 2,
 			},
 		},
