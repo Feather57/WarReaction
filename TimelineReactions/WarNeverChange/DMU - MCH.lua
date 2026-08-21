@@ -7296,40 +7296,10 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 17209,
-							atomicPriority = true,
-							endIfUsed = true,
-							uuid = "dfe20e1f-7390-a0e5-ab2d-9a7faee4e6f7",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[MCH] Hypercharge",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 20.25,
-				timerStartOffset = 18.25,
-				uuid = "c1a3e5b2-c0ba-0d4f-8b1a-fe834bf2f2e0",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 2878,
 							atomicPriority = true,
 							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
 							targetType = "Enemy",
 							uuid = "68b02cae-ce5a-054d-bfb8-eca7d111e610",
 							version = 2.1,
@@ -7380,6 +7350,39 @@ local tbl =
 				uuid = "b2e8cdc4-8c96-7b9b-acf5-5abecb658101",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 17209,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "dfe20e1f-7390-a0e5-ab2d-9a7faee4e6f7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Hypercharge",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 22,
+				timerStartOffset = 19.75,
+				uuid = "c1a3e5b2-c0ba-0d4f-8b1a-fe834bf2f2e0",
+				version = 2,
+			},
+			inheritedIndex = 10,
 		},
 	},
 	[227] = 
@@ -7469,6 +7472,58 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 17209,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"86cf3e82-32f0-06b2-b3cb-3abbf08561f0",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "dfe20e1f-7390-a0e5-ab2d-9a7faee4e6f7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							name = "Is Not Overheated",
+							uuid = "86cf3e82-32f0-06b2-b3cb-3abbf08561f0",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Hypercharge",
+				timeRange = true,
+				timelineIndex = 227,
+				timerStartOffset = -6,
+				uuid = "b4aa0633-280c-bad2-bbbd-baf811a64b38",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 		
 		{
