@@ -2500,6 +2500,145 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"7f7df0a9-a308-c894-9b86-6a4911fcdc84",
+									true,
+								},
+								
+								{
+									"d01308ee-fe3d-c666-8057-cc28d8f99dfb",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "ea0d4e3d-86ed-88ce-8c44-e8d2c07838e9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "7f7df0a9-a308-c894-9b86-6a4911fcdc84",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "d01308ee-fe3d-c666-8057-cc28d8f99dfb",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 424.39347120621,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 76,
+				timerOffset = -3,
+				uuid = "6b531185-db77-98fa-9ba1-1cc0eb5620a9",
+				version = 2,
+			},
+		},
+	},
+	[79] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"1bd0637a-37ee-5df6-abaf-a679b0e0ebac",
+									true,
+								},
+								
+								{
+									"e8f1bab5-7ac7-8f5a-a241-fbda44daf7a2",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "92646cc7-12cb-b998-b397-a6719deb25e3",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "1bd0637a-37ee-5df6-abaf-a679b0e0ebac",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "e8f1bab5-7ac7-8f5a-a241-fbda44daf7a2",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 450.00390950196,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 79,
+				timerOffset = -3,
+				uuid = "243ee980-bda7-5cf7-96de-b036eea51dfc",
+				version = 2,
+			},
+		},
 	},
 	[83] = 
 	{
@@ -2673,6 +2812,77 @@ local tbl =
 			},
 		},
 	},
+	[91] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"86b23b79-538c-96d9-82bf-93f6a16ab64c",
+									true,
+								},
+								
+								{
+									"d0ecc38a-220f-96a8-8de5-c0d542a2a5c5",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "16b9ac2e-b43a-5c19-9cd7-840ab4d5626f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "86b23b79-538c-96d9-82bf-93f6a16ab64c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "d0ecc38a-220f-96a8-8de5-c0d542a2a5c5",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 507.31761539671,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 91,
+				timerOffset = -3,
+				uuid = "3c4bb8a8-54a0-d5c6-9284-a1481093655d",
+				version = 2,
+			},
+		},
+	},
 	[93] = 
 	{
 		
@@ -2707,6 +2917,77 @@ local tbl =
 						},
 					},
 				},
+			},
+		},
+	},
+	[102] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"e751aa19-2a94-2796-ac7c-89cbee8897d1",
+									true,
+								},
+								
+								{
+									"1d97ea17-f04b-ae3d-903e-ec66d2e90737",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "9fb419c0-6328-6ddc-b193-669bb58ba146",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "e751aa19-2a94-2796-ac7c-89cbee8897d1",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "1d97ea17-f04b-ae3d-903e-ec66d2e90737",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 536.97932260272,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 102,
+				timerOffset = -3,
+				uuid = "3079d5db-4136-26f0-95b7-0a58684d4b61",
+				version = 2,
 			},
 		},
 	},
@@ -2848,6 +3129,77 @@ local tbl =
 				timerOffset = -3,
 				timerStartOffset = -15,
 				uuid = "0d820b7b-c557-12f6-aa25-93acb4a83314",
+				version = 2,
+			},
+		},
+	},
+	[114] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"45255d7e-c6d1-9672-a67d-2a94dc684a4a",
+									true,
+								},
+								
+								{
+									"f81e3915-bffe-35fc-90ab-745ded315acc",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "905cfd8e-f8d6-42e2-ae25-52776e82ec8f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "45255d7e-c6d1-9672-a67d-2a94dc684a4a",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "f81e3915-bffe-35fc-90ab-745ded315acc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 585.5151416903,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 114,
+				timerOffset = -3,
+				uuid = "09c9d91e-380f-96f3-911c-c0f9049ec410",
 				version = 2,
 			},
 		},
@@ -3218,6 +3570,77 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[147] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"147bc927-2719-7774-8147-383a4377e570",
+									true,
+								},
+								
+								{
+									"ecbe559d-eea6-9645-bd27-eddb177f7a28",
+									true,
+								},
+							},
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							uuid = "e7cf16e4-ef44-f412-b9a4-192a088588bc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Bloodwhetting CD <=1",
+							uuid = "147bc927-2719-7774-8147-383a4377e570",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "ecbe559d-eea6-9645-bd27-eddb177f7a28",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 714.08445784516,
+				name = "[WAR][MT] Whetting",
+				timelineIndex = 147,
+				timerOffset = -3,
+				uuid = "b4d4dcb5-d185-7250-ae4e-772d51183850",
+				version = 2,
+			},
 		},
 	},
 	[148] = 
