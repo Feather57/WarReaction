@@ -4718,6 +4718,38 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "f68e2cef-779c-7354-93b0-dcd00398011d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 801.88345429349,
+				name = "[MCH] Reassemble",
+				timeRange = true,
+				timelineIndex = 150,
+				timerOffset = 6,
+				timerStartOffset = -2,
+				uuid = "72d88424-393b-e2f5-92aa-c9cbb3a29fa2",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
 	},
 	[153] = 
 	{
@@ -5644,6 +5676,38 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 8,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "f68e2cef-779c-7354-93b0-dcd00398011d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 965.64810213372,
+				name = "[MCH] Reassemble",
+				timeRange = true,
+				timelineIndex = 171,
+				timerOffset = 6,
+				timerStartOffset = -2,
+				uuid = "850ea829-d554-73d0-bd55-fd53ff9260c4",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[172] = 
