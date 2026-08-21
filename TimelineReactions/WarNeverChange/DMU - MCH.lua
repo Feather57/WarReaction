@@ -7059,121 +7059,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[DPS] Potion On",
-				timelineIndex = 226,
-				timerEndOffset = 1,
-				timerStartOffset = -17,
-				uuid = "5c5a9b58-a7e7-8071-97ba-9323a0b4456e",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[DPS] Potion Off",
-				timelineIndex = 226,
-				timerEndOffset = 1,
-				timerOffset = 15,
-				timerStartOffset = -17,
-				uuid = "f5284cc8-7422-cedb-80fb-84c033dfd933",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							acrOptionType = "Hold Action",
-							actionID = 17209,
-							conditions = 
-							{
-								
-								{
-									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionCharges = 2,
-							holdActionDuration = 20,
-							holdActionID = 17209,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							name = "Is Not Overheated",
-							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[MCH] Use Hypercharge",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 25,
-				timerStartOffset = 10,
-				uuid = "fd3ea9fc-440a-6a25-9e46-d0e4b8e50bae",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
@@ -7208,41 +7093,7 @@ local tbl =
 				uuid = "304dd667-7b6a-e90e-adf7-496ee8d34358",
 				version = 2,
 			},
-			inheritedIndex = 8,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_TensorMagnum3_Hotbar_Potion",
-							ignoreWeaveRules = true,
-							usePot = true,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[DPS] Use Potion",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 12,
-				timerStartOffset = 4,
-				uuid = "656ea182-2887-be74-b881-dc6fe1722162",
-				version = 2,
-			},
-			inheritedIndex = 5,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -7274,168 +7125,6 @@ local tbl =
 				uuid = "17277eff-fe74-9b7f-89e5-88205f143b1b",
 				version = 2,
 			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 2878,
-							conditions = 
-							{
-								
-								{
-									"e6ecb6be-16d9-f624-846b-513ae5872f84",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "0ead626a-e047-b1e3-98d7-11a504aeb103",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 861,
-							uuid = "e6ecb6be-16d9-f624-846b-513ae5872f84",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[MCH] WildFire ",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 16,
-				timerStartOffset = 12,
-				uuid = "778da39b-d0ae-afe1-b493-615f100afa24",
-				version = 2,
-			},
-		},
-	},
-	[227] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							acrOptionType = "Hold Action",
-							actionID = 17209,
-							conditions = 
-							{
-								
-								{
-									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionCharges = 2,
-							holdActionDuration = 20,
-							holdActionID = 17209,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							name = "Is Not Overheated",
-							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Burn Hypercharge",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "a819137e-7142-7f70-ba4a-775bbabe3873",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16766,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"9a76b4e7-b69d-904f-930e-a607c59479e4",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "cf77037c-bead-a4fe-8ad2-ced0b3aec330",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 4,
-							uuid = "9a76b4e7-b69d-904f-930e-a607c59479e4",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Force Detonate",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "433e2115-94b0-8251-9e60-9927dbd6f591",
-				version = 2,
-			},
 			inheritedIndex = 2,
 		},
 		
@@ -7448,62 +7137,253 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 36982,
-							conditions = 
-							{
-								
-								{
-									"49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
-									true,
-								},
-								
-								{
-									"81e6ddd9-0733-68eb-8889-f9ee035af489",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							targetType = "Enemy",
-							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
-							variableTogglesType = 2,
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 4,
-							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							buffID = 3866,
-							category = "Self",
-							uuid = "81e6ddd9-0733-68eb-8889-f9ee035af489",
-							version = 3,
-						},
-					},
 				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Force Full Metal",
-				timeRange = true,
-				timelineIndex = 227,
-				timerStartOffset = -15,
-				uuid = "717ee0fe-faea-5832-a133-c8300e77da0a",
+				mechanicTime = 1154.7445474604,
+				name = "[DPS] Potion On",
+				timelineIndex = 226,
+				timerEndOffset = 1,
+				timerStartOffset = -17,
+				uuid = "5c5a9b58-a7e7-8071-97ba-9323a0b4456e",
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							endIfUsed = true,
+							ignoreWeaveRules = true,
+							usePot = true,
+							uuid = "4005e0d7-a476-f0e2-a145-5eac033792b9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Use Potion",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 16,
+				timerStartOffset = 10,
+				uuid = "1656d9b6-1200-fcd7-99e0-9a6783b49b69",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7414,
+							atomicPriority = true,
+							endIfUsed = true,
+							uuid = "f46480b5-0307-7dbb-845c-101d102a3917",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Barrel Stabilizer",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 16,
+				timerStartOffset = 13.5,
+				uuid = "f93fb460-3d18-a1d3-b396-a43af34a2322",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36982,
+							atomicPriority = true,
+							endIfUsed = true,
+							targetType = "Enemy",
+							uuid = "16efc22e-432f-68cf-a477-0ae6859a86a0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Full Metal after Barrel",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 17.5,
+				timerStartOffset = 15.5,
+				uuid = "aed99865-682f-d6a3-8222-a05c1de3d490",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16500,
+							atomicPriority = true,
+							endIfUsed = true,
+							targetType = "Enemy",
+							uuid = "2f9ef6ca-f49b-23fb-94f5-649513900492",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Air Anchor",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 19,
+				timerStartOffset = 17,
+				uuid = "24d33ca9-82d3-9e67-b73a-53ac10a5b61b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 17209,
+							atomicPriority = true,
+							endIfUsed = true,
+							uuid = "dfe20e1f-7390-a0e5-ab2d-9a7faee4e6f7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Hypercharge",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 20.25,
+				timerStartOffset = 18.25,
+				uuid = "c1a3e5b2-c0ba-0d4f-8b1a-fe834bf2f2e0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2878,
+							atomicPriority = true,
+							endIfUsed = true,
+							targetType = "Enemy",
+							uuid = "68b02cae-ce5a-054d-bfb8-eca7d111e610",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Wildfire",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 20.5,
+				timerStartOffset = 19,
+				uuid = "b65edf8c-12e9-3656-ae95-53fac750d0f1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25788,
+							atomicPriority = true,
+							endIfUsed = true,
+							targetType = "Enemy",
+							uuid = "ba8bfc03-a42f-8cd4-8387-c50c117a37bb",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Chain Saw",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 21.5,
+				timerStartOffset = 19.5,
+				uuid = "b2e8cdc4-8c96-7b9b-acf5-5abecb658101",
+				version = 2,
+			},
+		},
+	},
+	[227] = 
+	{
 		
 		{
 			data = 
@@ -7541,7 +7421,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 4,
+							hpValue = 1,
 							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
 							version = 3,
 						},
@@ -7551,63 +7431,11 @@ local tbl =
 				name = "[MCH] Force Overdrive",
 				timeRange = true,
 				timelineIndex = 227,
-				timerStartOffset = -15,
+				timerStartOffset = -10,
 				uuid = "e1a3dd6d-21c3-492d-8d6d-1fdc80ac7a8a",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25788,
-							conditions = 
-							{
-								
-								{
-									"b23f765f-38a8-6773-8ba9-dc842ad1b0b1",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							targetType = "Enemy",
-							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 5,
-							uuid = "b23f765f-38a8-6773-8ba9-dc842ad1b0b1",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Chain Saw",
-				timeRange = true,
-				timelineIndex = 227,
-				timerEndOffset = 2,
-				timerStartOffset = -10,
-				uuid = "c2e46fc0-692a-3bf1-8ac8-3a279b494592",
-				version = 2,
-			},
-			inheritedIndex = 8,
+			inheritedIndex = 1,
 		},
 		
 		{
@@ -7620,12 +7448,52 @@ local tbl =
 						data = 
 						{
 							actionID = 36981,
+							atomicPriority = true,
 							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							ignoreWeaveRules = true,
 							targetType = "Enemy",
-							uuid = "4144261c-27b6-874b-b4de-7d94eab47f13",
-							variableTogglesType = 2,
+							uuid = "303dd2f1-a9e2-4ba2-b644-b03f2cd296da",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Excavator after Chain Saw",
+				timeRange = true,
+				timelineIndex = 227,
+				timerEndOffset = -6,
+				timerStartOffset = -9,
+				uuid = "f7ea7760-31a2-48ce-be81-61abc54a5b9e",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"cf8085cd-0274-fba2-8603-d9dbd5607f65",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							targetType = "Enemy",
+							uuid = "b942573a-0e0d-2432-a92b-41d66b2c012b",
 							version = 2.1,
 						},
 					},
@@ -7638,20 +7506,19 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 3,
-							uuid = "9533071a-1515-2afc-b1cf-e15d11060e5d",
+							hpValue = 2,
+							uuid = "cf8085cd-0274-fba2-8603-d9dbd5607f65",
 							version = 3,
 						},
 					},
 				},
 				mechanicTime = 1185.8235474604,
-				name = "[MCH] Force Excavator",
+				name = "[MCH] Detonate at end",
 				timeRange = true,
 				timelineIndex = 227,
-				timerEndOffset = 2,
-				timerOffset = 1,
-				timerStartOffset = -10,
-				uuid = "8fdb1530-4d12-2e85-988f-4d0c8acd5d75",
+				timerEndOffset = 0.5,
+				timerStartOffset = -7,
+				uuid = "e2f0505b-aa29-0116-91f2-59747a84944e",
 				version = 2,
 			},
 		},
