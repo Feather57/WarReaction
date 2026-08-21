@@ -4000,7 +4000,7 @@ local tbl =
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionDuration = 23,
+							holdActionDuration = 19,
 							holdActionID = 16501,
 							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
 							version = 2.1,
@@ -4017,6 +4017,58 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 90,
+							name = "Battery >90",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 652.34305216234,
+				name = "[MCH] Queen",
+				timeRange = true,
+				timelineIndex = 128,
+				timerEndOffset = 20,
+				timerOffset = -2,
+				timerStartOffset = 15,
+				uuid = "06c458fa-7d58-759b-a46b-2230fe14d215",
+				version = 2,
+			},
 		},
 	},
 	[135] = 
@@ -4183,7 +4235,7 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 148,
-				timerEndOffset = 5,
+				timerEndOffset = 8,
 				timerOffset = -15,
 				timerStartOffset = -10,
 				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
@@ -6213,6 +6265,58 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 90,
+							name = "Battery >90",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1047.2843757912,
+				name = "[MCH] Queen",
+				timeRange = true,
+				timelineIndex = 202,
+				timerEndOffset = 4,
+				timerOffset = -2,
+				timerStartOffset = -4,
+				uuid = "aaaf4c4d-2a3a-6c15-8e56-94b31a5057f9",
+				version = 2,
+			},
 		},
 	},
 	[208] = 
