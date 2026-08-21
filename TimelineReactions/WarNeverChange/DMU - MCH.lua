@@ -4235,7 +4235,7 @@ local tbl =
 				name = "[MCH] Build Heat",
 				timeRange = true,
 				timelineIndex = 148,
-				timerEndOffset = 8,
+				timerEndOffset = 4,
 				timerOffset = -15,
 				timerStartOffset = -10,
 				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
@@ -4489,6 +4489,7 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							conditionType = 4,
+							name = "Is Barrel Up",
 							uuid = "d5cff803-1bd7-77a6-b977-a85f45b2c152",
 							version = 3,
 						},
@@ -4501,6 +4502,205 @@ local tbl =
 				timerEndOffset = 5,
 				timerStartOffset = -3,
 				uuid = "302be480-a148-689e-a53d-60dc9c24c37a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7414,
+							conditions = 
+							{
+								
+								{
+									"38135a33-ccb0-f93d-9ba8-8e28af315053",
+									true,
+								},
+								
+								{
+									"4cca9b68-6314-7826-8aa3-cc3c867dbc65",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "5e09e1c9-35e5-3115-a85d-8200b26c5f6d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgOptionType = 2,
+							eventEntityContentID = 6055,
+							name = "Neo Exdeath spawned",
+							uuid = "38135a33-ccb0-f93d-9ba8-8e28af315053",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7414,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Is Barrel Up",
+							uuid = "4cca9b68-6314-7826-8aa3-cc3c867dbc65",
+							version = 3,
+						},
+					},
+				},
+				eventType = 5,
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Early Barrel (P4)",
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 10,
+				timerOffset = 8,
+				timerStartOffset = -5,
+				uuid = "80d1d524-266a-997f-abcc-6fc68b82837e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"df02d293-896b-6f67-9560-1311b33b1b9c",
+									true,
+								},
+								
+								{
+									"4cc8db62-dafc-da2d-94c1-649aa23059af",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "086ec2de-067e-91b0-8cfb-c577fe7f5b2d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgOptionType = 2,
+							eventEntityContentID = 6055,
+							name = "Neo Exdeath spawned",
+							uuid = "df02d293-896b-6f67-9560-1311b33b1b9c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 60,
+							name = "Battery >= 60",
+							uuid = "4cc8db62-dafc-da2d-94c1-649aa23059af",
+							version = 3,
+						},
+					},
+				},
+				eventType = 5,
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Early Queen (P4)",
+				randomOffset = -2,
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 10,
+				timerOffset = 8,
+				timerStartOffset = -5,
+				uuid = "6e6943c0-a778-d8b3-ba6b-5002e357ac05",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 2876,
+							conditions = 
+							{
+								
+								{
+									"c457a65e-6882-e577-840d-6d7a47abcd83",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "82a51fe6-0342-493e-b9f4-cf4125f66931",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							dequeueIfLuaFalse = true,
+							eventArgOptionType = 2,
+							eventEntityContentID = 6055,
+							name = "Neo Exdeath spawned",
+							uuid = "c457a65e-6882-e577-840d-6d7a47abcd83",
+							version = 3,
+						},
+					},
+				},
+				eventType = 5,
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Reassemble (P4)",
+				randomOffset = -2,
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 10,
+				timerOffset = 8,
+				timerStartOffset = -5,
+				uuid = "768b7b4f-eb46-b832-83ea-5c376acc74a5",
 				version = 2,
 			},
 		},
@@ -4676,18 +4876,73 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 7414,
+							conditions = 
+							{
+								
+								{
+									"ccd18196-c42d-cf5d-b6ef-eb1c571d6d0f",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "fba4260e-11cc-d2d8-b649-1e7c2b63e753",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7414,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Barrel Ready",
+							uuid = "ccd18196-c42d-cf5d-b6ef-eb1c571d6d0f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[MCH] Early Barrel (P4 Fallback)",
+				timeRange = true,
+				timelineIndex = 150,
+				timerStartOffset = -4,
+				uuid = "c7d12817-6698-c71c-bced-efd7aeb67b0d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 16501,
 							conditions = 
 							{
 								
 								{
-									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									"5ceecee5-3093-2fb3-818d-878bcf329d3a",
+									true,
+								},
+								
+								{
+									"2e500fd6-a64d-eadc-adcb-379267dd58e2",
 									true,
 								},
 							},
-							gVar = "ACR_TensorMagnum3_CD",
 							ignoreWeaveRules = true,
-							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							uuid = "bbacc391-2d5c-48cf-bc83-8395af034ed9",
 							version = 2.1,
 						},
 					},
@@ -4702,71 +4957,32 @@ local tbl =
 							conditionType = 6,
 							gaugeIndex = 2,
 							gaugeValue = 60,
-							name = "Battery >60",
-							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							name = "Battery >= 60",
+							uuid = "5ceecee5-3093-2fb3-818d-878bcf329d3a",
 							version = 3,
 						},
 					},
-				},
-				mechanicTime = 801.88345429349,
-				name = "[MCH] Early Queen",
-				timelineIndex = 150,
-				timerOffset = -2,
-				uuid = "8f56b25f-7c23-61eb-85a9-e4b2057ab480",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7414,
-							conditions = 
-							{
-								
-								{
-									"b0b2e13c-8833-047b-96bd-157ed12c948b",
-									true,
-								},
-							},
-							gVar = "ACR_TensorACR_HotbarCancel",
-							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
 					
 					{
 						data = 
 						{
 							actionCDValue = 1,
-							actionID = 7414,
-							actionUUID = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							actionID = 16501,
 							category = "Self",
 							comparator = 2,
 							conditionType = 4,
-							name = "Is Barrel Up",
-							uuid = "b0b2e13c-8833-047b-96bd-157ed12c948b",
+							name = "Queen Ready",
+							uuid = "2e500fd6-a64d-eadc-adcb-379267dd58e2",
 							version = 3,
 						},
 					},
 				},
 				mechanicTime = 801.88345429349,
-				name = "[MCH] Early Barrel",
+				name = "[MCH] Early Queen (P4 Fallback)",
 				timeRange = true,
 				timelineIndex = 150,
-				timerOffset = -2,
 				timerStartOffset = -4,
-				uuid = "c5c59386-badf-4a3e-a4cd-4f9589b70969",
+				uuid = "4fafb138-9851-8584-8180-98a012e60588",
 				version = 2,
 			},
 		},
@@ -4781,26 +4997,45 @@ local tbl =
 						data = 
 						{
 							actionID = 2876,
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							uuid = "f68e2cef-779c-7354-93b0-dcd00398011d",
+							conditions = 
+							{
+								
+								{
+									"58d4ad6e-dc01-decf-a4c0-ff26c95dee6e",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "5afaa209-36f1-f5dc-ab41-b507b8ca4ef3",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 2876,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Reassemble Ready",
+							uuid = "58d4ad6e-dc01-decf-a4c0-ff26c95dee6e",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 801.88345429349,
-				name = "[MCH] Reassemble",
+				name = "[MCH] Reassemble (P4 Fallback)",
 				timeRange = true,
 				timelineIndex = 150,
-				timerOffset = 6,
-				timerStartOffset = -2,
-				uuid = "72d88424-393b-e2f5-92aa-c9cbb3a29fa2",
+				timerStartOffset = -4,
+				uuid = "541fad61-7ffc-f286-9380-4646564f16bb",
 				version = 2,
 			},
-			inheritedIndex = 6,
 		},
 	},
 	[153] = 
