@@ -3493,6 +3493,40 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_CD",
+							setTarget = true,
+							targetContentID = 6052,
+							targetType = "ContentID",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 521.36069634686,
+				name = "[All] Target Exdeath",
+				timelineIndex = 101,
+				timerEndOffset = 3,
+				timerOffset = 7,
+				timerStartOffset = -3,
+				uuid = "16814285-3b9b-6037-9f36-1fc080069b08",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
 	},
 	[103] = 
 	{
@@ -7515,6 +7549,7 @@ local tbl =
 						},
 					},
 				},
+				enabled = false,
 				mechanicTime = 1185.8235474604,
 				name = "[MCH] Hypercharge",
 				timeRange = true,
