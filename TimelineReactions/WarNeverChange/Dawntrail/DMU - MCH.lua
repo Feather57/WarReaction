@@ -2743,7 +2743,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 6,
+							hpValue = 8,
 							uuid = "49d09ca0-0dde-8450-a2d9-a6b1ee12cbbd",
 							version = 3,
 						},
@@ -2763,7 +2763,7 @@ local tbl =
 				name = "[MCH] Force Full Metal",
 				timeRange = true,
 				timelineIndex = 74,
-				timerStartOffset = -15,
+				timerStartOffset = -25,
 				uuid = "4aabe350-bfb9-4912-b396-7bf03df1537a",
 				version = 2,
 			},
@@ -2778,23 +2778,7 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 36981,
-							atomicPriority = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "ffaa235c-a31b-7c9d-a2e6-f18a54ad8177",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
 							actionID = 25786,
-							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -2820,60 +2804,7 @@ local tbl =
 						{
 							comparator = 2,
 							conditionType = 3,
-							hpValue = 3,
-							uuid = "8805579a-605c-45d9-b706-678248857b4f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 381.48132335556,
-				name = "[MCH] Build Heat",
-				timeRange = true,
-				timelineIndex = 74,
-				timerOffset = -15,
-				timerStartOffset = -25,
-				uuid = "9a21aa70-c6c1-97ae-aa61-0f54c6af982d",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25786,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"8805579a-605c-45d9-b706-678248857b4f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 2,
+							hpValue = 1,
 							uuid = "8805579a-605c-45d9-b706-678248857b4f",
 							version = 3,
 						},
@@ -5339,7 +5270,7 @@ local tbl =
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionDuration = 32,
+							holdActionDuration = 30,
 							holdActionID = 16501,
 							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
 							version = 2.1,
