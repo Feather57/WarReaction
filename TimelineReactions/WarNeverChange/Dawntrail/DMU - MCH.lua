@@ -253,7 +253,7 @@ local tbl =
 								},
 								
 								{
-									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+									"618fddc9-35a6-c996-b3f2-06cb4f12270a",
 									true,
 								},
 							},
@@ -274,7 +274,7 @@ local tbl =
 							{
 								
 								{
-									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 									true,
 								},
 							},
@@ -509,11 +509,37 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
+							eventCountdownTime = 3,
+							name = "Pull in 3sec",
+							uuid = "618fddc9-35a6-c996-b3f2-06cb4f12270a",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
 							eventCountdownTime = 2,
 							name = "Pull in 2sec",
 							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 1,
+							name = "Pull in 1sec",
+							uuid = "d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+							version = 3,
+						},
+						inheritedIndex = 8,
 					},
 					
 					{
