@@ -47,11 +47,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_CD",
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -60,7 +62,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 15.261765625,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = -13.89999961853,
@@ -612,10 +614,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "603b459a-60d5-21da-b082-1dc870049f2f",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -624,7 +629,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 42.238586763472,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 7,
 				timerEndOffset = 1.7999999523163,
@@ -645,10 +650,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "ae1a4e46-45e5-9664-9a60-04a7c70ebe0d",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -657,7 +665,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 80.121849240769,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 16,
 				timerEndOffset = -1,
@@ -749,10 +757,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "86db7ff1-9369-2361-a784-becfa9479957",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -761,7 +772,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 118.07975730716,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 25,
 				timerEndOffset = 4.5999999046326,
@@ -817,10 +828,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "6a72775a-3754-61a9-9edc-bd9fd913a788",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -829,7 +843,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 163.54778319029,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 33,
 				timerEndOffset = 1.7999999523163,
@@ -929,10 +943,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "55d28ab5-ee12-5bdc-83b6-f46efe57bf6a",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -941,7 +958,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 197.52218784626,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 38,
 				timerEndOffset = 1.7000000476837,
@@ -1096,10 +1113,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "97048bdc-45d3-5028-9abf-9e0af9cf82a1",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1108,7 +1128,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 248.57716839869,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 42,
 				timerEndOffset = -5.5,
@@ -1164,10 +1184,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "a1668279-d94e-c950-bcae-c6fe8611616b",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1176,7 +1199,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 279.62753189133,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 52,
 				timerEndOffset = 6,
@@ -1198,10 +1221,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "91077941-2b14-58c5-9b04-1bf9dbf2672b",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1210,7 +1236,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 322.39247758191,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 65,
 				timerEndOffset = 6.4000000953674,
@@ -1332,10 +1358,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "78509cec-115f-9999-b289-c3948b044b00",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1344,7 +1373,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 377.30637120621,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 73,
 				timerEndOffset = -2.2999999523163,
@@ -1488,10 +1517,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "9c7e3e32-c3c0-f9d6-90da-750c50dabf1a",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1500,7 +1532,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 424.39347120621,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 76,
 				timerEndOffset = -2.4000000953674,
@@ -1782,10 +1814,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "b94bc947-68a4-72f1-84bc-2ab1db7b860f",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1794,7 +1829,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 469.19930950196,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 80,
 				timerEndOffset = -7.5999999046326,
@@ -1987,10 +2022,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "1f1cbb4c-3132-6f26-910f-69ba4ef11799",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1999,7 +2037,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 507.31761539671,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 91,
 				timerEndOffset = -1.5,
@@ -2137,10 +2175,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "2262ee9d-0672-37f0-a45e-d9318b171c61",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2149,7 +2190,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 544.89209076626,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 104,
 				timerEndOffset = 3.0999999046326,
@@ -2171,10 +2212,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "718abc49-917d-5a24-89f5-77575b596d88",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2183,7 +2227,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 578.27023501273,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 113,
 				timerEndOffset = 4.3000001907349,
@@ -2205,10 +2249,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "9e5bf7e3-ec8e-08da-875c-c923456cbc0c",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2217,7 +2264,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 631.08148473045,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 123,
 				timerEndOffset = -4.3000001907349,
@@ -2273,10 +2320,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "e241293a-85d9-4a32-bcd6-b6fab36e8583",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2285,7 +2335,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 671.48837109883,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 129,
 				timerEndOffset = -2.4000000953674,
@@ -2341,10 +2391,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "938a8314-2f99-8e3a-aca8-6a497fd21739",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2353,7 +2406,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 702.78725990995,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 139,
 				timerStartOffset = -1.5,
@@ -2574,11 +2627,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_CD",
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "58094ae2-6071-2a97-9e91-acbd6898b102",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2587,7 +2642,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 826.02524789261,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 153,
 				timerEndOffset = 0.60000002384186,
@@ -2643,10 +2698,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "da3b3bdc-7e74-f3d2-a6a6-d3c0ae79894a",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2655,7 +2713,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 868.13803801671,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 160,
 				timerEndOffset = 0.89999997615814,
@@ -2677,10 +2735,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "92c9396b-671f-b9c9-a075-a0c0cb40c276",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2689,7 +2750,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 903.50044082329,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 166,
 				timerEndOffset = -1.2000000476837,
@@ -2711,10 +2772,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "6e3095ad-b768-8a3f-a465-4aa523dd52e1",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2723,7 +2787,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 934.65048710577,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 169,
 				timerEndOffset = -0.10000000149012,
@@ -2805,10 +2869,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "870370a4-f460-fb93-9569-5940e7373200",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2817,7 +2884,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 965.64810213372,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 171,
 				timerEndOffset = -13.699999809265,
@@ -2904,10 +2971,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "8ddf81a0-02bf-ae9c-862a-4cb7a8461dcf",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2916,7 +2986,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 1025.1000086512,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 193,
 				timerEndOffset = 2.4000000953674,
@@ -2972,10 +3042,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "10f9023d-b381-3f3b-8181-6cdb1ba70ec8",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -2984,7 +3057,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 1063.6903949829,
-				name = "[BRD] MB",
+				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 209,
 				timerEndOffset = 8.3000001907349,
@@ -3006,10 +3079,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
 							name = "Army's Paeon",
 							uuid = "fae10736-93d1-2386-8bfb-ed0f32f29d31",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -3018,7 +3094,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 1113.9009474604,
-				name = "[BRD] AP",
+				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 218,
 				timerEndOffset = 0.60000002384186,
@@ -3074,10 +3150,13 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "60fe5545-8418-439e-8709-c156b37c745f",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -3086,7 +3165,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 1149.6575474604,
-				name = "[BRD] WM",
+				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 225,
 				timerEndOffset = -0.40000000596046,
