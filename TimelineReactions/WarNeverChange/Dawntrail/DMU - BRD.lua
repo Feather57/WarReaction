@@ -13,98 +13,234 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
 							gVar = "ACR_TensorRequiem3_Potion",
 							gVarValue = 2,
 							ignoreWeaveRules = true,
+							name = "Potion",
+							usePot = true,
+							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Potion Off",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 8.8000001907349,
+				timerStartOffset = 7.3000001907349,
+				uuid = "021a6d02-4c7d-80c2-9cab-0df2bf1bb36b",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_CD",
+							name = "Mage's Ballad",
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -13.89999961853,
+				timerStartOffset = -15.39999961853,
+				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif BRD_savedPrepullHelper == nil then\nBRD_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nBRD_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = True\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = False\n\n-- Allow TTS calls later in the profile\nBRD_enableCallTTS = true\nBRD_enableSpreadDraws = true\n\n-- Mark action complete\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuSGE3_CD",
+							name = "Profil Option",
+							uuid = "73df0f09-0cc0-c2af-80cc-b697eb75cf99",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							conditions = 
+							{
+								
+								{
+									"972d5672-271b-f4ac-b97b-199d5f251954",
+									true,
+								},
+								
+								{
+									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							name = "Target Nearest",
+							setTarget = true,
 							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							uuid = "d3b40f03-ea4c-f8a5-ab6e-d224fc386b72",
 							version = 2.1,
 						},
 					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[ALL] Potion Off",
-				timelineIndex = 1,
-				timerOffset = -15,
-				timerStartOffset = -15,
-				uuid = "2efbba8a-df4b-17b2-8143-6f972f5712f6",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = true",
+							uuid = "63bdf79b-f77d-5226-9844-201061f7cc96",
+							version = 2.1,
+						},
+					},
 					
 					{
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Playlist",
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "afc3f546-cee0-0882-bfe7-6a8895d1f221",
 							version = 2.1,
 						},
+						inheritedIndex = 1,
 					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 15.261765625,
-				name = "[BRD] Playlist",
-				timelineIndex = 1,
-				timerOffset = -28,
-				uuid = "88a1d5bd-6479-4921-a8fb-c2d45f76cecf",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
 					
 					{
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
+							gVar = "ACR_TensorRequiem3_AOE",
+							uuid = "255df2e9-81a0-d074-b371-5a63acf30129",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_BattleVoice",
+							uuid = "523b184c-1eb9-554b-ae86-f1f350dabf18",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_ApexArrow",
+							uuid = "0222c597-73d8-90dd-ae2e-7ff8e002bf31",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DoTs",
+							gVarValue = 2,
+							uuid = "523290e7-f8cb-452f-bad7-cd5bf37237ff",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_SmartJaws",
+							uuid = "e2fa49f9-23ab-9ea2-92cd-725e321bcac7",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Songs",
+							gVarValue = 2,
+							uuid = "120de254-3cf4-2ec1-8174-68e7e62b75d3",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							uuid = "13bf06e2-0cc0-78fb-9e5c-4d81b9a68bcf",
+							version = 2.1,
+						},
+						inheritedIndex = 8,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Playlist",
+							gVarValue = 2,
+							uuid = "3bd3cd20-da8d-b1fb-b501-724c2703b77c",
 							version = 2.1,
 						},
 					},
@@ -115,25 +251,322 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Assist Enabled",
+							uuid = "c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							comparator = 2,
+							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 1000",
+							eventCountdownTime = 1.5,
+							name = "TimeSince >= 1s",
+							uuid = "972d5672-271b-f4ac-b97b-199d5f251954",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							comparator = 2,
+							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 2000",
+							eventCountdownTime = 1.5,
+							name = "TimeSince >= 2s",
+							uuid = "e340956a-46f5-e62e-8635-d54d66574897",
+							version = 3,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 3,
+							name = "Pull in 3sec",
+							uuid = "618fddc9-35a6-c996-b3f2-06cb4f12270a",
+							version = 3,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 1,
+							name = "Pull in 1sec",
+							uuid = "d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+							version = 3,
+						},
+						inheritedIndex = 8,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.69999998807907,
+							name = "Pull in 0.7sec",
+							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
+							conditionType = 7,
+							dequeueIfLuaFalse = true,
+							inCombatType = 2,
+							name = "Not in Combat",
+							uuid = "0eb07f88-6426-974d-abd0-c0a9d006371c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 851,
+							uuid = "e7557bae-faa8-66cd-8de8-d9282bcdaf55",
 							version = 3,
 						},
 					},
 				},
+				eventType = 16,
 				mechanicTime = 15.261765625,
-				name = "[BRD] Downtime Song Off",
+				name = "[MCH] Opener DMU",
+				timeRange = true,
 				timelineIndex = 1,
-				timerOffset = -15,
-				uuid = "60a13e17-8f3b-43e9-85c1-29a5ceb9f85d",
+				timerOffset = -10,
+				timerStartOffset = -17,
+				uuid = "dcdd5bdb-2a9f-a64e-bb3e-edabe3599d47",
 				version = 2,
 			},
+			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\nself.used = true\n",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "9a17440e-4710-700d-b90f-f154c8188764",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 17,
+				mechanicTime = 15.261765625,
+				name = "[MCH] Opener DMU Cancel",
+				timeRange = true,
+				timelineIndex = 1,
+				timerStartOffset = -15.300000190735,
+				uuid = "6d59cc65-3ede-3707-9f15-01c525f98a93",
+				version = 2,
+			},
+			inheritedIndex = 6,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "6398a557-95ba-8807-9883-92b9f5e68fdd",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_AOE",
+							uuid = "a7f52f81-c123-9dfb-824d-fe64e4b92048",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_BattleVoice",
+							uuid = "d76e033d-14a9-e16a-9174-b6204f2eb193",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_ApexArrow",
+							uuid = "c2970b67-cbcb-423e-950c-aa91d99e88dc",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DoTs",
+							gVarValue = 2,
+							uuid = "ce798ff5-de6b-669d-8158-d7cf784467cf",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_SmartJaws",
+							uuid = "42f031cd-e4e5-248a-abba-47e5ac7276c8",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Songs",
+							gVarValue = 2,
+							uuid = "26a7018e-18ba-e941-abc8-ca3179c95ed3",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "3fe756f8-6f2b-240c-908d-4d6546a4e78d",
+							version = 2.1,
+						},
+						inheritedIndex = 8,
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif MCH_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\nself.used = true",
+							gVar = "ACR_RikuSGE3_CD",
+							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 9,
+				mechanicTime = 15.261765625,
+				name = "[MCH] Wipe",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = 1170,
+				timerOffset = -12.299999237061,
+				timerStartOffset = -15.300000190735,
+				uuid = "4724c3f0-f664-33b0-8308-f30336cd8c68",
+				version = 2,
+			},
+			inheritedIndex = 7,
 		},
 	}, 
-	[3] = 
+	[5] = 
 	{
 		
 		{
@@ -145,40 +578,24 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Playlist",
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "d46b54dd-1f55-4d1c-bab7-b350efaddfcd",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
-				mechanicTime = 29.049328125,
-				name = "[BRD] Playlist",
-				timelineIndex = 3,
-				timerOffset = -28,
-				uuid = "408d630b-c830-3d87-8e2e-c78ed593c981",
+				mechanicTime = 37.212891227673,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 5,
+				timerEndOffset = 0.70999997854233,
+				timerStartOffset = -0.77999997138977,
+				uuid = "3b1fc7aa-99a4-9d68-ac4f-bfd85278422f",
 				version = 2,
 			},
 		},
@@ -195,13 +612,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
+							actionID = 116,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							name = "Army's Paeon",
+							uuid = "603b459a-60d5-21da-b082-1dc870049f2f",
 							version = 2.1,
 						},
 					},
@@ -210,10 +624,79 @@ local tbl =
 				{
 				},
 				mechanicTime = 42.238586763472,
-				name = "[DPS] Potion On",
+				name = "[BRD] AP",
+				timeRange = true,
 				timelineIndex = 7,
-				timerStartOffset = -15,
-				uuid = "a9f76f9a-efcd-c408-b28f-d8f9656b6606",
+				timerEndOffset = 1.7999999523163,
+				uuid = "a8cf62f9-dae8-6f7e-9280-86bc67046a25",
+				version = 2,
+			},
+		},
+	},
+	[16] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "ae1a4e46-45e5-9664-9a60-04a7c70ebe0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 80.121849240769,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 16,
+				timerEndOffset = -1,
+				timerStartOffset = -2.5,
+				uuid = "6fefbee4-9e1e-f3be-be4b-80b188d3e1bc",
+				version = 2,
+			},
+		},
+	},
+	[18] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "2309ea75-9428-9ff3-93de-8264a55fb3e7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 91.312196545775,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 18,
+				timerEndOffset = 0.40000000596046,
+				timerStartOffset = -1,
+				uuid = "ee87c0c7-0df6-55e1-91fe-0ab204cba8d9",
 				version = 2,
 			},
 		},
@@ -230,11 +713,12 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
+							name = "Dexterity Potion",
+							usePot = true,
+							uuid = "f8abaeb3-0e54-9872-93a2-cb0b0d1604ed",
 							version = 2.1,
 						},
 					},
@@ -243,11 +727,46 @@ local tbl =
 				{
 				},
 				mechanicTime = 114.28706589603,
-				name = "[DPS] Potion",
+				name = "[BRD] Potion",
+				timeRange = true,
 				timelineIndex = 24,
-				timerOffset = -2,
-				timerStartOffset = 6,
-				uuid = "0cd64aae-8fdb-d580-8b3e-5ffd87f508b2",
+				timerEndOffset = 1.2000000476837,
+				timerStartOffset = -0.30000001192093,
+				uuid = "d53432e7-75fa-7122-83ed-6f79eb761424",
+				version = 2,
+			},
+		},
+	},
+	[25] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "86db7ff1-9369-2361-a784-becfa9479957",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 25,
+				timerEndOffset = 4.5999999046326,
+				timerStartOffset = 3.0999999046326,
+				uuid = "710fc645-9e2a-9da8-addb-bcbd72ebc24e",
 				version = 2,
 			},
 		},
@@ -264,27 +783,58 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
+							actionID = 7405,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							gVarValue = 2,
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							name = "Troubadour",
+							uuid = "3c4c543a-9315-24f3-978b-752a801896e0",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
 				mechanicTime = 132.26514619605,
-				name = "[DPS] Potion Off",
+				name = "[BRD] Troubadour",
+				timeRange = true,
 				timelineIndex = 26,
-				timerStartOffset = 6,
-				uuid = "8d8ed57e-a9f9-4566-900b-9787ae8a175a",
+				timerEndOffset = -2.4000000953674,
+				timerStartOffset = -3.9000000953674,
+				uuid = "dc896a64-e5df-ca4d-bcc6-d22be850e45f",
+				version = 2,
+			},
+		},
+	},
+	[33] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "6a72775a-3754-61a9-9edc-bd9fd913a788",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 163.54778319029,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 33,
+				timerEndOffset = 1.7999999523163,
+				timerStartOffset = 0.30000001192093,
+				uuid = "fa5eb146-a50f-bdec-99cb-01bfa3a86ca2",
 				version = 2,
 			},
 		},
@@ -351,62 +901,21 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 116,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"990b6dd8-d01e-5cc5-aec6-edab7100871a",
-									true,
-								},
-								
-								{
-									"fbf631ff-2199-e760-9f38-e56da12bdfca",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							uuid = "ed1ff6cd-8e39-f540-9e0e-b26f66b5b1fa",
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "990b6dd8-d01e-5cc5-aec6-edab7100871a",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 6,
-							gaugeIndex = 3,
-							gaugeValue = 12000,
-							uuid = "fbf631ff-2199-e760-9f38-e56da12bdfca",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 197.52218784626,
-				name = "[BRD] Song",
-				timeRange = true,
+				name = "[BRD] Downtime Song On",
 				timelineIndex = 38,
-				timerEndOffset = 4,
-				timerStartOffset = -4,
-				uuid = "c9d196d5-13f3-2593-b33a-2278272a221a",
+				timerOffset = -1,
+				uuid = "658fb39d-0bdf-7a42-a477-6b7c851a3bf2",
 				version = 2,
 			},
 		},
@@ -420,41 +929,24 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_DowntimeSongs",
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "55d28ab5-ee12-5bdc-83b6-f46efe57bf6a",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 197.52218784626,
-				name = "[BRD] Downtime Song On",
+				name = "[BRD] WM",
+				timeRange = true,
 				timelineIndex = 38,
-				timerOffset = -1,
-				uuid = "658fb39d-0bdf-7a42-a477-6b7c851a3bf2",
+				timerEndOffset = 1.7000000476837,
+				timerStartOffset = 0.20000000298023,
+				uuid = "343b9e08-e0dd-0da8-8c13-6126d2b42c52",
 				version = 2,
 			},
 		},
@@ -558,6 +1050,207 @@ local tbl =
 			},
 		},
 	},
+	[41] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "a7ebdae9-e0da-5760-b8f0-10055a822ffc",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 235.34477128997,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 41,
+				timerEndOffset = 1.2000000476837,
+				timerStartOffset = -0.20000000298023,
+				uuid = "f3966af1-f5af-e4d7-9978-c519c7107609",
+				version = 2,
+			},
+		},
+	},
+	[42] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "97048bdc-45d3-5028-9abf-9e0af9cf82a1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 42,
+				timerEndOffset = -5.5,
+				timerStartOffset = -7,
+				uuid = "4bfeb463-247e-b551-8db5-20dd485c917a",
+				version = 2,
+			},
+		},
+	},
+	[49] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "e5042966-660a-bc4a-92a1-2ce8a962405b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 270.25091459497,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 49,
+				timerEndOffset = 1.7000000476837,
+				timerStartOffset = 0.20000000298023,
+				uuid = "95ce5c1d-d820-264d-8ce4-cd36e41b7b3f",
+				version = 2,
+			},
+		},
+	},
+	[52] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "a1668279-d94e-c950-bcae-c6fe8611616b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 279.62753189133,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 52,
+				timerEndOffset = 6,
+				timerStartOffset = 4.5,
+				uuid = "cce28dd7-82df-3476-b93c-df5269eeacb9",
+				version = 2,
+			},
+		},
+	},
+	[65] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "91077941-2b14-58c5-9b04-1bf9dbf2672b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 322.39247758191,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 65,
+				timerEndOffset = 6.4000000953674,
+				timerStartOffset = 4.9000000953674,
+				uuid = "35e50481-eb5b-71a7-8479-fb5823964111",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "99f4a334-92fe-f951-baa2-e95087a17195",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 322.39247758191,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 65,
+				timerEndOffset = 10.300000190735,
+				timerStartOffset = 8.8000001907349,
+				uuid = "4ea093a6-a96f-c485-9db8-3474662d9529",
+				version = 2,
+			},
+		},
+	},
 	[72] = 
 	{
 		
@@ -627,6 +1320,40 @@ local tbl =
 			},
 		},
 	},
+	[73] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "78509cec-115f-9999-b289-c3948b044b00",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 377.30637120621,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 73,
+				timerEndOffset = -2.2999999523163,
+				timerStartOffset = -3.7999999523163,
+				uuid = "6a39f18a-e43e-e36d-8c4c-c33a1a027a76",
+				version = 2,
+			},
+		},
+	},
 	[74] = 
 	{
 		
@@ -640,14 +1367,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
 							version = 2.1,
@@ -656,18 +1375,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 381.48132335556,
 				name = "[BRD] Downtime Song On",
@@ -768,6 +1475,37 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -6,
 				uuid = "a88c5fb7-399c-d3f6-bd05-9a4fc0c4972e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "9c7e3e32-c3c0-f9d6-90da-750c50dabf1a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 424.39347120621,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 76,
+				timerEndOffset = -2.4000000953674,
+				timerStartOffset = -3.9000000953674,
+				uuid = "b407a6d3-9208-1cba-a24c-c84ca3f01861",
 				version = 2,
 			},
 		},
@@ -944,14 +1682,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
@@ -961,18 +1691,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 427.45958272918,
 				name = "[BRD] Downtime Song Off",
@@ -1051,42 +1769,8 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorMagnum3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 430.61710950197,
-				name = "[DPS] Potion",
-				timelineIndex = 78,
-				timerOffset = 9,
-				timerStartOffset = 6,
-				uuid = "eca6ffa9-e2bd-349d-afd6-4bb1a2325321",
-				version = 2,
-			},
-		},
 	},
-	[79] = 
+	[80] = 
 	{
 		
 		{
@@ -1098,11 +1782,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "b94bc947-68a4-72f1-84bc-2ab1db7b860f",
 							version = 2.1,
 						},
 					},
@@ -1110,12 +1793,13 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 450.00390950196,
-				name = "[DPS] Potion",
-				timelineIndex = 79,
-				timerOffset = 6,
-				timerStartOffset = 6,
-				uuid = "c50e81d7-a8be-8cfa-944e-19060883b394",
+				mechanicTime = 469.19930950196,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 80,
+				timerEndOffset = -7.5999999046326,
+				timerStartOffset = -9.1000003814697,
+				uuid = "23cf366c-5cae-e249-bdca-42b34c8b9474",
 				version = 2,
 			},
 		},
@@ -1132,28 +1816,57 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							gVarValue = 2,
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
 							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							name = "Dexterity Potion",
+							usePot = true,
+							uuid = "590d8a80-c2e2-592f-abe9-48359ce0b94e",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
 				mechanicTime = 470.18264616806,
-				name = "[DPS] Potion",
+				name = "[BRD] Potion",
+				timeRange = true,
 				timelineIndex = 81,
-				timerOffset = 7,
-				timerStartOffset = 6,
-				uuid = "5385fa54-a30a-db3e-ba89-7605965dc478",
+				timerEndOffset = 0.89999997615814,
+				timerStartOffset = -0.5,
+				uuid = "c69663e4-acc6-4545-b6a1-7fb9661d422d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "05cac3df-e945-86d2-8cd1-ddd5b191b86a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 470.18264616806,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 81,
+				timerEndOffset = 1.6000000238419,
+				timerStartOffset = 0.10000000149012,
+				uuid = "f20f43cc-af8a-7b9e-b06e-d3b778b4d983",
 				version = 2,
 			},
 		},
@@ -1262,7 +1975,7 @@ local tbl =
 			},
 		},
 	},
-	[86] = 
+	[91] = 
 	{
 		
 		{
@@ -1274,40 +1987,92 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Playlist",
-							gVarValue = 2,
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "1f1cbb4c-3132-6f26-910f-69ba4ef11799",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+				},
+				mechanicTime = 507.31761539671,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 91,
+				timerEndOffset = -1.5,
+				timerStartOffset = -3,
+				uuid = "0c65fcc4-7ac8-99d3-9166-62e034db59b6",
+				version = 2,
+			},
+		},
+	},
+	[93] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
 					
 					{
 						data = 
 						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "2bf75829-cff9-a5f1-be85-5d2bd88bf326",
+							version = 2.1,
 						},
 					},
 				},
-				mechanicTime = 491.23479899289,
-				name = "[BRD] Playlist",
-				timelineIndex = 86,
-				uuid = "15015fd2-7b89-8b5e-8584-61be179867d3",
+				conditions = 
+				{
+				},
+				mechanicTime = 511.44225832111,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 2.5,
+				timerStartOffset = 1,
+				uuid = "d83eb785-68e6-c920-9941-7c97c435dd81",
+				version = 2,
+			},
+		},
+	},
+	[95] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "1e686635-544c-f86c-a00a-0c6f61f1ba39",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 514.44485832111,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 95,
+				timerEndOffset = 0.10000000149012,
+				timerStartOffset = -1.2999999523163,
+				uuid = "e792f8ac-1c95-62f0-83de-7ee5d26bedf2",
 				version = 2,
 			},
 		},
@@ -1362,78 +2127,238 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[138] = 
-	{
 		
 		{
 			data = 
-			{
-				name = "[Lj Draw] Draw Arrow to Corner Baits",
-				uuid = "880f29e3-b70c-8598-a852-ebe8bda5f449",
-				version = 2,
-			},
-			inheritedObjectUUID = "fe3712b5-905e-f317-9177-0ff196a32e02",
-			inheritedOverwrites = 
 			{
 				actions = 
 				{
 					
 					{
-						type = "add",
-						value = 
+						data = 
 						{
-							data = 
-							{
-								name = "",
-								uuid = "d21f09a4-f6a7-3cd7-9dde-33805a2d3eb0",
-								version = 2.1,
-							},
-							inheritedObjectUUID = "b2fcfa27-5cf7-59ba-8b3c-a232cd81174c",
-							inheritedOverwrites = 
-							{
-								actionLua = "local mode = \"ZsQ\"  -- \"LPDU\" or \"ZsQ\"\n\nlocal center = { x = 100, y = 0, z = 100 }\nlocal cornerDist = 11                       -- distance from centre to each corner\nlocal offset = cornerDist / math.sqrt(2)    -- equal X/Z offset for a diagonal corner\nlocal rot = data.ljKefkaHeading\n\n-- Design (true-north) corners; rotated to Kefka below.\nlocal nw = { x = center.x - offset, z = center.z - offset }\nlocal ne = { x = center.x + offset, z = center.z - offset }\nlocal sw = { x = center.x - offset, z = center.z + offset }\nlocal se = { x = center.x + offset, z = center.z + offset }\n\n-- Role -> corner pairings per strat (all directions relative to Kefka).\nlocal cornerByRoleByMode = {\n    ZsQ = {\n        H1 = nw, MT = nw,\n        H2 = ne, OT = ne,\n        R1 = sw, M1 = sw,\n        R2 = se, M2 = se,\n    },\n    LPDU = {\n        MT = nw, OT = nw,\n        H1 = ne, H2 = ne,\n        M1 = sw, M2 = sw,\n        R1 = se, R2 = se,\n    },\n}\nlocal cornerByRole = cornerByRoleByMode[mode]\n\nlocal mySlot = AnyoneCore.Roster.mySlot()\nlocal myRole = (mySlot == \"T1\" and \"MT\") or (mySlot == \"T2\" and \"OT\") or mySlot\nlocal corner = cornerByRole[myRole]\nif corner then\n    corner.y = center.y\n    local rotated = TensorCore.rotatePosAroundPos(center, corner, rot)\n\n    local sourcePos = TensorCore.mGetPlayer().pos\n    local targetPos = { x = rotated.x, y = sourcePos.y, z = rotated.z }\n\n    local heading = TensorCore.getHeadingToTarget(sourcePos, targetPos)\n    local totalDistance = TensorCore.getDistance2d(sourcePos, targetPos)\n\n    -- Proximity scaling\n    local scale = math.min(1, totalDistance / 15)\n    local baseWidth = math.max(0.5, 1 * scale)\n    local tipWidth = math.max(1.5, 3 * scale)\n    local tipLength = math.max(2, 3 * scale)\n    local baseLength = totalDistance - tipLength\n\n    if baseLength > 0 then\n        local arrowDrawer = TensorCore.getCachedDrawer(0xFF00FFFF, 0xFF0088FF, 0xFF0000FF, 0xFFFFFFFF, 2)\n        arrowDrawer:addArrow(\n            sourcePos.x, sourcePos.y, sourcePos.z,\n            heading,\n            baseLength, baseWidth, tipLength, tipWidth,\n            false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY\n        )\n    end\nend\n\nself.used = true",
-							},
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "2262ee9d-0672-37f0-a45e-d9318b171c61",
+							version = 2.1,
 						},
 					},
 				},
+				conditions = 
+				{
+				},
+				mechanicTime = 544.89209076626,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 104,
+				timerEndOffset = 3.0999999046326,
+				timerStartOffset = 1.6000000238419,
+				uuid = "6b52ed03-6c96-8dfb-9429-5c94a6682e13",
+				version = 2,
 			},
 		},
 	},
-	[140] = 
+	[113] = 
 	{
 		
 		{
 			data = 
 			{
-				name = "[Lj Draw] Draw Arrow to Towers/Middle",
-				uuid = "74ae434b-b704-d595-91d7-7a38b9e4e82f",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "718abc49-917d-5a24-89f5-77575b596d88",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 578.27023501273,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 113,
+				timerEndOffset = 4.3000001907349,
+				timerStartOffset = 2.7999999523163,
+				uuid = "e938b8fc-d7cb-5651-b5b8-e4cc33976b7d",
 				version = 2,
 			},
-			inheritedObjectUUID = "0ae2b750-99a0-a6fa-8af6-dc13c80e06bb",
-			inheritedOverwrites = 
+		},
+	},
+	[123] = 
+	{
+		
+		{
+			data = 
 			{
 				actions = 
 				{
 					
 					{
-						type = "add",
-						value = 
+						data = 
 						{
-							data = 
-							{
-								name = "",
-								uuid = "50986135-71e5-51b4-b993-63fcc624adad",
-								version = 2.1,
-							},
-							inheritedObjectUUID = "3eed45c1-a515-ef19-9cc5-fa3762d65300",
-							inheritedOverwrites = 
-							{
-								actionLua = "local mode = \"ZsQ\"  -- \"LPDU\" or \"ZsQ\"\n\nlocal center = { x = 100, y = 0, z = 100 }\nlocal towerDist = 10\nlocal towerRadius = 5\nlocal stackDotRadius = 0.225\nlocal rot = data.ljKefkaHeading\n\n-- Design (true-north) tower spots; rotated to Kefka below.\nlocal westTower = { x = center.x - towerDist, y = center.y, z = center.z }\nlocal eastTower = { x = center.x + towerDist, y = center.y, z = center.z }\n\n-- Always-on markers, drawn regardless of where this player is headed:\n-- red outlines on both towers, small filled red dot mid for the stack.\nlocal towerDrawer = TensorCore.getCachedDrawer(nil, nil, 0x00000000, 0xFF0000FF, 2)\nfor _, tower in pairs({ westTower, eastTower }) do\n    local rotatedTower = TensorCore.rotatePosAroundPos(center, tower, rot)\n    towerDrawer:addCircle(rotatedTower.x, rotatedTower.y, rotatedTower.z, towerRadius, false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY)\nend\n\nlocal stackDotDrawer = TensorCore.getCachedDrawer(nil, nil, 0xFF0000FF)\nstackDotDrawer:addCircle(center.x, center.y, center.z, stackDotRadius, false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY)\n\n-- Role -> tower assignment per strat (all directions relative to Kefka).\nlocal towerByRoleByMode = {\n    ZsQ = {\n        H1 = westTower, MT = westTower, R1 = westTower, M1 = westTower,\n        H2 = eastTower, OT = eastTower, R2 = eastTower, M2 = eastTower,\n    },\n    LPDU = {\n        H1 = eastTower, H2 = eastTower, R1 = eastTower, R2 = eastTower,\n        MT = westTower, OT = westTower, M1 = westTower, M2 = westTower,\n    },\n}\nlocal towerByRole = towerByRoleByMode[mode]\n\nlocal SUPPORT = { H1 = true, H2 = true, MT = true, OT = true }\n\nlocal mySlot = AnyoneCore.Roster.mySlot()\nlocal role = (mySlot == \"T1\" and \"MT\") or (mySlot == \"T2\" and \"OT\") or mySlot\nlocal playerGroup = SUPPORT[role] and \"Support\" or \"DPS\"\n\n-- Group named by data.ljP3Stack stacks mid; the other group soaks the towers. This then flips later by changing the vaue of data.ljP3Stack.\nlocal designTarget\nif playerGroup == data.ljP3Stack then\n    designTarget = { x = center.x, z = center.z }\nelse\n    designTarget = towerByRole[role]\nend\n\nif designTarget then\n    designTarget.y = center.y\n    local rotated = TensorCore.rotatePosAroundPos(center, designTarget, rot)\n\n    local sourcePos = TensorCore.mGetPlayer().pos\n    local targetPos = { x = rotated.x, y = sourcePos.y, z = rotated.z }\n\n    local heading = TensorCore.getHeadingToTarget(sourcePos, targetPos)\n    local totalDistance = TensorCore.getDistance2d(sourcePos, targetPos)\n\n    -- Proximity scaling\n    local scale = math.min(1, totalDistance / 15)\n    local baseWidth = math.max(0.5, 1 * scale)\n    local tipWidth = math.max(1.5, 3 * scale)\n    local tipLength = math.max(2, 3 * scale)\n    local baseLength = totalDistance - tipLength\n\n    if baseLength > 0 then\n        local arrowDrawer = TensorCore.getCachedDrawer(0xFF00FFFF, 0xFF0088FF, 0xFF0000FF, 0xFFFFFFFF, 2)\n        arrowDrawer:addArrow(\n            sourcePos.x, sourcePos.y, sourcePos.z,\n            heading,\n            baseLength, baseWidth, tipLength, tipWidth,\n            false, Argus2.RenderFlags.FLAG_RENDER_OVERLAY\n        )\n    end\nend\n\nself.used = true",
-							},
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "9e5bf7e3-ec8e-08da-875c-c923456cbc0c",
+							version = 2.1,
 						},
 					},
 				},
+				conditions = 
+				{
+				},
+				mechanicTime = 631.08148473045,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 123,
+				timerEndOffset = -4.3000001907349,
+				timerStartOffset = -5.8000001907349,
+				uuid = "32635d30-9288-82b2-bb3d-4686a24418aa",
+				version = 2,
+			},
+		},
+	},
+	[128] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "dc9c31f5-fa51-266c-83a7-ff51156125eb",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 652.34305216234,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 128,
+				timerEndOffset = 0.10000000149012,
+				timerStartOffset = -1.2999999523163,
+				uuid = "975d28f7-9021-5095-a22f-6a155095c96b",
+				version = 2,
+			},
+		},
+	},
+	[129] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "e241293a-85d9-4a32-bcd6-b6fab36e8583",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 671.48837109883,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 129,
+				timerEndOffset = -2.4000000953674,
+				timerStartOffset = -3.9000000953674,
+				uuid = "ac625d95-d9e5-bdbf-8c60-515c6e8028a7",
+				version = 2,
+			},
+		},
+	},
+	[137] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "81e408ef-8c8b-03c5-bb26-4cae879862c9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 690.41578400282,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 137,
+				timerEndOffset = 4.5,
+				timerStartOffset = 3,
+				uuid = "ce1684f4-1542-a80a-a6a3-7afbbc30b2bd",
+				version = 2,
+			},
+		},
+	},
+	[139] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "938a8314-2f99-8e3a-aca8-6a497fd21739",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 702.78725990995,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 139,
+				timerStartOffset = -1.5,
+				uuid = "497b7e65-571b-34d1-be37-65d58776ed5b",
+				version = 2,
 			},
 		},
 	},
@@ -1548,81 +2473,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "83ace834-5613-43a4-88f6-dbf4803abeb6",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 801.88345429349,
-				name = "[DPS] Potion On",
-				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "90f80869-b7d4-fdc1-8bfb-b3e46ef80df8",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 801.88345429349,
-				name = "[DPS] Force Potion",
-				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 10,
-				timerStartOffset = -2,
-				uuid = "5927d874-2d95-29d4-8847-cbbb8dc8c630",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
@@ -1632,18 +2482,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 801.88345429349,
 				name = "[BRD] Downtime Song Off",
@@ -1654,7 +2492,7 @@ local tbl =
 			},
 		},
 	},
-	[155] = 
+	[151] = 
 	{
 		
 		{
@@ -1666,26 +2504,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
+							actionID = 7408,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "6ec51566-79f3-9c0e-bd4f-8612073d90a8",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
+							name = "Nature's Minne",
+							uuid = "658a08ab-96ee-618b-8f5b-e67beecb4d58",
 							version = 2.1,
 						},
 					},
@@ -1693,16 +2515,19 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 836.78243971594,
-				name = "[DPS] Potion",
+				mechanicTime = 812.05085714286,
+				name = "[BRD] Nature's Minne",
 				timeRange = true,
-				timelineIndex = 155,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "a3d4ad42-04cd-2294-a889-fd774d6e0a3e",
+				timelineIndex = 151,
+				timerEndOffset = 5.4000000953674,
+				timerStartOffset = 3.9000000953674,
+				uuid = "fe329f8b-28de-8a5b-8c74-06186ee22999",
 				version = 2,
 			},
 		},
+	},
+	[152] = 
+	{
 		
 		{
 			data = 
@@ -1713,28 +2538,197 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							gVarValue = 2,
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
 							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "c1534f6d-06a1-e246-b12f-11d9b938b9b1",
+							name = "Dexterity Potion",
+							usePot = true,
+							uuid = "f59631f8-db49-4eb7-9d3a-f986c82bb03c",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
-				mechanicTime = 836.78243971594,
-				name = "[DPS] Potion",
-				timelineIndex = 155,
-				timerOffset = 9,
-				timerStartOffset = 6,
-				uuid = "6581f15a-ebda-b82a-82a3-7c946412d4c7",
+				mechanicTime = 821.61906270742,
+				name = "[BRD] Potion",
+				timeRange = true,
+				timelineIndex = 152,
+				timerEndOffset = -0.89999997615814,
+				timerStartOffset = -2.4000000953674,
+				uuid = "7ddee15f-1288-d2ee-8f17-efc25a3119d4",
+				version = 2,
+			},
+		},
+	},
+	[153] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_CD",
+							name = "Mage's Ballad",
+							uuid = "58094ae2-6071-2a97-9e91-acbd6898b102",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 826.02524789261,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 153,
+				timerEndOffset = 0.60000002384186,
+				timerStartOffset = -1,
+				uuid = "5136a58d-36fc-44b2-ac15-d35269774581",
+				version = 2,
+			},
+		},
+	},
+	[158] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "406fad56-ea4e-b52d-a9d4-a99622229b8d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 851.93288409656,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 158,
+				timerEndOffset = 0.80000001192093,
+				timerStartOffset = -0.60000002384186,
+				uuid = "abf5dd74-6834-af9d-b8fb-4a1ffe20e3a4",
+				version = 2,
+			},
+		},
+	},
+	[160] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "da3b3bdc-7e74-f3d2-a6a6-d3c0ae79894a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 868.13803801671,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 160,
+				timerEndOffset = 0.89999997615814,
+				timerStartOffset = -0.5,
+				uuid = "d4e021fa-e42a-7d92-8d2d-469bc794d8c3",
+				version = 2,
+			},
+		},
+	},
+	[166] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "92c9396b-671f-b9c9-a075-a0c0cb40c276",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 903.50044082329,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 166,
+				timerEndOffset = -1.2000000476837,
+				timerStartOffset = -2.7000000476837,
+				uuid = "e6e8795f-d381-4622-8b09-54bc0e0fa23c",
+				version = 2,
+			},
+		},
+	},
+	[169] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "6e3095ad-b768-8a3f-a465-4aa523dd52e1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 934.65048710577,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 169,
+				timerEndOffset = -0.10000000149012,
+				timerStartOffset = -1.6000000238419,
+				uuid = "404d3d11-12e2-84e0-9db9-34035f9dd33b",
 				version = 2,
 			},
 		},
@@ -1752,14 +2746,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
 							version = 2.1,
@@ -1768,18 +2754,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 934.65552902023,
 				name = "[BRD] Downtime Song On",
@@ -1803,14 +2777,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
@@ -1820,18 +2786,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 965.64810213372,
 				name = "[BRD] Downtime Song Off",
@@ -1841,8 +2795,70 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "870370a4-f460-fb93-9569-5940e7373200",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 965.64810213372,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 171,
+				timerEndOffset = -13.699999809265,
+				timerStartOffset = -15.199999809265,
+				uuid = "87919c74-aecb-3c35-b1fe-1b27a66870bf",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "6c5d13e9-0a29-6705-8456-c355b7871a9b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 965.64810213372,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 171,
+				timerEndOffset = 3.2000000476837,
+				timerStartOffset = 1.7000000476837,
+				uuid = "c176e754-e7f8-a69e-b078-310b1897c971",
+				version = 2,
+			},
+		},
 	},
-	[200] = 
+	[191] = 
 	{
 		
 		{
@@ -1854,26 +2870,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							actionID = 25786,
+							actionID = 7408,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Potion",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "83ace834-5613-43a4-88f6-dbf4803abeb6",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							endIfUsed = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_Potion",
-							uuid = "68db1d61-d190-9213-9570-be78b03cef2d",
-							variableTogglesType = 2,
+							name = "Nature's Minne",
+							uuid = "836d237a-944b-04eb-a518-ba0eec6d27c1",
 							version = 2.1,
 						},
 					},
@@ -1881,21 +2881,289 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 1046.2272185016,
-				name = "[DPS] Potion",
+				mechanicTime = 1015.5629742328,
+				name = "[BRD] Nature's Minne",
 				timeRange = true,
-				timelineIndex = 200,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "3eaed636-aa42-2c27-9dcb-d7704d8d0101",
+				timelineIndex = 191,
+				timerEndOffset = 1,
+				timerStartOffset = -0.40000000596046,
+				uuid = "6474a257-7c66-6a61-92d4-8da4cd06ba10",
+				version = 2,
+			},
+		},
+	},
+	[193] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "8ddf81a0-02bf-ae9c-862a-4cb7a8461dcf",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1025.1000086512,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 193,
+				timerEndOffset = 2.4000000953674,
+				timerStartOffset = 0.89999997615814,
+				uuid = "b526d18a-8e06-ec9f-a71c-a93213d9b99c",
+				version = 2,
+			},
+		},
+	},
+	[207] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "f2f55f91-6728-b610-b229-716134cdabfe",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1057.7456791682,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 207,
+				timerEndOffset = 1.7000000476837,
+				timerStartOffset = 0.20000000298023,
+				uuid = "fe09aba7-6458-f0d0-a35f-5af9c0d9af85",
+				version = 2,
+			},
+		},
+	},
+	[209] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							name = "Mage's Ballad",
+							uuid = "10f9023d-b381-3f3b-8181-6cdb1ba70ec8",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1063.6903949829,
+				name = "[BRD] MB",
+				timeRange = true,
+				timelineIndex = 209,
+				timerEndOffset = 8.3000001907349,
+				timerStartOffset = 6.8000001907349,
+				uuid = "c61d8f5d-b5ec-75c9-b1b1-304f8537584b",
+				version = 2,
+			},
+		},
+	},
+	[218] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 116,
+							atomicPriority = true,
+							name = "Army's Paeon",
+							uuid = "fae10736-93d1-2386-8bfb-ed0f32f29d31",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1113.9009474604,
+				name = "[BRD] AP",
+				timeRange = true,
+				timelineIndex = 218,
+				timerEndOffset = 0.60000002384186,
+				timerStartOffset = -0.80000001192093,
+				uuid = "63e04444-a0ca-4c50-972d-8a58f27958fd",
+				version = 2,
+			},
+		},
+	},
+	[221] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7408,
+							atomicPriority = true,
+							name = "Nature's Minne",
+							uuid = "d4297433-b95b-1b15-a44c-ee480f960b98",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1133.3461474604,
+				name = "[BRD] Nature's Minne",
+				timeRange = true,
+				timelineIndex = 221,
+				timerEndOffset = 3.7000000476837,
+				timerStartOffset = 2.2000000476837,
+				uuid = "83205be6-ee0b-7b3c-b2e6-e3da585458a1",
+				version = 2,
+			},
+		},
+	},
+	[225] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3559,
+							atomicPriority = true,
+							name = "The Wanderer's Minuet",
+							uuid = "60fe5545-8418-439e-8709-c156b37c745f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1149.6575474604,
+				name = "[BRD] WM",
+				timeRange = true,
+				timelineIndex = 225,
+				timerEndOffset = -0.40000000596046,
+				timerStartOffset = -1.8999999761581,
+				uuid = "0bd3ea36-a5a5-606e-b9bf-41a3b0767836",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "a7d70f08-1fc2-f439-af39-24426e2813f2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1149.6575474604,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 225,
+				timerStartOffset = -1.3999999761581,
+				uuid = "e95ebf47-a851-6c9d-99ee-8ef8d9c87dcd",
+				version = 2,
+			},
+		},
+	},
+	[226] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
+							name = "Dexterity Potion",
+							usePot = true,
+							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] Potion",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 8.6999998092651,
+				timerStartOffset = 7.1999998092651,
+				uuid = "2e54fef9-0e08-9346-adc4-f8fe9d7531a2",
 				version = 2,
 			},
 		},
 	},
 	inheritedProfiles = 
 	{
-		"Lj\\umad\\draws_lpdu",
-		"store\\anyone\\dmu\\main",
 	},
 	timelineName = "dmu",
 	version = "1.5.5",

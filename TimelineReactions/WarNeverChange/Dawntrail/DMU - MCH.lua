@@ -256,6 +256,11 @@ local tbl =
 									"618fddc9-35a6-c996-b3f2-06cb4f12270a",
 									true,
 								},
+								
+								{
+									"e7557bae-faa8-66cd-8de8-d9282bcdaf55",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRG3_Hotbar_ElusiveJumpTarget",
 							ignoreWeaveRules = true,
@@ -575,6 +580,16 @@ local tbl =
 							inCombatType = 2,
 							name = "Not in Combat",
 							uuid = "0eb07f88-6426-974d-abd0-c0a9d006371c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 851,
+							uuid = "e7557bae-faa8-66cd-8de8-d9282bcdaf55",
 							version = 3,
 						},
 					},
@@ -3128,6 +3143,14 @@ local tbl =
 						{
 							actionID = 2876,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8a014d46-7bde-432b-a0e3-3db1857278fe",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							ignoreWeaveRules = true,
@@ -3138,6 +3161,16 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 851,
+							uuid = "8a014d46-7bde-432b-a0e3-3db1857278fe",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 427.45958272918,
 				name = "[MCH] Reassemble",
@@ -4988,14 +5021,16 @@ local tbl =
 						data = 
 						{
 							actionID = 2876,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"58d4ad6e-dc01-decf-a4c0-ff26c95dee6e",
+									"0b21ae3e-1fef-39e1-b5eb-6e55e1ca6d52",
 									true,
 								},
 							},
+							gVar = "ACR_TensorMagnum3_CD",
 							ignoreWeaveRules = true,
 							uuid = "5afaa209-36f1-f5dc-ab41-b507b8ca4ef3",
 							version = 2.1,
@@ -5008,13 +5043,9 @@ local tbl =
 					{
 						data = 
 						{
-							actionCDValue = 1,
-							actionID = 2876,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "Reassemble Ready",
-							uuid = "58d4ad6e-dc01-decf-a4c0-ff26c95dee6e",
+							buffCheckType = 2,
+							buffID = 851,
+							uuid = "0b21ae3e-1fef-39e1-b5eb-6e55e1ca6d52",
 							version = 3,
 						},
 					},
@@ -5118,6 +5149,76 @@ local tbl =
 				timerOffset = -10,
 				timerStartOffset = -14.5,
 				uuid = "91cdafb9-b721-e4e7-ac06-21dfef509a50",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"5ceecee5-3093-2fb3-818d-878bcf329d3a",
+									true,
+								},
+								
+								{
+									"2e500fd6-a64d-eadc-adcb-379267dd58e2",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "bbacc391-2d5c-48cf-bc83-8395af034ed9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 60,
+							name = "Battery >= 60",
+							uuid = "5ceecee5-3093-2fb3-818d-878bcf329d3a",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 16501,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "Queen Ready",
+							uuid = "2e500fd6-a64d-eadc-adcb-379267dd58e2",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 855.99403801671,
+				name = "[MCH] Queen",
+				timeRange = true,
+				timelineIndex = 159,
+				timerEndOffset = 8,
+				timerStartOffset = -4,
+				uuid = "6808f503-5f22-ac39-96a6-807ab5e4ef0b",
 				version = 2,
 			},
 		},
@@ -5270,7 +5371,7 @@ local tbl =
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionDuration = 30,
+							holdActionDuration = 21,
 							holdActionID = 16501,
 							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
 							version = 2.1,
@@ -5283,7 +5384,7 @@ local tbl =
 				mechanicTime = 895.49672653853,
 				name = "[MCH] Hold Queen",
 				timelineIndex = 165,
-				timerOffset = -40,
+				timerOffset = -30,
 				uuid = "ee835a2e-fa9d-2167-9725-d7401372b510",
 				version = 2,
 			},
@@ -5966,8 +6067,17 @@ local tbl =
 						data = 
 						{
 							actionID = 2876,
+							conditions = 
+							{
+								
+								{
+									"98becb16-9255-b1b4-8cdb-e2f31f090624",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
 							uuid = "f68e2cef-779c-7354-93b0-dcd00398011d",
 							version = 2.1,
 						},
@@ -5975,13 +6085,23 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 851,
+							uuid = "98becb16-9255-b1b4-8cdb-e2f31f090624",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 965.64810213372,
 				name = "[MCH] Reassemble",
 				timeRange = true,
 				timelineIndex = 171,
 				timerOffset = 6,
-				timerStartOffset = -2,
+				timerStartOffset = -3,
 				uuid = "850ea829-d554-73d0-bd55-fd53ff9260c4",
 				version = 2,
 			},
