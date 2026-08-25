@@ -194,7 +194,6 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_DoTs",
-							gVarValue = 2,
 							uuid = "523290e7-f8cb-452f-bad7-cd5bf37237ff",
 							version = 2.1,
 						},
@@ -243,6 +242,16 @@ local tbl =
 							gVar = "ACR_TensorRequiem3_Playlist",
 							gVarValue = 2,
 							uuid = "3bd3cd20-da8d-b1fb-b501-724c2703b77c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							uuid = "fbca4b13-e166-6d4a-9dd9-56a64a9693ca",
 							version = 2.1,
 						},
 					},
@@ -498,7 +507,6 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_DoTs",
-							gVarValue = 2,
 							uuid = "ce798ff5-de6b-669d-8158-d7cf784467cf",
 							version = 2.1,
 						},
