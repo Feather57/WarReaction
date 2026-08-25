@@ -831,8 +831,8 @@ local tbl =
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 25,
-				timerEndOffset = 4.5999999046326,
-				timerStartOffset = 3.0999999046326,
+				timerEndOffset = 5.5999999046326,
+				timerStartOffset = 2.0999999046326,
 				uuid = "710fc645-9e2a-9da8-addb-bcbd72ebc24e",
 				version = 2,
 			},
@@ -3555,39 +3555,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "Misc",
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Dexterity Potion",
-							usePot = true,
-							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[BRD] Potion",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 8.6999998092651,
-				timerStartOffset = 7.1999998092651,
-				uuid = "2e54fef9-0e08-9346-adc4-f8fe9d7531a2",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -3623,6 +3590,40 @@ local tbl =
 				timelineIndex = 226,
 				timerOffset = -5,
 				uuid = "9978bd48-914a-97c3-a27b-e3ef9897a633",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
+							name = "Dexterity Potion",
+							usePot = true,
+							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] Potion",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 8.6999998092651,
+				timerStartOffset = 7.1999998092651,
+				uuid = "2e54fef9-0e08-9346-adc4-f8fe9d7531a2",
 				version = 2,
 			},
 		},
