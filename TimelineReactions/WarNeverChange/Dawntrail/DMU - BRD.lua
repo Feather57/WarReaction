@@ -575,6 +575,54 @@ local tbl =
 			},
 			inheritedIndex = 7,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Radiant Finale",
+				randomOffset = -11,
+				timelineIndex = 1,
+				timerOffset = -13,
+				uuid = "1865dffe-abe0-60af-8760-084c55a4c88b",
+				version = 2,
+			},
+		},
 	}, 
 	[5] = 
 	{
@@ -786,6 +834,54 @@ local tbl =
 				timerEndOffset = 4.5999999046326,
 				timerStartOffset = 3.0999999046326,
 				uuid = "710fc645-9e2a-9da8-addb-bcbd72ebc24e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 8,
+				timelineIndex = 25,
+				timerOffset = 4,
+				uuid = "10474cc4-f0f4-7c2d-9a05-b59246933ad7",
 				version = 2,
 			},
 		},
@@ -1145,6 +1241,53 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] Radiant Finale",
+				timelineIndex = 42,
+				timerOffset = -4,
+				uuid = "cc2701ea-e5ef-9d16-8e01-bbeb43dcf830",
+				version = 2,
+			},
+		},
 	},
 	[49] = 
 	{
@@ -1281,6 +1424,69 @@ local tbl =
 				timerEndOffset = 10.300000190735,
 				timerStartOffset = 8.8000001907349,
 				uuid = "4ea093a6-a96f-c485-9db8-3474662d9529",
+				version = 2,
+			},
+		},
+	},
+	[67] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 7,
+				timelineIndex = 67,
+				timerOffset = 2,
+				uuid = "4e75c649-56e7-b583-a29b-4e46f72499b4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 9,
+							holdActionID = 36977,
+							uuid = "30d385d6-6af0-eeb5-aa4d-a05b39e2ee4c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] Hold R Encore",
+				timelineIndex = 67,
+				uuid = "b862d6bf-948f-d7e2-bcdd-b2c6aff52059",
 				version = 2,
 			},
 		},
@@ -1926,33 +2132,18 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25785,
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"6857fcac-f4a0-f66b-8b1e-57de671c556b",
-									true,
-								},
-								
-								{
-									"e5f460e7-3948-1657-9eeb-046231c75de7",
-									true,
-								},
-								
-								{
-									"ec8ff84a-7925-8a07-b3b8-632cc153841c",
-									true,
-								},
-								
-								{
-									"cb664821-e98a-f96f-9cab-ae472ad7208e",
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
 									true,
 								},
 							},
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							uuid = "a397a511-e3cd-e90b-9d09-fa1e07239b34",
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -1963,57 +2154,19 @@ local tbl =
 					{
 						data = 
 						{
+							buffID = 141,
 							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "6857fcac-f4a0-f66b-8b1e-57de671c556b",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeValue = 111,
-							uuid = "e5f460e7-3948-1657-9eeb-046231c75de7",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 6,
-							gaugeValue = 111,
-							uuid = "ec8ff84a-7925-8a07-b3b8-632cc153841c",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 118,
-							category = "Self",
-							conditionType = 4,
-							uuid = "cb664821-e98a-f96f-9cab-ae472ad7208e",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
 							version = 3,
 						},
 					},
 				},
 				mechanicTime = 481.45392399289,
-				name = "[BRD] Radiant",
-				timeRange = true,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 6,
 				timelineIndex = 84,
-				timerEndOffset = 10,
-				timerOffset = 1,
-				timerStartOffset = 3,
-				uuid = "ec4d9842-3ad2-9af0-bd83-d37af9b66585",
+				timerOffset = -4,
+				uuid = "3527619d-73ad-24b0-b455-b0603b8c1e84",
 				version = 2,
 			},
 		},
@@ -2315,6 +2468,54 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 652.34305216234,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 15,
+				timelineIndex = 128,
+				timerOffset = 6,
+				uuid = "426becaf-2b08-1e53-877f-a040a1690422",
+				version = 2,
+			},
+		},
 	},
 	[129] = 
 	{
@@ -2552,6 +2753,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 801.88345429349,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 2,
+				timelineIndex = 150,
+				timerOffset = -1,
+				uuid = "11ddbc27-4d35-ac6d-8c71-df107463007b",
+				version = 2,
+			},
+		},
 	},
 	[151] = 
 	{
@@ -2619,6 +2850,54 @@ local tbl =
 				timerEndOffset = -0.89999997615814,
 				timerStartOffset = -2.4000000953674,
 				uuid = "7ddee15f-1288-d2ee-8f17-efc25a3119d4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 821.61906270742,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 5,
+				timelineIndex = 152,
+				timerOffset = -3,
+				uuid = "1782b367-2c30-d871-a8e8-e409e26145de",
 				version = 2,
 			},
 		},
@@ -3004,6 +3283,57 @@ local tbl =
 			},
 		},
 	},
+	[197] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1040.1943052998,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 30,
+				timelineIndex = 197,
+				timerOffset = -2,
+				uuid = "5e8057ac-c92f-808b-ba91-4172766bd2c3",
+				version = 2,
+			},
+		},
+	},
 	[207] = 
 	{
 		
@@ -3245,6 +3575,54 @@ local tbl =
 				timerEndOffset = 8.6999998092651,
 				timerStartOffset = 7.1999998092651,
 				uuid = "2e54fef9-0e08-9346-adc4-f8fe9d7531a2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_RadiantFinale",
+							uuid = "33b005f8-0c64-5fc2-b885-53bccbb15b19",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "0d2584c6-b869-0aad-9ce4-c8a83b8163cc",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] Radiant Finale",
+				randomOffset = 25,
+				timelineIndex = 226,
+				timerOffset = -5,
+				uuid = "9978bd48-914a-97c3-a27b-e3ef9897a633",
 				version = 2,
 			},
 		},
