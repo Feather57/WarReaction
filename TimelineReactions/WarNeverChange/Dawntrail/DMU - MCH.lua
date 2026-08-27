@@ -74,6 +74,7 @@ local tbl =
 							conditionType = 6,
 							gaugeIndex = 2,
 							gaugeValue = 50,
+							name = "Battery >50",
 							uuid = "6a2a35b0-a59b-b784-a26e-4881b2dd5095",
 							version = 3,
 						},
@@ -161,7 +162,7 @@ local tbl =
 							uuid = "42f031cd-e4e5-248a-abba-47e5ac7276c8",
 							version = 2.1,
 						},
-						inheritedIndex = 5,
+						inheritedIndex = 6,
 					},
 					
 					{
@@ -173,7 +174,7 @@ local tbl =
 							uuid = "26a7018e-18ba-e941-abc8-ca3179c95ed3",
 							version = 2.1,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 7,
 					},
 					
 					{
@@ -223,7 +224,7 @@ local tbl =
 				uuid = "74290d8b-dd55-e428-b7c0-daa92eb01a34",
 				version = 2,
 			},
-			inheritedIndex = 7,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -236,7 +237,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\nMCH_enableSpreadDraws = true\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\nACR_TensorMagnum3_SummonQueen_Gauge = 60\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\nMCH_enableSpreadDraws = true\n\n-- Set Queen\nACR_TensorMagnum3_SummonQueen_Gauge = 50\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -347,7 +348,7 @@ local tbl =
 							uuid = "81c3977a-9a60-5c89-b463-2f5acf67880d",
 							version = 2.1,
 						},
-						inheritedIndex = 5,
+						inheritedIndex = 7,
 					},
 					
 					{
@@ -478,6 +479,29 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
+							actionID = 16498,
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							holdActionDuration = 15,
+							holdActionID = 16501,
+							uuid = "43a19cc8-1980-8818-b01c-75eac9d28801",
+							version = 2.1,
+						},
+						inheritedIndex = 13,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
 							conditions = 
 							{
 								
@@ -513,29 +537,6 @@ local tbl =
 							uuid = "48801477-f132-3c50-8746-3f27190dbaa9",
 							version = 2.1,
 						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							actionID = 16498,
-							conditions = 
-							{
-								
-								{
-									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							holdActionDuration = 15,
-							holdActionID = 16501,
-							uuid = "43a19cc8-1980-8818-b01c-75eac9d28801",
-							version = 2.1,
-						},
-						inheritedIndex = 13,
 					},
 					
 					{
@@ -586,18 +587,6 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							conditionLua = "return FFXIV_Common_BotRunning",
-							name = "Assist Enabled",
-							uuid = "c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
 							comparator = 2,
 							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 1000",
 							eventCountdownTime = 1.5,
@@ -605,6 +594,18 @@ local tbl =
 							uuid = "972d5672-271b-f4ac-b97b-199d5f251954",
 							version = 3,
 						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Assist Enabled",
+							uuid = "c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+							version = 3,
+						},
+						inheritedIndex = 2,
 					},
 					
 					{
@@ -740,7 +741,7 @@ local tbl =
 				uuid = "7dde1dd1-fb49-aa4d-bebf-8501c312f243",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -772,7 +773,7 @@ local tbl =
 				uuid = "6ff8b694-bd4c-48d6-a827-1795cbe81c3e",
 				version = 2,
 			},
-			inheritedIndex = 6,
+			inheritedIndex = 5,
 		},
 	}, 
 	[3] = 
@@ -836,7 +837,7 @@ local tbl =
 				uuid = "119c820a-f935-7183-8240-fa92ce42e7fe",
 				version = 2,
 			},
-			inheritedIndex = 10,
+			inheritedIndex = 2,
 		},
 	},
 	[6] = 
@@ -1064,7 +1065,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1114,7 +1115,7 @@ local tbl =
 				uuid = "a1a4c350-21d3-1df8-ab29-8b84aa1f10c2",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 1,
 		},
 	},
 	[18] = 
@@ -1410,7 +1411,7 @@ local tbl =
 				uuid = "6a43c327-fdf4-3036-ab44-4a0636fd8299",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[31] = 
@@ -1512,73 +1513,6 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionDuration = 36,
-							holdActionID = 16501,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 207.87965305988,
-				name = "[MCH] Hold Queen",
-				timelineIndex = 39,
-				timerOffset = -40,
-				uuid = "7e9e1bac-78c6-6bb9-b718-38a8a9e5d6c3",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Misc",
-							gVar = "ACR_TensorMagnum3_CD",
-							setTarget = true,
-							targetContentID = 7131,
-							targetType = "Enemy",
-							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 207.87965305988,
-				name = "[All] Target Kefka",
-				timeRange = true,
-				timelineIndex = 39,
-				timerEndOffset = 3,
-				timerOffset = 9,
-				timerStartOffset = -3,
-				uuid = "61898b20-64b5-11eb-b9c4-d9c32f7d6c14",
-				version = 2,
-			},
-			inheritedIndex = 10,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 16501,
 							conditions = 
 							{
@@ -1632,6 +1566,73 @@ local tbl =
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionDuration = 36,
+							holdActionID = 16501,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 207.87965305988,
+				name = "[MCH] Hold Queen",
+				timelineIndex = 39,
+				timerOffset = -40,
+				uuid = "7e9e1bac-78c6-6bb9-b718-38a8a9e5d6c3",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorMagnum3_CD",
+							setTarget = true,
+							targetContentID = 7131,
+							targetType = "Enemy",
+							uuid = "baf2eb39-6977-b826-8874-c383a772185a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 207.87965305988,
+				name = "[All] Target Kefka",
+				timeRange = true,
+				timelineIndex = 39,
+				timerEndOffset = 3,
+				timerOffset = 9,
+				timerStartOffset = -3,
+				uuid = "61898b20-64b5-11eb-b9c4-d9c32f7d6c14",
+				version = 2,
+			},
+			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
 							holdActionCharges = 2,
 							holdActionDuration = 52,
 							holdActionID = 17209,
@@ -1650,7 +1651,7 @@ local tbl =
 				uuid = "35052ac9-ece4-44a3-8c28-43dfffcbd409",
 				version = 2,
 			},
-			inheritedIndex = 7,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -1697,7 +1698,7 @@ local tbl =
 				uuid = "8a70c762-3279-4067-85db-39058660aea5",
 				version = 2,
 			},
-			inheritedIndex = 8,
+			inheritedIndex = 5,
 		},
 	},
 	[41] = 
@@ -1723,7 +1724,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -1830,7 +1831,7 @@ local tbl =
 				uuid = "10071ee7-0538-1f9a-9af2-1ab77a866364",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[47] = 
@@ -2454,7 +2455,7 @@ local tbl =
 				uuid = "cfafb2cf-502b-e67f-8dfb-797573b9ad01",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
 		},
 	},
 	[66] = 
@@ -2609,7 +2610,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -2773,7 +2774,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -2994,7 +2995,7 @@ local tbl =
 							uuid = "55300f67-799a-1148-95f1-8383a4410972",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -3184,7 +3185,7 @@ local tbl =
 				uuid = "82625cdb-0223-21a4-bf54-e643b1312875",
 				version = 2,
 			},
-			inheritedIndex = 8,
+			inheritedIndex = 4,
 		},
 	},
 	[75] = 
@@ -3226,10 +3227,11 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_TensorMagnum3_Reassemble",
-							uuid = "f4b4d55a-1e7e-a37c-a683-205094d338fb",
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							uuid = "ef96cef5-8af6-f48c-b674-6103eb23536f",
 							version = 2.1,
 						},
+						inheritedIndex = 2,
 					},
 					
 					{
@@ -3244,11 +3246,10 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							uuid = "ef96cef5-8af6-f48c-b674-6103eb23536f",
+							gVar = "ACR_TensorMagnum3_Reassemble",
+							uuid = "f4b4d55a-1e7e-a37c-a683-205094d338fb",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
 					},
 				},
 				conditions = 
@@ -3337,29 +3338,45 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25788,
-							endIfUsed = true,
-							gVar = "ACR_TensorACR_HotbarCancel",
-							targetType = "Enemy",
-							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
-							variableTogglesType = 2,
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 60,
+							name = "Battery >60",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 427.45958272918,
-				name = "[MCH] Chain Saw",
-				timeRange = true,
+				name = "[MCH] Early Queen",
 				timelineIndex = 77,
-				timerEndOffset = 2,
-				timerStartOffset = -2,
-				uuid = "fa1578d0-f22c-8013-8d0f-a790dbd1ed70",
+				timerOffset = -2,
+				uuid = "7e093d3d-4d9b-256e-99a2-61eef7775f82",
 				version = 2,
 			},
-			inheritedIndex = 8,
 		},
 		
 		{
@@ -3439,45 +3456,29 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 16501,
-							conditions = 
-							{
-								
-								{
-									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							actionID = 25788,
+							endIfUsed = true,
+							gVar = "ACR_TensorACR_HotbarCancel",
+							targetType = "Enemy",
+							uuid = "e4216922-d7b2-cd95-acd3-f3b3a68dacf8",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 2,
-							gaugeValue = 60,
-							name = "Battery >60",
-							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 427.45958272918,
-				name = "[MCH] Early Queen",
+				name = "[MCH] Chain Saw",
+				timeRange = true,
 				timelineIndex = 77,
-				timerOffset = -2,
-				uuid = "7e093d3d-4d9b-256e-99a2-61eef7775f82",
+				timerEndOffset = 2,
+				timerStartOffset = -2,
+				uuid = "fa1578d0-f22c-8013-8d0f-a790dbd1ed70",
 				version = 2,
 			},
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -3818,12 +3819,12 @@ local tbl =
 				name = "[All] Target Exdeath",
 				timelineIndex = 101,
 				timerEndOffset = 3,
-				timerOffset = 7,
+				timerOffset = 6,
 				timerStartOffset = -3,
 				uuid = "16814285-3b9b-6037-9f36-1fc080069b08",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 2,
 		},
 	},
 	[103] = 
@@ -4238,7 +4239,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -4437,7 +4438,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -4468,7 +4469,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -4563,7 +4564,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -4615,79 +4616,6 @@ local tbl =
 	},
 	[148] = 
 	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25786,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"8805579a-605c-45d9-b706-678248857b4f",
-									true,
-								},
-								
-								{
-									"06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 1,
-							uuid = "8805579a-605c-45d9-b706-678248857b4f",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 2,
-							gaugeValue = 50,
-							name = "Battery >= 50",
-							uuid = "06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
-							version = 3,
-						},
-					},
-				},
-				loop = true,
-				mechanicTime = 715.37264047081,
-				name = "[MCH] Build Heat",
-				timeRange = true,
-				timelineIndex = 148,
-				timerEndOffset = 4,
-				timerOffset = -15,
-				timerStartOffset = -10,
-				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
-				version = 2,
-			},
-			inheritedIndex = 9,
-		},
 		
 		{
 			data = 
@@ -4887,25 +4815,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 7414,
-							conditions = 
-							{
-								
-								{
-									"d5cff803-1bd7-77a6-b977-a85f45b2c152",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_CD",
-							ignoreWeaveRules = true,
-							uuid = "c2b5cea2-7247-08d8-aa0b-db825c83e06a",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							conditions = 
 							{
@@ -4921,6 +4830,25 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 7414,
+							conditions = 
+							{
+								
+								{
+									"d5cff803-1bd7-77a6-b977-a85f45b2c152",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "c2b5cea2-7247-08d8-aa0b-db825c83e06a",
+							version = 2.1,
+						},
 					},
 				},
 				conditions = 
@@ -5148,6 +5076,79 @@ local tbl =
 				uuid = "768b7b4f-eb46-b832-83ea-5c376acc74a5",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25786,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8805579a-605c-45d9-b706-678248857b4f",
+									true,
+								},
+								
+								{
+									"06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "bcd7a248-c859-3a67-b407-6bd0dcb595f1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 1,
+							uuid = "8805579a-605c-45d9-b706-678248857b4f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							name = "Battery >= 50",
+							uuid = "06d8cfc0-e82d-8455-9d6e-e9f606d59b55",
+							version = 3,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 715.37264047081,
+				name = "[MCH] Build Heat",
+				timeRange = true,
+				timelineIndex = 148,
+				timerEndOffset = 4,
+				timerOffset = -15,
+				timerStartOffset = -10,
+				uuid = "77643ac9-1896-fde2-a939-2a05f74e6168",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[150] = 
@@ -5572,79 +5573,6 @@ local tbl =
 			},
 		},
 	},
-	[159] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16501,
-							conditions = 
-							{
-								
-								{
-									"5ceecee5-3093-2fb3-818d-878bcf329d3a",
-									true,
-								},
-								
-								{
-									"2e500fd6-a64d-eadc-adcb-379267dd58e2",
-									true,
-								},
-							},
-							ignoreWeaveRules = true,
-							uuid = "bbacc391-2d5c-48cf-bc83-8395af034ed9",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 2,
-							gaugeValue = 60,
-							name = "Battery >= 60",
-							uuid = "5ceecee5-3093-2fb3-818d-878bcf329d3a",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 16501,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							name = "Queen Ready",
-							uuid = "2e500fd6-a64d-eadc-adcb-379267dd58e2",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 855.99403801671,
-				name = "[MCH] Queen",
-				timeRange = true,
-				timelineIndex = 159,
-				timerEndOffset = 8,
-				timerStartOffset = -4,
-				uuid = "6808f503-5f22-ac39-96a6-807ab5e4ef0b",
-				version = 2,
-			},
-		},
-	},
 	[165] = 
 	{
 		
@@ -5668,7 +5596,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -5685,6 +5613,162 @@ local tbl =
 				uuid = "c15cb8f8-df5a-51a5-aceb-c4ba33bfc736",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							gVarValue = 2,
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 895.49672653853,
+				name = "[DPS] Potion Off",
+				timelineIndex = 165,
+				timerEndOffset = 1,
+				timerOffset = 10,
+				timerStartOffset = -17,
+				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 17209,
+							conditions = 
+							{
+								
+								{
+									"f81972ac-d664-6e63-976f-7424e2e71bec",
+									true,
+								},
+								
+								{
+									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hypercharge",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 17209,
+							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 49,
+							category = "Self",
+							name = "Is Medicated",
+							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 2688,
+							category = "Self",
+							name = "Is Not Overheated",
+							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Use Hypercharge",
+				timeRange = true,
+				timelineIndex = 165,
+				timerEndOffset = 12,
+				timerStartOffset = 3,
+				uuid = "4c5e1848-6efd-9d2c-9d9f-00338d2df9ab",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							ignoreWeaveRules = true,
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 90,
+							name = "Battery >90",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 895.49672653853,
+				name = "[MCH] Use Queen",
+				timeRange = true,
+				timelineIndex = 165,
+				timerEndOffset = -5,
+				timerOffset = -7,
+				timerStartOffset = -15,
+				uuid = "2227a06a-ae12-b9ee-b6a2-9d2348f2b591",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -5732,7 +5816,7 @@ local tbl =
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionDuration = 21,
+							holdActionDuration = 31,
 							holdActionID = 16501,
 							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
 							version = 2.1,
@@ -5745,7 +5829,7 @@ local tbl =
 				mechanicTime = 895.49672653853,
 				name = "[MCH] Hold Queen",
 				timelineIndex = 165,
-				timerOffset = -30,
+				timerOffset = -40,
 				uuid = "ee835a2e-fa9d-2167-9725-d7401372b510",
 				version = 2,
 			},
@@ -5861,109 +5945,7 @@ local tbl =
 				uuid = "07e5897c-e766-f718-b374-a98980564b0a",
 				version = 2,
 			},
-			inheritedIndex = 13,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							gVarValue = 2,
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 895.49672653853,
-				name = "[DPS] Potion Off",
-				timelineIndex = 165,
-				timerEndOffset = 1,
-				timerOffset = 10,
-				timerStartOffset = -17,
-				uuid = "b90f4107-8b5b-ffa8-aa2d-ae78b2bde44a",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							acrOptionType = "Hold Action",
-							actionID = 17209,
-							conditions = 
-							{
-								
-								{
-									"f81972ac-d664-6e63-976f-7424e2e71bec",
-									true,
-								},
-								
-								{
-									"43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hypercharge",
-							holdActionCharges = 2,
-							holdActionDuration = 20,
-							holdActionID = 17209,
-							uuid = "cf4efd2f-1c67-37e7-9777-39bec1ba1076",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffID = 49,
-							category = "Self",
-							name = "Is Medicated",
-							uuid = "f81972ac-d664-6e63-976f-7424e2e71bec",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 2688,
-							category = "Self",
-							name = "Is Not Overheated",
-							uuid = "43ffb96f-fbaa-8da6-a067-66dfeea1b318",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 895.49672653853,
-				name = "[MCH] Use Hypercharge",
-				timeRange = true,
-				timelineIndex = 165,
-				timerEndOffset = 12,
-				timerStartOffset = 3,
-				uuid = "4c5e1848-6efd-9d2c-9d9f-00338d2df9ab",
-				version = 2,
-			},
+			inheritedIndex = 9,
 		},
 	},
 	[169] = 
@@ -6000,7 +5982,7 @@ local tbl =
 				uuid = "5e05049d-813c-7e2c-9cb7-15e124a1e918",
 				version = 2,
 			},
-			inheritedIndex = 8,
+			inheritedIndex = 1,
 		},
 	},
 	[170] = 
@@ -6072,7 +6054,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -6138,7 +6120,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -6273,7 +6255,7 @@ local tbl =
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -6365,7 +6347,7 @@ local tbl =
 							category = "Self",
 							conditionType = 6,
 							gaugeIndex = 2,
-							gaugeValue = 80,
+							gaugeValue = 60,
 							name = "Battery >60",
 							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
 							version = 3,
@@ -6480,7 +6462,7 @@ local tbl =
 				uuid = "e9b3eabe-9853-0560-bf11-33f6b8210c09",
 				version = 2,
 			},
-			inheritedIndex = 8,
+			inheritedIndex = 5,
 		},
 		
 		{
@@ -7574,7 +7556,7 @@ local tbl =
 							variableTogglesType = 2,
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				conditions = 
@@ -7595,6 +7577,58 @@ local tbl =
 	},
 	[223] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Alert",
+							alertDuration = 3000,
+							alertPriority = 2,
+							alertTTS = true,
+							alertText = "Move",
+							conditions = 
+							{
+								
+								{
+									"e20e98b0-3653-34b3-9e76-bec2d5151256",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return MCH_enableCallTTS",
+							name = "MCH TTS Enable",
+							uuid = "e20e98b0-3653-34b3-9e76-bec2d5151256",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1141.5122474604,
+				name = "[TTS] Move",
+				timelineIndex = 223,
+				timerOffset = 0.20000000298023,
+				uuid = "df98d318-4dca-8849-9275-ea87b54219f1",
+				version = 2,
+			},
+		},
 		
 		{
 			data = 
@@ -7650,59 +7684,7 @@ local tbl =
 				uuid = "ea8380c8-fbfa-98b8-a235-04ee6ceb4fc4",
 				version = 2,
 			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Alert",
-							alertDuration = 3000,
-							alertPriority = 2,
-							alertTTS = true,
-							alertText = "Move",
-							conditions = 
-							{
-								
-								{
-									"e20e98b0-3653-34b3-9e76-bec2d5151256",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							uuid = "00ebdf88-9451-65de-87d9-3fadd43225e2",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return MCH_enableCallTTS",
-							name = "MCH TTS Enable",
-							uuid = "e20e98b0-3653-34b3-9e76-bec2d5151256",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1141.5122474604,
-				name = "[TTS] Move",
-				timelineIndex = 223,
-				timerOffset = 0.20000000298023,
-				uuid = "df98d318-4dca-8849-9275-ea87b54219f1",
-				version = 2,
-			},
+			inheritedIndex = 2,
 		},
 	},
 	[225] = 
@@ -7851,24 +7833,48 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
-							gVar = "ACR_TensorMagnum3_Potion",
-							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							actionID = 16501,
+							conditions = 
+							{
+								
+								{
+									"0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_CD",
+							uuid = "a95e89f7-bec4-37f9-9e5f-064c1a78fb5b",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 50,
+							name = "Battery >50",
+							uuid = "0a7f472b-b328-b4ac-96a5-5d5b734b560f",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1154.7445474604,
-				name = "[DPS] Potion On",
+				name = "[MCH] Queen",
+				timeRange = true,
 				timelineIndex = 226,
-				timerEndOffset = 1,
-				timerStartOffset = -17,
-				uuid = "5c5a9b58-a7e7-8071-97ba-9323a0b4456e",
+				timerEndOffset = 18,
+				timerOffset = -2,
+				timerStartOffset = 12,
+				uuid = "36d4241b-a334-9bd8-a211-6551d2568bea",
 				version = 2,
 			},
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -7978,6 +7984,35 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "ACR",
+							gVar = "ACR_TensorMagnum3_Potion",
+							uuid = "75f2842b-e18b-a53c-87e2-2e23a6af2d67",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[DPS] Potion On",
+				timelineIndex = 226,
+				timerEndOffset = 1,
+				timerStartOffset = -17,
+				uuid = "5c5a9b58-a7e7-8071-97ba-9323a0b4456e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 16500,
 							atomicPriority = true,
 							endIfUsed = true,
@@ -8043,38 +8078,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 25788,
-							atomicPriority = true,
-							endIfUsed = true,
-							targetType = "Enemy",
-							uuid = "ba8bfc03-a42f-8cd4-8387-c50c117a37bb",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1154.7445474604,
-				name = "[MCH] Chain Saw",
-				timeRange = true,
-				timelineIndex = 226,
-				timerEndOffset = 21.5,
-				timerStartOffset = 19.5,
-				uuid = "b2e8cdc4-8c96-7b9b-acf5-5abecb658101",
-				version = 2,
-			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 17209,
 							atomicPriority = true,
 							endIfUsed = true,
@@ -8098,9 +8101,93 @@ local tbl =
 			},
 			inheritedIndex = 10,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25788,
+							atomicPriority = true,
+							endIfUsed = true,
+							targetType = "Enemy",
+							uuid = "ba8bfc03-a42f-8cd4-8387-c50c117a37bb",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[MCH] Chain Saw",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 21.5,
+				timerStartOffset = 19.5,
+				uuid = "b2e8cdc4-8c96-7b9b-acf5-5abecb658101",
+				version = 2,
+			},
+		},
 	},
 	[227] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16766,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"cf8085cd-0274-fba2-8603-d9dbd5607f65",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_CD",
+							targetType = "Enemy",
+							uuid = "b942573a-0e0d-2432-a92b-41d66b2c012b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 2,
+							uuid = "cf8085cd-0274-fba2-8603-d9dbd5607f65",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[MCH] Detonate at end",
+				timeRange = true,
+				timelineIndex = 227,
+				timerEndOffset = 0.5,
+				timerStartOffset = -7,
+				uuid = "e2f0505b-aa29-0116-91f2-59747a84944e",
+				version = 2,
+			},
+		},
 		
 		{
 			data = 
@@ -8152,7 +8239,7 @@ local tbl =
 				uuid = "e1a3dd6d-21c3-492d-8d6d-1fdc80ac7a8a",
 				version = 2,
 			},
-			inheritedIndex = 1,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -8185,7 +8272,7 @@ local tbl =
 				uuid = "f7ea7760-31a2-48ce-be81-61abc54a5b9e",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -8238,59 +8325,7 @@ local tbl =
 				uuid = "b4aa0633-280c-bad2-bbbd-baf811a64b38",
 				version = 2,
 			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16766,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"cf8085cd-0274-fba2-8603-d9dbd5607f65",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_CD",
-							targetType = "Enemy",
-							uuid = "b942573a-0e0d-2432-a92b-41d66b2c012b",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 2,
-							uuid = "cf8085cd-0274-fba2-8603-d9dbd5607f65",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1185.8235474604,
-				name = "[MCH] Detonate at end",
-				timeRange = true,
-				timelineIndex = 227,
-				timerEndOffset = 0.5,
-				timerStartOffset = -7,
-				uuid = "e2f0505b-aa29-0116-91f2-59747a84944e",
-				version = 2,
-			},
+			inheritedIndex = 4,
 		},
 	},
 	inheritedProfiles = 
