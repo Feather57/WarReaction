@@ -835,6 +835,59 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							conditions = 
+							{
+								
+								{
+									"b93a4368-0a59-8963-94f3-a98206551970",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6,
+							holdActionID = 36977,
+							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "b93a4368-0a59-8963-94f3-a98206551970",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] Force Radiant",
+				randomOffset = 8,
+				timeRange = true,
+				timelineIndex = 25,
+				timerEndOffset = 8.5,
+				timerOffset = 3,
+				timerStartOffset = 3,
+				uuid = "55b5d9f4-880e-7006-9757-af38d629f01e",
+				version = 2,
+			},
+		},
 	},
 	[26] = 
 	{
@@ -1213,6 +1266,93 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							conditions = 
+							{
+								
+								{
+									"b93a4368-0a59-8963-94f3-a98206551970",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6,
+							holdActionID = 36977,
+							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							category = "Self",
+							uuid = "b93a4368-0a59-8963-94f3-a98206551970",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] Force Radiant",
+				randomOffset = 5,
+				timeRange = true,
+				timelineIndex = 42,
+				timerEndOffset = -5.5,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "5de7ef9a-9eac-e8c2-8de0-045745ede89b",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6,
+							holdActionID = 36977,
+							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] Hold R Encore",
+				timelineIndex = 42,
+				timerEndOffset = -5.5,
+				timerOffset = -9,
+				timerStartOffset = -9,
+				uuid = "7bc72f75-c681-d1a4-9f10-cd02f51b8c5f",
+				version = 2,
+			},
+		},
 	},
 	[49] = 
 	{
@@ -1385,6 +1525,42 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6,
+							holdActionID = 36977,
+							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] Force Radiant",
+				randomOffset = 5,
+				timeRange = true,
+				timelineIndex = 67,
+				timerEndOffset = 6.5,
+				timerOffset = 2,
+				timerStartOffset = 2,
+				uuid = "4c41501b-a984-0951-b6ff-cc81acfb3100",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 	},
 	[72] = 
 	{
@@ -1399,14 +1575,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DoTs",
 							gVarValue = 2,
 							uuid = "f17b61c9-e3b8-988c-ba00-13a45c314200",
@@ -1418,14 +1586,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_IronJaws",
 							gVarValue = 2,
 							uuid = "34f94424-ece9-bd5e-b02a-bb61eeb9b1b4",
@@ -1435,17 +1595,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 370.25754620621,
 				name = "[BRD] Dot",
@@ -1540,11 +1689,6 @@ local tbl =
 							{
 								
 								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-								
-								{
 									"127c2ae8-3cc2-fe15-90f9-d0aeebce02d6",
 									true,
 								},
@@ -1563,11 +1707,6 @@ local tbl =
 							{
 								
 								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-								
-								{
 									"127c2ae8-3cc2-fe15-90f9-d0aeebce02d6",
 									true,
 								},
@@ -1580,17 +1719,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-							version = 3,
-						},
-					},
 					
 					{
 						data = 
@@ -1855,14 +1983,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DoTs",
 							uuid = "f17b61c9-e3b8-988c-ba00-13a45c314200",
 							version = 2.1,
@@ -1873,14 +1993,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_IronJaws",
 							uuid = "34f94424-ece9-bd5e-b02a-bb61eeb9b1b4",
 							version = 2.1,
@@ -1889,17 +2001,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "4df47ba8-c4bc-d446-a7ae-59b3eb4b8ae9",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 430.61710950197,
 				name = "[BRD] Dot",
@@ -2133,14 +2234,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"12775ef9-04e7-a72f-9f7f-0a0f407616e4",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_SmartJaws",
 							gVarValue = 2,
 							uuid = "687fe058-a9dd-29ba-b6a7-3c07ac07b9a3",
@@ -2150,17 +2243,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "12775ef9-04e7-a72f-9f7f-0a0f407616e4",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 544.89209076626,
 				name = "[BRD] Jaws",
@@ -2484,14 +2566,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"12775ef9-04e7-a72f-9f7f-0a0f407616e4",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_SmartJaws",
 							uuid = "687fe058-a9dd-29ba-b6a7-3c07ac07b9a3",
 							version = 2.1,
@@ -2500,17 +2574,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							uuid = "12775ef9-04e7-a72f-9f7f-0a0f407616e4",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 801.88345429349,
 				name = "[BRD] Smart Jaws",
