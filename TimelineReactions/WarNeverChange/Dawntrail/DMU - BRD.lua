@@ -2765,43 +2765,6 @@ local tbl =
 			},
 		},
 	},
-	[169] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 116,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
-							name = "Army's Paeon",
-							uuid = "6e3095ad-b768-8a3f-a465-4aa523dd52e1",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 934.65048710577,
-				name = "[BRD] Song AP",
-				timeRange = true,
-				timelineIndex = 169,
-				timerEndOffset = -0.10000000149012,
-				timerStartOffset = -1.6000000238419,
-				uuid = "404d3d11-12e2-84e0-9db9-34035f9dd33b",
-				version = 2,
-			},
-		},
-	},
 	[170] = 
 	{
 		
@@ -2892,8 +2855,8 @@ local tbl =
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 171,
-				timerEndOffset = -13.699999809265,
-				timerStartOffset = -15.199999809265,
+				timerEndOffset = -5,
+				timerStartOffset = -20,
 				uuid = "87919c74-aecb-3c35-b1fe-1b27a66870bf",
 				version = 2,
 			},
@@ -2926,6 +2889,57 @@ local tbl =
 				timerEndOffset = 3.2000000476837,
 				timerStartOffset = 1.7000000476837,
 				uuid = "c176e754-e7f8-a69e-b078-310b1897c971",
+				version = 2,
+			},
+		},
+	},
+	[183] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 116,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
+							name = "Army's Paeon",
+							uuid = "fae10736-93d1-2386-8bfb-ed0f32f29d31",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 3000,
+							name = "Song <3s",
+							uuid = "243c846a-4274-ea5b-826c-cfe3eb23e7f4",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 993.37047688603,
+				name = "[BRD] Song AP",
+				timeRange = true,
+				timelineIndex = 183,
+				timerEndOffset = 4.5999999046326,
+				timerStartOffset = -4.8000001907349,
+				uuid = "73de4fd3-2249-b023-8e15-440295a9b36e",
 				version = 2,
 			},
 		},
