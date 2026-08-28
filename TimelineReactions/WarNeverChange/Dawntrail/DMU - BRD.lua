@@ -591,7 +591,6 @@ local tbl =
 							atomicPriority = true,
 							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							ignoreWeaveRules = true,
-							name = "Mage's Ballad",
 							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
 							variableTogglesType = 2,
 							version = 2.1,
@@ -606,7 +605,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = -13.89999961853,
-				timerStartOffset = -15.39999961853,
+				timerStartOffset = -15,
 				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
 				version = 2,
 			},
@@ -623,7 +622,6 @@ local tbl =
 						{
 							actionID = 25785,
 							atomicPriority = true,
-							endIfUsed = true,
 							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
 							ignoreWeaveRules = true,
 							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
@@ -657,7 +655,6 @@ local tbl =
 						data = 
 						{
 							actionID = 3562,
-							endIfUsed = true,
 							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
 							targetType = "Current Target",
 							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
@@ -722,12 +719,24 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Lua",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif BRD_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\nself.used = true",
+							gVar = "ACR_RikuSGE3_CD",
+							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_CD",
 							uuid = "6398a557-95ba-8807-9883-92b9f5e68fdd",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
+						inheritedIndex = 2,
 					},
 					
 					{
@@ -738,7 +747,7 @@ local tbl =
 							uuid = "a7f52f81-c123-9dfb-824d-fe64e4b92048",
 							version = 2.1,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 					
 					{
@@ -749,7 +758,7 @@ local tbl =
 							uuid = "d76e033d-14a9-e16a-9174-b6204f2eb193",
 							version = 2.1,
 						},
-						inheritedIndex = 3,
+						inheritedIndex = 4,
 					},
 					
 					{
@@ -760,7 +769,7 @@ local tbl =
 							uuid = "c2970b67-cbcb-423e-950c-aa91d99e88dc",
 							version = 2.1,
 						},
-						inheritedIndex = 4,
+						inheritedIndex = 5,
 					},
 					
 					{
@@ -771,7 +780,7 @@ local tbl =
 							uuid = "ce798ff5-de6b-669d-8158-d7cf784467cf",
 							version = 2.1,
 						},
-						inheritedIndex = 5,
+						inheritedIndex = 6,
 					},
 					
 					{
@@ -782,7 +791,7 @@ local tbl =
 							uuid = "42f031cd-e4e5-248a-abba-47e5ac7276c8",
 							version = 2.1,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 7,
 					},
 					
 					{
@@ -790,11 +799,10 @@ local tbl =
 						{
 							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_Songs",
-							gVarValue = 2,
 							uuid = "26a7018e-18ba-e941-abc8-ca3179c95ed3",
 							version = 2.1,
 						},
-						inheritedIndex = 7,
+						inheritedIndex = 8,
 					},
 					
 					{
@@ -806,18 +814,7 @@ local tbl =
 							uuid = "3fe756f8-6f2b-240c-908d-4d6546a4e78d",
 							version = 2.1,
 						},
-						inheritedIndex = 8,
-					},
-					
-					{
-						data = 
-						{
-							aType = "Lua",
-							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif BRD_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\nself.used = true",
-							gVar = "ACR_RikuSGE3_CD",
-							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
-							version = 2.1,
-						},
+						inheritedIndex = 9,
 					},
 				},
 				conditions = 
@@ -835,6 +832,58 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 7,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							conditions = 
+							{
+								
+								{
+									"8a089d1b-c1e1-7d70-97a2-92d1b5e724c7",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
+							ignoreWeaveRules = true,
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 114,
+							category = "Self",
+							conditionType = 4,
+							uuid = "8a089d1b-c1e1-7d70-97a2-92d1b5e724c7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Check Song MB",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -6.8999996185303,
+				timerStartOffset = -13.39999961853,
+				uuid = "44581dc3-ca8b-48ba-ad7f-aba29b9ee5ee",
+				version = 2,
+			},
 		},
 	}, 
 	[6] = 
@@ -1385,6 +1434,7 @@ local tbl =
 						{
 							buffID = 141,
 							category = "Self",
+							name = "Battle Voice Check",
 							uuid = "b93a4368-0a59-8963-94f3-a98206551970",
 							version = 3,
 						},
@@ -1876,6 +1926,7 @@ local tbl =
 						{
 							buffID = 141,
 							category = "Self",
+							name = "Battle Voice Check",
 							uuid = "b93a4368-0a59-8963-94f3-a98206551970",
 							version = 3,
 						},
@@ -2414,6 +2465,58 @@ local tbl =
 				name = "[BRD] Hold CD",
 				timelineIndex = 74,
 				uuid = "96f3b65d-7111-997f-a1ad-f63791a5cad3",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36977,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8779ed15-c429-c478-8548-93705e86ed5b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 6,
+							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 381.48132335556,
+				name = "[BRD] Radiant Encore",
+				timeRange = true,
+				timelineIndex = 74,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "594a6dc6-d51d-3cf1-93bd-cd1f87ec2f5c",
 				version = 2,
 			},
 		},
@@ -3529,39 +3632,6 @@ local tbl =
 				uuid = "497b7e65-571b-34d1-be37-65d58776ed5b",
 				version = 2,
 			},
-		},
-	},
-	[140] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_Hotbar_Sprint",
-							uuid = "c096e384-7366-6135-b7fe-8fc50e0d072b",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 703.58654115995,
-				name = "[All] Sprint",
-				timelineIndex = 140,
-				timerOffset = -2,
-				uuid = "5cf843f0-3cd1-32fe-a95a-fd2c817130ba",
-				version = 2,
-			},
-			inheritedIndex = 1,
 		},
 	},
 	[148] = 
