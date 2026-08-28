@@ -6,52 +6,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "8d25dbfc-310f-5c58-e638-8d8e3f16f24c",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_Potion",
-							gVarValue = 2,
-							ignoreWeaveRules = true,
-							name = "Potion",
-							usePot = true,
-							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[BRD] Potion Off",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = 8.8000001907349,
-				timerStartOffset = 7.3000001907349,
-				uuid = "021a6d02-4c7d-80c2-9cab-0df2bf1bb36b",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -59,7 +13,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif BRD_savedPrepullHelper == nil then\nBRD_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nBRD_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = True\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = False\n\n-- Allow TTS calls later in the profile\nBRD_enableCallTTS = true\nBRD_enableSpreadDraws = true\n\n-- Set Song Priority\nACR_TensorRequiem3_SongPriority = {\n    \"MB\",\n    \"AP\",\n    \"WM\"\n}\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif BRD_savedPrepullHelper == nil then\nBRD_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nBRD_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = False\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = False\n\n-- Allow TTS calls later in the profile\nBRD_enableCallTTS = true\nBRD_enableSpreadDraws = true\n\n-- Set Song Priority\nACR_TensorRequiem3_SongPriority = {\n    \"MB\",\n    \"AP\",\n    \"WM\"\n}\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -74,118 +28,6 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 1,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_CD",
-							uuid = "afc3f546-cee0-0882-bfe7-6a8895d1f221",
-							version = 2.1,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_Playlist",
-							gVarValue = 2,
-							uuid = "3bd3cd20-da8d-b1fb-b501-724c2703b77c",
-							version = 2.1,
-						},
-						inheritedIndex = 3,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_RadiantFinale",
-							uuid = "fbca4b13-e166-6d4a-9dd9-56a64a9693ca",
-							version = 2.1,
-						},
-						inheritedIndex = 4,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_AOE",
-							uuid = "255df2e9-81a0-d074-b371-5a63acf30129",
-							version = 2.1,
-						},
-						inheritedIndex = 5,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_BattleVoice",
-							uuid = "523b184c-1eb9-554b-ae86-f1f350dabf18",
-							version = 2.1,
-						},
-						inheritedIndex = 6,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_ApexArrow",
-							uuid = "0222c597-73d8-90dd-ae2e-7ff8e002bf31",
-							version = 2.1,
-						},
-						inheritedIndex = 7,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_DoTs",
-							uuid = "523290e7-f8cb-452f-bad7-cd5bf37237ff",
-							version = 2.1,
-						},
-						inheritedIndex = 8,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_SmartJaws",
-							uuid = "e2fa49f9-23ab-9ea2-92cd-725e321bcac7",
-							version = 2.1,
-						},
-						inheritedIndex = 9,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_Songs",
-							uuid = "120de254-3cf4-2ec1-8174-68e7e62b75d3",
-							version = 2.1,
-						},
-						inheritedIndex = 10,
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_DowntimeSongs",
-							gVarValue = 2,
-							uuid = "13bf06e2-0cc0-78fb-9e5c-4d81b9a68bcf",
-							version = 2.1,
-						},
-						inheritedIndex = 11,
 					},
 					
 					{
@@ -233,6 +75,195 @@ local tbl =
 							version = 2.1,
 						},
 					},
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "5b0e5435-b775-75d4-8bac-598fab44a887",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							conditions = 
+							{
+								
+								{
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							uuid = "57dc12c9-c4f2-357d-bbc1-19f632312973",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionCharges = 3,
+							holdActionDuration = 2,
+							holdActionID = 36975,
+							uuid = "e640812f-9d0e-1863-b3df-0876bcde090e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 4,
+							holdActionID = 3558,
+							uuid = "fbe0f4d7-41a9-3f40-9a6c-631c31053127",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 2,
+							holdActionID = 25785,
+							uuid = "d37d508f-4cd8-bf79-a6ef-0b5c2699f38e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6.1999998092651,
+							holdActionID = 107,
+							uuid = "d52c961d-109d-64f9-b638-5054197db5d6",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 7.5,
+							holdActionID = 7409,
+							uuid = "d8312306-4f85-e9d9-9171-d3470ed95b4c",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 8,
+							holdActionID = 3562,
+							uuid = "c4037395-b9dd-9a0f-b283-eed848fb5894",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"0eb07f88-6426-974d-abd0-c0a9d006371c",
+									true,
+								},
+								
+								{
+									"ce467ccc-f4d9-8a07-a818-a704ceaa42dd",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = true",
+							uuid = "e09151a9-7ac8-4a25-a29b-09ea8f0d6c9a",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -253,13 +284,13 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return FFXIV_Common_BotRunning",
-							name = "Assist Enabled",
-							uuid = "c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 							version = 3,
 						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -281,9 +312,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 10,
-							name = "Pull in 10sec",
-							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
 							version = 3,
 						},
 					},
@@ -293,9 +324,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 5,
-							name = "Pull in 5sec",
-							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 							version = 3,
 						},
 					},
@@ -318,9 +349,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 2,
-							name = "Pull in 2sec",
-							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+							eventCountdownTime = 0.69999998807907,
+							name = "Pull in 0.7sec",
+							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 							version = 3,
 						},
 					},
@@ -336,18 +367,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 8,
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							comparator = 2,
-							eventCountdownTime = 0.69999998807907,
-							name = "Pull in 0.7sec",
-							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-							version = 3,
-						},
 					},
 					
 					{
@@ -378,6 +397,19 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.10000000149012,
+							name = "Pull in 0.1sec",
+							uuid = "ce467ccc-f4d9-8a07-a818-a704ceaa42dd",
+							version = 3,
+						},
+						inheritedIndex = 11,
+					},
+					
+					{
+						data = 
+						{
 							buffCheckType = 2,
 							buffID = 851,
 							uuid = "e7557bae-faa8-66cd-8de8-d9282bcdaf55",
@@ -391,11 +423,262 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 1,
 				timerOffset = -10,
-				timerStartOffset = -17,
-				uuid = "dcdd5bdb-2a9f-a64e-bb3e-edabe3599d47",
+				timerStartOffset = -20,
+				uuid = "c288afb6-783c-08f3-95b1-e43e6ef96e7d",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "afc3f546-cee0-0882-bfe7-6a8895d1f221",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Playlist",
+							gVarValue = 2,
+							uuid = "3bd3cd20-da8d-b1fb-b501-724c2703b77c",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							uuid = "fbca4b13-e166-6d4a-9dd9-56a64a9693ca",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_AOE",
+							uuid = "255df2e9-81a0-d074-b371-5a63acf30129",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_BattleVoice",
+							uuid = "523b184c-1eb9-554b-ae86-f1f350dabf18",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_ApexArrow",
+							uuid = "0222c597-73d8-90dd-ae2e-7ff8e002bf31",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DoTs",
+							uuid = "523290e7-f8cb-452f-bad7-cd5bf37237ff",
+							version = 2.1,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_SmartJaws",
+							uuid = "e2fa49f9-23ab-9ea2-92cd-725e321bcac7",
+							version = 2.1,
+						},
+						inheritedIndex = 8,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Songs",
+							uuid = "120de254-3cf4-2ec1-8174-68e7e62b75d3",
+							version = 2.1,
+						},
+						inheritedIndex = 9,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "13bf06e2-0cc0-78fb-9e5c-4d81b9a68bcf",
+							version = 2.1,
+						},
+						inheritedIndex = 10,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Potion",
+							gVarValue = 2,
+							ignoreWeaveRules = true,
+							name = "Potion",
+							usePot = true,
+							uuid = "9bb142d8-c9c6-bf9a-bc5a-509c3a3a1bc7",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				eventType = 16,
+				mechanicTime = 15.261765625,
+				name = "[BRD] Toggles DMU",
+				timeRange = true,
+				timelineIndex = 1,
+				timerOffset = -10,
+				timerStartOffset = -17,
+				uuid = "1bb01a8d-e5f3-3bc7-bf16-0ae14d475237",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
+							ignoreWeaveRules = true,
+							name = "Mage's Ballad",
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Song MB",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -13.89999961853,
+				timerStartOffset = -15.39999961853,
+				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25785,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							ignoreWeaveRules = true,
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Radiant",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -13,
+				timerOffset = -2,
+				timerStartOffset = -15,
+				uuid = "9a246d70-d988-2c91-8358-f420bcf01e03",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3562,
+							endIfUsed = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							targetType = "Current Target",
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Sidewinder",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -6,
+				timerOffset = -2,
+				timerStartOffset = -8,
+				uuid = "bec7f2d5-3d03-b7f2-8d9e-f033008b3c75",
+				version = 2,
+			},
 		},
 		
 		{
@@ -427,7 +710,7 @@ local tbl =
 				uuid = "6d59cc65-3ede-3707-9f15-01c525f98a93",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -551,8 +834,11 @@ local tbl =
 				uuid = "4724c3f0-f664-33b0-8308-f30336cd8c68",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 7,
 		},
+	}, 
+	[6] = 
+	{
 		
 		{
 			data = 
@@ -563,13 +849,10 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 114,
+							actionID = 7405,
 							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
-							ignoreWeaveRules = true,
-							name = "Mage's Ballad",
-							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
-							variableTogglesType = 2,
+							name = "Troubadour",
+							uuid = "d46b54dd-1f55-4d1c-bab7-b350efaddfcd",
 							version = 2.1,
 						},
 					},
@@ -577,29 +860,15 @@ local tbl =
 				conditions = 
 				{
 				},
-				mechanicTime = 15.261765625,
-				name = "[BRD] Song MB",
+				mechanicTime = 38.012854917972,
+				name = "[BRD] Troubadour",
 				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = -13.89999961853,
-				timerStartOffset = -15.39999961853,
-				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
+				timelineIndex = 6,
+				timerEndOffset = -1,
+				timerStartOffset = -14.5,
+				uuid = "d3dba051-33be-9ad2-8611-72f2edd61c6e",
 				version = 2,
 			},
-		},
-	}, 
-	[6] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "d17ec0ef-9b27-d023-2f56-c45d8fc188bf",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 		
 		{
@@ -652,37 +921,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7405,
-							atomicPriority = true,
-							name = "Troubadour",
-							uuid = "d46b54dd-1f55-4d1c-bab7-b350efaddfcd",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 38.012854917972,
-				name = "[BRD] Troubadour",
-				timeRange = true,
-				timelineIndex = 6,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "d3dba051-33be-9ad2-8611-72f2edd61c6e",
-				version = 2,
-			},
 		},
 	},
 	[7] = 
@@ -742,20 +980,6 @@ local tbl =
 				uuid = "a8cf62f9-dae8-6f7e-9280-86bc67046a25",
 				version = 2,
 			},
-		},
-	},
-	[12] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "1bc9c9e4-501d-ef78-509f-863ebb943bf4",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 	},
 	[16] = 
@@ -1073,17 +1297,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "b62f08ce-2f57-46ca-352e-01f0f668849e",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -1280,20 +1493,6 @@ local tbl =
 			},
 		},
 	},
-	[34] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "d5faa648-e27a-3904-bd10-2322686686d8",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[35] = 
 	{
 		
@@ -1339,6 +1538,7 @@ local tbl =
 				mechanicTime = 173.37050637968,
 				name = "[BRD] Apex",
 				timelineIndex = 35,
+				timerOffset = 7,
 				uuid = "4d7706da-eae9-6ba7-af8d-d70e245b06fd",
 				version = 2,
 			},
@@ -1537,20 +1737,40 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[41] = 
-	{
 		
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "61803348-da6d-d8f4-6873-1ddef3ec13d8",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 25,
+							holdActionID = 16496,
+							uuid = "445650d6-f48f-92b5-ad80-af1c58909c93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 207.87965305988,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 39,
+				timerOffset = -28,
+				uuid = "404f25fa-ebbc-2454-993b-27511edbc3dd",
+				version = 2,
 			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
+	},
+	[41] = 
+	{
 		
 		{
 			data = 
@@ -1666,7 +1886,7 @@ local tbl =
 				randomOffset = 5,
 				timeRange = true,
 				timelineIndex = 42,
-				timerEndOffset = -1.5,
+				timerEndOffset = 1.5,
 				timerOffset = -5,
 				timerStartOffset = -9,
 				uuid = "5de7ef9a-9eac-e8c2-8de0-045745ede89b",
@@ -1710,17 +1930,6 @@ local tbl =
 	},
 	[49] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "6fa8ad70-2b90-f2ec-6993-6ae668d256c0",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -1829,17 +2038,6 @@ local tbl =
 	},
 	[66] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "293eb3ad-d6ee-88e1-ee2b-47d3584a20fd",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -1973,19 +2171,43 @@ local tbl =
 			inheritedIndex = 1,
 		},
 	},
-	[72] = 
+	[70] = 
 	{
 		
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "b288f042-1cc7-ae3e-83f5-c778c1f6ea92",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							ignoreWeaveRules = true,
+							uuid = "e053ba19-81ec-8036-9e2f-46cf886a380e",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 367.80061742504,
+				name = "[BRD] Barrage",
+				randomOffset = 9,
+				timelineIndex = 70,
+				timerOffset = -9,
+				uuid = "15ff68c1-a4ab-46c9-95a7-9e864f903b3f",
+				version = 2,
 			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
+	},
+	[72] = 
+	{
 		
 		{
 			data = 
@@ -2076,7 +2298,10 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							actionID = 36976,
+							atomicPriority = true,
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
 							version = 2.1,
 						},
@@ -2093,9 +2318,6 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
-	[76] = 
-	{
 		
 		{
 			data = 
@@ -2106,35 +2328,20 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
+							actionID = 36976,
+							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"127c2ae8-3cc2-fe15-90f9-d0aeebce02d6",
+									"8779ed15-c429-c478-8548-93705e86ed5b",
 									true,
 								},
 							},
-							gVar = "ACR_TensorRequiem3_DoTs",
-							uuid = "f17b61c9-e3b8-988c-ba00-13a45c314200",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"127c2ae8-3cc2-fe15-90f9-d0aeebce02d6",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_IronJaws",
-							uuid = "34f94424-ece9-bd5e-b02a-bb61eeb9b1b4",
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
 							version = 2.1,
 						},
 					},
@@ -2145,24 +2352,21 @@ local tbl =
 					{
 						data = 
 						{
-							actionUUID = "34f94424-ece9-bd5e-b02a-bb61eeb9b1b4",
-							category = "Self",
 							comparator = 2,
-							conditionType = 6,
-							gaugeIndex = 4,
-							gaugeValue = 79,
-							uuid = "127c2ae8-3cc2-fe15-90f9-d0aeebce02d6",
+							conditionType = 3,
+							hpValue = 4,
+							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
 							version = 3,
 						},
 					},
 				},
-				mechanicTime = 424.39347120621,
-				name = "[BRD] Dot",
-				timelineIndex = 76,
-				timerEndOffset = -6,
-				timerOffset = -2,
-				timerStartOffset = -6,
-				uuid = "a88c5fb7-399c-d3f6-bd05-9a4fc0c4972e",
+				mechanicTime = 381.48132335556,
+				name = "[BRD] Resonnant Arrow",
+				timeRange = true,
+				timelineIndex = 74,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "78569f18-fec4-0dc8-ac81-2e469e8dc95d",
 				version = 2,
 			},
 		},
@@ -2177,29 +2381,45 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_Potion",
-							ignoreWeaveRules = true,
-							name = "Potion",
-							usePot = true,
-							uuid = "a3d6ed6d-44f4-4cfa-8035-9fd9ac2036d2",
+							conditions = 
+							{
+								
+								{
+									"9eb663ca-69a2-4450-b65c-e9d804ac7b9c",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							gVarValue = 2,
+							uuid = "0500afea-45ff-b9b0-926f-6bf3e3faffab",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 1,
+							uuid = "9eb663ca-69a2-4450-b65c-e9d804ac7b9c",
+							version = 3,
+						},
+					},
 				},
-				mechanicTime = 424.39347120621,
-				name = "[BRD] Potion ON",
-				timeRange = true,
-				timelineIndex = 76,
-				timerEndOffset = 8.8000001907349,
-				timerStartOffset = 7.3000001907349,
-				uuid = "c2f835bc-ab1c-3fde-868f-6529eaabee8d",
+				mechanicTime = 381.48132335556,
+				name = "[BRD] Hold CD",
+				timelineIndex = 74,
+				uuid = "96f3b65d-7111-997f-a1ad-f63791a5cad3",
 				version = 2,
 			},
-			inheritedIndex = 2,
 		},
+	},
+	[76] = 
+	{
 		
 		{
 			data = 
@@ -2231,6 +2451,91 @@ local tbl =
 				timerEndOffset = -2.4000000953674,
 				timerStartOffset = -3.9000000953674,
 				uuid = "b407a6d3-9208-1cba-a24c-c84ca3f01861",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "0500afea-45ff-b9b0-926f-6bf3e3faffab",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_Potion",
+							ignoreWeaveRules = true,
+							name = "Potion",
+							usePot = true,
+							uuid = "30af0e95-fc0e-ac9c-817c-1857b8d23667",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DoTs",
+							uuid = "29cbd048-42b7-c447-8a1a-a4a52d8f58a0",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_IronJaws",
+							uuid = "81b66cb1-6274-0c6b-acaf-796d1c9c5a30",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							gVarValue = 2,
+							uuid = "ae81eac3-97f6-070e-9ea1-0a94e37c942b",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionUUID = "34f94424-ece9-bd5e-b02a-bb61eeb9b1b4",
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 4,
+							gaugeValue = 79,
+							uuid = "e82900f4-a974-214b-8759-aa277d4d4585",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 424.39347120621,
+				name = "[BRD] Toggles ON",
+				timelineIndex = 76,
+				uuid = "50620a68-3cb3-adc1-b56e-197912d05011",
 				version = 2,
 			},
 		},
@@ -2407,9 +2712,12 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_DowntimeSongs",
-							gVarValue = 2,
-							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionCharges = 3,
+							holdActionDuration = -47,
+							holdActionID = 36975,
+							uuid = "ae712831-9336-b77b-a637-56472b85537c",
 							version = 2.1,
 						},
 					},
@@ -2418,10 +2726,10 @@ local tbl =
 				{
 				},
 				mechanicTime = 427.45958272918,
-				name = "[BRD] Downtime Song Off",
+				name = "[BRD] Heartbreak Shot",
 				timelineIndex = 77,
-				timerOffset = -1,
-				uuid = "b1a5d72f-6801-32d9-add1-1231274a0e29",
+				timerOffset = -52,
+				uuid = "477985d9-e6ff-40f6-885e-eddf09d6c204",
 				version = 2,
 			},
 		},
@@ -2468,20 +2776,6 @@ local tbl =
 			},
 		},
 	},
-	[79] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "b8e69cdd-d4db-01f9-d3cd-17d76ab37bed",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[80] = 
 	{
 		
@@ -2521,17 +2815,6 @@ local tbl =
 	},
 	[81] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "6e81fe4c-cfde-b260-60a9-23f22a7a4f1c",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -2595,34 +2878,6 @@ local tbl =
 				uuid = "f20f43cc-af8a-7b9e-b06e-d3b778b4d983",
 				version = 2,
 			},
-		},
-	},
-	[84] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "e0d4826d-1633-9fa9-733f-03bb609945bd",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
-	[89] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "1b11f754-c498-6278-5d14-4caa7a3641a4",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 	},
 	[90] = 
@@ -2820,17 +3075,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "07105b9d-0872-2599-bcc1-fdd7f270b0ad",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -2997,45 +3241,6 @@ local tbl =
 			},
 			inheritedIndex = 1,
 		},
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "172ca677-400f-feab-8c1d-a395709294c7",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
-	[108] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "7eb1f7fc-26d5-cc38-1bf0-645eb5c9cdcc",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
-	[112] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "827d3995-75b8-8791-291d-a76b1c88e8e5",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 	},
 	[113] = 
 	{
@@ -3148,20 +3353,6 @@ local tbl =
 			inheritedIndex = 2,
 		},
 	},
-	[115] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "13704766-631b-316a-42b9-5de051cdfbf6",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[123] = 
 	{
 		
@@ -3197,20 +3388,6 @@ local tbl =
 				uuid = "32635d30-9288-82b2-bb3d-4686a24418aa",
 				version = 2,
 			},
-		},
-	},
-	[127] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "54d8727d-56b7-eca1-3b8a-1b0f46fb00cd",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 	},
 	[129] = 
@@ -3256,17 +3433,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "b19a8b08-9cb7-bf4c-4d70-067eb154e9d8",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -3297,17 +3463,6 @@ local tbl =
 	},
 	[137] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "1dfc432a-ba18-705e-f4c9-bbec84d8317a",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -3407,20 +3562,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
-		},
-	},
-	[141] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "95b2055d-f352-b5f1-0c75-9a7fc6e4a0ad",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 	},
 	[148] = 
@@ -3674,17 +3815,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "726b0b20-562f-37dc-3202-ca6e2b6aeff0",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -3719,17 +3849,6 @@ local tbl =
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "43536ab2-79fe-7fd6-e98f-cd30969ffd82",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-		
-		{
-			data = 
-			{
 				actions = 
 				{
 					
@@ -3759,20 +3878,6 @@ local tbl =
 				uuid = "d4e021fa-e42a-7d92-8d2d-469bc794d8c3",
 				version = 2,
 			},
-		},
-	},
-	[165] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "5b57f87b-1bdd-a8b7-47b5-ad796295c40b",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 	},
 	[166] = 
@@ -3812,20 +3917,6 @@ local tbl =
 			},
 		},
 	},
-	[169] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "0e9126df-94f2-17a3-8fc0-e64d0f6aee6f",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[170] = 
 	{
 		
@@ -3851,8 +3942,40 @@ local tbl =
 				mechanicTime = 934.65552902023,
 				name = "[BRD] Downtime Song On",
 				timelineIndex = 170,
-				timerOffset = -1,
 				uuid = "ca2bd4fb-276b-dc71-9112-a43586825a1b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36976,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 934.65552902023,
+				name = "[BRD] Resonnant Arrow",
+				timeRange = true,
+				timelineIndex = 170,
+				timerEndOffset = 2,
+				timerStartOffset = -5,
+				uuid = "5fd1994f-0bb1-53da-9aaa-682e8d623beb",
 				version = 2,
 			},
 		},
@@ -3925,17 +4048,6 @@ local tbl =
 	},
 	[176] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "a1bb3f8b-2f03-e587-9f52-6f5d6451a6db",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -4205,20 +4317,6 @@ local tbl =
 			inheritedIndex = 1,
 		},
 	},
-	[189] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "fd31f419-2cc8-d0c5-2fd0-f2fbcbcdf2a9",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[191] = 
 	{
 		
@@ -4392,20 +4490,6 @@ local tbl =
 			inheritedIndex = 2,
 		},
 	},
-	[195] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "9f7be0ae-832f-e8a2-f829-9418d262013e",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[199] = 
 	{
 		
@@ -4463,17 +4547,6 @@ local tbl =
 	},
 	[207] = 
 	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "52958568-75dd-970c-b233-607a23ce8138",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
 		
 		{
 			data = 
@@ -4794,20 +4867,6 @@ local tbl =
 			},
 		},
 	},
-	[219] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "fda696dd-a824-bc09-225c-adbb3d620fad",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[221] = 
 	{
 		
@@ -4998,32 +5057,38 @@ local tbl =
 			inheritedIndex = 4,
 		},
 	},
-	[222] = 
-	{
-		
-		{
-			data = 
-			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "586962df-d9c0-308b-49e4-17e567cc07ef",
-			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
-		},
-	},
 	[223] = 
 	{
 		
 		{
 			data = 
 			{
-				displayPath = "",
-				name = "Lj\\umad\\mit_dps_lpdu",
-				uuid = "90b0846a-2fe6-f196-274e-a7606014503a",
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7405,
+							atomicPriority = true,
+							name = "Troubadour",
+							uuid = "a7d70f08-1fc2-f439-af39-24426e2813f2",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1141.5122474604,
+				name = "[BRD] Troubadour",
+				timeRange = true,
+				timelineIndex = 223,
+				timerEndOffset = -1,
+				timerStartOffset = -14.39999961853,
+				uuid = "903a1031-0688-b5ed-bd70-7bc84bed622d",
+				version = 2,
 			},
-			inheritanceRoot = "Lj\\umad\\mit_dps_lpdu",
-			objectType = "folder",
 		},
 		
 		{
@@ -5077,37 +5142,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 7405,
-							atomicPriority = true,
-							name = "Troubadour",
-							uuid = "a7d70f08-1fc2-f439-af39-24426e2813f2",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1141.5122474604,
-				name = "[BRD] Troubadour",
-				timeRange = true,
-				timelineIndex = 223,
-				timerEndOffset = -1,
-				timerStartOffset = -14.39999961853,
-				uuid = "903a1031-0688-b5ed-bd70-7bc84bed622d",
-				version = 2,
-			},
 		},
 	},
 	[225] = 
@@ -5183,9 +5217,63 @@ local tbl =
 			},
 		},
 	},
+	[227] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36976,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8779ed15-c429-c478-8548-93705e86ed5b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 3,
+							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1185.8235474604,
+				name = "[BRD] Resonnant Arrow",
+				timeRange = true,
+				timelineIndex = 227,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "7ecf92b3-0dd8-ae1b-bc0c-eed9a75330fe",
+				version = 2,
+			},
+		},
+	},
 	inheritedProfiles = 
 	{
-		"Lj\\umad\\mit_dps_lpdu",
 	},
 	timelineName = "dmu",
 	version = "1.5.5",
