@@ -97,12 +97,12 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 107,
+							actionID = 118,
 							conditions = 
 							{
 								
 								{
-									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 									true,
 								},
 							},
@@ -116,12 +116,64 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+							},
 							ignoreWeaveRules = true,
-							uuid = "54d79a4a-5386-3f6e-9ae6-f47e5b7a4426",
+							uuid = "fd573dd2-9f84-4376-8562-ad0cf5d6bd8b",
 							version = 2.1,
 						},
 						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 8,
+							holdActionID = 3562,
+							uuid = "c4037395-b9dd-9a0f-b283-eed848fb5894",
+							version = 2.1,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 4.5,
+							holdActionID = 36977,
+							uuid = "3b5ee338-e820-ba34-8502-329100b6cfdd",
+							version = 2.1,
+						},
+						inheritedIndex = 8,
 					},
 					
 					{
@@ -139,7 +191,7 @@ local tbl =
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionCharges = 3,
-							holdActionDuration = 5,
+							holdActionDuration = 4,
 							holdActionID = 36975,
 							uuid = "e640812f-9d0e-1863-b3df-0876bcde090e",
 							version = 2.1,
@@ -181,53 +233,12 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
-							holdActionDuration = 2,
-							holdActionID = 25785,
-							uuid = "d37d508f-4cd8-bf79-a6ef-0b5c2699f38e",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							conditions = 
-							{
-								
-								{
-									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							holdActionDuration = 6.1999998092651,
-							holdActionID = 107,
-							uuid = "d52c961d-109d-64f9-b638-5054197db5d6",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							conditions = 
-							{
-								
-								{
-									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							holdActionDuration = 7.5,
+							holdActionDuration = 4,
 							holdActionID = 7409,
 							uuid = "d8312306-4f85-e9d9-9171-d3470ed95b4c",
 							version = 2.1,
 						},
+						inheritedIndex = 11,
 					},
 					
 					{
@@ -244,9 +255,9 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
-							holdActionDuration = 8,
-							holdActionID = 3562,
-							uuid = "c4037395-b9dd-9a0f-b283-eed848fb5894",
+							holdActionDuration = 2,
+							holdActionID = 25785,
+							uuid = "d37d508f-4cd8-bf79-a6ef-0b5c2699f38e",
 							version = 2.1,
 						},
 					},
@@ -260,12 +271,7 @@ local tbl =
 							{
 								
 								{
-									"0eb07f88-6426-974d-abd0-c0a9d006371c",
-									true,
-								},
-								
-								{
-									"ce467ccc-f4d9-8a07-a818-a704ceaa42dd",
+									"63e016aa-5041-222b-b0cd-ada9db1ed6b6",
 									true,
 								},
 							},
@@ -360,11 +366,12 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 0.69999998807907,
-							name = "Pull in 0.7sec",
-							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+							eventCountdownTime = 1.2000000476837,
+							name = "Pull in 1.2sec",
+							uuid = "d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 							version = 3,
 						},
+						inheritedIndex = 7,
 					},
 					
 					{
@@ -374,7 +381,7 @@ local tbl =
 							comparator = 2,
 							eventCountdownTime = 1,
 							name = "Pull in 1sec",
-							uuid = "d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+							uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 							version = 3,
 						},
 						inheritedIndex = 8,
@@ -395,6 +402,19 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.10000000149012,
+							name = "Pull in 0.1sec",
+							uuid = "ce467ccc-f4d9-8a07-a818-a704ceaa42dd",
+							version = 3,
+						},
+						inheritedIndex = 10,
+					},
+					
+					{
+						data = 
+						{
 							category = "Self",
 							conditionType = 7,
 							dequeueIfLuaFalse = true,
@@ -403,19 +423,6 @@ local tbl =
 							uuid = "0eb07f88-6426-974d-abd0-c0a9d006371c",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							comparator = 2,
-							eventCountdownTime = 0.10000000149012,
-							name = "Pull in 0.1sec",
-							uuid = "ce467ccc-f4d9-8a07-a818-a704ceaa42dd",
-							version = 3,
-						},
-						inheritedIndex = 11,
 					},
 					
 					{
@@ -435,10 +442,43 @@ local tbl =
 				timelineIndex = 1,
 				timerOffset = -10,
 				timerStartOffset = -20,
-				uuid = "c288afb6-783c-08f3-95b1-e43e6ef96e7d",
+				uuid = "390df9c2-ff45-2772-9d01-52080a54f678",
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 114,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
+							ignoreWeaveRules = true,
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Song MB",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -13.89999961853,
+				timerStartOffset = -15,
+				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
+				version = 2,
+			},
 		},
 		
 		{
@@ -586,40 +626,7 @@ local tbl =
 				uuid = "1bb01a8d-e5f3-3bc7-bf16-0ae14d475237",
 				version = 2,
 			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 114,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
-							ignoreWeaveRules = true,
-							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 15.261765625,
-				name = "[BRD] Song MB",
-				timeRange = true,
-				timelineIndex = 1,
-				timerEndOffset = -13.89999961853,
-				timerStartOffset = -15,
-				uuid = "d69a9941-16c3-61e2-a4fc-e38b6894418b",
-				version = 2,
-			},
+			inheritedIndex = 3,
 		},
 		
 		{
