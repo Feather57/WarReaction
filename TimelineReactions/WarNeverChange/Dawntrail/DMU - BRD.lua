@@ -97,12 +97,12 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
+							actionID = 107,
 							conditions = 
 							{
 								
 								{
-									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 									true,
 								},
 							},
@@ -111,6 +111,17 @@ local tbl =
 							version = 2.1,
 						},
 						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							ignoreWeaveRules = true,
+							uuid = "54d79a4a-5386-3f6e-9ae6-f47e5b7a4426",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
 					},
 					
 					{
@@ -128,7 +139,7 @@ local tbl =
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionCharges = 3,
-							holdActionDuration = 2,
+							holdActionDuration = 5,
 							holdActionID = 36975,
 							uuid = "e640812f-9d0e-1863-b3df-0876bcde090e",
 							version = 2.1,
@@ -885,6 +896,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 3559,
+							uuid = "6565f44d-f88a-8540-9406-70eaf05654b0",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 116,
+							uuid = "55860921-0c03-4f47-bd07-ff26b4176266",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 15.261765625,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 1,
+				timerOffset = -13.800000190735,
+				uuid = "0d33414d-753b-5b34-b020-8bc102f049cf",
+				version = 2,
+			},
+		},
 	}, 
 	[6] = 
 	{
@@ -1030,6 +1083,84 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 114,
+							uuid = "94754aeb-8e95-7961-8311-f1ee7f0d95cb",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 3559,
+							uuid = "42ef6b79-f540-4045-a8b3-c46e9684dcab",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 42.238586763472,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 7,
+				timerOffset = 3.0999999046326,
+				uuid = "7e2d648c-b775-b1af-868c-fbe68844a733",
+				version = 2,
+			},
+		},
+	},
+	[12] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 23,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 62.553324919213,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 12,
+				timerOffset = -27,
+				uuid = "78575b96-009b-fd00-b395-3ab7451cda2c",
+				version = 2,
+			},
+		},
 	},
 	[16] = 
 	{
@@ -1064,6 +1195,48 @@ local tbl =
 				timerEndOffset = -1,
 				timerStartOffset = -2.5,
 				uuid = "6fefbee4-9e1e-f3be-be4b-80b188d3e1bc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 114,
+							uuid = "eecd301f-8a9d-2d96-9baf-40ad558b2e96",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 38,
+							holdActionID = 116,
+							uuid = "5c3997bd-6f5d-9416-bdf1-1f2d4c3ffd6e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 80.121849240769,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 16,
+				timerOffset = -0.89999997615814,
+				uuid = "6f6ad2cf-729e-021b-aa99-3dc850938b4f",
 				version = 2,
 			},
 		},
@@ -1355,14 +1528,6 @@ local tbl =
 							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"ac99a84d-a57f-ae88-b81a-b8a845af9e11",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
 							name = "Mage's Ballad",
 							uuid = "86db7ff1-9369-2361-a784-becfa9479957",
@@ -1373,26 +1538,12 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 6,
-							gaugeIndex = 3,
-							gaugeValue = 3000,
-							name = "Song <3s",
-							uuid = "ac99a84d-a57f-ae88-b81a-b8a845af9e11",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 118.07975730716,
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 25,
-				timerEndOffset = 5,
+				timerEndOffset = 2,
 				timerStartOffset = -2,
 				uuid = "710fc645-9e2a-9da8-addb-bcbd72ebc24e",
 				version = 2,
@@ -1483,6 +1634,81 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 30,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 25,
+				timerOffset = -27,
+				uuid = "82ddb1e2-4735-0162-96ad-3ac640f6a6b8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 42,
+							holdActionID = 3559,
+							uuid = "7a11ec2c-e9d0-56ae-94a1-80bc5a460d4f",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 42,
+							holdActionID = 116,
+							uuid = "2c577160-f59c-9fa4-9a62-ef3de7f7a50a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 25,
+				timerOffset = 5.0999999046326,
+				uuid = "55ea4675-2c99-dc68-9cc2-09c3e0132965",
+				version = 2,
+			},
+		},
 	},
 	[33] = 
 	{
@@ -1539,6 +1765,48 @@ local tbl =
 				timerEndOffset = 4,
 				timerStartOffset = -4,
 				uuid = "fa5eb146-a50f-bdec-99cb-01bfa3a86ca2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 35,
+							holdActionID = 114,
+							uuid = "55d15bf2-f888-5a99-83ad-d8d59a3eb92e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 35,
+							holdActionID = 3559,
+							uuid = "d74b10f8-c6cb-4987-98e9-88069797db68",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 163.54778319029,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 33,
+				timerOffset = 4.0999999046326,
+				uuid = "7a7b58c4-4392-a08b-a68b-45132dd83514",
 				version = 2,
 			},
 		},
@@ -1685,6 +1953,48 @@ local tbl =
 				timerEndOffset = 1.7000000476837,
 				timerStartOffset = -1.7999999523163,
 				uuid = "343b9e08-e0dd-0da8-8c13-6126d2b42c52",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "2a1fa2a4-2c67-2e21-a9fc-027f42708642",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "653b0385-ae18-662d-aa39-0ca47fce69d9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 197.52218784626,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 38,
+				timerOffset = 1.7999999523163,
+				uuid = "c0d319c4-63ed-d851-95f2-ef5a9bf9659f",
 				version = 2,
 			},
 		},
@@ -1978,6 +2288,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "8f8eff23-f9bc-e830-9a61-66b02abe4f38",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "59b4c693-e8ee-7731-92fb-b67ec78473f3",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 42,
+				timerOffset = -5.4000000953674,
+				uuid = "9706b3be-cfbd-3ef2-835b-05201da2014b",
+				version = 2,
+			},
+		},
 	},
 	[49] = 
 	{
@@ -2049,6 +2401,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "e5356850-bc8a-66f9-a2bc-8756723255cf",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "f96dba6a-880d-dea0-bb49-bc4437d40d89",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 279.62753189133,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 52,
+				timerOffset = 6.0999999046326,
+				uuid = "ba4b5e0d-6078-5c0a-b8c8-92e884ad9072",
+				version = 2,
+			},
+		},
 	},
 	[65] = 
 	{
@@ -2083,6 +2477,48 @@ local tbl =
 				timerEndOffset = 6.4000000953674,
 				timerStartOffset = 4.9000000953674,
 				uuid = "35e50481-eb5b-71a7-8479-fb5823964111",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "9e5d5411-6cf9-96ed-9eac-e3947855587d",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "5e112f46-9f0f-5d2e-94d4-f33d2d7984db",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 322.39247758191,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 65,
+				timerOffset = 6.5,
+				uuid = "6d2926cc-3042-972e-8f5b-98197db14468",
 				version = 2,
 			},
 		},
@@ -2292,7 +2728,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 370.25754620621,
-				name = "[BRD] Dot",
+				name = "[BRD] Dot Off",
 				timelineIndex = 72,
 				uuid = "10ed1b4d-d33c-368f-af80-084e91d14c23",
 				version = 2,
@@ -2332,6 +2768,48 @@ local tbl =
 				timerEndOffset = -2.2999999523163,
 				timerStartOffset = -3.7999999523163,
 				uuid = "6a39f18a-e43e-e36d-8c4c-c33a1a027a76",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "3b47b712-a663-b956-80f8-acba9fa05ff2",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "1d2f6bce-1ec0-09f7-b204-2152be43a9cf",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 377.30637120621,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 73,
+				timerOffset = -2.2000000476837,
+				uuid = "3195eb55-3b43-0fbb-a562-39665b59f15e",
 				version = 2,
 			},
 		},
@@ -2520,6 +2998,58 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25784,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8779ed15-c429-c478-8548-93705e86ed5b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 6,
+							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 381.48132335556,
+				name = "[BRD] Blast Arrow",
+				timeRange = true,
+				timelineIndex = 74,
+				timerEndOffset = 2,
+				timerStartOffset = -15,
+				uuid = "615c7b30-5b52-bf08-8712-1c5651a73ba7",
+				version = 2,
+			},
+		},
 	},
 	[76] = 
 	{
@@ -2591,26 +3121,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_DoTs",
-							uuid = "29cbd048-42b7-c447-8a1a-a4a52d8f58a0",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							gVar = "ACR_TensorRequiem3_IronJaws",
-							uuid = "81b66cb1-6274-0c6b-acaf-796d1c9c5a30",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
 							uuid = "ae81eac3-97f6-070e-9ea1-0a94e37c942b",
@@ -2639,6 +3149,48 @@ local tbl =
 				name = "[BRD] Toggles ON",
 				timelineIndex = 76,
 				uuid = "50620a68-3cb3-adc1-b56e-197912d05011",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 39,
+							holdActionID = 114,
+							uuid = "ec18f8f3-d287-0a83-ab74-452c1c2948c4",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 39,
+							holdActionID = 3559,
+							uuid = "6c32a754-42fe-0b7c-b0ea-f7a3a94d65a9",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 424.39347120621,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 76,
+				timerOffset = -2.2999999523163,
+				uuid = "c01c906c-c657-dc79-9bf7-5dff1122f9f5",
 				version = 2,
 			},
 		},
@@ -2673,7 +3225,7 @@ local tbl =
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							ignoreWeaveRules = true,
-							targetContentID = 6052,
+							targetContentID = 7691,
 							targetType = "ContentID",
 							uuid = "52b5798f-3b71-5898-85b7-b6fd754760a8",
 							version = 2.1,
@@ -2701,7 +3253,8 @@ local tbl =
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							ignoreWeaveRules = true,
-							targetType = "Current Target",
+							targetContentID = 7691,
+							targetType = "ContentID",
 							uuid = "9c5a0204-3fbe-1a30-bc2d-1d96090c1753",
 							version = 2.1,
 						},
@@ -2870,7 +3423,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 430.61710950197,
-				name = "[BRD] Dot",
+				name = "[BRD] Dot On",
 				timelineIndex = 78,
 				timerEndOffset = -6,
 				timerStartOffset = -6,
@@ -2915,6 +3468,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "4daf4183-4ae6-f425-b859-044ab14d14ab",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "910b1505-f501-9f1e-9fbe-dfaae210c0c1",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 469.19930950196,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 80,
+				timerOffset = -7.5,
+				uuid = "ec0653a0-70fb-d3d7-9139-4185ce1dd4ee",
+				version = 2,
+			},
+		},
 	},
 	[81] = 
 	{
@@ -2945,7 +3540,7 @@ local tbl =
 				name = "[BRD] Potion",
 				timeRange = true,
 				timelineIndex = 81,
-				timerEndOffset = 1.8999999761581,
+				timerEndOffset = 0.89999997615814,
 				timerStartOffset = -0.5,
 				uuid = "c69663e4-acc6-4545-b6a1-7fb9661d422d",
 				version = 2,
@@ -3137,6 +3732,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "57dd77d0-9bc6-1df1-8f8e-3ee6585e054a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "055b4621-b068-1d50-b71c-72030899b3c0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 507.31761539671,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 91,
+				timerOffset = -1.3999999761581,
+				uuid = "60f67c99-e99f-5e62-a358-85e522c7d1bb",
+				version = 2,
+			},
+		},
 	},
 	[95] = 
 	{
@@ -3206,6 +3843,111 @@ local tbl =
 			},
 		},
 	},
+	[99] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							gVar = "ACR_TensorRequiem3_CD",
+							setTarget = true,
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "cf478a29-143b-01c2-997d-f921b74dcf3d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 519.33918599411,
+				name = "[All] Target Chaos",
+				timeRange = true,
+				timelineIndex = 99,
+				timerEndOffset = 6,
+				timerOffset = 3.5,
+				timerStartOffset = 3.2999999523163,
+				uuid = "781cdf9c-5623-171a-834e-bf7bf29c5e42",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+	},
+	[102] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 31,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 536.97932260272,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 102,
+				timerOffset = -30,
+				uuid = "61b6a920-7b4e-b997-be86-0906b4701934",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_CD",
+							name = "Apex Arrow",
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "162edbf0-32f1-9993-9115-5682789c8c12",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 536.97932260272,
+				name = "[BRD] Apex",
+				timelineIndex = 102,
+				uuid = "4fc0a125-3f3f-c309-9bad-2f043cf847fc",
+				version = 2,
+			},
+		},
+	},
 	[104] = 
 	{
 		
@@ -3268,6 +4010,80 @@ local tbl =
 				timerEndOffset = 3.0999999046326,
 				timerStartOffset = 1.6000000238419,
 				uuid = "6b52ed03-6c96-8dfb-9429-5c94a6682e13",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 34,
+							holdActionID = 114,
+							uuid = "58425302-31b9-45d3-b4c7-2d4a6c1d531b",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 34,
+							holdActionID = 3559,
+							uuid = "f6ccc6f8-ec86-c5c1-990e-5009c09a6c41",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 544.89209076626,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 104,
+				timerOffset = 3.2000000476837,
+				uuid = "ee09d4a2-a79e-3ef6-a907-9dcb90d73cda",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25784,
+							atomicPriority = true,
+							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
+							targetContentID = 7691,
+							targetType = "ContentID",
+							uuid = "e75732c8-8312-abe5-bfa8-c58f31cd7297",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 544.89209076626,
+				name = "[BRD] Blast Arrow",
+				timelineIndex = 104,
+				timerOffset = -2,
+				uuid = "d0d94bcc-f1c5-215d-b7af-1614955e75de",
 				version = 2,
 			},
 		},
@@ -3455,6 +4271,84 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "57164108-872c-8d10-b4b3-b2016669282e",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "f01aca62-f787-6d51-96ab-445a0bcc212f",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 578.27023501273,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 113,
+				timerOffset = 4.4000000953674,
+				uuid = "cc7c34e8-0211-1b2a-9195-18de66037d93",
+				version = 2,
+			},
+		},
+	},
+	[118] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 23,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 604.98844481876,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 118,
+				timerOffset = -25,
+				uuid = "9fc0a723-1669-8db5-80a6-bf518abca1a4",
+				version = 2,
+			},
+		},
 	},
 	[123] = 
 	{
@@ -3492,6 +4386,82 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "a8f385ed-4c86-906d-a170-0ccc7b7bfecc",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "a09f0c07-8bdb-04bd-893d-eb107aa6a24c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 631.08148473045,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 123,
+				timerOffset = -4.1999998092651,
+				uuid = "5d67aca3-e03e-b40e-86b5-809eb4a627e5",
+				version = 2,
+			},
+		},
+	},
+	[128] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 35,
+							holdActionID = 16496,
+							uuid = "445650d6-f48f-92b5-ad80-af1c58909c93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 652.34305216234,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 128,
+				timerOffset = -25,
+				uuid = "34ba034f-ae6d-57b0-82bf-9e92c965abd7",
+				version = 2,
+			},
+		},
 	},
 	[129] = 
 	{
@@ -3526,6 +4496,48 @@ local tbl =
 				timerEndOffset = -2.4000000953674,
 				timerStartOffset = -3.9000000953674,
 				uuid = "ac625d95-d9e5-bdbf-8c60-515c6e8028a7",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 33,
+							holdActionID = 114,
+							uuid = "cd841038-34b9-1abc-bb62-d4e838ba89ee",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 33,
+							holdActionID = 3559,
+							uuid = "449260c4-c44b-1688-b8d6-d6113cacc97c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 671.48837109883,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 129,
+				timerOffset = -2.2999999523163,
+				uuid = "f54f5df8-2d03-079f-b65d-a358c7de3da6",
 				version = 2,
 			},
 		},
@@ -3630,6 +4642,48 @@ local tbl =
 				timelineIndex = 139,
 				timerStartOffset = -1.5,
 				uuid = "497b7e65-571b-34d1-be37-65d58776ed5b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "ec47e503-f6b1-bec0-9041-c55b35adeb27",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "95544c11-82b0-c71d-80bb-0694b2e9e247",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 702.78725990995,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 139,
+				timerOffset = 0.10000000149012,
+				uuid = "817629ec-bec7-e82b-a764-7a9530fb4457",
 				version = 2,
 			},
 		},
@@ -3878,6 +4932,48 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "ed43378a-f4eb-f122-9d78-45b1e36a760a",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "aabcabbb-f520-a6ee-bcd4-02f4fcee38cd",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 826.02524789261,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 153,
+				timerOffset = 0.69999998807907,
+				uuid = "bd0024e6-e427-9f26-8294-9e9a5c4de4b9",
+				version = 2,
+			},
+		},
 	},
 	[157] = 
 	{
@@ -3949,6 +5045,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 33,
+							holdActionID = 114,
+							uuid = "82b5b433-eec9-d135-b41f-c83ab6646bcc",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 33,
+							holdActionID = 3559,
+							uuid = "20ffd471-118a-64d0-9e83-bb8267a66235",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 868.13803801671,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 160,
+				timerOffset = 1,
+				uuid = "e47c0e69-ac48-a1cb-aa15-9841079dc5ae",
+				version = 2,
+			},
+		},
 	},
 	[166] = 
 	{
@@ -3983,6 +5121,82 @@ local tbl =
 				timerEndOffset = -1.2000000476837,
 				timerStartOffset = -2.7000000476837,
 				uuid = "e6e8795f-d381-4622-8b09-54bc0e0fa23c",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "e62e9e86-3641-668a-8cf2-aed02349a3af",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "a8a3d3e7-1f99-445c-b8c2-c200c679696a",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 903.50044082329,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 166,
+				timerOffset = -1.1000000238419,
+				uuid = "1e8c1e64-66fb-8712-b308-a89b56098ec8",
+				version = 2,
+			},
+		},
+	},
+	[167] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 32,
+							holdActionID = 16496,
+							uuid = "445650d6-f48f-92b5-ad80-af1c58909c93",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 916.86652777982,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 167,
+				timerOffset = -28,
+				uuid = "f4bcf5ec-b1a6-8e29-bfc9-7a04f4188708",
 				version = 2,
 			},
 		},
@@ -4112,6 +5326,48 @@ local tbl =
 				timerEndOffset = -5,
 				timerStartOffset = -20,
 				uuid = "87919c74-aecb-3c35-b1fe-1b27a66870bf",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "0d4fd55f-2a38-5f26-a33c-31e9265069f1",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "2a624a11-5365-af8a-9191-63a9f2c507c6",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 965.64810213372,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 171,
+				timerOffset = -4.9000000953674,
+				uuid = "b9a278e7-3f76-ae12-8389-c0239c5bb0d8",
 				version = 2,
 			},
 		},
@@ -4327,6 +5583,48 @@ local tbl =
 				timerEndOffset = 4.5999999046326,
 				timerStartOffset = -4.8000001907349,
 				uuid = "73de4fd3-2249-b023-8e15-440295a9b36e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 37,
+							holdActionID = 114,
+							uuid = "3cd894ac-8763-9da0-9591-bf5032687015",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 37,
+							holdActionID = 3559,
+							uuid = "41afe404-a151-d11f-b7ed-bdf8d03dfcaf",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 993.37047688603,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 183,
+				timerOffset = 4.6999998092651,
+				uuid = "2f6425ee-b2b0-024f-ad19-c2760b053d3f",
 				version = 2,
 			},
 		},
@@ -4559,6 +5857,84 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "d1a0c7a8-086a-566f-9616-8e9b0cb63e49",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "ef548f9d-ecc1-4b88-ad78-cd641620aef3",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1025.1000086512,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 193,
+				timerOffset = 2.5,
+				uuid = "a2b2707e-4f40-27cf-b9b4-0e73054078f7",
+				version = 2,
+			},
+		},
+	},
+	[198] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 27,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1041.2310024427,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 198,
+				timerOffset = -27,
+				uuid = "b7fde86e-f060-eb5a-9e19-291ae74d5efa",
+				version = 2,
+			},
+		},
 	},
 	[199] = 
 	{
@@ -4736,6 +6112,48 @@ local tbl =
 				timerEndOffset = 8.3000001907349,
 				timerStartOffset = 6.8000001907349,
 				uuid = "c61d8f5d-b5ec-75c9-b1b1-304f8537584b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 3559,
+							uuid = "e2024103-6459-a2ed-9b9f-f5bbb628a860",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "7d2f56b3-7807-7175-98a4-3dcdc655746e",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1063.6903949829,
+				name = "[BRD] Death Song Safety - MB",
+				timelineIndex = 209,
+				timerOffset = 8.3999996185303,
+				uuid = "8162fdfb-6948-2ae5-9790-c6708f48c93f",
 				version = 2,
 			},
 		},
@@ -4933,6 +6351,48 @@ local tbl =
 				timerEndOffset = 0.60000002384186,
 				timerStartOffset = -0.80000001192093,
 				uuid = "63e04444-a0ca-4c50-972d-8a58f27958fd",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 34,
+							holdActionID = 114,
+							uuid = "7f1f3e53-2b4d-e210-96a0-abd5276ca6af",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 34,
+							holdActionID = 3559,
+							uuid = "cf56d41f-6d43-465c-b0ea-838d8c706867",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1113.9009474604,
+				name = "[BRD] Death Song Safety - AP",
+				timelineIndex = 218,
+				timerOffset = 0.69999998807907,
+				uuid = "9320887d-bbdf-ecee-8903-d887b745790b",
 				version = 2,
 			},
 		},
@@ -5250,6 +6710,48 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 114,
+							uuid = "9ec59363-a678-c9d0-934a-4b177e078857",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 41,
+							holdActionID = 116,
+							uuid = "5f9ca0f0-7d71-2f15-a0cb-b865c8b9c353",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1149.6575474604,
+				name = "[BRD] Death Song Safety - WM",
+				timelineIndex = 225,
+				timerOffset = -0.30000001192093,
+				uuid = "edcdf2b4-1cc0-273a-80e0-1d5e2b2292d6",
+				version = 2,
+			},
+		},
 	},
 	[226] = 
 	{
@@ -5283,6 +6785,39 @@ local tbl =
 				timerEndOffset = 9.6999998092651,
 				timerStartOffset = 6.1999998092651,
 				uuid = "2e54fef9-0e08-9346-adc4-f8fe9d7531a2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 16496,
+							gVar = "ACR_TensorRequiem3_HoldApex",
+							gVarValue = 2,
+							holdActionDuration = 21,
+							holdActionID = 16496,
+							uuid = "571f58e1-14b7-eb79-a6d9-66f4511ebed4",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] Hold Apex",
+				timelineIndex = 226,
+				timerOffset = -20,
+				uuid = "b74d36e3-9bf4-3ec7-87fa-f4e80f1099d9",
 				version = 2,
 			},
 		},
