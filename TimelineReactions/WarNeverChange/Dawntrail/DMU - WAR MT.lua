@@ -759,6 +759,20 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				name = "[Tank] Potion On",
+				uuid = "7715b437-23af-7aab-ac0a-51a1da8d05a1",
+				version = 2,
+			},
+			inheritedObjectUUID = "2d767ab9-326b-345f-ba92-25e04ca18472",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
 	},
 	[9] = 
 	{
@@ -940,6 +954,57 @@ local tbl =
 				timelineIndex = 12,
 				timerOffset = -32,
 				uuid = "fa1b466a-164a-5c32-a29f-d34df964afc6",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 62.553324919213,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 12,
+				timerEndOffset = 5,
+				timerStartOffset = -5,
+				uuid = "178c11cc-65d2-b949-8c92-3e3d121a79c4",
 				version = 2,
 			},
 		},
@@ -1414,6 +1479,57 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 118.07975730716,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 25,
+				timerEndOffset = 7,
+				timerStartOffset = -7,
+				uuid = "98fb3e6b-38bd-7058-9b9c-fc9605167e36",
+				version = 2,
+			},
+		},
 	},
 	[26] = 
 	{
@@ -1695,6 +1811,57 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 187.08847802632,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 37,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "ea8464c9-4788-fd46-a3e6-2bad24ac86fd",
+				version = 2,
+			},
 		},
 	},
 	[38] = 
@@ -2113,6 +2280,57 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 235.34477128997,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 41,
+				timerEndOffset = 10,
+				timerStartOffset = -5,
+				uuid = "8f3ebb74-3734-ec0c-a819-1980dc36c083",
+				version = 2,
+			},
+		},
 	},
 	[42] = 
 	{
@@ -2373,6 +2591,60 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[56] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 299.97907895232,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 56,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "0fb2f3f2-5749-1ea2-bac7-2afb209904ea",
+				version = 2,
+			},
 		},
 	},
 	[59] = 
@@ -2662,6 +2934,60 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 6,
+		},
+	},
+	[68] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 360.0639775819,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 68,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "50ce2c74-9fc2-4065-a817-2403cfca06e5",
+				version = 2,
+			},
 		},
 	},
 	[72] = 
@@ -3178,6 +3504,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"f143ef63-f962-7dd1-865e-2094a199a089",
+									true,
+								},
+							},
 							gVar = "ACR_RikuWAR3_StormsEye",
 							uuid = "83d01436-a197-7eab-abb0-9fb75b4200d9",
 							version = 2.1,
@@ -3379,7 +3713,6 @@ local tbl =
 				name = "[WAR] Inner Release",
 				timeRange = true,
 				timelineIndex = 77,
-				timerEndOffset = -1,
 				timerOffset = -2,
 				timerStartOffset = -3,
 				uuid = "6b0f8df4-9298-4ef0-907f-af5be64e320b",
@@ -3429,6 +3762,20 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				name = "[Tank] Potion On",
+				uuid = "8ecab3e0-7b6a-7eb1-9689-adaa6d347fb2",
+				version = 2,
+			},
+			inheritedObjectUUID = "a1cd7898-f36d-15e7-a068-2211923a7dc2",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
 	},
 	[79] = 
 	{
@@ -3442,6 +3789,20 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				name = "[Tank] Force Potion",
+				uuid = "0bf32f0e-f7a1-7143-bba0-afeafe85c6c5",
+				version = 2,
+			},
+			inheritedObjectUUID = "3eec7032-4867-329d-b134-b071f1813deb",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
 		},
 		
 		{
@@ -3549,7 +3910,9 @@ local tbl =
 				},
 				mechanicTime = 470.18264616806,
 				name = "[WAR] Potion",
+				timeRange = true,
 				timelineIndex = 81,
+				timerEndOffset = 2,
 				uuid = "07c80a78-f3c6-71c6-b6ce-8bacb2ca8adb",
 				version = 2,
 			},
@@ -3819,6 +4182,60 @@ local tbl =
 			inheritedIndex = 4,
 		},
 	},
+	[84] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 481.45392399289,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 84,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "b5ac281a-b47c-5524-b9ec-792aa26e14f2",
+				version = 2,
+			},
+		},
+	},
 	[86] = 
 	{
 		
@@ -4012,6 +4429,57 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 544.89209076626,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 104,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "aea622f1-ff29-9a19-9116-b4ac0ba95c49",
+				version = 2,
+			},
 		},
 	},
 	[105] = 
@@ -4279,6 +4747,57 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 603.80002815209,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 117,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "ae2985b8-e087-a6bd-95e5-061d5da51f07",
+				version = 2,
+			},
+		},
 	},
 	[122] = 
 	{
@@ -4505,6 +5024,60 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[128] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 652.34305216234,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 128,
+				timerEndOffset = 20,
+				timerStartOffset = 5,
+				uuid = "8a7cd3d4-bf30-beac-b857-7a8f7cd11547",
+				version = 2,
+			},
 		},
 	},
 	[131] = 
@@ -4861,8 +5434,9 @@ local tbl =
 						data = 
 						{
 							buffCheckType = 3,
-							buffDuration = 22,
+							buffDuration = 25,
 							buffID = 2677,
+							category = "Self",
 							comparator = 2,
 							uuid = "d4b881f7-463b-30df-adcd-e56a4078340e",
 							version = 3,
@@ -4999,71 +5573,29 @@ local tbl =
 		{
 			data = 
 			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-								
-								{
-									"59bb5297-24f1-adec-849b-58605204b40f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "59bb5297-24f1-adec-849b-58605204b40f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 801.88345429349,
-				name = "[WAR][MT] Whetting",
-				timelineIndex = 150,
-				timerStartOffset = -1,
-				uuid = "65ac6fa5-ec96-aa63-a65b-43ba4ed414ae",
+				name = "[Tank] Potion On",
+				uuid = "fb067c58-dead-8dba-89bd-7c726805b1c3",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedObjectUUID = "7068c4e1-1463-4c4b-84e4-8afd05fe93ca",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
+		},
+		
+		{
+			data = 
+			{
+				name = "[Tank] Force Potion",
+				uuid = "6814a64a-51e0-fb7e-b6d2-400bd4a293fc",
+				version = 2,
+			},
+			inheritedObjectUUID = "d8ecf54e-d70a-4595-99c9-6471ce5f2d2c",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
 		},
 		
 		{
@@ -5149,7 +5681,6 @@ local tbl =
 				name = "[WAR] Inner Release",
 				timeRange = true,
 				timelineIndex = 150,
-				timerEndOffset = -1,
 				timerOffset = -2,
 				timerStartOffset = -4,
 				uuid = "ed53f933-a757-6a73-9d65-92f1e4152141",
@@ -5397,6 +5928,113 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Misc",
+							ignoreWeaveRules = true,
+							potType = 4,
+							usePot = true,
+							uuid = "0c9a48d7-c559-2280-8c6e-5a3a2466c8a8",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 836.78243971594,
+				name = "[WAR] Potion",
+				timeRange = true,
+				timelineIndex = 155,
+				timerEndOffset = 3,
+				timerOffset = 2,
+				timerStartOffset = -3,
+				uuid = "4923d6d7-9ece-2839-af11-750f26e1c86e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionCharges = 2,
+							holdActionDuration = 10,
+							holdActionID = 3549,
+							uuid = "be219220-1ce5-f7ed-b830-f22229c6f8d3",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionDuration = 10,
+							holdActionID = 16465,
+							uuid = "3980020a-9531-d70c-9093-b7717ca2a4d5",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 836.78243971594,
+				name = "[WAR]Hold Gauge - Pot P4",
+				timelineIndex = 155,
+				timerOffset = -10,
+				uuid = "7ade48a7-0a1d-0502-8917-e52b7078f3c8",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							holdActionCharges = 2,
+							holdActionDuration = 20,
+							holdActionID = 7386,
+							uuid = "34669310-e49d-03a3-b825-1ee17f2b4c55",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 836.78243971594,
+				name = "[WAR]Hold Dash - Pot P4",
+				timelineIndex = 155,
+				timerOffset = -20,
+				uuid = "5d4c10e4-6c55-72f9-8728-058a299eef56",
+				version = 2,
+			},
+		},
 	},
 	[159] = 
 	{
@@ -5410,6 +6048,57 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 855.99403801671,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 159,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "58d68b4e-741a-2bb5-b14c-68dca6f65ea8",
+				version = 2,
+			},
 		},
 	},
 	[161] = 
@@ -5616,6 +6305,60 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+	},
+	[168] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 921.94101651754,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 168,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "b9756f45-ed6e-88b4-b3fe-ae56aa1915c0",
+				version = 2,
+			},
 		},
 	},
 	[169] = 
@@ -6033,6 +6776,57 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 978.67931016566,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 177,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "4cd8a380-ecef-6362-89f5-f9776c279078",
+				version = 2,
+			},
+		},
 	},
 	[179] = 
 	{
@@ -6387,78 +7181,6 @@ local tbl =
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-								
-								{
-									"478ed7a0-eb99-1cf6-be03-cf982013cd6f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "478ed7a0-eb99-1cf6-be03-cf982013cd6f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1010.9409115474,
-				name = "[WAR][MT] Whetting",
-				timelineIndex = 190,
-				timerOffset = -4,
-				timerStartOffset = -1,
-				uuid = "e1148b64-a642-44c6-a061-cab9abadad5b",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
 	},
 	[191] = 
 	{
@@ -6502,6 +7224,60 @@ local tbl =
 			objectType = "folder",
 		},
 	},
+	[197] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1040.1943052998,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 197,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "395d87ab-1f53-701b-b08e-0115c06c878f",
+				version = 2,
+			},
+		},
+	},
 	[199] = 
 	{
 		
@@ -6528,6 +7304,20 @@ local tbl =
 			},
 			inheritanceRoot = "DMU - Universal MT-OT",
 			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				name = "[Tank] Potion On",
+				uuid = "4272774c-8ef0-a401-8916-73d3a9db105f",
+				version = 2,
+			},
+			inheritedObjectUUID = "64e5ca89-6e84-190c-9d86-4fb11d6c427d",
+			inheritedOverwrites = 
+			{
+				enabled = false,
+			},
 		},
 	},
 	[203] = 
@@ -6886,6 +7676,57 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							conditions = 
+							{
+								
+								{
+									"7e596671-1cc7-a8ef-a601-450d5023a620",
+									true,
+								},
+							},
+							uuid = "5c3cc607-ca76-7ef3-826a-0ecf5d1e9203",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD",
+							uuid = "7e596671-1cc7-a8ef-a601-450d5023a620",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1099.544362845,
+				name = "[WAR] Force IR",
+				timeRange = true,
+				timelineIndex = 214,
+				timerEndOffset = 10,
+				timerStartOffset = -10,
+				uuid = "5346f5fb-2d2a-a191-8139-99114c598fa4",
+				version = 2,
+			},
+		},
 	},
 	[215] = 
 	{
@@ -7239,7 +8080,9 @@ local tbl =
 				},
 				mechanicTime = 1149.6575474604,
 				name = "[WAR] Potion",
+				timeRange = true,
 				timelineIndex = 225,
+				timerEndOffset = 4,
 				uuid = "ba0ea8f4-c7da-a6e4-8b2c-a85630c29e08",
 				version = 2,
 			},
@@ -7347,6 +8190,92 @@ local tbl =
 				timelineIndex = 225,
 				timerOffset = 2,
 				uuid = "1306866e-c6f9-4848-8381-cc12da81f33b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7389,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"22da152c-f0f5-6aee-9a15-8947b081ec42",
+									true,
+								},
+								
+								{
+									"87ac72d8-7424-e54e-a11f-535eb4f38ac7",
+									true,
+								},
+								
+								{
+									"e901c427-2c14-6a57-975b-2e5a319e016a",
+									true,
+								},
+							},
+							uuid = "c2f54ed9-fb91-3e32-8746-bb267def0635",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7389,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							name = "IR CD ≤1s",
+							uuid = "22da152c-f0f5-6aee-9a15-8947b081ec42",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 2677,
+							category = "Self",
+							name = "Surging Tempest",
+							uuid = "87ac72d8-7424-e54e-a11f-535eb4f38ac7",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "T1",
+							uuid = "e901c427-2c14-6a57-975b-2e5a319e016a",
+							version = 3,
+						},
+					},
+				},
+				loop = true,
+				mechanicTime = 1149.6575474604,
+				name = "[WAR][MT] Force IR — 18:01",
+				timeRange = true,
+				timelineIndex = 225,
+				timerEndOffset = 12.843,
+				timerStartOffset = 9.843,
+				uuid = "fb6c43c1-1af8-5ead-94f8-ec69589aaacc",
 				version = 2,
 			},
 		},
