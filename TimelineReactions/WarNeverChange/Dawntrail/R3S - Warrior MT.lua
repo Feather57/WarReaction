@@ -6,6 +6,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "6932ce18-0dd3-3eec-3f34-d8360c7c9ee8",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -17,65 +28,198 @@ local tbl =
 							{
 								
 								{
-									"84c28b09-89b7-d643-9096-a3c34c497a07",
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
 									true,
 								},
 							},
-							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
-							uuid = "ca6b7451-d5ef-e120-b078-ce78c2936741",
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "dd9eada3-6bd2-f942-ac67-5814d170b565",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_InnerRelease",
+							uuid = "6ef2d942-fbaf-ef7e-b6be-ebb2198b660e",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "4096b94e-685a-0cec-9cfd-b6161f07edd9",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5aab3796-bc05-d18f-b063-199df62d28b8",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "99fea3ba-0a1e-4b93-9027-54d7b0dff82d",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Burn",
+							gVarValue = 2,
+							uuid = "6836fa05-304a-2e90-a75f-0cde266af0e3",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "b94ec8ed-2868-2490-849e-a54bcd3a9e4c",
+							version = 2.1,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							gVarValue = 2,
+							holdActionCharges = 3,
+							holdActionDuration = 7,
+							holdActionID = 7386,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
-				},
-				conditions = 
-				{
 					
 					{
 						data = 
 						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
-							version = 2,
-						},
-					},
-				},
-				eventType = 16,
-				mechanicTime = 6.8,
-				name = "[WAR] Stance On",
-				timelineIndex = 1,
-				timerEndOffset = 60,
-				timerStartOffset = -60,
-				uuid = "85d9ef66-2015-784a-b059-04d84a77ea11",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Lua",
-							actionLua = "gStartCombat = false\nself.used = true",
+							aType = "ACR",
 							conditions = 
 							{
 								
 								{
-									"a280fbb7-b092-6e0d-81df-d6160f35a7c3",
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+								
+								{
+									"65c6de88-300e-e9bc-9322-5d2db979fb59",
 									true,
 								},
 							},
-							gVar = "ACR_RikuMNK3_CD",
-							name = "Boss Unpulled",
-							uuid = "cfdd4c80-07c6-3383-9327-e97a123a31cb",
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "5765434a-1214-8985-9a4d-9b2e8583e531",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 9,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							holdActionDuration = 7,
+							holdActionID = 7387,
+							uuid = "646ef752-42b9-32a6-9637-334f61dfb6f7",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							holdActionDuration = 3,
+							holdActionID = 7389,
+							uuid = "df77fd15-8bee-509e-99dc-a3013a788b9c",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
@@ -84,44 +228,36 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = true\n\nTensorCore.API.TensorACR.holdActionUntil(7387, Now() + 9000) -- upheaval\nTensorCore.API.TensorACR.holdActionUntil(7386, Now() + 9000) -- onslaught\n\nself.used = true",
+							actionLua = "gStartCombat = true\nself.used = true",
 							conditions = 
 							{
 								
 								{
-									"fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
+									"a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
 									true,
 								},
 							},
 							gVar = "ACR_RikuMNK3_CD",
-							name = "Hold Ressource",
-							uuid = "ac151d56-3bbb-b193-b279-54b8b397bfd4",
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Lua",
-							actionLua = "gStartCombat = false\nself.used = true",
-							conditions = 
-							{
-								
-								{
-									"536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-									true,
-								},
-							},
-							gVar = "ACR_RikuMNK3_CD",
-							name = "Boss Pulled",
-							uuid = "cc6b732f-9b32-2d26-9732-d0d38bce0833",
+							name = "Start Combat = true",
+							uuid = "50fd3860-02d3-3ecd-a8df-4dd2d1dbac10",
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+							version = 3,
+						},
+					},
 					
 					{
 						data = 
@@ -130,8 +266,8 @@ local tbl =
 							comparator = 2,
 							eventCountdownTime = 5,
 							name = "Pull in 5sec",
-							uuid = "a280fbb7-b092-6e0d-81df-d6160f35a7c3",
-							version = 2,
+							uuid = "586a57b8-8499-7e7a-8665-5be0d1aad0bd",
+							version = 3,
 						},
 					},
 					
@@ -140,10 +276,10 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 0.69999998807907,
-							name = "Pull in 0sec",
-							uuid = "fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
-							version = 2,
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "94e5a478-800f-fd04-a09d-6d1a8cd8164f",
+							version = 3,
 						},
 					},
 					
@@ -152,40 +288,65 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = -2,
-							name = "Pulled",
-							uuid = "536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-							version = 2,
+							eventCountdownTime = 1,
+							name = "Pull in 1sec",
+							uuid = "3718b32e-411a-92ae-8814-2fb5df9e5aad",
+							version = 3,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
+							version = 3,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Stance Check",
+							uuid = "65c6de88-300e-e9bc-9322-5d2db979fb59",
+							version = 3,
 						},
 					},
 				},
 				eventType = 16,
 				mechanicTime = 6.8,
-				name = "[WAR] Hold Ressource",
+				name = "[WAR] Prepull Helper",
+				timeRange = true,
 				timelineIndex = 1,
-				timeout = 30,
-				uuid = "c2654db0-6d4d-964e-9eb4-d856c6b6ec3a",
+				timerEndOffset = -10,
+				timerOffset = -17,
+				timerStartOffset = -17,
+				uuid = "2011be65-b656-0aa1-bd3c-ed9a448fb500",
 				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				name = "Label Fuses",
-				uuid = "d4668f58-61b8-607f-8431-76688ebe9028",
-				version = 2,
-			},
-			inheritedIndex = 10,
-			inheritedObjectUUID = "df71c520-b44f-9522-90c0-dd81187b090c",
-			inheritedOverwrites = 
-			{
 			},
 		},
 	},
 	
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "97b53a13-305b-7127-8e69-29a5ae000ae3",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -224,7 +385,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -309,7 +470,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -366,7 +527,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -379,7 +540,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -393,7 +554,35 @@ local tbl =
 				version = 2,
 			},
 		},
+	},
+	
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "f8e736c4-8b3b-de20-72e0-5c0274564a94",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 	}, 
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "04b85f55-a9bb-a549-fa63-a82393f4cf65",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
 	[9] = 
 	{
 		
@@ -492,6 +681,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "3ee52620-453d-eec4-5556-634ef7fba7f0",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -523,7 +723,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -629,6 +829,20 @@ local tbl =
 			},
 		},
 	},
+	[10] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "41c07204-292c-bca0-61db-5abe91c5a794",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
 	[11] = 
 	{
 		
@@ -668,6 +882,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "add379ea-11ca-9ea6-a589-41986e5a97fa",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -703,7 +928,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -757,7 +982,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -769,11 +994,50 @@ local tbl =
 				uuid = "a77b03e6-26bf-6b7f-a9a2-204df8eba73b",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
+		},
+	},
+	[15] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "af956c4d-b1e4-2751-0635-fa7f8599d1dd",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
+	[16] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "fde3987e-3169-aa72-353d-aa4403666e0e",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[17] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "250ff453-ce4c-4fa7-99bb-60c9cb6f67e3",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -841,7 +1105,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -896,7 +1160,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -951,7 +1215,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -963,11 +1227,22 @@ local tbl =
 				uuid = "7ec6c369-9421-cb88-904c-3447d4f67ad1",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[22] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "d547a03b-9ca1-9717-64a3-5cc5bc67798b",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -978,9 +1253,6 @@ local tbl =
 			},
 			inheritedIndex = 1,
 			inheritedObjectUUID = "a0de9b91-7c4f-ef90-8d49-042fb6018e5f",
-			inheritedOverwrites = 
-			{
-			},
 		},
 		
 		{
@@ -1028,7 +1300,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1041,7 +1313,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1059,7 +1331,7 @@ local tbl =
 								37849,
 							},
 							uuid = "d83fd883-f99c-5cb4-a5f8-9116fbfcecac",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1074,6 +1346,17 @@ local tbl =
 	},
 	[25] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "1321e38c-8362-2810-dd6c-84a2634a2d9c",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1230,6 +1513,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "32661447-2fdb-07cb-5937-6f013aefe2d7",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1291,7 +1585,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1373,6 +1667,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "1a9a8692-f86b-1c96-6080-241ce0368e22",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1400,6 +1705,17 @@ local tbl =
 	},
 	[29] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "1d69a338-4bb7-4d34-c24b-26ee5758bac8",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1439,7 +1755,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1490,7 +1806,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1535,7 +1851,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1587,7 +1903,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1599,7 +1915,7 @@ local tbl =
 				uuid = "893d3919-b74f-fefb-b7fe-761d1ba33507",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -1643,7 +1959,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1656,7 +1972,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1668,7 +1984,21 @@ local tbl =
 				uuid = "47460b01-0424-bf6b-a22d-7e21275edfbc",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 3,
+		},
+	},
+	[33] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "90081e25-5a5f-21b1-5367-3c47532697f5",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[34] = 
@@ -1711,7 +2041,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1723,7 +2053,7 @@ local tbl =
 				uuid = "a2edf467-9980-fd4b-a29b-b521fdbc3350",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[36] = 
@@ -1756,6 +2086,62 @@ local tbl =
 				uuid = "a3031fdb-8d98-8748-813c-3ed8ce516085",
 				version = 2,
 			},
+		},
+	},
+	[37] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "94a8f0e1-cbbe-7335-f648-c83bee37d871",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
+	[40] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "ff5a04a7-0c1e-cdfb-a5a9-05918f039db7",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
+	[42] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "e2f1dc51-6e2d-1635-87a2-cce7b8742261",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
+	[45] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "42d853a6-c14e-1f52-6ddf-6fe0649efe36",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[46] = 
@@ -1827,7 +2213,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1844,6 +2230,17 @@ local tbl =
 	},
 	[47] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "5a3a71a0-b226-954c-0df4-68e60fc02930",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1986,6 +2383,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "e534d27f-7955-d473-046a-18094b5732cf",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -2047,7 +2455,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2125,6 +2533,17 @@ local tbl =
 	},
 	[49] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "6241272a-5b8f-479e-6b3f-2484f47fb63a",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2223,7 +2642,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2235,11 +2654,22 @@ local tbl =
 				uuid = "7a6eae0f-ebc0-4bc0-8a39-adece1943ffc",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[54] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "7cc50234-c092-1e70-9e1f-92d63807b3c4",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2279,7 +2709,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2355,7 +2785,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2407,7 +2837,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2430,46 +2860,23 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
+							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
+							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
+							variableTogglesType = 2,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
-						},
-					},
 				},
 				mechanicTime = 353.7,
-				name = "[WAR] Whetting",
+				name = "[Multi] Sprint",
 				timelineIndex = 56,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "ac5f685d-8fb0-e199-b806-0ba962041445",
+				timerOffset = -9,
+				uuid = "956b5412-081b-f633-8ffb-2ca5735a5175",
 				version = 2,
 			},
-			inheritedIndex = 5,
 		},
 		
 		{
@@ -2513,7 +2920,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2526,7 +2933,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2551,23 +2958,60 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Hotbar_Sprint",
-							uuid = "692991cd-7cb0-121d-ba40-f9f19c3e97ab",
-							variableTogglesType = 2,
+							conditions = 
+							{
+								
+								{
+									"9836ac14-c12b-1c33-b004-1e166ce552a3",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
 							version = 2.1,
 						},
 					},
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25751,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 353.7,
-				name = "[Multi] Sprint",
+				name = "[WAR] Whetting",
 				timelineIndex = 56,
-				timerOffset = -9,
-				uuid = "956b5412-081b-f633-8ffb-2ca5735a5175",
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "ac5f685d-8fb0-e199-b806-0ba962041445",
 				version = 2,
 			},
+			inheritedIndex = 5,
+		},
+	},
+	[59] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "f7f53f85-d325-8799-1517-cdef43d8dc55",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[60] = 
@@ -2611,7 +3055,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2623,6 +3067,20 @@ local tbl =
 				uuid = "37be2f9d-7c6b-27f6-be18-7b11bd4feee9",
 				version = 2,
 			},
+		},
+	},
+	[61] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "efecac24-c090-7a58-ae24-149aa09033b4",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[62] = 
@@ -2665,7 +3123,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2677,11 +3135,50 @@ local tbl =
 				uuid = "1ed369c5-b0ce-dedd-a7f2-5f0542faa43c",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
+		},
+	},
+	[65] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "092d70f8-10b2-bd04-5d3c-90aee9f33888",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
+	},
+	[66] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "07f4e673-8b34-323f-bc6f-df7ddd29eb83",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[68] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "8b6cd6b1-927e-5995-eeb0-7417a52cf241",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2720,7 +3217,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2769,6 +3266,17 @@ local tbl =
 	},
 	[73] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "61c49999-0c56-583d-6feb-2fab01d863a9",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2942,7 +3450,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "e8d4174e-7113-9550-923e-2825e1fc1a90",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3051,9 +3559,31 @@ local tbl =
 			},
 			inheritedIndex = 7,
 		},
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "3d2c998e-9c03-8f5a-bce0-11bc0df98b1e",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 	},
 	[75] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "05359363-ba8b-666f-f51b-bd212bc017f3",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3085,6 +3615,17 @@ local tbl =
 	},
 	[77] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "bf5ffd5d-9ed8-a579-2d55-f177a259c0ed",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3126,7 +3667,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3139,7 +3680,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3189,7 +3730,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3275,7 +3816,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3288,7 +3829,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3301,7 +3842,7 @@ local tbl =
 				uuid = "f4198cfe-339b-0138-80bf-49fe2215cbd9",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -3341,7 +3882,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3353,7 +3894,7 @@ local tbl =
 				uuid = "1278a669-c07c-1d22-ab7a-0d0e314902fb",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 3,
 		},
 	},
 	[83] = 
@@ -3428,7 +3969,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3440,11 +3981,36 @@ local tbl =
 				uuid = "5075f664-b8bc-2ba1-bab3-41a7d4167c50",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
+		},
+	},
+	[86] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "d04a1cb1-4c91-52d5-f72d-fe97ea0a3841",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[89] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "2f0b9f9e-8ec4-cf2a-efa6-b988a4e3e02e",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3486,7 +4052,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3499,7 +4065,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3550,7 +4116,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3604,7 +4170,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3616,7 +4182,21 @@ local tbl =
 				uuid = "c95f9753-fad3-592d-9f85-3896da9f67c4",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
+		},
+	},
+	[94] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "940e7670-a948-aa34-796b-e3d26d926d80",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 	},
 	[98] = 
@@ -3657,51 +4237,12 @@ local tbl =
 		{
 			data = 
 			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 44,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 613,
-				name = "[WAR] Venge",
-				timelineIndex = 100,
-				timerOffset = -2,
-				uuid = "248cc888-249c-bf12-bf0e-92cc11acb743",
-				version = 2,
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "255577c8-8481-edbc-bceb-9f36fea2b218",
 			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
 		},
 		
 		{
@@ -3745,7 +4286,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3758,7 +4299,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3810,7 +4351,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3823,6 +4364,56 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 5,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_Damnation",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 44,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 613,
+				name = "[WAR] Venge",
+				timelineIndex = 100,
+				timerOffset = -2,
+				uuid = "248cc888-249c-bf12-bf0e-92cc11acb743",
+				version = 2,
+			},
 		},
 		
 		{
@@ -3854,7 +4445,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3906,7 +4497,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3923,6 +4514,17 @@ local tbl =
 	},
 	[103] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage4\\r3s",
+				uuid = "eef4d9c3-f4f7-cd77-0c1f-f0a52d251e13",
+			},
+			inheritanceRoot = "store\\anyone\\savage4\\r3s",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -4045,7 +4647,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4058,7 +4660,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4108,7 +4710,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4164,7 +4766,7 @@ local tbl =
 							conditionType = 9,
 							partyTargetType = "Event Entity",
 							uuid = "934a42cf-4e7d-968a-9000-15fb86cf8bb3",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4179,7 +4781,7 @@ local tbl =
 								7533,
 							},
 							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4625,7 +5227,7 @@ local tbl =
 							buffID = 91,
 							category = "Self",
 							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4674,7 +5276,7 @@ local tbl =
 							buffID = 91,
 							category = "Self",
 							uuid = "945979c4-17ca-f2b9-8e7f-8a95313576ee",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4726,7 +5328,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4776,7 +5378,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4819,7 +5421,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4875,7 +5477,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4888,7 +5490,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4972,7 +5574,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5024,8 +5626,8 @@ local tbl =
 		"store\\anyone\\savage4\\r3s",
 		"store\\anyone\\savage4\\.stversions\\bread\\bread-r3s~20240730-130857",
 	},
-	mapID = 1230,
-	version = 2,
+	timelineName = "r3s",
+	version = "1.0.2",
 }
 
 

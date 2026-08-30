@@ -1,7 +1,372 @@
 local tbl = 
 {
-	[2] = 
+	
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f6e65a4e-5450-106a-232a-51b45a5ae61e",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "dd9eada3-6bd2-f942-ac67-5814d170b565",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_InnerRelease",
+							uuid = "6ef2d942-fbaf-ef7e-b6be-ebb2198b660e",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "4096b94e-685a-0cec-9cfd-b6161f07edd9",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5aab3796-bc05-d18f-b063-199df62d28b8",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "99fea3ba-0a1e-4b93-9027-54d7b0dff82d",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Burn",
+							gVarValue = 2,
+							uuid = "6836fa05-304a-2e90-a75f-0cde266af0e3",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Potion",
+							gVarValue = 2,
+							uuid = "b94ec8ed-2868-2490-849e-a54bcd3a9e4c",
+							version = 2.1,
+						},
+						inheritedIndex = 7,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							gVarValue = 2,
+							holdActionCharges = 3,
+							holdActionDuration = 7,
+							holdActionID = 7386,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+								
+								{
+									"65c6de88-300e-e9bc-9322-5d2db979fb59",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Defiance",
+							uuid = "5765434a-1214-8985-9a4d-9b2e8583e531",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 9,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							holdActionDuration = 7,
+							holdActionID = 7387,
+							uuid = "646ef752-42b9-32a6-9637-334f61dfb6f7",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							holdActionDuration = 3,
+							holdActionID = 7389,
+							uuid = "df77fd15-8bee-509e-99dc-a3013a788b9c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = true",
+							uuid = "50fd3860-02d3-3ecd-a8df-4dd2d1dbac10",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"94e5a478-800f-fd04-a09d-6d1a8cd8164f",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+							uuid = "8439f4d8-f1d4-4d4a-b3f9-632a1e375351",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+						inheritedIndex = 13,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "586a57b8-8499-7e7a-8665-5be0d1aad0bd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "94e5a478-800f-fd04-a09d-6d1a8cd8164f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 1,
+							name = "Pull in 1sec",
+							uuid = "3718b32e-411a-92ae-8814-2fb5df9e5aad",
+							version = 3,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
+							version = 3,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							name = "Stance Check",
+							uuid = "65c6de88-300e-e9bc-9322-5d2db979fb59",
+							version = 3,
+						},
+					},
+				},
+				eventType = 16,
+				mechanicTime = 12.4,
+				name = "[WAR] Prepull Helper",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -10,
+				timerOffset = -17,
+				timerStartOffset = -17,
+				uuid = "5af87fdd-9ec9-d252-b892-5b98e22f8b2f",
+				version = 2,
+			},
+		},
+	},
+	
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "e21aabcd-60a1-0ed9-c201-3fcff579ca5d",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -40,7 +405,7 @@ local tbl =
 							inRangeValue = 5,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -55,7 +420,7 @@ local tbl =
 				version = 2,
 			},
 		},
-	},
+	}, 
 	[4] = 
 	{
 		
@@ -96,7 +461,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -110,8 +475,33 @@ local tbl =
 			},
 		},
 	},
+	[5] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f9c408aa-aed2-b70e-35b9-cca831e8217a",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
 	[6] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "94165b19-f6b4-668d-cf16-1543370a22a9",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -150,7 +540,7 @@ local tbl =
 							inRangeValue = 5,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -198,7 +588,7 @@ local tbl =
 				uuid = "00301ecc-2622-edf2-97e4-bd20af4cc776",
 				version = 2,
 			},
-			inheritedIndex = 9,
+			inheritedIndex = 1,
 		},
 	},
 	[9] = 
@@ -244,7 +634,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -257,7 +647,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -307,7 +697,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -319,6 +709,62 @@ local tbl =
 				uuid = "a32a6ee6-1289-3f91-ac27-c36120759322",
 				version = 2,
 			},
+		},
+	},
+	[12] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "7dfbc14c-5ebf-a930-6a6d-a392997b17dc",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[13] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "e5696519-abe1-a2dd-38a4-cfefbcb2cd69",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[16] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "47021960-ec34-c09c-1ff0-ff36b264fe70",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[19] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "35c2d55f-5ff7-b3e3-f56b-d8295f322b2f",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[21] = 
@@ -361,7 +807,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -405,7 +851,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -458,7 +904,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -513,7 +959,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -526,7 +972,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -538,6 +984,20 @@ local tbl =
 				uuid = "257d1bb2-a74b-8f23-9fa8-9006e4f5656f",
 				version = 2,
 			},
+		},
+	},
+	[23] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "4cef9f98-7959-a36c-6a72-7cba1d1a9828",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[26] = 
@@ -583,7 +1043,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -596,7 +1056,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -607,6 +1067,20 @@ local tbl =
 				uuid = "89d2a83a-ef87-2592-b899-3b3c8c8d66d1",
 				version = 2,
 			},
+		},
+	},
+	[29] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f2a2516e-6190-4a22-3a89-411452da7bfe",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[30] = 
@@ -649,7 +1123,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -700,7 +1174,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -755,7 +1229,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -768,7 +1242,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -823,7 +1297,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -839,6 +1313,17 @@ local tbl =
 	},
 	[34] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "106d2474-e27a-d150-3f63-ebf2393580c4",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -878,7 +1363,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -891,8 +1376,33 @@ local tbl =
 			},
 		},
 	},
+	[36] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "e786c2b2-a3e2-803e-a9ca-4cb493c07082",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
 	[37] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "26f9d38f-36b2-d80b-7fde-d321e804275f",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -931,7 +1441,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -982,6 +1492,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "437085b1-e1ff-b8fd-e129-e80bbb0b0ec1",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1019,7 +1540,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1032,7 +1553,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1086,7 +1607,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1195,6 +1716,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f15dd6c2-465f-b33e-8cf1-e150cb2e7412",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1229,7 +1761,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1366,6 +1898,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "78633013-67d4-0b57-e0d4-13c9c8b26163",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1400,7 +1943,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1484,6 +2027,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "6538db8c-0823-2a68-e6ec-e35654ef6e1c",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1518,7 +2072,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1596,7 +2150,21 @@ local tbl =
 				uuid = "c2f3b81a-0732-f485-bf4b-77208cc4585f",
 				version = 2,
 			},
-			inheritedIndex = 11,
+			inheritedIndex = 1,
+		},
+	},
+	[52] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "cac32ef0-e41f-fd8c-6fbd-e98e12d34200",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[54] = 
@@ -1631,7 +2199,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1684,7 +2252,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1736,7 +2304,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1792,7 +2360,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1805,7 +2373,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1860,7 +2428,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -1873,7 +2441,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -1928,7 +2496,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2044,6 +2612,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "bdb5f2f6-7044-f8c2-4eac-d538bdd15806",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -2078,7 +2657,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2125,8 +2704,33 @@ local tbl =
 			},
 		},
 	},
+	[60] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "68473607-4166-1d33-cb73-1f152e1185d7",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
 	[62] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f2b424f9-ae50-fb25-0a6e-c3e39f17b149",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2165,7 +2769,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2182,6 +2786,59 @@ local tbl =
 	},
 	[63] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							conditionType = 6,
+							eventArgType = 2,
+							eventEntityID = 45677,
+							inRangeValue = 3,
+							name = "Dead Man's Express",
+							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				mechanicTime = 604.5,
+				name = "[WAR] Dash",
+				timelineIndex = 63,
+				timerEndOffset = 20,
+				timerOffset = 0.10000000149012,
+				timerStartOffset = -20,
+				uuid = "d3ea6c8a-985b-7e75-a8f8-3770475a8433",
+				version = 2,
+			},
+		},
 		
 		{
 			data = 
@@ -2223,7 +2880,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2236,7 +2893,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2247,60 +2904,7 @@ local tbl =
 				uuid = "1dbdcf61-8b0d-9369-923c-64b05774a019",
 				version = 2,
 			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWAR3_Hotbar_Onslaught",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							conditionType = 6,
-							eventArgType = 2,
-							eventEntityID = 45677,
-							inRangeValue = 3,
-							name = "Dead Man's Express",
-							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				mechanicTime = 604.5,
-				name = "[WAR] Dash",
-				timelineIndex = 63,
-				timerEndOffset = 20,
-				timerOffset = 0.10000000149012,
-				timerStartOffset = -20,
-				uuid = "d3ea6c8a-985b-7e75-a8f8-3770475a8433",
-				version = 2,
-			},
+			inheritedIndex = 2,
 		},
 	},
 	[65] = 
@@ -2343,7 +2947,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2395,7 +2999,7 @@ local tbl =
 							inRangeValue = 3,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -2451,7 +3055,7 @@ local tbl =
 							inRangeValue = 3,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -2465,6 +3069,34 @@ local tbl =
 				uuid = "5fd86f37-24c1-5014-92c5-47ea62a9c3dc",
 				version = 2,
 			},
+		},
+	},
+	[69] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "3d19efe2-e6d3-2dae-0936-b9302cab5f32",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[71] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "a4d3f889-d547-dc75-8afe-bb7fdfcfded9",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[73] = 
@@ -2507,7 +3139,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2558,7 +3190,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2613,7 +3245,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2626,7 +3258,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2680,7 +3312,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -2693,7 +3325,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2809,7 +3441,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2892,6 +3524,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "bbc43ccb-40a7-5dcf-023d-45e50a87dd9b",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -2927,7 +3570,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -2940,6 +3583,48 @@ local tbl =
 				uuid = "5098c931-7b8f-3f90-ad88-b66510931740",
 				version = 2,
 			},
+		},
+	},
+	[78] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "b5cc9834-433a-1190-1c80-3b4a76a7ef84",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[79] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "8be11ea1-65ee-cb3d-697c-6e4788952231",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[82] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "9a5cabb3-89ab-8b07-52ee-a5295396a783",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[83] = 
@@ -2974,7 +3659,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3027,7 +3712,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3079,7 +3764,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3134,7 +3819,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3147,7 +3832,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3159,6 +3844,34 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[85] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "7423b3a4-d201-7540-763f-689e9a8c26f4",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[86] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f1eef13f-d834-1dbb-115e-4cddb118d60f",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[88] = 
@@ -3201,7 +3914,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3279,7 +3992,7 @@ local tbl =
 				uuid = "534db260-0872-8bfe-9f65-dc89d2abaf83",
 				version = 2,
 			},
-			inheritedIndex = 29,
+			inheritedIndex = 3,
 		},
 	},
 	[89] = 
@@ -3446,7 +4159,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3460,6 +4173,17 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "999dec4f-c214-9053-60dc-2239054f021f",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[93] = 
@@ -3505,7 +4229,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3518,7 +4242,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3529,7 +4253,21 @@ local tbl =
 				uuid = "086e95b4-e678-4c43-acde-6ef698d3e683",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 1,
+		},
+	},
+	[94] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "d5575e16-cd82-f602-0f95-3e801408d726",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[96] = 
@@ -3572,7 +4310,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3586,6 +4324,34 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+	},
+	[98] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "eda320da-343d-3bce-f5ef-f5e41879466a",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[99] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "aa6f6817-c26e-f55b-92e5-1691c40ddee7",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[100] = 
@@ -3628,7 +4394,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3673,7 +4439,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3691,6 +4457,17 @@ local tbl =
 	},
 	[102] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "d07becf0-3ef4-e95c-02f9-4ab2445a6b40",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3729,7 +4506,7 @@ local tbl =
 							inRangeValue = 5,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -3785,7 +4562,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3836,7 +4613,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3891,7 +4668,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3904,7 +4681,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3958,7 +4735,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -3971,7 +4748,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -3983,6 +4760,34 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[106] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "b792065c-57de-cff0-7b7e-6c568277622c",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
+		},
+	},
+	[107] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "dac9bbe9-a4b9-049d-e4ea-2d0386716ff9",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[108] = 
@@ -4025,7 +4830,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4039,6 +4844,20 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+	},
+	[112] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "80e8bd9f-527e-e21b-6c71-05910b4da6af",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[114] = 
@@ -4081,7 +4900,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4095,6 +4914,17 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "f6223105-27c6-e359-5218-73f3c9ef6ed5",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 		
 		{
@@ -4134,7 +4964,7 @@ local tbl =
 							inRangeValue = 5,
 							name = "Dead Man's Express",
 							uuid = "9cbb5b93-58b0-e5e7-9577-c80145dd4024",
-							version = 2,
+							version = 3,
 						},
 						inheritedIndex = 1,
 					},
@@ -4193,7 +5023,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4206,7 +5036,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4217,7 +5047,21 @@ local tbl =
 				uuid = "e71a745e-152c-4d35-93cf-092ec7dc6c9f",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 1,
+		},
+	},
+	[117] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "8fa292a6-1b75-e4ea-6862-279851733df6",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[119] = 
@@ -4252,7 +5096,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4305,7 +5149,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4357,7 +5201,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4413,7 +5257,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4426,7 +5270,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4438,6 +5282,20 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 4,
+		},
+	},
+	[120] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\extremes\\doomtrain\\main",
+				uuid = "b21b81fc-75db-6478-56ff-bb366f3bd94c",
+			},
+			inheritanceRoot = "store\\anyone\\extremes\\doomtrain\\main",
+			objectType = "folder",
 		},
 	},
 	[122] = 
@@ -4481,7 +5339,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4588,7 +5446,7 @@ local tbl =
 							conditionType = 6,
 							inRangeValue = 5,
 							uuid = "35693d39-44ae-89ea-930a-628c03451000",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4601,7 +5459,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "8dcb9602-0245-cfad-92fe-6ddf1351c6cc",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4651,7 +5509,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -4707,7 +5565,7 @@ local tbl =
 							conditionType = 9,
 							partyTargetType = "Event Entity",
 							uuid = "934a42cf-4e7d-968a-9000-15fb86cf8bb3",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -4722,7 +5580,7 @@ local tbl =
 								7533,
 							},
 							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5183,7 +6041,7 @@ local tbl =
 							eventCountdownTime = 5,
 							name = "Pull in 5sec",
 							uuid = "a280fbb7-b092-6e0d-81df-d6160f35a7c3",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -5195,7 +6053,7 @@ local tbl =
 							eventCountdownTime = 0.69999998807907,
 							name = "Pull in 0sec",
 							uuid = "fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -5207,7 +6065,7 @@ local tbl =
 							eventCountdownTime = -2,
 							name = "Pulled",
 							uuid = "536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5286,7 +6144,7 @@ local tbl =
 							buffID = 91,
 							category = "Self",
 							uuid = "84c28b09-89b7-d643-9096-a3c34c497a07",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5335,7 +6193,7 @@ local tbl =
 							buffID = 91,
 							category = "Self",
 							uuid = "945979c4-17ca-f2b9-8e7f-8a95313576ee",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5387,7 +6245,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "e53d65b5-1b29-f8e6-b0bd-af8b2d600135",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5437,7 +6295,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5480,7 +6338,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5536,7 +6394,7 @@ local tbl =
 							conditionType = 2,
 							hpValue = 70,
 							uuid = "d0bf82b2-c999-230b-bbb7-b7e2011b99e1",
-							version = 2,
+							version = 3,
 						},
 					},
 					
@@ -5549,7 +6407,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "b54d20c6-903b-e629-a939-2170d367d7ea",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5633,7 +6491,7 @@ local tbl =
 							partyTargetNumber = 7,
 							partyTargetSubType = "Number",
 							uuid = "6663c213-c83d-9213-9a5a-20d1c68f0b46",
-							version = 2,
+							version = 3,
 						},
 					},
 				},
@@ -5718,8 +6576,8 @@ local tbl =
 	{
 		"store\\anyone\\extremes\\doomtrain\\main",
 	},
-	mapID = 1308,
-	version = 1,
+	timelineName = "doomtrain-ex",
+	version = "1.0.1",
 }
 
 

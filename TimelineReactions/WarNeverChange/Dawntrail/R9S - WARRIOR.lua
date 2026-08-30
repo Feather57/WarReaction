@@ -6,6 +6,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "4f43f1cd-3274-3c11-bd56-2b8f7089e9bd",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -129,7 +140,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 					
 					{
@@ -193,6 +204,18 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 91,
+							category = "Self",
+							uuid = "d5c81fdb-3148-a506-875f-e7131832f820",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -201,18 +224,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 91,
-							category = "Self",
-							uuid = "d5c81fdb-3148-a506-875f-e7131832f820",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 					
 					{
@@ -271,6 +282,17 @@ local tbl =
 					{
 						data = 
 						{
+							comparator = 2,
+							conditionType = 4,
+							enmityValue = 99,
+							uuid = "684539e8-def6-9149-8720-15071f26a410",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -280,17 +302,6 @@ local tbl =
 						},
 						inheritedIndex = 2,
 					},
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 4,
-							enmityValue = 99,
-							uuid = "684539e8-def6-9149-8720-15071f26a410",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 10.172,
 				name = "[Tank][MT] Voke",
@@ -299,6 +310,277 @@ local tbl =
 				timerEndOffset = 7,
 				timerOffset = 7,
 				uuid = "3522f359-5610-d5ee-bf2e-1d5421c36402",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							uuid = "dd9eada3-6bd2-f942-ac67-5814d170b565",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_InnerRelease",
+							uuid = "6ef2d942-fbaf-ef7e-b6be-ebb2198b660e",
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_HoldGauge",
+							gVarValue = 2,
+							uuid = "4096b94e-685a-0cec-9cfd-b6161f07edd9",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Jumps",
+							uuid = "5aab3796-bc05-d18f-b063-199df62d28b8",
+							version = 2.1,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_Tomahawk",
+							uuid = "99fea3ba-0a1e-4b93-9027-54d7b0dff82d",
+							version = 2.1,
+						},
+						inheritedIndex = 5,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Burn",
+							gVarValue = 2,
+							uuid = "6836fa05-304a-2e90-a75f-0cde266af0e3",
+							version = 2.1,
+						},
+						inheritedIndex = 6,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							gVarValue = 2,
+							holdActionCharges = 3,
+							holdActionDuration = 7,
+							holdActionID = 7386,
+							uuid = "e33abe34-7497-4ca6-a6a6-13cd74193114",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWAR3_CD",
+							holdActionDuration = 7,
+							holdActionID = 7387,
+							uuid = "646ef752-42b9-32a6-9637-334f61dfb6f7",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							conditions = 
+							{
+								
+								{
+									"3718b32e-411a-92ae-8814-2fb5df9e5aad",
+									true,
+								},
+							},
+							gVar = "ACR_TensorACR_HotbarCancel",
+							holdActionDuration = 3,
+							holdActionID = 7389,
+							uuid = "df77fd15-8bee-509e-99dc-a3013a788b9c",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "gStartCombat = true\nself.used = true",
+							conditions = 
+							{
+								
+								{
+									"a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuMNK3_CD",
+							name = "Start Combat = true",
+							uuid = "50fd3860-02d3-3ecd-a8df-4dd2d1dbac10",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "b58fdd97-bf8d-b855-ae7a-b42fbdd1d40d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "586a57b8-8499-7e7a-8665-5be0d1aad0bd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "94e5a478-800f-fd04-a09d-6d1a8cd8164f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 1,
+							name = "Pull in 1sec",
+							uuid = "3718b32e-411a-92ae-8814-2fb5df9e5aad",
+							version = 3,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "a0063d36-57b8-7dc6-88f8-d3825fca1e0b",
+							version = 3,
+						},
+						inheritedIndex = 5,
+					},
+				},
+				eventType = 16,
+				mechanicTime = 10.172,
+				name = "[WAR] Prepull Helper",
+				timeRange = true,
+				timelineIndex = 1,
+				timerEndOffset = -10,
+				timerOffset = -17,
+				timerStartOffset = -17,
+				uuid = "d05768c7-02d7-14a5-a55a-e5ad128d615a",
 				version = 2,
 			},
 		},
@@ -810,7 +1092,7 @@ local tbl =
 							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
 							version = 3,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 30.516,
@@ -823,6 +1105,17 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "2c46ff99-3fac-80c5-ee64-aefb23f46e89",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
 		
 		{
@@ -909,6 +1202,34 @@ local tbl =
 				uuid = "74935bc3-9a06-773d-bde6-e324ece19f34",
 				version = 2,
 			},
+		},
+	},
+	[6] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "3e05c440-c14d-d1fc-a0d1-96ee5b80e8f0",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[8] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "dca740b2-3039-a9f6-e1c7-80e454ed1d22",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
 	},
 	[11] = 
@@ -1021,7 +1342,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 60.079,
@@ -1035,6 +1356,17 @@ local tbl =
 	},
 	[12] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "0af19165-367b-8a71-96a4-971f5a2d8955",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1095,7 +1427,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -1119,6 +1451,34 @@ local tbl =
 				uuid = "76f85dc8-702a-6bed-ac36-c88f15c8babe",
 				version = 2,
 			},
+		},
+	},
+	[14] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "a3a0053b-5ac4-7b8f-5fda-e6c112faae2b",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[15] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "2d39c678-fc3b-4cdc-883a-ea3e5cb7a728",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
 	},
 	[23] = 
@@ -1183,7 +1543,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -1209,8 +1569,33 @@ local tbl =
 			},
 		},
 	},
+	[32] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "b341c1b7-86ff-1663-d326-766d568cd1a7",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
 	[34] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "92416079-693e-c4ed-f0e6-c7e3bc52e129",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1271,7 +1656,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -1373,7 +1758,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 				},
 				mechanicTime = 138.422,
@@ -1551,6 +1936,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "486d6d20-74a0-a584-8d08-5ef604394910",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -1679,7 +2075,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -1707,6 +2103,17 @@ local tbl =
 	},
 	[39] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "84931a12-962e-540e-1e1c-86fc3f2194c2",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1746,7 +2153,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 171.844,
@@ -1842,6 +2249,17 @@ local tbl =
 	},
 	[41] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "f42cc74d-b372-71d1-ee81-fbd3aaba8b7d",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -1985,7 +2403,7 @@ local tbl =
 				uuid = "39464dbd-146e-feb3-b9bd-be29a193f6b3",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[50] = 
@@ -2018,7 +2436,7 @@ local tbl =
 				uuid = "d648b993-19ed-eeed-9359-4497b7437acd",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 1,
 		},
 	},
 	[51] = 
@@ -2385,6 +2803,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "d9995a46-8ce7-0e7a-6732-fb401c627836",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -2470,7 +2899,7 @@ local tbl =
 							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
 							version = 3,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 230.314,
@@ -2577,6 +3006,17 @@ local tbl =
 		{
 			data = 
 			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "039e9e6b-d6e9-c74f-a063-3bf15da360db",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+		
+		{
+			data = 
+			{
 				actions = 
 				{
 					
@@ -2633,7 +3073,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -2659,8 +3099,33 @@ local tbl =
 			},
 		},
 	},
+	[60] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "d583ffa8-3dc0-23dc-27a4-6fe255a67358",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
 	[66] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "9825e3a2-7fc4-bdee-bc6c-0be89cdddad2",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2770,7 +3235,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 270.845,
@@ -2855,7 +3320,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 				},
 				mechanicTime = 270.845,
@@ -2869,6 +3334,17 @@ local tbl =
 	},
 	[67] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "d2f9e1d5-7800-6171-87e2-ffeb006fa445",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -2944,6 +3420,17 @@ local tbl =
 	},
 	[68] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "9eb9af70-c0ba-a7e4-48ee-a8aa22d765e0",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3301,7 +3788,7 @@ local tbl =
 				uuid = "2f026ac0-7dd3-daab-8285-b08f16a8c14f",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 2,
 		},
 	},
 	[84] = 
@@ -3396,7 +3883,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -3495,7 +3982,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 				},
 				mechanicTime = 355.501,
@@ -3509,6 +3996,17 @@ local tbl =
 	},
 	[88] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "31023b96-1086-91d2-54a3-0b0cf83b3206",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3548,7 +4046,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 370.861,
@@ -3562,6 +4060,17 @@ local tbl =
 	},
 	[90] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "360bf277-c61f-2153-19f2-38adcd1b1967",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -3704,407 +4213,22 @@ local tbl =
 			},
 		},
 	},
-	[93] = 
+	[92] = 
 	{
 		
 		{
 			data = 
 			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25751,
-							conditions = 
-							{
-								
-								{
-									"9836ac14-c12b-1c33-b004-1e166ce552a3",
-									true,
-								},
-								
-								{
-									"91c166bf-097f-8100-aa1d-5b0379d50b7c",
-									true,
-								},
-								
-								{
-									"b29679da-6ec5-0182-b710-ea5451351706",
-									true,
-								},
-								
-								{
-									"9c9b5eb4-ac20-d064-a830-ea6dc834ae29",
-									true,
-								},
-								
-								{
-									"203ca301-634a-57ea-bcb2-016a6f5823c3",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							ignoreWeaveRules = true,
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 25751,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "9836ac14-c12b-1c33-b004-1e166ce552a3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventSpellID = 45980,
-							name = "Roles",
-							uuid = "91c166bf-097f-8100-aa1d-5b0379d50b7c",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 10,
-							inGroupTargetContentID = 14300,
-							inGroupTargetType = "ContentID",
-							partyTargetType = "Event Entity",
-							uuid = "b29679da-6ec5-0182-b710-ea5451351706",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 6,
-							buffIDList = 
-							{
-								4731,
-								4732,
-								4733,
-								4734,
-								4735,
-								4736,
-								4737,
-								4738,
-							},
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Cell",
-							uuid = "9c9b5eb4-ac20-d064-a830-ea6dc834ae29",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14300,
-							name = "TargetBoss",
-							uuid = "203ca301-634a-57ea-bcb2-016a6f5823c3",
-							version = 3,
-						},
-					},
-				},
-				eventType = 3,
-				mechanicTime = 400.751,
-				name = "[WAR] Whetting",
-				randomOffset = 45,
-				timeRange = true,
-				timelineIndex = 93,
-				timerEndOffset = 45,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "e94fdc2e-f0d9-075a-ab2b-36ec68f36bdd",
-				version = 2,
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "0d5d3ded-311e-1a69-790a-fa37db0ec41d",
 			},
-			inheritedIndex = 9,
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"23553438-7ace-4e90-8100-4def9e2db46e",
-									true,
-								},
-								
-								{
-									"f0cc55a8-cc99-7988-b372-23a664e29ef2",
-									true,
-								},
-								
-								{
-									"ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-									true,
-								},
-								
-								{
-									"d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-									true,
-								},
-								
-								{
-									"293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7531,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "f0cc55a8-cc99-7988-b372-23a664e29ef2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventSpellID = 45980,
-							name = "Roles",
-							uuid = "23553438-7ace-4e90-8100-4def9e2db46e",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 10,
-							inGroupTargetContentID = 14300,
-							inGroupTargetType = "ContentID",
-							partyTargetType = "Event Entity",
-							uuid = "ea04db66-2b2a-87a6-91e6-ef90d3fd56d1",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 6,
-							buffIDList = 
-							{
-								4731,
-								4732,
-								4733,
-								4734,
-								4735,
-								4736,
-								4737,
-								4738,
-							},
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Cell",
-							uuid = "d5353d3a-7e27-16ab-9dab-dee2de83aef3",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							conditionType = 2,
-							contentid = 14300,
-							name = "TargetBoss",
-							uuid = "293ad9b9-f750-8a58-8d69-f3424fb55b5f",
-							version = 3,
-						},
-					},
-				},
-				eventType = 3,
-				mechanicTime = 400.751,
-				name = "[Tank] Rampart",
-				randomOffset = 45,
-				timeRange = true,
-				timelineIndex = 93,
-				timerEndOffset = 45,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "0fad50ca-9ca1-5619-8a2a-f7c5ef60f47f",
-				version = 2,
-			},
-			inheritedIndex = 5,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-									true,
-								},
-								
-								{
-									"35568c2a-9903-a7ba-878e-645c846721e2",
-									true,
-								},
-								
-								{
-									"fd714f07-92ab-2b05-bcf3-70223d488d3d",
-									true,
-								},
-								
-								{
-									"f4858011-b657-fac7-8b3c-58c250f17312",
-									true,
-								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
-							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 40,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Event",
-							dequeueIfLuaFalse = true,
-							eventArgType = 2,
-							eventSpellID = 45980,
-							name = "Roles",
-							uuid = "35568c2a-9903-a7ba-878e-645c846721e2",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 6,
-							buffIDList = 
-							{
-								4731,
-								4732,
-								4733,
-								4734,
-								4735,
-								4736,
-								4737,
-								4738,
-							},
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Cell",
-							uuid = "f4858011-b657-fac7-8b3c-58c250f17312",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Party",
-							conditionType = 10,
-							inGroupTargetContentID = 14300,
-							inGroupTargetType = "ContentID",
-							partyTargetType = "Event Entity",
-							uuid = "fd714f07-92ab-2b05-bcf3-70223d488d3d",
-							version = 3,
-						},
-						inheritedIndex = 2,
-					},
-				},
-				eventType = 3,
-				mechanicTime = 400.751,
-				name = "[WAR] Thrill",
-				randomOffset = 45,
-				timeRange = true,
-				timelineIndex = 93,
-				timerEndOffset = 45,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "930cbfa8-1387-d9cb-9d00-3d31beccdf2f",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
+	},
+	[93] = 
+	{
 		
 		{
 			data = 
@@ -4174,11 +4298,8 @@ local tbl =
 				uuid = "1c9862c7-e42d-e93f-8eef-311880f2ea77",
 				version = 2,
 			},
-			inheritedIndex = 4,
+			inheritedIndex = 1,
 		},
-	},
-	[120] = 
-	{
 		
 		{
 			data = 
@@ -4194,33 +4315,28 @@ local tbl =
 							{
 								
 								{
-									"078e380b-f539-45ac-b372-5da6074e1a68",
+									"2f2db84c-5618-a29b-bdb1-492c91dab4d5",
 									true,
 								},
-							},
-							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
-							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
-							variableTogglesType = 3,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
 								
 								{
-									"a7d644ca-f12e-df17-ae21-8eb11024e246",
+									"35568c2a-9903-a7ba-878e-645c846721e2",
+									true,
+								},
+								
+								{
+									"fd714f07-92ab-2b05-bcf3-70223d488d3d",
+									true,
+								},
+								
+								{
+									"f4858011-b657-fac7-8b3c-58c250f17312",
 									true,
 								},
 							},
 							endIfUsed = true,
-							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
-							uuid = "097da4b2-37d3-e41f-aeea-9ba34593605b",
+							gVar = "ACR_RikuWAR3_Tankbar_ThrillOfBattle",
+							uuid = "ebdf0ffd-390b-62e7-b35b-7bccc6e515cc",
 							variableTogglesType = 3,
 							version = 2.1,
 						},
@@ -4232,11 +4348,25 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit OT",
-							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
+							actionCDValue = 1,
+							actionID = 40,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "2f2db84c-5618-a29b-bdb1-492c91dab4d5",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							conditionType = 10,
+							inGroupTargetContentID = 14300,
+							inGroupTargetType = "ContentID",
+							partyTargetType = "Event Entity",
+							uuid = "fd714f07-92ab-2b05-bcf3-70223d488d3d",
 							version = 3,
 						},
 						inheritedIndex = 2,
@@ -4245,24 +4375,775 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Lua",
-							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							category = "Event",
 							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "078e380b-f539-45ac-b372-5da6074e1a68",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "35568c2a-9903-a7ba-878e-645c846721e2",
 							version = 3,
 						},
-						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Cell",
+							uuid = "f4858011-b657-fac7-8b3c-58c250f17312",
+							version = 3,
+						},
 					},
 				},
-				mechanicTime = 458.891,
-				name = "[WAR] Whetting",
-				timelineIndex = 120,
-				timerOffset = -3,
-				timerStartOffset = -1,
-				uuid = "888bd0ff-ee33-aeaf-ab6d-270390a5be84",
+				eventType = 3,
+				mechanicTime = 400.751,
+				name = "[WAR] Thrill",
+				randomOffset = 45,
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 45,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "930cbfa8-1387-d9cb-9d00-3d31beccdf2f",
 				version = 2,
 			},
+			inheritedIndex = 2,
+		},
+	},
+	[99] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"5a976307-15f0-225b-bf1d-8baa67b029f6",
+									true,
+								},
+								
+								{
+									"2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "f128886d-3f9c-d873-b184-840ce732e9d1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "5a976307-15f0-225b-bf1d-8baa67b029f6",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 408.642,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 99,
+				timerStartOffset = -8,
+				uuid = "2224733f-e35b-9dd1-8e81-f7a64b4b3359",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"659a9811-a653-7c05-ae22-4daf820389f2",
+									true,
+								},
+								
+								{
+									"b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "58943ae5-203f-2351-8cec-638b59deaa88",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "659a9811-a653-7c05-ae22-4daf820389f2",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 408.642,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 99,
+				timerOffset = -15,
+				timerStartOffset = -19,
+				uuid = "18d9dad9-39a2-c2bb-a670-c6ace7cd67c0",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[103] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"5a976307-15f0-225b-bf1d-8baa67b029f6",
+									true,
+								},
+								
+								{
+									"2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "f128886d-3f9c-d873-b184-840ce732e9d1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "5a976307-15f0-225b-bf1d-8baa67b029f6",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 415.438,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 103,
+				timerStartOffset = -8,
+				uuid = "2647e7de-3251-f1b4-ab63-4c496f17926a",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"659a9811-a653-7c05-ae22-4daf820389f2",
+									true,
+								},
+								
+								{
+									"b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "58943ae5-203f-2351-8cec-638b59deaa88",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "659a9811-a653-7c05-ae22-4daf820389f2",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 415.438,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 103,
+				timerOffset = -15,
+				timerStartOffset = -19,
+				uuid = "57a661e1-77be-7bfc-af53-6511bcac5cb1",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[110] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"5a976307-15f0-225b-bf1d-8baa67b029f6",
+									true,
+								},
+								
+								{
+									"2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "f128886d-3f9c-d873-b184-840ce732e9d1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "5a976307-15f0-225b-bf1d-8baa67b029f6",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 430.281,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 110,
+				timerStartOffset = -8,
+				uuid = "99e88a40-b2a9-69dc-98ab-ccb8102733ca",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"659a9811-a653-7c05-ae22-4daf820389f2",
+									true,
+								},
+								
+								{
+									"b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "58943ae5-203f-2351-8cec-638b59deaa88",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "659a9811-a653-7c05-ae22-4daf820389f2",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 430.281,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 110,
+				timerOffset = -15,
+				timerStartOffset = -19,
+				uuid = "cdb3fa5c-92f5-fa00-b98e-df1fa6b78960",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+	},
+	[115] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25751,
+							conditions = 
+							{
+								
+								{
+									"5a976307-15f0-225b-bf1d-8baa67b029f6",
+									true,
+								},
+								
+								{
+									"2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_CD",
+							ignoreWeaveRules = true,
+							uuid = "f128886d-3f9c-d873-b184-840ce732e9d1",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "5a976307-15f0-225b-bf1d-8baa67b029f6",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "2e641d2e-6928-bc95-a1a3-93c09f3600ff",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 437.078,
+				name = "[WAR] Whetting",
+				timeRange = true,
+				timelineIndex = 115,
+				timerStartOffset = -8,
+				uuid = "dc149587-fc44-3be8-b510-d5a6cdd08c33",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 7531,
+							conditions = 
+							{
+								
+								{
+									"659a9811-a653-7c05-ae22-4daf820389f2",
+									true,
+								},
+								
+								{
+									"b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Rampart",
+							ignoreWeaveRules = true,
+							uuid = "58943ae5-203f-2351-8cec-638b59deaa88",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Event",
+							eventArgType = 2,
+							eventSpellID = 45980,
+							name = "Roles",
+							uuid = "659a9811-a653-7c05-ae22-4daf820389f2",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							buffCheckType = 6,
+							buffIDList = 
+							{
+								4731,
+								4732,
+								4733,
+								4734,
+								4735,
+								4736,
+								4737,
+								4738,
+							},
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "notInCell",
+							uuid = "b1683da2-ea1c-fbcc-928d-51fc4d1207e6",
+							version = 3,
+						},
+					},
+				},
+				eventType = 3,
+				mechanicTime = 437.078,
+				name = "[Tank] Rampart",
+				timeRange = true,
+				timelineIndex = 115,
+				timerOffset = -15,
+				timerStartOffset = -19,
+				uuid = "26f3fa89-32ac-f8ee-a97b-92790c80e760",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "926acf9b-e058-9a67-b85b-34f596f512cb",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[118] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "342ad204-7e1a-7188-d714-f9a61a5b2d34",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[120] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "ea9e9eb7-2f5c-0adb-d500-a20575cc4367",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
 		
 		{
@@ -4334,6 +5215,91 @@ local tbl =
 			},
 			inheritedIndex = 3,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"078e380b-f539-45ac-b372-5da6074e1a68",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_Bloodwhetting",
+							uuid = "3ff1375a-f9b3-75fa-ab8f-5e5bd265711b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"a7d644ca-f12e-df17-ae21-8eb11024e246",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWAR3_Tankbar_NascentFlashOT",
+							uuid = "097da4b2-37d3-e41f-aeea-9ba34593605b",
+							variableTogglesType = 3,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"ot\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit OT",
+							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "078e380b-f539-45ac-b372-5da6074e1a68",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+				},
+				mechanicTime = 458.891,
+				name = "[WAR] Whetting",
+				timelineIndex = 120,
+				timerOffset = -3,
+				timerStartOffset = -1,
+				uuid = "888bd0ff-ee33-aeaf-ab6d-270390a5be84",
+				version = 2,
+			},
+		},
 	},
 	[136] = 
 	{
@@ -4397,7 +5363,7 @@ local tbl =
 							uuid = "a7d644ca-f12e-df17-ae21-8eb11024e246",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 					
 					{
@@ -4421,6 +5387,20 @@ local tbl =
 				uuid = "06eae901-ef4a-a473-94ab-83250a8260b2",
 				version = 2,
 			},
+		},
+	},
+	[142] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "a538b183-6b4c-871f-7404-e161cd067a33",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
 		},
 	},
 	[143] = 
@@ -4464,7 +5444,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 497.062,
@@ -4549,7 +5529,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 				},
 				mechanicTime = 497.062,
@@ -4633,6 +5613,48 @@ local tbl =
 			},
 		},
 	},
+	[144] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "8504368d-3482-d6c1-15b3-8dbf11e6de7d",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[148] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "b33093b1-747a-705d-d176-29336f953261",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
+	[149] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "ca53622e-bac1-c40a-2732-f7b0b37c705e",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
 	[150] = 
 	{
 		
@@ -4676,7 +5698,7 @@ local tbl =
 							uuid = "76f93b3b-6dc4-37e6-a824-dbbf4850c45f",
 							version = 3,
 						},
-						inheritedIndex = 6,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 510.234,
@@ -4939,36 +5961,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							gVar = "ACR_RikuWAR3_Jumps",
-							gVarValue = 2,
-							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 534.578,
-				name = "[Multi] Disable Jumps",
-				timelineIndex = 154,
-				timerOffset = -2,
-				uuid = "2fea416f-3a96-bd0a-a6ea-652d4c2f5bfe",
-				version = 2,
-			},
-			inheritedIndex = 6,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							conditions = 
 							{
 								
@@ -5026,6 +6018,36 @@ local tbl =
 				uuid = "1c67efeb-d6fd-a99b-9118-8d8aae9dbf01",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_RikuWAR3_Jumps",
+							gVarValue = 2,
+							uuid = "5befa0a5-2cd3-21da-98e4-a806a63e5444",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 534.578,
+				name = "[Multi] Disable Jumps",
+				timelineIndex = 154,
+				timerOffset = -2,
+				uuid = "2fea416f-3a96-bd0a-a6ea-652d4c2f5bfe",
+				version = 2,
+			},
+			inheritedIndex = 5,
 		},
 	},
 	[155] = 
@@ -5196,7 +6218,7 @@ local tbl =
 				uuid = "80ab13ed-9457-918e-acd8-8a072f7b7124",
 				version = 2,
 			},
-			inheritedIndex = 5,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -5268,8 +6290,33 @@ local tbl =
 			inheritedIndex = 4,
 		},
 	},
+	[157] = 
+	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "52eafbdd-f202-1351-6445-f87be28cc1cd",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
+	},
 	[168] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "05046be3-48ab-cc2f-6d1b-1d8159e06a13",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -5344,7 +6391,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 3,
 					},
 				},
 				mechanicTime = 569.218,
@@ -5358,6 +6405,17 @@ local tbl =
 	},
 	[170] = 
 	{
+		
+		{
+			data = 
+			{
+				displayPath = "",
+				name = "store\\anyone\\savage6\\m9s\\main",
+				uuid = "cf82c0a2-ebe2-d6ae-2d6e-3f60316e3d92",
+			},
+			inheritanceRoot = "store\\anyone\\savage6\\m9s\\main",
+			objectType = "folder",
+		},
 		
 		{
 			data = 
@@ -5397,7 +6455,7 @@ local tbl =
 							uuid = "e088273e-65dc-999e-ae9d-1a2e2436a400",
 							version = 3,
 						},
-						inheritedIndex = 2,
+						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 583.531,
