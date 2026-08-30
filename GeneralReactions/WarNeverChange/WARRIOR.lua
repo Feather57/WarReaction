@@ -4,6 +4,17 @@ local tbl =
 	{
 		data = 
 		{
+			displayPath = "",
+			name = "store\\anyone\\Jobs\\Warrior",
+			uuid = "33fc3c51-0903-bb65-707e-708be39747a1",
+		},
+		inheritanceRoot = "store\\anyone\\Jobs\\Warrior",
+		objectType = "folder",
+	},
+	
+	{
+		data = 
+		{
 			actions = 
 			{
 				
@@ -98,7 +109,7 @@ local tbl =
 						uuid = "9c035ee6-9db3-ef45-88c5-8c26e0e88a46",
 						version = 2.1,
 					},
-					inheritedIndex = 1,
+					inheritedIndex = 2,
 				},
 				
 				{
@@ -127,7 +138,7 @@ local tbl =
 						uuid = "f868d087-bce8-8542-9409-63b4a14367f1",
 						version = 2.1,
 					},
-					inheritedIndex = 1,
+					inheritedIndex = 3,
 				},
 				
 				{
@@ -257,7 +268,7 @@ local tbl =
 						uuid = "b6f4aba9-2463-110b-87f2-10cb68cb534e",
 						version = 3,
 					},
-					inheritedIndex = 3,
+					inheritedIndex = 4,
 				},
 				
 				{
@@ -275,7 +286,7 @@ local tbl =
 						uuid = "43481199-9325-462f-80fb-097a549f5a22",
 						version = 3,
 					},
-					inheritedIndex = 3,
+					inheritedIndex = 5,
 				},
 				
 				{
@@ -350,87 +361,6 @@ local tbl =
 						{
 							
 							{
-								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-								true,
-							},
-							
-							{
-								"14005e09-6b4c-a4f2-af96-9c89b90905e9",
-								true,
-							},
-						},
-						gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
-						ignoreWeaveRules = true,
-						uuid = "921ed607-eca2-7837-981c-6d1e477ef11c",
-						variableTogglesType = 3,
-						version = 2.1,
-					},
-					inheritedIndex = 1,
-				},
-			},
-			conditions = 
-			{
-				
-				{
-					data = 
-					{
-						category = "Self",
-						conditionType = 8,
-						localMapIDList = 
-						{
-							1238,
-							949,
-							1296,
-							694,
-							1271,
-							1259,
-						},
-						localmapid = 694,
-						name = "TEA Map Lock",
-						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
-						version = 3,
-					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						comparator = 2,
-						eventCountdownTime = 9,
-						name = "Prepull Timer",
-						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
-						version = 3,
-					},
-					inheritedIndex = 2,
-				},
-			},
-			eventType = 16,
-			mechanicTime = 5,
-			name = "[WAR] TEA Prepull Shake It Off",
-			timelineIndex = 1,
-			timerOffset = -10,
-			uuid = "526fee17-5fa5-5d16-9511-a6cab0901a45",
-			version = 2,
-		},
-		inheritedIndex = 54,
-	},
-	
-	{
-		data = 
-		{
-			actions = 
-			{
-				
-				{
-					data = 
-					{
-						aType = "ACR",
-						actionID = 7388,
-						conditions = 
-						{
-							
-							{
 								"553424c5-33aa-d3ab-a8c7-46ed94d8801c",
 								true,
 							},
@@ -462,7 +392,7 @@ local tbl =
 						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 						version = 3,
 					},
-					inheritedIndex = 2,
+					inheritedIndex = 1,
 				},
 				
 				{
@@ -773,61 +703,28 @@ local tbl =
 				{
 					data = 
 					{
-						aType = "Lua",
-						actionLua = "gStartCombat = false\nself.used = true",
+						aType = "ACR",
+						actionID = 7388,
 						conditions = 
 						{
 							
 							{
-								"a280fbb7-b092-6e0d-81df-d6160f35a7c3",
+								"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 								true,
 							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Boss Unpulled",
-						uuid = "cfdd4c80-07c6-3383-9327-e97a123a31cb",
-						version = 2.1,
-					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "gStartCombat = true\n\nTensorCore.API.TensorACR.holdActionUntil(7387, Now() + 9000) -- upheaval\nTensorCore.API.TensorACR.holdActionUntil(7386, Now() + 9000) -- onslaught\n\nself.used = true",
-						conditions = 
-						{
 							
 							{
-								"fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
+								"14005e09-6b4c-a4f2-af96-9c89b90905e9",
 								true,
 							},
 						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Hold Ressource",
-						uuid = "ac151d56-3bbb-b193-b279-54b8b397bfd4",
+						gVar = "ACR_RikuWAR3_Tankbar_ShakeItOff",
+						ignoreWeaveRules = true,
+						uuid = "921ed607-eca2-7837-981c-6d1e477ef11c",
+						variableTogglesType = 3,
 						version = 2.1,
 					},
-				},
-				
-				{
-					data = 
-					{
-						aType = "Lua",
-						actionLua = "gStartCombat = false\nself.used = true",
-						conditions = 
-						{
-							
-							{
-								"536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-								true,
-							},
-						},
-						gVar = "ACR_RikuMNK3_CD",
-						name = "Boss Pulled",
-						uuid = "cc6b732f-9b32-2d26-9732-d0d38bce0833",
-						version = 2.1,
-					},
+					inheritedIndex = 1,
 				},
 			},
 			conditions = 
@@ -836,11 +733,20 @@ local tbl =
 				{
 					data = 
 					{
-						category = "Event",
-						comparator = 2,
-						eventCountdownTime = 5,
-						name = "Pull in 5sec",
-						uuid = "a280fbb7-b092-6e0d-81df-d6160f35a7c3",
+						category = "Self",
+						conditionType = 8,
+						localMapIDList = 
+						{
+							1238,
+							949,
+							1296,
+							694,
+							1271,
+							1259,
+						},
+						localmapid = 694,
+						name = "TEA Map Lock",
+						uuid = "14005e09-6b4c-a4f2-af96-9c89b90905e9",
 						version = 3,
 					},
 				},
@@ -850,33 +756,23 @@ local tbl =
 					{
 						category = "Event",
 						comparator = 2,
-						eventCountdownTime = 0.69999998807907,
-						name = "Pull in 0sec",
-						uuid = "fa2196d3-300e-a50f-bab1-5c81fa9d3f1a",
+						eventCountdownTime = 9,
+						name = "Prepull Timer",
+						uuid = "a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 						version = 3,
 					},
-				},
-				
-				{
-					data = 
-					{
-						category = "Event",
-						comparator = 2,
-						eventCountdownTime = -2,
-						name = "Pulled",
-						uuid = "536c83e0-9e54-69fd-b7c5-2323d24a7d0f",
-						version = 3,
-					},
+					inheritedIndex = 2,
 				},
 			},
 			eventType = 16,
-			mechanicTime = 3.4,
-			name = "[WAR] Hold Ressource",
+			mechanicTime = 5,
+			name = "[WAR] TEA Prepull Shake It Off",
 			timelineIndex = 1,
-			timeout = 30,
-			uuid = "98f6be97-3be6-3f44-ba80-dd19075db4c1",
+			timerOffset = -10,
+			uuid = "526fee17-5fa5-5d16-9511-a6cab0901a45",
 			version = 2,
 		},
+		inheritedIndex = 54,
 	}, 
 	inheritedProfiles = 
 	{
