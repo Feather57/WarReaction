@@ -13,7 +13,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif BRD_savedPrepullHelper == nil then\nBRD_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nBRD_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = False\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = False\n\n-- Allow TTS calls later in the profile\nBRD_enableCallTTS = true\nBRD_enableSpreadDraws = true\n\n-- Set Song Priority\nACR_TensorRequiem3_SongPriority = {\n    \"MB\",\n    \"AP\",\n    \"WM\"\n}\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif BRD_savedPrepullHelper == nil then\nBRD_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nBRD_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = False\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = False\n\n-- Allow TTS calls later in the profile\nBRD_enableCallTTS = true\nBRD_enableSpreadDraws = true\n\n-- Set Song Priority\nACR_TensorRequiem3_SongPriority = {\n    \"MB\",\n    \"AP\",\n    \"WM\"\n}\n\n--\nACR_TensorRequiem3_TargetHitRadiusAdjust = 0\nACR_TensorRequiem3_ActionRangeAdjust = 0\n\nself.used = true\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -466,6 +466,16 @@ local tbl =
 							version = 2.1,
 						},
 					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_LongSong",
+							uuid = "d505b4aa-478d-6930-8ade-e34432e628e0",
+							version = 2.1,
+						},
+					},
 				},
 				conditions = 
 				{
@@ -749,7 +759,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif BRD_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\nself.used = true",
+							actionLua = "gStartCombat = false\n\nTensorCore.API.TensorACR.setHardLockFace(false)\nTensorCore.API.TensorACR.toggleLockFace(false)\n\nTensorCore.mGetPlayer():ClearTarget()\n\nif BRD_savedPrepullHelper ~= nil then\n    AnyoneCore.Settings.PrepullHelper.enabled = BRD_savedPrepullHelper\n    BRD_savedPrepullHelper = nil\nend\n\nif BRD_savedDmuMitigation ~= nil then\n    AnyoneCore.Settings.Reactions.dmu.mitigation = BRD_savedDmuMitigation\n    BRD_savedDmuMitigation = nil\nend\n\n--\nACR_TensorRequiem3_TargetHitRadiusAdjust = 0\nACR_TensorRequiem3_ActionRangeAdjust = 0\n\nself.used = true",
 							gVar = "ACR_RikuSGE3_CD",
 							uuid = "ddc4f041-3ee7-db4d-a02e-a182845de277",
 							version = 2.1,
@@ -873,6 +883,7 @@ local tbl =
 						data = 
 						{
 							actionID = 114,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -909,7 +920,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 1,
 				timerEndOffset = -6.8999996185303,
-				timerStartOffset = -13.39999961853,
+				timerStartOffset = -14.39999961853,
 				uuid = "44581dc3-ca8b-48ba-ad7f-aba29b9ee5ee",
 				version = 2,
 			},
@@ -926,7 +937,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 39,
 							holdActionID = 3559,
 							uuid = "6565f44d-f88a-8540-9406-70eaf05654b0",
 							version = 2.1,
@@ -938,7 +949,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 39,
 							holdActionID = 116,
 							uuid = "55860921-0c03-4f47-bd07-ff26b4176266",
 							version = 2.1,
@@ -1058,18 +1069,10 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"bb515268-0df0-41f7-983a-28f2c55104a9",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_Hotbar_ArmysPaeon",
+							ignoreWeaveRules = true,
 							name = "Army's Paeon",
 							uuid = "603b459a-60d5-21da-b082-1dc870049f2f",
 							variableTogglesType = 2,
@@ -1079,27 +1082,12 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							comparator = 2,
-							conditionType = 6,
-							gaugeIndex = 3,
-							gaugeValue = 3000,
-							name = "Song <3s",
-							uuid = "bb515268-0df0-41f7-983a-28f2c55104a9",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 42.238586763472,
 				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 7,
-				timerEndOffset = 3,
-				timerStartOffset = -3,
+				timerEndOffset = 2,
 				uuid = "a8cf62f9-dae8-6f7e-9280-86bc67046a25",
 				version = 2,
 			},
@@ -1116,7 +1104,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 33,
 							holdActionID = 114,
 							uuid = "94754aeb-8e95-7961-8311-f1ee7f0d95cb",
 							version = 2.1,
@@ -1128,7 +1116,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 33,
 							holdActionID = 3559,
 							uuid = "42ef6b79-f540-4045-a8b3-c46e9684dcab",
 							version = 2.1,
@@ -1141,7 +1129,7 @@ local tbl =
 				mechanicTime = 42.238586763472,
 				name = "[BRD] Death Song Safety - AP",
 				timelineIndex = 7,
-				timerOffset = 3.0999999046326,
+				timerOffset = 2.0999999046326,
 				uuid = "7e2d648c-b775-b1af-868c-fbe68844a733",
 				version = 2,
 			},
@@ -1195,10 +1183,18 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"3816eabb-badc-63bb-a3af-6b3841220b91",
+									true,
+								},
+							},
 							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
+							ignoreWeaveRules = true,
 							name = "The Wanderer's Minuet",
 							uuid = "ae1a4e46-45e5-9664-9a60-04a7c70ebe0d",
 							variableTogglesType = 2,
@@ -1208,13 +1204,27 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 12200,
+							name = "Song <12s",
+							uuid = "3816eabb-badc-63bb-a3af-6b3841220b91",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 80.121849240769,
 				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 16,
-				timerEndOffset = -1,
-				timerStartOffset = -2.5,
+				timerEndOffset = 2,
+				timerStartOffset = -6.5,
 				uuid = "6fefbee4-9e1e-f3be-be4b-80b188d3e1bc",
 				version = 2,
 			},
@@ -1231,7 +1241,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 39,
 							holdActionID = 114,
 							uuid = "eecd301f-8a9d-2d96-9baf-40ad558b2e96",
 							version = 2.1,
@@ -1243,7 +1253,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 39,
 							holdActionID = 116,
 							uuid = "5c3997bd-6f5d-9416-bdf1-1f2d4c3ffd6e",
 							version = 2.1,
@@ -1549,81 +1559,10 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 118.07975730716,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
-				timelineIndex = 25,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "97eae126-a012-143d-802b-66bdd11086f2",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 118.07975730716,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 25,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "ba86ef32-839b-8119-ae1a-c441ff4c4d39",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
 							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
+							ignoreWeaveRules = true,
 							name = "Mage's Ballad",
 							uuid = "86db7ff1-9369-2361-a784-becfa9479957",
 							variableTogglesType = 2,
@@ -1638,64 +1577,11 @@ local tbl =
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 25,
-				timerEndOffset = 1,
+				timerEndOffset = 2,
 				timerStartOffset = -4,
 				uuid = "710fc645-9e2a-9da8-addb-bcbd72ebc24e",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 107,
-							conditions = 
-							{
-								
-								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 3862,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 118.07975730716,
-				name = "[BRD] Barrage",
-				timeRange = true,
-				timelineIndex = 25,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "889b3e74-2b5e-54b5-83bd-7fe749b57faf",
-				version = 2,
-			},
-			inheritedIndex = 4,
 		},
 		
 		{
@@ -1975,6 +1861,98 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+								
+								{
+									"25df18be-1553-d8cb-a9cc-e873ec5f5088",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 25,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "044ffb04-65ec-f7fd-a517-14b92bb4bfe3",
+				version = 2,
+			},
+		},
 	},
 	[33] = 
 	{
@@ -1988,14 +1966,13 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
 							actionID = 116,
 							atomicPriority = true,
 							conditions = 
 							{
 								
 								{
-									"e0b28041-38a5-851e-878f-1735a28fd10a",
+									"cb062b68-c3f1-a7ec-96f7-ec2dcd789c16",
 									true,
 								},
 							},
@@ -2017,9 +1994,9 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 3000,
-							name = "Song <3s",
-							uuid = "e0b28041-38a5-851e-878f-1735a28fd10a",
+							gaugeValue = 500,
+							name = "Song <0.5s",
+							uuid = "cb062b68-c3f1-a7ec-96f7-ec2dcd789c16",
 							version = 3,
 						},
 					},
@@ -2046,7 +2023,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 34,
+							holdActionDuration = 32,
 							holdActionID = 114,
 							uuid = "55d15bf2-f888-5a99-83ad-d8d59a3eb92e",
 							version = 2.1,
@@ -2058,7 +2035,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 34,
+							holdActionDuration = 32,
 							holdActionID = 3559,
 							uuid = "d74b10f8-c6cb-4987-98e9-88069797db68",
 							version = 2.1,
@@ -2073,6 +2050,60 @@ local tbl =
 				timelineIndex = 33,
 				timerOffset = 4.0999999046326,
 				uuid = "7a7b58c4-4392-a08b-a68b-45132dd83514",
+				version = 2,
+			},
+		},
+	},
+	[34] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"49c70a05-a9d9-dbaf-85c3-67754a04220e",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_IronJaws",
+							uuid = "5480ed19-3171-abd7-9a83-05d45899037e",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 5,
+							buffID = 1200,
+							comparator = 2,
+							uuid = "49c70a05-a9d9-dbaf-85c3-67754a04220e",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 167.71168967762,
+				name = "[BRD] Jaws",
+				timeRange = true,
+				timelineIndex = 34,
+				timerEndOffset = 4,
+				timerStartOffset = -2,
+				uuid = "00034257-0689-22cc-a2d0-eb7787ee972d",
 				version = 2,
 			},
 		},
@@ -2325,14 +2356,6 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							gVarValue = 2,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
@@ -2342,18 +2365,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "BARD",
-							name = "is BRD",
-							uuid = "52fc4076-a443-1e1f-bd07-bcdb01c65a4f",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 207.87965305988,
 				name = "[BRD] Downtime Song Off",
@@ -2567,60 +2578,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 107,
-							conditions = 
-							{
-								
-								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 3862,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 248.57716839869,
-				name = "[BRD] Barrage",
-				timeRange = true,
-				timelineIndex = 42,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "4f40cbcd-ab9a-bc23-bcbe-2b22888ba4ca",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							holdActionDuration = 41,
@@ -2712,6 +2669,93 @@ local tbl =
 				timelineIndex = 42,
 				timerOffset = -6,
 				uuid = "c87cb2a3-52e5-3c56-8f13-abc49f1472b2",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 42,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "5c2ccb0c-04ee-60ea-860f-3c9f6a4d5386",
 				version = 2,
 			},
 		},
@@ -2883,6 +2927,14 @@ local tbl =
 							aType = "ACR",
 							actionID = 3559,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"d5d6b63c-76db-e0ae-b65f-912be9e55c4d",
+									true,
+								},
+							},
 							gVar = "ACR_TensorRequiem3_Hotbar_TheWanderersMinuet",
 							name = "The Wanderer's Minuet",
 							uuid = "91077941-2b14-58c5-9b04-1bf9dbf2672b",
@@ -2893,13 +2945,27 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 500,
+							name = "Song <0.5s",
+							uuid = "d5d6b63c-76db-e0ae-b65f-912be9e55c4d",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 322.39247758191,
 				name = "[BRD] Song WM",
 				timeRange = true,
 				timelineIndex = 65,
-				timerEndOffset = 6.4000000953674,
-				timerStartOffset = 4.9000000953674,
+				timerEndOffset = 9.3999996185303,
+				timerStartOffset = 0.90000009536743,
 				uuid = "35e50481-eb5b-71a7-8479-fb5823964111",
 				version = 2,
 			},
@@ -2996,167 +3062,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 352.92100258191,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
-				timelineIndex = 67,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "1919fae0-83fb-c6df-8f64-9a399895dee7",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							acrOptionType = "Hold Action",
-							actionID = 25785,
-							gVar = "ACR_TensorRequiem3_CD",
-							holdActionDuration = 6,
-							holdActionID = 36977,
-							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 352.92100258191,
-				name = "[BRD] Force Radiant",
-				randomOffset = 5,
-				timeRange = true,
-				timelineIndex = 67,
-				timerEndOffset = 6.5,
-				timerOffset = 2,
-				timerStartOffset = 2,
-				uuid = "4c41501b-a984-0951-b6ff-cc81acfb3100",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 352.92100258191,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 67,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "0e40e102-0709-5667-b93b-587fd5981733",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 107,
-							conditions = 
-							{
-								
-								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 3862,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 352.92100258191,
-				name = "[BRD] Barrage",
-				timeRange = true,
-				timelineIndex = 67,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "29531d6b-6320-6f7e-9491-3b360944d47e",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							gVar = "ACR_TensorRequiem3_CD",
@@ -3210,6 +3115,93 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 67,
+				timerEndOffset = 14,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "5afe2b4e-4a3a-5baf-a6b4-cc66105240cc",
+				version = 2,
+			},
+		},
 	},
 	[68] = 
 	{
@@ -3241,41 +3233,6 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
-		},
-	},
-	[70] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 107,
-							atomicPriority = true,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							uuid = "e053ba19-81ec-8036-9e2f-46cf886a380e",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 367.80061742504,
-				name = "[BRD] Barrage",
-				randomOffset = 9,
-				timelineIndex = 70,
-				timerOffset = -9,
-				uuid = "15ff68c1-a4ab-46c9-95a7-9e864f903b3f",
-				version = 2,
-			},
 		},
 	},
 	[72] = 
@@ -3332,10 +3289,18 @@ local tbl =
 					{
 						data = 
 						{
-							aType = "ACR",
 							actionID = 114,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"f872cfcb-5b28-696f-9b4f-40ae50991399",
+									true,
+								},
+							},
 							gVar = "ACR_TensorRequiem3_Hotbar_MagesBallad",
+							ignoreWeaveRules = true,
 							name = "Mage's Ballad",
 							uuid = "78509cec-115f-9999-b289-c3948b044b00",
 							variableTogglesType = 2,
@@ -3345,13 +3310,27 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 500,
+							name = "Song <0.5s",
+							uuid = "f872cfcb-5b28-696f-9b4f-40ae50991399",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 377.30637120621,
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 73,
-				timerEndOffset = -2.2999999523163,
-				timerStartOffset = -3.7999999523163,
+				timerEndOffset = 2.7000000476837,
+				timerStartOffset = -5.8000001907349,
 				uuid = "6a39f18a-e43e-e36d-8c4c-c33a1a027a76",
 				version = 2,
 			},
@@ -3417,6 +3396,17 @@ local tbl =
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							ignoreWeaveRules = true,
 							uuid = "435420a2-3f72-4fed-abb0-de39656fc528",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_LongSong",
+							gVarValue = 2,
+							uuid = "3b02abc4-cdb8-3243-a9b0-73c39ca64928",
 							version = 2.1,
 						},
 					},
@@ -3666,8 +3656,8 @@ local tbl =
 				name = "[BRD] Song AP",
 				timeRange = true,
 				timelineIndex = 76,
-				timerEndOffset = -2.4000000953674,
-				timerStartOffset = -3.9000000953674,
+				timerEndOffset = -1.4000000953674,
+				timerStartOffset = -2.9000000953674,
 				uuid = "b407a6d3-9208-1cba-a24c-c84ca3f01861",
 				version = 2,
 			},
@@ -3776,6 +3766,36 @@ local tbl =
 				timelineIndex = 76,
 				timerOffset = -2.2999999523163,
 				uuid = "c01c906c-c657-dc79-9bf7-5dff1122f9f5",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "--\nACR_TensorRequiem3_TargetHitRadiusAdjust = 3\nACR_TensorRequiem3_ActionRangeAdjust = 3\n\nself.used = true\n",
+							gVar = "ACR_RikuSGE3_CD",
+							name = "Profil Option",
+							uuid = "547dfb21-79e2-877c-9cdd-d579c85962c6",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 424.39347120621,
+				name = "[All] Set Range",
+				timelineIndex = 76,
+				uuid = "08658c3d-e9b7-aefd-8818-7b2d4d9a9621",
 				version = 2,
 			},
 		},
@@ -4017,6 +4037,38 @@ local tbl =
 			},
 		},
 	},
+	[79] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							gVarValue = 2,
+							uuid = "d8f49a8b-2db3-f3a7-9077-e23e4afd6b0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 450.00390950196,
+				name = "[BRD] Radiant Off",
+				timelineIndex = 79,
+				timerOffset = -2,
+				uuid = "4f0fe750-4397-5e4c-af75-7fe8a34e6667",
+				version = 2,
+			},
+		},
+	},
 	[80] = 
 	{
 		
@@ -4200,6 +4252,127 @@ local tbl =
 				timerEndOffset = 1.6000000238419,
 				timerStartOffset = 0.10000000149012,
 				uuid = "f20f43cc-af8a-7b9e-b06e-d3b778b4d983",
+				version = 2,
+			},
+		},
+	},
+	[83] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							uuid = "d8f49a8b-2db3-f3a7-9077-e23e4afd6b0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 478.4207739929,
+				name = "[BRD] Radiant On",
+				timelineIndex = 83,
+				timerOffset = -7,
+				uuid = "6ca9562c-eb9e-74b0-862a-04c63780856f",
+				version = 2,
+			},
+		},
+	},
+	[84] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 481.45392399289,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 84,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "73f5de36-1492-f2fa-8d4d-b091406d16ba",
 				version = 2,
 			},
 		},
@@ -4657,7 +4830,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 34,
+							holdActionDuration = 32,
 							holdActionID = 114,
 							uuid = "58425302-31b9-45d3-b4c7-2d4a6c1d531b",
 							version = 2.1,
@@ -4669,7 +4842,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 34,
+							holdActionDuration = 32,
 							holdActionID = 3559,
 							uuid = "f6ccc6f8-ec86-c5c1-990e-5009c09a6c41",
 							version = 2.1,
@@ -4945,6 +5118,68 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							gVarValue = 2,
+							uuid = "d8f49a8b-2db3-f3a7-9077-e23e4afd6b0c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 578.27023501273,
+				name = "[BRD] Radiant Off",
+				timelineIndex = 113,
+				timerOffset = -2,
+				uuid = "b509ee37-a94a-7ec4-b1b3-e18ca1911b4d",
+				version = 2,
+			},
+		},
+	},
+	[114] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Lua",
+							actionLua = "--\nACR_TensorRequiem3_TargetHitRadiusAdjust = 0\nACR_TensorRequiem3_ActionRangeAdjust = 0\n\nself.used = true\n",
+							gVar = "ACR_RikuSGE3_CD",
+							name = "Profil Option",
+							uuid = "547dfb21-79e2-877c-9cdd-d579c85962c6",
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 585.5151416903,
+				name = "[All] Set Range",
+				timelineIndex = 114,
+				uuid = "837edba9-61fa-05a1-b053-4ad14f489326",
+				version = 2,
+			},
+		},
 	},
 	[116] = 
 	{
@@ -4958,30 +5193,23 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
+							aType = "ACR",
+							gVar = "ACR_TensorRequiem3_RadiantFinale",
+							uuid = "d8f49a8b-2db3-f3a7-9077-e23e4afd6b0c",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
 				},
 				conditions = 
 				{
 				},
 				mechanicTime = 598.7363892632,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
+				name = "[BRD] Radiant On",
 				timelineIndex = 116,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "2d807628-ddaa-7653-94dd-da5817154d6f",
+				timerOffset = -4,
+				uuid = "dabb9ee4-0877-fbf1-8025-cb685a9e8adf",
 				version = 2,
 			},
-			inheritedIndex = 1,
 		},
 		
 		{
@@ -4994,37 +5222,25 @@ local tbl =
 						data = 
 						{
 							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							atomicPriority = true,
 							ignoreWeaveRules = true,
 							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
 							version = 2.1,
 						},
-						inheritedIndex = 1,
 					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 598.7363892632,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 116,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "edcab2eb-2d64-7e18-b798-6554ffb7286a",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
 					
 					{
 						data = 
@@ -5034,14 +5250,15 @@ local tbl =
 							{
 								
 								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
 									true,
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
+						inheritedIndex = 3,
 					},
 				},
 				conditions = 
@@ -5055,22 +5272,31 @@ local tbl =
 							category = "Self",
 							dequeueIfLuaFalse = true,
 							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
 							version = 3,
 						},
 					},
 				},
 				mechanicTime = 598.7363892632,
-				name = "[BRD] Barrage",
+				name = "[BRD] 2m Burst",
 				timeRange = true,
 				timelineIndex = 116,
 				timerEndOffset = 10,
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
-				uuid = "385b85e4-1238-d260-83e4-fb417e2c0176",
+				uuid = "f8f1d0da-335a-79ae-83a6-3b52e403e670",
 				version = 2,
 			},
-			inheritedIndex = 3,
 		},
 	},
 	[118] = 
@@ -5727,77 +5953,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 801.88345429349,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -2,
-				uuid = "bbde01e0-b858-748f-9ed4-3e77b734f4e9",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 801.88345429349,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 150,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -2,
-				uuid = "32010c4d-b9a3-f54d-842b-7e3d37e4ae20",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							gVar = "ACR_TensorRequiem3_SmartJaws",
 							uuid = "687fe058-a9dd-29ba-b6a7-3c07ac07b9a3",
@@ -5933,7 +6088,7 @@ local tbl =
 				name = "[BRD] Toggles On",
 				timeRange = true,
 				timelineIndex = 150,
-				timerStartOffset = -2,
+				timerStartOffset = -4,
 				uuid = "ddc4aeb1-bad9-8689-af25-56625852bd73",
 				version = 2,
 			},
@@ -5983,6 +6138,93 @@ local tbl =
 				randomOffset = 12,
 				timelineIndex = 150,
 				uuid = "afa5d379-628f-cbd6-9721-c1274ae0c72e",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -5,
+				uuid = "80dc6274-49d2-aa00-8419-62dad2371c44",
 				version = 2,
 			},
 		},
@@ -6374,186 +6616,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 921.94101651754,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
-				timelineIndex = 168,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "b8ed74c9-7c74-ca2d-ab6f-486df3292d4d",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 921.94101651754,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 168,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "515f8237-4929-19ad-acee-6edad42c1124",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 107,
-							conditions = 
-							{
-								
-								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 3862,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 921.94101651754,
-				name = "[BRD] Barrage",
-				timeRange = true,
-				timelineIndex = 168,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "607d837d-1e74-6d19-a3cd-ee130f5c9169",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							actionID = 25785,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"fc42a2e9-7125-2843-bae7-16c12e08a4b1",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							holdActionDuration = 28,
-							holdActionID = 25785,
-							ignoreWeaveRules = true,
-							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffID = 141,
-							name = "Check Battle Voice",
-							uuid = "fc42a2e9-7125-2843-bae7-16c12e08a4b1",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 921.94101651754,
-				name = "[BRD] Hold Radiant",
-				timelineIndex = 168,
-				timerEndOffset = 5,
-				timerOffset = -30,
-				timerStartOffset = -5.5,
-				uuid = "e81382f2-31c1-dff1-9b8e-a10effc5bcd9",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							actionID = 3562,
 							conditions = 
 							{
@@ -6645,6 +6707,149 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 921.94101651754,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 168,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "00ba47f2-9563-07e1-b9f1-a66518d5e1ec",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"fc42a2e9-7125-2843-bae7-16c12e08a4b1",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							holdActionDuration = 28,
+							holdActionID = 25785,
+							ignoreWeaveRules = true,
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "Check Battle Voice",
+							uuid = "fc42a2e9-7125-2843-bae7-16c12e08a4b1",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 921.94101651754,
+				name = "[BRD] Hold Radiant",
+				timelineIndex = 168,
+				timerEndOffset = 5,
+				timerOffset = -30,
+				timerStartOffset = -5.5,
+				uuid = "e81382f2-31c1-dff1-9b8e-a10effc5bcd9",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
 	},
 	[170] = 
 	{
@@ -6703,10 +6908,63 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 170,
 				timerEndOffset = 2,
-				timerStartOffset = -7,
+				timerStartOffset = -8,
 				uuid = "5fd1994f-0bb1-53da-9aaa-682e8d623beb",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 36977,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"8779ed15-c429-c478-8548-93705e86ed5b",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_DowntimeSongs",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "576cc121-43cd-4899-a4b1-299549fdaf9c",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							comparator = 2,
+							conditionType = 3,
+							hpValue = 6,
+							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 934.65552902023,
+				name = "[BRD] Radiant Encore",
+				timeRange = true,
+				timelineIndex = 170,
+				timerEndOffset = 2,
+				timerStartOffset = -10,
+				uuid = "796f6a9a-fcbd-5df9-a039-b3e91c54144f",
+				version = 2,
+			},
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -6736,11 +6994,11 @@ local tbl =
 				name = "[BRD] Blast Arrow",
 				randomOffset = 2,
 				timelineIndex = 170,
-				timerOffset = -7,
+				timerOffset = -6,
 				uuid = "d529cc35-ea2a-16af-913c-1d2dc394d75b",
 				version = 2,
 			},
-			inheritedIndex = 3,
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -6842,8 +7100,8 @@ local tbl =
 				name = "[BRD] Song MB",
 				timeRange = true,
 				timelineIndex = 171,
-				timerEndOffset = -5,
-				timerStartOffset = -20,
+				timerEndOffset = -10,
+				timerStartOffset = -15,
 				uuid = "87919c74-aecb-3c35-b1fe-1b27a66870bf",
 				version = 2,
 			},
@@ -6885,7 +7143,7 @@ local tbl =
 				mechanicTime = 965.64810213372,
 				name = "[BRD] Death Song Safety - MB",
 				timelineIndex = 171,
-				timerOffset = -4.9000000953674,
+				timerOffset = -9.8999996185303,
 				uuid = "b9a278e7-3f76-ae12-8389-c0239c5bb0d8",
 				version = 2,
 			},
@@ -7161,7 +7419,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 33,
 							holdActionID = 114,
 							uuid = "3cd894ac-8763-9da0-9591-bf5032687015",
 							version = 2.1,
@@ -7173,7 +7431,7 @@ local tbl =
 						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
-							holdActionDuration = 37,
+							holdActionDuration = 33,
 							holdActionID = 3559,
 							uuid = "41afe404-a151-d11f-b7ed-bdf8d03dfcaf",
 							version = 2.1,
@@ -7478,186 +7736,6 @@ local tbl =
 					{
 						data = 
 						{
-							actionID = 118,
-							gVar = "ACR_TensorRequiem3_CD",
-							ignoreWeaveRules = true,
-							name = "Battle Voice",
-							uuid = "4388686d-e9d8-7688-a630-eb57b90e2863",
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1041.2310024427,
-				name = "[BRD] Battle Voice",
-				timeRange = true,
-				timelineIndex = 198,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "0daf1a95-5189-bb05-b96d-5459dc4152bb",
-				version = 2,
-			},
-			inheritedIndex = 1,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 101,
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							ignoreWeaveRules = true,
-							name = "Raging Strikes",
-							uuid = "b653811f-16cc-4de1-87f6-443d6ba6ba91",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 1041.2310024427,
-				name = "[BRD] Raging Strikes",
-				timeRange = true,
-				timelineIndex = 198,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "65389748-e409-7613-aa5d-f10c44d2419b",
-				version = 2,
-			},
-			inheritedIndex = 2,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 107,
-							conditions = 
-							{
-								
-								{
-									"feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_CD",
-							uuid = "8732842c-4575-a2ed-b87a-ec8c87cdde52",
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 3862,
-							category = "Self",
-							dequeueIfLuaFalse = true,
-							name = "Missing Resonant Arrow Buff",
-							uuid = "feab1d69-b9de-b45e-bd1b-a3ed2ef0ce9f",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1041.2310024427,
-				name = "[BRD] Barrage",
-				timeRange = true,
-				timelineIndex = 198,
-				timerEndOffset = 10,
-				timerOffset = 1.1512427330017,
-				timerStartOffset = -10,
-				uuid = "7f23f767-57fa-d4eb-98c0-6a8998de8e32",
-				version = 2,
-			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							acrOptionType = "Hold Action",
-							actionID = 25785,
-							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"fc42a2e9-7125-2843-bae7-16c12e08a4b1",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
-							holdActionDuration = 28,
-							holdActionID = 25785,
-							ignoreWeaveRules = true,
-							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							buffID = 141,
-							name = "Check Battle Voice",
-							uuid = "fc42a2e9-7125-2843-bae7-16c12e08a4b1",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 1041.2310024427,
-				name = "[BRD] Hold Radiant",
-				timelineIndex = 198,
-				timerEndOffset = 5,
-				timerOffset = -30,
-				timerStartOffset = -5.5,
-				uuid = "bc123761-615a-e1d8-b086-d9090a278e79",
-				version = 2,
-			},
-			inheritedIndex = 4,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
 							aType = "ACR",
 							acrOptionType = "Hold Action",
 							actionID = 16496,
@@ -7779,6 +7857,149 @@ local tbl =
 				timerOffset = -2,
 				timerStartOffset = -4.5,
 				uuid = "45bf722d-5f59-9436-aac5-5ce28834dff9",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"fc42a2e9-7125-2843-bae7-16c12e08a4b1",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_LockFace",
+							holdActionDuration = 28,
+							holdActionID = 25785,
+							ignoreWeaveRules = true,
+							uuid = "b928fc22-9064-fc29-9158-064248201bdd",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "Check Battle Voice",
+							uuid = "fc42a2e9-7125-2843-bae7-16c12e08a4b1",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1041.2310024427,
+				name = "[BRD] Hold Radiant",
+				timelineIndex = 198,
+				timerEndOffset = 5,
+				timerOffset = -30,
+				timerStartOffset = -5.5,
+				uuid = "bc123761-615a-e1d8-b086-d9090a278e79",
+				version = 2,
+			},
+			inheritedIndex = 4,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1041.2310024427,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 198,
+				timerEndOffset = 10,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = -10,
+				uuid = "9a75cca7-70b1-124a-a10d-a73a2ad2c86b",
 				version = 2,
 			},
 		},
@@ -8278,7 +8499,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 221,
 				timerEndOffset = 3.7000000476837,
-				timerStartOffset = 2.2000000476837,
+				timerStartOffset = -2.7999999523163,
 				uuid = "83205be6-ee0b-7b3c-b2e6-e3da585458a1",
 				version = 2,
 			},
@@ -8471,7 +8692,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 223,
 				timerEndOffset = -1,
-				timerStartOffset = -14.39999961853,
+				timerStartOffset = -22.39999961853,
 				uuid = "903a1031-0688-b5ed-bd70-7bc84bed622d",
 				version = 2,
 			},
@@ -8674,6 +8895,93 @@ local tbl =
 				timelineIndex = 226,
 				timerOffset = -20,
 				uuid = "b74d36e3-9bf4-3ec7-87fa-f4e80f1099d9",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 101,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Raging Strikes",
+							uuid = "92c47892-b6c2-c849-a5f6-76b834d249cd",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 118,
+							atomicPriority = true,
+							ignoreWeaveRules = true,
+							name = "Battle Voice",
+							uuid = "313c3e62-8bc5-052e-bd65-104ac58d7c92",
+							version = 2.1,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 107,
+							conditions = 
+							{
+								
+								{
+									"a0fa7849-9541-11ed-9543-237ae23c64e9",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
+							version = 2.1,
+						},
+						inheritedIndex = 3,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 2,
+							buffID = 3862,
+							category = "Self",
+							dequeueIfLuaFalse = true,
+							name = "Missing Resonant Arrow Buff",
+							uuid = "a0fa7849-9541-11ed-9543-237ae23c64e9",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "25df18be-1553-d8cb-a9cc-e873ec5f5088",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] 2m Burst",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 17,
+				timerOffset = 1.1512427330017,
+				timerStartOffset = 10,
+				uuid = "9ea40a67-b2dc-e2b9-be06-a77c09f3c4ce",
 				version = 2,
 			},
 		},
