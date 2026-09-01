@@ -115,6 +115,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "cee663b3-24f5-1cd7-85bd-0041b34746d3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -123,18 +135,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "cee663b3-24f5-1cd7-85bd-0041b34746d3",
-							version = 3,
-						},
 					},
 					
 					{
@@ -297,6 +297,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "142762d0-3a82-f8a8-a714-3f40d3bd4ded",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -305,18 +317,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "142762d0-3a82-f8a8-a714-3f40d3bd4ded",
-							version = 3,
-						},
 					},
 					
 					{
@@ -496,6 +496,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -504,18 +516,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -726,6 +726,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "0b679557-4edb-5e17-a353-d0aa211b6810",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -734,18 +746,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "0b679557-4edb-5e17-a353-d0aa211b6810",
-							version = 3,
-						},
 					},
 					
 					{
@@ -966,6 +966,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -974,18 +986,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -1165,6 +1165,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -1173,18 +1185,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -1416,6 +1416,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "425b209a-00a2-f991-9846-ac7902666a0a",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							conditionType = 13,
@@ -1474,17 +1485,6 @@ local tbl =
 							uuid = "7e5f0214-3c9d-c056-b4f2-b8a48d7ad624",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "425b209a-00a2-f991-9846-ac7902666a0a",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 29.049328125,
@@ -1601,6 +1601,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "4754730a-3e6e-a1b9-a6e6-1f425bf168b5",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -1609,18 +1621,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "4754730a-3e6e-a1b9-a6e6-1f425bf168b5",
-							version = 3,
-						},
 					},
 					
 					{
@@ -1813,6 +1813,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "27a4a7f5-9e04-783b-9690-1f1053369228",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -1821,18 +1833,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "27a4a7f5-9e04-783b-9690-1f1053369228",
-							version = 3,
-						},
 					},
 					
 					{
@@ -2017,6 +2017,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -2025,18 +2037,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -2268,6 +2268,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "e9caee9f-8555-6863-91d8-18cc1f5eae71",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -2324,17 +2335,6 @@ local tbl =
 							uuid = "6f6149fd-e3c8-b33c-8d13-2e252d0fd6c1",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "e9caee9f-8555-6863-91d8-18cc1f5eae71",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 62.553324919213,
@@ -2521,6 +2521,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "1b7cb238-6be7-9f63-bb26-8b744fbdcaa0",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -2529,18 +2541,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "1b7cb238-6be7-9f63-bb26-8b744fbdcaa0",
-							version = 3,
-						},
 					},
 					
 					{
@@ -2702,6 +2702,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "f7e17c3e-121f-7cfc-b2ca-b9068870c01f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -2710,18 +2722,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "f7e17c3e-121f-7cfc-b2ca-b9068870c01f",
-							version = 3,
-						},
 					},
 					
 					{
@@ -3095,6 +3095,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "86c45986-27ee-27a7-a3fd-e337f1906eea",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -3151,17 +3162,6 @@ local tbl =
 							uuid = "512082ec-00b7-10c4-a0fa-b13f99a8d03d",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "86c45986-27ee-27a7-a3fd-e337f1906eea",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 105.78798877162,
@@ -3288,6 +3288,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "86816e0d-c794-1781-933e-7c5f334fd700",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -3296,18 +3308,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "86816e0d-c794-1781-933e-7c5f334fd700",
-							version = 3,
-						},
 					},
 					
 					{
@@ -3487,6 +3487,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "7f01e41f-fe23-e437-814f-d914bfad6212",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -3543,17 +3554,6 @@ local tbl =
 							uuid = "9bdeb9ee-b0be-87e9-963f-ea76fe33de24",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "7f01e41f-fe23-e437-814f-d914bfad6212",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 118.07975730716,
@@ -3680,6 +3680,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "d79e36c0-1357-fda6-ab6b-84ed5c5cc4ca",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -3688,18 +3700,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "d79e36c0-1357-fda6-ab6b-84ed5c5cc4ca",
-							version = 3,
-						},
 					},
 					
 					{
@@ -4297,6 +4297,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -4305,18 +4317,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -4511,6 +4511,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "142762d0-3a82-f8a8-a714-3f40d3bd4ded",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -4519,18 +4531,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "142762d0-3a82-f8a8-a714-3f40d3bd4ded",
-							version = 3,
-						},
 					},
 					
 					{
@@ -4713,6 +4713,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "e71a5e4c-3414-5629-ad61-fb82b9404572",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -4769,17 +4780,6 @@ local tbl =
 							uuid = "2870e26c-ab10-bc83-baa6-cc40f4ffadbd",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "e71a5e4c-3414-5629-ad61-fb82b9404572",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 220.14545421679,
@@ -4906,6 +4906,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "e733de85-14b8-faf9-9be7-a44706ef1f18",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -4914,18 +4926,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "e733de85-14b8-faf9-9be7-a44706ef1f18",
-							version = 3,
-						},
 					},
 					
 					{
@@ -5105,6 +5105,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "be239bb3-2d76-f735-b227-086a2059a91e",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (ACR_RikuWAR3_TankStance == \"mt\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -5161,17 +5172,6 @@ local tbl =
 							uuid = "f7e223ef-fe62-f555-ae31-c6a69e4491d1",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "be239bb3-2d76-f735-b227-086a2059a91e",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 235.34477128997,
@@ -5295,6 +5295,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "aecae12d-5f44-bcf6-bea8-7c62abfddb79",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -5303,18 +5315,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "aecae12d-5f44-bcf6-bea8-7c62abfddb79",
-							version = 3,
-						},
 					},
 					
 					{
@@ -5497,6 +5497,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "edace8e6-c694-f04d-aa01-7845a8810dcb",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -5553,17 +5564,6 @@ local tbl =
 							uuid = "f5b5817c-89ff-7371-8e92-e998e053f470",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "edace8e6-c694-f04d-aa01-7845a8810dcb",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 280.23863811015,
@@ -5710,6 +5710,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "3e7a7924-e1e2-8096-a7dc-80b9137f8561",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -5766,17 +5777,6 @@ local tbl =
 							uuid = "8bc13032-0bf1-4eea-9297-4e1bb080d551",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "3e7a7924-e1e2-8096-a7dc-80b9137f8561",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 301.30844266449,
@@ -5923,6 +5923,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -5931,18 +5943,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -6154,6 +6154,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "9d87aefd-e169-48a0-8025-c63260daa652",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -6162,18 +6174,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "9d87aefd-e169-48a0-8025-c63260daa652",
-							version = 3,
-						},
 					},
 					
 					{
@@ -6333,6 +6333,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "WARRIOR",
+							name = "is WAR",
+							uuid = "d19f54fb-ae48-14c9-bc13-f13bbec0051f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -6341,18 +6353,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "WARRIOR",
-							name = "is WAR",
-							uuid = "d19f54fb-ae48-14c9-bc13-f13bbec0051f",
-							version = 3,
-						},
 					},
 					
 					{
@@ -6533,6 +6533,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "04906fcb-9400-d008-a208-0112dd37f329",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -6589,17 +6600,6 @@ local tbl =
 							uuid = "2eaaa9d2-9551-c13c-b6d1-743e960078d0",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "04906fcb-9400-d008-a208-0112dd37f329",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 341.70452758191,
@@ -6746,6 +6746,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "032953bc-b5b5-143b-b8c9-20d7760352e8",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -6803,17 +6814,6 @@ local tbl =
 							version = 3,
 						},
 					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "032953bc-b5b5-143b-b8c9-20d7760352e8",
-							version = 3,
-						},
-						inheritedIndex = 1,
-					},
 				},
 				mechanicTime = 427.45958272918,
 				name = "[Tank][MT] Reprisal",
@@ -6858,6 +6858,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "26ab5f8e-909b-d34d-b179-1e146c74bf1b",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -6866,18 +6878,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "26ab5f8e-909b-d34d-b179-1e146c74bf1b",
-							version = 3,
-						},
 					},
 					
 					{
@@ -7189,6 +7189,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "04906fcb-9400-d008-a208-0112dd37f329",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -7245,17 +7256,6 @@ local tbl =
 							uuid = "2eaaa9d2-9551-c13c-b6d1-743e960078d0",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "04906fcb-9400-d008-a208-0112dd37f329",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 470.18264616806,
@@ -7379,6 +7379,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "bb0eb170-4611-74e5-a8aa-1f8bcdb4b315",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -7387,18 +7399,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "bb0eb170-4611-74e5-a8aa-1f8bcdb4b315",
-							version = 3,
-						},
 					},
 					
 					{
@@ -7589,6 +7589,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "004d76fe-b7d8-bf81-87dd-7c5ebbadae0c",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -7597,18 +7609,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "004d76fe-b7d8-bf81-87dd-7c5ebbadae0c",
-							version = 3,
-						},
 					},
 					
 					{
@@ -7791,6 +7791,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "35e697d5-94b6-31c4-8326-0e84abe90e32",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -7847,17 +7858,6 @@ local tbl =
 							uuid = "896a792d-231b-af76-9105-856a9604b9af",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "35e697d5-94b6-31c4-8326-0e84abe90e32",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 491.23479899289,
@@ -8396,6 +8396,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "26ab5f8e-909b-d34d-b179-1e146c74bf1b",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -8404,18 +8416,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "26ab5f8e-909b-d34d-b179-1e146c74bf1b",
-							version = 3,
-						},
 					},
 					
 					{
@@ -8600,6 +8600,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "37066337-3594-ea0c-8816-6ed3cd584680",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -8656,17 +8667,6 @@ local tbl =
 							uuid = "7fa5bcce-b45a-b36f-b17f-0122fd6abd97",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "37066337-3594-ea0c-8816-6ed3cd584680",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 554.19098210262,
@@ -8813,6 +8813,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "86a944f3-53ab-c659-a137-cec5ce90f522",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -8869,17 +8880,6 @@ local tbl =
 							uuid = "0f6e732c-85ba-3220-95bf-367f4cc52436",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "86a944f3-53ab-c659-a137-cec5ce90f522",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 575.36903594877,
@@ -9003,6 +9003,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "9309fe1e-737e-eaf5-bd03-3f70cb6310b3",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -9011,18 +9023,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "9309fe1e-737e-eaf5-bd03-3f70cb6310b3",
-							version = 3,
-						},
 					},
 					
 					{
@@ -9376,6 +9376,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "a708153d-d7a1-44a2-a5b2-44458a0e56da",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -9384,18 +9396,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "a708153d-d7a1-44a2-a5b2-44458a0e56da",
-							version = 3,
-						},
 					},
 					
 					{
@@ -9558,6 +9558,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "30d3383d-6912-111b-bb5b-1e16b02a544f",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -9566,18 +9578,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "30d3383d-6912-111b-bb5b-1e16b02a544f",
-							version = 3,
-						},
 					},
 					
 					{
@@ -9760,6 +9760,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "9ef5d3a6-aab1-985a-b724-6ee334b1e488",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -9816,17 +9827,6 @@ local tbl =
 							uuid = "a6f59050-5d3f-7529-809f-795cb8142ebe",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "9ef5d3a6-aab1-985a-b724-6ee334b1e488",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 703.58654115995,
@@ -9950,6 +9950,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "72e1137b-f42a-fb7b-bef1-2d4b34550712",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -9958,18 +9970,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "72e1137b-f42a-fb7b-bef1-2d4b34550712",
-							version = 3,
-						},
 					},
 					
 					{
@@ -10149,6 +10149,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "230f1a32-52c4-9dc0-b509-4abcf65e5da6",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -10205,17 +10216,6 @@ local tbl =
 							uuid = "708919d4-bced-d117-8751-84fa5615b673",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "230f1a32-52c4-9dc0-b509-4abcf65e5da6",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 703.58654115995,
@@ -10362,6 +10362,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -10370,18 +10382,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -10590,6 +10590,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -10598,18 +10610,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -10869,6 +10869,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "92162bfc-644d-e935-91bc-c4eb2566b671",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -10877,18 +10889,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "92162bfc-644d-e935-91bc-c4eb2566b671",
-							version = 3,
-						},
 					},
 					
 					{
@@ -11071,6 +11071,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "b586fe4c-7f80-08f9-af30-1d317170c1cb",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -11127,17 +11138,6 @@ local tbl =
 							uuid = "2a9587be-3271-f7fa-a7ee-33ff787e88dd",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "b586fe4c-7f80-08f9-af30-1d317170c1cb",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 895.49672653853,
@@ -11264,6 +11264,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "2247321c-4ca8-f14c-9222-b1c0c71caf2d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -11272,18 +11284,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "2247321c-4ca8-f14c-9222-b1c0c71caf2d",
-							version = 3,
-						},
 					},
 					
 					{
@@ -11466,6 +11466,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "6d874dd4-402b-63c4-83e7-45e6137427c9",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -11522,17 +11533,6 @@ local tbl =
 							uuid = "0fcd6e18-60d4-1991-91ad-61bad9a01e2d",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "6d874dd4-402b-63c4-83e7-45e6137427c9",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 934.65048710577,
@@ -11659,6 +11659,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -11667,18 +11679,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -11858,6 +11858,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -11866,18 +11878,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -12089,6 +12089,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "38b1fee8-b633-35c5-b24a-516f7c42c4d4",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -12097,18 +12109,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "38b1fee8-b633-35c5-b24a-516f7c42c4d4",
-							version = 3,
-						},
 					},
 					
 					{
@@ -12292,6 +12292,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "472258c7-fef5-d959-b950-4f5951caff70",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -12348,17 +12359,6 @@ local tbl =
 							uuid = "344dac4e-f384-f701-a91c-bd22bf48c133",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "472258c7-fef5-d959-b950-4f5951caff70",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 972.7295459293,
@@ -12537,6 +12537,19 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "9133845b-9953-6fb7-b2cc-6e75501e7b92",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
 							category = "Event",
 							eventArgOptionType = 3,
 							eventArgType = 2,
@@ -12547,19 +12560,6 @@ local tbl =
 							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "9133845b-9953-6fb7-b2cc-6e75501e7b92",
-							version = 3,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -12733,6 +12733,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "6da2090d-0748-2ac7-b670-5c312bfe7da0",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -12741,18 +12753,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "6da2090d-0748-2ac7-b670-5c312bfe7da0",
-							version = 3,
-						},
 					},
 					
 					{
@@ -12971,6 +12971,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -13027,17 +13038,6 @@ local tbl =
 							uuid = "421fcef6-c318-fba6-a78a-83bce99ae74b",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "ae44c2cc-2c8b-86e5-8223-ab334e59d83d",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 990.28011146124,
@@ -13184,6 +13184,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -13192,18 +13204,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -13412,6 +13412,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -13420,18 +13432,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -13630,6 +13630,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "1a55d800-5eb5-5063-9a38-e826e6529a1d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -13638,18 +13650,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "1a55d800-5eb5-5063-9a38-e826e6529a1d",
-							version = 3,
-						},
 					},
 					
 					{
@@ -13810,6 +13810,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "b188b0cf-858b-fe1b-950f-d0c643dc8220",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -13818,18 +13830,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "b188b0cf-858b-fe1b-950f-d0c643dc8220",
-							version = 3,
-						},
 					},
 					
 					{
@@ -14274,6 +14274,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -14330,17 +14341,6 @@ local tbl =
 							uuid = "7259e1ab-18fd-2b15-9592-f418dd6fa0bd",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "ccaf0bf3-18ae-5ebe-8739-331a5624e1fb",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1034.3163569005,
@@ -14537,6 +14537,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "277084a3-d91e-820d-8af5-1502dfc8dca2",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -14545,18 +14557,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "277084a3-d91e-820d-8af5-1502dfc8dca2",
-							version = 3,
-						},
 					},
 					
 					{
@@ -14730,6 +14730,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -14786,17 +14797,6 @@ local tbl =
 							uuid = "96d33329-1e83-9a40-b4e9-88ae5c1fa25c",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "ebffd34a-e91e-8001-9fa6-2eda3c2e95d9",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1054.5292176297,
@@ -14915,6 +14915,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "06b90d44-2afc-c232-9e97-2515f88d0db4",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -14923,18 +14935,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "06b90d44-2afc-c232-9e97-2515f88d0db4",
-							version = 3,
-						},
 					},
 					
 					{
@@ -15097,6 +15097,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -15105,18 +15117,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3374fa56-31e9-67ca-923d-3b40400e3dfd",
-							version = 3,
-						},
 					},
 					
 					{
@@ -15296,6 +15296,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -15304,18 +15316,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "3926d2d0-bc31-fe11-8abb-512b3108e064",
-							version = 3,
-						},
 					},
 					
 					{
@@ -15649,6 +15649,19 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Lua",
+							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
+							dequeueIfLuaFalse = true,
+							name = "Mit MT",
+							uuid = "8ae1e266-29ae-0e85-8c7b-5c9191c17a6e",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
 							category = "Event",
 							eventArgOptionType = 3,
 							eventArgType = 2,
@@ -15659,19 +15672,6 @@ local tbl =
 							uuid = "30d566ba-16ba-2545-96fa-6127dbe56180",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Lua",
-							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
-							dequeueIfLuaFalse = true,
-							name = "Mit MT",
-							uuid = "8ae1e266-29ae-0e85-8c7b-5c9191c17a6e",
-							version = 3,
-						},
-						inheritedIndex = 2,
 					},
 					
 					{
@@ -16094,6 +16094,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "663a4694-fc61-c623-8f88-74b8f18e5196",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -16150,17 +16161,6 @@ local tbl =
 							uuid = "df4e985d-727b-2eb8-85ab-81407713ef54",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "663a4694-fc61-c623-8f88-74b8f18e5196",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1125.2071474604,
@@ -16323,6 +16323,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "75df7c9a-008d-32bb-988a-5cc5f383e90d",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -16331,18 +16343,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "75df7c9a-008d-32bb-988a-5cc5f383e90d",
-							version = 3,
-						},
 					},
 					
 					{
@@ -16498,6 +16498,18 @@ local tbl =
 					{
 						data = 
 						{
+							category = "Self",
+							conditionType = 13,
+							jobValue = "DARKKNIGHT",
+							name = "is DRK",
+							uuid = "31988b31-44d9-3d8c-aa61-a248c242cf48",
+							version = 3,
+						},
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T1\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -16506,18 +16518,6 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 2,
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							jobValue = "DARKKNIGHT",
-							name = "is DRK",
-							uuid = "31988b31-44d9-3d8c-aa61-a248c242cf48",
-							version = 3,
-						},
 					},
 					
 					{
@@ -16692,6 +16692,17 @@ local tbl =
 					{
 						data = 
 						{
+							buffCheckType = 2,
+							buffID = 1193,
+							uuid = "d78b4f36-bc8a-3508-a440-6696a434bb55",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
 							category = "Lua",
 							conditionLua = "return (AnyoneCore.Roster.mySlot() == \"T2\") or false\n",
 							dequeueIfLuaFalse = true,
@@ -16748,17 +16759,6 @@ local tbl =
 							uuid = "80b2b7ce-4595-8366-b8c3-7fa8f9ceb8b6",
 							version = 3,
 						},
-					},
-					
-					{
-						data = 
-						{
-							buffCheckType = 2,
-							buffID = 1193,
-							uuid = "d78b4f36-bc8a-3508-a440-6696a434bb55",
-							version = 3,
-						},
-						inheritedIndex = 1,
 					},
 				},
 				mechanicTime = 1141.5122474604,
