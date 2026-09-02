@@ -1896,6 +1896,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -1903,13 +1904,9 @@ local tbl =
 									"a0fa7849-9541-11ed-9543-237ae23c64e9",
 									true,
 								},
-								
-								{
-									"25df18be-1553-d8cb-a9cc-e873ec5f5088",
-									true,
-								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -1950,6 +1947,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "044ffb04-65ec-f7fd-a517-14b92bb4bfe3",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 118.07975730716,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 25,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "3301ac59-34c8-c363-9610-722872181591",
 				version = 2,
 			},
 		},
@@ -2707,6 +2758,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -2716,6 +2768,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -2756,6 +2809,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "5c2ccb0c-04ee-60ea-860f-3c9f6a4d5386",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 42,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "53bb69ff-b036-e5e1-9d36-fbddd05e571c",
 				version = 2,
 			},
 		},
@@ -3150,6 +3257,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -3159,6 +3267,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -3199,6 +3308,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "5afe2b4e-4a3a-5baf-a6b4-cc66105240cc",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 67,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "66ccba7d-02f8-d2e6-8f39-7f780e9cc915",
 				version = 2,
 			},
 		},
@@ -4324,6 +4487,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -4333,6 +4497,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -4373,6 +4538,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "73f5de36-1492-f2fa-8d4d-b091406d16ba",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 481.45392399289,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 84,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "903f9d5d-41d7-a392-b180-11759b89ca98",
 				version = 2,
 			},
 		},
@@ -5246,6 +5465,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -5255,6 +5475,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -5295,6 +5516,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "f8f1d0da-335a-79ae-83a6-3b52e403e670",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 598.7363892632,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 116,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "8b2d9b96-4001-0c84-bfe6-6aa7d00b932c",
 				version = 2,
 			},
 		},
@@ -6176,6 +6451,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -6185,6 +6461,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -6225,6 +6502,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -5,
 				uuid = "80dc6274-49d2-aa00-8419-62dad2371c44",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 801.88345429349,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 150,
+				timerEndOffset = 17,
+				timerStartOffset = -5,
+				uuid = "718ae63b-1ff5-f5ff-8fe8-ccbd20534a22",
 				version = 2,
 			},
 		},
@@ -6742,6 +7073,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -6751,6 +7083,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -6850,6 +7183,60 @@ local tbl =
 			},
 			inheritedIndex = 4,
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 921.94101651754,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 168,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "39411e12-2def-0e6d-a135-0bb9242a90f9",
+				version = 2,
+			},
+		},
 	},
 	[170] = 
 	{
@@ -6925,14 +7312,6 @@ local tbl =
 						{
 							actionID = 36977,
 							atomicPriority = true,
-							conditions = 
-							{
-								
-								{
-									"8779ed15-c429-c478-8548-93705e86ed5b",
-									true,
-								},
-							},
 							gVar = "ACR_TensorRequiem3_DowntimeSongs",
 							ignoreWeaveRules = true,
 							targetType = "Enemy",
@@ -6943,17 +7322,6 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							comparator = 2,
-							conditionType = 3,
-							hpValue = 6,
-							uuid = "8779ed15-c429-c478-8548-93705e86ed5b",
-							version = 3,
-						},
-					},
 				},
 				mechanicTime = 934.65552902023,
 				name = "[BRD] Radiant Encore",
@@ -7951,6 +8319,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -7960,6 +8329,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -8000,6 +8370,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = -10,
 				uuid = "9a75cca7-70b1-124a-a10d-a73a2ad2c86b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1041.2310024427,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 198,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "c9f8d386-c306-661d-bd7a-095d68f65ccf",
 				version = 2,
 			},
 		},
@@ -8933,6 +9357,7 @@ local tbl =
 						data = 
 						{
 							actionID = 107,
+							atomicPriority = true,
 							conditions = 
 							{
 								
@@ -8942,6 +9367,7 @@ local tbl =
 								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
+							ignoreWeaveRules = true,
 							uuid = "181f389c-21de-ad89-b07c-b7d838f15067",
 							version = 2.1,
 						},
@@ -8982,6 +9408,60 @@ local tbl =
 				timerOffset = 1.1512427330017,
 				timerStartOffset = 10,
 				uuid = "9ea40a67-b2dc-e2b9-be06-a77c09f3c4ce",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7409,
+							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"e3fd015d-c8da-ece8-b919-1a56218b9da7",
+									true,
+								},
+							},
+							ignoreWeaveRules = true,
+							targetType = "Current Target",
+							uuid = "d90c60ed-2960-7523-a454-ff9bcb34ec0d",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffCheckType = 3,
+							buffDuration = 4,
+							buffID = 128,
+							category = "Self",
+							comparator = 2,
+							name = "Barrage <=4s",
+							uuid = "e3fd015d-c8da-ece8-b919-1a56218b9da7",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 1154.7445474604,
+				name = "[BRD] Barrage - Refulgent Safety",
+				timeRange = true,
+				timelineIndex = 226,
+				timerEndOffset = 17,
+				timerStartOffset = -10,
+				uuid = "3a99afca-2495-1bb0-8754-26d1cb65ce69",
 				version = 2,
 			},
 		},
