@@ -2140,7 +2140,7 @@ local tbl =
 						data = 
 						{
 							buffCheckType = 3,
-							buffDuration = 5,
+							buffDuration = 6,
 							buffID = 1200,
 							comparator = 2,
 							uuid = "49c70a05-a9d9-dbaf-85c3-67754a04220e",
@@ -2152,8 +2152,8 @@ local tbl =
 				name = "[BRD] Jaws",
 				timeRange = true,
 				timelineIndex = 34,
-				timerEndOffset = 4,
-				timerStartOffset = -2,
+				timerEndOffset = 8,
+				timerStartOffset = -6,
 				uuid = "00034257-0689-22cc-a2d0-eb7787ee972d",
 				version = 2,
 			},
@@ -3188,6 +3188,62 @@ local tbl =
 				uuid = "b862d6bf-948f-d7e2-bcdd-b2c6aff52059",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							acrOptionType = "Hold Action",
+							actionID = 25785,
+							conditions = 
+							{
+								
+								{
+									"15db3b60-ad73-417a-904b-db0e7fd95a41",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_CD",
+							holdActionDuration = 6,
+							holdActionID = 36977,
+							ignoreWeaveRules = true,
+							uuid = "b51a219a-dd1a-4b07-a873-e88a1ed84fd0",
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							buffID = 2217,
+							category = "Self",
+							name = "MB Check",
+							uuid = "15db3b60-ad73-417a-904b-db0e7fd95a41",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 352.92100258191,
+				name = "[BRD] Force Radiant",
+				randomOffset = 5,
+				timeRange = true,
+				timelineIndex = 67,
+				timerEndOffset = 5.5,
+				timerOffset = -5,
+				timerStartOffset = 3,
+				uuid = "afbf4ab1-3f4b-2a24-9f58-648ea631f769",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
