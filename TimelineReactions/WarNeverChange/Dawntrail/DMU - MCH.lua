@@ -839,9 +839,6 @@ local tbl =
 			},
 			inheritedIndex = 2,
 		},
-	},
-	[6] = 
-	{
 		
 		{
 			data = 
@@ -855,59 +852,6 @@ local tbl =
 							aType = "ACR",
 							conditions = 
 							{
-								
-								{
-									"1a6baf93-8a0f-4be0-8af6-0baf8765cb1a",
-									true,
-								},
-								
-								{
-									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
-									true,
-								},
-							},
-							gVar = "ACR_TensorRequiem3_Hotbar_Troubadour",
-							uuid = "8735d20b-b4e8-10e8-81b5-34daa387b6a7",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"aa357a6f-f6a3-1794-b052-1262cdc53c18",
-									true,
-								},
-								
-								{
-									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
-									true,
-								},
-							},
-							gVar = "ACR_RikuDNC3_Hotbar_ShieldSamba",
-							uuid = "818f3aa5-d39d-65a6-ad03-0935174cffc4",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"12b69f68-0086-299f-ab1b-90f8fce4c902",
-									true,
-								},
 								
 								{
 									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
@@ -927,45 +871,6 @@ local tbl =
 					{
 						data = 
 						{
-							category = "Self",
-							conditionType = 13,
-							dequeueIfLuaFalse = true,
-							jobValue = "BARD",
-							name = "Self: BRD",
-							uuid = "1a6baf93-8a0f-4be0-8af6-0baf8765cb1a",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							dequeueIfLuaFalse = true,
-							jobValue = "DANCER",
-							name = "Self: DNC",
-							uuid = "aa357a6f-f6a3-1794-b052-1262cdc53c18",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 13,
-							dequeueIfLuaFalse = true,
-							jobValue = "MACHINIST",
-							name = "Self: MCH",
-							uuid = "12b69f68-0086-299f-ab1b-90f8fce4c902",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
 							category = "Party",
 							comparator = 2,
 							conditionType = 4,
@@ -979,17 +884,19 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 38.012854917972,
+				mechanicTime = 29.049328125,
 				name = "[MCH] Tactician",
 				randomTimeout = 10,
 				timeRange = true,
-				timelineIndex = 6,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "58590c19-72b3-34bd-a95e-65f3d4c5e793",
+				timelineIndex = 3,
+				timerStartOffset = -1.5,
+				uuid = "5dd54ee5-72eb-8b77-baa6-ad4147d2173d",
 				version = 2,
 			},
 		},
+	},
+	[6] = 
+	{
 		
 		{
 			data = 
@@ -1337,12 +1244,12 @@ local tbl =
 							{
 								
 								{
-									"ec3db7ba-0d19-57a7-9e2e-980742252d81",
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
 									true,
 								},
 							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "74f0eb2c-992b-4600-8b1c-92043e7d1ea5",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -1362,7 +1269,7 @@ local tbl =
 							name = "Party Range: <= 30y",
 							partyTargetNumber = 100,
 							partyTargetSubType = "Number",
-							uuid = "ec3db7ba-0d19-57a7-9e2e-980742252d81",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
 							version = 3,
 						},
 					},
@@ -1372,9 +1279,8 @@ local tbl =
 				randomTimeout = 10,
 				timeRange = true,
 				timelineIndex = 25,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "82cecae1-6984-0c77-9335-7a80cbe89219",
+				timerStartOffset = -1.5,
+				uuid = "f4612715-de68-01c4-9826-3a20225dcae7",
 				version = 2,
 			},
 		},
@@ -1741,62 +1647,6 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"ed98f449-c290-c3d8-9c2e-443143e33087",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "117ced84-5438-6fc0-a53c-6317fd95df47",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 30,
-							minTargetPercent = true,
-							name = "Party Range: <= 30y",
-							partyTargetNumber = 100,
-							partyTargetSubType = "Number",
-							uuid = "ed98f449-c290-c3d8-9c2e-443143e33087",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 235.34477128997,
-				name = "[MCH] Tactician",
-				randomTimeout = 10,
-				timeRange = true,
-				timelineIndex = 41,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "5b52ab70-df6e-22af-9b1c-f59473f52307",
-				version = 2,
-			},
-		},
 	},
 	[42] = 
 	{
@@ -1832,6 +1682,62 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range: <= 30y",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 248.57716839869,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRange = true,
+				timelineIndex = 42,
+				timerEndOffset = -3,
+				timerStartOffset = -4,
+				uuid = "118fed8d-46c1-1885-ae24-fe105aeea6ef",
+				version = 2,
+			},
 		},
 	},
 	[47] = 
@@ -3733,7 +3639,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 97,
 				timerEndOffset = -1,
-				timerStartOffset = -14.5,
+				timerStartOffset = -8.5,
 				uuid = "a4590eb0-c453-a3ee-93ec-e7e8cac97d6f",
 				version = 2,
 			},
@@ -4334,6 +4240,65 @@ local tbl =
 			},
 		},
 	},
+	[117] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range: <= 30y",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 603.80002815209,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRange = true,
+				timelineIndex = 117,
+				timerEndOffset = -2,
+				timerStartOffset = -3.5,
+				uuid = "15acf865-675e-1059-a33e-32bae80403d2",
+				version = 2,
+			},
+		},
+	},
 	[128] = 
 	{
 		
@@ -4484,62 +4449,6 @@ local tbl =
 				version = 2,
 			},
 		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"3ea890f4-0b12-e167-9fbd-e8a970636c39",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "93651a34-1131-76f9-b326-7a1694d13342",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 30,
-							minTargetPercent = true,
-							name = "Party Range: <= 30y",
-							partyTargetNumber = 100,
-							partyTargetSubType = "Number",
-							uuid = "3ea890f4-0b12-e167-9fbd-e8a970636c39",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 676.34203400282,
-				name = "[MCH] Tactician",
-				randomTimeout = 10,
-				timeRange = true,
-				timelineIndex = 135,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "2675d18b-95b2-d6e8-82ce-32b43573125c",
-				version = 2,
-			},
-		},
 	},
 	[137] = 
 	{
@@ -4578,6 +4487,62 @@ local tbl =
 				timerOffset = -8,
 				timerStartOffset = -9,
 				uuid = "d806a070-f197-80b6-97d2-4818313d80b4",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range: <= 30y",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 690.41578400282,
+				name = "[MCH] Tactician",
+				randomTimeout = 10,
+				timeRange = true,
+				timelineIndex = 137,
+				timerEndOffset = 5,
+				timerStartOffset = 3.5,
+				uuid = "ff16d0bf-7e4b-b9d4-b250-15817d473849",
 				version = 2,
 			},
 		},
@@ -5514,7 +5479,7 @@ local tbl =
 			},
 		},
 	},
-	[157] = 
+	[158] = 
 	{
 		
 		{
@@ -5531,12 +5496,12 @@ local tbl =
 							{
 								
 								{
-									"3ea890f4-0b12-e167-9fbd-e8a970636c39",
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
 									true,
 								},
 							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "93651a34-1131-76f9-b326-7a1694d13342",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -5556,19 +5521,19 @@ local tbl =
 							name = "Party Range: <= 30y",
 							partyTargetNumber = 100,
 							partyTargetSubType = "Number",
-							uuid = "3ea890f4-0b12-e167-9fbd-e8a970636c39",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
 							version = 3,
 						},
 					},
 				},
-				mechanicTime = 846.19462329432,
+				mechanicTime = 851.93288409656,
 				name = "[MCH] Tactician",
 				randomTimeout = 10,
 				timeRange = true,
-				timelineIndex = 157,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "7cf0905e-eac8-4a0c-ac1a-1101c603975e",
+				timelineIndex = 158,
+				timerEndOffset = -2,
+				timerStartOffset = -3.5,
+				uuid = "7a21fdda-f3cc-6c33-b0a3-beeec8a46a4b",
 				version = 2,
 			},
 		},
@@ -6515,9 +6480,6 @@ local tbl =
 			},
 			inheritedIndex = 6,
 		},
-	},
-	[176] = 
-	{
 		
 		{
 			data = 
@@ -6533,12 +6495,12 @@ local tbl =
 							{
 								
 								{
-									"3ea890f4-0b12-e167-9fbd-e8a970636c39",
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
 									true,
 								},
 							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "93651a34-1131-76f9-b326-7a1694d13342",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -6558,19 +6520,19 @@ local tbl =
 							name = "Party Range: <= 30y",
 							partyTargetNumber = 100,
 							partyTargetSubType = "Number",
-							uuid = "3ea890f4-0b12-e167-9fbd-e8a970636c39",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
 							version = 3,
 						},
 					},
 				},
-				mechanicTime = 975.94101651753,
+				mechanicTime = 965.64810213372,
 				name = "[MCH] Tactician",
 				randomTimeout = 10,
-				timeRange = true,
-				timelineIndex = 176,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "ee7d8683-c928-f40a-86ac-225a45b2af02",
+				timelineIndex = 171,
+				timerEndOffset = -4,
+				timerOffset = -5,
+				timerStartOffset = -5.5,
+				uuid = "b0e27f28-7998-c7e7-9582-3ec6bb7a1cd7",
 				version = 2,
 			},
 		},
@@ -7108,7 +7070,7 @@ local tbl =
 			inheritedIndex = 2,
 		},
 	},
-	[207] = 
+	[203] = 
 	{
 		
 		{
@@ -7125,12 +7087,12 @@ local tbl =
 							{
 								
 								{
-									"3ea890f4-0b12-e167-9fbd-e8a970636c39",
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
 									true,
 								},
 							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "93651a34-1131-76f9-b326-7a1694d13342",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -7150,19 +7112,20 @@ local tbl =
 							name = "Party Range: <= 30y",
 							partyTargetNumber = 100,
 							partyTargetSubType = "Number",
-							uuid = "3ea890f4-0b12-e167-9fbd-e8a970636c39",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
 							version = 3,
 						},
 					},
 				},
-				mechanicTime = 1057.7456791682,
+				mechanicTime = 1054.5292176297,
 				name = "[MCH] Tactician",
 				randomTimeout = 10,
 				timeRange = true,
-				timelineIndex = 207,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "6f05d436-fca6-d402-a71e-650150ac994d",
+				timelineIndex = 203,
+				timerEndOffset = -4,
+				timerOffset = -5,
+				timerStartOffset = -6.5,
+				uuid = "4f9ce540-11ab-fcf1-b346-50a32b342434",
 				version = 2,
 			},
 		},
@@ -7644,12 +7607,12 @@ local tbl =
 							{
 								
 								{
-									"c8990f81-73d9-bf7b-942e-ad6db29e6623",
+									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
 									true,
 								},
 							},
 							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "55ef0f53-d927-aef8-8a4b-086a6f3246da",
+							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
 							variableTogglesType = 2,
 							version = 2.1,
 						},
@@ -7669,7 +7632,7 @@ local tbl =
 							name = "Party Range: <= 30y",
 							partyTargetNumber = 100,
 							partyTargetSubType = "Number",
-							uuid = "c8990f81-73d9-bf7b-942e-ad6db29e6623",
+							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
 							version = 3,
 						},
 					},
@@ -7679,12 +7642,12 @@ local tbl =
 				randomTimeout = 10,
 				timeRange = true,
 				timelineIndex = 223,
-				timerEndOffset = -1,
-				timerStartOffset = -14.5,
-				uuid = "ea8380c8-fbfa-98b8-a235-04ee6ceb4fc4",
+				timerEndOffset = 5,
+				timerOffset = -5,
+				timerStartOffset = -5.5,
+				uuid = "df18c44f-ec2f-be7f-aeb1-5d6eec775005",
 				version = 2,
 			},
-			inheritedIndex = 2,
 		},
 	},
 	[225] = 

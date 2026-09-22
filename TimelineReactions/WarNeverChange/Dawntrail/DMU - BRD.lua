@@ -3208,6 +3208,11 @@ local tbl =
 									"15db3b60-ad73-417a-904b-db0e7fd95a41",
 									true,
 								},
+								
+								{
+									"ca6ab8a6-474f-a5e6-9266-5dd652812075",
+									true,
+								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionDuration = 6,
@@ -3231,13 +3236,26 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 25785,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "ca6ab8a6-474f-a5e6-9266-5dd652812075",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 352.92100258191,
 				name = "[BRD] Force Radiant",
 				randomOffset = 5,
 				timeRange = true,
 				timelineIndex = 67,
-				timerEndOffset = 5.5,
+				timerEndOffset = 10.5,
 				timerOffset = -5,
 				timerStartOffset = 3,
 				uuid = "afbf4ab1-3f4b-2a24-9f58-648ea631f769",
