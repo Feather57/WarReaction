@@ -21,6 +21,11 @@ local tbl =
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_RikuSGE3_CD",
 							name = "Profil Option",
@@ -46,6 +51,11 @@ local tbl =
 									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							name = "Target Nearest",
@@ -68,6 +78,11 @@ local tbl =
 									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_RikuMNK3_CD",
 							name = "Start Combat = true",
@@ -87,6 +102,11 @@ local tbl =
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							ignoreWeaveRules = true,
 							uuid = "5b0e5435-b775-75d4-8bac-598fab44a887",
@@ -103,6 +123,11 @@ local tbl =
 								
 								{
 									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
 									true,
 								},
 							},
@@ -124,6 +149,11 @@ local tbl =
 									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							ignoreWeaveRules = true,
 							uuid = "fd573dd2-9f84-4376-8562-ad0cf5d6bd8b",
@@ -142,6 +172,11 @@ local tbl =
 								
 								{
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
 									true,
 								},
 							},
@@ -166,6 +201,11 @@ local tbl =
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionDuration = 4.5,
@@ -186,6 +226,11 @@ local tbl =
 								
 								{
 									"63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+									true,
+								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
 									true,
 								},
 							},
@@ -210,6 +255,11 @@ local tbl =
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionDuration = 4,
@@ -229,6 +279,11 @@ local tbl =
 								
 								{
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
 									true,
 								},
 							},
@@ -253,6 +308,11 @@ local tbl =
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionDuration = 2,
@@ -274,6 +334,11 @@ local tbl =
 									"63e016aa-5041-222b-b0cd-ada9db1ed6b6",
 									true,
 								},
+								
+								{
+									"bd081e74-1c4d-f109-ba00-f9921f2a73f7",
+									true,
+								},
 							},
 							gVar = "ACR_RikuMNK3_CD",
 							name = "Start Combat = true",
@@ -289,23 +354,23 @@ local tbl =
 						data = 
 						{
 							category = "Lua",
-							comparator = 2,
-							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 1000",
-							eventCountdownTime = 1.5,
-							name = "TimeSince >= 1s",
-							uuid = "972d5672-271b-f4ac-b97b-199d5f251954",
+							conditionLua = "return FFXIV_Common_BotRunning",
+							name = "Assist Enabled",
+							uuid = "bd081e74-1c4d-f109-ba00-f9921f2a73f7",
 							version = 3,
 						},
+						inheritedIndex = 1,
 					},
 					
 					{
 						data = 
 						{
-							category = "Event",
+							category = "Lua",
 							comparator = 2,
-							eventCountdownTime = 10,
-							name = "Pull in 10sec",
-							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+							conditionLua = "return TimeSince(eventArgs.timeQueued) >= 1000",
+							eventCountdownTime = 1.5,
+							name = "TimeSince >= 1s",
+							uuid = "972d5672-271b-f4ac-b97b-199d5f251954",
 							version = 3,
 						},
 					},
@@ -329,9 +394,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 5,
-							name = "Pull in 5sec",
-							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+							eventCountdownTime = 10,
+							name = "Pull in 10sec",
+							uuid = "d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 							version = 3,
 						},
 					},
@@ -341,9 +406,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 2,
-							name = "Pull in 2sec",
-							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+							eventCountdownTime = 5,
+							name = "Pull in 5sec",
+							uuid = "af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
 							version = 3,
 						},
 					},
@@ -392,9 +457,9 @@ local tbl =
 						{
 							category = "Event",
 							comparator = 2,
-							eventCountdownTime = 0.5,
-							name = "Pull in 0.5sec",
-							uuid = "63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+							eventCountdownTime = 2,
+							name = "Pull in 2sec",
+							uuid = "7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 							version = 3,
 						},
 					},
@@ -410,6 +475,18 @@ local tbl =
 							version = 3,
 						},
 						inheritedIndex = 10,
+					},
+					
+					{
+						data = 
+						{
+							category = "Event",
+							comparator = 2,
+							eventCountdownTime = 0.5,
+							name = "Pull in 0.5sec",
+							uuid = "63e016aa-5041-222b-b0cd-ada9db1ed6b6",
+							version = 3,
+						},
 					},
 					
 					{

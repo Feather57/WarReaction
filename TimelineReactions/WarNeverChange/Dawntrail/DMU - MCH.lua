@@ -245,6 +245,11 @@ local tbl =
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_RikuSGE3_CD",
 							name = "Profil Option",
@@ -263,6 +268,11 @@ local tbl =
 								
 								{
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -284,6 +294,11 @@ local tbl =
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_SummonQueen",
 							uuid = "8129c863-4271-81a4-bfb9-7c3185cd653a",
@@ -302,6 +317,11 @@ local tbl =
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							uuid = "805bbc6e-2ee1-b5f1-8f8a-b921277fefa7",
@@ -313,6 +333,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_DoubleCheck",
 							uuid = "d9d8c044-d469-0430-8a35-867b94299252",
 							version = 2.1,
@@ -324,6 +352,14 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
+							},
 							gVar = "ACR_TensorMagnum3_Checkmate",
 							uuid = "ff8593fe-9fcc-0d08-8ca6-22c90c5c584d",
 							version = 2.1,
@@ -340,6 +376,11 @@ local tbl =
 								
 								{
 									"d6850ed2-46a5-a522-9ddd-699c3b4b712f",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -365,6 +406,11 @@ local tbl =
 								
 								{
 									"af37f2e7-25c7-7fe2-b4eb-1ec546b079cd",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -398,6 +444,11 @@ local tbl =
 									"e7557bae-faa8-66cd-8de8-d9282bcdaf55",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_RikuDRG3_Hotbar_ElusiveJumpTarget",
 							ignoreWeaveRules = true,
@@ -417,6 +468,11 @@ local tbl =
 								
 								{
 									"d2c8b14c-ffa7-a1a8-9052-60aeb713bd21",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -440,6 +496,11 @@ local tbl =
 								
 								{
 									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -487,6 +548,11 @@ local tbl =
 									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 15,
@@ -507,6 +573,11 @@ local tbl =
 								
 								{
 									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
@@ -530,6 +601,11 @@ local tbl =
 									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 5.5,
@@ -551,6 +627,11 @@ local tbl =
 									"7d172fe6-7fa3-6b90-b9b8-2ac1978ec73b",
 									true,
 								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
+									true,
+								},
 							},
 							gVar = "ACR_TensorMagnum3_CD",
 							holdActionDuration = 7,
@@ -570,6 +651,11 @@ local tbl =
 								
 								{
 									"a0eb43ea-d4d4-a526-a4d3-4c20de4e55d2",
+									true,
+								},
+								
+								{
+									"c7fca9e5-1ab5-7f6b-bbe6-a8efe6952a17",
 									true,
 								},
 							},
