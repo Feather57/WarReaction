@@ -8096,6 +8096,14 @@ local tbl =
 						{
 							actionID = 2878,
 							atomicPriority = true,
+							conditions = 
+							{
+								
+								{
+									"413dadad-d9b7-ee2b-b7d9-e623c0872a3b",
+									true,
+								},
+							},
 							endIfUsed = true,
 							gVar = "ACR_TensorMagnum3_CD",
 							targetType = "Enemy",
@@ -8106,6 +8114,15 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							buffID = 1946,
+							uuid = "413dadad-d9b7-ee2b-b7d9-e623c0872a3b",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 1154.7445474604,
 				name = "[MCH] Wildfire",
