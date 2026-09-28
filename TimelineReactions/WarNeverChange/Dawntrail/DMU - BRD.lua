@@ -3282,12 +3282,12 @@ local tbl =
 							{
 								
 								{
-									"15db3b60-ad73-417a-904b-db0e7fd95a41",
+									"ca6ab8a6-474f-a5e6-9266-5dd652812075",
 									true,
 								},
 								
 								{
-									"ca6ab8a6-474f-a5e6-9266-5dd652812075",
+									"51276c65-34a8-21a1-83c9-8ed8ce868bc6",
 									true,
 								},
 							},
@@ -3306,17 +3306,6 @@ local tbl =
 					{
 						data = 
 						{
-							buffID = 2217,
-							category = "Self",
-							name = "MB Check",
-							uuid = "15db3b60-ad73-417a-904b-db0e7fd95a41",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
 							actionCDValue = 1,
 							actionID = 25785,
 							category = "Self",
@@ -3326,13 +3315,23 @@ local tbl =
 							version = 3,
 						},
 					},
+					
+					{
+						data = 
+						{
+							buffID = 141,
+							name = "BV Check",
+							uuid = "51276c65-34a8-21a1-83c9-8ed8ce868bc6",
+							version = 3,
+						},
+					},
 				},
 				mechanicTime = 352.92100258191,
 				name = "[BRD] Force Radiant",
 				randomOffset = 5,
 				timeRange = true,
 				timelineIndex = 67,
-				timerEndOffset = 10.5,
+				timerEndOffset = 14.5,
 				timerOffset = -5,
 				timerStartOffset = 3,
 				uuid = "afbf4ab1-3f4b-2a24-9f58-648ea631f769",
