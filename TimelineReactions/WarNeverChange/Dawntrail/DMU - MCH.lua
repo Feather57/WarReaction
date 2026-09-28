@@ -237,7 +237,7 @@ local tbl =
 						data = 
 						{
 							aType = "Lua",
-							actionLua = "gStartCombat = false\n\nACR_TensorMagnum3_SummonQueen_Gauge = 50\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\nMCH_enableSpreadDraws = true\n\n-- Set Queen\nACR_TensorMagnum3_SummonQueen_Gauge = 50\n\n-- Mark action complete\nself.used = true",
+							actionLua = "gStartCombat = false\n\n-- Save current DMU setting before changing it\nif MCH_savedPrepullHelper == nil then\nMCH_savedDmuMitigation = AnyoneCore.Settings.Reactions.dmu.mitigation\nMCH_savedPrepullHelper = AnyoneCore.Settings.PrepullHelper.enabled\nend\n\n-- Disable Prepull Helper\nAnyoneCore.Settings.PrepullHelper.enabled = false\n\n-- Disable DMU mitigation\nAnyoneCore.Settings.Reactions.dmu.mitigation = false\n\n-- Allow TTS calls later in the profile\nMCH_enableCallTTS = true\nMCH_enableSpreadDraws = true\n\n-- Set Queen\nACR_TensorMagnum3_SummonQueen_Gauge = 50\n\n-- Mark action complete\nself.used = true",
 							conditions = 
 							{
 								
@@ -4326,65 +4326,6 @@ local tbl =
 			},
 		},
 	},
-	[117] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							conditions = 
-							{
-								
-								{
-									"07c23cf6-127c-b561-9ba8-8b55fef28d26",
-									true,
-								},
-							},
-							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
-							uuid = "2d2cd88e-2e09-a832-89a8-3be4cdf4e480",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Party",
-							comparator = 2,
-							conditionType = 4,
-							inRangeValue = 30,
-							minTargetPercent = true,
-							name = "Party Range: <= 30y",
-							partyTargetNumber = 100,
-							partyTargetSubType = "Number",
-							uuid = "07c23cf6-127c-b561-9ba8-8b55fef28d26",
-							version = 3,
-						},
-					},
-				},
-				mechanicTime = 603.80002815209,
-				name = "[MCH] Tactician",
-				randomTimeout = 10,
-				timeRange = true,
-				timelineIndex = 117,
-				timerEndOffset = -2,
-				timerStartOffset = -3.5,
-				uuid = "15acf865-675e-1059-a33e-32bae80403d2",
-				version = 2,
-			},
-		},
-	},
 	[128] = 
 	{
 		
@@ -4515,6 +4456,188 @@ local tbl =
 						data = 
 						{
 							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"7c259250-e60f-cf60-ac51-224d92e3db21",
+									true,
+								},
+								
+								{
+									"d635aad7-4ec4-7ab5-81cc-3aca65d2336e",
+									true,
+								},
+								
+								{
+									"c8990f81-73d9-bf7b-942e-ad6db29e6623",
+									true,
+								},
+							},
+							gVar = "ACR_TensorRequiem3_Hotbar_Troubadour",
+							uuid = "fd2d982d-2e90-2b4e-865b-e4db2bfa6923",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"83d0ea0a-4934-2421-a692-59d0959b18f9",
+									true,
+								},
+								
+								{
+									"d635aad7-4ec4-7ab5-81cc-3aca65d2336e",
+									true,
+								},
+								
+								{
+									"c8990f81-73d9-bf7b-942e-ad6db29e6623",
+									true,
+								},
+							},
+							gVar = "ACR_RikuDNC3_Hotbar_ShieldSamba",
+							uuid = "5409201a-e210-3d52-bd0a-5785a0062108",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							conditions = 
+							{
+								
+								{
+									"9b510f14-672a-9890-b474-d7ab095f17f6",
+									true,
+								},
+								
+								{
+									"d635aad7-4ec4-7ab5-81cc-3aca65d2336e",
+									true,
+								},
+								
+								{
+									"c8990f81-73d9-bf7b-942e-ad6db29e6623",
+									true,
+								},
+							},
+							gVar = "ACR_TensorMagnum3_Hotbar_Tactician",
+							uuid = "55ef0f53-d927-aef8-8a4b-086a6f3246da",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							dequeueIfLuaFalse = true,
+							jobValue = "BARD",
+							name = "Self: BRD",
+							uuid = "7c259250-e60f-cf60-ac51-224d92e3db21",
+							version = 3,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							dequeueIfLuaFalse = true,
+							jobValue = "DANCER",
+							name = "Self: DNC",
+							uuid = "83d0ea0a-4934-2421-a692-59d0959b18f9",
+							version = 3,
+						},
+						inheritedIndex = 2,
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 13,
+							dequeueIfLuaFalse = true,
+							jobValue = "MACHINIST",
+							name = "Self: MCH",
+							uuid = "9b510f14-672a-9890-b474-d7ab095f17f6",
+							version = 3,
+						},
+						inheritedIndex = 3,
+					},
+					
+					{
+						data = 
+						{
+							category = "Lua",
+							conditionLua = "return AnyoneCore.Settings.Reactions.dmu.primaryMitigation == true",
+							dequeueIfLuaFalse = true,
+							name = "Primary Mitigation",
+							uuid = "d635aad7-4ec4-7ab5-81cc-3aca65d2336e",
+							version = 3,
+						},
+						inheritedIndex = 4,
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 30,
+							minTargetPercent = true,
+							name = "Party Range: <= 30y",
+							partyTargetNumber = 100,
+							partyTargetSubType = "Number",
+							uuid = "c8990f81-73d9-bf7b-942e-ad6db29e6623",
+							version = 3,
+						},
+					},
+				},
+				mechanicTime = 676.34203400282,
+				name = "[Lj Mit] Phys Ranged - Primary",
+				randomTimeout = 10,
+				timeRange = true,
+				timelineIndex = 135,
+				timerEndOffset = -1,
+				timerStartOffset = -14.5,
+				uuid = "2c22d879-dc8f-5a64-8c8e-fc17017291f4",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
 							gVar = "ACR_TensorMagnum3_Hypercharge",
 							gVarValue = 2,
 							uuid = "6fdb0c9e-7900-7995-968e-a83f85114004",
@@ -4532,47 +4655,6 @@ local tbl =
 				timerOffset = 2,
 				timerStartOffset = -15,
 				uuid = "b94b8a5d-ed9b-999c-b157-8192524e8723",
-				version = 2,
-			},
-		},
-	},
-	[137] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "ACR",
-							actionID = 25786,
-							atomicPriority = true,
-							endIfUsed = true,
-							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
-							ignoreWeaveRules = true,
-							targetType = "Enemy",
-							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
-							variableTogglesType = 2,
-							version = 2.1,
-						},
-						inheritedIndex = 1,
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 690.41578400282,
-				name = "[MCH] Dismantle",
-				timeRange = true,
-				timelineIndex = 137,
-				timerEndOffset = -1,
-				timerOffset = -8,
-				timerStartOffset = -9,
-				uuid = "d806a070-f197-80b6-97d2-4818313d80b4",
 				version = 2,
 			},
 		},
@@ -4621,14 +4703,55 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 690.41578400282,
+				mechanicTime = 676.34203400282,
 				name = "[MCH] Tactician",
 				randomTimeout = 10,
 				timeRange = true,
+				timelineIndex = 135,
+				timerEndOffset = -1,
+				timerStartOffset = -12.5,
+				uuid = "900d6a15-a786-66e7-858c-e72ceb3545aa",
+				version = 2,
+			},
+		},
+	},
+	[137] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "ACR",
+							actionID = 25786,
+							atomicPriority = true,
+							endIfUsed = true,
+							gVar = "ACR_TensorMagnum3_Hotbar_Dismantle",
+							ignoreWeaveRules = true,
+							targetType = "Enemy",
+							uuid = "8000a4ae-ef96-e5a5-800a-9e909164fcf4",
+							variableTogglesType = 2,
+							version = 2.1,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 690.41578400282,
+				name = "[MCH] Dismantle",
+				timeRange = true,
 				timelineIndex = 137,
-				timerEndOffset = 5,
-				timerStartOffset = 3.5,
-				uuid = "ff16d0bf-7e4b-b9d4-b250-15817d473849",
+				timerEndOffset = -1,
+				timerOffset = -8,
+				timerStartOffset = -9,
+				uuid = "d806a070-f197-80b6-97d2-4818313d80b4",
 				version = 2,
 			},
 		},
