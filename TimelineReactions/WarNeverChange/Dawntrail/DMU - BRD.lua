@@ -3285,11 +3285,6 @@ local tbl =
 									"ca6ab8a6-474f-a5e6-9266-5dd652812075",
 									true,
 								},
-								
-								{
-									"51276c65-34a8-21a1-83c9-8ed8ce868bc6",
-									true,
-								},
 							},
 							gVar = "ACR_TensorRequiem3_CD",
 							holdActionDuration = 6,
@@ -3312,16 +3307,6 @@ local tbl =
 							comparator = 2,
 							conditionType = 4,
 							uuid = "ca6ab8a6-474f-a5e6-9266-5dd652812075",
-							version = 3,
-						},
-					},
-					
-					{
-						data = 
-						{
-							buffID = 141,
-							name = "BV Check",
-							uuid = "51276c65-34a8-21a1-83c9-8ed8ce868bc6",
 							version = 3,
 						},
 					},
